@@ -451,8 +451,6 @@
             CoStage sends your room photo plus reference photos of the exact pieces you picked
             to nano-banana for real AI rendering, so the result uses those items, not just
             similar-looking ones. The API key lives server-side, not in this page.
-            If the site has an access passphrase enabled, you'll be prompted for it the first
-            time you stage live.
             Turn on mock mode to preview without making real API calls.
           </div>
           <label class="mock-toggle-row">
@@ -963,56 +961,15 @@
     ].filter(Boolean).join(' ');
   }
 
-  // ── Site access passphrase (sent to /api/stage as X-Site-Key) ──
-  // If the server has SITE_ACCESS_KEY set, staging requires this passphrase.
-  // Prompted once and cached locally; cleared and re-prompted on 401.
-  const SITE_KEY_STORAGE = 'costage_siteKey';
-
-  function getSiteKey() {
-    let key = '';
-    try { key = localStorage.getItem(SITE_KEY_STORAGE) || ''; } catch (e) { /* unavailable */ }
-    return key;
-  }
-
-  function promptForSiteKey() {
-    const key = prompt('Enter the CoStage access passphrase for AI staging:');
-    if (key) {
-      try { localStorage.setItem(SITE_KEY_STORAGE, key); } catch (e) { /* unavailable */ }
-    }
-    return key || '';
-  }
-
-  function clearSiteKey() {
-    try { localStorage.removeItem(SITE_KEY_STORAGE); } catch (e) { /* unavailable */ }
-  }
-
   async function nanoBananaEdit(images, prompt) {
-    let siteKey = getSiteKey();
-    let res = await fetch(API.stageEndpoint, {
+    const res = await fetch(API.stageEndpoint, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'X-Site-Key': siteKey },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         images: Array.isArray(images) ? images : [images],
         prompt,
       }),
     });
-    if (res.status === 401) {
-      clearSiteKey();
-      siteKey = promptForSiteKey();
-      if (!siteKey) throw new Error('Site access passphrase required for AI staging');
-      res = await fetch(API.stageEndpoint, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'X-Site-Key': siteKey },
-        body: JSON.stringify({
-          images: Array.isArray(images) ? images : [images],
-          prompt,
-        }),
-      });
-      if (res.status === 401) {
-        clearSiteKey();
-        throw new Error('Incorrect site access passphrase');
-      }
-    }
     if (!res.ok) throw new Error(`nano-banana request failed (${res.status})`);
     const data = await res.json();
     if (data.code !== 0) throw new Error(data.message || 'nano-banana edit failed');

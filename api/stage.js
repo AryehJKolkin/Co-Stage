@@ -1,12 +1,12 @@
-// Proxies CoStage's nano-banana staging requests through a serverless function
-// so the API key lives only in the NANOBANANA_API_KEY environment variable
-// (set in the Vercel dashboard, or in .env for local `vercel dev`) — it
-// never reaches the browser.
+// Proxies CoStage's staging requests to Google's Gemini image model so the
+// API key lives only in the GEMINI_API_KEY environment variable (set in the
+// Vercel dashboard, or in .env for local `vercel dev`) — it never reaches
+// the browser.
 
 export const config = { runtime: 'edge' };
 
-const NB_ENDPOINT = 'https://api.nanobananaapi.dev/v1/images/edit';
-const NB_MODEL = 'gemini-3-pro-image-preview';
+const GEMINI_ENDPOINT = 'https://generativelanguage.googleapis.com/v1beta/models';
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-3-pro-image-preview';
 
 // Best-effort per-instance rate limit. Resets on cold start and isn't shared
 // across instances — it's defense-in-depth against a runaway loop or casual
@@ -34,13 +34,28 @@ function isAllowedOrigin(req) {
   return allowedHosts.some(host => origin.includes(host));
 }
 
-// Lightweight session gate: the frontend prompts for this passphrase once and
-// sends it on every request. Set SITE_ACCESS_KEY in the Vercel dashboard to
-// require it; leave it unset to allow anyone with the site URL to use staging.
-function hasValidSiteKey(req) {
-  const required = process.env.SITE_ACCESS_KEY;
-  if (!required) return true; // gate disabled
-  return req.headers.get('x-site-key') === required;
+function arrayBufferToBase64(buf) {
+  const bytes = new Uint8Array(buf);
+  const chunkSize = 0x8000;
+  let binary = '';
+  for (let i = 0; i < bytes.length; i += chunkSize) {
+    binary += String.fromCharCode.apply(null, bytes.subarray(i, i + chunkSize));
+  }
+  return btoa(binary);
+}
+
+// Accepts either a data URL (from an uploaded file) or an http(s) URL (e.g.
+// a furniture catalogue reference photo) and returns Gemini's inlineData shape.
+async function toInlineData(src) {
+  const dataUrlMatch = src.match(/^data:([^;]+);base64,(.*)$/s);
+  if (dataUrlMatch) {
+    return { mimeType: dataUrlMatch[1], data: dataUrlMatch[2] };
+  }
+  const res = await fetch(src);
+  if (!res.ok) throw new Error(`Failed to fetch reference image (${res.status})`);
+  const mimeType = res.headers.get('content-type') || 'image/jpeg';
+  const data = arrayBufferToBase64(await res.arrayBuffer());
+  return { mimeType, data };
 }
 
 export default async function handler(req) {
@@ -58,13 +73,6 @@ export default async function handler(req) {
     });
   }
 
-  if (!hasValidSiteKey(req)) {
-    return new Response(JSON.stringify({ error: 'Unauthorized — enter the site access passphrase' }), {
-      status: 401,
-      headers: { 'Content-Type': 'application/json' },
-    });
-  }
-
   const ip = req.headers.get('x-forwarded-for')?.split(',')[0].trim() || 'unknown';
   if (isRateLimited(ip)) {
     return new Response(JSON.stringify({ error: 'Too many requests, slow down' }), {
@@ -73,9 +81,9 @@ export default async function handler(req) {
     });
   }
 
-  const key = process.env.NANOBANANA_API_KEY;
+  const key = process.env.GEMINI_API_KEY;
   if (!key) {
-    return new Response(JSON.stringify({ error: 'Server is missing NANOBANANA_API_KEY' }), {
+    return new Response(JSON.stringify({ error: 'Server is missing GEMINI_API_KEY' }), {
       status: 500,
       headers: { 'Content-Type': 'application/json' },
     });
@@ -99,23 +107,51 @@ export default async function handler(req) {
     });
   }
 
-  const nbRes = await fetch(NB_ENDPOINT, {
+  const imageList = Array.isArray(images) ? images : [images];
+
+  let parts;
+  try {
+    const inlineParts = await Promise.all(imageList.map(async img => ({ inlineData: await toInlineData(img) })));
+    parts = [...inlineParts, { text: prompt }];
+  } catch (err) {
+    return new Response(JSON.stringify({ error: `Failed to prepare images: ${err.message}` }), {
+      status: 400,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  }
+
+  const geminiRes = await fetch(`${GEMINI_ENDPOINT}/${GEMINI_MODEL}:generateContent`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': `Bearer ${key}`,
+      'x-goog-api-key': key,
     },
     body: JSON.stringify({
-      model: NB_MODEL,
-      image: Array.isArray(images) ? images : [images],
-      prompt,
-      num: 1,
+      contents: [{ parts }],
+      generationConfig: { responseModalities: ['TEXT', 'IMAGE'] },
     }),
   });
 
-  const data = await nbRes.text();
-  return new Response(data, {
-    status: nbRes.status,
+  const geminiData = await geminiRes.json();
+  if (!geminiRes.ok) {
+    return new Response(JSON.stringify({ code: geminiRes.status, message: geminiData.error?.message || 'Gemini API error', data: null }), {
+      status: geminiRes.status,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  }
+
+  const responseParts = geminiData.candidates?.[0]?.content?.parts || [];
+  const imagePart = responseParts.find(p => p.inlineData);
+  if (!imagePart) {
+    return new Response(JSON.stringify({ code: 1, message: 'Gemini returned no image', data: null }), {
+      status: 502,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  }
+
+  const url = `data:${imagePart.inlineData.mimeType};base64,${imagePart.inlineData.data}`;
+  return new Response(JSON.stringify({ code: 0, data: { url } }), {
+    status: 200,
     headers: { 'Content-Type': 'application/json' },
   });
 }
