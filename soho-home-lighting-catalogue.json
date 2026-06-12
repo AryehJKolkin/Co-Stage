@@ -1,0 +1,3328 @@
+{
+  "version": "1.0",
+  "source": "soho-home-lighting",
+  "builtAt": "2026-06-09T18:02:33.467Z",
+  "total": 83,
+  "products": [
+    {
+      "id": "archie-table-lamp-us",
+      "slug": "archie-table-lamp",
+      "name": "Archie Table Lamp, US",
+      "price": "$455",
+      "priceRaw": 455,
+      "category": "table lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Bordeaux"
+      ],
+      "materials": [
+        "Wood"
+      ],
+      "dimensions": {
+        "widthCm": 17.1,
+        "depthCm": 17.1,
+        "heightCm": 60,
+        "widthIn": 6.7,
+        "depthIn": 6.7,
+        "heightIn": 23.6,
+        "diameterCm": null,
+        "width": 0.17,
+        "depth": 0.17,
+        "height": 0.6,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/288169-25-11-27-soho-home-ss25-modern-comfy-shot-31-jaya-table-lamp-1286-ef-v1jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/288169-25-11-27-soho-home-ss25-modern-comfy-shot-31-jaya-table-lamp-1286-ef-v1jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/288168-25-11-27-soho-home-ss25-modern-comfy-shot-28-odell-sofa-1248-ef-v2jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/283374-72776540-listingjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/archie-table-lamp",
+      "source": "soho-home",
+      "description": "A tapered base extends into a ball spindle stem with a linen shade. Crafted from ash wood, the Archie lamp features a tapered base and a ball spindle stem in a rich bordeaux stain. At the top sits a linen shade with a contrasting trim.",
+      "sku": "72776557",
+      "scrapedAt": "2026-06-09T17:56:29.790Z"
+    },
+    {
+      "id": "janie-table-lamp-cream-us",
+      "slug": "janie-table-lamp",
+      "name": "Janie Table Lamp, Cream, US",
+      "price": "$495",
+      "priceRaw": 495,
+      "category": "table lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Cream"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 30,
+        "depthCm": 30,
+        "heightCm": 30,
+        "widthIn": 11.8,
+        "depthIn": 11.8,
+        "heightIn": 11.8,
+        "diameterCm": null,
+        "width": 0.3,
+        "depth": 0.3,
+        "height": 0.3,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b0%3b1%3b0/images/original/283355-72776908-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/283355-72776908-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/283356-72776908-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=445%3b0%3b445%3b0/images/original/288184-251201-soho-home-ss26-jakecurtis-shot15-basillargebedside-0452-r6jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/janie-table-lamp",
+      "source": "soho-home",
+      "description": "A dome-shaped shade is crafted from cream-colored glass for a warm glow. Inspired by the lights that sit on the outdoor tables at 180 House, our Janie table lamp is crafted from colored glass with brass bands around the base, stem and at the top of the shade.",
+      "sku": "72776915",
+      "scrapedAt": "2026-06-09T17:56:31.980Z"
+    },
+    {
+      "id": "garnett-table-lamp-us",
+      "slug": "garnett-table-lamp",
+      "name": "Garnett Table Lamp, US",
+      "price": "$345",
+      "priceRaw": 345,
+      "category": "table lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Wood"
+      ],
+      "materials": [
+        "Wood"
+      ],
+      "dimensions": {
+        "widthCm": 18.5,
+        "depthCm": 18.5,
+        "heightCm": 54,
+        "widthIn": 7.3,
+        "depthIn": 7.3,
+        "heightIn": 21.3,
+        "diameterCm": null,
+        "width": 0.19,
+        "depth": 0.19,
+        "height": 0.54,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/288175-25-11-27-soho-home-ss25-modern-comfy-shot-39-pietro-bedside-table-1542-efjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/288175-25-11-27-soho-home-ss25-modern-comfy-shot-39-pietro-bedside-table-1542-efjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/288174-25-11-27-soho-home-ss25-modern-comfy-shot-38-oakley-pillow-1523-efjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/288172-25-11-27-soho-home-ss25-modern-comfy-shot-23-murcell-oval-dining-table-1043-ef-v2-brown-footstooljpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/garnett-table-lamp",
+      "source": "soho-home",
+      "description": "A tapered, twisted stem made from warm oak supports a tall linen shade. Inspired by White City House, the Garnett table lamp features a warm oak stem with twisted detailing, resting on a glossy black base. The design is topped with a green linen shade trimmed in dark green.",
+      "sku": "72730719",
+      "scrapedAt": "2026-06-09T17:56:34.266Z"
+    },
+    {
+      "id": "wren-table-lamp-us",
+      "slug": "wren-table-lamp",
+      "name": "Wren Table Lamp, US",
+      "price": "$395",
+      "priceRaw": 395,
+      "category": "table lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Wood"
+      ],
+      "materials": [
+        "Wood"
+      ],
+      "dimensions": {
+        "widthCm": 16,
+        "depthCm": 12,
+        "heightCm": 55,
+        "widthIn": 6.3,
+        "depthIn": 4.7,
+        "heightIn": 21.7,
+        "diameterCm": null,
+        "width": 0.16,
+        "depth": 0.12,
+        "height": 0.55,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b0%3b1%3b0/images/original/284238-72798849-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/284238-72798849-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/284239-72798849-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/288180-25-11-27-soho-home-ss25-modern-comfy-shot-31-cullen-media-unit-1329-efjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/wren-table-lamp",
+      "source": "soho-home",
+      "description": "An angled, tapered parchment shade detailed with a leather lace trim complements a slanted oak base. Supported by a circular cast iron base, the angular stem of our Wren table lamp is carved from solid oak with antique brass accents. At the top, a tapered shade is crafted from light-colored parchment to let a soft, warm light shine through.",
+      "sku": "72798856",
+      "scrapedAt": "2026-06-09T17:56:36.300Z"
+    },
+    {
+      "id": "rio-portable-lamp-dark-emperador-marble",
+      "slug": "rio-portable-lamp-dark-emperador-marble",
+      "name": "Rio Portable Lamp, Dark Emperador Marble",
+      "price": "$395",
+      "priceRaw": 395,
+      "category": "table lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Brown"
+      ],
+      "materials": [
+        "Marble"
+      ],
+      "dimensions": {
+        "widthCm": 17,
+        "depthCm": 17,
+        "heightCm": 27,
+        "widthIn": 6.7,
+        "depthIn": 6.7,
+        "heightIn": 10.6,
+        "diameterCm": null,
+        "width": 0.17,
+        "depth": 0.17,
+        "height": 0.27,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b0%3b1%3b0/images/original/287851-251201-soho-home-ss26-jakecurtis-shotq0-samsonsideboarddetail-0336-hero-r6jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=445%3b0%3b445%3b0/images/original/287851-251201-soho-home-ss26-jakecurtis-shotq0-samsonsideboarddetail-0336-hero-r6jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=445%3b0%3b445%3b0/images/original/287850-251201-soho-home-ss26-jakecurtis-shot09-samsonsideboard-0325-hero-r6jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/283924-72777653-listingjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/rio-portable-lamp-dark-emperador-marble",
+      "source": "soho-home",
+      "description": "A domed shade made from moulded glass is perched on a solid, rechargeable base carved from Dark Emperador marble. Designed to adapt to your space, this portable and rechargeable lamp can be picked up and placed wherever you need it, whether it's on your bedside table or home workspace. Carved from Dark Emperador marble, the solid base holds a domed shade moulded to look as though it has been softly folded at the corners.",
+      "sku": "72777653",
+      "scrapedAt": "2026-06-09T17:56:38.668Z"
+    },
+    {
+      "id": "rio-portable-lamp-carrara-marble",
+      "slug": "rio-portable-lamp-carrara-marble",
+      "name": "Rio Portable Lamp, Carrara Marble",
+      "price": "$395",
+      "priceRaw": 395,
+      "category": "table lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "White"
+      ],
+      "materials": [
+        "Marble"
+      ],
+      "dimensions": {
+        "widthCm": 17,
+        "depthCm": 17,
+        "heightCm": 27,
+        "widthIn": 6.7,
+        "depthIn": 6.7,
+        "heightIn": 10.6,
+        "diameterCm": null,
+        "width": 0.17,
+        "depth": 0.17,
+        "height": 0.27,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b0%3b1%3b0/images/original/286448-72746055-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/286448-72746055-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/286449-72746055-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/286450-72746055-detail1jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/rio-portable-lamp-carrara-marble",
+      "source": "soho-home",
+      "description": "A domed shade made from moulded glass is perched on a solid, rechargeable base carved from Carrara marble. Designed to adapt to your space, this portable and rechargeable lamp can be picked up and placed wherever you need it, whether it's on your bedside table or home workspace. Carved from Carrara marble, the solid base holds a domed shade moulded to look as though it has been softly folded at the corners.",
+      "sku": "72746055",
+      "scrapedAt": "2026-06-09T17:56:40.846Z"
+    },
+    {
+      "id": "oxford-portable-lamp",
+      "slug": "oxford-portable-lamp",
+      "name": "Oxford Portable Lamp",
+      "price": "$395",
+      "priceRaw": 395,
+      "category": "table lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Brass"
+      ],
+      "materials": [
+        "Stainless Steel"
+      ],
+      "dimensions": {
+        "widthCm": 17,
+        "depthCm": 17,
+        "heightCm": 39,
+        "widthIn": 6.7,
+        "depthIn": 6.7,
+        "heightIn": 15.4,
+        "diameterCm": null,
+        "width": 0.17,
+        "depth": 0.17,
+        "height": 0.39,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b0%3b1%3b0/images/original/290945-soho-home-alabaster-mopup-22260174-r3jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=445%3b0%3b445%3b0/images/original/290945-soho-home-alabaster-mopup-22260174-r3jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/283330-72776977-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/283331-72776977-hoverjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/oxford-portable-lamp",
+      "source": "soho-home",
+      "description": "A square, pleated shade rests atop an antique brass stem and base. Influenced by Soho House Chicago, the Oxford portable lamp combines an antique brass faceted stem and a stepped, ribbed base. At the top sits a square-shaped linen shade, detailed with pleats and an elegant tassel trim.",
+      "sku": "72776977",
+      "scrapedAt": "2026-06-09T17:56:43.156Z"
+    },
+    {
+      "id": "emmie-portable-lamp",
+      "slug": "emmie-portable-lamp",
+      "name": "Emmie Portable Lamp",
+      "price": "$350",
+      "priceRaw": 350,
+      "category": "table lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Brass"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 16,
+        "depthCm": 16,
+        "heightCm": 28,
+        "widthIn": 6.3,
+        "depthIn": 6.3,
+        "heightIn": 11,
+        "diameterCm": null,
+        "width": 0.16,
+        "depth": 0.16,
+        "height": 0.28,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b125%3b0%3b125/images/original/184581-sh-vintage-hamish-237jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=278%3b0%3b278%3b0/images/original/184581-sh-vintage-hamish-237jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/181571-79956984-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/181572-79956984-hoverjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/emmie-portable-lamp",
+      "source": "soho-home",
+      "description": "Plated with antiqued brass, this compact table lamp is fully portable, so you can enjoy its warm glow in any room. Modelled on the lamps that create cosy pockets of light throughout The Snug in Little House Balham, the Emmie table lamp has a coned, fabric shade to create a soft, warm glow. It charges with a 'USB-C to USB-A' lead, so it can be placed anywhere without trailing wires.",
+      "sku": "79956984",
+      "scrapedAt": "2026-06-09T17:56:45.457Z"
+    },
+    {
+      "id": "elias-table-lamp-us",
+      "slug": "elias-table-lamp-uk",
+      "name": "Elias Table Lamp, US",
+      "price": "$795",
+      "priceRaw": 795,
+      "category": "table lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Green"
+      ],
+      "materials": [
+        "Glass"
+      ],
+      "dimensions": {
+        "widthCm": 28,
+        "depthCm": 28,
+        "heightCm": 42,
+        "widthIn": 11,
+        "depthIn": 11,
+        "heightIn": 16.5,
+        "diameterCm": null,
+        "width": 0.28,
+        "depth": 0.28,
+        "height": 0.42,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b0%3b1%3b0/images/original/230661-241119-soho-ss25vintage-theodore-armchair-605-r3jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=445%3b0%3b445%3b0/images/original/230661-241119-soho-ss25vintage-theodore-armchair-605-r3jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/181585-79958827-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/181586-79958827-hoverjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/elias-table-lamp-uk",
+      "source": "soho-home",
+      "description": "A tessellation of curved glass panels creates the warm glow of this table lamp. Inspired by Soho House Rome, the Elias table lamp is made from a tessellation of molded, green-tinted glass panels that gives it a warm, cozy glow. The curved glass is perched on a hexagonal base in an antiqued brass finish.",
+      "sku": "79958827",
+      "scrapedAt": "2026-06-09T17:56:47.768Z"
+    },
+    {
+      "id": "ferguson-table-lamp-green-us",
+      "slug": "ferguson-table-lamp",
+      "name": "Ferguson Table Lamp, Green, US",
+      "price": "$450",
+      "priceRaw": 450,
+      "category": "table lamp",
+      "room": "lighting",
+      "style": "traditional",
+      "colors": [
+        "Green"
+      ],
+      "materials": [
+        "Wood"
+      ],
+      "dimensions": {
+        "widthCm": 38,
+        "depthCm": 38,
+        "heightCm": 44,
+        "widthIn": 15,
+        "depthIn": 15,
+        "heightIn": 17.3,
+        "diameterCm": null,
+        "width": 0.38,
+        "depth": 0.38,
+        "height": 0.44,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/187773-79957073-listing.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/187773-79957073-listing.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/187772-79957073-hover.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/187774-79957073-detail4.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/ferguson-table-lamp",
+      "source": "soho-home",
+      "description": "The lacquered oak stem of this table lamp is topped with a scalloped linen shade. The design details of 180 House inspired the silhouette of the Ferguson table lamp. Its classic shape pairs a high-shine, green-stained base with a light linen shade.",
+      "sku": "79957073",
+      "scrapedAt": "2026-06-09T17:56:50.254Z"
+    },
+    {
+      "id": "janie-portable-lamp-pink",
+      "slug": "janie-portable-lamp",
+      "name": "Janie Portable Lamp, Pink",
+      "price": "$395",
+      "priceRaw": 395,
+      "category": "table lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Pink"
+      ],
+      "materials": [
+        "Glass"
+      ],
+      "dimensions": {
+        "widthCm": 23,
+        "depthCm": 23,
+        "heightCm": 25,
+        "widthIn": 9.1,
+        "depthIn": 9.1,
+        "heightIn": 9.8,
+        "diameterCm": null,
+        "width": 0.23,
+        "depth": 0.23,
+        "height": 0.25,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/262759-25-05-02-soho-home-aw25-caleb-3339-efjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/262759-25-05-02-soho-home-aw25-caleb-3339-efjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/279367-72735738-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/279368-72735738-hoverjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/janie-portable-lamp",
+      "source": "soho-home",
+      "description": "A portable, dome-shaped design is crafted from coloured glass for a warm glow. Inspired by the lights that sit on the outdoor tables at 180 House, our Janie lamp is crafted entirely from glass with brass bands around the base, stem and at the top of its domed shade. This lamp is fitted with a three-stage dimmer and is available in three colours that each cast a warm light across the room.",
+      "sku": "72735738",
+      "scrapedAt": "2026-06-09T17:56:52.476Z"
+    },
+    {
+      "id": "greyson-table-lamp-high-gloss-lacquer-olive-us",
+      "slug": "greyson-table-lamp-high-gloss-lacquer-olive",
+      "name": "Greyson Table Lamp, High Gloss Lacquer, Olive, US",
+      "price": "$595",
+      "priceRaw": 595,
+      "category": "table lamp",
+      "room": "lighting",
+      "style": "modern",
+      "colors": [
+        "Olive"
+      ],
+      "materials": [
+        "Lacquer"
+      ],
+      "dimensions": {
+        "widthCm": 44,
+        "depthCm": 44,
+        "heightCm": 62.3,
+        "widthIn": 17.3,
+        "depthIn": 17.3,
+        "heightIn": 24.5,
+        "diameterCm": null,
+        "width": 0.44,
+        "depth": 0.44,
+        "height": 0.62,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/281597-shot-22-tristan-bed-775-ef-v3-lightonjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/281597-shot-22-tristan-bed-775-ef-v3-lightonjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=235%3b0%3b235%3b0/images/original/55461-anders-230310-0787-sh-f1.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/185955-79945353-hoverjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/greyson-table-lamp-high-gloss-lacquer-olive",
+      "source": "soho-home",
+      "description": "Designed for our House in Rome, the Greyson table lamp features a high-gloss lacquered ring base, partitioned with antique brass details. Complemented with a linen shade, this modernist-inspired style will be a sophisticated addition to the living room or on top of a side table in the hall.",
+      "sku": "79945353",
+      "scrapedAt": "2026-06-09T17:56:54.826Z"
+    },
+    {
+      "id": "kea-table-lamp-us",
+      "slug": "kea-table-lamp",
+      "name": "Kea Table Lamp, US",
+      "price": "$650",
+      "priceRaw": 650,
+      "category": "table lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Brown"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 45,
+        "depthCm": 45,
+        "heightCm": 66,
+        "widthIn": 17.7,
+        "depthIn": 17.7,
+        "heightIn": 26,
+        "diameterCm": null,
+        "width": 0.45,
+        "depth": 0.45,
+        "height": 0.66,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/126351-79939765-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/126351-79939765-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/126352-79939765-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=300%3b0%3b301%3b0/images/original/124921-17-soho-home-vintage-ss24-4-carlisle-double-0542-table-lampjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/kea-table-lamp",
+      "source": "soho-home",
+      "description": "Layer your lighting scheme with unique shapes and materials. Our Kea table lamp has a patina base in a unique geometric shape, alongside a natural linen shade. Add to a bedside or hallway side table to bring the artistic elements of Soho House Amsterdam into your own home.",
+      "sku": "79939765",
+      "scrapedAt": "2026-06-09T17:56:57.169Z"
+    },
+    {
+      "id": "ruby-portable-lamp",
+      "slug": "ruby-portable-lamp",
+      "name": "Ruby Portable Lamp",
+      "price": "$350",
+      "priceRaw": 350,
+      "category": "table lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Silver"
+      ],
+      "materials": [
+        "Chrome"
+      ],
+      "dimensions": {
+        "widthCm": 14.5,
+        "depthCm": 14.5,
+        "heightCm": 27.5,
+        "widthIn": 5.7,
+        "depthIn": 5.7,
+        "heightIn": 10.8,
+        "diameterCm": null,
+        "width": 0.14,
+        "depth": 0.14,
+        "height": 0.28,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=9%3b0%3b10%3b0/images/original/262765-sh-showroom-shelving35128-v1jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=454%3b0%3b454%3b0/images/original/262765-sh-showroom-shelving35128-v1jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/262764-25-05-02-soho-home-aw25-caleb-3755-ef-v1jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/278985-79971895-listingjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/ruby-portable-lamp",
+      "source": "soho-home",
+      "description": "A lightweight, portable design is crafted from a mix of brass and mirrored chrome. A mix of brass and mirrored chrome create the base of our Ruby lamp, reflected in its cylindrical cap. Inspired by Soho House Amsterdam, this rechargeable light is fitted with a three-stage dimmer and a small closed shade that's pleated across the silhouette.",
+      "sku": "79973622",
+      "scrapedAt": "2026-06-09T17:56:59.739Z"
+    },
+    {
+      "id": "garnett-table-lamp-us",
+      "slug": "garnett-table-lamp/72730719",
+      "name": "Garnett Table Lamp, US",
+      "price": "$345",
+      "priceRaw": 345,
+      "category": "table lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Wood"
+      ],
+      "materials": [
+        "Wood"
+      ],
+      "dimensions": {
+        "widthCm": 18.5,
+        "depthCm": 18.5,
+        "heightCm": 54,
+        "widthIn": 7.3,
+        "depthIn": 7.3,
+        "heightIn": 21.3,
+        "diameterCm": null,
+        "width": 0.19,
+        "depth": 0.19,
+        "height": 0.54,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/288175-25-11-27-soho-home-ss25-modern-comfy-shot-39-pietro-bedside-table-1542-efjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/288175-25-11-27-soho-home-ss25-modern-comfy-shot-39-pietro-bedside-table-1542-efjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/288174-25-11-27-soho-home-ss25-modern-comfy-shot-38-oakley-pillow-1523-efjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/288172-25-11-27-soho-home-ss25-modern-comfy-shot-23-murcell-oval-dining-table-1043-ef-v2-brown-footstooljpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/garnett-table-lamp/72730719",
+      "source": "soho-home",
+      "description": "A tapered, twisted stem made from warm oak supports a tall linen shade. Inspired by White City House, the Garnett table lamp features a warm oak stem with twisted detailing, resting on a glossy black base. The design is topped with a green linen shade trimmed in dark green.",
+      "sku": "72730719",
+      "scrapedAt": "2026-06-09T17:57:04.773Z"
+    },
+    {
+      "id": "ferguson-table-lamp-neutral-us",
+      "slug": "ferguson-table-lamp-neutral",
+      "name": "Ferguson Table Lamp, Neutral, US",
+      "price": "$450",
+      "priceRaw": 450,
+      "category": "table lamp",
+      "room": "lighting",
+      "style": "traditional",
+      "colors": [
+        "Natural"
+      ],
+      "materials": [
+        "Wood"
+      ],
+      "dimensions": {
+        "widthCm": 38,
+        "depthCm": 38,
+        "heightCm": 44,
+        "widthIn": 15,
+        "depthIn": 15,
+        "heightIn": 17.3,
+        "diameterCm": null,
+        "width": 0.38,
+        "depth": 0.38,
+        "height": 0.44,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/184607-79970812-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/184607-79970812-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/184608-79970812-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b388%3b0/images/original/184603-79970812-detail1jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/ferguson-table-lamp-neutral",
+      "source": "soho-home",
+      "description": "The lacquered oak stem of this table lamp is topped with a scalloped linen shade. The design details of 180 House inspired the silhouette of the Ferguson table lamp. Its classic shape pairs a high-shine, stained base with a light linen shade.",
+      "sku": "79970812",
+      "scrapedAt": "2026-06-09T17:57:14.554Z"
+    },
+    {
+      "id": "franco-floor-lamp-abstract-burl-us",
+      "slug": "franco-floor-lamp",
+      "name": "Franco Floor Lamp, Abstract Burl, US",
+      "price": "$2,305",
+      "priceRaw": 2305,
+      "category": "floor lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Wood"
+      ],
+      "materials": [
+        "Wood"
+      ],
+      "dimensions": {
+        "widthCm": 35,
+        "depthCm": 35,
+        "heightCm": 160,
+        "widthIn": 13.8,
+        "depthIn": 13.8,
+        "heightIn": 63,
+        "diameterCm": null,
+        "width": 0.35,
+        "depth": 0.35,
+        "height": 1.6,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b0%3b1%3b0/images/original/288395-sh006-glamour-030jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=445%3b0%3b445%3b0/images/original/288395-sh006-glamour-030jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=0%3b0%3b889%3b0/images/original/288394-sh006-glamour-029jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/283990-72776694-listingjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/franco-floor-lamp",
+      "source": "soho-home",
+      "description": "Crafted from abstract burl, the stem is divided into five staggered sections and rests on a round base. Distinguished by a striking, staggered wooden stem, our Franco floor lamp is inspired by the interiors of Soho House Mexico City. Paired with a tapered shade, this lamp will add sculptural design to any room.",
+      "sku": "72776700",
+      "scrapedAt": "2026-06-09T17:57:29.244Z"
+    },
+    {
+      "id": "riccardo-floor-lamp-us",
+      "slug": "riccardo-floor-lamp",
+      "name": "Riccardo Floor Lamp, US",
+      "price": "$2,895",
+      "priceRaw": 2895,
+      "category": "floor lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "White"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 27,
+        "depthCm": 35,
+        "heightCm": 160,
+        "widthIn": 10.6,
+        "depthIn": 13.8,
+        "heightIn": 63,
+        "diameterCm": null,
+        "width": 0.27,
+        "depth": 0.35,
+        "height": 1.6,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/288390-sh006-glamour-007jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/288390-sh006-glamour-007jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/288391-sh006-glamour-010jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/284005-72776984-listingjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/riccardo-floor-lamp",
+      "source": "soho-home",
+      "description": "This sculptural silhouette features tapered glass diffusers in a milky white swirl finish. Inspired by Soho House Rome, our Riccardo floor lamp is made with an antique brass frame and eight tapered glass diffusers. Crafted to cast light through both the front and back, the lamp rests on a striking base made from Bulgari black marble.",
+      "sku": "72777646",
+      "scrapedAt": "2026-06-09T17:57:31.199Z"
+    },
+    {
+      "id": "dinis-floor-lamp-us",
+      "slug": "dinis-floor-lamp",
+      "name": "Dinis Floor Lamp, US",
+      "price": "$695",
+      "priceRaw": 695,
+      "category": "floor lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Black"
+      ],
+      "materials": [
+        "Iron"
+      ],
+      "dimensions": {
+        "widthCm": 50,
+        "depthCm": 50,
+        "heightCm": 165,
+        "widthIn": 19.7,
+        "depthIn": 19.7,
+        "heightIn": 65,
+        "diameterCm": null,
+        "width": 0.5,
+        "depth": 0.5,
+        "height": 1.65,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/288833-sh-vintage-roberts-place49048-v4-opt2-lampshadejpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/288833-sh-vintage-roberts-place49048-v4-opt2-lampshadejpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/283979-72776601-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/283980-72776601-hoverjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/dinis-floor-lamp",
+      "source": "soho-home",
+      "description": "A combination of tubular and flat metal is used to create a wavy stem with four integrated legs. Inspired by Shoreditch House, our Dinis floor lamp is topped with a tapered, ruched shade. The sculptural, wave-shaped stem and four integrated legs are finished in glossy black, creating a striking silhouette.",
+      "sku": "72776618",
+      "scrapedAt": "2026-06-09T17:57:33.476Z"
+    },
+    {
+      "id": "elias-floor-lamp-green-us",
+      "slug": "elias-floor-lamp-green",
+      "name": "Elias Floor Lamp, Green, US",
+      "price": "$2,895",
+      "priceRaw": 2895,
+      "category": "floor lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Green"
+      ],
+      "materials": [
+        "Glass"
+      ],
+      "dimensions": {
+        "widthCm": 46,
+        "depthCm": 46,
+        "heightCm": 140,
+        "widthIn": 18.1,
+        "depthIn": 18.1,
+        "heightIn": 55.1,
+        "diameterCm": null,
+        "width": 0.46,
+        "depth": 0.46,
+        "height": 1.4,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/182503-sh001-aw24-031-3x4jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/182503-sh001-aw24-031-3x4jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/288596-sh-vintage-roberts-place49552-v5-opt3jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/181514-79956571-listingjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/elias-floor-lamp-green",
+      "source": "soho-home",
+      "description": "Made using a tessellation of curved, molded glass, this floor lamp has a bulb at every level for an even, warm glow. Designed in-house, the Elias floor lamp is made from square blocks of green, molded glass stacked into a column-style silhouette. At the center, a brass-plated framework is treated with an antiqued finish.",
+      "sku": "79956571",
+      "scrapedAt": "2026-06-09T17:57:35.889Z"
+    },
+    {
+      "id": "greyson-floor-lamp-oak-tall-us",
+      "slug": "greyson-floor-lamp",
+      "name": "Greyson Floor Lamp, Oak, Tall, US",
+      "price": "$1,195",
+      "priceRaw": 1195,
+      "category": "floor lamp",
+      "room": "lighting",
+      "style": "traditional",
+      "colors": [
+        "Brown"
+      ],
+      "materials": [
+        "Wood"
+      ],
+      "dimensions": {
+        "widthCm": 48,
+        "depthCm": 48,
+        "heightCm": 153.6,
+        "widthIn": 18.9,
+        "depthIn": 18.9,
+        "heightIn": 60.5,
+        "diameterCm": null,
+        "width": 0.48,
+        "depth": 0.48,
+        "height": 1.54,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/185861-74594804-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/185861-74594804-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/185862-74594804-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=135%3b0%3b135%3b0/images/original/30536-greyson-floor-lamp-2.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/greyson-floor-lamp",
+      "source": "soho-home",
+      "description": "Originally designed for Soho House Rome, the Greyson floor lamp features a stacked, stained oak column with antique brass discs slotted in between for a contrasting finish. The classic floor lamp is complete with a slim, natural linen shade. Pair with our Greyson table lamp to mirror the cosy club spaces at Soho House Rome. Shop the Greyson Floor Lamp in Cream",
+      "sku": "74594804",
+      "scrapedAt": "2026-06-09T17:57:38.208Z"
+    },
+    {
+      "id": "spencer-arc-floor-lamp-us",
+      "slug": "spencer-arc-floor-lamp",
+      "name": "Spencer Arc Floor Lamp, US",
+      "price": "$1,995",
+      "priceRaw": 1995,
+      "category": "floor lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Brown"
+      ],
+      "materials": [
+        "Wood"
+      ],
+      "dimensions": {
+        "widthCm": 61,
+        "depthCm": 160.7,
+        "heightCm": 201.7,
+        "widthIn": 24,
+        "depthIn": 63.3,
+        "heightIn": 79.4,
+        "diameterCm": null,
+        "width": 0.61,
+        "depth": 1.61,
+        "height": 2.02,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b0%3b1%3b0/images/original/66496-79932681-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/66496-79932681-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/66495-79932681-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=443%3b0%3b444%3b0/images/original/67607-anders-230714-0343-sh-f1jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/spencer-arc-floor-lamp",
+      "source": "soho-home",
+      "description": "Referencing the lighting styles seen in Soho House Hong Kong, the Spencer floor lamp features a sleek arc shape for a stand-alone statement. A solid oak frame sits on antique brass feet, while a simple fabric shade enhances the lamp's sculptural lines. All of our portable lamps are fitted with dimmer switches, allowing you to adjust the light level to your mood.",
+      "sku": "79932681",
+      "scrapedAt": "2026-06-09T17:57:40.459Z"
+    },
+    {
+      "id": "winona-floor-lamp-us",
+      "slug": "winona-floor-lamp",
+      "name": "Winona Floor Lamp, US",
+      "price": "$1,695",
+      "priceRaw": 1695,
+      "category": "floor lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Brown"
+      ],
+      "materials": [
+        "Wood"
+      ],
+      "dimensions": {
+        "widthCm": 47.8,
+        "depthCm": 87,
+        "heightCm": 153,
+        "widthIn": 18.8,
+        "depthIn": 34.3,
+        "heightIn": 60.2,
+        "diameterCm": null,
+        "width": 0.48,
+        "depth": 0.87,
+        "height": 1.53,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b1%3b0%3b0/images/original/64083-79964392-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b388%3b0/images/original/64083-79964392-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/64082-79964392-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=338%3b0%3b338%3b0/images/original/68561-09082023-sohohome-aw23-mirror-025-rgb-3x4-crop.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/winona-floor-lamp",
+      "source": "soho-home",
+      "description": "Our Winona floor lamp considers both style and function in one distinguished design. Inspired by Soho House Amsterdam, the sculptural arch shape has a leather-wrapped arm with a turned solid oak base and a co-ordinating side table top. A tapered linen shade futher elevates this unique piece to create a stand-alone statement in any corner of the home. All of our portable lamps are fitted with dimmer switches, allowing you to tailor the light level to your mood.",
+      "sku": "79964392",
+      "scrapedAt": "2026-06-09T17:57:42.721Z"
+    },
+    {
+      "id": "felix-floor-lamp-us",
+      "slug": "felix-floor-lamp",
+      "name": "Felix Floor Lamp, US",
+      "price": "$1,395",
+      "priceRaw": 1395,
+      "category": "floor lamp",
+      "room": "lighting",
+      "style": "modern",
+      "colors": [
+        "Brown"
+      ],
+      "materials": [
+        "Wood"
+      ],
+      "dimensions": {
+        "widthCm": 40.5,
+        "depthCm": 40.5,
+        "heightCm": 170,
+        "widthIn": 15.9,
+        "depthIn": 15.9,
+        "heightIn": 66.9,
+        "diameterCm": null,
+        "width": 0.41,
+        "depth": 0.41,
+        "height": 1.7,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b3%3b0%3b2/images/original/50741-anders-230206-0180-sh-f1.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=414%3b0%3b414%3b0/images/original/50741-anders-230206-0180-sh-f1.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/290960-soho-home-alabaster-mopup-22260076-main-left-cushion-r3jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/185908-79945056-hoverjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/felix-floor-lamp",
+      "source": "soho-home",
+      "description": "Distinguished by a stem of wooden sculptural stacking beads in solid ash, the Felix floor lamp echoes the dark wood panelling of Soho House Holloway. Paired with a natural linen shade in a square shape and antique brass detail at the base, this contemporary design will bring a warm lighting scheme into any room.",
+      "sku": "79945056",
+      "scrapedAt": "2026-06-09T17:57:44.932Z"
+    },
+    {
+      "id": "wren-floor-lamp-complete-us",
+      "slug": "wren-floor-lamp",
+      "name": "Wren Floor Lamp, Complete, US",
+      "price": "$1,395",
+      "priceRaw": 1395,
+      "category": "floor lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Wood"
+      ],
+      "materials": [
+        "Wood"
+      ],
+      "dimensions": {
+        "widthCm": 50,
+        "depthCm": 61,
+        "heightCm": 160,
+        "widthIn": 19.7,
+        "depthIn": 24,
+        "heightIn": 63,
+        "diameterCm": null,
+        "width": 0.5,
+        "depth": 0.61,
+        "height": 1.6,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/243873-sh-reimagined-classic15079jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/243873-sh-reimagined-classic15079jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/243867-79979068-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/243868-79979068-hoverjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/wren-floor-lamp",
+      "source": "soho-home",
+      "description": "An angled, tapered parchment shade detailing with a leather lace trim complements a slanted oak base. Stabilized by a circular cast iron base, the angular stem of our Wren floor lamp is carved from solid oak. At the top, a tapered shade is crafted from light-colored parchment to let a soft, warm light shine through, and is finished with a contrasting leather lace trim.",
+      "sku": "79989326",
+      "scrapedAt": "2026-06-09T17:57:47.157Z"
+    },
+    {
+      "id": "elias-floor-lamp-white-us",
+      "slug": "elias-floor-lamp-white",
+      "name": "Elias Floor Lamp, White, US",
+      "price": "$2,895",
+      "priceRaw": 2895,
+      "category": "floor lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "White"
+      ],
+      "materials": [
+        "Glass"
+      ],
+      "dimensions": {
+        "widthCm": 46,
+        "depthCm": 46,
+        "heightCm": 140,
+        "widthIn": 18.1,
+        "depthIn": 18.1,
+        "heightIn": 55.1,
+        "diameterCm": null,
+        "width": 0.46,
+        "depth": 0.46,
+        "height": 1.4,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b0%3b1%3b0/images/original/260236-72735448-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/260236-72735448-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/260237-72735448-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/262908-25-05-02-soho-home-aw25-caleb-4501-ef-v3-1jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/elias-floor-lamp-white",
+      "source": "soho-home",
+      "description": "A tessellation of curved, moulded glass features a bulb fitted at every level for an even, warm glow. Our Elias floor lamp is made from square blocks of green moulded glass stacked into a column-style silhouette. At the centre, its brass-plated framework is treated with an antiqued finish.",
+      "sku": "72735462",
+      "scrapedAt": "2026-06-09T17:57:49.244Z"
+    },
+    {
+      "id": "alexander-floor-lamp-us",
+      "slug": "alexander-floor-lamp",
+      "name": "Alexander Floor Lamp, US",
+      "price": "$995",
+      "priceRaw": 995,
+      "category": "floor lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Brass"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 50,
+        "depthCm": 50,
+        "heightCm": 166,
+        "widthIn": 19.7,
+        "depthIn": 19.7,
+        "heightIn": 65.4,
+        "diameterCm": null,
+        "width": 0.5,
+        "depth": 0.5,
+        "height": 1.66,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/182514-sh001-aw24-001-3x4jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/182514-sh001-aw24-001-3x4jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/181709-79970621-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/181710-79970621-hoverjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/alexander-floor-lamp",
+      "source": "soho-home",
+      "description": "This floor lamp is crafted from real brass that's adorned with fine ribbed detailing around the stem. Inspired by the brass finishes and cozy pockets of light you'll find around Soho House 76 Dean Street, the Alexander floor lamp is topped with a pleated silk shade. A co-ordinating table lamp and wall sconce are also available.",
+      "sku": "79970621",
+      "scrapedAt": "2026-06-09T17:57:51.394Z"
+    },
+    {
+      "id": "beckett-leather-floor-lamp-patterned-shade-us",
+      "slug": "beckett-leather-floor-lamp-patterned-shade",
+      "name": "Beckett Leather Floor Lamp, Patterned Shade, US",
+      "price": "$1,195",
+      "priceRaw": 1195,
+      "category": "floor lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Black"
+      ],
+      "materials": [
+        "Leather"
+      ],
+      "dimensions": {
+        "widthCm": 40,
+        "depthCm": 40,
+        "heightCm": 159,
+        "widthIn": 15.7,
+        "depthIn": 15.7,
+        "heightIn": 62.6,
+        "diameterCm": null,
+        "width": 0.4,
+        "depth": 0.4,
+        "height": 1.59,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/125793-22-soho-home-vintage-ss24-4-beckett-0605jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/125793-22-soho-home-vintage-ss24-4-beckett-0605jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/126537-79962138-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/126538-79962138-hoverjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/beckett-leather-floor-lamp-patterned-shade",
+      "source": "soho-home",
+      "description": "The sleek design of our Beckett floor lamp takes its cues from Soho House 76 Dean Street, where rich interiors can be found in one of Westminster's oldest townhouses. A leather-wrapped base is detailed with hand stitching for an artisanal feel, alongside a patterned drum shade designed exclusively in-house and an antique brass base. Made to emit a warm glow, place in any corner of the room or to light up a hallway.",
+      "sku": "79962138",
+      "scrapedAt": "2026-06-09T17:57:53.895Z"
+    },
+    {
+      "id": "ferguson-floor-lamp-us",
+      "slug": "ferguson-floor-lamp",
+      "name": "Ferguson Floor Lamp, US",
+      "price": "$995",
+      "priceRaw": 995,
+      "category": "floor lamp",
+      "room": "lighting",
+      "style": "traditional",
+      "colors": [
+        "Green"
+      ],
+      "materials": [
+        "Wood"
+      ],
+      "dimensions": {
+        "widthCm": 57,
+        "depthCm": 57,
+        "heightCm": 160,
+        "widthIn": 22.4,
+        "depthIn": 22.4,
+        "heightIn": 63,
+        "diameterCm": null,
+        "width": 0.57,
+        "depth": 0.57,
+        "height": 1.6,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b125%3b0%3b125/images/original/182512-sh-vintage-hamish-243jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=278%3b0%3b278%3b0/images/original/182512-sh-vintage-hamish-243jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/181687-79967577-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/181688-79967577-hoverjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/ferguson-floor-lamp",
+      "source": "soho-home",
+      "description": "The lacquered oak stem of this floor lamp is topped with a scalloped linen shade. The design details of 180 House inspired the shape of the Ferguson floor lamp. Its classic silhouette pairs a high-shine, stained base with a light linen shade.",
+      "sku": "79967577",
+      "scrapedAt": "2026-06-09T17:57:56.235Z"
+    },
+    {
+      "id": "greyson-floor-lamp-high-gloss-lacquer-olive-us",
+      "slug": "greyson-floor-lamp-high-gloss-lacquer",
+      "name": "Greyson Floor Lamp, High Gloss Lacquer, Olive, US",
+      "price": "$1,395",
+      "priceRaw": 1395,
+      "category": "floor lamp",
+      "room": "lighting",
+      "style": "modern",
+      "colors": [
+        "Olive"
+      ],
+      "materials": [
+        "Lacquer"
+      ],
+      "dimensions": {
+        "widthCm": 48,
+        "depthCm": 48,
+        "heightCm": 168,
+        "widthIn": 18.9,
+        "depthIn": 18.9,
+        "heightIn": 66.1,
+        "diameterCm": null,
+        "width": 0.48,
+        "depth": 0.48,
+        "height": 1.68,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b0%3b1%3b0/images/original/164432-72724886-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/164432-72724886-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/164433-72724886-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/164430-72724886-detail1jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/greyson-floor-lamp-high-gloss-lacquer",
+      "source": "soho-home",
+      "description": "Designed for Soho House Rome, the Greyson floor lamp is an extension of the Greyson range, featuring a high-gloss lacquered ring base, partitioned with antique brass details and a complementary linen shade. This modernist-inspired style will become a sophisticated addition in the living room or hallway.",
+      "sku": "72724886",
+      "scrapedAt": "2026-06-09T17:57:58.355Z"
+    },
+    {
+      "id": "beckett-leather-floor-lamp-us",
+      "slug": "beckett-leather-floor-lamp",
+      "name": "Beckett Leather Floor Lamp, US",
+      "price": "$1,195",
+      "priceRaw": 1195,
+      "category": "floor lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Black"
+      ],
+      "materials": [
+        "Leather"
+      ],
+      "dimensions": {
+        "widthCm": 40,
+        "depthCm": 40,
+        "heightCm": 159,
+        "widthIn": 15.7,
+        "depthIn": 15.7,
+        "heightIn": 62.6,
+        "diameterCm": null,
+        "width": 0.4,
+        "depth": 0.4,
+        "height": 1.59,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/50101-79920282-hover.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/50101-79920282-hover.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/50100-79920282-listing.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/50102-79920282-detail3.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/beckett-leather-floor-lamp",
+      "source": "soho-home",
+      "description": "The sleek, masculine design of our Beckett floor lamp takes its cues from Soho House 76 Dean Street, where rich interiors can be found in one of Westminster's oldest townhouses. A leather-wrapped body with contrasting hand-stitched detail is complemented by a cream linen, tapered drum shade and an antique brass base. Made to emit a warm glow, place in any corner of the room or to light up a hallway.",
+      "sku": "79920282",
+      "scrapedAt": "2026-06-09T17:58:00.752Z"
+    },
+    {
+      "id": "beatrice-floor-lamp-us",
+      "slug": "beatrice-floor-lamp",
+      "name": "Beatrice Floor Lamp, US",
+      "price": "$895",
+      "priceRaw": 895,
+      "category": "floor lamp",
+      "room": "lighting",
+      "style": "traditional",
+      "colors": [
+        "Brass"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 31,
+        "depthCm": 78,
+        "heightCm": 171,
+        "widthIn": 12.2,
+        "depthIn": 30.7,
+        "heightIn": 67.3,
+        "diameterCm": null,
+        "width": 0.31,
+        "depth": 0.78,
+        "height": 1.71,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b1%3b0%3b0/images/original/181500-79956533-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b388%3b0/images/original/181500-79956533-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/181501-79956533-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/181497-79956533-detail1jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/beatrice-floor-lamp",
+      "source": "soho-home",
+      "description": "The angular silhouette of this floor lamp is topped with a neutral-toned parchment shade laced with contrasting leather With an angular silhouette similar to traditional task lamps, the Beatrice floor lamp has an antiqued brass finish to evoke the historical surroundings of Soho House Amsterdam. It's fitted with pivoting mechanisms at the top and bottom to adjust the angle of the light.",
+      "sku": "79956533",
+      "scrapedAt": "2026-06-09T17:58:03.330Z"
+    },
+    {
+      "id": "sergio-floor-lamp-us",
+      "slug": "sergio-floor-lamp",
+      "name": "Sergio Floor Lamp, US",
+      "price": "$5,195",
+      "priceRaw": 5195,
+      "category": "floor lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Alabaster"
+      ],
+      "materials": [
+        "Alabaster"
+      ],
+      "dimensions": {
+        "widthCm": 29,
+        "depthCm": 29,
+        "heightCm": 60,
+        "widthIn": 11.4,
+        "depthIn": 11.4,
+        "heightIn": 23.6,
+        "diameterCm": null,
+        "width": 0.29,
+        "depth": 0.29,
+        "height": 0.6,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/275312-25-05-02-soho-home-aw25-caleb-3959-ef-v2jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/275312-25-05-02-soho-home-aw25-caleb-3959-ef-v2jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/260284-78133599-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/260285-78133599-hoverjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/sergio-floor-lamp",
+      "source": "soho-home",
+      "description": "An alternating stack of faceted alabaster blocks is lit from within to subtly illuminate the stone's natural veining. Our Sergio floor lamp is created using stacked blocks of alabaster stone, with faceted surfaces and inset sections creating a sculptural silhouette that plays with light and shadow.",
+      "sku": "78133605",
+      "scrapedAt": "2026-06-09T17:58:05.607Z"
+    },
+    {
+      "id": "oakland-floor-lamp-us",
+      "slug": "oakland-floor-lamp",
+      "name": "Oakland Floor Lamp, US",
+      "price": "$850",
+      "priceRaw": 850,
+      "category": "floor lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Brown"
+      ],
+      "materials": [
+        "Rattan"
+      ],
+      "dimensions": {
+        "widthCm": 54.5,
+        "depthCm": 54.5,
+        "heightCm": 154,
+        "widthIn": 21.5,
+        "depthIn": 21.5,
+        "heightIn": 60.6,
+        "diameterCm": null,
+        "width": 0.55,
+        "depth": 0.55,
+        "height": 1.54,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/48205-74594965-hover.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/48205-74594965-hover.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=426%3b0%3b426%3b0/images/original/50014-anders-220320-697-sh-hero-f1.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/48206-74594965-listing.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/oakland-floor-lamp",
+      "source": "soho-home",
+      "description": "Our dimmable Oakland floor lamp is made from natural rattan with a fully wrapped rattan base, rippled column, and cone-shaped wicker shade. Taking cues from the natural surroundings of Soho Roc House, this beach house-style floor lamp can be paired with the Oakland table lamp to bring a relaxed, coastal charm into your home.",
+      "sku": "74599908",
+      "scrapedAt": "2026-06-09T17:58:08.128Z"
+    },
+    {
+      "id": "coletta-floor-lamp-complete-us",
+      "slug": "coletta-floor-lamp",
+      "name": "Coletta Floor Lamp, Complete, US",
+      "price": "$1,395",
+      "priceRaw": 1395,
+      "category": "floor lamp",
+      "room": "lighting",
+      "style": "art deco",
+      "colors": [
+        "White"
+      ],
+      "materials": [
+        "Marble"
+      ],
+      "dimensions": {
+        "widthCm": 33,
+        "depthCm": 50,
+        "heightCm": 148,
+        "widthIn": 13,
+        "depthIn": 19.7,
+        "heightIn": 58.3,
+        "diameterCm": null,
+        "width": 0.33,
+        "depth": 0.5,
+        "height": 1.48,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b0%3b1%3b0/images/original/226208-79973691-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/226208-79973691-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/226209-79973691-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/249569-coletta-floor-lamp-283-base-efjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/coletta-floor-lamp",
+      "source": "soho-home",
+      "description": "A tapered base and functional table are carved from solid Arabescato marble, finished with a sprayed cocoon shade. Inspired by the marble finishes seen in Soho House Rome, our Coletta floor lamp uses a grey and white Arabescato marble to create a tapered base fitted with a functional table for decor or books. A slender stem fitted with a dimmer function holds a light, spherical shade.",
+      "sku": "79973707",
+      "scrapedAt": "2026-06-09T17:58:10.393Z"
+    },
+    {
+      "id": "seed-floor-lamp-white-us",
+      "slug": "seed-floor-lamp-white",
+      "name": "Seed Floor Lamp, White, US",
+      "price": "$725",
+      "priceRaw": 725,
+      "category": "floor lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "White"
+      ],
+      "materials": [
+        "Marble"
+      ],
+      "dimensions": {
+        "widthCm": 36,
+        "depthCm": 36,
+        "heightCm": 175,
+        "widthIn": 14.2,
+        "depthIn": 14.2,
+        "heightIn": 68.9,
+        "diameterCm": null,
+        "width": 0.36,
+        "depth": 0.36,
+        "height": 1.75,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/37093-74594279-listing.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/37093-74594279-listing.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=433%3b0%3b433%3b0/images/original/40462-anders-220805-0824-sh-f1-v1.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/37092-74594279-hover.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/seed-floor-lamp-white",
+      "source": "soho-home",
+      "description": "The lighting schemes in White City House and 180 House formed the inspiration for our Seed floor lamp, which features a cluster of bisected orbs connected to a solid brass frame. Also known as raw or uncoated brass, ours is brushed to give the lamp its antique aesthetic, and is left without a protective coating. It therefore ages over time and develops a beautiful patina that adds character to new and old homes alike. Grounded by a honed Italian marble base, this floor lamp serves as a versatile",
+      "sku": "74594279",
+      "scrapedAt": "2026-06-09T17:58:12.538Z"
+    },
+    {
+      "id": "flint-wall-light-us",
+      "slug": "flint-wall-light",
+      "name": "Flint Wall Light, US",
+      "price": "$395",
+      "priceRaw": 395,
+      "category": "wall light",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Iron"
+      ],
+      "materials": [
+        "Iron"
+      ],
+      "dimensions": {
+        "widthCm": 16,
+        "depthCm": 16,
+        "heightCm": 26,
+        "widthIn": 6.3,
+        "depthIn": 6.3,
+        "heightIn": 10.2,
+        "diameterCm": null,
+        "width": 0.16,
+        "depth": 0.16,
+        "height": 0.26,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b0%3b1%3b0/images/original/260923-72730023-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/260923-72730023-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/260924-72730023-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/260925-72730023-detail1jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/flint-wall-light",
+      "source": "soho-home",
+      "description": "A curved, textured shade sits flush against the wall and is finished with contrasting leather detailing woven by hand. Our Flint wall light has a blackened brass frame treated to a subtly hammered finish, with a square backplate to help its curved shade sit against the wall.",
+      "sku": "72730030",
+      "scrapedAt": "2026-06-09T17:58:27.003Z"
+    },
+    {
+      "id": "belsize-wall-light-us-ip44",
+      "slug": "belsize-wall-light-uk-ip44",
+      "name": "Belsize Wall Light, US, IP44",
+      "price": "$450",
+      "priceRaw": 450,
+      "category": "wall light",
+      "room": "lighting",
+      "style": "art deco",
+      "colors": [
+        "Brass"
+      ],
+      "materials": [
+        "Stainless Steel"
+      ],
+      "dimensions": {
+        "widthCm": 12.7,
+        "depthCm": 16,
+        "heightCm": 38,
+        "widthIn": 5,
+        "depthIn": 6.3,
+        "heightIn": 15,
+        "diameterCm": null,
+        "width": 0.13,
+        "depth": 0.16,
+        "height": 0.38,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b0%3b1%3b0/images/original/283350-78129363-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/283350-78129363-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/283351-78129363-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/283352-78129363-detail1jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/belsize-wall-light-uk-ip44",
+      "source": "soho-home",
+      "description": "An elegant opal glass globe rests on a decorative antique brass fixture. Inspired by 180 House, the opal glass globe of our Belsize wall light is set on an antique brass frame with matching accents that highlight the glass. Three Dark Emperador marble spheres introduce a subtle contrast to the design.",
+      "sku": "78129370",
+      "scrapedAt": "2026-06-09T17:58:29.357Z"
+    },
+    {
+      "id": "floria-wall-light-calacatta-viola-marble-ip44-us",
+      "slug": "floria-wall-light",
+      "name": "Floria Wall Light, Calacatta Viola Marble, IP44, US",
+      "price": "$245",
+      "priceRaw": 245,
+      "category": "wall light",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "White"
+      ],
+      "materials": [
+        "Calacatta Viola Marble"
+      ],
+      "dimensions": {
+        "widthCm": 16.3,
+        "depthCm": 16.3,
+        "heightCm": 13.6,
+        "widthIn": 6.4,
+        "depthIn": 6.4,
+        "heightIn": 5.4,
+        "diameterCm": null,
+        "width": 0.16,
+        "depth": 0.16,
+        "height": 0.14,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b0%3b1%3b0/images/original/283363-72776786-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/283363-72776786-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/282991-72776786-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/283364-72776786-detail1jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/floria-wall-light",
+      "source": "soho-home",
+      "description": "A glass globe rests atop a marble wall plate with a reeded, curved silhouette. The Floria wall light draws inspiration from the interiors of DUMBO House, showcasing a swirl glass globe in frosted opal. Available in a range of marble finishes, the wall plate features a reeded, flower-like silhouette.",
+      "sku": "72776793",
+      "scrapedAt": "2026-06-09T17:58:31.495Z"
+    },
+    {
+      "id": "colette-wall-light-us",
+      "slug": "colette-wall-light",
+      "name": "Colette Wall Light, US",
+      "price": "$650",
+      "priceRaw": 650,
+      "category": "wall light",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Brass"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 27.8,
+        "depthCm": 15.5,
+        "heightCm": 19.5,
+        "widthIn": 10.9,
+        "depthIn": 6.1,
+        "heightIn": 7.7,
+        "diameterCm": null,
+        "width": 0.28,
+        "depth": 0.16,
+        "height": 0.2,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/290916-soho-home-alabaster-mopup-22260149-main-left-light-r3-newjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/290916-soho-home-alabaster-mopup-22260149-main-left-light-r3-newjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/283369-72776670-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/283370-72776670-hoverjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/colette-wall-light",
+      "source": "soho-home",
+      "description": "A double, symmetrical design with ribbed brass arms and reeded glass shades. Our Colette wall light has two reeded glass shades with frosted interiors. An antique brass frame and ribbed arms support each shade, while Dark Emperador marble spheres sit below for an elegant finish.",
+      "sku": "72776687",
+      "scrapedAt": "2026-06-09T17:58:33.673Z"
+    },
+    {
+      "id": "mallory-wall-light-alabaster-us",
+      "slug": "mallory-wall-light-alabaster",
+      "name": "Mallory Wall Light, Alabaster, US",
+      "price": "$1,895",
+      "priceRaw": 1895,
+      "category": "wall light",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "White"
+      ],
+      "materials": [
+        "Marble"
+      ],
+      "dimensions": {
+        "widthCm": 25,
+        "depthCm": 12,
+        "heightCm": 24,
+        "widthIn": 9.8,
+        "depthIn": 4.7,
+        "heightIn": 9.4,
+        "diameterCm": null,
+        "width": 0.25,
+        "depth": 0.12,
+        "height": 0.24,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b0%3b1%3b0/images/original/220578-79979471-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/220578-79979471-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/220579-79979471-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/220580-79979471-detail1jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/mallory-wall-light-alabaster",
+      "source": "soho-home",
+      "description": "An alabaster marble silhouette detailed with hand-carved scallops. The gently flared silhouette of our Mallory wall sconce is detailed with scalloped patternwork carved by hand. An alabaster stone lets the light shine through and is detailed with brass hardware inspired by our Houses.",
+      "sku": "79979488",
+      "scrapedAt": "2026-06-09T17:58:36.020Z"
+    },
+    {
+      "id": "estelle-wall-light-us",
+      "slug": "estelle-wall-light",
+      "name": "Estelle Wall Light, US",
+      "price": "$895",
+      "priceRaw": 895,
+      "category": "wall light",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "White"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 20,
+        "depthCm": 10,
+        "heightCm": 40,
+        "widthIn": 7.9,
+        "depthIn": 3.9,
+        "heightIn": 15.7,
+        "diameterCm": null,
+        "width": 0.2,
+        "depth": 0.1,
+        "height": 0.4,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=332%3b0%3b332%3b0/images/original/182616-witley-green-detail5jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=776%3b0%3b777%3b0/images/original/182616-witley-green-detail5jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=777%3b0%3b777%3b0/images/original/182617-witley-green-detail8jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/126406-79939987-listingjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/estelle-wall-light",
+      "source": "soho-home",
+      "description": "Suspended layers of micro bubble glass add texture to our vintage-inspired Estelle wall light, echoing similar styles seen in DUMBO House. Detailed with real solid brass metalwork, this unique design also features glass caps over the bulbs to offer a soft, diffused light in the bathroom, as well as other areas of the home.",
+      "sku": "79939987",
+      "scrapedAt": "2026-06-09T17:58:38.244Z"
+    },
+    {
+      "id": "cara-wall-light-us",
+      "slug": "cara-wall-light",
+      "name": "Cara Wall Light, US",
+      "price": "$895",
+      "priceRaw": 895,
+      "category": "wall light",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Brass"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 55,
+        "depthCm": 15,
+        "heightCm": 15.2,
+        "widthIn": 21.7,
+        "depthIn": 5.9,
+        "heightIn": 6,
+        "diameterCm": null,
+        "width": 0.55,
+        "depth": 0.15,
+        "height": 0.15,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b0%3b1%3b0/images/original/225350-79979280-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/225350-79979280-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/225351-79979280-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/225352-79979280-detail1jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/cara-wall-light",
+      "source": "soho-home",
+      "description": "A real brass stem secures two globe-shaped lamps carved from an alabaster stone. Inspired by similar styles seen throughout the bedrooms of Soho House Rome, our Cara wall sconce is characterized by two globe-shaped lamps carved from alabaster stone. Its slender frame and two circular components are crafted from real brass hardware.",
+      "sku": "79979389",
+      "scrapedAt": "2026-06-09T17:58:40.577Z"
+    },
+    {
+      "id": "alexander-wall-light-us",
+      "slug": "alexander-wall-light",
+      "name": "Alexander Wall Light, US",
+      "price": "$350",
+      "priceRaw": 350,
+      "category": "wall light",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Cream"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 13,
+        "depthCm": 15,
+        "heightCm": 27,
+        "widthIn": 5.1,
+        "depthIn": 5.9,
+        "heightIn": 10.6,
+        "diameterCm": null,
+        "width": 0.13,
+        "depth": 0.15,
+        "height": 0.27,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/291019-25-11-27-soho-home-ss25-modern-comfy-shot-13-leo-six-drawer-dresser-642-v1jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/291019-25-11-27-soho-home-ss25-modern-comfy-shot-13-leo-six-drawer-dresser-642-v1jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/291020-25-11-27-soho-home-ss25-modern-comfy-shot-16-theodore-burl-linen-chenille-765-ef-v1jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/181722-79971352-listingjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/alexander-wall-light",
+      "source": "soho-home",
+      "description": "This wall sconce is crafted from real brass that's adorned with fine ribbed detailing around the arm. Inspired by the brass finishes and cozy pockets of light you'll find around Soho House 76 Dean Street, this wall-mounted sconce is topped with a pleated silk shade. A co-ordinating table lamp and floor lamp are also available.",
+      "sku": "79971352",
+      "scrapedAt": "2026-06-09T17:58:43.041Z"
+    },
+    {
+      "id": "oregan-wall-light-us",
+      "slug": "oregan-wall-light",
+      "name": "Oregan Wall Light, US",
+      "price": "$350",
+      "priceRaw": 350,
+      "category": "wall light",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Clear"
+      ],
+      "materials": [
+        "Glass"
+      ],
+      "dimensions": {
+        "widthCm": 13.5,
+        "depthCm": 15,
+        "heightCm": 20.2,
+        "widthIn": 5.3,
+        "depthIn": 5.9,
+        "heightIn": 8,
+        "diameterCm": null,
+        "width": 0.14,
+        "depth": 0.15,
+        "height": 0.2,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/36953-74583600-hover.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/36953-74583600-hover.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=416%3b0%3b416%3b0/images/original/48609-anders-230113-0748-sh-f1.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/36954-74583600-listing.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/oregan-wall-light",
+      "source": "soho-home",
+      "description": "The Oregan wall light has a vintage feel that references the styles at White City House with a cast bubbled glass shade and raw brass metalwork. Our brass is brushed to give an antique feel, and is left without a protective coating. It therefore ages over time to develop a beautiful patina that adds character to new and old homes alike. Fit it by your bed to create a soft ambient light, ideal for unwinding.",
+      "sku": "74583600",
+      "scrapedAt": "2026-06-09T17:58:45.574Z"
+    },
+    {
+      "id": "viola-wall-light-bronze-us",
+      "slug": "viola-wall-light-bronze",
+      "name": "Viola Wall Light, Bronze, US",
+      "price": "$350",
+      "priceRaw": 350,
+      "category": "wall light",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Cream"
+      ],
+      "materials": [
+        "Fabric"
+      ],
+      "dimensions": {
+        "widthCm": 19,
+        "depthCm": 19,
+        "heightCm": 30,
+        "widthIn": 7.5,
+        "depthIn": 7.5,
+        "heightIn": 11.8,
+        "diameterCm": null,
+        "width": 0.19,
+        "depth": 0.19,
+        "height": 0.3,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b0%3b1%3b0/images/original/181812-79994481-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/181812-79994481-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/181813-79994481-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/181810-79994481-detail1jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/viola-wall-light-bronze",
+      "source": "soho-home",
+      "description": "This sconce is secured by a fluted bronze arm that was created using a bespoke mold. The Viola sconce's tapered shade is made from patterned linen that is pleated by hand. It takes style cues from the neutral-toned lighting seen throughout Soho House Rome.",
+      "sku": "79994481",
+      "scrapedAt": "2026-06-09T17:58:47.767Z"
+    },
+    {
+      "id": "benny-wall-light-small-us",
+      "slug": "benny-wall-sconce",
+      "name": "Benny Wall Light, Small, US",
+      "price": "$350",
+      "priceRaw": 350,
+      "category": "wall light",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Brass"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "dimensions": {
+        "widthCm": 16,
+        "depthCm": 25,
+        "heightCm": 27,
+        "widthIn": 6.3,
+        "depthIn": 9.8,
+        "heightIn": 10.6,
+        "diameterCm": null,
+        "width": 0.16,
+        "depth": 0.25,
+        "height": 0.27,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/24952-anders-210727-225-sh-hero-f1.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=415%3b0%3b415%3b0/images/original/24952-anders-210727-225-sh-hero-f1.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/22518-74542157-listing.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/22519-74542157-hover.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/benny-wall-sconce",
+      "source": "soho-home",
+      "description": "The Benny wall light has a vintage feel that references the styles at Soho Warehouse, LA. The adjustable light has a ribbed glass shade, and designed with antique brass finish arms that move to suit your lighting needs. Fit it by your bedside to create directional light for late-night reading.",
+      "sku": "74542164",
+      "scrapedAt": "2026-06-09T17:58:51.167Z"
+    },
+    {
+      "id": "ashby-picture-light-18-us",
+      "slug": "ashby-picture-light-small",
+      "name": "Ashby Picture Light, 18', US",
+      "price": "$495",
+      "priceRaw": 495,
+      "category": "wall light",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Brass"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 46,
+        "depthCm": 24,
+        "heightCm": 7,
+        "widthIn": 18.1,
+        "depthIn": 9.4,
+        "heightIn": 2.8,
+        "diameterCm": null,
+        "width": 0.46,
+        "depth": 0.24,
+        "height": 0.07,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/126500-79954867-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/126500-79954867-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/126501-79954867-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/126497-79954867-detail1jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/ashby-picture-light-small",
+      "source": "soho-home",
+      "description": "Recreate the Soho House art aesthetic in your own home with our Ashby picture light. Designed to complement your artworks' surroundings, this functional and adjustable design has been crafted using aged, real solid brass for a vintage look with ribbed detail. Available in two sizes, use it to add character and personality, as we would in Soho House Hong Kong with multiple picture walls.",
+      "sku": "79954867",
+      "scrapedAt": "2026-06-09T17:58:54.176Z"
+    },
+    {
+      "id": "enrica-picture-light-18-us",
+      "slug": "enrica-picture-light-medium",
+      "name": "Enrica Picture Light, 18' US",
+      "price": "$495",
+      "priceRaw": 495,
+      "category": "wall light",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Brass"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 46,
+        "depthCm": 22,
+        "heightCm": 10,
+        "widthIn": 18.1,
+        "depthIn": 8.7,
+        "heightIn": 3.9,
+        "diameterCm": null,
+        "width": 0.46,
+        "depth": 0.22,
+        "height": 0.1,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/126495-79954836-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/126495-79954836-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/126496-79954836-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/126492-79954836-detail1jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/enrica-picture-light-medium",
+      "source": "soho-home",
+      "description": "Recreate the Soho House art aesthetic in your own home with our Enrica picture light. Designed to complement your artworks' surroundings, this functional and adjustable design has been crafted using solid brass, which will patina over time. Available in two sizes, use it to add character and personality, as we would in Shoreditch House with multiple picture walls.",
+      "sku": "79954836",
+      "scrapedAt": "2026-06-09T17:58:56.732Z"
+    },
+    {
+      "id": "aaron-wall-light-us",
+      "slug": "aaron-wall-light",
+      "name": "Aaron Wall Light, US",
+      "price": "$395",
+      "priceRaw": 395,
+      "category": "wall light",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "White"
+      ],
+      "materials": [
+        "Plaster"
+      ],
+      "dimensions": {
+        "widthCm": 16,
+        "depthCm": 17.1,
+        "heightCm": 55,
+        "widthIn": 6.3,
+        "depthIn": 6.7,
+        "heightIn": 21.7,
+        "diameterCm": null,
+        "width": 0.16,
+        "depth": 0.17,
+        "height": 0.55,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/48677-74592701-hover.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/48677-74592701-hover.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=249%3b0%3b250%3b0/images/original/51388-230220-soho-home-ss23-shot-009-web.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/48679-74592701.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/aaron-wall-light",
+      "source": "soho-home",
+      "description": "The Aaron wall light takes inspiration from the sun-worn Bauhaus architecture in and around Soho House Tel Aviv, Jaffa. Its textural plastered finish is created by adding in gradual layers of putty and water-based paint. Designed to emit a cozy, ambient light with a tall lampshade, this style is ideal in narrower areas like a hallway for a warm welcome home.",
+      "sku": "74592749",
+      "scrapedAt": "2026-06-09T17:58:58.958Z"
+    },
+    {
+      "id": "avena-wall-light-alabaster-globe-us",
+      "slug": "avena-wall-light-alabaster-globe",
+      "name": "Avena Wall Light, Alabaster Globe, US",
+      "price": "$795",
+      "priceRaw": 795,
+      "category": "wall light",
+      "room": "lighting",
+      "style": "modern",
+      "colors": [
+        "Brass"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 25.8,
+        "depthCm": 15.1,
+        "heightCm": 25.8,
+        "widthIn": 10.2,
+        "depthIn": 5.9,
+        "heightIn": 10.2,
+        "diameterCm": null,
+        "width": 0.26,
+        "depth": 0.15,
+        "height": 0.26,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/64016-79913758-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/64016-79913758-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/64015-79913758-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/64011-79913758-detail1jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/avena-wall-light-alabaster-globe",
+      "source": "soho-home",
+      "description": "A mix of contemporary shapes and finishes makes our Avena wall light one of a kind. Inspired by Soho House Rome, an alabaster oval globe sits on a precious brass dish with a circular back. Each pattern in the alabaster stone varies, making each piece unique to the next. Place either side of the bathroom mirror for a soft lighting scheme with a modern twist.",
+      "sku": "79913758",
+      "scrapedAt": "2026-06-09T17:59:01.316Z"
+    },
+    {
+      "id": "andro-picture-light-12-6-inch-head-us",
+      "slug": "andro-picture-light-small",
+      "name": "Andro Picture Light, 12.6 Inch Head, US",
+      "price": "$650",
+      "priceRaw": 650,
+      "category": "wall light",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Grey"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 32,
+        "depthCm": 20,
+        "heightCm": 7.4,
+        "widthIn": 12.6,
+        "depthIn": 7.9,
+        "heightIn": 2.9,
+        "diameterCm": null,
+        "width": 0.32,
+        "depth": 0.2,
+        "height": 0.07,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b0%3b1%3b0/images/original/244548-79974117-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/244548-79974117-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/244549-79974117-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/244550-79974117-detail1jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/andro-picture-light-small",
+      "source": "soho-home",
+      "description": "Mounted on a blackened brass frame, honed alabaster shades can be adjusted to direct the light onto your artworks. Inspired by the styles that illuminate the artworks in Little House Balham, our Andros picture light is designed to showcase your own collection. Concealed bulbs are housed within a cylindrical alabaster shade, then mounted onto a blackened brass arm made to sit above wall-mounted pieces.",
+      "sku": "79974131",
+      "scrapedAt": "2026-06-09T17:59:03.561Z"
+    },
+    {
+      "id": "skye-wall-light-us",
+      "slug": "skye-wall-light",
+      "name": "Skye Wall Light, US",
+      "price": "$495",
+      "priceRaw": 495,
+      "category": "wall light",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Black"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 11,
+        "depthCm": 14.7,
+        "heightCm": 36.9,
+        "widthIn": 4.3,
+        "depthIn": 5.8,
+        "heightIn": 14.5,
+        "diameterCm": null,
+        "width": 0.11,
+        "depth": 0.15,
+        "height": 0.37,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b1%3b0%3b0/images/original/155661-valerie-double-light-detail-27.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=465%3b0%3b465%3b0/images/original/155661-valerie-double-light-detail-27.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=365%3b0%3b366%3b0/images/original/276905-carlisle-lights-on-plinth-art-3x4jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/276906-carlisle-detail6jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/skye-wall-light",
+      "source": "soho-home",
+      "description": "Inspired by Soho House Rome, our Skye wall light has been designed with a textured glass shade for a softer lighting scheme. Ribbed arm details in antique solid brass lend a vintage feel, while echoing the Brutalist architecture of the House. Place either side of your living room mantelpiece or in the bathroom.",
+      "sku": "79913666",
+      "scrapedAt": "2026-06-09T17:59:05.641Z"
+    },
+    {
+      "id": "reade-wall-light-antique-brass-us",
+      "slug": "reade-wall-light-antique-brass",
+      "name": "Reade Wall Light, Antique Brass, US",
+      "price": "$450",
+      "priceRaw": 450,
+      "category": "wall light",
+      "room": "lighting",
+      "style": "mid-century",
+      "colors": [
+        "Antique Brass"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "dimensions": {
+        "widthCm": 11,
+        "depthCm": 73,
+        "heightCm": 17,
+        "widthIn": 4.3,
+        "depthIn": 28.7,
+        "heightIn": 6.7,
+        "diameterCm": null,
+        "width": 0.11,
+        "depth": 0.73,
+        "height": 0.17,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/31782-112711-copyright-soho-house-barcelona-bedroom-1610-aj-lr-02.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=133%3b0%3b134%3b0/images/original/31782-112711-copyright-soho-house-barcelona-bedroom-1610-aj-lr-02.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=133%3b0%3b134%3b0/images/original/31781-14314-75722447-listing.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=133%3b0%3b134%3b0/images/original/31783-14324-75722447-detail1.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/reade-wall-light-antique-brass",
+      "source": "soho-home",
+      "description": "The Reade was designed for Soho House Chicago and is now used everywhere from Babington to Soho Farmhouse, due to its versatility and classic design. With a nod to 1950s studio wall lights, it combines Mid Century style with modern functionality and is ideal for a bedside or reading corner.",
+      "sku": "74584843",
+      "scrapedAt": "2026-06-09T17:59:07.729Z"
+    },
+    {
+      "id": "quaid-wall-light-us",
+      "slug": "quaid-wall-light",
+      "name": "Quaid Wall Light, US",
+      "price": "$450",
+      "priceRaw": 450,
+      "category": "wall light",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Black"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 41,
+        "depthCm": 16,
+        "heightCm": 47,
+        "widthIn": 16.1,
+        "depthIn": 6.3,
+        "heightIn": 18.5,
+        "diameterCm": null,
+        "width": 0.41,
+        "depth": 0.16,
+        "height": 0.47,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b0%3b1%3b0/images/original/225712-79979433-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/225712-79979433-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/225713-79979433-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/225714-79979457-detail1jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/quaid-wall-light",
+      "source": "soho-home",
+      "description": "A pair of molded, frosted-glass shades sit on an antique black brass frame. Extending from a double arm carved from black brass, the two molded, tulip-style shades on our Quaid wall light are made from bubble frosted glass. This style is designed to mirror the French-inspired interiors of High Road House.",
+      "sku": "79979457",
+      "scrapedAt": "2026-06-09T17:59:09.982Z"
+    },
+    {
+      "id": "milos-wall-light-us",
+      "slug": "milos-wall-light",
+      "name": "Milos Wall Light, US",
+      "price": "$395",
+      "priceRaw": 395,
+      "category": "wall light",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Brass"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 26,
+        "depthCm": 15,
+        "heightCm": 29.2,
+        "widthIn": 10.2,
+        "depthIn": 5.9,
+        "heightIn": 11.5,
+        "diameterCm": null,
+        "width": 0.26,
+        "depth": 0.15,
+        "height": 0.29,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/219725-79974315-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/219725-79974315-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/219726-79974315-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/219727-79974315-detail1jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/milos-wall-light",
+      "source": "soho-home",
+      "description": "A unique, swirling white pattern across clear glass is highlighted by light as it shines through from within. The Milos wall lamp's organically shaped bulb is carved from clear glass with a unique, swirling white pattern. Precision-placed perforations create a geometric pattern on the molded brass front component.",
+      "sku": "79974315",
+      "scrapedAt": "2026-06-09T17:59:18.884Z"
+    },
+    {
+      "id": "belsize-chandelier-us",
+      "slug": "belsize-chandelier",
+      "name": "Belsize Chandelier, US",
+      "price": "$1,395",
+      "priceRaw": 1395,
+      "category": "chandelier",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Brass"
+      ],
+      "materials": [
+        "Stainless Steel"
+      ],
+      "dimensions": {
+        "widthCm": 78.5,
+        "depthCm": 78.5,
+        "heightCm": 146,
+        "widthIn": 30.9,
+        "depthIn": 30.9,
+        "heightIn": 57.5,
+        "diameterCm": null,
+        "width": 0.79,
+        "depth": 0.79,
+        "height": 1.46,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b0%3b1%3b0/images/original/288380-sh006-glamour-026jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=0%3b0%3b889%3b0/images/original/288380-sh006-glamour-026jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/288379-sh006-glamour-025jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/283984-72799730-listingjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/belsize-chandelier",
+      "source": "soho-home",
+      "description": "This four-tier design features 16 opal glass globes, each detailed with antique brass. Inspired by 180 House, our Belsize chandelier features an antique brass frame with matching accents that highlight each opal glass globe. A Dark Emperador marble sphere accents each globe for a refined finish.",
+      "sku": "72799747",
+      "scrapedAt": "2026-06-09T17:59:45.945Z"
+    },
+    {
+      "id": "colette-chandelier-us",
+      "slug": "colette-chandelier",
+      "name": "Colette Chandelier, US",
+      "price": "$1,815",
+      "priceRaw": 1815,
+      "category": "chandelier",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Brass"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 76,
+        "depthCm": 76,
+        "heightCm": 35,
+        "widthIn": 29.9,
+        "depthIn": 29.9,
+        "heightIn": 13.8,
+        "diameterCm": null,
+        "width": 0.76,
+        "depth": 0.76,
+        "height": 0.35,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/288388-25-11-27-soho-home-ss25-modern-comfy-shot-23-murcell-oval-dining-table-1043-ef-v2-brown-portraitjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/288388-25-11-27-soho-home-ss25-modern-comfy-shot-23-murcell-oval-dining-table-1043-ef-v2-brown-portraitjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/284022-78129356-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/284023-78129356-hoverjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/colette-chandelier",
+      "source": "soho-home",
+      "description": "Reeded glass shades sit elegantly at the ends of brass arms extending from a central ring. Our Colette chandelier features a ribbed, circular ring that hangs from a brass chain. Ten reeded glass shades with frosted interiors are held by brass arms and detailed with Dark Emperador marble spheres.",
+      "sku": "78129509",
+      "scrapedAt": "2026-06-09T17:59:48.035Z"
+    },
+    {
+      "id": "truman-chandelier-us",
+      "slug": "truman-chandelier",
+      "name": "Truman Chandelier, US",
+      "price": "$1,185",
+      "priceRaw": 1185,
+      "category": "chandelier",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Brass"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 119,
+        "depthCm": 119,
+        "heightCm": 41.2,
+        "widthIn": 46.9,
+        "depthIn": 46.9,
+        "heightIn": 16.2,
+        "diameterCm": null,
+        "width": 1.19,
+        "depth": 1.19,
+        "height": 0.41,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=24%3b0%3b24%3b0/images/original/288385-25-11-27-soho-home-ss25-modern-comfy-shot-03-truman-light-182-efjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=pad%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=0%3b0%3b933%3b0/images/original/288385-25-11-27-soho-home-ss25-modern-comfy-shot-03-truman-light-182-efjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=468%3b0%3b469%3b0/images/original/288384-25-11-27-soho-home-ss25-modern-comfy-shot-01-hero-chando-portrait-148-efjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/285695-72798825-listingjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/truman-chandelier",
+      "source": "soho-home",
+      "description": "Six curved brass arms extend from a central column, each adorned with a petal-shaped shade. Our Truman chandelier features six curved brass arms that extend from a ribbed, solid walnut central column. Petal-shaped parchment shades sit at each end, casting a warm, ambient light.",
+      "sku": "72798832",
+      "scrapedAt": "2026-06-09T17:59:50.425Z"
+    },
+    {
+      "id": "lorenzo-chandelier-milky-glass-us",
+      "slug": "lorenzo-chandelier-milky-glass",
+      "name": "Lorenzo Chandelier, Milky Glass, US",
+      "price": "$2,295",
+      "priceRaw": 2295,
+      "category": "chandelier",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Milky"
+      ],
+      "materials": [
+        "Glass"
+      ],
+      "dimensions": {
+        "widthCm": 76,
+        "depthCm": 76,
+        "heightCm": 29,
+        "widthIn": 29.9,
+        "depthIn": 29.9,
+        "heightIn": 11.4,
+        "diameterCm": null,
+        "width": 0.76,
+        "depth": 0.76,
+        "height": 0.29,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/67528-79924037-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/67528-79924037-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/67527-79924037-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/67523-79924037-detail1jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/lorenzo-chandelier-milky-glass",
+      "source": "soho-home",
+      "description": "Originally designed for the spaces at Soho House West Hollywood, our Lorenzo chandelier is handcrafted from pressed glass by skilled artisans. The white swirl pattern is achieved by injecting the white colour into the glass piece by piece, before being shaped by hand into discs. Once cooled, each disc is mounted on tiered, antique brass arms that surround two central glass plates for great visual effect.",
+      "sku": "79924037",
+      "scrapedAt": "2026-06-09T17:59:52.756Z"
+    },
+    {
+      "id": "pollensa-chandelier-us",
+      "slug": "pollensa-chandelier",
+      "name": "Pollensa Chandelier, US",
+      "price": "$3,895",
+      "priceRaw": 3895,
+      "category": "chandelier",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Champagne"
+      ],
+      "materials": [
+        "Glass"
+      ],
+      "dimensions": {
+        "widthCm": 75,
+        "depthCm": 75,
+        "heightCm": 256,
+        "widthIn": 29.5,
+        "depthIn": 29.5,
+        "heightIn": 100.8,
+        "diameterCm": null,
+        "width": 0.75,
+        "depth": 0.75,
+        "height": 2.56,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/262912-25-05-02-soho-home-aw25-caleb-3890-efjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/262912-25-05-02-soho-home-aw25-caleb-3890-efjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/262913-25-05-02-soho-home-aw25-caleb-3917-ef-v1-doorsopenjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/260278-72729805-listingjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/pollensa-chandelier",
+      "source": "soho-home",
+      "description": "The cascading four-tier silhouette is made from champagne-colored, wavy leaf-shaped glass with a reeded finish. Inspired by Soho House Barcelona, the Pollensa chandelier is defined by wavy, leaf-shaped glass with a reeded finish. Each piece, in a soft champagne hue, is mounted on an antique brass frame to form a cascading four-tier silhouette, suspended from a matching brass chain.",
+      "sku": "72729812",
+      "scrapedAt": "2026-06-09T17:59:54.940Z"
+    },
+    {
+      "id": "lorenzo-chandelier-amber-us",
+      "slug": "lorenzo-chandelier",
+      "name": "Lorenzo Chandelier, Amber US",
+      "price": "$2,295",
+      "priceRaw": 2295,
+      "category": "chandelier",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Amber"
+      ],
+      "materials": [
+        "Glass"
+      ],
+      "dimensions": {
+        "widthCm": 76,
+        "depthCm": 76,
+        "heightCm": 29,
+        "widthIn": 29.9,
+        "depthIn": 29.9,
+        "heightIn": 11.4,
+        "diameterCm": null,
+        "width": 0.76,
+        "depth": 0.76,
+        "height": 0.29,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/15509-anders-201215-135-sh-f1.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=371%3b0%3b372%3b0/images/original/15509-anders-201215-135-sh-f1.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=416%3b0%3b417%3b0/images/original/41206-anders-220817-0024-sh-f1-v4.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=434%3b0%3b434%3b0/images/original/55038-20221012-soho-home-299.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/lorenzo-chandelier",
+      "source": "soho-home",
+      "description": "Originally designed for the spaces at Soho House West Hollywood, our Lorenzo chandelier is handmade from pressed glass by skilled artisans. Amber glass discs are mounted on tiered, antique brass arms that surround two central glass plates for great visual effect.",
+      "sku": "74532813",
+      "scrapedAt": "2026-06-09T17:59:57.141Z"
+    },
+    {
+      "id": "chiara-chandelier-green-us",
+      "slug": "chiara-chandelier",
+      "name": "Chiara Chandelier, Green, US",
+      "price": "$3,695",
+      "priceRaw": 3695,
+      "category": "chandelier",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Green"
+      ],
+      "materials": [
+        "Glass"
+      ],
+      "dimensions": {
+        "widthCm": 75,
+        "depthCm": 75,
+        "heightCm": 250,
+        "widthIn": 29.5,
+        "depthIn": 29.5,
+        "heightIn": 98.4,
+        "diameterCm": null,
+        "width": 0.75,
+        "depth": 0.75,
+        "height": 2.5,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/124923-01-soho-home-vintage-ss24-1-amble-hero-0035-alt-chandelierjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=261%3b0%3b262%3b0/images/original/124923-01-soho-home-vintage-ss24-1-amble-hero-0035-alt-chandelierjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b388%3b0/images/original/130956-79965788-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/130957-79965788-hoverjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/chiara-chandelier",
+      "source": "soho-home",
+      "description": "You will see multiples of our Chiara chandeliers hanging in DUMBO House. Each one features dozens of green ombre, scalloped glass tubular sections, which are hand-finished by skilled artisans. These create a beautiful variation of tonal colours to bring depth, texture and opulence to any living space. Hang in an entryway or living room for elevated drama.",
+      "sku": "79965788",
+      "scrapedAt": "2026-06-09T17:59:59.346Z"
+    },
+    {
+      "id": "simone-chandelier",
+      "slug": "simone-chandelier",
+      "name": "Simone Chandelier",
+      "price": "$4,595",
+      "priceRaw": 4595,
+      "category": "chandelier",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Brass"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 81,
+        "depthCm": 81,
+        "heightCm": 117,
+        "widthIn": 31.9,
+        "depthIn": 31.9,
+        "heightIn": 46.1,
+        "diameterCm": null,
+        "width": 0.81,
+        "depth": 0.81,
+        "height": 1.17,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/262845-25-05-02-soho-home-aw25-caleb-3629-ef-v1jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/262845-25-05-02-soho-home-aw25-caleb-3629-ef-v1jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/262846-25-05-02-soho-home-aw25-caleb-3597-ef-v2-portraitjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/281476-79973905-listingjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/simone-chandelier",
+      "source": "soho-home",
+      "description": "Orb-shaped globes are made from bubbled glass with panels of mirrored chrome to reflect each globe's soft glow. Set over three tiers, the geometric form of our nine-light Simone chandelier brings together bubbled glass globes and mirrored chrome structures anchored by a brass frame.",
+      "sku": "79973882",
+      "scrapedAt": "2026-06-09T18:00:01.555Z"
+    },
+    {
+      "id": "alessio-chandelier-us",
+      "slug": "alessio-chandelier",
+      "name": "Alessio Chandelier, US",
+      "price": "$2,395",
+      "priceRaw": 2395,
+      "category": "chandelier",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "White"
+      ],
+      "materials": [
+        "Glass"
+      ],
+      "dimensions": {
+        "widthCm": 80,
+        "depthCm": 80,
+        "heightCm": 240,
+        "widthIn": 31.5,
+        "depthIn": 31.5,
+        "heightIn": 94.5,
+        "diameterCm": null,
+        "width": 0.8,
+        "depth": 0.8,
+        "height": 2.4,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/275308-aw25-sh-shot-4-ric-kiera-bed-0143-jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/275308-aw25-sh-shot-4-ric-kiera-bed-0143-jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/286217-sh-vintage-roberts-place49780-v4jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/262426-78133551-listingjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/alessio-chandelier",
+      "source": "soho-home",
+      "description": "Textured, milky glass is layered around this two-tier silhouette, with a glass diffuser at the base casting a soft, warm glow. Our Alessio pendant is inspired by the warm interiors of Soho House Rome. Fixed on an antique brass frame with a co-ordinating chain, geometric panels of gently curved glass have a milky finish for a soft, ambient glow.",
+      "sku": "78133568",
+      "scrapedAt": "2026-06-09T18:00:04.001Z"
+    },
+    {
+      "id": "francis-chandelier-us",
+      "slug": "francis-chandelier",
+      "name": "Francis Chandelier, US",
+      "price": "$3,295",
+      "priceRaw": 3295,
+      "category": "chandelier",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "White"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 71,
+        "depthCm": 71,
+        "heightCm": 49,
+        "widthIn": 28,
+        "depthIn": 28,
+        "heightIn": 19.3,
+        "diameterCm": null,
+        "width": 0.71,
+        "depth": 0.71,
+        "height": 0.49,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b0%3b1%3b0/images/original/171394-sh-vintage-backup-253-v2.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=764%3b0%3b764%3b0/images/original/171394-sh-vintage-backup-253-v2.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b388%3b0/images/original/181412-79955321-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b388%3b0/images/original/181413-79955321-hoverjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/francis-chandelier",
+      "source": "soho-home",
+      "description": "Tiered, curved pieces of glass create the geometric silhouette of this ceiling light. Inspired by the tiered chandeliers seen in Soho House Barcelona, the Francis ceiling light is made by layering individual pieces of white-frosted bubbled glass. Suspended from an adjustable pole, the frame is plated with antiqued brass.",
+      "sku": "79955321",
+      "scrapedAt": "2026-06-09T18:00:06.340Z"
+    },
+    {
+      "id": "elisa-chandelier-us",
+      "slug": "elisa-chandelier",
+      "name": "Elisa Chandelier, US",
+      "price": "$1,785",
+      "priceRaw": 1785,
+      "category": "chandelier",
+      "room": "lighting",
+      "style": "art deco",
+      "colors": [
+        "Brown"
+      ],
+      "materials": [
+        "Glass"
+      ],
+      "dimensions": {
+        "widthCm": 109,
+        "depthCm": 60,
+        "heightCm": 62,
+        "widthIn": 42.9,
+        "depthIn": 23.6,
+        "heightIn": 24.4,
+        "diameterCm": null,
+        "width": 1.09,
+        "depth": 0.6,
+        "height": 0.62,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/53727-74592640-hover.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/53727-74592640-hover.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/53728-74592640-listing.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/53729-74592640-detail4.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/elisa-chandelier",
+      "source": "soho-home",
+      "description": "The Elisa chandelier will bring a sense of decoration to the simplest of rooms, without feeling intimidating. Designed to sit above a dining table with a nickel-finish frame, this rectangular lighting style echoes the 1970s-inspired interior of 180 House, where panels of light to dark textured glass are arranged in an intersection format. When grouped together, these panels create an ombre effect, resulting in a warmer lighting scheme for the home.",
+      "sku": "74592640",
+      "scrapedAt": "2026-06-09T18:00:08.669Z"
+    },
+    {
+      "id": "cassius-pendant",
+      "slug": "cassius-pendant",
+      "name": "Cassius Pendant",
+      "price": "$1,110",
+      "priceRaw": 1110,
+      "category": "chandelier",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Clear"
+      ],
+      "materials": [
+        "Marble"
+      ],
+      "dimensions": {
+        "widthCm": null,
+        "depthCm": 61,
+        "heightCm": 88,
+        "widthIn": null,
+        "depthIn": 24,
+        "heightIn": 34.6,
+        "diameterCm": null,
+        "width": null,
+        "depth": 0.61,
+        "height": 0.88,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/8831-74525181-hover.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/8831-74525181-hover.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/8830-74525181-listing.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/8832-74525181-detail3.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/cassius-pendant",
+      "source": "soho-home",
+      "description": "Inspired by the lights at Soho Warehouse in Downtown Los Angeles, this striking bell-shaped lampshade is made from burnished metal and strung with hundreds of iridescent shells collected from beaches in the Philippines. Each one catches the light beautifully to create a soft, warm glow.",
+      "sku": "74525174",
+      "scrapedAt": "2026-06-09T18:00:10.861Z"
+    },
+    {
+      "id": "elba-chandelier-large-us",
+      "slug": "elba-chandelier-large",
+      "name": "Elba Chandelier, Large, US",
+      "price": "$3,865",
+      "priceRaw": 3865,
+      "category": "chandelier",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "White"
+      ],
+      "materials": [
+        "Glass"
+      ],
+      "dimensions": {
+        "widthCm": 80,
+        "depthCm": 80,
+        "heightCm": 282,
+        "widthIn": 31.5,
+        "depthIn": 31.5,
+        "heightIn": 111,
+        "diameterCm": null,
+        "width": 0.8,
+        "depth": 0.8,
+        "height": 2.82,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/37946-74583570-hover.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/37946-74583570-hover.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=416%3b0%3b417%3b0/images/original/48607-anders-230113-0692-sh-f1.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/37944-74583570-listing.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/elba-chandelier-large",
+      "source": "soho-home",
+      "description": "Originally designed for Soho House Rome, the large Elba chandelier is formed into a tiered chevron with clear glass discs that are characterized by white swirls. Hang it in a hallway, bedroom or living room to bring the laid-back elegance of Soho House Rome into your home.",
+      "sku": "74583570",
+      "scrapedAt": "2026-06-09T18:00:13.162Z"
+    },
+    {
+      "id": "chiara-chandelier-peach-us",
+      "slug": "chiara-chandelier-pink",
+      "name": "Chiara Chandelier, Peach, US",
+      "price": "$3,695",
+      "priceRaw": 3695,
+      "category": "chandelier",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Pink"
+      ],
+      "materials": [
+        "Linen"
+      ],
+      "dimensions": {
+        "widthCm": 75,
+        "depthCm": 75,
+        "heightCm": 250,
+        "widthIn": 29.5,
+        "depthIn": 29.5,
+        "heightIn": 98.4,
+        "diameterCm": null,
+        "width": 0.75,
+        "depth": 0.75,
+        "height": 2.5,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/130974-79967171-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/130974-79967171-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/130975-79967171-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=445%3b0%3b445%3b0/images/original/288686-251201-soho-home-ss26-jakecurtis-shot12-heidibed-portrait-0416-hero-option-r6jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/chiara-chandelier-pink",
+      "source": "soho-home",
+      "description": "You will see multiples of our Chiara chandeliers hanging in DUMBO House. Each one features dozens of pink ombre, scalloped glass tubular sections, which are hand-finished by skilled artisans. These create a beautiful variation of tonal colours to bring depth, texture and opulence to any living space. Hang in an entryway or living room for elevated drama.",
+      "sku": "79967171",
+      "scrapedAt": "2026-06-09T18:00:15.450Z"
+    },
+    {
+      "id": "kai-chandelier-us",
+      "slug": "kai-chandelier",
+      "name": "Kai Chandelier US",
+      "price": "$2,195",
+      "priceRaw": 2195,
+      "category": "chandelier",
+      "room": "lighting",
+      "style": "modern",
+      "colors": [
+        "Brass"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 110,
+        "depthCm": 110,
+        "heightCm": 132,
+        "widthIn": 43.3,
+        "depthIn": 43.3,
+        "heightIn": 52,
+        "diameterCm": null,
+        "width": 1.1,
+        "depth": 1.1,
+        "height": 1.32,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b0%3b1%3b0/images/original/286678-shot-18-tristan-bed-680-hero-v2-lighton-b-square-version-3x4jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=445%3b0%3b445%3b0/images/original/286678-shot-18-tristan-bed-680-hero-v2-lighton-b-square-version-3x4jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/286677-shot-19-tristan-bed-717-ef-v1jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/63941-79913314-hoverjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/kai-chandelier",
+      "source": "soho-home",
+      "description": "Creating an impressive entrance in the hallway or dining room, our Kai chandelier's contemporary silhouette takes inspiration from White City House. Antique brass finish metal is carved into refined angular arms, each bearing a glass globe hand-applied with pigment for a milky swirl. Ideal for a softer lighting scheme in your living space with design-led details as the focal point.",
+      "sku": "79913314",
+      "scrapedAt": "2026-06-09T18:00:18.092Z"
+    },
+    {
+      "id": "demarco-chandelier-us",
+      "slug": "demarco-chandelier",
+      "name": "Demarco Chandelier, US",
+      "price": "$1,195",
+      "priceRaw": 1195,
+      "category": "chandelier",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Brass"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 79,
+        "depthCm": 79,
+        "heightCm": 103,
+        "widthIn": 31.1,
+        "depthIn": 31.1,
+        "heightIn": 40.6,
+        "diameterCm": null,
+        "width": 0.79,
+        "depth": 0.79,
+        "height": 1.03,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/185881-74596723-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/185881-74596723-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/185880-74596723-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/185875-74596723-detail1jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/demarco-chandelier",
+      "source": "soho-home",
+      "description": "Our Demarco chandelier is designed to hang in the centre of a dining table or living room. Suspended from an antique brass pole, the chandelier features six oval glass orbs that are fixed onto a solid oak and brass frame. Use it to cast a soft, diffused light overhead, and reference the vintage-inspired lighting seen throughout White City House.",
+      "sku": "74596723",
+      "scrapedAt": "2026-06-09T18:00:20.769Z"
+    },
+    {
+      "id": "edith-chandelier-us",
+      "slug": "edith-chandelier",
+      "name": "Edith Chandelier, US",
+      "price": "$2,195",
+      "priceRaw": 2195,
+      "category": "chandelier",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Clear"
+      ],
+      "materials": [
+        "Glass"
+      ],
+      "dimensions": {
+        "widthCm": 56,
+        "depthCm": 85,
+        "heightCm": 18,
+        "widthIn": 22,
+        "depthIn": 33.5,
+        "heightIn": 7.1,
+        "diameterCm": null,
+        "width": 0.56,
+        "depth": 0.85,
+        "height": 0.18,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=2%3b0%3b3%3b0/images/original/52656-shot-9-010-hero-f1.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=419%3b0%3b419%3b0/images/original/52656-shot-9-010-hero-f1.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/185809-74592664-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/185808-74592664-listingjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/edith-chandelier",
+      "source": "soho-home",
+      "description": "Our Edith pendant chandelier is a vintage style that draws inspiration from the 1970s interiors of White City House. Six moulded and ribbed glass shades sit on an antique brass-finish frame, which when lit give off a warm, milky glow. Hang low over a dining table or above a stairway to bring the area into focus.",
+      "sku": "74592664",
+      "scrapedAt": "2026-06-09T18:00:23.383Z"
+    },
+    {
+      "id": "cara-chandelier-us",
+      "slug": "cara-chandelier",
+      "name": "Cara Chandelier, US",
+      "price": "$4,595",
+      "priceRaw": 4595,
+      "category": "chandelier",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Brass"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 60,
+        "depthCm": 60,
+        "heightCm": 161.3,
+        "widthIn": 23.6,
+        "depthIn": 23.6,
+        "heightIn": 63.5,
+        "diameterCm": null,
+        "width": 0.6,
+        "depth": 0.6,
+        "height": 1.61,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=pad%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b0%3b672%3b0/images/original/230646-241119-soho-ss25vintage-rosaline-table-471jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=0%3b0%3b1560%3b0/images/original/230646-241119-soho-ss25vintage-rosaline-table-471jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/239033-79979396-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/239034-79979396-hoverjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/cara-chandelier",
+      "source": "soho-home",
+      "description": "An architectural stem carved from brass is detailed with circular components holding alabaster globe lamps. Inspired by similar styles seen throughout the bedrooms of Soho House Rome, our Cara chandelier is characterized by globe-shaped lamps carved from alabaster stone. Its slim, architectural frame and circular components are crafted from real brass hardware.",
+      "sku": "79979419",
+      "scrapedAt": "2026-06-09T18:00:26.161Z"
+    },
+    {
+      "id": "seed-chandelier-us",
+      "slug": "seed-chandelier",
+      "name": "Seed Chandelier, US",
+      "price": "$1,995",
+      "priceRaw": 1995,
+      "category": "chandelier",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Brass"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "dimensions": {
+        "widthCm": 74,
+        "depthCm": 74,
+        "heightCm": 68,
+        "widthIn": 29.1,
+        "depthIn": 29.1,
+        "heightIn": 26.8,
+        "diameterCm": null,
+        "width": 0.74,
+        "depth": 0.74,
+        "height": 0.68,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/185657-74532899-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/185657-74532899-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/185656-74532899-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=87%3b0%3b87%3b0/images/original/15513-anders-201209-455-ed-f1-v4.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/seed-chandelier",
+      "source": "soho-home",
+      "description": "The lighting schemes in White City House and 180 House formed the inspiration for the Seed chandelier. Comprising a cluster of bisected orbs in hand-applied patinated brass, the chandelier serves as a versatile lighting option that is suited to both narrow hallways and expansive living areas.",
+      "sku": "74532899",
+      "scrapedAt": "2026-06-09T18:00:28.984Z"
+    },
+    {
+      "id": "peyton-chandelier-us",
+      "slug": "peyton-chandelier",
+      "name": "Peyton Chandelier, US",
+      "price": "$1,395",
+      "priceRaw": 1395,
+      "category": "chandelier",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "White"
+      ],
+      "materials": [
+        "Plaster"
+      ],
+      "dimensions": {
+        "widthCm": 80.4,
+        "depthCm": 80.4,
+        "heightCm": 50,
+        "widthIn": 31.7,
+        "depthIn": 31.7,
+        "heightIn": 19.7,
+        "diameterCm": null,
+        "width": 0.8,
+        "depth": 0.8,
+        "height": 0.5,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/185796-74592619-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/185796-74592619-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/185797-74592619-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=416%3b0%3b416%3b0/images/original/55343-dining-017-hero-f1.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/peyton-chandelier",
+      "source": "soho-home",
+      "description": "Our Peyton chandelier takes inspiration from the sun-worn Bauhaus architecture in and around Soho House Tel Aviv, Jaffa. The textural plastered finish is created by adding gradual layers of putty and water-based paint. Designed with an adjustable pole kit to adapt to your living space, it features four upright shades which emit a warm light in any room.",
+      "sku": "74592619",
+      "scrapedAt": "2026-06-09T18:00:31.387Z"
+    },
+    {
+      "id": "aldwin-pendant-us",
+      "slug": "aldwin-pendant",
+      "name": "Aldwin Pendant, US",
+      "price": "$995",
+      "priceRaw": 995,
+      "category": "pendant",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Cream"
+      ],
+      "materials": [
+        "Cotton"
+      ],
+      "dimensions": {
+        "widthCm": 70,
+        "depthCm": 70,
+        "heightCm": 120,
+        "widthIn": 27.6,
+        "depthIn": 27.6,
+        "heightIn": 47.2,
+        "diameterCm": null,
+        "width": 0.7,
+        "depth": 0.7,
+        "height": 1.2,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/181599-79958865-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/181599-79958865-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/181600-79958865-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/181594-79958865-detail1jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/aldwin-pendant",
+      "source": "soho-home",
+      "description": "Soft, hand-ruched cotton in a neutral tone contrasts against the blackened brass of this pendant light. Inspired by the original features that run throughout Soho House Berlin, the Aldwin pendant's soft, domed silhouette is covered with light, woven cotton. Suspended from adjustable chains, it can be hung lower or closer to the ceiling.",
+      "sku": "79958865",
+      "scrapedAt": "2026-06-09T18:00:45.586Z"
+    },
+    {
+      "id": "attlee-pendant-us",
+      "slug": "attlee-pendant",
+      "name": "Attlee Pendant, US",
+      "price": "$1,195",
+      "priceRaw": 1195,
+      "category": "pendant",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Cream"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 50,
+        "depthCm": 50,
+        "heightCm": 12,
+        "widthIn": 19.7,
+        "depthIn": 19.7,
+        "heightIn": 4.7,
+        "diameterCm": null,
+        "width": 0.5,
+        "depth": 0.5,
+        "height": 0.12,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/181443-79955437-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/181443-79955437-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/181444-79955437-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/181438-79955437-detail1jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/attlee-pendant",
+      "source": "soho-home",
+      "description": "Ribbed, antiqued brass creates the shallow silhouette of this pendant light, finished with a hand-pleated silk shade in a calming cream tone. Designed in-house, this square pendant light is inspired by the interiors of Soho House Rome. An adjustable pole means it can be placed closer to the ceiling for a softer glow.",
+      "sku": "79955437",
+      "scrapedAt": "2026-06-09T18:00:47.858Z"
+    },
+    {
+      "id": "rohe-pendant",
+      "slug": "rohe-pendant",
+      "name": "Rohe Pendant",
+      "price": "$650",
+      "priceRaw": 650,
+      "category": "pendant",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Brown"
+      ],
+      "materials": [
+        "Brass"
+      ],
+      "dimensions": {
+        "widthCm": 76,
+        "depthCm": 76,
+        "heightCm": 42,
+        "widthIn": 29.9,
+        "depthIn": 29.9,
+        "heightIn": 16.5,
+        "diameterCm": null,
+        "width": 0.76,
+        "depth": 0.76,
+        "height": 0.42,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/9563-74525242-listing.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/9563-74525242-listing.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=416%3b0%3b416%3b0/images/original/55367-manette-bed-023-hero-f1-v2.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=0%3b844%3b0%3b843/images/original/10552-anders-200909-903-sh-r1-v2.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/rohe-pendant",
+      "source": "soho-home",
+      "description": "Inspired by relaxed aesthetic of our new beach Houses including Soho Roc House on Mykonos and the soon to open Canouan, our Rohe pendant showcases the natural beauty of rattan. The large woven shade sits on an antique brass finish, with three bulbs creating distinctive light patterns.",
+      "sku": "74525235",
+      "scrapedAt": "2026-06-09T18:00:51.903Z"
+    },
+    {
+      "id": "maris-pendant-small-us",
+      "slug": "maris-pendant",
+      "name": "Maris Pendant, Small, US",
+      "price": "$295",
+      "priceRaw": 295,
+      "category": "pendant",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Cream"
+      ],
+      "materials": [
+        "Linen"
+      ],
+      "dimensions": {
+        "widthCm": 55,
+        "depthCm": 55,
+        "heightCm": 33,
+        "widthIn": 21.7,
+        "depthIn": 21.7,
+        "heightIn": 13,
+        "diameterCm": null,
+        "width": 0.55,
+        "depth": 0.55,
+        "height": 0.33,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/219741-79978832-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/219741-79978832-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/219742-79978832-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/219743-79978832-detail1jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/maris-pendant",
+      "source": "soho-home",
+      "description": "A domed linen shade and milky-colored glass diffuser create a warm, soft light. The unique domed structure of our Maris pendant is inspired by the architectural design of our Farm Huts at Soho Farmhouse. Featuring an antiqued brass frame and a pulled linen shade to bring warm and ambient lighting into any room, this ceiling light also has a milky-colored glass diffuser around the bulb to soften the light level.",
+      "sku": "79978832",
+      "scrapedAt": "2026-06-09T18:00:54.501Z"
+    },
+    {
+      "id": "maris-pendant-olive-us",
+      "slug": "maris-pendant-olive",
+      "name": "Maris Pendant, Olive, US",
+      "price": "$390",
+      "priceRaw": 390,
+      "category": "pendant",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Green"
+      ],
+      "materials": [
+        "Linen"
+      ],
+      "dimensions": {
+        "widthCm": 75,
+        "depthCm": 75,
+        "heightCm": 45,
+        "widthIn": 29.5,
+        "depthIn": 29.5,
+        "heightIn": 17.7,
+        "diameterCm": null,
+        "width": 0.75,
+        "depth": 0.75,
+        "height": 0.45,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/126569-79963081-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/126569-79963081-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=388%3b0%3b389%3b0/images/original/126570-79963081-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/127159-sh-modern-comfy-maris-pendant-2822-f1jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/maris-pendant-olive",
+      "source": "soho-home",
+      "description": "The unique domed structure of our Maris pendant is inspired by the architectural design of our Farm Huts at Soho Farmhouse. Featuring a blackened brass frame and a pulled linen shade to bring warm and ambient lighting into any room, this ceiling light also has a milky-colored glass diffuser around the bulb to soften the light level.",
+      "sku": "79963081",
+      "scrapedAt": "2026-06-09T18:00:56.740Z"
+    },
+    {
+      "id": "baylee-portable-lamp",
+      "slug": "baylee-portable-lamp",
+      "name": "Baylee Portable Lamp",
+      "price": "$350",
+      "priceRaw": 350,
+      "category": "portable lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "White"
+      ],
+      "materials": [
+        "Glass"
+      ],
+      "dimensions": {
+        "widthCm": 19.8,
+        "depthCm": 19.8,
+        "heightCm": 30.5,
+        "widthIn": 7.8,
+        "depthIn": 7.8,
+        "heightIn": 12,
+        "diameterCm": null,
+        "width": 0.2,
+        "depth": 0.2,
+        "height": 0.31,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200/images/original/267546-sh-showroom-shelving34996jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/267546-sh-showroom-shelving34996jpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=128%3b0%3b761%3b0/images/original/267545-sh-showroom-shelving34980-brightjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/278999-72731648-listingjpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/baylee-portable-lamp",
+      "source": "soho-home",
+      "description": "A fluted, bell-shaped shade tapers outwards towards the base, with a scalloped edge that creates the look of a flower. Three stacked, polished brass spheres create the sculptural stem of our Baylee lamp, fitted with a flower-shaped glass shade. It's lightweight, rechargeable and portable, creating a subtle light wherever you need it.",
+      "sku": "72731648",
+      "scrapedAt": "2026-06-09T18:01:10.335Z"
+    },
+    {
+      "id": "rio-portable-lamp-verde-green-marble",
+      "slug": "rio-portable-lamp",
+      "name": "Rio Portable Lamp, Verde Green Marble",
+      "price": "$390",
+      "priceRaw": 390,
+      "category": "portable lamp",
+      "room": "lighting",
+      "style": "other",
+      "colors": [
+        "Green"
+      ],
+      "materials": [
+        "Marble"
+      ],
+      "dimensions": {
+        "widthCm": 17,
+        "depthCm": 17,
+        "heightCm": 27,
+        "widthIn": 6.7,
+        "depthIn": 6.7,
+        "heightIn": 10.6,
+        "diameterCm": null,
+        "width": 0.17,
+        "depth": 0.17,
+        "height": 0.27,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=jpeg%2cbackground=%23f5f3ef%2cquality=75%2cwidth=900%2cheight=1200%2ctrim=0%3b0%3b1%3b0/images/original/254445-79965177-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/254445-79965177-listingjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=389%3b0%3b389%3b0/images/original/254446-79965177-hoverjpg.jpg",
+        "https://assets.sohohome.com/cdn-cgi/image/fit=crop%2cformat=auto%2cquality=75%2cwidth=1100%2cheight=1222%2ctrim=444%3b0%3b445%3b0/images/original/250938-sh-reimagined-classic14859jpg.jpg"
+      ],
+      "productUrl": "https://www.sohohome.com/us/products/rio-portable-lamp",
+      "source": "soho-home",
+      "description": "A domed shade made from moulded glass is perched on a solid, rechargeable base carved from green marble. Designed to adapt to your space, this portable and rechargeable lamp can be picked up and placed wherever you need it, whether it's on your bedside table or home workspace. Carved from Verde Green marble, its solid base holds a domed shade moulded to look as though it has been softly folded at the corners.",
+      "sku": "79965177",
+      "scrapedAt": "2026-06-09T18:01:12.629Z"
+    }
+  ]
+}

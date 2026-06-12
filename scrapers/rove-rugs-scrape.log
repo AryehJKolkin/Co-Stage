@@ -1,0 +1,29 @@
+[2026-06-10T20:44:53.006Z] === Rove Concepts rugs scraper starting ===
+[2026-06-10T20:44:53.014Z] Loaded 207 existing products
+[2026-06-10T20:44:53.526Z] Found 12 rug links
+[2026-06-10T20:44:53.526Z]   Scraping: /beja-rug
+[2026-06-10T20:44:58.554Z]   ✓ Beja Rug | $972 | 2.3m × 1.5m | 4 imgs
+[2026-06-10T20:44:58.558Z]   Scraping: /luso-rug
+[2026-06-10T20:45:03.493Z]   ✓ Luso Rug | $972 | 2.3m × 1.5m | 4 imgs
+[2026-06-10T20:45:03.496Z]   Scraping: /moura-rug
+[2026-06-10T20:45:08.238Z]   ✓ Moura Rug | $972 | 2.3m × 1.5m | 4 imgs
+[2026-06-10T20:45:08.246Z]   Scraping: /forma-rug
+[2026-06-10T20:45:13.730Z]   ✓ Forma Rug | $985 | 3.6m × 2.7m | 2 imgs
+[2026-06-10T20:45:13.744Z]   Scraping: /stria-rug
+[2026-06-10T20:45:18.799Z]   ✓ Stria Rug | $985 | 3.6m × 2.7m | 2 imgs
+[2026-06-10T20:45:18.807Z]   Scraping: /lina-rug
+[2026-06-10T20:45:23.128Z]   ✓ Lina Rug | $985 | 3.6m × 2.7m | 2 imgs
+[2026-06-10T20:45:23.132Z]   Scraping: /kaia-rug
+[2026-06-10T20:45:28.207Z]   ✓ Kaia Rug | $985 | 3.6m × 2.7m | 2 imgs
+[2026-06-10T20:45:28.214Z]   Scraping: /maze-rug
+[2026-06-10T20:45:33.441Z]   ✓ Maze Rug | $985 | 3.6m × 2.7m | 2 imgs
+[2026-06-10T20:45:33.446Z]   Scraping: /vigna-rug
+[2026-06-10T20:45:38.485Z]   ✓ Vigna Rug | $985 | 3.6m × 2.7m | 2 imgs
+[2026-06-10T20:45:38.498Z]   Scraping: /orca-rug
+[2026-06-10T20:45:42.940Z]   ✓ Orca Rug | $985 | 3.6m × 2.7m | 2 imgs
+[2026-06-10T20:45:42.948Z]   Scraping: /eleno-rug
+[2026-06-10T20:45:47.969Z]   ✓ Eleno Rug | $985 | 3.6m × 2.7m | 2 imgs
+[2026-06-10T20:45:47.976Z]   Scraping: /sora-rug
+[2026-06-10T20:45:54.183Z]   ✓ Sora Rug | $985 | 3.6m × 2.7m | 2 imgs
+[2026-06-10T20:45:54.193Z] 
+=== Done — 12 new, 0 errors, 219 total ===

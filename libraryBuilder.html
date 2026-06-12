@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoStage — Library Builder</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;500;600;700&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#09090b;--surface:#111114;--surface2:#18181c;--surface3:#1f1f25;
+  --border:rgba(255,255,255,0.06);--border2:rgba(255,255,255,0.11);--border3:rgba(255,255,255,0.18);
+  --text:#eceae2;--muted:#64635e;--muted2:#8a8880;
+  --accent:#c8f060;--accent2:#60c8f0;--accent3:#f0a060;--danger:#f06060;--r:7px;--r2:12px;
+}
+body{background:var(--bg);color:var(--text);font-family:'Syne',sans-serif;font-size:13px;
+  min-height:100vh;display:grid;grid-template-rows:52px 1fr;grid-template-columns:300px 1fr;overflow:hidden;height:100vh;}
+header{grid-column:1/-1;display:flex;align-items:center;gap:14px;padding:0 22px;
+  border-bottom:1px solid var(--border);background:var(--surface);}
+.logo{font-weight:700;font-size:15px;letter-spacing:-0.03em;}
+.logo em{color:var(--accent);font-style:normal;}
+.logo span{color:var(--muted);margin:0 4px;}
+.htag{font-size:10px;font-family:'DM Mono',monospace;padding:3px 8px;border-radius:20px;border:1px solid var(--border2);color:var(--muted2);}
+.hright{margin-left:auto;display:flex;gap:10px;align-items:center;}
+.lib-count{font-family:'DM Mono',monospace;font-size:11px;color:var(--accent);padding:3px 10px;border:1px solid rgba(200,240,96,0.2);border-radius:20px;background:rgba(200,240,96,0.05);}
+.btn{font-family:'Syne',sans-serif;font-size:12px;font-weight:500;padding:6px 14px;border-radius:var(--r);border:1px solid var(--border2);background:transparent;color:var(--text);cursor:pointer;transition:all 0.13s;}
+.btn:hover{background:var(--surface2);border-color:var(--border3);}
+.btn-primary{background:var(--accent);color:#08080a;border-color:var(--accent);}
+.btn-primary:hover{background:#d6f572;}
+.btn:disabled{opacity:.3;cursor:not-allowed;}
+aside{background:var(--surface);border-right:1px solid var(--border);display:flex;flex-direction:column;overflow:hidden;}
+.aside-s{padding:14px;border-bottom:1px solid var(--border);}
+.aside-t{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;}
+.url-wrap{position:relative;}
+.url-wrap input{width:100%;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--r);padding:9px 12px 9px 34px;color:var(--text);font-family:'DM Mono',monospace;font-size:11px;outline:none;transition:border-color .13s;}
+.url-wrap input:focus{border-color:var(--accent);}
+.url-wrap input::placeholder{color:var(--muted);}
+.url-icon{position:absolute;left:10px;top:50%;transform:translateY(-50%);font-size:14px;color:var(--muted);pointer-events:none;}
+.scan-btn{width:100%;margin-top:8px;padding:9px;background:var(--accent);border:none;border-radius:var(--r);color:#08080a;font-family:'Syne',sans-serif;font-size:12px;font-weight:600;cursor:pointer;transition:all .13s;display:flex;align-items:center;justify-content:center;gap:6px;}
+.scan-btn:hover{background:#d6f572;}
+.scan-btn:disabled{opacity:.4;cursor:not-allowed;}
+@keyframes spin{to{transform:rotate(360deg)}}
+.spin{animation:spin .8s linear infinite;}
+.lib-list{flex:1;overflow-y:auto;}
+.lib-list::-webkit-scrollbar{width:3px;}
+.lib-list::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px;}
+.lib-hdr{display:flex;align-items:center;padding:10px 14px 8px;position:sticky;top:0;background:var(--surface);z-index:1;border-bottom:1px solid var(--border);}
+.lib-hdr-title{font-size:11px;font-weight:500;flex:1;}
+.lib-hdr-count{font-size:10px;font-family:'DM Mono',monospace;color:var(--muted);}
+.lib-src-label{font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:8px 14px 4px;}
+.lib-item{display:flex;align-items:center;gap:10px;padding:8px 14px;cursor:pointer;transition:background .1s;border-left:2px solid transparent;}
+.lib-item:hover{background:var(--surface2);}
+.lib-item.sel{background:rgba(200,240,96,0.05);border-left-color:var(--accent);}
+.lib-thumb{width:40px;height:40px;border-radius:5px;overflow:hidden;flex-shrink:0;background:var(--surface2);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;}
+.lib-thumb img{width:100%;height:100%;object-fit:cover;}
+.lib-iinfo{flex:1;min-width:0;}
+.lib-iname{font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.lib-imeta{font-size:10px;color:var(--muted);font-family:'DM Mono',monospace;margin-top:1px;}
+.lib-badge{flex-shrink:0;font-size:9px;padding:2px 6px;border-radius:20px;}
+.b-ready{background:rgba(200,240,96,0.1);color:var(--accent);}
+.b-pend{background:rgba(100,99,94,0.2);color:var(--muted2);}
+main{display:flex;flex-direction:column;overflow:hidden;}
+.scan-area{flex:1;overflow-y:auto;padding:20px 22px;}
+.scan-area::-webkit-scrollbar{width:4px;}
+.scan-area::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px;}
+.scan-prog{display:none;flex-direction:column;gap:10px;margin-bottom:20px;}
+.prog-label{font-size:12px;color:var(--muted2);}
+.prog-track{height:3px;background:var(--surface3);border-radius:2px;overflow:hidden;}
+.prog-fill{height:100%;background:var(--accent);transition:width .3s;border-radius:2px;}
+.log-stream{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:10px 12px;font-family:'DM Mono',monospace;font-size:10px;line-height:1.8;color:var(--muted2);max-height:120px;overflow-y:auto;}
+.log-ok{color:var(--accent);}
+.log-info{color:var(--accent2);}
+.log-warn{color:var(--accent3);}
+.log-err{color:var(--danger);}
+.scan-empty{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:var(--muted);}
+.empty-icon{font-size:48px;opacity:.15;}
+.empty-p{font-size:12px;line-height:1.7;text-align:center;max-width:320px;}
+.results-hdr{display:flex;align-items:center;gap:12px;margin-bottom:16px;}
+.results-title{font-size:14px;font-weight:500;}
+.results-src{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted2);padding:3px 8px;border:1px solid var(--border2);border-radius:4px;}
+.results-actions{margin-left:auto;display:flex;gap:8px;}
+.prod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;}
+.prod-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);overflow:hidden;cursor:pointer;transition:all .15s;position:relative;}
+.prod-card:hover{border-color:var(--border2);transform:translateY(-1px);}
+.prod-card.selected{border-color:var(--accent);background:rgba(200,240,96,0.04);}
+.prod-card.selected::after{content:'✓';position:absolute;top:7px;right:7px;width:20px;height:20px;background:var(--accent);color:#08080a;border-radius:50%;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+.prod-img{width:100%;aspect-ratio:4/3;background:var(--surface2);overflow:hidden;position:relative;}
+.prod-img img{width:100%;height:100%;object-fit:cover;transition:transform .3s;}
+.prod-card:hover .prod-img img{transform:scale(1.04);}
+.no-img{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:28px;opacity:.15;}
+.prod-body{padding:10px 12px 12px;}
+.prod-name{font-size:12px;font-weight:500;line-height:1.3;margin-bottom:3px;}
+.prod-price{font-size:11px;color:var(--muted2);font-family:'DM Mono',monospace;}
+.prod-dims{font-size:10px;color:var(--muted);margin-top:2px;font-family:'DM Mono',monospace;}
+.prod-tags{display:flex;gap:4px;margin-top:7px;flex-wrap:wrap;}
+.prod-tag{font-size:9px;padding:2px 6px;border-radius:20px;border:1px solid var(--border2);color:var(--muted2);}
+.tag-glb{background:rgba(200,240,96,0.1);color:var(--accent);border-color:rgba(200,240,96,0.2);}
+.tag-gen{background:rgba(96,200,240,0.08);color:var(--accent2);border-color:rgba(96,200,240,0.2);}
+
+/* Pipeline progress card */
+.pipeline-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:14px 16px;margin-bottom:10px;}
+.pc-header{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.pc-thumb{width:40px;height:40px;border-radius:6px;overflow:hidden;background:var(--surface2);flex-shrink:0;border:1px solid var(--border);}
+.pc-thumb img{width:100%;height:100%;object-fit:cover;}
+.pc-name{font-size:12px;font-weight:500;flex:1;}
+.pc-status{font-size:10px;font-family:'DM Mono',monospace;}
+.pc-status.done{color:var(--accent);}
+.pc-status.working{color:var(--accent2);}
+.pc-status.error{color:var(--danger);}
+.pipeline-stages{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.stage-step{background:var(--surface2);border:1px solid var(--border);border-radius:var(--r);padding:8px 10px;transition:all .2s;position:relative;}
+.stage-step.active{border-color:var(--accent2);background:rgba(96,200,240,0.06);}
+.stage-step.done{border-color:rgba(200,240,96,0.25);background:rgba(200,240,96,0.04);}
+.stage-step.error{border-color:rgba(240,96,96,0.3);background:rgba(240,96,96,0.04);}
+.ss-icon{font-size:16px;margin-bottom:4px;}
+.ss-label{font-size:9px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:2px;}
+.ss-detail{font-size:10px;color:var(--muted2);line-height:1.4;min-height:28px;}
+.ss-badge{font-size:9px;margin-top:5px;padding:2px 5px;border-radius:3px;display:inline-block;}
+.ssb-done{background:rgba(200,240,96,0.12);color:var(--accent);}
+.ssb-working{background:rgba(96,200,240,0.1);color:var(--accent2);}
+.ssb-pending{background:rgba(100,99,94,0.15);color:var(--muted);}
+.ssb-error{background:rgba(240,96,96,0.1);color:var(--danger);}
+.stage-preview{margin-top:8px;display:flex;gap:4px;overflow-x:auto;padding-bottom:2px;}
+.stage-preview::-webkit-scrollbar{height:2px;}
+.angle-preview{width:48px;height:48px;border-radius:4px;overflow:hidden;flex-shrink:0;border:1px solid var(--border);background:var(--surface2);}
+.angle-preview img{width:100%;height:100%;object-fit:cover;}
+.final-preview{width:100%;height:80px;border-radius:6px;overflow:hidden;border:1px solid rgba(200,240,96,0.2);background:var(--surface2);margin-top:8px;}
+.final-preview img{width:100%;height:100%;object-fit:cover;}
+
+.api-keys-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;}
+.api-key-input{flex:1;min-width:160px;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--r);padding:6px 10px;color:var(--text);font-family:'DM Mono',monospace;font-size:10px;outline:none;}
+.api-key-input:focus{border-color:var(--accent);}
+.api-key-input::placeholder{color:var(--muted);}
+.mock-toggle{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted2);cursor:pointer;}
+.mock-toggle input{accent-color:var(--accent);}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Co<em>Stage</em><span>/</span></div>
+  <div class="htag">Library Builder</div>
+  <div class="hright">
+    <div class="lib-count" id="libCount">0 assets</div>
+    <button class="btn" onclick="exportLibrary()">Export library.json</button>
+  </div>
+</header>
+
+<aside>
+  <div class="aside-s">
+    <div class="aside-t">Add a piece</div>
+    <div class="url-wrap">
+      <span class="url-icon">⌕</span>
+      <input type="text" id="urlInput" placeholder="https://www.article.com/product/24178/sven-sofa"
+        onkeydown="if(event.key==='Enter')fetchProduct()">
+    </div>
+    <button class="scan-btn" id="scanBtn" onclick="fetchProduct()">
+      <span id="scanBtnText">↯ Fetch this piece</span>
+    </button>
+  </div>
+
+  <div class="aside-s">
+    <div class="aside-t">API keys (optional)</div>
+    <div class="api-keys-row">
+      <input class="api-key-input" id="nbKey" type="password" placeholder="nano-banana key">
+      <input class="api-key-input" id="oaiKey" type="password" placeholder="OpenAI key">
+      <input class="api-key-input" id="falKey" type="password" placeholder="FAL key">
+    </div>
+    <div style="margin-top:8px">
+      <label class="mock-toggle">
+        <input type="checkbox" id="mockToggle" checked>
+        Mock mode (no real API calls)
+      </label>
+    </div>
+  </div>
+
+  <div class="lib-list">
+    <div class="lib-hdr">
+      <span class="lib-hdr-title">Library</span>
+      <span class="lib-hdr-count" id="libHdrCount">0 items</span>
+    </div>
+    <div id="libItems" style="padding:14px;font-size:11px;color:var(--muted);text-align:center;line-height:1.7">
+      Generated assets appear here.
+    </div>
+  </div>
+</aside>
+
+<main>
+  <div class="scan-area" id="scanArea">
+    <div class="scan-prog" id="scanProg">
+      <div class="prog-label" id="progLabel">Scanning…</div>
+      <div class="prog-track"><div class="prog-fill" id="progFill" style="width:0%"></div></div>
+      <div class="log-stream" id="logStream"></div>
+    </div>
+
+    <div class="scan-empty" id="scanEmpty">
+      <div class="empty-icon">◫</div>
+      <p class="empty-p">Find a piece you like on a retailer's site, paste the product page link here, and fetch it. Then run the 4-stage pipeline (clean plate → multi-angle → 3D → preview) to turn it into a GLB and save it straight to your library — one piece at a time, building up over sessions.</p>
+    </div>
+
+    <div id="productView" style="display:none">
+      <div class="results-hdr">
+        <div class="results-title" id="productTitle"></div>
+        <div class="results-src" id="productSrc"></div>
+        <div class="results-actions">
+          <button class="btn" onclick="closeProduct()">✕</button>
+        </div>
+      </div>
+      <div id="productCard"></div>
+      <div id="pipelineCardWrap" style="margin-top:16px"></div>
+    </div>
+  </div>
+</main>
+
+<script type="module">
+// ── Inline asset pipeline (mirrors assetPipeline.js) ──────────────────────
+
+const API = {
+  mock: true,
+  nb:  { key: '', endpoint: 'https://api.nanobananaapi.dev/v1/images/edit', model: 'gemini-3-pro-image-preview' },
+  oai: { key: '', endpoint: 'https://api.openai.com/v1/images/edits',       model: 'gpt-image-2' },
+  fal: { key: '', endpoint: 'https://fal.run/fal-ai/hunyuan3d-2', faceCount: 50000, enablePbr: true },
+};
+
+const STORAGE_KEYS = {
+  nbKey: 'costage_nbKey',
+  oaiKey: 'costage_oaiKey',
+  falKey: 'costage_falKey',
+  mock: 'costage_mockMode',
+};
+
+function loadSavedApiConfig() {
+  try {
+    const nbKey = localStorage.getItem(STORAGE_KEYS.nbKey);
+    const oaiKey = localStorage.getItem(STORAGE_KEYS.oaiKey);
+    const falKey = localStorage.getItem(STORAGE_KEYS.falKey);
+    const mockMode = localStorage.getItem(STORAGE_KEYS.mock);
+
+    if (nbKey !== null) {
+      document.getElementById('nbKey').value = nbKey;
+      API.nb.key = nbKey;
+    }
+    if (oaiKey !== null) {
+      document.getElementById('oaiKey').value = oaiKey;
+      API.oai.key = oaiKey;
+    }
+    if (falKey !== null) {
+      document.getElementById('falKey').value = falKey;
+      API.fal.key = falKey;
+    }
+    if (mockMode !== null) {
+      const mockValue = mockMode === 'true';
+      document.getElementById('mockToggle').checked = mockValue;
+      API.mock = mockValue;
+    }
+  } catch (error) {
+    console.warn('Could not load saved API keys from localStorage.', error);
+  }
+}
+
+function saveApiConfig() {
+  try {
+    localStorage.setItem(STORAGE_KEYS.nbKey, document.getElementById('nbKey').value);
+    localStorage.setItem(STORAGE_KEYS.oaiKey, document.getElementById('oaiKey').value);
+    localStorage.setItem(STORAGE_KEYS.falKey, document.getElementById('falKey').value);
+    localStorage.setItem(STORAGE_KEYS.mock, document.getElementById('mockToggle').checked.toString());
+  } catch (error) {
+    console.warn('Could not save API keys to localStorage.', error);
+  }
+}
+
+document.getElementById('mockToggle').addEventListener('change', e => {
+  API.mock = e.target.checked;
+  saveApiConfig();
+});
+
+document.getElementById('nbKey').addEventListener('input', () => { API.nb.key = document.getElementById('nbKey').value; saveApiConfig(); });
+
+document.getElementById('oaiKey').addEventListener('input', () => { API.oai.key = document.getElementById('oaiKey').value; saveApiConfig(); });
+
+document.getElementById('falKey').addEventListener('input', () => { API.fal.key = document.getElementById('falKey').value; saveApiConfig(); });
+
+loadSavedApiConfig();
+
+async function runPipeline(product, onProgress) {
+  const result = { productId: product.id, cleanPlateUrl: null, angleUrls: [], glbUrl: null, previewUrl: null, error: null };
+  try {
+    onProgress('clean', 'Stripping background & lifestyle staging…', 15);
+    result.cleanPlateUrl = await stageClean(product);
+    onProgress('clean', 'done', 25);
+
+    onProgress('angles', 'Generating front · 45° · 90° · rear views…', 32);
+    result.angleUrls = await stageAngles(result.cleanPlateUrl, product, onProgress);
+    onProgress('angles', 'done', 58);
+
+    onProgress('glb', 'Reconstructing 3D model via Hunyuan (FAL)…', 62);
+    result.glbUrl = await stageHunyuan(result.angleUrls, product);
+    onProgress('glb', 'done', 82);
+
+    onProgress('preview', 'Polishing library preview with nano-banana…', 86);
+    result.previewUrl = await stagePreview(result.angleUrls[0], product);
+    onProgress('preview', 'done', 100);
+  } catch(e) { result.error = e.message; onProgress('error', e.message, 100); }
+  return result;
+}
+
+async function stageClean(product) {
+  if (API.mock) { await delay(1000 + Math.random()*600); return mockImg(product.id,'clean'); }
+  const r = await fetch(API.nb.endpoint, { method:'POST', headers:{'Content-Type':'application/json','Authorization':`Bearer ${API.nb.key}`},
+    body: JSON.stringify({ model:API.nb.model, image:product.imageUrls[0], num:1, image_size:'1:1',
+      prompt:`Isolate this ${product.category} on a clean white/neutral background. Remove lifestyle props, room background, other furniture. Product: ${product.name}. Materials: ${(product.materials||[]).join(', ')}. Keep only the single furniture piece. Studio lighting, photorealistic, accurate proportions.` }) });
+  const d = await r.json();
+  if (d.code !== 0) throw new Error(d.message);
+  return Array.isArray(d.data?.url) ? d.data.url[0] : d.data?.url;
+}
+
+async function stageAngles(cleanUrl, product, onProgress) {
+  const views = [
+    { k:'front',  deg:'0°',   desc:'Straight front view, camera facing piece directly.' },
+    { k:'side45', deg:'45°',  desc:'3/4 front-left view at 45 degrees from corner.' },
+    { k:'side90', deg:'90°',  desc:'Direct side profile view at 90 degrees.' },
+    { k:'rear',   deg:'180°', desc:'Rear view showing back of the piece.' },
+  ];
+  if (API.mock) {
+    const urls = [];
+    for (const v of views) { await delay(500 + Math.random()*300); urls.push(mockImg(product.id, v.k)); onProgress('angles', `Generated ${v.deg} view`, null); }
+    return urls;
+  }
+  const cleanBlob = await fetch(cleanUrl).then(r=>r.blob());
+  const urls = [];
+  for (const v of views) {
+    onProgress('angles', `Generating ${v.deg} view…`, null);
+    const form = new FormData();
+    form.append('model',  API.oai.model);
+    form.append('prompt', `Product photography of ${product.name} (${product.category}). Materials: ${(product.materials||[]).join(', ')}. Dimensions: ${product.dimensions?.width}×${product.dimensions?.depth}×${product.dimensions?.height}m. ${v.desc} Clean neutral background. Consistent studio lighting. Photorealistic, match reference proportions exactly. Multi-view reference for 3D reconstruction.`);
+    form.append('image',  cleanBlob, 'ref.png');
+    form.append('n', '1'); form.append('size', '1024x1024');
+    const r = await fetch(API.oai.endpoint, { method:'POST', headers:{'Authorization':`Bearer ${API.oai.key}`}, body:form });
+    const d = await r.json();
+    if (d.error) throw new Error(d.error.message);
+    urls.push(d.data[0].url);
+  }
+  return urls;
+}
+
+async function stageHunyuan(angleUrls, product) {
+  if (API.mock) { await delay(3000 + Math.random()*1500); return `mock://glb/${product.id}.glb`; }
+  const r = await fetch(API.fal.endpoint, { method:'POST',
+    headers:{'Content-Type':'application/json','Authorization':`Key ${API.fal.key}`},
+    body: JSON.stringify({ image_urls:angleUrls, face_count:API.fal.faceCount, enable_pbr:API.fal.enablePbr, generate_type:'Normal',
+      scale_hint: product.dimensions ? Math.max(product.dimensions.width, product.dimensions.depth, product.dimensions.height) : 1 }) });
+  const d = await r.json();
+  if (d.error) throw new Error(JSON.stringify(d.error));
+  return d.model_mesh?.url || d.output?.url;
+}
+
+async function stagePreview(sourceUrl, product) {
+  if (API.mock) { await delay(800 + Math.random()*400); return mockImg(product.id,'preview'); }
+  const r = await fetch(API.nb.endpoint, { method:'POST', headers:{'Content-Type':'application/json','Authorization':`Bearer ${API.nb.key}`},
+    body: JSON.stringify({ model:API.nb.model, image:sourceUrl, num:1, image_size:'1:1',
+      prompt:`Polish this ${product.category} product image for a furniture library card. Warm neutral studio background, soft ground shadow, 3/4 front-left angle showing full piece with breathing room. Subtle warm colour grade. Square crop. Clean, centred studio shot: ${product.name}.` }) });
+  const d = await r.json();
+  if (d.code !== 0) throw new Error(d.message);
+  return Array.isArray(d.data?.url) ? d.data.url[0] : d.data?.url;
+}
+
+function mockImg(id, stage) {
+  const seed = (id+stage).split('').reduce((a,c)=>a+c.charCodeAt(0),0);
+  const offsets = {clean:0,front:1,side45:2,side90:3,rear:4,preview:5};
+  return `https://picsum.photos/seed/${seed+(offsets[stage]||0)}/400/400`;
+}
+async function delay(ms) { return new Promise(r=>setTimeout(r,ms)); }
+
+// ── State ─────────────────────────────────────────────────────────────────
+const S = { product:null, pipelineResult:null, library:[] };
+const LIB_STORAGE_KEY = 'costage_library_v1';
+
+// Backend URL — change this if you deploy the server somewhere other than localhost
+const BACKEND_URL = 'http://localhost:3001';
+
+function loadLibrary() {
+  try { const raw = localStorage.getItem(LIB_STORAGE_KEY); if (raw) S.library = JSON.parse(raw); } catch {}
+}
+function persistLibrary() {
+  try { localStorage.setItem(LIB_STORAGE_KEY, JSON.stringify(S.library)); } catch {}
+}
+
+// Check if the backend is reachable
+async function backendAvailable() {
+  try {
+    const r = await fetch(`${BACKEND_URL}/health`, { signal: AbortSignal.timeout(2000) });
+    return r.ok;
+  } catch { return false; }
+}
+
+// ── Fetch a single product by URL ─────────────────────────────────────────
+window.fetchProduct = async function() {
+  const url = document.getElementById('urlInput').value.trim(); if (!url) return;
+  document.getElementById('scanEmpty').style.display = 'none';
+  document.getElementById('productView').style.display = 'none';
+  const prog = document.getElementById('scanProg'); prog.style.display = 'flex';
+  const btn = document.getElementById('scanBtn'); btn.disabled = true;
+  document.getElementById('scanBtnText').innerHTML = '<span class="spin">⟳</span> Fetching…';
+
+  const log = (msg, type='') => {
+    const el = document.getElementById('logStream');
+    el.innerHTML += `<div class="${type?'log-'+type:''}">${msg}</div>`; el.scrollTop=el.scrollHeight;
+  };
+  const setP = p => { document.getElementById('progFill').style.width=p+'%'; };
+  const setL = t => { document.getElementById('progLabel').textContent=t; };
+
+  const hostname = (() => { try { return new URL(url).hostname.replace('www.',''); } catch { return url; } })();
+  const reset = () => { btn.disabled=false; document.getElementById('scanBtnText').textContent='↯ Fetch this piece'; };
+
+  try {
+    log(`⌕ Targeting: ${url}`, 'info');
+    setP(10); setL('Checking backend…');
+
+    const hasBackend = await backendAvailable();
+    let product;
+
+    if (hasBackend) {
+      log(`✓ Backend online — headless render starting`, 'ok');
+      setP(25); setL('Rendering the product page with Puppeteer…');
+      log(`⟳ Launching headless Chrome to read the product page…`, 'info');
+
+      const resp = await fetch(`${BACKEND_URL}/scrape-product`, {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify({ url }),
+      });
+      const data = await resp.json();
+      if (!resp.ok || !data.success) throw new Error(data.error || `Backend error ${resp.status}`);
+
+      log(`✓ Extracted "${data.product.name}" · ${data.product.price||'price n/a'}`, 'ok');
+      product = { ...data.product, source: data.source };
+
+    } else {
+      log(`⚠ Backend not running — using a placeholder so you can try the pipeline`, 'warn');
+      log(`  Start it: cd backend && npm start`, 'warn');
+      setP(40); setL('Building a placeholder item…');
+      await delay(400);
+      product = demoProduct(hostname, url);
+    }
+
+    setP(100); setL('Ready');
+    await delay(250);
+
+    S.product = product; S.pipelineResult = null;
+    setTimeout(() => { prog.style.display = 'none'; renderProduct(); reset(); }, 250);
+
+  } catch(err) {
+    log(`✗ ${err.message}`, 'err');
+    setTimeout(() => {
+      prog.style.display = 'none';
+      document.getElementById('scanEmpty').style.display = 'flex';
+      reset();
+    }, 400);
+  }
+};
+
+function demoProduct(source, url) {
+  const cats = ['sofa','armchair','coffee table','dining chair','bed'];
+  const dims = { sofa:{w:2.1,d:0.95,h:0.85}, armchair:{w:0.85,d:0.85,h:0.8}, 'coffee table':{w:1.1,d:0.55,h:0.42}, 'dining chair':{w:0.5,d:0.52,h:0.9}, bed:{w:1.8,d:2.0,h:0.9} };
+  const seed = Math.abs([...url].reduce((a,c)=>(a*31+c.charCodeAt(0))|0, 0));
+  const cat  = cats[seed % cats.length];
+  const d    = dims[cat];
+  const label = source.split('.')[0].toUpperCase();
+  return { id:`${source.split('.')[0]}-${cat.replace(' ','-')}-${seed%1000}`,
+    name:`${label} ${cat.replace(/\b\w/g,c=>c.toUpperCase())}`, price:'$—', currency:'USD',
+    dimensions:{width:d.w,depth:d.d,height:d.h,unit:'m'}, category:cat, style:'modern',
+    materials:['oak','linen'], colors:['natural'],
+    imageUrls:[`https://picsum.photos/seed/${encodeURIComponent(url)}/400/300`],
+    productUrl:url, description:'Backend not running, so details could not be scraped — this is a placeholder you can still run through the pipeline.',
+    sku:null, glbReady:false, source };
+}
+
+// ── Product preview ───────────────────────────────────────────────────────
+function renderProduct() {
+  const p = S.product;
+  document.getElementById('productView').style.display = 'block';
+  document.getElementById('productTitle').textContent = p.name;
+  document.getElementById('productSrc').textContent = p.source;
+  document.getElementById('productCard').innerHTML = productCardHTML(p);
+  document.getElementById('pipelineCardWrap').innerHTML = '';
+}
+
+function productCardHTML(p) {
+  const img  = p.imageUrls?.[0] || `https://picsum.photos/seed/${p.id}/400/300`;
+  const dims = p.dimensions;
+  const desc = p.description ? (p.description.length>240 ? p.description.slice(0,240)+'…' : p.description) : '';
+  return `
+    <div class="prod-card" style="max-width:300px;cursor:default">
+      <div class="prod-img"><img src="${img}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="no-img" style="display:none">◫</div></div>
+      <div class="prod-body">
+        <div class="prod-name">${p.name}</div>
+        <div class="prod-price">${p.price||'—'}</div>
+        ${dims?`<div class="prod-dims">${dims.width}×${dims.depth}×${dims.height}m</div>`:''}
+        <div class="prod-tags">
+          <span class="prod-tag">${p.style||'furniture'}</span>
+          <span class="prod-tag">${p.category}</span>
+        </div>
+        ${desc?`<p style="font-size:11px;color:var(--muted2);margin-top:8px;line-height:1.6">${desc}</p>`:''}
+      </div>
+    </div>
+    <button class="btn btn-primary" id="buildAssetBtn" style="margin-top:14px" onclick="buildAsset()">⬡ Build 3D asset &amp; save to library</button>
+  `;
+}
+
+window.closeProduct = function() {
+  document.getElementById('productView').style.display = 'none';
+  document.getElementById('scanEmpty').style.display = 'flex';
+  S.product = null; S.pipelineResult = null;
+};
+
+// ── Pipeline (single item) ────────────────────────────────────────────────
+window.buildAsset = async function() {
+  const p = S.product; if (!p) return;
+
+  // Update API config from inputs
+  API.nb.key  = document.getElementById('nbKey').value;
+  API.oai.key = document.getElementById('oaiKey').value;
+  API.fal.key = document.getElementById('falKey').value;
+  API.mock    = document.getElementById('mockToggle').checked;
+
+  const btn = document.getElementById('buildAssetBtn');
+  if (btn) { btn.disabled = true; btn.textContent = '⟳ Building…'; }
+
+  document.getElementById('pipelineCardWrap').innerHTML = pipelineCardHTML(p);
+
+  const result = await runPipeline(p, (stage, label, pct) => updatePipelineCard(p.id, stage, label, pct));
+  S.pipelineResult = result;
+
+  if (result.previewUrl) {
+    addToLibrary(p, result);
+    if (btn) { btn.textContent = '✓ Added to library'; }
+  } else if (btn) {
+    btn.disabled = false; btn.textContent = '⬡ Retry build';
+  }
+};
+
+function pipelineCardHTML(p) {
+  const img = p.imageUrls?.[0]||`https://picsum.photos/seed/${p.id}/400/300`;
+  return `<div class="pipeline-card" id="pc-${p.id}">
+    <div class="pc-header">
+      <div class="pc-thumb"><img src="${img}" onerror="this.style.opacity='.2'"></div>
+      <div class="pc-name">${p.name}</div>
+      <div class="pc-status" id="pcs-${p.id}">queued</div>
+    </div>
+    <div class="pipeline-stages">
+      ${stageHTML('clean',  p.id, '🧹', 'Clean plate',  'nano-banana', 'Strip background & lifestyle props')}
+      ${stageHTML('angles', p.id, '📐', 'Multi-angle',  'gpt-image-2', 'Front · 45° · 90° · rear')}
+      ${stageHTML('glb',    p.id, '⬡',  '3D model',     'Hunyuan 3D',  'Multi-view reconstruction')}
+      ${stageHTML('preview',p.id, '✦',  'Preview',      'nano-banana', 'Studio library card')}
+    </div>
+    <div id="pp-${p.id}"></div>
+  </div>`;
+}
+
+function stageHTML(key, pid, icon, label, api, detail) {
+  return `<div class="stage-step" id="ss-${pid}-${key}">
+    <div class="ss-icon">${icon}</div>
+    <div class="ss-label">${label}</div>
+    <div class="ss-detail" id="ssd-${pid}-${key}">${detail}</div>
+    <span class="ss-badge ssb-pending" id="ssb-${pid}-${key}">pending</span>
+  </div>`;
+}
+
+const STAGE_ORDER = ['clean','angles','glb','preview'];
+
+function updatePipelineCard(productId, stage, label, pct) {
+  const statusEl = document.getElementById(`pcs-${productId}`);
+  const stageEl  = document.getElementById(`ss-${productId}-${stage}`);
+  const detailEl = document.getElementById(`ssd-${productId}-${stage}`);
+  const badgeEl  = document.getElementById(`ssb-${productId}-${stage}`);
+  const previewEl = document.getElementById(`pp-${productId}`);
+  if (!stageEl) return;
+
+  if (stage === 'error') {
+    if (statusEl) { statusEl.textContent = 'error'; statusEl.className = 'pc-status error'; }
+    return;
+  }
+
+  if (label === 'done') {
+    stageEl.className = 'stage-step done';
+    if (badgeEl) { badgeEl.textContent = 'done'; badgeEl.className = 'ss-badge ssb-done'; }
+    if (statusEl) {
+      const idx = STAGE_ORDER.indexOf(stage);
+      if (idx === STAGE_ORDER.length - 1) {
+        statusEl.textContent = '✓ complete'; statusEl.className = 'pc-status done';
+        // Show final preview strip
+        const r = S.pipelineResult;
+        if (r?.previewUrl && previewEl) {
+          previewEl.innerHTML = `
+            <div style="margin-top:10px">
+              <div style="font-size:10px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.06em">Pipeline outputs</div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr 2fr;gap:5px;align-items:start">
+                ${[{label:'Clean',url:r.cleanPlateUrl},{label:'Front',url:r.angleUrls?.[0]},{label:'Side 45°',url:r.angleUrls?.[1]},{label:'Side 90°',url:r.angleUrls?.[2]}].map(a=>`
+                  <div>
+                    <div style="font-size:9px;color:var(--muted);margin-bottom:3px">${a.label}</div>
+                    <div class="angle-preview"><img src="${a.url}" onerror="this.style.opacity='.15'"></div>
+                  </div>`).join('')}
+                <div>
+                  <div style="font-size:9px;color:var(--accent);margin-bottom:3px">Library preview</div>
+                  <div class="final-preview"><img src="${r.previewUrl}" onerror="this.style.opacity='.15'"></div>
+                </div>
+              </div>
+              ${r.glbUrl ? `<div style="margin-top:8px;font-size:10px;font-family:'DM Mono',monospace;color:var(--muted2)">GLB: <span style="color:var(--accent2)">${r.glbUrl.substring(0,60)}${r.glbUrl.length>60?'…':''}</span></div>` : ''}
+            </div>`;
+        }
+      } else {
+        const next = STAGE_ORDER[idx+1];
+        statusEl.textContent = `→ ${next}`; statusEl.className = 'pc-status working';
+      }
+    }
+  } else {
+    stageEl.className = 'stage-step active';
+    if (detailEl) detailEl.textContent = label;
+    if (badgeEl) { badgeEl.textContent = 'working'; badgeEl.className = 'ss-badge ssb-working'; }
+    if (statusEl) { statusEl.textContent = stage; statusEl.className = 'pc-status working'; }
+  }
+}
+
+// ── Library ───────────────────────────────────────────────────────────────
+// Each completed asset is saved straight away — the library accumulates
+// piece by piece across sessions (persisted to localStorage; export any time
+// to get a portable costage-library.json for the floor plan editor / compositor).
+function addToLibrary(prod, result) {
+  if (S.library.find(l=>l.id===prod.id)) return;
+  S.library.push({ id:prod.id, name:prod.name, category:prod.category, style:prod.style,
+    materials:prod.materials, dimensions:prod.dimensions, price:prod.price,
+    source:prod.source, sourceUrl:prod.productUrl, imageUrls:prod.imageUrls,
+    cleanPlateUrl:result.cleanPlateUrl, angleUrls:result.angleUrls, glbUrl:result.glbUrl, previewUrl:result.previewUrl,
+    addedAt:new Date().toISOString() });
+  persistLibrary();
+  renderLibrary();
+  document.getElementById('libCount').textContent = S.library.length + ' assets';
+}
+
+function renderLibrary() {
+  document.getElementById('libHdrCount').textContent = S.library.length + ' items';
+  const el = document.getElementById('libItems');
+  if (!S.library.length) { el.innerHTML='<div style="padding:14px;font-size:11px;color:var(--muted);text-align:center;line-height:1.7">No assets yet.</div>'; return; }
+  const groups = {};
+  S.library.forEach(item => { const s=item.source||'unknown'; if(!groups[s])groups[s]=[]; groups[s].push(item); });
+  el.innerHTML = Object.entries(groups).map(([src,items])=>`
+    <div><div class="lib-src-label">${src}</div>
+    ${items.map(item=>`<div class="lib-item">
+      <div class="lib-thumb">${item.previewUrl?`<img src="${item.previewUrl}" onerror="this.innerHTML='◫'">`:'<span style="font-size:16px;opacity:.3">◫</span>'}</div>
+      <div class="lib-iinfo"><div class="lib-iname">${item.name}</div><div class="lib-imeta">${item.dimensions?.width}×${item.dimensions?.depth}m</div></div>
+      <span class="lib-badge ${item.glbUrl?'b-ready':'b-pend'}">${item.glbUrl?'GLB':'img'}</span>
+    </div>`).join('')}</div>`).join('');
+}
+
+window.exportLibrary = function() {
+  const out = { version:'1.0', exportedAt:new Date().toISOString(), assetCount:S.library.length,
+    assets:S.library.map(item=>({ id:item.id, name:item.name, category:item.category, style:item.style,
+      materials:item.materials, dimensions:item.dimensions, price:item.price, sourceUrl:item.sourceUrl,
+      imageUrls:item.imageUrls, cleanPlateUrl:item.cleanPlateUrl, angleUrls:item.angleUrls,
+      glbUrl:item.glbUrl, previewUrl:item.previewUrl })) };
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(out,null,2)],{type:'application/json'}));
+  a.download = 'costage-library.json'; a.click();
+};
+
+loadLibrary();
+renderLibrary();
+document.getElementById('libCount').textContent = S.library.length + ' assets';
+</script>
+</body>
+</html>

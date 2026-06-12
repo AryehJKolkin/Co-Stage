@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoStage — Resources</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+  .resources-section { padding: 0 0 96px; }
+  .guide-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .guide-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--r2);
+    padding: 24px; transition: border-color .15s, transform .15s;
+  }
+  .guide-card:hover { border-color: var(--border2); transform: translateY(-2px); }
+  .guide-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; letter-spacing: -.01em; }
+  .guide-card p { font-size: 12.5px; color: var(--muted2); line-height: 1.65; margin-bottom: 14px; }
+  .guide-card .hub-meta { font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
+
+  .api-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--r2);
+    padding: 28px;
+  }
+  .api-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+  .api-card p { font-size: 13.5px; color: var(--muted2); line-height: 1.65; margin-bottom: 16px; }
+  .api-card pre {
+    background: var(--surface2); border: 1px solid var(--border2); border-radius: var(--r);
+    padding: 16px 18px; overflow-x: auto; font-family: var(--font-mono); font-size: 12.5px;
+    color: var(--text); line-height: 1.7;
+  }
+  .api-card .api-method { color: var(--accent); }
+  .api-card .api-note {
+    margin-top: 14px; font-family: var(--font-mono); font-size: 11px; color: var(--muted);
+  }
+
+  @media (max-width: 880px) {
+    .guide-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Co<em>Stage</em></div>
+  <div class="nav-links">
+    <a href="index.html#features">Features</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="solutions.html">Solutions</a>
+    <a href="resources.html" class="active">Resources</a>
+    <a href="catalogue.html">Catalogue</a>
+  </div>
+  <div class="nav-actions">
+    <a class="nav-signin" href="dashboard.html">Sign in</a>
+    <button class="nav-cta" onclick="location.href='libraryBuilder.html'">Open Library Builder</button>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <section class="page-hero">
+    <div class="eyebrow">Resources</div>
+    <h1>Documentation &amp; guides</h1>
+    <p>Everything you need to run CoStage end to end — from building your furniture library
+       to rendering the final staged photos.</p>
+  </section>
+
+  <section class="resources-section">
+    <div class="section-head">
+      <div class="eyebrow">Getting started</div>
+      <h2>Open a tool</h2>
+      <p>Each tool works standalone — open the one you need, or run the backend for live
+         scraping and 3D generation.</p>
+    </div>
+    <div class="hub-grid">
+      <a class="hub-card" href="README.md">
+        <div class="hub-card-top"><span class="hub-tag">Start here</span><span class="hub-arrow">↗</span></div>
+        <h3>Overview &amp; quick start</h3>
+        <p>The full pipeline, file-by-file breakdown, and step-by-step setup for the backend
+           and frontend.</p>
+        <div class="hub-meta">README.md</div>
+      </a>
+      <a class="hub-card" href="libraryBuilder.html">
+        <div class="hub-card-top"><span class="hub-tag">01 · Library</span><span class="hub-arrow">↗</span></div>
+        <h3>Library Builder</h3>
+        <p>Paste a product page link, run it through the 4-stage pipeline, and add the
+           3D asset to your library.</p>
+        <div class="hub-meta">libraryBuilder.html</div>
+      </a>
+      <a class="hub-card" href="floorPlanEditor.html">
+        <div class="hub-card-top"><span class="hub-tag">02 · Floor plan</span><span class="hub-arrow">↗</span></div>
+        <h3>Floor Plan Editor</h3>
+        <p>Drag furniture onto a 2D floor plan generated from your room's spatial data
+           and export placements.</p>
+        <div class="hub-meta">floorPlanEditor.html</div>
+      </a>
+      <a class="hub-card" href="compositor.html">
+        <div class="hub-card-top"><span class="hub-tag">03 · Render</span><span class="hub-arrow">↗</span></div>
+        <h3>Compositor</h3>
+        <p>Three.js compositor — projects your placed furniture into every room photo
+           using real camera poses.</p>
+        <div class="hub-meta">compositor.html</div>
+      </a>
+      <a class="hub-card" href="catalogue.html">
+        <div class="hub-card-top"><span class="hub-tag">Browse</span><span class="hub-arrow">↗</span></div>
+        <h3>Furniture Catalogue</h3>
+        <p>Browse pieces across Rove Concepts, West Elm, Soho Home, Povison, and more —
+           filter by room, category, and style.</p>
+        <div class="hub-meta">catalogue.html</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="resources-section">
+    <div class="section-head">
+      <div class="eyebrow">Guides</div>
+      <h2>How the pipeline works</h2>
+      <p>Deeper dives into the modules that power the library, the floor plan, and the
+         catalogue.</p>
+    </div>
+    <div class="guide-grid">
+      <div class="guide-card">
+        <h3>The 4-stage asset pipeline</h3>
+        <p>How a single product link becomes a placeable 3D asset: nano-banana clean plate
+           → gpt-image-2 multi-angle → Hunyuan 3D reconstruction → nano-banana preview
+           render.</p>
+        <div class="hub-meta">assetPipeline.js</div>
+      </div>
+      <div class="guide-card">
+        <h3>Floor plan spatial parsing</h3>
+        <p>How image-blaster output (camera poses, room dimensions, floor polygon) gets
+           turned into a 2D floor plan, including the <code>projectToPhoto()</code>
+           floor-plan-to-pixel projection.</p>
+        <div class="hub-meta">spatialParser.js</div>
+      </div>
+      <div class="guide-card">
+        <h3>The furniture catalogue</h3>
+        <p>How the catalogue is scraped and structured — JSON-LD parsing plus heuristic DOM
+           scraping across supported retailers, no API key required.</p>
+        <div class="hub-meta">backend/server.js</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="resources-section">
+    <div class="section-head">
+      <div class="eyebrow">API</div>
+      <h2>Catalogue endpoint</h2>
+      <p>When the backend is running, the furniture catalogue is available as a simple JSON
+         API for any tool to consume.</p>
+    </div>
+    <div class="api-card">
+      <h3>Get products from a source</h3>
+      <p>Returns a versioned list of products scraped from the given retailer.</p>
+      <pre><span class="api-method">GET</span> http://localhost:3001/catalogue?source=west-elm</pre>
+      <p style="margin-top:16px; margin-bottom:0;">Response shape:</p>
+      <pre>{
+  "version": "...",
+  "source": "west-elm",
+  "builtAt": "...",
+  "total": 0,
+  "products": [ ... ]
+}</pre>
+      <div class="api-note">
+        Supported sources: rove-concepts · west-elm · soho-home · povison · claude-home · soho-home-lighting
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap footer-row">
+    <div class="logo">Co<em>Stage</em></div>
+    <div class="footer-links">
+      <a href="index.html#features">Features</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="resources.html">Resources</a>
+      <a href="README.md">Docs</a>
+    </div>
+    <div class="meta">AI-powered virtual staging for real estate</div>
+  </div>
+</footer>
+
+</body>
+</html>

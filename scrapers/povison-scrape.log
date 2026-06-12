@@ -1,0 +1,1100 @@
+[2026-06-09T18:13:04.669Z] === Povison catalogue builder ===
+[2026-06-09T18:13:10.493Z] 
+── LIVING ROOM / sofa ──────────────
+[2026-06-09T18:13:10.498Z]   Loading: /sofa/sofas-loveseats.html
+[2026-06-09T18:13:21.057Z]   Found 36 product links
+[2026-06-09T18:13:21.801Z]   Loading: /sofa/sectionals.html
+[2026-06-09T18:13:32.258Z]   Found 17 product links
+[2026-06-09T18:13:33.000Z]   43 unique stubs
+[2026-06-09T18:13:33.021Z]   Detailing: Ergopals-Power Reclining Loveseat
+[2026-06-09T18:13:40.294Z]   ✓ 84" Modern Oversized Power Reclining Sofa with Pet-Friendly Fabric, 
+2 Recliners, 90°-145° Zero Gravity Recline, Solid Wood Construction, USB Charging, Adjustable Headrest, Wall-Hugging, Cloud-like Comfort, Waterproof & Scratch-Resistant Fabric, Beige | $2,399 | 14.96"W × 14.96"D × 24.02"H | 4 imgs
+[2026-06-09T18:13:40.303Z]   Detailing: Aurora-Power Sofa Bed
+[2026-06-09T18:13:48.278Z]   ✓ 82.68" Luxury French Creamy Loveseat Power Sleeper Sofa Bed Retractable with Remote Control, Waterproof Oversized Lounge Couch, Zero-Distance Wall Placement Pull Out Sofa Bed, Scratch-Resistant and Pet-Friendly Chenille Fabric, Creamy White | $2,599 | 14.96"W × 14.96"D × 24.02"H | 4 imgs
+[2026-06-09T18:13:48.284Z]   Detailing: Hudson-104.33" Sailboat Deep Sofa Stain Resistant Cozy Couch with Adjustable Backrest, 22.83"–33.46" Seating Depth, Water-Resistant Suede Fabric, Beige Water-Proof Couch
+[2026-06-09T18:13:57.052Z]   ✓ 104.33" Sailboat Deep Sofa Stain Resistant Cozy Couch with Adjustable Backrest, 22.83"–33.46" Seating Depth, Water-Resistant Suede Fabric, Beige Water-Proof Couch | $1,799 | 14.96"W × 14.96"D × 24.02"H | 4 imgs
+[2026-06-09T18:13:57.065Z]   Detailing: Arlo-2-3 Seater Mid Century Deep Sofa with Adjustable Cushions,27.6"-39.4" Seat Depth, Pet-Friendly Fabric, Cloud Sectional Design, High Back, Solid Wood Legs, and Sleeper Function, Beige, Stain Resistant, Memory Foam, Cozy Tufted Round Sofa
+[2026-06-09T18:14:01.819Z]     Nav warning: Navigating frame was detached
+[2026-06-09T18:14:02.698Z]     Detail fail: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:02.712Z]   ✓ Arlo-2-3 Seater Mid Century Deep Sofa with Adjustable Cushions,27.6"-39.4" Seat Depth, Pet-Friendly Fabric, Cloud Sectional Design, High Back, Solid Wood Legs, and Sleeper Function, Beige, Stain Resistant, Memory Foam, Cozy Tufted Round Sofa | $1,999 | dims n/a | 1 imgs
+[2026-06-09T18:14:02.729Z]   Detailing: Benjamin-Power Reclining Loveseat
+[2026-06-09T18:14:03.374Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:04.324Z]     Detail fail: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:04.334Z]   ✓ Benjamin-Power Reclining Loveseat | $2,159 | dims n/a | 1 imgs
+[2026-06-09T18:14:04.341Z]   Detailing: Cronus-Brown Genuine Leather Modular Sofa with Solid Wood Frame
+[2026-06-09T18:14:04.875Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:05.751Z]     Detail fail: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:05.752Z]   ✓ Cronus-Brown Genuine Leather Modular Sofa with Solid Wood Frame | $3,000 | dims n/a | 1 imgs
+[2026-06-09T18:14:05.754Z]   Detailing: Barrett-Power Sofa Bed
+[2026-06-09T18:14:06.328Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:07.185Z]     Detail fail: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:07.190Z]   ✓ Barrett-Power Sofa Bed | $2,199 | dims n/a | 1 imgs
+[2026-06-09T18:14:07.192Z]   Detailing: Orange Velvet Tufted Sofa Mid Century with Deep Seat and Pet Friendly Fabric, Sleep Sofa, Water resistant, Chesterfield Sofa, Art Deco Couch, Movie Sofa, Stain Resistant, Memory Foam, Cozy Round Sofa
+[2026-06-09T18:14:07.742Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:08.622Z]     Detail fail: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:08.624Z]   ✓ Orange Velvet Tufted Sofa Mid Century with Deep Seat and Pet Friendly Fabric, Sleep Sofa, Water resistant, Chesterfield Sofa, Art Deco Couch, Movie Sofa, Stain Resistant, Memory Foam, Cozy Round Sofa | $1,999 | dims n/a | 1 imgs
+[2026-06-09T18:14:08.635Z]   Detailing: Cygnus-Power Sofa Bed
+[2026-06-09T18:14:09.270Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:10.143Z]     Detail fail: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:10.148Z]   ✓ Cygnus-Power Sofa Bed | $3,099 | dims n/a | 1 imgs
+[2026-06-09T18:14:10.150Z]   Detailing: Barrett-83.86’’ Minimalist Modular Sofa, Track Arm Sofa, Deep Seat Couch, Anti-scratch and Water-proof, Living Room Sofa, Beige
+[2026-06-09T18:14:10.913Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:11.734Z]     Detail fail: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:11.759Z]   ✓ Barrett-83.86’’ Minimalist Modular Sofa, Track Arm Sofa, Deep Seat Couch, Anti-scratch and Water-proof, Living Room Sofa, Beige | $1,599 | dims n/a | 1 imgs
+[2026-06-09T18:14:11.762Z]   Detailing: Marlowe-Dual Power Reclining Loveseat
+[2026-06-09T18:14:12.301Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:13.329Z]     Detail fail: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:13.331Z]   ✓ Marlowe-Dual Power Reclining Loveseat | $3,499 | dims n/a | 1 imgs
+[2026-06-09T18:14:13.340Z]   Detailing: Ysolde-Power Reclining Loveseat
+[2026-06-09T18:14:13.963Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:14.942Z]     Detail fail: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:14.947Z]   ✓ Ysolde-Power Reclining Loveseat | $2,999 | dims n/a | 1 imgs
+[2026-06-09T18:14:14.949Z]   Detailing: Atticus-89 inch Mid Century Green Sofa for Small Spaces - 2-3 Seater with Pet-Friendly Fabric
+[2026-06-09T18:14:15.619Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:16.601Z]     Detail fail: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:16.602Z]   ✓ Atticus-89 inch Mid Century Green Sofa for Small Spaces - 2-3 Seater with Pet-Friendly Fabric | $1,999 | dims n/a | 1 imgs
+[2026-06-09T18:14:16.605Z]   Detailing: 127.56" Curved Deep Sofa with Modular Side Table, 29.53" Seat Depth, Green Flannel Couch for Living Room, Round Sofa
+[2026-06-09T18:14:17.169Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:18.013Z]     Detail fail: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:18.014Z]   ✓ 127.56" Curved Deep Sofa with Modular Side Table, 29.53" Seat Depth, Green Flannel Couch for Living Room, Round Sofa | $2,899 | dims n/a | 1 imgs
+[2026-06-09T18:14:18.016Z]   Detailing: 73" Modular Loveseat Comfy Sofa, 2-Seater Cloud Couch with Cushions, Customizable Corduroy, Modern Gray Sofa for Living Room, Apartment, Bedroom
+[2026-06-09T18:14:18.524Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:19.466Z]     Detail fail: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:19.472Z]   ✓ 73" Modular Loveseat Comfy Sofa, 2-Seater Cloud Couch with Cushions, Customizable Corduroy, Modern Gray Sofa for Living Room, Apartment, Bedroom | $1,119 | dims n/a | 1 imgs
+[2026-06-09T18:14:19.482Z]   Detailing: Melody-Dual Power Reclining Loveseat
+[2026-06-09T18:14:20.001Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:20.922Z]     Detail fail: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:20.928Z]   ✓ Melody-Dual Power Reclining Loveseat | $3,299 | dims n/a | 1 imgs
+[2026-06-09T18:14:20.932Z]   Detailing: Conto-Minimalist Couch 2-3 Seater Vintage Chenille Lounge Sofa ,Waterproof Loveseat Sofa, Extra Deep Seating, Plush Embrace, Comfy Couch for Living Room, Cozy Round Sofa
+[2026-06-09T18:14:21.557Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:22.519Z]     Detail fail: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:22.556Z]   ✓ Conto-Minimalist Couch 2-3 Seater Vintage Chenille Lounge Sofa ,Waterproof Loveseat Sofa, Extra Deep Seating, Plush Embrace, Comfy Couch for Living Room, Cozy Round Sofa | $1,999 | dims n/a | 1 imgs
+[2026-06-09T18:14:22.610Z]   Detailing: Elara-Dual Power Reclining Loveseat
+[2026-06-09T18:14:23.223Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:24.072Z]     Detail fail: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:24.077Z]   ✓ Elara-Dual Power Reclining Loveseat | $2,799 | dims n/a | 1 imgs
+[2026-06-09T18:14:24.081Z]   Detailing: Arlo-2-3 Seater Mid Century Beige Pet-Friendly Fabric Sofa Set with Adjustable Cushions, Deep Seat, Deep Sleeper Design, Cloud Sectional Sofa, Solid Wood Legs, High Back, Sofa and Loveseat Set, Stain Resistant, Memory Foam, Cozy Tufted Round Sofa
+[2026-06-09T18:14:24.781Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:25.735Z]     Detail fail: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:25.741Z]   ✓ Arlo-2-3 Seater Mid Century Beige Pet-Friendly Fabric Sofa Set with Adjustable Cushions, Deep Seat, Deep Sleeper Design, Cloud Sectional Sofa, Solid Wood Legs, High Back, Sofa and Loveseat Set, Stain Resistant, Memory Foam, Cozy Tufted Round Sofa | $4,898 | dims n/a | 1 imgs
+[2026-06-09T18:14:25.755Z]   Detailing: Luna-Green Linen Single Sofa Accent Chair with Removable Covers, Cozy Couch
+[2026-06-09T18:14:26.338Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:27.185Z]     Detail fail: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:27.186Z]   ✓ Luna-Green Linen Single Sofa Accent Chair with Removable Covers, Cozy Couch | $1,199 | dims n/a | 1 imgs
+[2026-06-09T18:14:27.187Z] 
+── LIVING ROOM / armchair ──────────────
+[2026-06-09T18:14:27.187Z]   Loading: /furniture/chairs/accent-chairs.html
+[2026-06-09T18:14:27.188Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:28.803Z]   ✗ Listing /furniture/chairs/accent-chairs.html: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:29.466Z]   0 unique stubs
+[2026-06-09T18:14:29.467Z] 
+── LIVING ROOM / coffee table ──────────────
+[2026-06-09T18:14:29.468Z]   Loading: /furniture/living-room-furniture/coffee-tables.html
+[2026-06-09T18:14:29.471Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:31.177Z]   ✗ Listing /furniture/living-room-furniture/coffee-tables.html: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:31.822Z]   0 unique stubs
+[2026-06-09T18:14:31.826Z] 
+── LIVING ROOM / side table ──────────────
+[2026-06-09T18:14:31.830Z]   Loading: /furniture/living-room-furniture/end-side-tables.html
+[2026-06-09T18:14:31.833Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:33.514Z]   ✗ Listing /furniture/living-room-furniture/end-side-tables.html: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:34.159Z]   0 unique stubs
+[2026-06-09T18:14:34.176Z] 
+── LIVING ROOM / tv unit ──────────────
+[2026-06-09T18:14:34.191Z]   Loading: /furniture/living-room-furniture/tv-stands.html
+[2026-06-09T18:14:34.199Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:35.785Z]   ✗ Listing /furniture/living-room-furniture/tv-stands.html: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:36.519Z]   0 unique stubs
+[2026-06-09T18:14:36.524Z] 
+── LIVING ROOM / shelving ──────────────
+[2026-06-09T18:14:36.526Z]   Loading: /furniture/storage/
+[2026-06-09T18:14:36.538Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:38.213Z]   ✗ Listing /furniture/storage/: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:39.005Z]   0 unique stubs
+[2026-06-09T18:14:39.008Z] 
+── BEDROOM / bed ──────────────
+[2026-06-09T18:14:39.008Z]   Loading: /furniture/bedroom-furniture/beds.html
+[2026-06-09T18:14:39.012Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:40.663Z]   ✗ Listing /furniture/bedroom-furniture/beds.html: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:41.456Z]   0 unique stubs
+[2026-06-09T18:14:41.458Z] 
+── BEDROOM / nightstand ──────────────
+[2026-06-09T18:14:41.463Z]   Loading: /furniture/bedroom-furniture/nightstands.html
+[2026-06-09T18:14:41.463Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:42.987Z]   ✗ Listing /furniture/bedroom-furniture/nightstands.html: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:43.762Z]   0 unique stubs
+[2026-06-09T18:14:43.767Z] 
+── BEDROOM / dresser ──────────────
+[2026-06-09T18:14:43.769Z]   Loading: /furniture/bedroom-furniture/dressers-chests.html
+[2026-06-09T18:14:43.770Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:45.303Z]   ✗ Listing /furniture/bedroom-furniture/dressers-chests.html: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:46.080Z]   0 unique stubs
+[2026-06-09T18:14:46.084Z] 
+── BEDROOM / bench ──────────────
+[2026-06-09T18:14:46.085Z]   Loading: /furniture/bedroom-furniture/bedroom-benches.html
+[2026-06-09T18:14:46.091Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:47.693Z]   ✗ Listing /furniture/bedroom-furniture/bedroom-benches.html: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:48.356Z]   0 unique stubs
+[2026-06-09T18:14:48.357Z] 
+── DINING ROOM / dining table ──────────────
+[2026-06-09T18:14:48.358Z]   Loading: /furniture/kitchen-dining/dining-tables.html
+[2026-06-09T18:14:48.358Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:49.927Z]   ✗ Listing /furniture/kitchen-dining/dining-tables.html: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:50.701Z]   0 unique stubs
+[2026-06-09T18:14:50.706Z] 
+── DINING ROOM / dining chair ──────────────
+[2026-06-09T18:14:50.708Z]   Loading: /furniture/kitchen-dining/dining-chairs.html
+[2026-06-09T18:14:50.709Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:52.235Z]   ✗ Listing /furniture/kitchen-dining/dining-chairs.html: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:52.870Z]   0 unique stubs
+[2026-06-09T18:14:52.876Z] 
+── DINING ROOM / sideboard ──────────────
+[2026-06-09T18:14:52.877Z]   Loading: /furniture/living-room-furniture/storage-cabinets.html
+[2026-06-09T18:14:52.879Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:54.614Z]   ✗ Listing /furniture/living-room-furniture/storage-cabinets.html: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:55.268Z]   0 unique stubs
+[2026-06-09T18:14:55.278Z] 
+── DINING ROOM / barstool ──────────────
+[2026-06-09T18:14:55.287Z]   Loading: /furniture/kitchen-dining/bar-stools.html
+[2026-06-09T18:14:55.301Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:57.035Z]   ✗ Listing /furniture/kitchen-dining/bar-stools.html: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:57.181Z] === Povison catalogue builder ===
+[2026-06-09T18:14:57.822Z]   0 unique stubs
+[2026-06-09T18:14:57.823Z] 
+── OTHER / desk ──────────────
+[2026-06-09T18:14:57.824Z]   Loading: /furniture/home-office/desks.html
+[2026-06-09T18:14:57.824Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:14:59.437Z]   ✗ Listing /furniture/home-office/desks.html: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:15:00.180Z]   Loading: /furniture/home-office.html
+[2026-06-09T18:15:00.184Z]     Nav warning: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:15:01.854Z]   ✗ Listing /furniture/home-office.html: Attempted to use detached Frame 'E3C3D4BB9AAC15E84E0716C5AA4
+[2026-06-09T18:15:02.421Z] 
+── LIVING ROOM / sofa ──────────────
+[2026-06-09T18:15:02.427Z]   Loading: /sofa/sofas-loveseats.html
+[2026-06-09T18:15:02.588Z]   0 unique stubs
+[2026-06-09T18:15:02.592Z] 
+=== Done — 20 new, 17 errors, 20 total ===
+[2026-06-09T18:15:13.890Z]   Found 36 product links
+[2026-06-09T18:15:14.649Z]   Loading: /sofa/sectionals.html
+[2026-06-09T18:15:26.515Z]   Found 17 product links
+[2026-06-09T18:15:27.222Z]   43 unique stubs
+[2026-06-09T18:15:27.229Z]   Detailing: Ergopals-Power Reclining Loveseat
+[2026-06-09T18:15:33.717Z]   ✓ 84" Modern Oversized Power Reclining Sofa with Pet-Friendly Fabric, 
+2 Recliners, 90°-145° Zero Gravity Recline, Solid Wood Construction, USB Charging, Adjustable Headrest, Wall-Hugging, Cloud-like Comfort, Waterproof & Scratch-Resistant Fabric, Beige | $2,399 | dims n/a | 4 imgs
+[2026-06-09T18:15:33.724Z]   Detailing: Aurora-Power Sofa Bed
+[2026-06-09T18:15:41.865Z]   ✓ 82.68" Luxury French Creamy Loveseat Power Sleeper Sofa Bed Retractable with Remote Control, Waterproof Oversized Lounge Couch, Zero-Distance Wall Placement Pull Out Sofa Bed, Scratch-Resistant and Pet-Friendly Chenille Fabric, Creamy White | $2,599 | dims n/a | 4 imgs
+[2026-06-09T18:15:41.903Z]   Detailing: Hudson-104.33" Sailboat Deep Sofa Stain Resistant Cozy Couch with Adjustable Backrest, 22.83"–33.46" Seating Depth, Water-Resistant Suede Fabric, Beige Water-Proof Couch
+[2026-06-09T18:15:50.903Z]   ✓ 104.33" Sailboat Deep Sofa Stain Resistant Cozy Couch with Adjustable Backrest, 22.83"–33.46" Seating Depth, Water-Resistant Suede Fabric, Beige Water-Proof Couch | $1,799 | dims n/a | 4 imgs
+[2026-06-09T18:15:50.911Z]   Detailing: Arlo-2-3 Seater Mid Century Deep Sofa with Adjustable Cushions,27.6"-39.4" Seat Depth, Pet-Friendly Fabric, Cloud Sectional Design, High Back, Solid Wood Legs, and Sleeper Function, Beige, Stain Resistant, Memory Foam, Cozy Tufted Round Sofa
+[2026-06-09T18:16:00.356Z]   ✓ 2-3 Seater Mid Century Deep Sofa with Adjustable Cushions,27.6"-39.4" Seat Depth, Pet-Friendly Fabric, Cloud Sectional Design, High Back, Solid Wood Legs, and Sleeper Function, Beige, Stain Resistant, Memory Foam, Cozy Tufted Round Sofa | $1,999 | dims n/a | 4 imgs
+[2026-06-09T18:16:00.359Z]   Detailing: Benjamin-Power Reclining Loveseat
+[2026-06-09T18:16:09.772Z]   ✓ 78.74'' Power Loveseat Sofa Reclining Couch Sofa, Electric Couch Recliner with Oversized Deep Seat, Eco-friendly Leather, USB/Type C Charging Port, Adjustable Headrest, Living Room, Beige | $2,159 | dims n/a | 4 imgs
+[2026-06-09T18:16:09.806Z]   Detailing: Cronus-Brown Genuine Leather Modular Sofa with Solid Wood Frame
+[2026-06-09T18:16:18.057Z]   ✓ Brown Genuine Leather Modular Sofa with Solid Wood Frame | $3,000 | dims n/a | 4 imgs
+[2026-06-09T18:16:18.060Z]   Detailing: Barrett-Power Sofa Bed
+[2026-06-09T18:16:28.493Z]   ✓ 97" Electric Extending Couch  Power Loveseat Sofa Bed Sleeper Sofa, Sectional Sofa Couch with Track Arm, 2 Couch Pillows, Anti-scratch & Water-proof, Beige | $2,199 | dims n/a | 4 imgs
+[2026-06-09T18:16:28.509Z]   Detailing: Orange Velvet Tufted Sofa Mid Century with Deep Seat and Pet Friendly Fabric, Sleep Sofa, Water resistant, Chesterfield Sofa, Art Deco Couch, Movie Sofa, Stain Resistant, Memory Foam, Cozy Round Sofa
+[2026-06-09T18:16:39.209Z]   ✓ Orange Velvet Tufted Sofa Mid Century with Deep Seat and Pet Friendly Fabric, Sleep Sofa, Water resistant, Chesterfield Sofa, Art Deco Couch, Movie Sofa, Stain Resistant, Memory Foam, Cozy Round Sofa | $1,999 | dims n/a | 4 imgs
+[2026-06-09T18:16:39.213Z]   Detailing: Cygnus-Power Sofa Bed
+[2026-06-09T18:16:46.584Z]   ✓ 91" Top-Grain Leather Power Sleeper Sofa with Remote Control, Mid-century Modern Tufted Roll Arm Extendable Couch, Near-Queen Oversized Deep Sofa for Living Room & Guest Room, Dark Cocoa | $3,099 | dims n/a | 4 imgs
+[2026-06-09T18:16:46.589Z]   Detailing: Barrett-83.86’’ Minimalist Modular Sofa, Track Arm Sofa, Deep Seat Couch, Anti-scratch and Water-proof, Living Room Sofa, Beige
+[2026-06-09T18:16:54.332Z]   ✓ 83.86’’ Minimalist Modular Sofa, Track Arm Sofa, Deep Seat Couch, Anti-scratch and Water-proof, Living Room Sofa, Beige | $1,599 | dims n/a | 4 imgs
+[2026-06-09T18:16:54.337Z]   Detailing: Marlowe-Dual Power Reclining Loveseat
+[2026-06-09T18:17:02.762Z]   ✓ 82.7" Luxury Top-Grain Leather Power Reclining Loveseat with Independently Adjustable Headrests and Footrests, Zero-Gravity Recliner Loveseat, Wall Hugger Recliner Loveseat, Brown | $3,499 | dims n/a | 4 imgs
+[2026-06-09T18:17:02.773Z]   Detailing: Ysolde-Power Reclining Loveseat
+[2026-06-09T18:17:10.363Z]   ✓ 88.98'' High Back Leather Power Reclining Sofa Loveseat with 170° Lay Flat, Zero Gravity & Ergonomic Segmental Back Support, Living Room Loveseat, Dark Brown | $2,999 | dims n/a | 4 imgs
+[2026-06-09T18:17:10.379Z]   Detailing: Atticus-89 inch Mid Century Green Sofa for Small Spaces - 2-3 Seater with Pet-Friendly Fabric
+[2026-06-09T18:17:19.721Z]   ✓ 89 inch Mid Century Green Sofa for Small Spaces - 2-3 Seater with Pet-Friendly Fabric | $1,999 | dims n/a | 4 imgs
+[2026-06-09T18:17:19.725Z]   Detailing: 127.56" Curved Deep Sofa with Modular Side Table, 29.53" Seat Depth, Green Flannel Couch for Living Room, Round Sofa
+[2026-06-09T18:17:29.688Z]   ✓ 127.56" Curved Deep Sofa with Modular Side Table, 29.53" Seat Depth, Green Flannel Couch for Living Room, Round Sofa | $2,899 | dims n/a | 3 imgs
+[2026-06-09T18:17:29.721Z]   Detailing: 73" Modular Loveseat Comfy Sofa, 2-Seater Cloud Couch with Cushions, Customizable Corduroy, Modern Gray Sofa for Living Room, Apartment, Bedroom
+[2026-06-09T18:17:38.581Z]   ✓ 73" Modular Loveseat Comfy Sofa, 2-Seater Cloud Couch with Cushions, Customizable Corduroy, Modern Gray Sofa for Living Room, Apartment, Bedroom | $1,119 | dims n/a | 4 imgs
+[2026-06-09T18:17:38.585Z]   Detailing: Melody-Dual Power Reclining Loveseat
+[2026-06-09T18:17:49.840Z]   ✓ 88" Luxury Top-Grain Leather Dual Power Loveseat, Independent Headrest & Footrest, Wall Hugger Reclining Sofa, Dual USB Charging Ports, Ultimate Comfort for Modern Living Room, Black | $3,299 | dims n/a | 4 imgs
+[2026-06-09T18:17:49.920Z]   Detailing: Conto-Minimalist Couch 2-3 Seater Vintage Chenille Lounge Sofa ,Waterproof Loveseat Sofa, Extra Deep Seating, Plush Embrace, Comfy Couch for Living Room, Cozy Round Sofa
+[2026-06-09T18:18:04.435Z]   ✓ Minimalist Couch 2-3 Seater Vintage Chenille Lounge Sofa ,Waterproof Loveseat Sofa, Extra Deep Seating, Plush Embrace, Comfy Couch for Living Room, Cozy Round Sofa | $1,999 | dims n/a | 4 imgs
+[2026-06-09T18:18:04.458Z]   Detailing: Elara-Dual Power Reclining Loveseat
+[2026-06-09T18:18:14.994Z]   ✓ 82" Luxury French Creamy Dual Power Reclining Sofa with Independent Headrest & Footrest, 
+Pro Edition, 90°-145° Zero Gravity Recline, USB Charging Port, Waterproof Pet-friendly Couch, Ideal for Living Rooms, Khaki,Living Room Set | $2,799 | dims n/a | 4 imgs
+[2026-06-09T18:18:15.001Z]   Detailing: Arlo-2-3 Seater Mid Century Beige Pet-Friendly Fabric Sofa Set with Adjustable Cushions, Deep Seat, Deep Sleeper Design, Cloud Sectional Sofa, Solid Wood Legs, High Back, Sofa and Loveseat Set, Stain Resistant, Memory Foam, Cozy Tufted Round Sofa
+[2026-06-09T18:18:22.774Z]   ✓ 2-3 Seater Mid Century Beige Pet-Friendly Fabric Sofa Set with Adjustable Cushions, Deep Seat, Deep Sleeper Design, Cloud Sectional Sofa, Solid Wood Legs, High Back, Sofa and Loveseat Set, Stain Resistant, Memory Foam, Cozy Tufted Round Sofa | $4,898 | dims n/a | 4 imgs
+[2026-06-09T18:18:22.826Z]   Detailing: Luna-Green Linen Single Sofa Accent Chair with Removable Covers, Cozy Couch
+[2026-06-09T18:18:37.348Z]   ✓ Green Linen Single Sofa Accent Chair with Removable Covers, Cozy Couch | $1,199 | dims n/a | 4 imgs
+[2026-06-09T18:18:37.443Z] 
+── LIVING ROOM / armchair ──────────────
+[2026-06-09T18:18:37.450Z]   Loading: /furniture/chairs/accent-chairs.html
+[2026-06-09T18:18:49.327Z]   Found 24 product links
+[2026-06-09T18:18:50.043Z]   24 unique stubs
+[2026-06-09T18:18:50.044Z]   Detailing: Oliver-Swivel Power Barrel Recliner, Power Zero Gravity Barrel Chair with Button Control for Living Room & Office, Green
+[2026-06-09T18:19:00.062Z]   ✓ Swivel Power Barrel Recliner, Power Zero Gravity Barrel Chair with Button Control for Living Room & Office, Green | $1,399 | dims n/a | 2 imgs
+[2026-06-09T18:19:00.146Z]   Detailing: Ergopals-48" Modern Oversized Power Reclining Sofa with Pet-Friendly Fabric, 1 Recliners, 90°-145° Zero Gravity Recline, Solid Wood Construction, USB Charging, Adjustable Headrest, Wall-Hugging, Cloud-like Comfort, Waterproof & Scratch-Resistant Fabric, Beige
+[2026-06-09T18:19:09.200Z]   ✓ 48" Modern Oversized Power Reclining Sofa with Pet-Friendly Fabric, 
+1 Recliners, 90°-145° Zero Gravity Recline, Solid Wood Construction, USB Charging, Adjustable Headrest, Wall-Hugging, Cloud-like Comfort, Waterproof & Scratch-Resistant Fabric, Beige | $1,599 | dims n/a | 3 imgs
+[2026-06-09T18:19:09.210Z]   Detailing: Benjamin-48" Leather Recliner Sofa Chair with Adjustable Headrest, Electric Reclining Leather Couch with Padded Armrests, Comfortable sofa for Living Room, Black
+[2026-06-09T18:19:20.560Z]   ✓ 48" Leather Recliner Sofa Chair with Adjustable Headrest, Electric Reclining Leather Couch with Padded Armrests, Comfortable sofa for Living Room, Black | $1,599 | dims n/a | 4 imgs
+[2026-06-09T18:19:20.569Z]   Detailing: Mid-Century Modern Accent Chair, Cozy Lounge Chair with Soft Olive Green Chenille
+[2026-06-09T18:19:30.736Z]   ✓ Mid-Century Modern Accent Chair, Cozy Lounge Chair with Soft Olive Green Chenille | $499 | dims n/a | 2 imgs
+[2026-06-09T18:19:30.800Z]   Detailing: Barrett-53.45''Minimalist Power Recliner Chair, Single Seater, Modular Couch, Scratch Resistant Fabric, Beige
+[2026-06-09T18:19:42.562Z]   ✓ 53.45''Minimalist Power Recliner Chair, Single Seater, Modular Couch, Scratch Resistant Fabric, Beige | $1,499 | dims n/a | 4 imgs
+[2026-06-09T18:19:42.566Z]   Detailing: 3-in-1 Convertible Sofa Bed with Manual Recliner & Side Tray,Cream Lounge Chair with Walnut Finish for Small Spaces
+[2026-06-09T18:19:51.074Z]   ✓ 3-in-1 Convertible Sofa Bed with Manual Recliner & Side Tray,Cream Lounge Chair with Walnut Finish for Small Spaces | $1,299 | dims n/a | 3 imgs
+[2026-06-09T18:19:51.098Z]   Detailing: Halune-Power Reclining Sofa
+[2026-06-09T18:20:08.296Z]   ✓ 33.5"Modern Minimalist Modular Power Recliner Upholstered in Pet-Friendly Fabric, Zero Wall Clearance Recliner, Hidden Touch Controls, Ultimate Comfort for Contemporary Living Spaces, Khaki | $1,299 | dims n/a | 3 imgs
+[2026-06-09T18:20:08.323Z]   Detailing: 35.43" Green Folding Accent Chair, Futon Sofa Bed with Side Table and Waist Cushion, Adjustable Backrest Recliner Chair
+[2026-06-09T18:20:19.663Z]   ✓ 35.43" Green Folding Accent Chair, Futon Sofa Bed with Side Table and Waist Cushion, Adjustable Backrest Recliner Chair | $999 | dims n/a | 4 imgs
+[2026-06-09T18:20:19.670Z]   Detailing: 39.37" Mid-Century Modern Lounge Chair, White & Walnut Accent Chair, Cotton-Linen Upholstery, Removable Armrest Covers, Suitable for Living Room, Bedroom, Apartment
+[2026-06-09T18:20:29.509Z]   ✓ 39.37" Mid-Century Modern Lounge Chair, White & Walnut Accent Chair, Cotton-Linen Upholstery, Removable Armrest Covers, Suitable for Living Room, Bedroom, Apartment | $1,499 | dims n/a | 2 imgs
+[2026-06-09T18:20:29.550Z]   Detailing: Kids Decorative Animal Sofa Stool, Little Sheep Footstool, Home Cartoon Chair with Solid Wood Legs, Decorative Footstool for Living Room, White, 34''
+[2026-06-09T18:20:42.761Z]   ✓ Kids Decorative Animal Sofa Stool, Little Sheep Footstool, Home Cartoon Chair with Solid Wood Legs, Decorative Footstool for Living Room, White, 34'' | $149 | dims n/a | 4 imgs
+[2026-06-09T18:20:42.769Z]   Detailing: Green Velvet Adjustable Height Folding Chair with Steel Frame – Portable, Fully-Assembled, and Easy-to-Store for Indoor, Outdoor, and Camping Use
+[2026-06-09T18:20:54.743Z]   ✓ Green Velvet Adjustable Height Folding Chair with Steel Frame – Portable, Fully-Assembled, and Easy-to-Store for Indoor, Outdoor, and Camping Use | $199 | dims n/a | 2 imgs
+[2026-06-09T18:20:54.782Z]   Detailing: Comfy Nursery Glider Swivel Rocker, Beige Accent Chair, Upholstered Breastfeeding Chair with Removable Washable Cover
+[2026-06-09T18:21:04.645Z]   ✓ Comfy Nursery Glider Swivel Rocker, Beige Accent Chair, Upholstered Breastfeeding Chair with Removable Washable Cover | $899 | dims n/a | 3 imgs
+[2026-06-09T18:21:04.673Z]   Detailing: 41" Power Recliner Lounge Swivel Chair With Hidden Storage, Electric Sofa with Spacious Seat and Armrests, Pet-Friendly Scratch Resistant Fabric, Phone Holder, Green
+[2026-06-09T18:21:12.588Z]   ✓ 41" Power Recliner Lounge Swivel Chair With Hidden Storage, Electric Sofa with Spacious Seat and Armrests, Pet-Friendly Scratch Resistant Fabric, Phone Holder, Green | $1,199 | dims n/a | 4 imgs
+[2026-06-09T18:21:12.625Z]   Detailing: 32.3''Modern Beige Armless Swivel Rocking Recliner – Manual Sofa Chair & Single Sofa Bed with Ergonomic Backrest and Storage Pocket
+[2026-06-09T18:21:26.413Z]   ✓ 32.3''Modern Beige Armless Swivel Rocking Recliner – Manual Sofa Chair & Single Sofa Bed with Ergonomic Backrest and Storage Pocket | $699 | dims n/a | 2 imgs
+[2026-06-09T18:21:26.428Z]   Detailing: Silva-Mid-Century Modern Black Accent Chair, Faux Leather Lounge Chair, Easy Assembled, Carbon Steel Legs
+[2026-06-09T18:21:35.626Z]   ✓ Mid-Century Modern Black Accent Chair, Faux Leather Lounge Chair, Easy Assembled, Carbon Steel Legs | $999 | dims n/a | 2 imgs
+[2026-06-09T18:21:35.648Z]   Detailing: 37.80" Modern Yellow Lounge Chair with Rocking, Swiveling & Reclining Functions Togo Sofa, Comfy& Durable for Living Room
+[2026-06-09T18:21:45.236Z]   ✓ 37.80" Modern Yellow Lounge Chair with Rocking, Swiveling & Reclining Functions Togo Sofa, Comfy& Durable for Living Room | $1,399 | dims n/a | 4 imgs
+[2026-06-09T18:21:45.244Z]   Detailing: Power Recliner Lounge Swivel Chair with Waist Pillow, Voice Command, Bluetooth Music Player, USB Charger, Phone Holder, Arm Storage, Green
+[2026-06-09T18:21:54.511Z]   ✓ Power Recliner Lounge Swivel Chair with Waist Pillow, Voice Command, Bluetooth Music Player, USB Charger, Phone Holder, Arm Storage, Green | $1,599 | dims n/a | 2 imgs
+[2026-06-09T18:21:54.541Z]   Detailing: 27.56" Modern Beige Velvet Lounge Chair,Comfy Accent Chair for Living Room & Bedroom, Upholstered Armchair for Small Spaces
+[2026-06-09T18:22:03.680Z]   ✓ 27.56" Modern Beige  Velvet Lounge Chair,Comfy Accent Chair for Living Room & Bedroom, Upholstered Armchair for Small Spaces | $699 | dims n/a | 3 imgs
+[2026-06-09T18:22:03.722Z]   Detailing: Modern Accent Chair, Rope Woven Leisure Chair, Solid Wood, 34.25’’H-AC8046WR77
+[2026-06-09T18:22:29.990Z]   ✓ Modern Accent Chair, Rope Woven Leisure Chair, Solid Wood, 34.25’’H-AC8046WR77 | $615 | dims n/a | 2 imgs
+[2026-06-09T18:22:30.005Z]   Detailing: Black Faux Leather Sofa Bed with Adjustable Backrest and Carbon Steel Frame – Convertible Sleeper Chair for Living Room, Office, or Guest Room
+[2026-06-09T18:22:39.869Z]   ✓ Black Faux Leather Sofa Bed with Adjustable Backrest and Carbon Steel Frame – Convertible Sleeper Chair for Living Room, Office, or Guest Room | $703 | dims n/a | 4 imgs
+[2026-06-09T18:22:39.881Z] 
+── LIVING ROOM / coffee table ──────────────
+[2026-06-09T18:22:39.882Z]   Loading: /furniture/living-room-furniture/coffee-tables.html
+[2026-06-09T18:22:52.493Z]   Found 36 product links
+[2026-06-09T18:22:53.293Z]   36 unique stubs
+[2026-06-09T18:22:53.295Z]   Detailing: Silva-31.5'' Lifting Top Round Coffee Table, Mid-Century Modern Wood Coffee Table, Fluted Coffee Table with Hidden Storage and Drawer, Walnut Color
+[2026-06-09T18:23:02.825Z]   ✓ 31.5'' Lifting Top Round Coffee Table, Mid-Century Modern Wood Coffee Table, Fluted Coffee Table with Hidden Storage and Drawer, Walnut Color | $800 | dims n/a | 3 imgs
+[2026-06-09T18:23:02.833Z]   Detailing: 31" Round Matte Sintered Stone Coffee Table, Mid-Century Modern Tripod Table, Minimalist, Curved Leg, FSC-Certified Wood, Easy Assembly, Walnut
+[2026-06-09T18:23:12.781Z]   ✓ 31" Round Matte Sintered Stone Coffee Table,  Mid-Century Modern Tripod Table, Minimalist, Curved Leg, FSC-Certified Wood, Easy Assembly, Walnut | $499 | dims n/a | 2 imgs
+[2026-06-09T18:23:12.793Z]   Detailing: Aether-31" Square LED Coffee Table with Storage, Mid-Century Modern Style, 6-Level Adjustable Lights, with Display Shelf, Black Sintered Stone Top, 2 Storage Drawers, Fully Assembled, Walnut
+[2026-06-09T18:23:22.388Z]   ✓ 31" Square LED Coffee Table with Storage, Mid-Century Modern Style, 6-Level Adjustable Lights, with Display Shelf, Black Sintered Stone Top, 2 Storage Drawers, Fully Assembled, Walnut | $899 | dims n/a | 3 imgs
+[2026-06-09T18:23:22.397Z]   Detailing: 35" Square Wood Coffee Table with Storage, Mid-Century Modern Coffee Table with 2 Drawer, Wood Veneer, for Living Room, Fully-assembled, Brown
+[2026-06-09T18:23:30.132Z]   ✓ 35" Square Wood Coffee Table with Storage, Mid-Century Modern Coffee Table with 2 Drawer, Wood Veneer, for Living Room, Fully-assembled, Brown | $800 | dims n/a | 2 imgs
+[2026-06-09T18:23:30.142Z]   Detailing: 35" Round Drum Sintered Stone Coffee Table with Storage, Modern Wood Coffee Table with 2 Drawers, Glossy Top, Marble Look, Fully Assembled, Walnut & White
+[2026-06-09T18:23:37.685Z]   ✓ 35" Round Drum Sintered Stone Coffee Table with Storage, Modern Wood Coffee Table with 2 Drawers, Glossy Top, Marble Look, Fully Assembled, Walnut & White | $999 | dims n/a | 3 imgs
+[2026-06-09T18:23:37.714Z]   Detailing: Lift-top Modern Nesting Coffee Table Set Of 2, White Sintered Stone Coffee Table Set For Living Room, 31.49'', Brown
+[2026-06-09T18:23:43.931Z]   ✓ Lift-top Modern Nesting Coffee Table Set Of 2, White Sintered Stone Coffee Table Set For Living Room, 31.49'', Brown | $899 | dims n/a | 3 imgs
+[2026-06-09T18:23:43.940Z]   Detailing: Aeolus-47" Rectangle Wood Coffee Table with Storage, 4 Storages Mid Century Modern Coffee Table, Walnut Color
+[2026-06-09T18:23:52.205Z]   ✓ 47" Rectangle Wood Coffee Table with Storage, 4 Storages Mid Century Modern Coffee Table, Walnut Color | $899 | dims n/a | 3 imgs
+[2026-06-09T18:23:52.210Z]   Detailing: Selene-31" Square Horizontal Slatted Coffee Table with LED Lights, Mid-Century Modern Display Storage for Living Room, Walnut, Fully Assembled,Walnut color
+[2026-06-09T18:24:01.215Z]   ✓ 31" Square Horizontal Slatted Coffee Table with LED Lights, Mid-Century Modern Display Storage for Living Room, Walnut, Fully Assembled,Walnut color | $999 | dims n/a | 2 imgs
+[2026-06-09T18:24:01.246Z]   Detailing: 39" Rectangular Wood Coffee Table with Storage, Mid-Century Modern, with 2 Drawers, Fully-Assembled, Walnut Black
+[2026-06-09T18:24:15.852Z]   ✓ 39" Rectangular Wood Coffee Table with Storage, Mid-Century Modern, with 2 Drawers, Fully-Assembled, Walnut Black | $769 | dims n/a | 2 imgs
+[2026-06-09T18:24:15.868Z]   Detailing: 39" Lift‑Top Coffee Table with Storage, Multifunctional Table, Rectangular Dining Table with Locking Wheels & LED Light, Mid Century Modern, FSC Wood, Fully Assembled, Walnut
+[2026-06-09T18:24:22.856Z]   ✓ 39" Lift‑Top Coffee Table with Storage, Multifunctional Table, Rectangular Dining Table with Locking Wheels & LED Light, Mid Century Modern, FSC Wood, Fully Assembled, Walnut | $839 | dims n/a | 3 imgs
+[2026-06-09T18:24:22.867Z]   Detailing: 39" Square Wood Coffee Table with Storage, Mid-Century Modern Trapezoid Coffee Table with 1 Drawer, Walnut Veneer, Fully Assembly, Walnut
+[2026-06-09T18:24:32.471Z]   ✓ 39" Square Wood Coffee Table with Storage, Mid-Century Modern Trapezoid Coffee Table with 1 Drawer, Walnut Veneer, Fully Assembly, Walnut | $999 | dims n/a | 2 imgs
+[2026-06-09T18:24:32.477Z]   Detailing: Hobart-50'' Sintered Stone Glossy Coffee Table, Modern Rectangular Coffee Table, for Living Room, White & Gold
+[2026-06-09T18:24:41.348Z]   ✓ 50'' Sintered Stone Glossy Coffee Table, Modern Rectangular Coffee Table, for Living Room, White & Gold | $899 | dims n/a | 3 imgs
+[2026-06-09T18:24:41.353Z]   Detailing: 43" Mid-Century Modern Fluted Coffee Table, Oval Coffee Table with Open Storage, Minimalist Fluted Coffee Table , Metal Legs, Ash Wood Veneer
+[2026-06-09T18:24:50.208Z]   ✓ 43" Mid-Century Modern Fluted Coffee Table, Oval Coffee Table with Open Storage, Minimalist Fluted Coffee Table , Metal Legs, Ash Wood Veneer | $699 | dims n/a | 2 imgs
+[2026-06-09T18:24:50.218Z]   Detailing: Eos-47'' Oval Wood Fluted Coffee Table with Storage, Mid-Century Modern, with Sliding Doors, Walnut Color, 2 Cabinets, for Living Room
+[2026-06-09T18:25:00.244Z]   ✓ 47'' Oval Wood Fluted Coffee Table with Storage, Mid-Century Modern, with Sliding Doors, Walnut Color, 2 Cabinets, for Living Room | $699 | dims n/a | 2 imgs
+[2026-06-09T18:25:00.254Z]   Detailing: 39" Rectangular Modern Coffee Table with Storage, 4 Drawers for Living Room, Open Shelf Storage, Fully-assembled,Walnut & Black
+[2026-06-09T18:25:08.446Z]   ✓ 39" Rectangular Modern Coffee Table with Storage, 4 Drawers for Living Room, Open Shelf Storage, Fully-assembled,Walnut & Black | $899 | dims n/a | 2 imgs
+[2026-06-09T18:25:08.451Z]   Detailing: 36" Sintered Stone Top Coffee Table with Storage, Mid-Century Modern, Metal Base, Easy Assembly, Walnut & White
+[2026-06-09T18:25:17.729Z]   ✓ 36" Sintered Stone Top Coffee Table with Storage, Mid-Century Modern, Metal Base, Easy Assembly, Walnut & White | $799 | dims n/a | 2 imgs
+[2026-06-09T18:25:17.741Z]   Detailing: Silva-31.5" Fluted Round Coffee Table, Mid Century Modern, Minimalist Wood Coffee Table, Vintage, Walnut Color, Fully Assembled,
+[2026-06-09T18:25:30.331Z]   ✓ 31.5" Fluted Round Coffee Table, Mid Century Modern, Minimalist Wood Coffee Table, Vintage, Walnut Color, Fully Assembled, | $599 | dims n/a | 2 imgs
+[2026-06-09T18:25:30.351Z]   Detailing: 47.24" Oval Coffee Table with Sintered Stone Top, Mid-Century Modern Wooden Coffee Table with Drawers, Fully-Assembled Furniture for Living Console
+[2026-06-09T18:25:41.015Z]   ✓ 47.24" Oval Coffee Table with Sintered Stone Top, Mid-Century Modern Wooden Coffee Table with Drawers, Fully-Assembled Furniture for Living Console | $959 | dims n/a | 3 imgs
+[2026-06-09T18:25:41.039Z]   Detailing: 47.24‘’ Vintage Waffle Coffee Table with Storage, Mid Century Modern Wood Table, Walnut Color, Rectangle Coffee Table for Living Room, Fully Assembled
+[2026-06-09T18:25:50.762Z]   ✓ 47.24‘’ Vintage Waffle Coffee Table  with Storage, Mid Century Modern Wood Table, Walnut Color, Rectangle Coffee Table for Living Room, Fully Assembled | $919 | dims n/a | 2 imgs
+[2026-06-09T18:25:50.775Z]   Detailing: Silva-32" Round Fluted Coffee Table with Storage, Mid-Century Modern Style, 2 Storage Drawers, Gold Trim, FSC-Certified Wood, Fully Assembled, Walnut
+[2026-06-09T18:25:58.946Z]   ✓ 32" Round Fluted Coffee Table with Storage, Mid-Century Modern Style, 2 Storage Drawers, Gold Trim, FSC-Certified Wood, Fully Assembled, Walnut | $869 | dims n/a | 2 imgs
+[2026-06-09T18:25:58.997Z] 
+── LIVING ROOM / side table ──────────────
+[2026-06-09T18:25:59.002Z]   Loading: /furniture/living-room-furniture/end-side-tables.html
+[2026-06-09T18:26:10.195Z]   Found 36 product links
+[2026-06-09T18:26:10.852Z]   36 unique stubs
+[2026-06-09T18:26:10.854Z]   Detailing: 15" Modern C-Shaped Side Table with Wheels, Mid-Century Modern, Walnut Color End Table, for Living Room, Fits Easily by Sofa or Bed
+[2026-06-09T18:26:20.147Z]   ✓ 15" Modern C-Shaped Side Table with Wheels, Mid-Century Modern, Walnut Color End Table, for Living Room, Fits Easily by Sofa or Bed | $269 | dims n/a | 3 imgs
+[2026-06-09T18:26:20.158Z]   Detailing: Silva-20" Fluted Round End Table, Mid-century Modern Grooved Side Table, Minimalist Wood Accent Table, Walnut Color, Fully Assembly
+[2026-06-09T18:26:29.294Z]   ✓ 20" Fluted Round End Table, Mid-century Modern Grooved Side Table, Minimalist Wood Accent Table, Walnut Color, Fully Assembly | $349 | dims n/a | 2 imgs
+[2026-06-09T18:26:29.318Z]   Detailing: Selene-18" Slatted Side Table with LED Lights, Mid-Century Display Storage Nightstand for Living Room, Walnut Color, Fully Assembled
+[2026-06-09T18:26:38.152Z]   ✓ 18" Slatted Side Table with LED Lights, Mid-Century Display Storage Nightstand for Living Room, Walnut Color, Fully Assembled | $499 | dims n/a | 2 imgs
+[2026-06-09T18:26:38.161Z]   Detailing: 19" Round Matte Sintered Stone Side Table
+[2026-06-09T18:26:44.018Z]   ✓ 19" Round Matte Sintered Stone Side Table | $399 | dims n/a | 2 imgs
+[2026-06-09T18:26:44.023Z]   Detailing: 16" Mid-Century Modern Square Side Table with Light, Fluted End Table with 2-Drawer, Nightstand with Storage, for Living Room and Bedroom, Walnut
+[2026-06-09T18:26:53.439Z]   ✓ 16" Mid-Century Modern Square Side Table with Light, Fluted End Table with 2-Drawer, Nightstand with Storage, for Living Room and Bedroom, Walnut | $369 | dims n/a | 2 imgs
+[2026-06-09T18:26:53.475Z]   Detailing: 18" Modern Wood Side Table with Storage, Minimalist Square Fluted End Table, Grooved Accent Table for Living Room & Bedroom, Walnut & Black
+[2026-06-09T18:27:06.455Z]   ✓ 18" Modern Wood Side Table with Storage, Minimalist Square Fluted End Table, Grooved Accent Table for Living Room & Bedroom, Walnut & Black | $349 | dims n/a | 2 imgs
+[2026-06-09T18:27:06.541Z]   Detailing: 23.6''W Mid-Century Tambour Door Side Table with Storage,Wooden Night Stand,Oval Side End Table,Accent Table,Harper Style Small End Tables For Living Room
+[2026-06-09T18:27:15.211Z]   ✓ 23.6''W Mid-Century Tambour Door Side Table with Storage,Wooden Night Stand,Oval Side End Table,Accent Table,Harper Style Small End Tables For Living Room | $449 | dims n/a | 3 imgs
+[2026-06-09T18:27:15.233Z]   Detailing: 18" Modern Minimalist Side Table with Drawer, Small End Table with Storage, Rotating Shelf, Walnut & Black Color, for Living Room
+[2026-06-09T18:27:23.678Z]   ✓ 18" Modern Minimalist Side Table with Drawer, Small End Table with Storage, Rotating Shelf, Walnut & Black Color, for Living Room | $399 | dims n/a | 2 imgs
+[2026-06-09T18:27:23.684Z]   Detailing: Aether-17" Mid-Century Modern Side Table, LED Display End Table, Hidden Storage for Living Room or Bedroom, Walnut
+[2026-06-09T18:27:33.620Z]   ✓ 17" Mid-Century Modern Side Table, LED Display End Table, Hidden Storage for Living Room or Bedroom, Walnut | $499 | dims n/a | 2 imgs
+[2026-06-09T18:27:33.700Z]   Detailing: 16.14'' Round Black Side Table, Modern Sintered Stone Side Table,Modern Minimalist, MDF
+[2026-06-09T18:27:42.204Z]   ✓ 16.14'' Round Black Side Table, Modern Sintered Stone Side Table,Modern Minimalist, MDF | $349 | dims n/a | 2 imgs
+[2026-06-09T18:27:42.218Z]   Detailing: 18" Mid-Century Modern Square Side Table, Rectangular Side Table Living Room, Engineered Wood End Table, Walnut Side Table Rectangle
+[2026-06-09T18:27:50.505Z]   ✓ 18" Mid-Century Modern Square Side Table, Rectangular Side Table Living Room, Engineered Wood End Table, Walnut Side Table Rectangle | $369 | dims n/a | 2 imgs
+[2026-06-09T18:27:50.526Z]   Detailing: Mid-century Modern Square Side Table, 15.74'' Wood End Table, Walnut Color, Fully Assembly
+[2026-06-09T18:27:59.454Z]   ✓ Mid-century Modern Square Side Table, 15.74'' Wood End Table, Walnut Color, Fully Assembly | $239 | dims n/a | 2 imgs
+[2026-06-09T18:27:59.541Z]   Detailing: Eos-Modern Mid-Century Round Walnut Color Side Table with Sliding Tambour Door & Storage Shelf, Solid Wood Frame, and Metal Hardware Legs
+[2026-06-09T18:28:12.918Z]   ✓ Modern Mid-Century Round Walnut Color Side Table with Sliding Tambour Door & Storage Shelf, Solid Wood Frame, and Metal Hardware Legs | $499 | dims n/a | 3 imgs
+[2026-06-09T18:28:12.935Z]   Detailing: 22" Adjustable Height Modern Side Table with Matte Rock Top, Small Dining Table for Living room, Kitchen or Compact Spaces, Sturdy Carbon Steel Base, Black Color, Fully Assembled
+[2026-06-09T18:28:21.127Z]   ✓ 22" Adjustable Height Modern Side Table with Matte Rock Top, Small Dining Table for Living room, Kitchen or Compact Spaces, Sturdy Carbon Steel Base, Black Color, Fully Assembled | $279 | dims n/a | 4 imgs
+[2026-06-09T18:28:21.160Z]   Detailing: 19.69'' Mid-century Modern Round Side Table, Minimalist End Table, Walnut Color
+[2026-06-09T18:28:26.465Z]   ✓ 19.69'' Mid-century Modern Round Side Table, Minimalist End Table, Walnut Color | $329 | dims n/a | 2 imgs
+[2026-06-09T18:28:26.467Z]   Detailing: 17.32" Modern Round Side Table, Modern Sintered Stone End Table, Metal Base, White & Golden
+[2026-06-09T18:28:32.108Z]   ✓ 17.32" Modern Round Side Table, Modern Sintered Stone End Table, Metal Base, White & Golden | $199 | dims n/a | 2 imgs
+[2026-06-09T18:28:32.111Z]   Detailing: 20" Rattan Side Table with Storage, Handwoven Boho Accent Table with Roller Door for Living Room & Bedroom, Walnut, Fully Assembled
+[2026-06-09T18:28:40.891Z]   ✓ 20" Rattan Side Table with Storage, Handwoven Boho Accent Table with Roller Door for Living Room & Bedroom, Walnut, Fully Assembled | $349 | dims n/a | 2 imgs
+[2026-06-09T18:28:40.897Z]   Detailing: 17.72'' Round Side Table, Modern Wood Side Table, End Table, MDF
+[2026-06-09T18:28:49.202Z]   ✓ 17.72'' Round Side Table, Modern Wood Side Table, End Table, MDF | $224 | dims n/a | 2 imgs
+[2026-06-09T18:28:49.215Z]   Detailing: 17.71" Modern Minimalist Round Side Table, MDF, Walnut Veneer
+[2026-06-09T18:29:03.747Z]     Nav warning: Navigating frame was detached
+[2026-06-09T18:29:04.749Z]     Detail fail: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:04.869Z]   ✓ 17.71" Modern Minimalist Round Side Table, MDF, Walnut Veneer | $229 | dims n/a | 1 imgs
+[2026-06-09T18:29:05.013Z]   Detailing: 17.72" Walnut Veneer Side Table, Modern Square Drum Side Table, for Living Room
+[2026-06-09T18:29:05.562Z]     Nav warning: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:06.543Z]     Detail fail: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:06.567Z]   ✓ 17.72" Walnut Veneer Side Table, Modern Square Drum Side Table, for Living Room | $299 | dims n/a | 1 imgs
+[2026-06-09T18:29:06.577Z] 
+── LIVING ROOM / tv unit ──────────────
+[2026-06-09T18:29:06.581Z]   Loading: /furniture/living-room-furniture/tv-stands.html
+[2026-06-09T18:29:06.589Z]     Nav warning: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:08.158Z]   ✗ Listing /furniture/living-room-furniture/tv-stands.html: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:08.867Z]   0 unique stubs
+[2026-06-09T18:29:08.867Z] 
+── LIVING ROOM / shelving ──────────────
+[2026-06-09T18:29:08.868Z]   Loading: /furniture/storage/
+[2026-06-09T18:29:08.870Z]     Nav warning: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:10.563Z]   ✗ Listing /furniture/storage/: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:11.294Z]   0 unique stubs
+[2026-06-09T18:29:11.302Z] 
+── BEDROOM / bed ──────────────
+[2026-06-09T18:29:11.311Z]   Loading: /furniture/bedroom-furniture/beds.html
+[2026-06-09T18:29:11.316Z]     Nav warning: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:13.509Z]   ✗ Listing /furniture/bedroom-furniture/beds.html: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:14.290Z]   0 unique stubs
+[2026-06-09T18:29:14.310Z] 
+── BEDROOM / nightstand ──────────────
+[2026-06-09T18:29:14.322Z]   Loading: /furniture/bedroom-furniture/nightstands.html
+[2026-06-09T18:29:14.351Z]     Nav warning: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:16.060Z]   ✗ Listing /furniture/bedroom-furniture/nightstands.html: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:16.847Z]   0 unique stubs
+[2026-06-09T18:29:16.849Z] 
+── BEDROOM / dresser ──────────────
+[2026-06-09T18:29:16.849Z]   Loading: /furniture/bedroom-furniture/dressers-chests.html
+[2026-06-09T18:29:16.917Z]     Nav warning: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:18.501Z]   ✗ Listing /furniture/bedroom-furniture/dressers-chests.html: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:19.218Z]   0 unique stubs
+[2026-06-09T18:29:19.221Z] 
+── BEDROOM / bench ──────────────
+[2026-06-09T18:29:19.224Z]   Loading: /furniture/bedroom-furniture/bedroom-benches.html
+[2026-06-09T18:29:19.225Z]     Nav warning: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:20.793Z]   ✗ Listing /furniture/bedroom-furniture/bedroom-benches.html: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:21.496Z]   0 unique stubs
+[2026-06-09T18:29:21.500Z] 
+── DINING ROOM / dining table ──────────────
+[2026-06-09T18:29:21.502Z]   Loading: /furniture/kitchen-dining/dining-tables.html
+[2026-06-09T18:29:21.523Z]     Nav warning: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:23.211Z]   ✗ Listing /furniture/kitchen-dining/dining-tables.html: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:24.017Z]   0 unique stubs
+[2026-06-09T18:29:24.022Z] 
+── DINING ROOM / dining chair ──────────────
+[2026-06-09T18:29:24.023Z]   Loading: /furniture/kitchen-dining/dining-chairs.html
+[2026-06-09T18:29:24.025Z]     Nav warning: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:25.677Z]   ✗ Listing /furniture/kitchen-dining/dining-chairs.html: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:26.447Z]   0 unique stubs
+[2026-06-09T18:29:26.450Z] 
+── DINING ROOM / sideboard ──────────────
+[2026-06-09T18:29:26.451Z]   Loading: /furniture/living-room-furniture/storage-cabinets.html
+[2026-06-09T18:29:26.452Z]     Nav warning: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:28.070Z]   ✗ Listing /furniture/living-room-furniture/storage-cabinets.html: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:28.833Z]   0 unique stubs
+[2026-06-09T18:29:28.838Z] 
+── DINING ROOM / barstool ──────────────
+[2026-06-09T18:29:28.839Z]   Loading: /furniture/kitchen-dining/bar-stools.html
+[2026-06-09T18:29:28.841Z]     Nav warning: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:30.546Z]   ✗ Listing /furniture/kitchen-dining/bar-stools.html: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:31.304Z]   0 unique stubs
+[2026-06-09T18:29:31.317Z] 
+── OTHER / desk ──────────────
+[2026-06-09T18:29:31.327Z]   Loading: /furniture/home-office/desks.html
+[2026-06-09T18:29:31.332Z]     Nav warning: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:32.866Z]   ✗ Listing /furniture/home-office/desks.html: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:33.517Z]   Loading: /furniture/home-office.html
+[2026-06-09T18:29:33.519Z]     Nav warning: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:35.221Z]   ✗ Listing /furniture/home-office.html: Attempted to use detached Frame '8FC15090A0D15C541D129656089
+[2026-06-09T18:29:35.906Z]   0 unique stubs
+[2026-06-09T18:29:36.360Z] 
+=== Done — 80 new, 2 errors, 80 total ===
+[2026-06-09T21:31:42.076Z] === Povison catalogue builder ===
+[2026-06-09T21:31:42.086Z] Resuming — 80 existing products
+[2026-06-09T21:31:43.790Z] 
+── LIVING ROOM / sofa ──────────────
+[2026-06-09T21:31:43.791Z]   Loading: /sofa/sofas-loveseats.html
+[2026-06-09T21:32:22.061Z]   Found 36 product links
+[2026-06-09T21:32:22.683Z]   Loading: /sofa/sectionals.html
+[2026-06-09T21:32:33.613Z]   Found 17 product links
+[2026-06-09T21:32:34.406Z]   43 unique stubs
+[2026-06-09T21:32:34.408Z]   → skip: modern-power-oversized-pillow-back-reclining-loveseat-sofa-oversized-electric-recliner
+[2026-06-09T21:32:34.409Z]   → skip: 116-1-electric-sofa-with-a-retractable-feature-in-french-retro-cream-style
+[2026-06-09T21:32:34.409Z]   → skip: sailboat-sofa-with-adjustable-backrest-dog-proof-couch-anti-scratch-and-water-proof-fabric
+[2026-06-09T21:32:34.410Z]   → skip: modern-pet-friendly-fabric-sofa-with-adjustable-cushions-deep-seat-deep-sleeper-design-cloud-sectional-sofa-and-solid-wood-legs
+[2026-06-09T21:32:34.411Z]   → skip: power-reclining-sofa-modular-couch-recliner-sofa-leather-couch-sectional-recliner-with-oversized-deep-seat-usb-type-c-charge-adjustable-headrest-khaki
+[2026-06-09T21:32:34.411Z]   → skip: cronus-modular-sofa-43807
+[2026-06-09T21:32:34.411Z]   → skip: power-sofa-bed-modular-sleeper-sofa-sectional-sofa-bed-couch-with-track-arm-5-couch-pillows-anti-scratch-water-proof-beige
+[2026-06-09T21:32:34.411Z]   → skip: modern-sleeper-hand-tufted-sofa-couches-for-living-room-2-seater-large-couch-extra-deep-sofa-fabric-oversized-couch-for-house
+[2026-06-09T21:32:34.411Z]   → skip: cygnus-smart-furniture-43992
+[2026-06-09T21:32:34.412Z]   → skip: modern-modular-sofa-boxy-chaise-sectional-sofa-with-new-cat-scratch-fabric-wide-armrest-pillows-pine-wood-frame
+[2026-06-09T21:32:34.412Z]   → skip: marlowe-modern-luxury-smart-furniture-44044
+[2026-06-09T21:32:34.412Z]   → skip: ysolde-power-reclining-sofa-44226
+[2026-06-09T21:32:34.412Z]   → skip: 89-mid-century-sofa-2-3-seater-with-pet-friendly-fabric
+[2026-06-09T21:32:34.412Z]   → skip: minimalist-modular-flannelette-sofa-curved-with-modular-coffee-table-sofa-living-room-sofa-green
+[2026-06-09T21:32:34.412Z]   → skip: super-soft-modular-couch-extra-deep-corduroy-loveseat-modular-couch-for-living-room
+[2026-06-09T21:32:34.412Z]   → skip: dual-power-leather-reclining-sofa
+[2026-06-09T21:32:34.412Z]   → skip: vintage-chenille-sofa-waterproof-loveseat-sofa-extra-deep-seating-plush-embrace-comfy-couch-for-living-room
+[2026-06-09T21:32:34.412Z]   → skip: modern-dual-power-reclining-sofas
+[2026-06-09T21:32:34.412Z]   → skip: 2-3-seater-modern-pet-friendly-fabric-sofa-set-with-adjustable-cushions-deep-seat-deep-sleeper-design-cloud-sectional-sofa-and-solid-wood-legs
+[2026-06-09T21:32:34.413Z]   → skip: modern-deep-seat-sofa-with-removable-covers-water-repellent-fabric-for-living-room
+[2026-06-09T21:32:34.414Z]   Detailing: 48" & 84" Power Reclining Sofa Set 2-Piece, 1-Seater Sofa & Loveseat, Zero Gravity Recliner Couch with Adjustable Headrest, USB Port, Pet-Friendly Fabric, Beige
+[2026-06-09T21:32:45.782Z]   ✓ 48" & 84" Power Reclining Sofa Set 2-Piece, 1-Seater Sofa & Loveseat, Zero Gravity Recliner Couch with Adjustable Headrest, USB Port, Pet-Friendly Fabric, Beige | $3,698 | dims n/a | 4 imgs
+[2026-06-09T21:32:45.869Z]   Detailing: Benjamin-Power Reclining Sofa
+[2026-06-09T21:32:57.010Z]   ✓ 78.74''&108.65''Power Loveseat Sofa Set, 2-Seater & 3-Seater, 4 Recliners, 5 piece, USB/Type C Charging Port, Adjustable Headrest, Living Room, Beige | $5,129 | dims n/a | 4 imgs
+[2026-06-09T21:32:57.023Z]   Detailing: Retro Hand-Tufted Green Chenille Sofa, 2-3 Seater Lounge-Ready, Comfortable Couch for Living Room
+[2026-06-09T21:33:07.842Z]   ✓ Retro Hand-Tufted Green Chenille Sofa, 2-3 Seater Lounge-Ready, Comfortable Couch for Living Room | $1,699 | dims n/a | 4 imgs
+[2026-06-09T21:33:07.851Z]   Detailing: 2-3 Seater Modern Tufted Beige Pet-Friendly Loveseat Couch, Deep Seat Cloud-Style Sectional Sofa with Solid Wood Legs & Water-Repellent, Scratch-Resistant, Anti-Shedding Fabric, Stain Resistant, Memory Foam, Cozy Tufted Round Sofa
+[2026-06-09T21:33:38.455Z]     Nav warning: Navigation timeout of 30000 ms exceeded
+[2026-06-09T21:33:39.644Z]   ✓ 2-3 Seater Modern Tufted Beige Pet-Friendly Loveseat Couch, Deep Seat Cloud-Style Sectional Sofa with Solid Wood Legs & Water-Repellent, Scratch-Resistant, Anti-Shedding Fabric, Stain Resistant, Memory Foam, Cozy Tufted Round Sofa | $1,999 | dims n/a | 4 imgs
+[2026-06-09T21:33:39.694Z]   Detailing: 99.8''Modern Green Chenille Sofa with High Back Couch, Deep Seating & Wide Armrests – Water-Resistant & Family-Friendly Comfort
+[2026-06-09T21:33:49.557Z]   ✓ 99.8''Modern Green Chenille Sofa with High Back Couch, Deep Seating & Wide Armrests – Water-Resistant & Family-Friendly Comfort | $2,799 | dims n/a | 4 imgs
+[2026-06-09T21:33:49.568Z]   Detailing: 91 Inch Brown Performance Leather Sofa Stain-resistant Waterproof Loveseat, Mid Century Top Grain Leather Sofa
+[2026-06-09T21:34:04.330Z]   ✓ 91 Inch Brown Performance Leather Sofa Stain-resistant Waterproof Loveseat, Mid Century Top Grain Leather Sofa | $2,499 | dims n/a | 4 imgs
+[2026-06-09T21:34:04.357Z]   Detailing: 78.74'' Power Loveseat Sofa Reclining Couch Sofa wish Modular Recliner Couch, Eco-friendly Leather, Power Outlet, Adjustable Headrest, Dark Green
+[2026-06-09T21:34:14.698Z]   ✓ 78.74'' Power Loveseat Sofa Reclining Couch Sofa  wish Modular Recliner Couch, Eco-friendly Leather, Power Outlet, Adjustable Headrest, Dark Green | $1,987 | dims n/a | 4 imgs
+[2026-06-09T21:34:14.704Z]   Detailing: Arlo-Mid Century Storage Ottoman Coffee Table in Beige Pet-friendly Fabric, Round, Storage Ottomans for Bedroom, Footrest with Storage
+[2026-06-09T21:34:30.741Z]   ✓ Mid Century Storage Ottoman Coffee Table in Beige Pet-friendly Fabric, Round, Storage Ottomans for Bedroom, Footrest with Storage | $599 | dims n/a | 4 imgs
+[2026-06-09T21:34:30.751Z]   Detailing: 2+2 Seater Brown Genuine Leather Sofa Set with Solid Wood Frame & Comfortable Seating
+[2026-06-09T21:35:00.596Z]   ✓ 2+2 Seater Brown Genuine Leather Sofa Set with Solid Wood Frame & Comfortable Seating | $5,999 | dims n/a | 4 imgs
+[2026-06-09T21:35:00.638Z]   Detailing: Ergopals-Ottoman
+[2026-06-09T21:35:16.519Z]   ✓ Storage & Coffee Table Ottoman, Linen, Beige | $599 | dims n/a | 4 imgs
+[2026-06-09T21:35:16.626Z]   Detailing: Barrett-Power Reclining Sofa
+[2026-06-09T21:35:41.145Z]   ✓ 84"&114" Modular Sectional Sofa Set with Power Recliner Loveseats, 4 Recliners Electric Couch, Waterproof Fabric, Modern Expandable Modular Design, Dark Gray | $3,839 | dims n/a | 4 imgs
+[2026-06-09T21:35:41.296Z]   Detailing: 97inch Removable Cushions Sofa in Water-Resistant Cotton-Linen with Solid Wood Legs
+[2026-06-09T21:36:12.593Z]     Nav warning: Navigation timeout of 30000 ms exceeded
+[2026-06-09T21:36:13.854Z]   ✓ 97inch  Removable Cushions Sofa in Water-Resistant Cotton-Linen with Solid Wood Legs | $2,199 | dims n/a | 4 imgs
+[2026-06-09T21:36:13.919Z]   Detailing: Marlowe-Dual Power Reclining Sofa
+[2026-06-09T21:36:44.850Z]   ✓ Luxury Top-Grain Leather Power Reclining Sofa Set, 2 & 3 Seater, Zero Gravity Recliner with Independent Headrest & Footrest, Zero-Wall Design Sofa Set for Living Room, 5 Recliners, Brown | $8,439 | dims n/a | 4 imgs
+[2026-06-09T21:36:44.887Z]   Detailing: 84 Inch Modern Boucle Sofa Beige Loveseats with Solid Wood Details, Cozy Channel Couch
+[2026-06-09T21:37:15.524Z]     Nav warning: Navigation timeout of 30000 ms exceeded
+[2026-06-09T21:37:16.734Z]   ✓ 84 Inch Modern Boucle Sofa Beige Loveseats with Solid Wood Details, Cozy Channel Couch | $1,999 | dims n/a | 4 imgs
+[2026-06-09T21:37:16.786Z]   Detailing: Nestra-Dual Power Reclining Sofa
+[2026-06-09T21:37:46.548Z]   ✓ 92" Dual Power Reclining Loveseat in Italian Bouclé Teddy, Independent Headrest & Footrest, French Wall Hugger Reclining Sofa, Dual USB Charging Ports, Ultimate Comfort for Modern Living Room, Beige | $2,479 | dims n/a | 4 imgs
+[2026-06-09T21:37:47.048Z]   Detailing: Arlo-85 Inch Brown Leather Sofa with Adjustable Cushions Spill-Proof & Scratch-Resistant, Loveseats with Soild Wood Leg
+[2026-06-09T21:38:08.287Z]   ✓ 85 Inch Brown Leather Sofa with Adjustable Cushions Spill-Proof & Scratch-Resistant, Loveseats with Soild Wood Leg | $2,499 | dims n/a | 4 imgs
+[2026-06-09T21:38:08.347Z]   Detailing: Modern 2-3 Seater Black & White Chenille Tufted Sofa, Oversized Sectional, Removable Cushions Fabric, Ideal for Living Room, Apartments
+[2026-06-09T21:38:19.172Z]   ✓ Modern 2-3 Seater Black & White Chenille Tufted Sofa, Oversized Sectional, Removable Cushions Fabric, Ideal for Living Room, Apartments | $2,699 | dims n/a | 4 imgs
+[2026-06-09T21:38:19.216Z]   Detailing: 143 Inch Minimalist Beige Chenille Sofa Modern Large L-Shaped With Lumbar Support
+[2026-06-09T21:38:28.550Z]   ✓ 143 Inch Minimalist Beige Chenille Sofa Modern Large L-Shaped With Lumbar Support | $5,799 | dims n/a | 4 imgs
+[2026-06-09T21:38:28.557Z]   Detailing: 3-4 Seater Large Modern Curved Armless Sofa, Gray Fabric Couch, with Small Side Table, Round Sofa
+[2026-06-09T21:38:35.696Z]   ✓ 3-4 Seater Large Modern Curved Armless Sofa, Gray Fabric Couch, with Small Side Table, Round Sofa | $2,299 | dims n/a | 4 imgs
+[2026-06-09T21:38:35.715Z]   Detailing: 93''Modern 2–3 Seater Curved Green Velvet Sofa, Tufted Cushions & Soft Silhouette – Suitable for Living Room
+[2026-06-09T21:38:44.948Z]   ✓ 93''Modern 2–3 Seater Curved Green Velvet Sofa, Tufted Cushions & Soft Silhouette – Suitable for Living Room | $2,199 | dims n/a | 4 imgs
+[2026-06-09T21:38:44.957Z] 
+── LIVING ROOM / armchair ──────────────
+[2026-06-09T21:38:44.958Z]   Loading: /furniture/chairs/accent-chairs.html
+[2026-06-09T21:38:57.493Z]   Found 24 product links
+[2026-06-09T21:38:58.182Z]   24 unique stubs
+[2026-06-09T21:38:58.188Z]   → skip: oliver-power-reclining-sofa-44007
+[2026-06-09T21:38:58.188Z]   → skip: modern-power-oversized-pillow-back-reclining-loveseat-sofa-oversized-recliner
+[2026-06-09T21:38:58.189Z]   → skip: power-recliner-eco-friendly-microfiber-leather
+[2026-06-09T21:38:58.190Z]   → skip: modern-japandi-accent-chair-mid-century-comfy-lounge-chair-with-solid-wood-frame
+[2026-06-09T21:38:58.193Z]   → skip: power-recliner-fabric
+[2026-06-09T21:38:58.196Z]   → skip: convertible-sofa-bed-with-manual-recliner-side-tray-cream-lounge-chair-with-walnut-finish-for-small-spaces
+[2026-06-09T21:38:58.197Z]   → skip: halune-power-reclining-sofa-43939
+[2026-06-09T21:38:58.198Z]   → skip: solid-wood-folding-accent-chair-adjustable-backrest-beige-sofa-bed-with-side-table-recliner-chair
+[2026-06-09T21:38:58.200Z]   → skip: mid-century-modern-lounge-chair-white-walnut-accent-chair-cotton-linen-upholstery-removable-armrest-covers-suitable-for-living-room-bedroom-apartment
+[2026-06-09T21:38:58.201Z]   → skip: kids-decorative-animal-sofa-stool-little-sheep-footstool-home-cartoon-chair-with-solid-wood-legs-decorative-footstool-for-living-room-white-34
+[2026-06-09T21:38:58.204Z]   → skip: velvet-adjustable-height-folding-chair-with-steel-frame-portable-fully-assembled-and-easy-to-store-for-indoor-outdoor-and-camping-use
+[2026-06-09T21:38:58.205Z]   → skip: comfy-nursery-glider-swivel-rocker-accent-chair-upholstered-breastfeeding-chair-with-removable-washable-cover
+[2026-06-09T21:38:58.206Z]   → skip: power-recliner-lounge-swivel-chair-with-hidden-storage
+[2026-06-09T21:38:58.207Z]   → skip: modern-armless-swivel-rocking-recliner-manual-sofa-chair-single-sofa-bed-with-ergonomic-backrest-and-storage-pocket
+[2026-06-09T21:38:58.209Z]   → skip: mid-century-modern-black-accent-chair
+[2026-06-09T21:38:58.211Z]   → skip: modern-yellow-lounge-chair-with-rocking-swiveling-reclining-functions-accent-chair-comfy-durable-for-living-room
+[2026-06-09T21:38:58.214Z]   → skip: power-recliner-lounge-swivel-chair-with-waist-pillow
+[2026-06-09T21:38:58.217Z]   → skip: modern-beige-velvet-lounge-chair-comfy-accent-chair-for-living-room-bedroom-upholstered-armchair-for-small-spaces
+[2026-06-09T21:38:58.220Z]   → skip: modern-accent-chair-rope-woven-leisure-chair-solid-wood-34-25-h
+[2026-06-09T21:38:58.227Z]   → skip: modern-reclining-lounge-chair-with-adjustable-backrest-faux-leather-upholstery-carbon-steel-legs-3-seating-modes-for-living-room-office-and-guest-rooms
+[2026-06-09T21:38:58.229Z]   Detailing: Modern Brown Boucle Swivel Chair
+[2026-06-09T21:39:10.938Z]   ✓ Modern Brown Boucle Swivel Chair | $1,099 | dims n/a | 4 imgs
+[2026-06-09T21:39:10.957Z]   Detailing: 32.68" Modern Chenille Accent Chair with Lumbar Support & Sturdy Steel Frame,Comfy Lounge Chair for Living Room or Bedroom
+[2026-06-09T21:39:22.905Z]   ✓ 32.68" Modern Chenille Accent Chair with Lumbar Support & Sturdy Steel Frame,Comfy Lounge Chair for Living Room or Bedroom | $1,099 | dims n/a | 4 imgs
+[2026-06-09T21:39:22.910Z]   Detailing: 40.55" Mid-Century Modern Sofa Bed with Adjustable Backrest, Walnut Finish A-Frame Legs, Convertible Sleeper for Small Spaces, Easy to Move
+[2026-06-09T21:39:34.385Z]   ✓ 40.55" Mid-Century Modern Sofa Bed with Adjustable Backrest, Walnut Finish A-Frame Legs, Convertible Sleeper for Small Spaces, Easy to Move | $1,299 | dims n/a | 4 imgs
+[2026-06-09T21:39:34.392Z]   Detailing: White Velvet Sofa Bed Chair with Wood-Tone Base and Slim Arms – Small Space Convertible Sleeper for Bedroom or Living Room
+[2026-06-09T21:39:45.002Z]   ✓ White Velvet Sofa Bed Chair with Wood-Tone Base and Slim Arms – Small Space Convertible Sleeper for Bedroom or Living Room | $1,231 | dims n/a | 4 imgs
+[2026-06-09T21:39:45.006Z] 
+── LIVING ROOM / coffee table ──────────────
+[2026-06-09T21:39:45.006Z]   Loading: /furniture/living-room-furniture/coffee-tables.html
+[2026-06-09T21:40:06.017Z]   Found 36 product links
+[2026-06-09T21:40:06.786Z]   36 unique stubs
+[2026-06-09T21:40:06.787Z]   → skip: lifting-top-round-coffee-table-wood-coffee-table-mid-century-modern-walnut-color-coffee-table
+[2026-06-09T21:40:06.787Z]   → skip: round-matte-travertine-stone-tabletop-coffee-table-mid-century-modern-tripod-table-fsc-certified-mdf-easy-assembly-walnut
+[2026-06-09T21:40:06.787Z]   → skip: 31-square-led-coffee-table-with-storage-mid-century-modern-6-level-adjustable-lights-black-sintered-stone-top-2-storage-drawers
+[2026-06-09T21:40:06.788Z]   → skip: modern-and-minimalist-brown-wooden-square-coffee-table-with-storage-2-drawers-fully-assembled
+[2026-06-09T21:40:06.788Z]   → skip: modern-drum-coffee-table-with-storage-sintered-stone-top-2-solid-wood-drawers-soft-close-drawers-oak-veneer-fully-assembled
+[2026-06-09T21:40:06.788Z]   → skip: round-coffee-table-with-storage-lift-top-wood-coffee-table
+[2026-06-09T21:40:06.788Z]   → skip: modern-spuare-coffee-table-walnut-color-slatted-coffee-table-fully-assembled
+[2026-06-09T21:40:06.788Z]   → skip: 31-square-horizontal-slatted-coffee-table-with-led-lights-mid-century-modern-display-storage-for-living-room-walnut-fully-assembled
+[2026-06-09T21:40:06.788Z]   → skip: bizente-4-drawers-coffee-table
+[2026-06-09T21:40:06.789Z]   → skip: lift-top-coffee-table-with-storage-mid-century-modern-rectangular-dining-table-with-locking-wheels-fsc-wood-fully-assembled-walnut
+[2026-06-09T21:40:06.789Z]   → skip: tirsoo-coffee-table
+[2026-06-09T21:40:06.789Z]   → skip: modern-glossy-white-coffee-table-rectangular-glossy-sintered-stone-coffee-table-for-living-room
+[2026-06-09T21:40:06.789Z]   → skip: mid-century-modern-coffee-table-minimalist-fluted-coffee-table-with-open-storage-metal-legs-ash-wood-veneer
+[2026-06-09T21:40:06.789Z]   → skip: mid-century-modern-walnut-roll-top-coffee-table
+[2026-06-09T21:40:06.790Z]   → skip: rectangular-modern-coffee-table-with-storage-4-drawers-for-living-room-open-shelf-storage-fully-assembled
+[2026-06-09T21:40:06.790Z]   → skip: 36-sintered-stone-top-coffee-table-with-storage-mid-century-modern-metal-base-easy-assembly
+[2026-06-09T21:40:06.790Z]   → skip: mid-century-modern-round-coffee-table-minimalist-wood-coffee-table-walnut-color-fully-assembly
+[2026-06-09T21:40:06.790Z]   → skip: mid-century-modern-coffee-table-43531
+[2026-06-09T21:40:06.791Z]   → skip: mid-century-modern-coffee-table-43526
+[2026-06-09T21:40:06.791Z]   → skip: round-fluted-coffee-table-with-storage-mid-century-modern-style-2-storage-drawers-fsc-certified-mdf-fully-assembled-walnut
+[2026-06-09T21:40:06.791Z]   Detailing: 31.5" Square Modern Coffee Table, Sleek Trapezoid Base, Glossy Finish, Minimalist Look for Modern Living Rooms, Fully Assembled
+[2026-06-09T21:40:14.958Z]   ✓ 31.5" Square Modern Coffee Table, Sleek Trapezoid Base, Glossy Finish, Minimalist Look for Modern Living Rooms, Fully Assembled | $999 | dims n/a | 4 imgs
+[2026-06-09T21:40:14.962Z]   Detailing: Mid-Century Modern Coffee Table, Minimalist Carved Semi-open Coffee Table with Storage, Birch Veneer, 47.24"
+[2026-06-09T21:40:24.024Z]   ✓ Mid-Century Modern Coffee Table, Minimalist Carved Semi-open  Coffee Table with Storage, Birch Veneer, 47.24" | $759 | dims n/a | 4 imgs
+[2026-06-09T21:40:24.027Z]   Detailing: 48.82'' Lifting Top Rectangular Fluted Coffee Table, Mid-century Modern Walnut Color Coffee Table
+[2026-06-09T21:40:33.937Z]   ✓ 48.82'' Lifting Top Rectangular Fluted Coffee Table, Mid-century Modern Walnut Color Coffee Table | $1,399 | dims n/a | 4 imgs
+[2026-06-09T21:40:33.940Z]   Detailing: 47.24" Lifting Top Rectangular Fluted Coffee Table, Mid-century Modern Black Coffee Table
+[2026-06-09T21:40:43.055Z]   ✓ 47.24" Lifting Top Rectangular Fluted Coffee Table, Mid-century Modern Black Coffee Table | $899 | dims n/a | 4 imgs
+[2026-06-09T21:40:43.057Z]   Detailing: 31" Wood and Glass Coffee Table, Round Glass Coffee Tables​ , Mid-Century Modern Tripod Table, Curved Leg, FSC-Certified Wood, Easy Assembly, Walnut Color
+[2026-06-09T21:40:52.002Z]   ✓ 31" Wood and Glass Coffee Table,  Round Glass Coffee Tables​
+, Mid-Century Modern Tripod Table, Curved Leg, FSC-Certified Wood, Easy Assembly, Walnut Color | $549 | dims n/a | 4 imgs
+[2026-06-09T21:40:52.005Z]   Detailing: 31.5'' Mid-Century Coffee Table with Travertine Slabs, wiith Open Storage & Hidden Drawer, Vintage Style Living Room Table
+[2026-06-09T21:41:00.334Z]   ✓ 31.5'' Mid-Century Coffee Table with Travertine Slabs, wiith Open Storage & Hidden Drawer, Vintage Style Living Room Table | $999 | dims n/a | 4 imgs
+[2026-06-09T21:41:00.341Z]   Detailing: 35.43" Mid-Century Modern Square Coffee Table with Slatted Design, Matte Pandora White Stone Top, Fully Assembled, Walnut Color & White
+[2026-06-09T21:41:07.766Z]   ✓ 35.43" Mid-Century Modern Square Coffee Table with Slatted Design, Matte Pandora White Stone Top, Fully Assembled, Walnut Color & White | $999 | dims n/a | 4 imgs
+[2026-06-09T21:41:07.773Z]   Detailing: 31.5'' Minimalist glass coffee table, Round Coffee Table, High-End Warm Coffee Table with glass top
+[2026-06-09T21:41:13.592Z]   ✓ 31.5'' Minimalist glass coffee table, Round Coffee Table, High-End Warm Coffee Table with glass top | $799 | dims n/a | 4 imgs
+[2026-06-09T21:41:13.594Z]   Detailing: Silva-32" Round Fluted Coffee Table with Open Shelf, Mid-Century Modern Style, 2 Storage Drawers & Open Shelf, FSC-Certified Wood, Fully Assembled, Walnut
+[2026-06-09T21:41:22.577Z]   ✓ 32" Round Fluted Coffee Table with Open Shelf, Mid-Century Modern Style, 2 Storage Drawers & Open Shelf, FSC-Certified Wood, Fully Assembled, Walnut | $899 | dims n/a | 4 imgs
+[2026-06-09T21:41:22.580Z]   Detailing: 55" Square Rotating Coffee Table,with Left-Right Extension,Open Storage,Mid-Century Modern Furniture for Living Room,Walnut Color
+[2026-06-09T21:41:29.169Z]   ✓ 55" Square Rotating Coffee Table,with Left-Right Extension,Open Storage,Mid-Century Modern Furniture for Living Room,Walnut Color | $799 | dims n/a | 4 imgs
+[2026-06-09T21:41:29.174Z]   Detailing: 47.24" Mid-Century Modern Ratten Walnut Color Coffee Table with Storage, MDF
+[2026-06-09T21:41:34.865Z]   ✓ 47.24" Mid-Century Modern Ratten Walnut Color Coffee Table with Storage, MDF | $539 | dims n/a | 4 imgs
+[2026-06-09T21:41:34.869Z]   Detailing: Modern Minimalist Wood Color Coffee Table, Wood Color MDF Table, Silver Stainless Steel Base
+[2026-06-09T21:41:43.388Z]   ✓ Modern Minimalist Wood Color Coffee Table, Wood Color MDF Table, Silver Stainless Steel Base | $377 | dims n/a | 4 imgs
+[2026-06-09T21:41:43.391Z]   Detailing: Mid Century Modern Coffee Table, Minimalist Wood Veneer Coffee Table with Multifunctional Storage for Living Room, 39.37'', Walnut
+[2026-06-09T21:41:52.369Z]   ✓ Mid Century Modern Coffee Table, Minimalist Wood Veneer Coffee Table with Multifunctional Storage for Living Room, 39.37'', Walnut | $1,119 | dims n/a | 4 imgs
+[2026-06-09T21:41:52.372Z]   Detailing: 35.43'' Round Fluted Coffee Table, Wood Coffee Table with Sintered Stone, Fully Assembled, Walnut Color
+[2026-06-09T21:41:59.499Z]   ✓ 35.43'' Round Fluted Coffee Table, Wood Coffee Table with Sintered Stone, Fully Assembled, Walnut Color | $1,349 | dims n/a | 4 imgs
+[2026-06-09T21:41:59.506Z]   Detailing: 47.24" Mid-Century Modern Rectangular Coffee Table with Open Storage, Easy Assembly and Sturdy Base for Living Room & Lounge, Walnut Color
+[2026-06-09T21:42:07.792Z]   ✓ 47.24" Mid-Century Modern Rectangular Coffee Table with Open Storage, Easy Assembly and Sturdy Base for Living Room & Lounge, Walnut Color | $659 | dims n/a | 4 imgs
+[2026-06-09T21:42:07.795Z]   Detailing: 47" Extendable Modern Coffee Table with Storage, Sintered Stone, Metal Base,Fully Assembled
+[2026-06-09T21:42:15.306Z]   ✓ 47" Extendable Modern Coffee Table with Storage, Sintered Stone, Metal Base,Fully Assembled | $919 | dims n/a | 4 imgs
+[2026-06-09T21:42:15.314Z] 
+── LIVING ROOM / side table ──────────────
+[2026-06-09T21:42:15.315Z]   Loading: /furniture/living-room-furniture/end-side-tables.html
+[2026-06-09T21:42:26.179Z]   Found 36 product links
+[2026-06-09T21:42:26.882Z]   36 unique stubs
+[2026-06-09T21:42:26.884Z]   → skip: modern-minimalist-cherry-wood-veneer-side-table
+[2026-06-09T21:42:26.885Z]   → skip: mid-century-modern-round-coffee-table-minimalist-wood-coffee-table-walnut-color-fully-assembly-20-08-
+[2026-06-09T21:42:26.885Z]   → skip: 18-slatted-side-table-with-led-lights-mid-century-modern-display-storage-nightstand-for-living-room-walnut-fully-assembled
+[2026-06-09T21:42:26.886Z]   → skip: end-side-table-44137
+[2026-06-09T21:42:26.887Z]   → skip: mid-century-modern-2-drawer-walnut-side-table-with-light
+[2026-06-09T21:42:26.887Z]   → skip: side-table-modern-square-walnut-black-end-table-for-living-room
+[2026-06-09T21:42:26.887Z]   → skip: eos-end-side-table-44202
+[2026-06-09T21:42:26.888Z]   → skip: side-end-table
+[2026-06-09T21:42:26.888Z]   → skip: mid-century-modern-side-table-led-display-end-table-hidden-storage-for-living-room-or-bedroom-walnut
+[2026-06-09T21:42:26.889Z]   → skip: 16-14-round-black-side-table-modern-sintered-stone-side-table
+[2026-06-09T21:42:26.889Z]   → skip: end-side-table-44135
+[2026-06-09T21:42:26.889Z]   → skip: mid-century-modern-square-side-table-wood-end-table-walnut-color-fully-assembly
+[2026-06-09T21:42:26.890Z]   → skip: modern-mid-century-round-side-table-with-sliding-tambour-door-storage-shelf
+[2026-06-09T21:42:26.890Z]   → skip: adjustable-height-modern-side-table-with-matte-rock-top-and-sturdy-carbon-steel-base-black-and-silver-fully-assembled
+[2026-06-09T21:42:26.890Z]   → skip: nordic-style-walnut-round-side-table-19-69
+[2026-06-09T21:42:26.891Z]   → skip: minimalist-round-side-table-modern-sintered-stone-end-table-metal-base-white-gray
+[2026-06-09T21:42:26.891Z]   → skip: solid-wood-coffee-table-with-handwoven-rattan-suitable-for-small-apartments-walnut-color-19-69-
+[2026-06-09T21:42:26.891Z]   → skip: 17-72-round-side-table-modern-wood-side-table-end-table
+[2026-06-09T21:42:26.891Z]   → skip: 19-69-modern-minimalist-round-side-table-mdf
+[2026-06-09T21:42:26.891Z]   → skip: 17-71-side-table-modern-square-drum-side-table-for-living-room
+[2026-06-09T21:42:26.892Z]   Detailing: Silva-18" Mid-Century Modern Storage Side Table, Round Fluted End Table, Open Shelf Design, FSC MDF, Grooved Wood, Fully Assembled, Walnut
+[2026-06-09T21:42:33.513Z]   ✓ 18" Mid-Century Modern Storage Side Table, Round Fluted End Table, Open Shelf Design, FSC MDF, Grooved Wood, Fully Assembled, Walnut | $439 | dims n/a | 4 imgs
+[2026-06-09T21:42:33.536Z]   Detailing: 19.69" Modern Minimalist Side Table, MDF, Walnut Veneer
+[2026-06-09T21:42:41.150Z]   ✓ 19.69" Modern Minimalist Side Table, MDF, Walnut Veneer | $319 | dims n/a | 4 imgs
+[2026-06-09T21:42:41.157Z]   Detailing: 22.83" Walnut Round Side Table, Mid-Century Modern End Table with Unique Base Design for Stable Support,for Living Room, Bedroom, or Office, Fully Assembled
+[2026-06-09T21:42:46.787Z]   ✓ 22.83" Walnut Round Side Table, Mid-Century Modern End Table with Unique Base Design for Stable Support,for Living Room, Bedroom, or Office, Fully Assembled | $439 | dims n/a | 4 imgs
+[2026-06-09T21:42:46.796Z]   Detailing: 14.96" Modern Light Luxury Side Table, End Side with Glossy Sintered Stone Top, Metal Base, White
+[2026-06-09T21:42:54.766Z]   ✓ 14.96" Modern Light Luxury Side Table, End Side with Glossy Sintered Stone Top, Metal Base, White | $139 | dims n/a | 4 imgs
+[2026-06-09T21:42:54.769Z]   Detailing: Minimalist Sintered Stone Side Table, Modern Trapezoid Sintered Stone End Table, 17.71", White
+[2026-06-09T21:43:03.572Z]   ✓ Minimalist Sintered Stone Side Table, Modern Trapezoid Sintered Stone End Table, 17.71", White | $579 | dims n/a | 4 imgs
+[2026-06-09T21:43:03.575Z]   Detailing: 2PCS 15.75" Modern Rattan Side Table with Storage,Black Side Table, for Living Room, 2 pieces
+[2026-06-09T21:43:10.750Z]   ✓ 2PCS 15.75" Modern Rattan Side Table with Storage,Black Side Table, for Living Room, 2 pieces | $368 | dims n/a | 4 imgs
+[2026-06-09T21:43:10.756Z]   Detailing: Modern Minimalist Wood Color Side Table, Wood Color MDF Table, Silver Stainless Steel Base
+[2026-06-09T21:43:18.746Z]   ✓ Modern Minimalist Wood Color Side Table, Wood Color MDF Table, Silver Stainless Steel Base | $269 | dims n/a | 4 imgs
+[2026-06-09T21:43:18.749Z]   Detailing: Sectionals Drink Holder, MDF, Walnut Veneer
+[2026-06-09T21:43:26.521Z]   ✓ Sectionals Drink Holder, MDF, Walnut Veneer | $159 | dims n/a | 4 imgs
+[2026-06-09T21:43:26.524Z]   Detailing: Cloister-Mid-Century Walnut Side Table, Arch design,Open Storage End Table,Fully Assembled
+[2026-06-09T21:43:32.524Z]   ✓ Mid-Century Walnut Side Table, Arch design,Open Storage End Table,Fully Assembled | $499 | dims n/a | 4 imgs
+[2026-06-09T21:43:32.526Z]   Detailing: 23’’ C-Shaped Mid-Century Side Table,Stable base,Fully Assembled, Brown & Gray
+[2026-06-09T21:43:39.802Z]   ✓ 23’’ C-Shaped Mid-Century Side Table,Stable base,Fully Assembled, Brown & Gray | $439 | dims n/a | 4 imgs
+[2026-06-09T21:43:39.804Z]   Detailing: 17'' C-Shaped Minimalist Side Table,Fully Assembled, Black & Brown
+[2026-06-09T21:43:45.694Z]   ✓ 17'' C-Shaped Minimalist Side Table,Fully Assembled, Black & Brown | $299 | dims n/a | 4 imgs
+[2026-06-09T21:43:45.697Z]   Detailing: 19.5" Modern Round LED Side Table with Drawers, Beige Leather End Table with Adjustable Lighting and Sintered Stone Tabletop, Fully Assembled
+[2026-06-09T21:43:53.907Z]   ✓ 19.5" Modern Round LED Side Table with Drawers, Beige Leather End Table with Adjustable Lighting and Sintered Stone Tabletop, Fully Assembled | $499 | dims n/a | 4 imgs
+[2026-06-09T21:43:53.909Z]   Detailing: 14.96" Modern Light Luxury Irregular Side Table, Gold Round Tabletop, White Metal Base
+[2026-06-09T21:44:02.472Z]   ✓ 14.96" Modern Light Luxury Irregular Side Table,  Gold Round Tabletop, White Metal Base | $148 | dims n/a | 4 imgs
+[2026-06-09T21:44:02.476Z]   Detailing: Modern Light Luxury End&Side Table, Walnut Veneer Tabletop, Sintered Stone Base，15.25"
+[2026-06-09T21:44:07.381Z]   ✓ Modern Light Luxury End&Side Table, Walnut Veneer Tabletop, Sintered Stone Base | $249 | dims n/a | 4 imgs
+[2026-06-09T21:44:07.388Z]   Detailing: Round Side Table, Italian-style Lotus Leaf-shaped Side Table, 19.68"-ST8036BR50
+[2026-06-09T21:44:14.228Z]   ✓ Round Side Table, Italian-style Lotus Leaf-shaped Side Table, 19.68"-ST8036BR50 | $259 | dims n/a | 4 imgs
+[2026-06-09T21:44:14.232Z]   Detailing: 23.62" Modern Minimalist Gray Round Side Table, Tempered Glass,Solid Wood Base
+[2026-06-09T21:44:20.755Z]   ✓ 23.62" Modern Minimalist Gray Round Side Table, Tempered Glass,Solid Wood Base | $499 | dims n/a | 4 imgs
+[2026-06-09T21:44:20.758Z] 
+── LIVING ROOM / tv unit ──────────────
+[2026-06-09T21:44:20.759Z]   Loading: /furniture/living-room-furniture/tv-stands.html
+[2026-06-09T21:44:30.846Z]   Found 36 product links
+[2026-06-09T21:44:31.464Z]   36 unique stubs
+[2026-06-09T21:44:31.466Z]   Detailing: Eos-71" Mid-Century Modern Tambour Door TV Stand, Walnut Color TV Console, Ash Rolling Door Media Console with legs
+[2026-06-09T21:44:39.597Z]   ✓ 71" Mid-Century Modern Tambour Door TV Stand, Walnut Color TV Console,  Ash Rolling Door Media Console with legs | $1,099 | dims n/a | 4 imgs
+[2026-06-09T21:44:39.601Z]   Detailing: Selene-71" Horizontal Slatted TV Stand with Adjustable LED Lights, Mid-Century Modern Media Console, Ventilated Storage, Walnut, Fits 65 inch TVs, Fully Assembled
+[2026-06-09T21:44:50.175Z]   ✓ 71" Horizontal Slatted TV Stand with Adjustable LED Lights, Mid-Century Modern Media Console, Ventilated Storage, Walnut, Fits 65 inch TVs, Fully Assembled | $1,399 | dims n/a | 4 imgs
+[2026-06-09T21:44:50.185Z]   Detailing: Ansel-70.87'' Mid-Century TV Stand, Modern Entertainment Center, Cabinet with Adjustable Light, Walnut TV Console, Fully-Assembled, Perfect for 65-inch TVs
+[2026-06-09T21:44:59.677Z]   ✓ 70.87'' Mid-Century TV Stand, Modern Entertainment Center, Cabinet with Adjustable Light, Walnut TV Console, Fully-Assembled, Perfect for 65-inch TVs | $1,299 | dims n/a | 4 imgs
+[2026-06-09T21:44:59.682Z]   Detailing: Arboren-71'' Mid-Century Modern TV Stand with storage,walnut
+[2026-06-09T21:45:29.115Z]   ✓ 71'' Mid-Century Modern TV Stand with storage,walnut | $1,699 | dims n/a | 4 imgs
+[2026-06-09T21:45:29.119Z]   Detailing: Aeolus-59" Modern Wood TV Stand, Minimalist Slatted Entertainment Center,Media Console, TV Console, Fully-Assembled, Perfect for 45-inch TVs
+[2026-06-09T21:45:35.089Z]   ✓ 59" Modern Wood TV Stand, Minimalist Slatted Entertainment Center,Media Console, TV Console, Fully-Assembled, Perfect for 45-inch TVs | $849 | dims n/a | 4 imgs
+[2026-06-09T21:45:35.110Z]   Detailing: Aether-71" Mid-Century Modern TV Stand with Adjustable LED Lights, TV Console with Black Matte Sintered Stone Top, Drop-Down Doors & Drawers, Open Storage for Living Room, Walnut Color, Perfect for 65 Inch TVs, Fully Assembled
+[2026-06-09T21:45:42.660Z]   ✓ 71" Mid-Century Modern TV Stand with Adjustable LED Lights, TV Console with Black Matte Sintered Stone Top, Drop-Down Doors & Drawers, Open Storage for Living Room, Walnut Color, Perfect for 65 Inch TVs, Fully Assembled | $1,199 | dims n/a | 4 imgs
+[2026-06-09T21:45:42.662Z]   Detailing: Merrin-63" Black Floating TV Stand, Modern Wall-Mounted Entertainment Center , Media Console, TV Console, Perfect for 55-inch TVs
+[2026-06-09T21:45:50.695Z]   ✓ 63" Black Floating TV Stand, Modern Wall-Mounted Entertainment Center , Media Console, TV Console, Perfect for 55-inch TVs | $699 | dims n/a | 4 imgs
+[2026-06-09T21:45:50.697Z]   Detailing: 70.87"Modern TV Stand with LED Lights,Black and Walnut Wood Media Console with 4 Drawers,Open Storage Cabinet,Fully-assembled
+[2026-06-09T21:45:58.739Z]   ✓ 70.87"Modern TV Stand with LED Lights,Black and Walnut Wood Media Console with 4 Drawers,Open Storage Cabinet,Fully-assembled | $999 | dims n/a | 4 imgs
+[2026-06-09T21:45:58.743Z]   Detailing: 62.99"Mid-Century Modern TV Stand, Wood Media Console with Cabinets, Tall-Cast Legs
+[2026-06-09T21:46:07.026Z]   ✓ 62.99"Mid-Century Modern TV Stand, Wood Media Console with Cabinets, Tall-Cast Legs | $1,099 | dims n/a | 4 imgs
+[2026-06-09T21:46:07.029Z]   Detailing: Ravenna-71'' Minimalist Slatted Media Console, Soundbar Compatible, Walnut
+[2026-06-09T21:46:22.858Z]   ✓ 71'' Minimalist Slatted Media Console, Soundbar Compatible, Walnut | $1,099 | dims n/a | 4 imgs
+[2026-06-09T21:46:22.862Z]   Detailing: Aether-71'' Floating TV Stand with Adjustable LED Lights,Sintered Stone Top,Wall Mounted Media Console for Living Room，Modern TV Stand
+[2026-06-09T21:46:29.782Z]   ✓ 71'' Floating TV Stand with Adjustable LED Lights,Sintered Stone Top,Wall Mounted Media Console for Living Room | $1,199 | dims n/a | 4 imgs
+[2026-06-09T21:46:29.785Z]   Detailing: 71" Modern Low Profile TV Console with Glass Tabletop, Luxury TV Stand with LED Lights & Storage, Perfect for 65 Inch TVs, Fully Assembled TV Stand
+[2026-06-09T21:46:35.345Z]   ✓ 71" Modern Low Profile TV Console with Glass Tabletop, Luxury TV Stand with LED Lights  & Storage, Perfect for 65 Inch TVs, Fully Assembled TV Stand | $1,299 | dims n/a | 4 imgs
+[2026-06-09T21:46:35.349Z]   Detailing: 71" Curved Slatted Wood TV Stand, Mid-Century Modern Wrap-Around Tambour TV Console, Fully Opening Media Cabinet
+[2026-06-09T21:46:42.324Z]   ✓ 71" Curved Slatted Wood TV Stand, Mid-Century Modern Wrap-Around Tambour TV Console, Fully Opening Media Cabinet | $1,499 | dims n/a | 4 imgs
+[2026-06-09T21:46:42.327Z]   Detailing: Modern Black TV Stand with Drawers, Long Media Console, Wood, 78.74" Fully-Assembled
+[2026-06-09T21:46:49.228Z]   ✓ Modern Black TV Stand with Drawers, Long Media Console, Wood, 78.74" Fully-Assembled | $1,199 | dims n/a | 4 imgs
+[2026-06-09T21:46:49.231Z]   Detailing: Silva-71" Mid-Century Modern Fluted TV Stand with Metal Pull Handles, 2 Doors & Adjustable Shelves, Fits 70"-75" TVs, Fully Assembled with Cable Management Holes, Sleek Media Console for Living Rooms​, Walnut color
+[2026-06-09T21:46:56.277Z]   ✓ 71" Mid-Century Modern Fluted TV Stand with Metal Pull Handles, 2 Doors & Adjustable Shelves, Fits 70"-75" TVs, Fully Assembled with Cable Management Holes, Sleek Media Console for Living Rooms​, Walnut color | $1,299 | dims n/a | 4 imgs
+[2026-06-09T21:46:56.288Z]   Detailing: VISION-Modern Wood TV Stand, Minimalist Slatted Media Console with Tall-cast Metal Legs, Walnut Veneer, 70.87"
+[2026-06-09T21:47:03.597Z]   ✓ Modern Wood TV Stand, Minimalist Slatted Media Console with Tall-cast Metal Legs, Walnut Veneer, 70.87" | $899 | dims n/a | 4 imgs
+[2026-06-09T21:47:03.606Z]   Detailing: Aeolus-59.06"Mid-Century Modern TV Stand,Entertainment Center Media Console,TV Console,with Openwork Iron Legs ,Walnut
+[2026-06-09T21:47:10.092Z]   ✓ 59.06"Mid-Century Modern TV Stand,Entertainment Center Media Console,TV Console,with Openwork Iron Legs ,Walnut | $999 | dims n/a | 4 imgs
+[2026-06-09T21:47:10.095Z]   Detailing: VISION-Mid-Century Modern TV Stand, Louvered Wood Entertainment Center with Slatted Doors, Open Storage,62.99"
+[2026-06-09T21:47:17.200Z]   ✓ Mid-Century Modern TV Stand, Louvered Wood Entertainment Center with Slatted Doors, Open Storage,62.99" | $899 | dims n/a | 4 imgs
+[2026-06-09T21:47:17.202Z]   Detailing: Eos-70.87"Mid-Century Modern TV Stand, Minimalist Wood Media Console with Roller Shutter Door, Tall-Cast Metal Legs, Ash Wood Veneer TV Console
+[2026-06-09T21:47:24.083Z]   ✓ 70.87"Mid-Century Modern TV Stand, Minimalist Wood Media Console with Roller Shutter Door, Tall-Cast Metal Legs, Ash Wood Veneer TV Console | $1,099 | dims n/a | 4 imgs
+[2026-06-09T21:47:24.088Z]   Detailing: 70.9‘’ Modern Minimalist Floating TV Stand, Fluted TV Console, Glossy Sintered Stone,Hardware Handles, Beige TV Console
+[2026-06-09T21:47:29.966Z]   ✓ 70.9‘’ Modern Minimalist Floating TV Stand, Fluted TV Console, Glossy Sintered Stone,Hardware Handles, Beige TV Console | $899 | dims n/a | 4 imgs
+[2026-06-09T21:47:29.969Z] 
+── LIVING ROOM / shelving ──────────────
+[2026-06-09T21:47:29.969Z]   Loading: /furniture/storage/
+[2026-06-09T21:47:39.936Z]   Found 36 product links
+[2026-06-09T21:47:40.635Z]   36 unique stubs
+[2026-06-09T21:47:40.638Z]   → skip: 78-74-modern-minimalist-rolling-door-tv-stand-multi-layer-solid-wood-walnut
+[2026-06-09T21:47:40.639Z]   → skip: mid-century-tv-stand-modern-center-cabinet-with-adjustable-light-walnut
+[2026-06-09T21:47:40.640Z]   → skip: horizontal-slatted-tv-stand-with-adjustable-led-lights-mid-century-modern-media-console-ventilated-storage-walnut-fits-85-inch-tvs-fully-assembled
+[2026-06-09T21:47:40.641Z]   → skip: tv-stand-43956
+[2026-06-09T21:47:40.641Z]   → skip: mid-century-matte-sintered-stone-tabletop-tv-stand-with-led-lights-walnut-color-black-floating-design-tv-console-with-storage-fully-assembled
+[2026-06-09T21:47:40.641Z]   → skip: mid-century-modern-tv-stand-with-openwork-black-iron-legs
+[2026-06-09T21:47:40.641Z]   → skip: 80-modern-media-unit-open-storage-4-drawers-lowline-walnut-veneer-mdf-white
+[2026-06-09T21:47:40.642Z]   → skip: minimalist-wall-mounted-rubber-wood-floating-tv-stand-3-pinewood-doors-walnut-veneer
+[2026-06-09T21:47:40.642Z]   Detailing: Silva-39" Mid-Century Modern Fluted Storage Cabinet, Small Sideboard, Curved Accent Cabinet with Gold Metal Handles & Wood, for Entryway, Living Room & Bedroom, Easy Assembly, Walnut Color, Easy Assembly
+[2026-06-09T21:47:47.310Z]   ✓ 39" Mid-Century Modern Fluted Storage Cabinet, Small Sideboard, Curved Accent Cabinet with Gold Metal Handles & Wood, for Entryway, Living Room & Bedroom, Easy Assembly, Walnut Color, Easy Assembly | $959 | dims n/a | 4 imgs
+[2026-06-09T21:47:47.318Z]   Detailing: 70.87" Mid-Century Modern TV Stand, Red Oak Veneer Smoky TV Console, Wood Media Console, Metal Legs, Perfect for 65-inch TVs
+[2026-06-09T21:47:54.414Z]   ✓ 70.87" Mid-Century Modern TV Stand, Red Oak Veneer Smoky TV Console, Wood Media Console, Metal Legs, Perfect for 65-inch TVs | $1,299 | dims n/a | 4 imgs
+[2026-06-09T21:47:54.420Z]   Detailing: FLOAT-71" Mid-Century Floating TV Stand with Adjustable LED Lights, Wall Mount TV Stand for 65-Inch TVs, TV Cabinet with Storage, Walnut Color TV Console for Living Room
+[2026-06-09T21:48:01.870Z]   ✓ 71" Mid-Century Floating TV Stand with Adjustable LED Lights, Wall Mount TV Stand for 65-Inch TVs, TV Cabinet with Storage, Walnut Color TV Console for Living Room | $959 | dims n/a | 4 imgs
+[2026-06-09T21:48:01.876Z]   Detailing: Eos-63" Mid-Century Modern Fluted Storage Cabinet, Large Capacity Credenza, Curved Media Console with Tambour Door & Open Storage, Walnut Finish with Metal Legs, Suitable for Living Room, Bedroom, and Dining Room, Walnut
+[2026-06-09T21:48:08.915Z]   ✓ 63" Mid-Century Modern Fluted Storage Cabinet, Large Capacity Credenza, Curved Media Console with Tambour Door & Open Storage, Walnut Finish with Metal Legs, Suitable for Living Room, Bedroom, and Dining Room, Walnut | $1,499 | dims n/a | 4 imgs
+[2026-06-09T21:48:08.919Z]   Detailing: 71" Mid-Century Modern TV Stand with Glass Doors, Credenza TV Console with Adjustable Shelves, 2 Doors & 3 Drawers, for Living Room or Bedroom, Perfect for 65 Inch TVs, Fully Assembled
+[2026-06-09T21:48:17.390Z]   ✓ 71" Mid-Century Modern TV Stand with Glass Doors, Credenza TV Console with Adjustable Shelves, 2 Doors & 3 Drawers, for Living Room or Bedroom, Perfect for 65 Inch TVs, Fully Assembled | $1,499 | dims n/a | 4 imgs
+[2026-06-09T21:48:17.394Z]   Detailing: Selene-55'' LED Horizontal Slatted Storage Cabinet, Walnut Storage Credenza, Display Sideboard with Adjustable LED Lights, Modern Buffet with Acrylic Front
+[2026-06-09T21:48:26.651Z]   ✓ 55'' LED Horizontal Slatted Storage Cabinet, Walnut Storage Credenza, Display Sideboard with Adjustable LED Lights, Modern Buffet with Acrylic Front | $1,599 | dims n/a | 4 imgs
+[2026-06-09T21:48:26.654Z]   → skip: modern-minimalist-style-tv-stands-mdf-veneer-high-quality-metal-feet-black
+[2026-06-09T21:48:26.654Z]   → skip: modern-solid-wood-tv-stand-minimalist-slatted-with-removable-shelves-ash
+[2026-06-09T21:48:26.654Z]   → skip: modern-tv-stand-solid-wood-with-slatted-doors-open-storage-tall-cast-metal-legs
+[2026-06-09T21:48:26.655Z]   → skip: mid-century-modern-tv-stand-wood-media-console-with-cabinets-tall-cast-legs-78-74
+[2026-06-09T21:48:26.655Z]   Detailing: 70.87" Mid-Century Modern TV Stand with Tree-Shaped Decorations, Tall Media Console with Adjustable Shelves, Push-to-Open Doors, Metal Legs, High Leg Design, Fits 55-65 Inch TVs, Walnut Color, MDF, Easy Assembly
+[2026-06-09T21:48:35.333Z]   ✓ 70.87" Mid-Century Modern TV Stand with Tree-Shaped Decorations, Tall Media Console with Adjustable Shelves, Push-to-Open Doors, Metal Legs, High Leg Design, Fits 55-65 Inch TVs, Walnut Color, MDF, Easy Assembly | $1,599 | dims n/a | 4 imgs
+[2026-06-09T21:48:35.337Z]   Detailing: 78.75"–106.3" Mid-Century Modern Extendable TV Stand with LED Lights, Matte Travertine slabs Tabletop Media Console,Walnut color & White TV Console with Storage
+[2026-06-09T21:48:43.819Z]   ✓ 78.75"–106.3" Mid-Century Modern Extendable TV Stand with LED Lights, Matte Travertine slabs Tabletop Media Console,Walnut color & White TV Console with Storage | $1,499 | dims n/a | 4 imgs
+[2026-06-09T21:48:43.823Z]   Detailing: 71" Luxury TV Stand with Glossy Sintered Stone Tabletop, TV Console with Storage, Beige TV Cabinet, Perfect for 65-Inch TVs
+[2026-06-09T21:48:50.676Z]   ✓ 71" Luxury TV Stand with Glossy Sintered Stone Tabletop, TV Console with Storage, Beige TV Cabinet, Perfect for 65-Inch TVs | $1,399 | dims n/a | 4 imgs
+[2026-06-09T21:48:50.709Z]   Detailing: 79" Mid-Century TV Stand with Extra-Large Cylinder Legs, Dresser TV Stand with Adjustable LED Lights, Curved TV Console with 2 Doors & 4 Drawers, Perfect for 70-75 Inch TVs, for Living Room & Bedroom
+[2026-06-09T21:48:57.678Z]   ✓ 79" Mid-Century TV Stand with Extra-Large Cylinder Legs, Dresser TV Stand with Adjustable LED Lights, Curved TV Console with 2 Doors & 4 Drawers, Perfect for 70-75 Inch TVs, for Living Room & Bedroom | $1,399 | dims n/a | 4 imgs
+[2026-06-09T21:48:57.682Z]   → skip: mid-century-modern-tv-stand-minimalist-wood-media-console-with-roller-shutter-door-tall-cast-metal-legs-ash-wood-veneer-70-87
+[2026-06-09T21:48:57.682Z]   Detailing: 57'' Modern Storage Cabinet with Pandora Sintered Stone Top, Fluted Sideboard Buffet for Kitchen, Dining Room Hutch Cabinet, Credenza Cabinet, Blue
+[2026-06-09T21:49:05.285Z]   ✓ 57'' Modern Storage Cabinet with Pandora Sintered Stone Top, Fluted Sideboard Buffet for Kitchen, Dining Room Hutch Cabinet, Credenza Cabinet, Blue | $1,699 | dims n/a | 4 imgs
+[2026-06-09T21:49:05.289Z]   Detailing: 55'' Mid-Century Modern Credenza Solid Wood Sideboard Buffet Cabinet, Bar Cabinet with 8 Cabinets & 2 Striped Glass Doors for Kitchen Storage & Bookshelf, Walnut Buffet Hutch for Dinning Room
+[2026-06-09T21:49:13.205Z]   ✓ 55'' Mid-Century Modern Credenza Solid Wood Sideboard Buffet Cabinet, Bar Cabinet with 8 Cabinets & 2 Striped Glass Doors for Kitchen Storage & Bookshelf, Walnut Buffet Hutch for Dinning Room | $1,599 | dims n/a | 4 imgs
+[2026-06-09T21:49:13.209Z]   Detailing: 59'' Mid-Century Modern Solid Wood Storage Cabinet, Sideboard Cabinet With Drawers, Buffet Cabinet with Storage, Credenza for Dining Room, Walnut
+[2026-06-09T21:49:23.763Z]   ✓ 59'' Mid-Century Modern Solid Wood Storage Cabinet, Sideboard Cabinet With Drawers, Buffet Cabinet with Storage, Credenza for Dining Room, Walnut | $1,563 | dims n/a | 4 imgs
+[2026-06-09T21:49:23.770Z]   Detailing: 63" Modern TV Stand for Projector, Sintered Stone TV Cabinet with Drawers for Home Theater, Oak Veneer MDF, Black & White Media Console
+[2026-06-09T21:49:30.543Z]   ✓ 63" Modern TV Stand for Projector, Sintered Stone TV Cabinet with Drawers for Home Theater, Oak Veneer MDF, Black & White Media Console | $899 | dims n/a | 4 imgs
+[2026-06-09T21:49:30.546Z]   → skip: odin-walnut-vennered-tv-stand
+[2026-06-09T21:49:30.546Z]   Detailing: FLOAT-Modern Wall-Mounted TV Stand, White Floating TV Cabinet with Drawers，Matte Sintered Stone, Storage, Flip-down Door, Wall Hung,70.87"
+[2026-06-09T21:49:36.202Z]   ✓ Modern Wall-Mounted TV Stand, White Floating TV Cabinet with Drawers | $999 | dims n/a | 4 imgs
+[2026-06-09T21:49:36.206Z]   Detailing: Mid-century Modern Shoe Cabinet for Storage, Porch Cabinet at the Door, 7.87" Ultra-thin, Large Capacity, 54.33",White
+[2026-06-09T21:49:44.518Z]   ✓ Mid-century Modern Shoe Cabinet for Storage, Porch Cabinet at the Door, 7.87" Ultra-thin, Large Capacity, 54.33",White | $1,499 | dims n/a | 4 imgs
+[2026-06-09T21:49:44.521Z]   Detailing: 59'' Modern White & Walnut Storage Cabinet, Sideboard Buffet with Cabinets, Credenza for Dining Room
+[2026-06-09T21:49:51.886Z]   ✓ 59'' Modern White & Walnut Storage Cabinet, Sideboard Buffet with Cabinets, Credenza for Dining Room | $1,559 | dims n/a | 4 imgs
+[2026-06-09T21:49:51.889Z]   Detailing: 63'' Modern White Storage Cabinet, Sideboard Buffet with Cabinets, Credenza for Dining Room
+[2026-06-09T21:49:59.632Z]   ✓ 63'' Modern White Storage Cabinet, Sideboard Buffet with Cabinets, Credenza for Dining Room | $1,489 | dims n/a | 4 imgs
+[2026-06-09T21:49:59.649Z]   Detailing: VISION-Modern Wood Extendable TV Stand, Minimalist Slatted Entertainment Center, Cabinet with Removable Shelves, 78.74”，Walnut
+[2026-06-09T21:50:07.499Z]   ✓ Modern Wood Extendable TV Stand, Minimalist Slatted Entertainment Center, Cabinet with Removable Shelves, 78.74” | $1,299 | dims n/a | 4 imgs
+[2026-06-09T21:50:07.502Z]   Detailing: 54'' Mid-Century Modern Solid Wood Storage Cabinet, Sideboard Buffet with Drawers, Bar Cabinet for Dining Room, Walnut Credenza
+[2026-06-09T21:50:15.721Z]   ✓ 54'' Mid-Century Modern Solid Wood Storage Cabinet, Sideboard Buffet with Drawers, Bar Cabinet for Dining Room, Walnut Credenza | $1,599 | dims n/a | 4 imgs
+[2026-06-09T21:50:15.726Z] 
+── BEDROOM / bed ──────────────
+[2026-06-09T21:50:15.726Z]   Loading: /furniture/bedroom-furniture/beds.html
+[2026-06-09T21:50:24.857Z]   Found 24 product links
+[2026-06-09T21:50:25.619Z]   24 unique stubs
+[2026-06-09T21:50:25.622Z]   Detailing: Lambra-Boucle Upholstered Bed, Queen Size Beige Low Profile Platform Bed Frame with Headboard and Wooden Slats Support,No Box Spring Needed, Easy Assembly
+[2026-06-09T21:50:32.693Z]   ✓ Boucle Upholstered Bed, Queen Size Beige Low Profile Platform Bed Frame with Headboard and Wooden Slats Support,No Box Spring Needed, Easy Assembly | $1,399 | dims n/a | 4 imgs
+[2026-06-09T21:50:32.697Z]   Detailing: Beige Chenille Upholstered Bed – Queen Size
+[2026-06-09T21:50:38.971Z]   ✓ Beige Chenille Upholstered Bed – Queen Size | $1,899 | dims n/a | 4 imgs
+[2026-06-09T21:50:38.974Z]   Detailing: Cloud-Boucle Upholstered Storage Bed, Queen Size Beige Hydraulic Lift-up Platform Bed Frame with Headboard, No Box Spring Needed, Easy Assembly
+[2026-06-09T21:50:46.189Z]   ✓ Boucle Upholstered Storage Bed, Queen Size Beige Hydraulic Lift-up Platform Bed Frame with Headboard, No Box Spring Needed, Easy Assembly | $1,499 | dims n/a | 4 imgs
+[2026-06-09T21:50:46.193Z]   Detailing: LumiFlex-Upholstered Bed with Lighting, Queen Size White Floating Platform Bed Frame with Interchangeable Headboard and Wooden Slat Support, Easy Assembly
+[2026-06-09T21:51:06.011Z]   ✓ Upholstered Bed with Lighting, Queen Size White Floating Platform Bed Frame with Interchangeable Headboard and Wooden Slat Support, Easy Assembly | $969 | dims n/a | 4 imgs
+[2026-06-09T21:51:06.015Z]   Detailing: LumiFlex-Upholstered Bed with Lighting, Queen Size Beige Floating Platform Bed Frame with Wooden Slat Support, Easy Assembly
+[2026-06-09T21:51:19.111Z]   ✓ Upholstered Bed with Lighting, Queen Size Beige Floating Platform Bed Frame with Wooden Slat Support, Easy Assembly | $969 | dims n/a | 4 imgs
+[2026-06-09T21:51:19.115Z]   Detailing: Winston-Queen Size Leather Upholstered Storage Bed with 6 Drawers, Black Low Profile Platform Bed Frame, Wooden Slats Support, No Box Spring Needed, Easy Assembly
+[2026-06-09T21:51:25.526Z]   ✓ Queen Size Leather Upholstered Storage Bed with 6 Drawers, Black Low Profile Platform Bed Frame, Wooden Slats Support, No Box Spring Needed, Easy Assembly | $1,699 | dims n/a | 4 imgs
+[2026-06-09T21:51:25.543Z]   Detailing: LumiFlex-Queen Size Upholstered Bed with Smart Lighting and Interchangeable Headboard, White Floating Platform Bed Frame, Wooden Slat Support, Easy Assembly
+[2026-06-09T21:51:34.369Z]   ✓ Queen Size Upholstered Bed with Smart Lighting and Interchangeable Headboard, White Floating Platform Bed Frame, Wooden Slat Support, Easy Assembly | $999 | dims n/a | 4 imgs
+[2026-06-09T21:51:34.374Z]   Detailing: Winston-King Size Leather Upholstered Storage Bed with Smart Lighting, Black Low Profile Platform Bed Frame, Wooden Slats Support, No Box Spring Needed, Easy Assembly
+[2026-06-09T21:51:41.187Z]   ✓ King Size Leather Upholstered Storage Bed with Smart Lighting, Black Low Profile Platform Bed Frame, Wooden Slats Support, No Box Spring Needed, Easy Assembly | $1,799 | dims n/a | 4 imgs
+[2026-06-09T21:51:41.194Z]   Detailing: Lumo-Queen Size Leather Upholstered Floating Bed with Smart Lighting, Sturdy Platform Bed Frame, Wooden Slat Support, No Box Spring Needed, Easy Assembly
+[2026-06-09T21:51:46.320Z]   ✓ Queen Size Leather Upholstered Floating Bed with Smart Lighting, Sturdy Platform Bed Frame, Wooden Slat Support, No Box Spring Needed, Easy Assembly | $1,399 | dims n/a | 4 imgs
+[2026-06-09T21:51:46.324Z]   Detailing: King Size Velvet Upholstered Floating Bed with Smart Lighting, Beige Low Profile Platform Bed Frame, Beige Wooden Slat Support, No Box Spring Needed
+[2026-06-09T21:51:51.164Z]   ✓ King Size Velvet Upholstered Floating Bed with Smart Lighting, Beige Low Profile Platform Bed Frame, Beige Wooden Slat Support, No Box Spring Needed | $1,899 | dims n/a | 4 imgs
+[2026-06-09T21:51:51.168Z]   Detailing: Queen Size Velvet Upholstered Floating Bed with Smart Lighting, Beige Low Profile Platform Bed Frame, Beige Wooden Slat Support, No Box Spring Needed
+[2026-06-09T21:51:57.362Z]   ✓ Queen Size Velvet Upholstered Floating Bed with Smart Lighting, Beige Low Profile Platform Bed Frame, Beige Wooden Slat Support, No Box Spring Needed | $1,799 | dims n/a | 4 imgs
+[2026-06-09T21:51:57.366Z]   Detailing: Lumo-Waffle King Size Leather Upholstered Floating Bed with Smart Lighting, Black Sturdy Platform Bed Frame with Wooden Slat Support, No Box Spring Needed
+[2026-06-09T21:52:03.381Z]   ✓ Waffle King Size Leather Upholstered Floating Bed with Smart Lighting, Black Sturdy Platform Bed Frame with Wooden Slat Support, No Box Spring Needed | $1,599 | dims n/a | 4 imgs
+[2026-06-09T21:52:03.385Z]   Detailing: Arco-King Size Scalloped Leather Upholstered Floating Bed with Smart Lighting, Platform Bed Frame, Wooden Slats Support,No Box Spring Needed, Easy Assembly
+[2026-06-09T21:52:09.993Z]   ✓ King Size Scalloped Leather Upholstered Floating Bed with Smart Lighting, Platform Bed Frame, Wooden Slats Support,No Box Spring Needed, Easy Assembly | $1,499 | dims n/a | 4 imgs
+[2026-06-09T21:52:10.002Z]   Detailing: Arco-Leather Curved Upholstered Bed, Queen Size Black & Beige Platform Bed Frame with Wooden Slat Support, No Box Spring Needed, Easy Assembly
+[2026-06-09T21:52:15.498Z]   ✓ Leather Curved Upholstered Bed, Queen Size Black & Beige Platform Bed Frame with Wooden Slat Support, No Box Spring Needed, Easy Assembly | $1,299 | dims n/a | 4 imgs
+[2026-06-09T21:52:15.502Z]   Detailing: Bloc-Queen Size Upholstered Bed with Wingback Headboard, Low Profile Platform Bed Frame with Wooden Slat Support, No Box Spring Needed, Easy Assembly
+[2026-06-09T21:52:22.256Z]   ✓ Queen Size Upholstered Bed with Wingback Headboard, Low Profile Platform Bed Frame with Wooden Slat Support, No Box Spring Needed, Easy Assembly | $1,499 | dims n/a | 4 imgs
+[2026-06-09T21:52:22.265Z]   Detailing: King Size Grey Upholstered Floating Bed, Platform Bed Frame with Suede Fabric Headboard and Wooden Slat Support, No Box Spring Needed, Easy Assembly
+[2026-06-09T21:52:28.799Z]   ✓ King Size Grey Upholstered Floating Bed, Platform Bed Frame with Suede Fabric Headboard and Wooden Slat Support, No Box Spring Needed, Easy Assembly | $1,799 | dims n/a | 4 imgs
+[2026-06-09T21:52:28.805Z]   Detailing: Bloc-Upholstered Platform Bed, Queen Size Beige Anti-scratch and Water-proof Fabric, Low Profile Bed Fame with Wooden Slat Support, No Box Spring Needed, Easy Assembly
+[2026-06-09T21:52:34.907Z]   ✓ Upholstered Platform Bed, Queen Size Beige Anti-scratch and Water-proof Fabric, Low Profile Bed Fame with Wooden Slat Support, No Box Spring Needed, Easy Assembly | $1,359 | dims n/a | 4 imgs
+[2026-06-09T21:52:34.925Z]   Detailing: Butterfly Queen Size Leather Upholstered Bed with Curved Headboard, Low Profile Bed Frame with Wooden Slat Support, No Box Spring Needed, Easy Assembly
+[2026-06-09T21:52:41.989Z]   ✓ Butterfly Queen Size Leather Upholstered Bed with Curved Headboard, Low Profile Bed Frame with Wooden Slat Support, No Box Spring Needed, Easy Assembly | $1,599 | dims n/a | 4 imgs
+[2026-06-09T21:52:41.997Z]   Detailing: LumiFlex-Queen Size Upholstered Bed with Smart Lighting and Interchangeable Headboard, White Floating Platform Bed Frame, Wooden Slat Support, Easy Assembly
+[2026-06-09T21:52:50.925Z]   ✓ Queen Size Upholstered Bed with Smart Lighting and Interchangeable Headboard, White Floating Platform Bed Frame, Wooden Slat Support, Easy Assembly | $999 | dims n/a | 4 imgs
+[2026-06-09T21:52:50.930Z]   Detailing: Queen Size Leather Upholstered Bed, Beige Platform Bed Frame with Wooden Slat Support, No Box Spring Needed, Easy Assembly
+[2026-06-09T21:52:58.264Z]   ✓ Queen Size Leather Upholstered Bed, Beige Platform Bed Frame with Wooden Slat Support, No Box Spring Needed, Easy Assembly | $1,699 | dims n/a | 4 imgs
+[2026-06-09T21:52:58.269Z] 
+── BEDROOM / nightstand ──────────────
+[2026-06-09T21:52:58.269Z]   Loading: /furniture/bedroom-furniture/nightstands.html
+[2026-06-09T21:53:07.597Z]   Found 9 product links
+[2026-06-09T21:53:08.261Z]   9 unique stubs
+[2026-06-09T21:53:08.264Z]   Detailing: 21.65"Modern Nightstand with 3 Drawers, Beige Bedside Table, Sintered Stone Tabletop, Beige, Fully-Assembled
+[2026-06-09T21:53:13.611Z]   ✓ 21.65"Modern Nightstand with 3 Drawers, Beige Bedside Table, Sintered Stone Tabletop, Beige, Fully-Assembled | $359 | dims n/a | 4 imgs
+[2026-06-09T21:53:13.616Z]   Detailing: 20.87-Inch Beige Nightstand with 2 Drawers, Wood Bedside Table,Sintered Stone Tabletop, MDF, Stainless Steel Legs
+[2026-06-09T21:53:20.235Z]   ✓ 20.87-Inch Beige Nightstand with 2 Drawers, Wood Bedside Table,Sintered Stone Tabletop, MDF, Stainless Steel Legs | $289 | dims n/a | 4 imgs
+[2026-06-09T21:53:20.252Z]   Detailing: Modern Nightstand with Fingerprint Lock, 20" LED Bed Side Table with 2 drawers, Sintered Stone Countertop, Beige
+[2026-06-09T21:53:26.599Z]   ✓ Modern Nightstand with Fingerprint Lock, 20" LED Bed Side Table with 2 drawers, Sintered Stone Countertop, Beige | $359 | dims n/a | 4 imgs
+[2026-06-09T21:53:26.605Z]   Detailing: Black Wooden Nightstand with Drawer, Bedside End Table with Open Shelf and Metal Legs for Bedroom, Dorm and Small Spaces
+[2026-06-09T21:53:33.268Z]   ✓ Black Wooden Nightstand with Drawer, Bedside End Table with Open Shelf and Metal Legs for Bedroom, Dorm and Small Spaces | $399 | dims n/a | 4 imgs
+[2026-06-09T21:53:33.272Z]   Detailing: 19.69-Inch Light Gray Nightstand with 3 Drawers, Modern Minimalist Wood Bedside Table, MDF, Fully-Assembled
+[2026-06-09T21:53:38.065Z]   ✓ 19.69-Inch Light Gray Nightstand with 3 Drawers, Modern Minimalist Wood Bedside Table, MDF, Fully-Assembled | $299 | dims n/a | 4 imgs
+[2026-06-09T21:53:38.069Z]   Detailing: 20.08" Round Modern Light luxury Nightstand with 2 Drawers, Glass Top, Faux Leather, Solid Wood, Beige
+[2026-06-09T21:53:44.415Z]   ✓ 20.08" Round Modern Light luxury Nightstand with 2 Drawers, Glass Top, Faux Leather, Solid Wood, Beige | $399 | dims n/a | 4 imgs
+[2026-06-09T21:53:44.421Z]   Detailing: 16.93-Inch Beige Nightstand with 2 Drawers, Pine framed Bedside Table, Boucle, Solid Wood Legs, Fully-Assembled
+[2026-06-09T21:53:50.673Z]   ✓ 16.93-Inch Beige Nightstand with 2 Drawers, Pine framed Bedside Table, Boucle, Solid Wood Legs, Fully-Assembled | $167 | dims n/a | 4 imgs
+[2026-06-09T21:53:50.681Z]   Detailing: 18.5" Round Nightstand with Two Drawers, Beige
+[2026-06-09T21:53:56.938Z]   ✓ 18.5" Round Nightstand with Two Drawers, Beige | $339 | dims n/a | 4 imgs
+[2026-06-09T21:53:56.945Z]   Detailing: Modern Bedroom Nightstand with 2 Pine Wood Drawers, Sintered Stone Tabletop, Khaki, 18.90’’
+[2026-06-09T21:54:03.382Z]   ✓ Modern Bedroom Nightstand with 2 Pine Wood Drawers, Sintered Stone Tabletop, Khaki, 18.90’’ | $236 | dims n/a | 4 imgs
+[2026-06-09T21:54:03.389Z] 
+── BEDROOM / dresser ──────────────
+[2026-06-09T21:54:03.390Z]   Loading: /furniture/bedroom-furniture/dressers-chests.html
+[2026-06-09T21:54:13.233Z]   Found 10 product links
+[2026-06-09T21:54:13.884Z]   10 unique stubs
+[2026-06-09T21:54:13.885Z]   Detailing: Silva-Modern 6 Drawers Dresser, 59" Wide Mid Century Chest of Drawers, Curved Profile Design, Dresser TV Stand, Wood Drawer Organizer for Bedroom, Living Room, Hallway, Plywood, Walnut Finish
+[2026-06-09T21:54:20.007Z]   ✓ Modern 6 Drawers Dresser, 59" Wide Mid Century Chest of Drawers, Curved Profile Design, Dresser TV Stand, Wood Drawer Organizer for Bedroom, Living Room, Hallway, Plywood, Walnut Finish | $1,599 | dims n/a | 4 imgs
+[2026-06-09T21:54:20.014Z]   Detailing: Silva-61" Mid-Century Modern 6-Drawer Dresser, MDF, Walnut Finish, Fully Assemble
+[2026-06-09T21:54:25.780Z]   ✓ 61" Mid-Century Modern 6-Drawer Dresser, MDF, Walnut Finish, Fully Assemble | $1,799 | dims n/a | 4 imgs
+[2026-06-09T21:54:25.796Z]   Detailing: 59"Mid-Century Modern 6-Drawer Dresser, MDF, Wood Legs, Walnut Finish
+[2026-06-09T21:54:30.723Z]   ✓ 59"Mid-Century Modern 6-Drawer Dresser, MDF, Wood Legs, Walnut Finish | $1,399 | dims n/a | 4 imgs
+[2026-06-09T21:54:30.731Z]   Detailing: Modern 4 Drawers Dresser, 31" Wide Mid Century Tall Chest, Curved Profile Design, Wood Drawer Organizer for Bedroom, Living Room, Hallway, Plywood, Walnut
+[2026-06-09T21:54:36.900Z]   ✓ Modern 4 Drawers Dresser, 31" Wide Mid Century Tall Chest, Curved Profile Design, Wood Drawer Organizer for Bedroom, Living Room, Hallway, Plywood, Walnut | $1,399 | dims n/a | 4 imgs
+[2026-06-09T21:54:36.905Z]   Detailing: Mid Century Modern Dresser, Wood Dresser With 6-Drawer, Walnut Veneer, Tall-Cast Wood Legs, 35.43" H
+[2026-06-09T21:54:42.921Z]   ✓ Mid Century Modern Dresser, Wood Dresser With 6-Drawer, Walnut Veneer, Tall-Cast Wood Legs, 35.43" H | $1,599 | dims n/a | 4 imgs
+[2026-06-09T21:54:42.926Z]   Detailing: Modern 6 Drawer Dresser with Slate Tabletop for Bedroom, 59.2" TV Stand for 45" TV, Assembled Shipment, White
+[2026-06-09T21:54:49.478Z]   ✓ Modern 6 Drawer Dresser with Slate Tabletop for Bedroom, 59.2" TV Stand for 45" TV, Assembled Shipment, White | $1,699 | dims n/a | 4 imgs
+[2026-06-09T21:54:49.484Z]   Detailing: Farmhouse 6-Drawer Dresser for Bedroom, 51.2" Dresser TV Stand for 50 inch TV, Wide Chest of Drawers, Assembled Shipment
+[2026-06-09T21:54:56.199Z]   ✓ Farmhouse 6-Drawer Dresser for Bedroom, 51.2" Dresser TV Stand for 50 inch TV, Wide Chest of Drawers, Assembled Shipment | $1,399 | dims n/a | 4 imgs
+[2026-06-09T21:54:56.208Z]   Detailing: Farmhouse Dressers Chests of Drawers with 4 Drawers for Bedroom, Tall Storage Chest of Drawers, Assembled Shipment, Walnut color
+[2026-06-09T21:55:02.770Z]   ✓ Farmhouse Dressers Chests of Drawers with 4 Drawers for Bedroom, Tall Storage Chest of Drawers, Assembled Shipment, Walnut color | $799 | dims n/a | 4 imgs
+[2026-06-09T21:55:02.774Z]   Detailing: Mid Century Dressers Chests of Drawers with 4 Drawers for Bedroom, Tall Storage Chest of Drawers, Assembled Shipment, Black Color
+[2026-06-09T21:55:09.412Z]   ✓ Mid Century Dressers Chests of Drawers with 4 Drawers for Bedroom, Tall Storage Chest of Drawers, Assembled Shipment, Black Color | $899 | dims n/a | 4 imgs
+[2026-06-09T21:55:09.418Z]   Detailing: Mid-Century Modern Wood Dressers for Bedroom, 47" Wide Balck TV Stand Drawers, Assembled Shipment
+[2026-06-09T21:55:15.358Z]   ✓ Mid-Century Modern Wood Dressers for Bedroom, 47" Wide Balck TV Stand Drawers, Assembled Shipment | $1,199 | dims n/a | 4 imgs
+[2026-06-09T21:55:15.368Z] 
+── BEDROOM / bench ──────────────
+[2026-06-09T21:55:15.368Z]   Loading: /furniture/bedroom-furniture/bedroom-benches.html
+[2026-06-09T21:55:23.693Z]   Found 3 product links
+[2026-06-09T21:55:24.416Z]   3 unique stubs
+[2026-06-09T21:55:24.420Z]   Detailing: 56" Upholstered Boucle Ottoman Bench with wooden legs for Bedroom, Modern End of Bed Bench, Beige
+[2026-06-09T21:55:30.584Z]   ✓ 56" Upholstered Boucle Ottoman Bench with wooden legs for Bedroom, Modern End of Bed Bench, Beige | $599 | dims n/a | 4 imgs
+[2026-06-09T21:55:30.590Z]   Detailing: Modern White Ottoman Bench with Storage, PU Leather End of Bed Bench
+[2026-06-09T21:55:36.168Z]   ✓ Modern White Ottoman Bench with Storage, PU Leather End of Bed Bench | $799 | dims n/a | 4 imgs
+[2026-06-09T21:55:36.175Z]   Detailing: 56" Upholstered Ottoman Bench with Metal legs for Bedroom, Modern Faux Leather End of Bed Bench, White
+[2026-06-09T21:55:41.152Z]   ✓ 56" Upholstered Ottoman Bench with Metal legs for Bedroom, Modern Faux Leather End of Bed Bench, White | $639 | dims n/a | 4 imgs
+[2026-06-09T21:55:41.158Z] 
+── DINING ROOM / dining table ──────────────
+[2026-06-09T21:55:41.158Z]   Loading: /furniture/kitchen-dining/dining-tables.html
+[2026-06-09T21:55:50.498Z]   Found 36 product links
+[2026-06-09T21:55:51.107Z]   36 unique stubs
+[2026-06-09T21:55:51.113Z]   Detailing: Hobart-Round Glossy Sintered Stone Dining Table
+[2026-06-09T21:55:59.921Z]   ✓ 47" Modern White Breakfast Nook Table for 4 – Small Round Dining Table for Breakfast Nook & Compact Spaces, Easy-to-Clean Sintered Stone Top & Bronze Metal Pedestal | $1,259 | dims n/a | 4 imgs
+[2026-06-09T21:55:59.933Z]   Detailing: Hobart-Rectangular Sintered Stone Dining Table
+[2026-06-09T21:56:06.424Z]   ✓ 63"Hobart Modern Minimalist Dining Table For 4, Black Rectangular Matte Sintered Stone Tabletop, Dark Gray Metal Base | $1,099 | dims n/a | 4 imgs
+[2026-06-09T21:56:06.430Z]   Detailing: Silva-Round Extendable Dining Table
+[2026-06-09T21:56:14.630Z]   ✓ 47" to 63" Extendable Round to Oval Dining Table for 4-6, Mid-Century Modern Wood Kitchen Table for Small Spaces, Walnut Finish with Fluted Pedestal Base | $1,399 | dims n/a | 4 imgs
+[2026-06-09T21:56:14.636Z]   Detailing: Silva-Round Dining Table
+[2026-06-09T21:56:22.082Z]   ✓ 47" Mid-Century Modern Round Walnut Wood Dining Table, with Sculpted Fluted Pedestal Base | $1,199 | dims n/a | 4 imgs
+[2026-06-09T21:56:22.087Z]   Detailing: Tulora-Round Glossy Sintered Stone Dining Table
+[2026-06-09T21:56:29.435Z]   ✓ Saarinen Dining Table,Round Dining Table,59'' Dining Table, Sintered Stone Dining Table, tulip dining table, vintage round dining table | $1,489 | dims n/a | 4 imgs
+[2026-06-09T21:56:29.439Z]   Detailing: Hobart-Oval Glossy Sintered Stone Dining Table
+[2026-06-09T21:56:36.847Z]   ✓ 71"Hobart Modern Oval Dining Table for 6, White Oval Glossy Sintered Stone Kitchen Table, Bronze Carbon Steel Base | $1,659 | dims n/a | 4 imgs
+[2026-06-09T21:56:36.851Z]   Detailing: Hector-Oval Glossy Sintered Stone Extendable Dining Table
+[2026-06-09T21:56:45.925Z]   ✓ 47"-63" Round Extendable Dining Table, Modern Oval Dining Room Table for 4-6 People, Glossy White Sintered Stone & Glass Table, Bronze Carbon Steel Base | $1,599 | dims n/a | 4 imgs
+[2026-06-09T21:56:45.929Z]   Detailing: Maxwell-Round Glossy Sintered Stone Dining Table
+[2026-06-09T21:56:55.683Z]   ✓ 51"Modern Round Glossy White Dining Table for 4, Sintered Stone Tabletop with Bronze X Carbon Steel Base | $1,499 | dims n/a | 4 imgs
+[2026-06-09T21:56:55.695Z]   Detailing: Silva-Oval Glossy Sintered Stone Dining Table
+[2026-06-09T21:57:02.015Z]   ✓ 79" Mid-Century Modern Oval Dining Table for 6, Scratch-Resistant Glossy Sintered Stone Top & Walnut Fluted Pedestal Base, Easy-to-Clean Kitchen Table, Fluted Dining Table, Japandi Dining Table | $1,799 | dims n/a | 4 imgs
+[2026-06-09T21:57:02.020Z]   Detailing: Modern Bistro Table, Small Bistro Table for Breakfast Nook & Compact Spaces, Glossy Pandora Sintered Stone Top with Bronze Metal Base
+[2026-06-09T21:57:07.347Z]   ✓ Modern Bistro Table, Small Bistro Table for Breakfast Nook & Compact Spaces, Glossy Pandora Sintered Stone Top with Bronze Metal Base | $599 | dims n/a | 4 imgs
+[2026-06-09T21:57:07.352Z]   Detailing: Dura-Round Marble Dining Table
+[2026-06-09T21:57:14.965Z]   ✓ Round Marble Dining Table, Cross Pedestal Luxury and Durable Dining Table | $2,299 | dims n/a | 4 imgs
+[2026-06-09T21:57:14.970Z]   Detailing: Silva-Round Glossy Sintered Stone Dining Table
+[2026-06-09T21:57:21.252Z]   ✓ Mid-Century Modern 47" Round Dining Table for 4 - Easy to Clean Pandora Sintered Stone Dining Table, Walnut Finish Fluted Pedestal Base for Small Spaces, Breakfast Nooks & Apartments | $1,499 | dims n/a | 4 imgs
+[2026-06-09T21:57:21.256Z]   Detailing: Hobart-Rectangular Tempered Glass Dining Table
+[2026-06-09T21:57:25.480Z]   ✓ 71" Modern Glass Dining Table for 6, Transparent Glass Long Dining Table for Kitchen, Bronze Stainless Steel Pedestal Kitchen Table | $1,499 | dims n/a | 4 imgs
+[2026-06-09T21:57:25.492Z]   Detailing: Silva-Round Glossy Sintered Stone Dining Table
+[2026-06-09T21:57:30.128Z]   ✓ 47" Mid-Century Vintage Round Dining Table with Glossy Sintered Stone Top and Walnut Fluted Pedestal Base, Classic Retro Design | $1,499 | dims n/a | 4 imgs
+[2026-06-09T21:57:30.135Z]   Detailing: Maxwell-Round Tempered Glass Dining Table
+[2026-06-09T21:57:36.865Z]   ✓ 51"Modern Round Glass Dining Table for 4, Clear Glass Table with Bronze X Carbon Steel Base | $1,499 | dims n/a | 4 imgs
+[2026-06-09T21:57:36.871Z]   Detailing: Hector-Round Glossy Sintered Stone Dining Table
+[2026-06-09T21:57:42.169Z]   ✓ 47" Modern Round Dining Table for 4 with Wood Base, Pandora Sintered Stone Kitchen Table,Contemporary Dining Room Furniture | $1,299 | dims n/a | 4 imgs
+[2026-06-09T21:57:42.175Z]   Detailing: 71" Mid-Century Trestle Wooden Dining Table, Bold Curved X-Base, Warm Walnut Ash Finish, Solid Dining Centerpiece
+[2026-06-09T21:57:48.185Z]   ✓ 71" Mid-Century Trestle Wooden Dining Table, Bold Curved X-Base, Warm Walnut Ash Finish, Solid Dining Centerpiece | $1,459 | dims n/a | 4 imgs
+[2026-06-09T21:57:48.189Z]   Detailing: Hobart-Rectangular Glossy Sintered Stone Extendable Dining Table
+[2026-06-09T21:57:56.094Z]   ✓ 55"-71" Modern Extendable Dining Table for 4-6, Glossy Pandora Sintered Stone Table, Bronze Metal Base | $1,899 | dims n/a | 4 imgs
+[2026-06-09T21:57:56.103Z]   Detailing: 47''Glossy White Sintered Stone table with a brushed bronze conical base
+[2026-06-09T21:58:02.750Z]   ✓ 47''Glossy White Sintered Stone table with a brushed bronze conical base | $1,139 | dims n/a | 4 imgs
+[2026-06-09T21:58:02.760Z]   Detailing: Tulora-Glossy Sintered Stone Dining Table
+[2026-06-09T21:58:10.357Z]   ✓ Luxury Tulip Round Dining Table | $1,149 | dims n/a | 4 imgs
+[2026-06-09T21:58:10.363Z] 
+── DINING ROOM / dining chair ──────────────
+[2026-06-09T21:58:10.364Z]   Loading: /furniture/kitchen-dining/dining-chairs.html
+[2026-06-09T21:58:19.488Z]   Found 36 product links
+[2026-06-09T21:58:20.205Z]   36 unique stubs
+[2026-06-09T21:58:20.209Z]   Detailing: Lawson-Mid-Century Modern Wood Dining Chairs Set of 2, Round Back Dining Chairs, Breakfast Table Chairs, Chairs for Wooden Table, Beige & Walnut
+[2026-06-09T21:58:28.475Z]   ✓ Mid-Century Modern Wood Dining Chairs Set of 2, Round Back Dining Chairs, Breakfast Table Chairs, Chairs for Wooden Table, Beige & Walnut | $589 | dims n/a | 4 imgs
+[2026-06-09T21:58:28.482Z]   Detailing: Modern Upholstered Dining Chairs Set of 2, Leather Dinning Chairs, Dining Chairs with Arms, Breakfast Table Chairs, Brown & Beige
+[2026-06-09T21:58:36.920Z]   ✓ Modern Upholstered Dining Chairs Set of 2, Leather Dinning Chairs, Dining Chairs with Arms, Breakfast Table Chairs, Brown & Beige | $399 | dims n/a | 4 imgs
+[2026-06-09T21:58:36.925Z]   Detailing: Alar-Mid-Century Modern Upholstered Dining Chairs Set of 2, Cotton Linen Chairs with Arms, Small Accent Chairs for Living Room, Fully Assembled
+[2026-06-09T21:58:43.619Z]   ✓ Mid-Century Modern Upholstered Dining Chairs Set of 2, Cotton Linen Chairs with Arms, Small Accent Chairs for Living Room, Fully Assembled | $659 | dims n/a | 4 imgs
+[2026-06-09T21:58:43.623Z]   Detailing: Aurelia-Modern Upholstered Dining Chairs Set of 2, Faux Leather Accent Chairs, Side Chairs with Curved Back, Fully Assembled
+[2026-06-09T21:58:52.948Z]   ✓ Modern Upholstered Dining Chairs Set of 2, Faux Leather Accent Chairs, Side Chairs with Curved Back, Fully Assembled | $629 | dims n/a | 4 imgs
+[2026-06-09T21:58:52.953Z]   Detailing: Modern Upholstered Dining Chairs Set of 2, Wingback Leather Side Chairs, Brown & Beige
+[2026-06-09T21:58:58.756Z]   ✓ Modern Upholstered Dining Chairs Set of 2, Wingback Leather Side Chairs, Brown & Beige | $699 | dims n/a | 4 imgs
+[2026-06-09T21:58:58.761Z]   Detailing: Modern Upholstered Dining Chairs Set of 2, Barrel Chairs with Open Back, Faux Leather Dining Chairs, Beige & Light Walnut
+[2026-06-09T21:59:05.358Z]   ✓ Modern Upholstered Dining Chairs Set of 2, Barrel Chairs with Open Back, Faux Leather Dining Chairs, Beige & Light Walnut | $499 | dims n/a | 4 imgs
+[2026-06-09T21:59:05.366Z]   Detailing: Mid-Century Modern Cotton Linen Wood Dining Chairs Set of 2, Beige & Light Walnut Side Chairs, Fully Assembled
+[2026-06-09T21:59:12.446Z]   ✓ Mid-Century Modern Cotton Linen Wood Dining Chairs Set of 2, Beige & Light Walnut Side Chairs, Fully Assembled | $559 | dims n/a | 4 imgs
+[2026-06-09T21:59:12.451Z]   Detailing: Modern Upholstered Dining Chairs Set of 2, Dining Chairs with Arms, Gray Leather Dining Chairs, Curved Back Dining Room Chairs, Gray
+[2026-06-09T21:59:18.743Z]   ✓ Modern Upholstered Dining Chairs Set of 2, Dining Chairs with Arms, Gray Leather Dining Chairs, Curved Back Dining Room Chairs, Gray | $469 | dims n/a | 4 imgs
+[2026-06-09T21:59:18.760Z]   Detailing: Modern Luxury Upholstered Dining Chairs Set of 2, Leather Dinning Chairs, Beige Dining Chairs, Dining Chairs with Gold Legs
+[2026-06-09T21:59:25.693Z]   ✓ Modern Luxury Upholstered Dining Chairs Set of 2, Leather Dinning Chairs, Beige Dining Chairs, Dining Chairs with Gold Legs | $319 | dims n/a | 4 imgs
+[2026-06-09T21:59:25.703Z]   Detailing: Modern Velvet Upholstered Dining Chairs Set of 2, Dining Chairs with Arms, Small Accent Chairs, Brown & Black
+[2026-06-09T21:59:31.666Z]   ✓ Modern Velvet Upholstered Dining Chairs Set of 2, Dining Chairs with Arms, Small Accent Chairs, Brown & Black | $799 | dims n/a | 4 imgs
+[2026-06-09T21:59:31.670Z]   Detailing: Mid-Century Modern Barrel Upholstered Dining Chair, Chenille Dining Chair with Arms, Small Accent Chair, Khaki
+[2026-06-09T21:59:37.468Z]   ✓ Mid-Century Modern Barrel Upholstered Dining Chair, Chenille Dining Chair with Arms, Small Accent Chair, Khaki | $559 | dims n/a | 4 imgs
+[2026-06-09T21:59:37.477Z]   Detailing: Modern Upholstered Dining Chairs Set of 2, Cotton Linen Dining Chairs with Arms, Metal Frame Dining Chairs, Beige
+[2026-06-09T21:59:42.540Z]   ✓ Modern Upholstered Dining Chairs Set of 2, Cotton Linen Dining Chairs with Arms, Metal Frame Dining Chairs, Beige | $999 | dims n/a | 4 imgs
+[2026-06-09T21:59:42.544Z]   Detailing: Mid-Century Modern Linen Upholstered Dining Chairs Set of 2, Metal Side Chairs, Beige & Bronze
+[2026-06-09T21:59:49.282Z]   ✓ Mid-Century Modern Linen Upholstered Dining Chairs Set of 2, Metal Side Chairs, Beige & Bronze | $639 | dims n/a | 4 imgs
+[2026-06-09T21:59:49.287Z]   Detailing: Modern Leather Dining Chairs with Arms Set of 2, Curved Back Upholstered Dining Chairs, Accent Chairs for Living Room, Beige
+[2026-06-09T21:59:55.209Z]   ✓ Modern Leather Dining Chairs with Arms Set of 2, Curved Back Upholstered Dining Chairs, Accent Chairs for Living Room, Beige | $999 | dims n/a | 4 imgs
+[2026-06-09T21:59:55.214Z]   Detailing: Modern Swivel Home Office Chairs Set of 2, Faux Leather Upholstered Dining Chairs, Green Luxury Office Chairs, Home Office Task Desk Chairs
+[2026-06-09T22:00:01.437Z]   ✓ Modern Swivel Home Office Chairs Set of 2, Faux Leather Upholstered Dining Chairs, Green Luxury Office Chairs, Home Office Task Desk Chairs | $699 | dims n/a | 4 imgs
+[2026-06-09T22:00:01.442Z]   Detailing: Modern Leather Dining Chairs with Arms Set of 2, Upholstered Dining Chairs, Accent Chairs for Living Room, Beige
+[2026-06-09T22:00:07.359Z]   ✓ Modern Leather Dining Chairs with Arms Set of 2, Upholstered Dining Chairs, Accent Chairs for Living Room, Beige | $999 | dims n/a | 4 imgs
+[2026-06-09T22:00:07.363Z]   Detailing: Modern Velvet Upholstered Dining Chairs Set of 2, Gray Side Chairs, Fully Assembled
+[2026-06-09T22:00:13.826Z]   ✓ Modern Velvet Upholstered Dining Chairs Set of 2, Gray Side Chairs, Fully Assembled | $589 | dims n/a | 4 imgs
+[2026-06-09T22:00:13.830Z]   Detailing: Modern Luxury Upholstered Dining Chairs Set of 2, Faux Leather Side Chairs, Beige & Light Walnut
+[2026-06-09T22:00:18.912Z]   ✓ Modern Luxury Upholstered Dining Chairs Set of 2, Faux Leather Side Chairs, Beige & Light Walnut | $699 | dims n/a | 4 imgs
+[2026-06-09T22:00:18.916Z]   Detailing: Mid-Century Modern Wooden Dining Chairs Set of 2, Cotton Linen Side Chairs, Accent Chairs with Open Back, Beige & Light Walnut
+[2026-06-09T22:00:25.185Z]   ✓ Mid-Century Modern Wooden Dining Chairs Set of 2, Cotton Linen Side Chairs, Accent Chairs with Open Back, Beige & Light Walnut | $659 | dims n/a | 4 imgs
+[2026-06-09T22:00:25.192Z]   Detailing: Modern Upholstered Dining Chairs Set of 2, Faux Leather Barrel Chairs, Gray & Light Gray
+[2026-06-09T22:00:29.433Z]   ✓ Modern Upholstered Dining Chairs Set of 2, Faux Leather Barrel Chairs, Gray & Light Gray | $593 | dims n/a | 4 imgs
+[2026-06-09T22:00:29.438Z] 
+── DINING ROOM / sideboard ──────────────
+[2026-06-09T22:00:29.438Z]   Loading: /furniture/living-room-furniture/storage-cabinets.html
+[2026-06-09T22:00:39.340Z]   Found 34 product links
+[2026-06-09T22:00:39.969Z]   34 unique stubs
+[2026-06-09T22:00:39.971Z]   → skip: led-horizontal-slatted-storage-cabinet-walnut-display-sideboard-with-adjustable-led-lights-modern-buffet-with-acrylic-front
+[2026-06-09T22:00:39.972Z]   Detailing: 55" LED Storage Credenza with Display Area, Mid Century Storage Cabinets, Walnut Sideboard with Storage, Modern Buffet with Acrylic Doors
+[2026-06-09T22:00:46.006Z]   ✓ 55" LED Storage Credenza with Display Area, Mid Century Storage Cabinets, Walnut Sideboard with Storage, Modern Buffet with Acrylic Doors | $1,499 | dims n/a | 4 imgs
+[2026-06-09T22:00:46.011Z]   → skip: 73-modern-luxe-blue-sideboard-buffet-with-4-doors-eucalyptus-veneer-stainless-steel-legs-cabinet-fully-assembled
+[2026-06-09T22:00:46.011Z]   Detailing: 63'' Modern Storage Cabinet with Sintered Stone Top, Sideboard Buffet Cabinet with Drawers, Credenza for Dining Room & Living Room, White & Gray
+[2026-06-09T22:00:52.459Z]   ✓ 63'' Modern Storage Cabinet with Sintered Stone Top, Sideboard Buffet Cabinet with Drawers, Credenza for Dining Room & Living Room, White & Gray | $1,499 | dims n/a | 4 imgs
+[2026-06-09T22:00:52.464Z]   Detailing: Dining Tall Sideboard with LED Lighting, Accent Cabinet with Display Area, Mid-Century Modern Tall Buffet Storage Cabinet for Dining Room
+[2026-06-09T22:00:58.760Z]   ✓ Dining Tall Sideboard with LED Lighting, Accent Cabinet with Display Area, Mid-Century Modern Tall Buffet Storage Cabinet for Dining Room | $1,499 | dims n/a | 4 imgs
+[2026-06-09T22:00:58.764Z]   → skip: mid-century-modern-fluted-sideboard-cabinet-curved-storage-tv-stand-with-gold-metal-handles-for-entryway-living-room-bedroom-easy-assembly
+[2026-06-09T22:00:58.764Z]   Detailing: 63'' Modern White Storage Cabinet with Sintered Stone Top, Sideboard Buffet with Cabinets, Credenza for Dining Room
+[2026-06-09T22:01:05.049Z]   ✓ 63'' Modern White Storage Cabinet with Sintered Stone Top, Sideboard Buffet with Cabinets, Credenza for Dining Room | $1,499 | dims n/a | 4 imgs
+[2026-06-09T22:01:05.054Z]   Detailing: 63'' Modern White Storage Cabinet with Sintered Stone Top, Sideboard Buffet with Cabinets, Credenza for Dining Room
+[2026-06-09T22:01:10.269Z]   ✓ 63'' Modern White Storage Cabinet with Sintered Stone Top, Sideboard Buffet with Cabinets, Credenza for Dining Room | $1,399 | dims n/a | 4 imgs
+[2026-06-09T22:01:10.273Z]   → skip: 55-12-mid-century-modern-side-cabinet-tawny-glass-door-design-tall-cast-metal-legs-walnut-color
+[2026-06-09T22:01:10.273Z]   Detailing: 59" Mid-Century Modern Buffet Cabient with Drawers, Solid Wood Sideboard Cabinet Buffet for Kitchen, Fully Assembled
+[2026-06-09T22:01:16.773Z]   ✓ 59" Mid-Century Modern Buffet Cabient with Drawers, Solid Wood Sideboard Cabinet Buffet for Kitchen, Fully Assembled | $1,499 | dims n/a | 4 imgs
+[2026-06-09T22:01:16.777Z]   → skip: 59-06-modern-mid-century-walnut-sideboard-buffet-3-drawers-2-door-cabinet-herringbone-pattern-design-brass-metal-grid-multi-layer-solid-wood-frame-ful
+[2026-06-09T22:01:16.777Z]   → skip: 55-12-modern-mid-century-sideboard-buffet-3-door-cabinet-multi-layer-solid-wood-frame-walnut-veneer-fully-assemble
+[2026-06-09T22:01:16.777Z]   Detailing: 47'' Modern Storage Cabinet with Sintered Stone Top, Sideboard Buffet with Drawers, Credenza for Dining Room
+[2026-06-09T22:01:24.636Z]   ✓ 47'' Modern Storage Cabinet with Sintered Stone Top, Sideboard Buffet with Drawers, Credenza for Dining Room | $999 | dims n/a | 4 imgs
+[2026-06-09T22:01:24.643Z]   Detailing: Silva-63" Fluted Storage Cabinet, Mid-Century Modern Curved Credenza, with Adjustable Shelves, for Living Room or Dining Room, FSC Wood, Fully Assembled
+[2026-06-09T22:01:31.526Z]   ✓ 63" Fluted Storage Cabinet, Mid-Century Modern Curved Credenza, with Adjustable Shelves, for Living Room or Dining Room, FSC Wood, Fully Assembled | $1,499 | dims n/a | 4 imgs
+[2026-06-09T22:01:31.532Z]   → skip: mid-century-modern-side-cabinet-minimalist-walnut-color-tambour-door
+[2026-06-09T22:01:31.534Z]   Detailing: 19.69" Mid-Century Modern Credenza Sideboard Cabinet, Minimalist Walnut Color Slatted Side Cabinet,Metal Legs Cabinet，2 PCS Side Cabinet
+[2026-06-09T22:01:37.694Z]   ✓ 19.69" Mid-Century Modern Credenza Sideboard Cabinet, Minimalist Walnut Color Slatted Side Cabinet,Metal Legs Cabinet | $1,478 | dims n/a | 4 imgs
+[2026-06-09T22:01:37.698Z]   Detailing: 35'' Mid-Century Modern Storage Cabinet, Tall Storage Cabinet, Accent Cabinet with Doors, Wood Carved Cabinet, 6 Compartments, Hollow-out Design, Solid Wood Veneer, Metal Legs, Walnut Color Chest
+[2026-06-09T22:01:43.850Z]   ✓ 35'' Mid-Century Modern Storage Cabinet, Tall Storage Cabinet, Accent Cabinet with Doors, Wood Carved Cabinet, 6 Compartments, Hollow-out Design, Solid Wood Veneer, Metal Legs, Walnut Color Chest | $1,199 | dims n/a | 4 imgs
+[2026-06-09T22:01:43.854Z]   Detailing: 59'' Mid-Century Modern Walnut Wood Storage Cabinet, Sideboard Buffet with Drawers, Credenza for Dining Room
+[2026-06-09T22:01:50.638Z]   ✓ 59'' Mid-Century Modern Walnut Wood Storage Cabinet, Sideboard Buffet with Drawers, Credenza for Dining Room | $1,349 | dims n/a | 4 imgs
+[2026-06-09T22:01:50.646Z]   Detailing: 35" Fluted Curved Accent Cabinet with Storage, Mid-Century Modern Small Sideboard, with Adjustable Shelves, for Living Room or Dining Room, FSC Wood, Fully Assembled,Walnut
+[2026-06-09T22:01:55.904Z]   ✓ 35" Fluted Curved Accent Cabinet with Storage, Mid-Century Modern Small Sideboard, with Adjustable Shelves, for Living Room or Dining Room, FSC Wood, Fully Assembled,Walnut | $899 | dims n/a | 4 imgs
+[2026-06-09T22:01:55.914Z]   Detailing: 70.87" Mid-Century Cabinet Credenza, Large Capacity Storage Cabinet with Wave Carved Doors, with Adjustable Shelves, and Carbon Steel Legs – Elegant and Functional Storage for Living Room or TV Concle Use, Walnut Color, Easy Assembly
+[2026-06-09T22:02:02.114Z]   ✓ 70.87" Mid-Century Cabinet Credenza, Large Capacity Storage Cabinet with Wave Carved Doors, with Adjustable Shelves, and Carbon Steel Legs – Elegant and Functional Storage for Living Room or TV Concle Use, Walnut Color, Easy Assembly | $1,599 | dims n/a | 4 imgs
+[2026-06-09T22:02:02.120Z]   Detailing: 54'' Mid-Century Modern Walnut Storage Cabinet, Sideboard Buffet with Drawers, Entryway Credenza
+[2026-06-09T22:02:08.690Z]   ✓ 54'' Mid-Century Modern Walnut Storage Cabinet, Sideboard Buffet with Drawers, Entryway Credenza | $1,471 | dims n/a | 4 imgs
+[2026-06-09T22:02:08.694Z]   Detailing: 47'' Mid-Century Modern White & Walnut Storage Cabinet, Sideboard Buffet with Drawers, Entryway Credenza
+[2026-06-09T22:02:16.855Z]   ✓ 47'' Mid-Century Modern White & Walnut Storage Cabinet, Sideboard Buffet with Drawers, Entryway Credenza | $1,195 | dims n/a | 4 imgs
+[2026-06-09T22:02:16.863Z]   Detailing: 39" Mid-Century Modern Accent Cabinet with Storage, Small Side Sideboard with Artistic Relief Doors, Vintage Black Trim, 3-Doors Closed Storage,Easy Assembly
+[2026-06-09T22:02:22.634Z]   ✓ 39" Mid-Century Modern Accent Cabinet with Storage,  Small Side Sideboard with Artistic Relief Doors, Vintage Black Trim, 3-Doors Closed Storage,Easy Assembly | $1,195 | dims n/a | 4 imgs
+[2026-06-09T22:02:22.640Z]   Detailing: 47.24"Mid-Century Modern Fluted Storage Cabinet, Curved Media Console, Smoky Color Slatted Cabinet, Living Room Cabinet
+[2026-06-09T22:02:27.551Z]   ✓ 47.24"Mid-Century Modern Fluted Storage Cabinet, Curved Media Console, Smoky Color Slatted Cabinet, Living Room Cabinet | $1,199 | dims n/a | 4 imgs
+[2026-06-09T22:02:27.556Z]   → skip: modern-white-sideboard-3-door-cabinet-walnut-veneer-tabletop-mdf-metal-legs
+[2026-06-09T22:02:27.556Z]   → skip: modern-minimalist-white-sideboard-4-door-cabinet-mdf-metal-legs-fully-assemble
+[2026-06-09T22:02:27.556Z]   Detailing: 63" Mid-Century Walnut Storage Credenza with Glass Doors, Modern Cabinet Credenza, with 3 Drawers and Storage, Floor-Standing Storage Cabinet, Fully Assembled
+[2026-06-09T22:02:33.100Z]   ✓ 63" Mid-Century Walnut Storage Credenza with Glass Doors, Modern Cabinet Credenza, with 3 Drawers and Storage, Floor-Standing Storage Cabinet, Fully Assembled | $1,599 | dims n/a | 4 imgs
+[2026-06-09T22:02:33.104Z]   Detailing: 63" Mid-Century Modern Walnut Sideboard Cabinet, Sideboard Buffet Cabinets for Dining Room, Solid Wood Storage Credenza
+[2026-06-09T22:02:39.077Z]   ✓ 63" Mid-Century Modern Walnut Sideboard Cabinet, Sideboard Buffet Cabinets for Dining Room, Solid Wood Storage Credenza | $1,499 | dims n/a | 4 imgs
+[2026-06-09T22:02:39.082Z]   Detailing: 59"Mid-Century Modern Sideboard Buffet Cabinet with Woven Texture, Credenza with 3 Woven Doors and Gold Legs, Stylish Storage TV Stand for Living Room, Dining Room & Bedroom, Easy Assembly
+[2026-06-09T22:02:43.745Z]   ✓ 59"Mid-Century Modern Sideboard Buffet Cabinet with Woven Texture, Credenza with 3 Woven Doors and Gold Legs, Stylish Storage TV Stand for Living Room, Dining Room & Bedroom, Easy Assembly | $1,499 | dims n/a | 4 imgs
+[2026-06-09T22:02:43.749Z] 
+── DINING ROOM / barstool ──────────────
+[2026-06-09T22:02:43.750Z]   Loading: /furniture/kitchen-dining/bar-stools.html
+[2026-06-09T22:02:53.885Z]   Found 36 product links
+[2026-06-09T22:02:54.654Z]   36 unique stubs
+[2026-06-09T22:02:54.655Z]   Detailing: Lawson-24'' Mid-Century Modern Wood Counter Height Bar Stools Set of 2, Counter Stools with Backs, Beige Bar Stools, Assembled Bar Stools, Faux Leather
+[2026-06-09T22:03:02.811Z]   ✓ 24'' Mid-Century Modern Wood Counter Height Bar Stools Set of 2, Counter Stools with Backs, Beige Bar Stools, Assembled Bar Stools, Faux Leather | $899 | dims n/a | 4 imgs
+[2026-06-09T22:03:02.816Z]   Detailing: 24'' Modern Counter Stools Set of 2, Leather Bar Stools with Backs, Upholstered Bar Stools, Beige Bar Stools, Brown
+[2026-06-09T22:03:10.702Z]   ✓ 24'' Modern Counter Stools Set of 2, Leather Bar Stools with Backs, Upholstered Bar Stools, Beige Bar Stools, Brown | $369 | dims n/a | 4 imgs
+[2026-06-09T22:03:10.710Z]   Detailing: Modern Luxury Adjustable Height Bar Stools Set of 2, Velvet Bar Stools, Gold Metal Bar Stools, Round Bar Stools, Black
+[2026-06-09T22:03:18.800Z]   ✓ Modern Luxury Adjustable Height Bar Stools Set of 2, Velvet Bar Stools, Gold Metal Bar Stools, Round Bar Stools, Black | $549 | dims n/a | 4 imgs
+[2026-06-09T22:03:18.969Z]   Detailing: 24'' Modern Counter Height Bar Stools Set of 2, Faux Leather Bar Stools for Kitchen Island & Bar Table, Gray & Light Gray
+[2026-06-09T22:03:25.756Z]   ✓ 24'' Modern Counter Height Bar Stools Set of 2, Faux Leather Bar Stools for Kitchen Island & Bar Table, Gray & Light Gray | $439 | dims n/a | 4 imgs
+[2026-06-09T22:03:25.772Z]   Detailing: 26'' Mid-Century Modern Counter Height Bar Stools Set of 2, Upholstered Bar Stools with Backs, Beige & Light Walnut Faux Leather Counter Stools, Fully Assembled
+[2026-06-09T22:03:32.660Z]   ✓ 26'' Mid-Century Modern Counter Height Bar Stools Set of 2, Upholstered Bar Stools with Backs, Beige & Light Walnut Faux Leather Counter Stools, Fully Assembled | $799 | dims n/a | 4 imgs
+[2026-06-09T22:03:32.668Z]   Detailing: 24'' Modern Upholstered Counter Height Bar Stools Set of 2, Faux Leather Barrel Bar Chairs for Kitchen Island & Counter Table, Brown & Beige
+[2026-06-09T22:03:38.579Z]   ✓ 24'' Modern Upholstered Counter Height Bar Stools Set of 2, Faux Leather Barrel Bar Chairs for Kitchen Island & Counter Table, Brown & Beige | $521 | dims n/a | 4 imgs
+[2026-06-09T22:03:38.585Z]   Detailing: 26'' Modern Cutout Back Counter Height Bar Stools Set of 2, Faux Leather Bar Chairs with Arms, Beige & Bronze
+[2026-06-09T22:03:45.167Z]   ✓ 26'' Modern Cutout Back Counter Height Bar Stools Set of 2, Faux Leather Bar Chairs with Arms, Beige & Bronze | $459 | dims n/a | 4 imgs
+[2026-06-09T22:03:45.172Z]   Detailing: 26'' Modern Low Back Counter Height Bar Stools Set of 2, Leather Upholstered Counter Stools, Beige & Black
+[2026-06-09T22:03:50.388Z]   ✓ 26'' Modern Low Back Counter Height Bar Stools Set of 2, Leather Upholstered Counter Stools, Beige & Black | $429 | dims n/a | 4 imgs
+[2026-06-09T22:03:50.410Z]   Detailing: 26'' Modern Counter Height Bar Stools Set of 2, Counter Stools for Kitchen Island, Beige & Brown
+[2026-06-09T22:03:54.867Z]   ✓ 26'' Modern Counter Height Bar Stools Set of 2, Counter Stools for Kitchen Island, Beige & Brown | $579 | dims n/a | 4 imgs
+[2026-06-09T22:03:54.873Z]   Detailing: 26'' Modern Faux Leather Counter Height Bar Stool - Scratch-Resistant & Easy Clean, Mid-Century Modern Counter Stool, Beige
+[2026-06-09T22:04:01.116Z]   ✓ 26'' Modern Faux Leather Counter Height Bar Stool - Scratch-Resistant & Easy Clean, Mid-Century Modern Counter Stool, Beige | $499 | dims n/a | 4 imgs
+[2026-06-09T22:04:01.125Z]   Detailing: Modern Leather Height Adjustable Swivel Bar Stools Set of 2, Upholstered Wingback Bar Height Stools, Beige & Brown Counter Height Bar Stools
+[2026-06-09T22:04:06.949Z]   ✓ Modern Leather Height Adjustable Swivel Bar Stools Set of 2, Upholstered Wingback Bar Height Stools, Beige & Brown Counter Height Bar Stools | $399 | dims n/a | 4 imgs
+[2026-06-09T22:04:06.961Z]   Detailing: Modern Upholstered Height Adjustable Swivel Bar Stool, Brown Leather Counter Height Bar Stool, Kitchen Bar Stool with Back
+[2026-06-09T22:04:12.800Z]   ✓ Modern Upholstered Height Adjustable Swivel Bar Stool, Brown Leather Counter Height Bar Stool, Kitchen Bar Stool with Back | $399 | dims n/a | 4 imgs
+[2026-06-09T22:04:12.805Z]   Detailing: 30'' Modern Minimalist Bar Height Faux Leather Bar Stools Set of 2, Bar Chairs with Curved Back & Footrest for Kitchen Island & Dinning Room, Brown
+[2026-06-09T22:04:18.404Z]   ✓ 30'' Modern Minimalist Bar Height Faux Leather Bar Stools Set of 2, Bar Chairs with Curved Back & Footrest for Kitchen Island & Dinning Room, Brown | $479 | dims n/a | 4 imgs
+[2026-06-09T22:04:18.408Z]   Detailing: 24'' Modern Upholstered Counter Height Bar Stools Set of 2, Counter Stools for Breakfast Nook, Beige & Golden
+[2026-06-09T22:04:24.933Z]   ✓ 24'' Modern Upholstered Counter Height Bar Stools Set of 2, Counter Stools for Breakfast Nook, Beige & Golden | $459 | dims n/a | 4 imgs
+[2026-06-09T22:04:24.941Z]   Detailing: PU Leather Adjustable Swivel Bar Stools Set of 2, Upholstered Modern Bar Stool with Back and Metal Legs for Kitchen, Brown
+[2026-06-09T22:04:31.184Z]   ✓ PU Leather Adjustable Swivel Bar Stools Set of 2, Upholstered Modern Bar Stool with Back and Metal Legs for Kitchen, Brown | $459 | dims n/a | 4 imgs
+[2026-06-09T22:04:31.189Z]   Detailing: Contemporary Wooden Adjustable Leather Swivel Bar Stools Set of 2, Counter Chairs with Backs for Kitchen Island, Black
+[2026-06-09T22:04:38.026Z]   ✓ Contemporary Wooden Adjustable Leather Swivel  Bar Stools Set of 2, Counter Chairs with Backs for Kitchen Island, Black | $449 | dims n/a | 4 imgs
+[2026-06-09T22:04:38.032Z]   Detailing: Modern Adjustable Swivel Barstools Set of 2, PU Leather Bar Stools with Back and Metal Legs, Armless Counter Chairs for Kitchen Island, Gray Color
+[2026-06-09T22:04:45.601Z]   ✓ Modern Adjustable Swivel Barstools Set of 2, PU Leather Bar Stools with Back and Metal Legs, Armless Counter Chairs for Kitchen Island, Gray Color | $499 | dims n/a | 4 imgs
+[2026-06-09T22:04:45.607Z]   Detailing: Modern Minimalist Adjustable Height Swivel Faux Leather Bar Stools Set of 2, Bar Chairs with Curved Back & Footrest for Kitchen Island & Counter Height Table, Black Color
+[2026-06-09T22:04:52.538Z]   ✓ Modern Minimalist Adjustable Height Swivel Faux Leather Bar Stools Set of 2, Bar Chairs with Curved Back & Footrest for Kitchen Island & Counter Height Table, Black Color | $529 | dims n/a | 4 imgs
+[2026-06-09T22:04:52.543Z]   Detailing: 30'' Modern Bar Height Faux Leather Bar Stools Set of 2, Arm Chairs with Hollow Backrest for Kitchen Island & Dining Room, Brown & Beige
+[2026-06-09T22:05:00.572Z]   ✓ 30'' Modern Bar Height Faux Leather Bar Stools Set of 2, Arm Chairs with Hollow Backrest for Kitchen Island & Dining Room, Brown & Beige | $503 | dims n/a | 4 imgs
+[2026-06-09T22:05:00.578Z]   Detailing: 26'' Mid-Century Modern Wood Counter Height Bar Stool, Beige & Walnut Faux Leather Bar Stool, Fully Assembled
+[2026-06-09T22:05:07.325Z]   ✓ 26'' Mid-Century Modern Wood Counter Height Bar Stool, Beige & Walnut Faux Leather Bar Stool, Fully Assembled | $287 | dims n/a | 4 imgs
+[2026-06-09T22:05:07.333Z] 
+── OTHER / desk ──────────────
+[2026-06-09T22:05:07.333Z]   Loading: /furniture/home-office/desks.html
+[2026-06-09T22:05:14.941Z]   Found 18 product links
+[2026-06-09T22:05:15.578Z]   Loading: /furniture/home-office.html
+[2026-06-09T22:05:23.575Z]   Found 18 product links
+[2026-06-09T22:05:24.289Z]   18 unique stubs
+[2026-06-09T22:05:24.291Z]   → skip: 78-74-modern-minimalist-rolling-door-tv-stand-multi-layer-solid-wood-walnut
+[2026-06-09T22:05:24.291Z]   → skip: oliver-power-reclining-sofa-44007
+[2026-06-09T22:05:24.292Z]   → skip: modern-minimalist-cherry-wood-veneer-side-table
+[2026-06-09T22:05:24.292Z]   → skip: mid-century-ash-dining-chair-set-of-2-breathable-burlap-seat-full-assembly
+[2026-06-09T22:05:24.292Z]   → skip: hobart-minimalist-dining-table
+[2026-06-09T22:05:24.293Z]   → skip: modern-pet-friendly-fabric-sofa-with-adjustable-cushions-deep-seat-deep-sleeper-design-cloud-sectional-sofa-and-solid-wood-legs
+[2026-06-09T22:05:24.293Z]   → skip: mid-century-modern-upholstered-dining-chairs-set-of-2-armchairs-with-curved-backrest-small-accent-chairs-for-living-room-fully-assembled
+[2026-06-09T22:05:24.293Z]   → skip: modern-minimalist-dining-table-for-4-black-round-matte-sintered-stone-tabletop-bronze-carbon-steel-leg
+[2026-06-09T22:05:24.294Z]   → skip: mid-century-matte-sintered-stone-tabletop-tv-stand-with-led-lights-walnut-color-black-floating-design-tv-console-with-storage-fully-assembled
+[2026-06-09T22:05:24.294Z]   → skip: tv-stand-43956
+[2026-06-09T22:05:24.294Z]   → skip: sailboat-sofa-with-adjustable-backrest-dog-proof-couch-anti-scratch-and-water-proof-fabric
+[2026-06-09T22:05:24.295Z]   → skip: power-reclining-sofa-modular-couch-recliner-sofa-leather-couch-sectional-recliner-with-oversized-deep-seat-usb-type-c-charge-adjustable-headrest-khaki
+[2026-06-09T22:05:24.295Z]   → skip: minimalist-wall-mounted-rubber-wood-floating-tv-stand-3-pinewood-doors-walnut-veneer
+[2026-06-09T22:05:24.295Z]   → skip: horizontal-slatted-tv-stand-with-adjustable-led-lights-mid-century-modern-media-console-ventilated-storage-walnut-fits-85-inch-tvs-fully-assembled
+[2026-06-09T22:05:24.296Z]   → skip: mid-century-tv-stand-modern-center-cabinet-with-adjustable-light-walnut
+[2026-06-09T22:05:24.296Z]   → skip: modern-power-oversized-pillow-back-reclining-loveseat-sofa-oversized-electric-recliner
+[2026-06-09T22:05:24.296Z]   → skip: 89-mid-century-sofa-2-3-seater-with-pet-friendly-fabric
+[2026-06-09T22:05:24.296Z]   → skip: 116-1-electric-sofa-with-a-retractable-feature-in-french-retro-cream-style
+[2026-06-09T22:05:24.297Z] 
+── LIVING ROOM / rug ──────────────
+[2026-06-09T22:05:24.297Z]   Loading: /home-decor/rugs/
+[2026-06-09T22:05:33.827Z]   Found 18 product links
+[2026-06-09T22:05:34.474Z]   18 unique stubs
+[2026-06-09T22:05:34.476Z]   → skip: 78-74-modern-minimalist-rolling-door-tv-stand-multi-layer-solid-wood-walnut
+[2026-06-09T22:05:34.477Z]   → skip: oliver-power-reclining-sofa-44007
+[2026-06-09T22:05:34.477Z]   → skip: modern-minimalist-cherry-wood-veneer-side-table
+[2026-06-09T22:05:34.478Z]   → skip: mid-century-ash-dining-chair-set-of-2-breathable-burlap-seat-full-assembly
+[2026-06-09T22:05:34.478Z]   → skip: hobart-minimalist-dining-table
+[2026-06-09T22:05:34.478Z]   → skip: modern-pet-friendly-fabric-sofa-with-adjustable-cushions-deep-seat-deep-sleeper-design-cloud-sectional-sofa-and-solid-wood-legs
+[2026-06-09T22:05:34.479Z]   → skip: mid-century-modern-upholstered-dining-chairs-set-of-2-armchairs-with-curved-backrest-small-accent-chairs-for-living-room-fully-assembled
+[2026-06-09T22:05:34.479Z]   → skip: modern-minimalist-dining-table-for-4-black-round-matte-sintered-stone-tabletop-bronze-carbon-steel-leg
+[2026-06-09T22:05:34.479Z]   → skip: mid-century-matte-sintered-stone-tabletop-tv-stand-with-led-lights-walnut-color-black-floating-design-tv-console-with-storage-fully-assembled
+[2026-06-09T22:05:34.480Z]   → skip: tv-stand-43956
+[2026-06-09T22:05:34.480Z]   → skip: sailboat-sofa-with-adjustable-backrest-dog-proof-couch-anti-scratch-and-water-proof-fabric
+[2026-06-09T22:05:34.480Z]   → skip: power-reclining-sofa-modular-couch-recliner-sofa-leather-couch-sectional-recliner-with-oversized-deep-seat-usb-type-c-charge-adjustable-headrest-khaki
+[2026-06-09T22:05:34.480Z]   → skip: minimalist-wall-mounted-rubber-wood-floating-tv-stand-3-pinewood-doors-walnut-veneer
+[2026-06-09T22:05:34.481Z]   → skip: horizontal-slatted-tv-stand-with-adjustable-led-lights-mid-century-modern-media-console-ventilated-storage-walnut-fits-85-inch-tvs-fully-assembled
+[2026-06-09T22:05:34.481Z]   → skip: mid-century-tv-stand-modern-center-cabinet-with-adjustable-light-walnut
+[2026-06-09T22:05:34.481Z]   → skip: modern-power-oversized-pillow-back-reclining-loveseat-sofa-oversized-electric-recliner
+[2026-06-09T22:05:34.481Z]   → skip: 89-mid-century-sofa-2-3-seater-with-pet-friendly-fabric
+[2026-06-09T22:05:34.481Z]   → skip: 116-1-electric-sofa-with-a-retractable-feature-in-french-retro-cream-style
+[2026-06-09T22:05:34.978Z] 
+=== Done — 218 new, 0 errors, 298 total ===

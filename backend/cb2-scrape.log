@@ -1,0 +1,81 @@
+[2026-06-09T17:47:43.481Z] === CB2 catalogue builder ===
+[2026-06-09T17:47:47.468Z] 
+── LIVING ROOM / sofa ──────────────
+[2026-06-09T17:47:47.471Z]     GET https://www.cb2.com/furniture/sofas
+[2026-06-09T17:47:55.860Z]     No API hit — falling back to DOM extraction
+[2026-06-09T17:47:55.883Z]     DOM fallback: 0 products
+[2026-06-09T17:47:56.975Z]     GET https://www.cb2.com/furniture/sectionals
+[2026-06-09T17:48:06.003Z]     No API hit — falling back to DOM extraction
+[2026-06-09T17:48:06.012Z]     DOM fallback: 0 products
+[2026-06-09T17:48:07.037Z]   0 unique stubs — will detail up to 20
+[2026-06-09T17:48:07.039Z] 
+── LIVING ROOM / armchair ──────────────
+[2026-06-09T17:48:07.039Z]     GET https://www.cb2.com/furniture/accent-chairs
+[2026-06-09T17:48:15.450Z]     No API hit — falling back to DOM extraction
+[2026-06-09T17:48:15.457Z]     DOM fallback: 0 products
+[2026-06-09T17:48:16.569Z]   0 unique stubs — will detail up to 20
+[2026-06-09T17:48:16.570Z] 
+── LIVING ROOM / coffee table ──────────────
+[2026-06-09T17:48:16.570Z]     GET https://www.cb2.com/furniture/coffee-tables
+[2026-06-09T17:48:25.091Z]     No API hit — falling back to DOM extraction
+[2026-06-09T17:48:25.103Z]     DOM fallback: 0 products
+[2026-06-09T17:48:26.175Z]   0 unique stubs — will detail up to 20
+[2026-06-09T17:48:26.177Z] 
+── LIVING ROOM / side table ──────────────
+[2026-06-09T17:48:26.178Z]     GET https://www.cb2.com/furniture/side-tables
+[2026-06-09T17:48:35.114Z]     No API hit — falling back to DOM extraction
+[2026-06-09T17:48:35.130Z]     DOM fallback: 0 products
+[2026-06-09T17:48:36.290Z]     GET https://www.cb2.com/furniture/end-tables
+[2026-06-09T17:48:45.091Z]     No API hit — falling back to DOM extraction
+[2026-06-09T17:48:45.106Z]     DOM fallback: 0 products
+[2026-06-09T17:48:46.178Z]   0 unique stubs — will detail up to 20
+[2026-06-09T17:48:46.179Z] 
+── LIVING ROOM / tv unit ──────────────
+[2026-06-09T17:48:46.179Z]     GET https://www.cb2.com/furniture/media-consoles-and-tv-stands
+[2026-06-09T17:48:55.033Z]     No API hit — falling back to DOM extraction
+[2026-06-09T17:48:55.054Z]     DOM fallback: 0 products
+[2026-06-09T17:48:56.115Z]     GET https://www.cb2.com/furniture/media-storage
+[2026-06-09T17:49:04.661Z]     No API hit — falling back to DOM extraction
+[2026-06-09T17:49:04.688Z]     DOM fallback: 0 products
+[2026-06-09T17:49:05.720Z]   0 unique stubs — will detail up to 20
+[2026-06-09T17:49:05.721Z] 
+── BEDROOM / bed ──────────────
+[2026-06-09T17:49:05.721Z]     GET https://www.cb2.com/furniture/beds
+[2026-06-09T17:49:14.125Z]     No API hit — falling back to DOM extraction
+[2026-06-09T17:49:14.150Z]     DOM fallback: 0 products
+[2026-06-09T17:49:15.234Z]     GET https://www.cb2.com/furniture/bed-frames
+[2026-06-09T17:49:24.188Z]     No API hit — falling back to DOM extraction
+[2026-06-09T17:49:24.198Z]     DOM fallback: 0 products
+[2026-06-09T17:49:25.340Z]   0 unique stubs — will detail up to 20
+[2026-06-09T17:49:25.340Z] 
+── BEDROOM / nightstand ──────────────
+[2026-06-09T17:49:25.341Z]     GET https://www.cb2.com/furniture/nightstands
+[2026-06-09T17:49:33.849Z]     No API hit — falling back to DOM extraction
+[2026-06-09T17:49:33.861Z]     DOM fallback: 0 products
+[2026-06-09T17:49:34.906Z]   0 unique stubs — will detail up to 20
+[2026-06-09T17:49:34.907Z] 
+── BEDROOM / dresser ──────────────
+[2026-06-09T17:49:34.907Z]     GET https://www.cb2.com/furniture/dressers-and-chests
+[2026-06-09T17:49:42.954Z]     No API hit — falling back to DOM extraction
+[2026-06-09T17:49:42.973Z]     DOM fallback: 0 products
+[2026-06-09T17:49:44.164Z]   0 unique stubs — will detail up to 20
+[2026-06-09T17:49:44.165Z] 
+── DINING ROOM / dining table ──────────────
+[2026-06-09T17:49:44.165Z]     GET https://www.cb2.com/furniture/dining-tables
+[2026-06-09T17:49:52.186Z]     No API hit — falling back to DOM extraction
+[2026-06-09T17:49:52.195Z]     DOM fallback: 0 products
+[2026-06-09T17:49:53.326Z]   0 unique stubs — will detail up to 20
+[2026-06-09T17:49:53.328Z] 
+── DINING ROOM / dining chair ──────────────
+[2026-06-09T17:49:53.328Z]     GET https://www.cb2.com/furniture/dining-chairs
+[2026-06-09T17:50:02.193Z]     No API hit — falling back to DOM extraction
+[2026-06-09T17:50:02.205Z]     DOM fallback: 0 products
+[2026-06-09T17:50:03.259Z]   0 unique stubs — will detail up to 20
+[2026-06-09T17:50:03.260Z] 
+── DINING ROOM / sideboard ──────────────
+[2026-06-09T17:50:03.260Z]     GET https://www.cb2.com/furniture/sideboards-and-buffets
+[2026-06-09T17:50:11.888Z]     No API hit — falling back to DOM extraction
+[2026-06-09T17:50:11.900Z]     DOM fallback: 0 products
+[2026-06-09T17:50:12.970Z]   0 unique stubs — will detail up to 20
+[2026-06-09T17:50:13.847Z] 
+=== Done — 0 new, 0 total ===

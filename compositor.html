@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoStage — Compositor</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;500;600&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:       #0c0c0e;
+    --surface:  #131317;
+    --surface2: #1a1a20;
+    --border:   rgba(255,255,255,0.07);
+    --border2:  rgba(255,255,255,0.13);
+    --text:     #e8e6df;
+    --muted:    #6b6a65;
+    --accent:   #c8f060;
+    --accent2:  #60c8f0;
+    --warn:     #f09060;
+    --r:        6px;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Syne', sans-serif;
+    font-size: 13px;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 44px 1fr;
+    grid-template-columns: 280px 1fr 260px;
+    overflow: hidden;
+  }
+
+  header {
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 0 20px;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+  }
+  .logo { font-weight: 600; font-size: 14px; letter-spacing: -0.02em; color: var(--accent); }
+  .logo span { color: var(--text); opacity: 0.4; }
+  .logo-sub { font-size: 11px; color: var(--muted); margin-left: -6px; }
+  .sep { width: 1px; height: 20px; background: var(--border2); }
+  .status-pill {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    padding: 3px 9px;
+    border-radius: 20px;
+    border: 1px solid var(--border2);
+    color: var(--muted);
+  }
+  .status-pill.ready { border-color: rgba(200,240,96,0.3); color: var(--accent); background: rgba(200,240,96,0.06); }
+  .status-pill.working { border-color: rgba(96,200,240,0.3); color: var(--accent2); background: rgba(96,200,240,0.06); }
+  .header-right { margin-left: auto; display: flex; gap: 8px; align-items: center; }
+  .btn {
+    font-family: 'Syne', sans-serif; font-size: 12px;
+    padding: 5px 12px; border-radius: var(--r);
+    border: 1px solid var(--border2);
+    background: transparent; color: var(--text);
+    cursor: pointer; transition: all 0.12s;
+  }
+  .btn:hover { background: var(--surface2); border-color: rgba(255,255,255,0.2); }
+  .btn-accent { background: var(--accent); color: #0c0c0e; border-color: var(--accent); font-weight: 500; }
+  .btn-accent:hover { background: #d4f470; }
+  .btn:disabled { opacity: 0.35; cursor: not-allowed; }
+
+  /* ── Left: inputs ── */
+  .panel {
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    display: flex; flex-direction: column;
+    overflow: hidden;
+  }
+  .panel-right { border-right: none; border-left: 1px solid var(--border); }
+
+  .section { padding: 14px; border-bottom: 1px solid var(--border); }
+  .section-title {
+    font-size: 10px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--muted);
+    margin-bottom: 10px;
+  }
+
+  .upload-zone {
+    border: 1px dashed var(--border2);
+    border-radius: var(--r);
+    padding: 16px 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.15s;
+    position: relative;
+  }
+  .upload-zone:hover, .upload-zone.drag-over {
+    border-color: var(--accent);
+    background: rgba(200,240,96,0.04);
+  }
+  .upload-zone input {
+    position: absolute; inset: 0;
+    opacity: 0; cursor: pointer; width: 100%; height: 100%;
+  }
+  .upload-icon { font-size: 20px; color: var(--muted); margin-bottom: 6px; }
+  .upload-label { font-size: 11px; color: var(--muted); line-height: 1.5; }
+  .upload-label strong { color: var(--text); font-weight: 500; }
+
+  .photo-strip {
+    display: flex; gap: 6px; flex-wrap: wrap;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    min-height: 64px;
+  }
+  .thumb {
+    width: 48px; height: 48px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid var(--border2);
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; }
+  .thumb.active { border-color: var(--accent); }
+  .thumb .cam-label {
+    position: absolute; bottom: 2px; left: 0; right: 0;
+    text-align: center; font-size: 8px;
+    font-family: 'DM Mono', monospace;
+    color: rgba(255,255,255,0.7);
+    text-shadow: 0 1px 3px rgba(0,0,0,0.9);
+  }
+  .thumb .vis-dot {
+    position: absolute; top: 3px; right: 3px;
+    width: 6px; height: 6px; border-radius: 50%;
+  }
+  .thumb .vis-dot.on  { background: var(--accent); }
+  .thumb .vis-dot.off { background: var(--muted); }
+
+  .model-row {
+    display: flex; align-items: center; gap: 10px;
+    padding: 8px 14px;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    transition: background 0.1s;
+  }
+  .model-row:hover { background: var(--surface2); }
+  .model-row.active { background: rgba(200,240,96,0.06); }
+  .model-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); flex-shrink: 0; }
+  .model-dot.loaded { background: var(--accent); }
+  .model-info { flex: 1; }
+  .model-name { font-size: 11px; }
+  .model-meta { font-size: 10px; color: var(--muted); font-family: 'DM Mono', monospace; }
+  .model-pos { font-size: 10px; color: var(--accent2); font-family: 'DM Mono', monospace; }
+
+  .scroll-list { flex: 1; overflow-y: auto; }
+  .scroll-list::-webkit-scrollbar { width: 4px; }
+  .scroll-list::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
+
+  /* ── Centre: compositor viewport ── */
+  .viewport {
+    position: relative;
+    display: flex; align-items: center; justify-content: center;
+    background: #080809;
+    overflow: hidden;
+  }
+
+  #threeCanvas {
+    position: absolute; inset: 0;
+    width: 100% !important; height: 100% !important;
+  }
+
+  /* Photo underlay */
+  #photoUnderlay {
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    pointer-events: none;
+  }
+  #photoUnderlay img {
+    max-width: 100%; max-height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  /* Composite result overlay */
+  #compositeResult {
+    position: absolute; inset: 0;
+    display: none; align-items: center; justify-content: center;
+    pointer-events: none;
+  }
+  #compositeResult canvas {
+    max-width: 100%; max-height: 100%;
+  }
+
+  .viewport-hud {
+    position: absolute; top: 12px; left: 12px; right: 12px;
+    display: flex; gap: 8px; align-items: flex-start;
+    pointer-events: none;
+  }
+  .hud-pill {
+    font-family: 'DM Mono', monospace; font-size: 10px;
+    padding: 4px 8px; border-radius: 4px;
+    background: rgba(12,12,14,0.85);
+    border: 1px solid var(--border2);
+    color: var(--muted);
+    pointer-events: all;
+  }
+  .hud-pill.accent { color: var(--accent); border-color: rgba(200,240,96,0.2); }
+
+  .viewport-controls {
+    position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%);
+    display: flex; gap: 6px;
+    background: var(--surface);
+    border: 1px solid var(--border2);
+    border-radius: 20px;
+    padding: 4px 10px;
+    align-items: center;
+  }
+  .vc-btn {
+    background: transparent; border: none;
+    color: var(--muted); cursor: pointer;
+    font-size: 12px; padding: 4px 8px;
+    border-radius: 4px; transition: all 0.1s;
+    font-family: 'Syne', sans-serif;
+  }
+  .vc-btn:hover { color: var(--text); background: var(--surface2); }
+  .vc-btn.active { color: var(--accent); }
+  .vc-sep { width: 1px; height: 16px; background: var(--border2); }
+
+  .progress-bar {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    height: 2px; background: var(--border);
+    display: none;
+  }
+  .progress-fill {
+    height: 100%; background: var(--accent);
+    transition: width 0.2s;
+    width: 0%;
+  }
+
+  .empty-viewport {
+    text-align: center; color: var(--muted);
+    pointer-events: none;
+  }
+  .empty-viewport .big { font-size: 32px; margin-bottom: 12px; opacity: 0.3; }
+  .empty-viewport p { font-size: 12px; line-height: 1.7; }
+
+  /* ── Right: render settings + output ── */
+  .prop-row {
+    display: flex; align-items: center;
+    justify-content: space-between;
+    padding: 6px 0; gap: 8px;
+  }
+  .prop-key { font-size: 11px; color: var(--muted); }
+  .prop-val { font-size: 11px; font-family: 'DM Mono', monospace; color: var(--accent2); }
+  select, .prop-select {
+    background: var(--surface2); border: 1px solid var(--border2);
+    border-radius: 4px; padding: 4px 8px;
+    color: var(--text); font-size: 11px;
+    font-family: 'Syne', sans-serif; outline: none;
+    cursor: pointer;
+  }
+  select:focus { border-color: var(--accent); }
+  .slider-row { padding: 6px 0; }
+  .slider-label {
+    display: flex; justify-content: space-between;
+    font-size: 11px; color: var(--muted); margin-bottom: 5px;
+  }
+  .slider-label span { font-family: 'DM Mono', monospace; color: var(--text); }
+  input[type=range] {
+    width: 100%; accent-color: var(--accent);
+    cursor: pointer;
+  }
+
+  .output-strip {
+    flex: 1; overflow-y: auto; padding: 10px 14px;
+  }
+  .output-strip::-webkit-scrollbar { width: 4px; }
+  .output-strip::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
+
+  .output-card {
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    overflow: hidden; margin-bottom: 8px;
+    transition: border-color 0.12s;
+    cursor: pointer;
+  }
+  .output-card:hover { border-color: var(--border2); }
+  .output-card.done { border-color: rgba(200,240,96,0.2); }
+  .output-thumb {
+    width: 100%; height: 100px;
+    background: var(--surface2);
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden; position: relative;
+  }
+  .output-thumb canvas, .output-thumb img {
+    width: 100%; height: 100%; object-fit: cover;
+  }
+  .output-thumb .pending-label {
+    font-size: 11px; color: var(--muted);
+  }
+  .output-meta {
+    padding: 7px 10px;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .output-name { font-size: 11px; flex: 1; }
+  .output-badge {
+    font-size: 9px; padding: 2px 5px; border-radius: 3px;
+  }
+  .output-badge.done { background: rgba(200,240,96,0.12); color: var(--accent); }
+  .output-badge.pending { background: rgba(107,106,101,0.15); color: var(--muted); }
+  .output-badge.skip { background: rgba(240,144,96,0.12); color: var(--warn); }
+
+  .render-btn-wrap { padding: 12px 14px; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">CoStage <span>/</span></div>
+  <div class="logo-sub">Compositor</div>
+  <div class="sep"></div>
+  <div class="status-pill" id="statusPill">idle</div>
+  <div class="header-right">
+    <button class="btn" onclick="loadDemo()">Load demo scene</button>
+    <button class="btn btn-accent" id="renderAllBtn" onclick="renderAll()" disabled>Render all photos</button>
+  </div>
+</header>
+
+<!-- Left panel: inputs -->
+<div class="panel">
+  <div class="section">
+    <div class="section-title">Room photos</div>
+    <div class="upload-zone" id="photoZone">
+      <input type="file" accept="image/*" multiple onchange="loadPhotos(this.files)">
+      <div class="upload-icon">⬆</div>
+      <div class="upload-label"><strong>Drop photos</strong> or click to browse<br>JPG, PNG, WebP · multiple angles</div>
+    </div>
+  </div>
+
+  <div class="photo-strip" id="photoStrip">
+    <!-- thumbnails injected here -->
+  </div>
+
+  <div class="section">
+    <div class="section-title">Placements (from floor plan)</div>
+    <div class="upload-zone" id="jsonZone" style="margin-bottom:8px">
+      <input type="file" accept=".json" onchange="loadPlacementsJSON(this.files[0])">
+      <div class="upload-icon">{ }</div>
+      <div class="upload-label"><strong>Drop costage-placements.json</strong><br>exported from floor plan editor — carries real camera poses if the scene was imported from image-blaster</div>
+    </div>
+  </div>
+
+  <div class="scroll-list" id="modelList">
+    <!-- model rows injected -->
+  </div>
+</div>
+
+<!-- Centre: viewport -->
+<div class="viewport" id="viewport">
+  <div id="photoUnderlay"><img id="underlayImg" src="" style="display:none"></div>
+  <canvas id="threeCanvas"></canvas>
+  <div id="compositeResult"></div>
+
+  <div class="viewport-hud">
+    <div class="hud-pill accent" id="hudCamera">no photo selected</div>
+    <div class="hud-pill" id="hudStats"></div>
+  </div>
+
+  <div class="viewport-controls">
+    <button class="vc-btn active" id="btnPreview" onclick="setMode('preview')">Preview</button>
+    <div class="vc-sep"></div>
+    <button class="vc-btn" id="btnComposite" onclick="setMode('composite')">Composite</button>
+    <div class="vc-sep"></div>
+    <button class="vc-btn" id="btn3d" onclick="setMode('3d')">3D only</button>
+  </div>
+
+  <div class="empty-viewport" id="emptyHint" style="position:absolute">
+    <div class="big">◈</div>
+    <p>Load demo scene to see the compositor,<br>or upload photos + a placements JSON.</p>
+  </div>
+
+  <div class="progress-bar" id="progressBar">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+</div>
+
+<!-- Right panel: settings + output -->
+<div class="panel panel-right">
+  <div class="section">
+    <div class="section-title">Render settings</div>
+    <div class="prop-row">
+      <span class="prop-key">Output size</span>
+      <select id="outSize" onchange="updateSettings()">
+        <option value="1">Match photo</option>
+        <option value="0.5">Half (preview)</option>
+        <option value="2">2× upscale</option>
+      </select>
+    </div>
+    <div class="slider-row">
+      <div class="slider-label">Shadow strength <span id="shadowVal">0.6</span></div>
+      <input type="range" min="0" max="1" step="0.05" value="0.6"
+        oninput="document.getElementById('shadowVal').textContent=this.value; updateSettings()">
+    </div>
+    <div class="slider-row">
+      <div class="slider-label">Ambient light <span id="ambientVal">0.4</span></div>
+      <input type="range" min="0" max="1" step="0.05" value="0.4"
+        oninput="document.getElementById('ambientVal').textContent=this.value; updateSettings()">
+    </div>
+    <div class="slider-row">
+      <div class="slider-label">Blend opacity <span id="blendVal">1.0</span></div>
+      <input type="range" min="0" max="1" step="0.05" value="1.0"
+        oninput="document.getElementById('blendVal').textContent=(+this.value).toFixed(1); setBlendOpacity(+this.value)">
+    </div>
+    <div class="prop-row">
+      <span class="prop-key">Shadow mode</span>
+      <select id="shadowMode" onchange="updateSettings()">
+        <option value="soft">Soft</option>
+        <option value="hard">Hard</option>
+        <option value="none">None</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Output queue</div>
+  </div>
+  <div class="output-strip" id="outputStrip"></div>
+  <div class="render-btn-wrap">
+    <button class="btn btn-accent" style="width:100%" onclick="downloadAll()" id="downloadBtn" disabled>
+      Download all composites
+    </button>
+  </div>
+</div>
+
+<!-- Three.js + GLTFLoader via CDN -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.140.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.140.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.140.0/examples/js/loaders/DRACOLoader.js"></script>
+
+<!-- Spatial parser (image-blaster / COLMAP / mock) — exposed for the classic script below -->
+<script type="module">
+  import { parseImageBlasterOutput, parseColmapOutput, createMockScene }
+    from './spatialParser.js';
+  window.SpatialParser = { parseImageBlasterOutput, parseColmapOutput, createMockScene };
+</script>
+
+<script>
+// ─── State ───────────────────────────────────────────────────────────────────
+const state = {
+  photos: [],           // { id, file, url, img, width, height }
+  placements: [],       // from costage-placements.json
+  scene: null,          // { cameras, sourceFormat } from image-blaster, via costage-placements.json
+  roomDims: null,
+  models: {},           // furnitureId → THREE.Group (loaded .glb or primitive)
+  composites: {},       // photoId → ImageData / canvas
+  activePhoto: null,
+  mode: 'preview',      // preview | composite | 3d
+  settings: { shadowStrength: 0.6, ambientLight: 0.4, blendOpacity: 1.0, shadowMode: 'soft', outScale: 1 },
+};
+
+// ─── Three.js setup ───────────────────────────────────────────────────────────
+const viewport   = document.getElementById('viewport');
+const threeCanvas = document.getElementById('threeCanvas');
+const renderer   = new THREE.WebGLRenderer({ canvas: threeCanvas, alpha: true, antialias: true, preserveDrawingBuffer: true });
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type    = THREE.PCFSoftShadowMap;
+renderer.outputColorSpace  = THREE.SRGBColorSpace;
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.setClearColor(0x000000, 0);
+
+const scene3d  = new THREE.Scene();
+const camera3d = new THREE.PerspectiveCamera(60, 1, 0.01, 100);
+
+// Lights
+const ambient    = new THREE.AmbientLight(0xffffff, 0.4);
+const dirLight   = new THREE.DirectionalLight(0xffffff, 1.2);
+dirLight.castShadow = true;
+dirLight.shadow.mapSize.set(2048, 2048);
+dirLight.shadow.camera.near = 0.1;
+dirLight.shadow.camera.far  = 20;
+dirLight.shadow.camera.left = dirLight.shadow.camera.bottom = -5;
+dirLight.shadow.camera.right = dirLight.shadow.camera.top = 5;
+dirLight.position.set(3, 5, 3);
+scene3d.add(ambient, dirLight);
+
+// Invisible floor plane (receives shadows)
+const floorGeo  = new THREE.PlaneGeometry(30, 30);
+const floorMat  = new THREE.ShadowMaterial({ opacity: 0.0 }); // start invisible
+const floorMesh = new THREE.Mesh(floorGeo, floorMat);
+floorMesh.rotation.x = -Math.PI / 2;
+floorMesh.receiveShadow = true;
+scene3d.add(floorMesh);
+
+// GLTF loader
+const gltfLoader = new THREE.GLTFLoader();
+
+// Resize renderer to viewport
+const ro = new ResizeObserver(() => {
+  const w = viewport.clientWidth, h = viewport.clientHeight;
+  renderer.setSize(w, h, false);
+  camera3d.aspect = w / h;
+  camera3d.updateProjectionMatrix();
+});
+ro.observe(viewport);
+
+// Render loop
+let animId;
+function startRenderLoop() {
+  cancelAnimationFrame(animId);
+  function loop() {
+    animId = requestAnimationFrame(loop);
+    renderer.render(scene3d, camera3d);
+  }
+  loop();
+}
+startRenderLoop();
+
+// ─── Demo scene loader ────────────────────────────────────────────────────────
+window.loadDemo = async function() {
+  setStatus('working', 'Loading demo…');
+  document.getElementById('emptyHint').style.display = 'none';
+
+  // Mock placements (matches the floor plan editor mock scene)
+  state.roomDims = { width: 5.2, depth: 4.1, height: 2.6 };
+  state.placements = [
+    { furnitureId: 'sofa-3seat', name: 'Sofa 3-seat',
+      worldPosition: { x: -0.8, z: 0.4 }, rotation: 0,
+      dimensions: { width: 2.2, depth: 0.95 } },
+    { furnitureId: 'coffee-tbl', name: 'Coffee table',
+      worldPosition: { x: -0.8, z: -0.6 }, rotation: 0,
+      dimensions: { width: 1.2, depth: 0.6 } },
+    { furnitureId: 'armchair',   name: 'Armchair',
+      worldPosition: { x: 1.4, z: 0.5 }, rotation: -30,
+      dimensions: { width: 0.9, depth: 0.9 } },
+    { furnitureId: 'plant',      name: 'Floor plant',
+      worldPosition: { x: 2.0, z: -1.4 }, rotation: 0,
+      dimensions: { width: 0.5, depth: 0.5 } },
+  ];
+
+  // Generate mock cameras
+  state.photos = generateMockPhotos(6);
+
+  // Build procedural geometry for each furniture item
+  await buildAllModels();
+
+  // Build UI
+  rebuildPhotoStrip();
+  rebuildModelList();
+  rebuildOutputStrip();
+
+  selectPhoto(state.photos[0].id);
+  document.getElementById('renderAllBtn').disabled = false;
+  setStatus('ready', 'demo loaded');
+};
+
+function generateMockPhotos(count) {
+  const hw = state.roomDims.width / 2;
+  const hd = state.roomDims.depth / 2;
+  return Array.from({ length: count }, (_, i) => {
+    const angle = (i / count) * Math.PI * 2;
+    const r = Math.max(hw, hd) * 0.75;
+    const px = Math.cos(angle) * r;
+    const pz = Math.sin(angle) * r;
+    const py = 1.2;
+    const c2w = lookAt({ x: px, y: py, z: pz }, { x: 0, y: py, z: 0 }, { x: 0, y: 1, z: 0 });
+    const w2c = invertMat4(c2w);
+    const fovY = 60 * Math.PI / 180;
+    return {
+      id: `photo_${String(i + 1).padStart(2, '0')}.jpg`,
+      url: null, // no real image in demo
+      img: null,
+      width: 1920, height: 1440,
+      camera: { worldToCamera: w2c, cameraToWorld: c2w, fovY, aspectRatio: 4/3, imageSize: { width: 1920, height: 1440 } },
+      isMock: true,
+    };
+  });
+}
+
+// ─── Build 3D models (procedural proxies; swap for real .glb in production) ──
+const FURN_COLORS = {
+  'sofa-3seat': 0x8B7355, 'sofa-2seat': 0x8B7355, 'armchair': 0x7A8B6F,
+  'coffee-tbl': 0x6B5B45, 'dining-tbl': 0x6B5B45, 'dining-chr': 0x5A6B8A,
+  'bed-king': 0x7B8B9A,   'bed-queen': 0x7B8B9A,  'nightstand': 0x8A7B6A,
+  'dresser': 0x8A7B6A,    'desk': 0x6A7B8A,        'bookshelf': 0x7A6B5A,
+  'tv-unit': 0x5A5A5A,    'wardrobe': 0x7A6B5A,    'rug-lg': 0x9A8B7A,
+  'plant': 0x5A8A6A,
+};
+
+function buildFurnitureMesh(placement) {
+  const { furnitureId, dimensions } = placement;
+  const w = dimensions.width;
+  const d = dimensions.depth;
+  const color = FURN_COLORS[furnitureId] || 0x888888;
+  const group = new THREE.Group();
+
+  if (furnitureId.startsWith('sofa') || furnitureId === 'armchair') {
+    // Sofa: seat + back + two arms
+    const mat = new THREE.MeshStandardMaterial({ color, roughness: 0.85, metalness: 0.0 });
+    const seat = new THREE.Mesh(new THREE.BoxGeometry(w, 0.45, d * 0.65), mat);
+    seat.position.set(0, 0.225, d * 0.1);
+    seat.castShadow = true; seat.receiveShadow = true;
+    const back = new THREE.Mesh(new THREE.BoxGeometry(w, 0.5, d * 0.2), mat);
+    back.position.set(0, 0.65, d * 0.45);
+    back.castShadow = true;
+    const armL = new THREE.Mesh(new THREE.BoxGeometry(0.12, 0.55, d * 0.65), mat);
+    armL.position.set(-w/2 + 0.06, 0.275, d * 0.1);
+    armL.castShadow = true;
+    const armR = armL.clone();
+    armR.position.x = w/2 - 0.06;
+    group.add(seat, back, armL, armR);
+  } else if (furnitureId.startsWith('bed')) {
+    const mat = new THREE.MeshStandardMaterial({ color, roughness: 0.9, metalness: 0.0 });
+    const frame = new THREE.Mesh(new THREE.BoxGeometry(w, 0.3, d), mat);
+    frame.position.y = 0.15; frame.castShadow = true; frame.receiveShadow = true;
+    const mattress = new THREE.Mesh(new THREE.BoxGeometry(w - 0.1, 0.25, d - 0.5),
+      new THREE.MeshStandardMaterial({ color: 0xf0ede8, roughness: 0.95 }));
+    mattress.position.set(0, 0.425, -0.1); mattress.castShadow = true;
+    const headboard = new THREE.Mesh(new THREE.BoxGeometry(w, 0.8, 0.1), mat);
+    headboard.position.set(0, 0.6, d/2); headboard.castShadow = true;
+    group.add(frame, mattress, headboard);
+  } else if (furnitureId === 'plant') {
+    const potMat = new THREE.MeshStandardMaterial({ color: 0x8B6550, roughness: 0.9 });
+    const pot = new THREE.Mesh(new THREE.CylinderGeometry(0.15, 0.12, 0.28, 12), potMat);
+    pot.position.y = 0.14; pot.castShadow = true;
+    const foliageMat = new THREE.MeshStandardMaterial({ color: 0x3D7A4A, roughness: 1.0 });
+    const foliage = new THREE.Mesh(new THREE.SphereGeometry(0.28, 10, 8), foliageMat);
+    foliage.position.y = 0.72; foliage.castShadow = true;
+    const stem = new THREE.Mesh(new THREE.CylinderGeometry(0.02, 0.02, 0.4, 6),
+      new THREE.MeshStandardMaterial({ color: 0x4A6B3A }));
+    stem.position.y = 0.42;
+    group.add(pot, stem, foliage);
+  } else if (furnitureId === 'rug-lg') {
+    const mat = new THREE.MeshStandardMaterial({ color, roughness: 1.0 });
+    const rug = new THREE.Mesh(new THREE.BoxGeometry(w, 0.02, d), mat);
+    rug.position.y = 0.01; rug.receiveShadow = true;
+    group.add(rug);
+  } else {
+    // Generic: box with legs
+    const mat = new THREE.MeshStandardMaterial({ color, roughness: 0.75, metalness: 0.05 });
+    const h = furnitureId.includes('shelf') || furnitureId.includes('wardrobe') ? 1.8
+            : furnitureId.includes('tbl') || furnitureId.includes('desk') ? 0.75
+            : furnitureId.includes('chr') ? 0.85 : 0.8;
+    const body = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat);
+    body.position.y = h / 2; body.castShadow = true; body.receiveShadow = true;
+    group.add(body);
+    // legs for tables
+    if (furnitureId.includes('tbl') || furnitureId.includes('desk')) {
+      const legGeo = new THREE.CylinderGeometry(0.025, 0.025, 0.7, 6);
+      [[w/2-0.05, d/2-0.05],[w/2-0.05,-(d/2-0.05)],[-(w/2-0.05),d/2-0.05],[-(w/2-0.05),-(d/2-0.05)]].forEach(([lx,lz])=>{
+        const leg = new THREE.Mesh(legGeo, mat);
+        leg.position.set(lx, 0.35, lz); leg.castShadow = true;
+        group.add(leg);
+      });
+    }
+  }
+  return group;
+}
+
+async function buildAllModels() {
+  // Clear previous
+  scene3d.children.filter(c => c.userData.isFurniture).forEach(c => scene3d.remove(c));
+  state.models = {};
+
+  for (const p of state.placements) {
+    const mesh = buildFurnitureMesh(p);
+    mesh.userData.isFurniture = true;
+    mesh.userData.placementId = p.furnitureId;
+    // Position from world coords
+    mesh.position.set(p.worldPosition.x, 0, p.worldPosition.z);
+    mesh.rotation.y = (p.rotation || 0) * Math.PI / 180;
+    scene3d.add(mesh);
+    state.models[p.furnitureId] = mesh;
+  }
+}
+
+// ─── Camera sync: point Three.js camera to match the selected room photo ─────
+function syncCameraToPhoto(photo) {
+  if (!photo?.camera) return;
+  const cam = photo.camera;
+  const c2w = cam.cameraToWorld;
+  // Position
+  camera3d.position.set(c2w[12], c2w[13], c2w[14]);
+  // Orientation from rotation columns
+  const m = new THREE.Matrix4();
+  m.set(
+    c2w[0], c2w[4], c2w[8],  c2w[12],
+    c2w[1], c2w[5], c2w[9],  c2w[13],
+    c2w[2], c2w[6], c2w[10], c2w[14],
+    c2w[3], c2w[7], c2w[11], c2w[15]
+  );
+  camera3d.setRotationFromMatrix(m);
+  camera3d.fov = cam.fovY * 180 / Math.PI;
+  camera3d.aspect = cam.aspectRatio;
+  camera3d.updateProjectionMatrix();
+
+  // Resize renderer to match photo aspect
+  const vpW = viewport.clientWidth, vpH = viewport.clientHeight;
+  const photoAspect = cam.aspectRatio;
+  let rW = vpW, rH = vpW / photoAspect;
+  if (rH > vpH) { rH = vpH; rW = vpH * photoAspect; }
+  renderer.setSize(rW, rH, false);
+  threeCanvas.style.width  = rW + 'px';
+  threeCanvas.style.height = rH + 'px';
+  threeCanvas.style.position = 'absolute';
+  threeCanvas.style.left = ((vpW - rW) / 2) + 'px';
+  threeCanvas.style.top  = ((vpH - rH) / 2) + 'px';
+
+  // Shadow light follows camera roughly
+  dirLight.position.set(
+    camera3d.position.x + 2,
+    camera3d.position.y + 3,
+    camera3d.position.z + 1
+  );
+  dirLight.shadow.camera.updateProjectionMatrix();
+}
+
+// ─── Composite: blend 3D render over photo ────────────────────────────────────
+async function compositePhoto(photo) {
+  return new Promise(resolve => {
+    syncCameraToPhoto(photo);
+    // Update shadow settings
+    const ss = state.settings;
+    floorMesh.material.opacity = parseFloat(ss.shadowStrength);
+    ambient.intensity = parseFloat(ss.ambientLight);
+    renderer.shadowMap.type = ss.shadowMode === 'soft' ? THREE.PCFSoftShadowMap : THREE.BasicShadowMap;
+    if (ss.shadowMode === 'none') renderer.shadowMap.enabled = false;
+    else { renderer.shadowMap.enabled = true; renderer.shadowMap.needsUpdate = true; }
+
+    // Force a render
+    renderer.render(scene3d, camera3d);
+
+    // Grab the 3D render
+    const offW = renderer.domElement.width;
+    const offH = renderer.domElement.height;
+    const renderPixels = new Uint8Array(offW * offH * 4);
+    const gl = renderer.getContext();
+    gl.readPixels(0, 0, offW, offH, gl.RGBA, gl.UNSIGNED_BYTE, renderPixels);
+
+    // Flip Y (WebGL is bottom-up)
+    const flipped = new Uint8ClampedArray(offW * offH * 4);
+    for (let y = 0; y < offH; y++) {
+      const srcRow = (offH - 1 - y) * offW * 4;
+      const dstRow = y * offW * 4;
+      flipped.set(renderPixels.slice(srcRow, srcRow + offW * 4), dstRow);
+    }
+
+    const outCanvas = document.createElement('canvas');
+    outCanvas.width = offW; outCanvas.height = offH;
+    const octx = outCanvas.getContext('2d');
+
+    if (photo.img && !photo.isMock) {
+      // Draw background photo, then blend 3D on top
+      const scale = parseFloat(document.getElementById('outSize').value);
+      outCanvas.width  = Math.round(photo.width  * scale);
+      outCanvas.height = Math.round(photo.height * scale);
+      octx.drawImage(photo.img, 0, 0, outCanvas.width, outCanvas.height);
+      // Scale up the 3D render to match
+      const tmp = document.createElement('canvas');
+      tmp.width = offW; tmp.height = offH;
+      tmp.getContext('2d').putImageData(new ImageData(flipped, offW, offH), 0, 0);
+      octx.globalAlpha = state.settings.blendOpacity;
+      octx.drawImage(tmp, 0, 0, outCanvas.width, outCanvas.height);
+      octx.globalAlpha = 1;
+    } else {
+      // Demo mode: just show the 3D render with a dark room bg
+      octx.fillStyle = '#1a1a1e';
+      octx.fillRect(0, 0, outCanvas.width, outCanvas.height);
+      drawMockRoomLines(octx, outCanvas.width, outCanvas.height);
+      const tmp3d = document.createElement('canvas');
+      tmp3d.width = offW; tmp3d.height = offH;
+      tmp3d.getContext('2d').putImageData(new ImageData(flipped, offW, offH), 0, 0);
+      octx.globalAlpha = state.settings.blendOpacity;
+      octx.drawImage(tmp3d, 0, 0, outCanvas.width, outCanvas.height);
+      octx.globalAlpha = 1;
+    }
+
+    state.composites[photo.id] = outCanvas;
+    resolve(outCanvas);
+  });
+}
+
+function drawMockRoomLines(ctx, w, h) {
+  // Fake room perspective lines for demo mode
+  ctx.strokeStyle = 'rgba(255,255,255,0.06)';
+  ctx.lineWidth = 1;
+  const cx = w * 0.5, cy = h * 0.45;
+  // Floor lines converging to vanishing point
+  for (let i=0; i<=8; i++) {
+    const x = w * (i / 8);
+    ctx.beginPath(); ctx.moveTo(x, h); ctx.lineTo(cx, cy); ctx.stroke();
+  }
+  // Ceiling lines
+  ctx.strokeStyle = 'rgba(255,255,255,0.04)';
+  for (let i=0; i<=6; i++) {
+    const x = w * (i / 6);
+    ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(cx, cy); ctx.stroke();
+  }
+  // Floor/wall boundary
+  ctx.strokeStyle = 'rgba(255,255,255,0.1)';
+  ctx.lineWidth = 1.5;
+  ctx.beginPath();
+  ctx.moveTo(0, h * 0.65); ctx.lineTo(cx, cy); ctx.lineTo(w, h * 0.65);
+  ctx.stroke();
+}
+
+// ─── Render all ───────────────────────────────────────────────────────────────
+window.renderAll = async function() {
+  if (!state.photos.length) return;
+  const prog = document.getElementById('progressBar');
+  const fill = document.getElementById('progressFill');
+  prog.style.display = 'block';
+  document.getElementById('renderAllBtn').disabled = true;
+  setStatus('working', 'rendering…');
+
+  for (let i = 0; i < state.photos.length; i++) {
+    const photo = state.photos[i];
+    fill.style.width = ((i / state.photos.length) * 100) + '%';
+    await compositePhoto(photo);
+    updateOutputCard(photo.id, state.composites[photo.id]);
+    // Also update the viewport if this is the active photo
+    if (state.activePhoto?.id === photo.id) showComposite(photo.id);
+  }
+
+  fill.style.width = '100%';
+  setTimeout(() => { prog.style.display = 'none'; fill.style.width = '0%'; }, 600);
+  document.getElementById('renderAllBtn').disabled = false;
+  document.getElementById('downloadBtn').disabled = false;
+  setStatus('ready', `${state.photos.length} composites ready`);
+};
+
+// ─── Photo selection ──────────────────────────────────────────────────────────
+window.selectPhoto = function(id) {
+  state.activePhoto = state.photos.find(p => p.id === id);
+  if (!state.activePhoto) return;
+
+  document.querySelectorAll('.thumb').forEach(t => t.classList.toggle('active', t.dataset.id === id));
+  document.getElementById('hudCamera').textContent = id;
+
+  // Show underlay
+  const underlayImg = document.getElementById('underlayImg');
+  if (state.activePhoto.img) {
+    underlayImg.src = state.activePhoto.url;
+    underlayImg.style.display = 'block';
+  } else {
+    underlayImg.style.display = 'none';
+  }
+
+  syncCameraToPhoto(state.activePhoto);
+  updateVisibilityDots();
+  updateHudStats();
+
+  if (state.composites[id]) {
+    if (state.mode === 'composite') showComposite(id);
+  }
+};
+
+function updateVisibilityDots() {
+  if (!state.activePhoto) return;
+  const cam = state.activePhoto.camera;
+  document.querySelectorAll('.thumb').forEach(thumb => {
+    const dot = thumb.querySelector('.vis-dot');
+    if (!dot) return;
+    // placeholder: all visible in demo
+    dot.className = 'vis-dot on';
+  });
+}
+
+function updateHudStats() {
+  if (!state.activePhoto) return;
+  const visCount = state.placements.length; // simplified
+  document.getElementById('hudStats').textContent =
+    `${visCount} items · ${state.activePhoto.width}×${state.activePhoto.height}`;
+}
+
+// ─── View mode ────────────────────────────────────────────────────────────────
+window.setMode = function(mode) {
+  state.mode = mode;
+  ['preview','composite','3d'].forEach(m => {
+    document.getElementById('btn'+m.charAt(0).toUpperCase()+m.slice(1)).classList.toggle('active', m===mode);
+  });
+  const compositeEl = document.getElementById('compositeResult');
+  const threeEl     = document.getElementById('threeCanvas');
+  const underlayEl  = document.getElementById('photoUnderlay');
+
+  if (mode === 'preview') {
+    underlayEl.style.opacity = '1';
+    threeEl.style.opacity = '1';
+    compositeEl.style.display = 'none';
+  } else if (mode === 'composite') {
+    underlayEl.style.opacity = '0';
+    threeEl.style.opacity = '0';
+    compositeEl.style.display = 'flex';
+    if (state.activePhoto && state.composites[state.activePhoto.id]) {
+      showComposite(state.activePhoto.id);
+    }
+  } else { // 3d
+    underlayEl.style.opacity = '0';
+    threeEl.style.opacity = '1';
+    compositeEl.style.display = 'none';
+  }
+};
+
+function showComposite(photoId) {
+  const compositeEl = document.getElementById('compositeResult');
+  const src = state.composites[photoId];
+  if (!src) return;
+  compositeEl.innerHTML = '';
+  compositeEl.appendChild(src);
+  compositeEl.style.display = 'flex';
+}
+
+window.setBlendOpacity = function(v) {
+  state.settings.blendOpacity = v;
+};
+
+// ─── UI builders ──────────────────────────────────────────────────────────────
+function rebuildPhotoStrip() {
+  const strip = document.getElementById('photoStrip');
+  strip.innerHTML = state.photos.map(p => `
+    <div class="thumb ${p === state.activePhoto ? 'active' : ''}" data-id="${p.id}" onclick="selectPhoto('${p.id}')">
+      ${p.img ? `<img src="${p.url}" alt="${p.id}">` : `<div style="width:100%;height:100%;background:#1a1a20;display:flex;align-items:center;justify-content:center;font-size:8px;color:#6b6a65;font-family:'DM Mono',monospace">${p.id.split('_')[1]?.split('.')[0]||'?'}</div>`}
+      <div class="cam-label">${p.id.split('.')[0]}</div>
+      <div class="vis-dot on"></div>
+    </div>
+  `).join('');
+}
+
+function rebuildModelList() {
+  const list = document.getElementById('modelList');
+  list.innerHTML = state.placements.map(p => `
+    <div class="model-row" data-id="${p.furnitureId}">
+      <div class="model-dot loaded"></div>
+      <div class="model-info">
+        <div class="model-name">${p.name}</div>
+        <div class="model-meta">${p.dimensions.width}×${p.dimensions.depth}m</div>
+      </div>
+      <div class="model-pos">${p.worldPosition.x.toFixed(2)}, ${p.worldPosition.z.toFixed(2)}</div>
+    </div>
+  `).join('');
+}
+
+function rebuildOutputStrip() {
+  const strip = document.getElementById('outputStrip');
+  strip.innerHTML = state.photos.map(p => `
+    <div class="output-card" id="out-${p.id.replace('.','_')}" onclick="selectPhoto('${p.id}');setMode('composite')">
+      <div class="output-thumb" id="thumb-${p.id.replace('.','_')}">
+        <span class="pending-label">not rendered</span>
+      </div>
+      <div class="output-meta">
+        <span class="output-name">${p.id}</span>
+        <span class="output-badge pending" id="badge-${p.id.replace('.','_')}">pending</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+function updateOutputCard(photoId, outputCanvas) {
+  const safeId = photoId.replace('.', '_');
+  const thumbEl = document.getElementById('thumb-' + safeId);
+  const badgeEl = document.getElementById('badge-' + safeId);
+  const cardEl  = document.getElementById('out-' + safeId);
+  if (!thumbEl) return;
+  const preview = document.createElement('canvas');
+  preview.width = 232; preview.height = 100;
+  preview.getContext('2d').drawImage(outputCanvas, 0, 0, 232, 100);
+  thumbEl.innerHTML = '';
+  thumbEl.appendChild(preview);
+  badgeEl.textContent = 'done';
+  badgeEl.className = 'output-badge done';
+  cardEl.classList.add('done');
+}
+
+// ─── File inputs ──────────────────────────────────────────────────────────────
+
+// Assigns a CameraPose to every loaded photo. If a real scene (from an
+// image-blaster scene.json, loaded via the placements JSON export) is
+// present, matches cameras to photos by filename; otherwise falls back to
+// the procedurally-generated mock cameras.
+function assignCamerasToPhotos() {
+  if (!state.photos.length) return;
+  const realCameras = state.scene?.cameras;
+  if (realCameras && realCameras.length) {
+    const used = new Set();
+    state.photos.forEach((photo, i) => {
+      let cam = realCameras.find(c => c.photoId === photo.id && !used.has(c.photoId));
+      if (!cam) {
+        const lower = photo.id.toLowerCase();
+        cam = realCameras.find(c => c.photoId.toLowerCase() === lower && !used.has(c.photoId));
+      }
+      if (!cam) cam = realCameras[i % realCameras.length];
+      used.add(cam.photoId);
+      photo.camera = cam;
+      photo.isMock = false;
+    });
+  } else {
+    const mockScene = generateMockPhotos(state.photos.length);
+    state.photos.forEach((photo, i) => { photo.camera = mockScene[i].camera; });
+  }
+}
+
+window.loadPhotos = function(files) {
+  const arr = Array.from(files);
+  const promises = arr.map(file => new Promise(res => {
+    const url = URL.createObjectURL(file);
+    const img = new Image();
+    img.onload = () => res({ id: file.name, file, url, img, width: img.naturalWidth, height: img.naturalHeight, isMock: false });
+    img.src = url;
+  }));
+  Promise.all(promises).then(photos => {
+    state.roomDims = state.roomDims || { width: 5.2, depth: 4.1, height: 2.6 };
+    state.photos = photos;
+    assignCamerasToPhotos();
+    document.getElementById('emptyHint').style.display = 'none';
+    rebuildPhotoStrip();
+    rebuildOutputStrip();
+    if (state.placements.length) {
+      document.getElementById('renderAllBtn').disabled = false;
+    }
+    selectPhoto(state.photos[0].id);
+  });
+};
+
+window.loadPlacementsJSON = function(file) {
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = async e => {
+    const data = JSON.parse(e.target.result);
+    state.roomDims = data.roomDimensions;
+    state.placements = data.placements;
+    state.scene = data.cameras ? { cameras: data.cameras, sourceFormat: data.sceneSource || 'image-blaster' } : null;
+    await buildAllModels();
+    rebuildModelList();
+    rebuildOutputStrip();
+    if (state.photos.length) {
+      assignCamerasToPhotos();
+      rebuildPhotoStrip();
+      document.getElementById('renderAllBtn').disabled = false;
+      syncCameraToPhoto(state.activePhoto);
+    }
+    if (state.scene) {
+      setStatus('ready', `placements loaded · cameras from ${state.scene.sourceFormat}`);
+    }
+  };
+  reader.readAsText(file);
+};
+
+// ─── Download ─────────────────────────────────────────────────────────────────
+window.downloadAll = function() {
+  for (const [photoId, canvas] of Object.entries(state.composites)) {
+    const a = document.createElement('a');
+    a.href = canvas.toDataURL('image/jpeg', 0.92);
+    a.download = `costage-${photoId.replace('.jpg','').replace('.png','')}-staged.jpg`;
+    a.click();
+  }
+};
+
+// ─── Settings ─────────────────────────────────────────────────────────────────
+window.updateSettings = function() {
+  state.settings.shadowStrength = parseFloat(document.querySelector('input[oninput*="shadowVal"]').value);
+  state.settings.ambientLight   = parseFloat(document.querySelector('input[oninput*="ambientVal"]').value);
+  state.settings.shadowMode     = document.getElementById('shadowMode').value;
+  state.settings.outScale       = parseFloat(document.getElementById('outSize').value);
+  floorMesh.material.opacity = state.settings.shadowStrength;
+  ambient.intensity = state.settings.ambientLight;
+};
+
+// ─── Status ───────────────────────────────────────────────────────────────────
+function setStatus(type, msg) {
+  const pill = document.getElementById('statusPill');
+  pill.textContent = msg;
+  pill.className = 'status-pill ' + type;
+}
+
+// ─── Math helpers ─────────────────────────────────────────────────────────────
+function lookAt(eye, target, up) {
+  const sub=(a,b)=>({x:a.x-b.x,y:a.y-b.y,z:a.z-b.z});
+  const dot=(a,b)=>a.x*b.x+a.y*b.y+a.z*b.z;
+  const cross=(a,b)=>({x:a.y*b.z-a.z*b.y,y:a.z*b.x-a.x*b.z,z:a.x*b.y-a.y*b.x});
+  const norm=(v)=>{const l=Math.sqrt(v.x*v.x+v.y*v.y+v.z*v.z);return l>0?{x:v.x/l,y:v.y/l,z:v.z/l}:v;};
+  const z=norm(sub(eye,target)),x=norm(cross(up,z)),y=cross(z,x);
+  return [x.x,y.x,z.x,0,x.y,y.y,z.y,0,x.z,y.z,z.z,0,-dot(x,eye),-dot(y,eye),-dot(z,eye),1];
+}
+function invertMat4(a){
+  const out=new Array(16).fill(0);
+  const b00=a[0]*a[5]-a[1]*a[4],b01=a[0]*a[6]-a[2]*a[4],b02=a[0]*a[7]-a[3]*a[4];
+  const b03=a[1]*a[6]-a[2]*a[5],b04=a[1]*a[7]-a[3]*a[5],b05=a[2]*a[7]-a[3]*a[6];
+  const b06=a[8]*a[13]-a[9]*a[12],b07=a[8]*a[14]-a[10]*a[12],b08=a[8]*a[15]-a[11]*a[12];
+  const b09=a[9]*a[14]-a[10]*a[13],b10=a[9]*a[15]-a[11]*a[13],b11=a[10]*a[15]-a[11]*a[14];
+  const det=b00*b11-b01*b10+b02*b09+b03*b08-b04*b07+b05*b06;
+  if(!det)return out;const inv=1/det;
+  out[0]=(a[5]*b11-a[6]*b10+a[7]*b09)*inv;out[1]=(-a[1]*b11+a[2]*b10-a[3]*b09)*inv;
+  out[2]=(a[13]*b05-a[14]*b04+a[15]*b03)*inv;out[3]=(-a[9]*b05+a[10]*b04-a[11]*b03)*inv;
+  out[4]=(-a[4]*b11+a[6]*b08-a[7]*b07)*inv;out[5]=(a[0]*b11-a[2]*b08+a[3]*b07)*inv;
+  out[6]=(-a[12]*b05+a[14]*b02-a[15]*b01)*inv;out[7]=(a[8]*b05-a[10]*b02+a[11]*b01)*inv;
+  out[8]=(a[4]*b10-a[5]*b08+a[7]*b06)*inv;out[9]=(-a[0]*b10+a[1]*b08-a[3]*b06)*inv;
+  out[10]=(a[12]*b04-a[13]*b02+a[15]*b00)*inv;out[11]=(-a[8]*b04+a[9]*b02-a[11]*b00)*inv;
+  out[12]=(-a[4]*b09+a[5]*b07-a[6]*b06)*inv;out[13]=(a[0]*b09-a[1]*b07+a[2]*b06)*inv;
+  out[14]=(-a[12]*b03+a[13]*b01-a[14]*b00)*inv;out[15]=(a[8]*b03-a[9]*b01+a[10]*b00)*inv;
+  return out;
+}
+</script>
+</body>
+</html>

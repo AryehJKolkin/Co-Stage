@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoStage — Floor Plan Editor</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;500;600&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:         #0c0c0e;
+    --surface:    #131317;
+    --surface2:   #1a1a20;
+    --border:     rgba(255,255,255,0.07);
+    --border2:    rgba(255,255,255,0.13);
+    --text:       #e8e6df;
+    --muted:      #6b6a65;
+    --accent:     #c8f060;
+    --accent2:    #60c8f0;
+    --warn:       #f09060;
+    --font-sans:  'Syne', sans-serif;
+    --font-mono:  'DM Mono', monospace;
+    --r:          6px;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans);
+    font-size: 13px;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 44px 1fr;
+    grid-template-columns: 260px 1fr 280px;
+    overflow: hidden;
+  }
+
+  /* ── Top bar ── */
+  header {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0 20px;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+  }
+  .logo {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: var(--accent);
+  }
+  .logo span { color: var(--text); opacity: 0.5; }
+  .header-sep { width: 1px; height: 20px; background: var(--border2); }
+  .scene-info { font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
+  .header-actions { margin-left: auto; display: flex; gap: 8px; }
+  .btn {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    padding: 5px 12px;
+    border-radius: var(--r);
+    border: 1px solid var(--border2);
+    background: transparent;
+    color: var(--text);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .btn:hover { background: var(--surface2); border-color: rgba(255,255,255,0.2); }
+  .btn-accent {
+    background: var(--accent);
+    color: #0c0c0e;
+    border-color: var(--accent);
+    font-weight: 500;
+  }
+  .btn-accent:hover { background: #d4f470; border-color: #d4f470; }
+
+  /* ── Left panel: furniture library ── */
+  .panel-left {
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .panel-title {
+    padding: 12px 14px 10px;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--border);
+  }
+  .search-wrap {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .search-wrap input {
+    width: 100%;
+    background: var(--surface2);
+    border: 1px solid var(--border2);
+    border-radius: var(--r);
+    padding: 6px 10px;
+    color: var(--text);
+    font-family: var(--font-sans);
+    font-size: 12px;
+    outline: none;
+  }
+  .search-wrap input::placeholder { color: var(--muted); }
+  .search-wrap input:focus { border-color: var(--accent); }
+
+  .category-tabs {
+    display: flex;
+    padding: 8px 12px;
+    gap: 4px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--border);
+  }
+  .cat-tab {
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 20px;
+    border: 1px solid var(--border2);
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    transition: all 0.12s;
+  }
+  .cat-tab.active, .cat-tab:hover {
+    background: var(--surface2);
+    color: var(--text);
+    border-color: rgba(255,255,255,0.2);
+  }
+  .cat-tab.active { color: var(--accent); border-color: var(--accent); background: rgba(200,240,96,0.08); }
+
+  .furniture-grid {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    align-content: start;
+  }
+  .furniture-grid::-webkit-scrollbar { width: 4px; }
+  .furniture-grid::-webkit-scrollbar-track { background: transparent; }
+  .furniture-grid::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
+
+  .furniture-item {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    padding: 10px 8px 8px;
+    cursor: grab;
+    transition: all 0.12s;
+    user-select: none;
+    position: relative;
+  }
+  .furniture-item:hover {
+    border-color: var(--border2);
+    background: #1f1f26;
+  }
+  .furniture-item.dragging { opacity: 0.4; }
+  .furniture-item.selected {
+    border-color: var(--accent);
+    background: rgba(200,240,96,0.06);
+  }
+  .furn-icon {
+    width: 100%;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
+  }
+  .furn-icon svg { width: 36px; height: 36px; opacity: 0.7; }
+  .furn-name {
+    font-size: 10px;
+    color: var(--text);
+    text-align: center;
+    line-height: 1.3;
+  }
+  .furn-dims {
+    font-size: 9px;
+    color: var(--muted);
+    font-family: var(--font-mono);
+    text-align: center;
+    margin-top: 2px;
+  }
+
+  /* ── Centre: floor plan canvas ── */
+  .canvas-area {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    overflow: hidden;
+  }
+  .canvas-wrap {
+    position: relative;
+    background: var(--surface);
+    border: 1px solid var(--border2);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.03), 0 32px 64px rgba(0,0,0,0.6);
+  }
+  #floorCanvas {
+    display: block;
+    cursor: crosshair;
+  }
+  .canvas-controls {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+    background: var(--surface);
+    border: 1px solid var(--border2);
+    border-radius: 20px;
+    padding: 4px 8px;
+  }
+  .ctrl-btn {
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    border: none;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 14px;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.1s;
+  }
+  .ctrl-btn:hover { color: var(--text); background: var(--surface2); }
+  .scale-info {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+  }
+
+  /* ── Right panel: placement data / projection ── */
+  .panel-right {
+    background: var(--surface);
+    border-left: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .prop-section {
+    padding: 14px;
+    border-bottom: 1px solid var(--border);
+  }
+  .prop-label {
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .prop-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+  .prop-key { font-size: 11px; color: var(--muted); }
+  .prop-val {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--accent2);
+  }
+  .prop-input {
+    width: 80px;
+    background: var(--surface2);
+    border: 1px solid var(--border2);
+    border-radius: 4px;
+    padding: 3px 7px;
+    color: var(--text);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    text-align: right;
+    outline: none;
+  }
+  .prop-input:focus { border-color: var(--accent); }
+
+  .camera-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px 14px;
+  }
+  .camera-list::-webkit-scrollbar { width: 4px; }
+  .camera-list::-webkit-scrollbar-track { background: transparent; }
+  .camera-list::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
+
+  .camera-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    transition: opacity 0.1s;
+  }
+  .camera-item:hover { opacity: 0.8; }
+  .camera-item:last-child { border-bottom: none; }
+  .cam-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .cam-dot.visible { background: var(--accent); }
+  .cam-dot.hidden  { background: var(--muted); }
+  .cam-name { font-size: 11px; flex: 1; }
+  .cam-uv {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--muted);
+  }
+  .cam-badge {
+    font-size: 9px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    background: rgba(200,240,96,0.12);
+    color: var(--accent);
+  }
+  .cam-badge.hidden-badge {
+    background: rgba(107,106,101,0.2);
+    color: var(--muted);
+  }
+
+  .empty-state {
+    padding: 20px 14px;
+    font-size: 11px;
+    color: var(--muted);
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  /* Drag ghost */
+  #dragGhost {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.75;
+    display: none;
+  }
+
+  /* Status bar */
+  .status-bar {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--muted);
+    background: rgba(12,12,14,0.8);
+    padding: 4px 8px;
+    border-radius: 4px;
+    pointer-events: none;
+    border: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">CoStage <span>/</span> Designer</div>
+  <div class="header-sep"></div>
+  <div class="scene-info" id="sceneInfo">scene: mock_room_5.2×4.1m · 6 cameras</div>
+  <div class="header-actions">
+    <button class="btn" onclick="loadMockScene()">↺ Mock scene</button>
+    <button class="btn" onclick="document.getElementById('sceneFileInput').click()">⬆ Import scene.json</button>
+    <input type="file" id="sceneFileInput" accept=".json" style="display:none" onchange="importSceneFile(this.files[0])">
+    <button class="btn" onclick="clearPlacements()">Clear</button>
+    <button class="btn btn-accent" onclick="exportPlacements()">Export JSON</button>
+  </div>
+</header>
+
+<!-- Left: furniture library -->
+<div class="panel-left">
+  <div class="panel-title">Furniture library</div>
+  <div class="search-wrap">
+    <input type="text" id="searchInput" placeholder="Search furniture…" oninput="filterFurniture(this.value)">
+  </div>
+  <div class="category-tabs" id="categoryTabs"></div>
+  <div class="furniture-grid" id="furnitureGrid"></div>
+</div>
+
+<!-- Centre: floor plan -->
+<div class="canvas-area">
+  <div class="canvas-wrap">
+    <canvas id="floorCanvas"></canvas>
+  </div>
+  <div class="status-bar" id="statusBar">Drag furniture onto the floor plan</div>
+  <div class="canvas-controls">
+    <button class="ctrl-btn" onclick="zoomIn()" title="Zoom in">+</button>
+    <span class="scale-info" id="zoomLabel">100%</span>
+    <button class="ctrl-btn" onclick="zoomOut()" title="Zoom out">−</button>
+    <button class="ctrl-btn" onclick="resetView()" title="Reset view">⊡</button>
+    <button class="ctrl-btn" onclick="toggleGrid()" title="Toggle grid" id="gridBtn">⊞</button>
+  </div>
+</div>
+
+<!-- Right: properties + camera projections -->
+<div class="panel-right">
+  <div class="prop-section">
+    <div class="prop-label">Selected item</div>
+    <div id="selectionProps">
+      <div class="empty-state">Select a placed furniture item to see its world position and per-camera projection data.</div>
+    </div>
+  </div>
+  <div class="prop-section">
+    <div class="prop-label">Camera projections</div>
+  </div>
+  <div class="camera-list" id="cameraList">
+    <div class="empty-state">No item selected. Projections appear here once you place and select a furniture item.</div>
+  </div>
+</div>
+
+<!-- Drag ghost element -->
+<div id="dragGhost"></div>
+
+<script type="module">
+// ─── Spatial parser (image-blaster / COLMAP / mock) ───
+import {
+  createMockScene,
+  parseImageBlasterOutput,
+  parseColmapOutput,
+  projectToPhoto,
+  worldToCanvas,
+  canvasToWorld,
+} from './spatialParser.js';
+
+// ─── Furniture library ───
+const FURNITURE = [
+  { id:'sofa-3seat', name:'Sofa 3-seat', category:'Seating', w:2.2, d:0.95, icon:'sofa', color:'#8B7355' },
+  { id:'sofa-2seat', name:'Sofa 2-seat', category:'Seating', w:1.7, d:0.9, icon:'sofa', color:'#8B7355' },
+  { id:'armchair',   name:'Armchair',   category:'Seating', w:0.9, d:0.9, icon:'chair', color:'#7A8B6F' },
+  { id:'coffee-tbl', name:'Coffee table',category:'Tables',  w:1.2, d:0.6, icon:'table', color:'#6B5B45' },
+  { id:'dining-tbl', name:'Dining table',category:'Tables',  w:1.8, d:0.9, icon:'table', color:'#6B5B45' },
+  { id:'dining-chr', name:'Dining chair',category:'Seating', w:0.5, d:0.5, icon:'chair', color:'#5A6B8A' },
+  { id:'bed-king',   name:'King bed',   category:'Bedroom', w:1.95,d:2.1, icon:'bed', color:'#7B8B9A' },
+  { id:'bed-queen',  name:'Queen bed',  category:'Bedroom', w:1.6, d:2.0, icon:'bed', color:'#7B8B9A' },
+  { id:'nightstand', name:'Nightstand', category:'Bedroom', w:0.5, d:0.45,icon:'table', color:'#8A7B6A' },
+  { id:'dresser',    name:'Dresser',    category:'Bedroom', w:1.2, d:0.5, icon:'cabinet', color:'#8A7B6A' },
+  { id:'desk',       name:'Desk',       category:'Office',  w:1.4, d:0.7, icon:'desk', color:'#6A7B8A' },
+  { id:'bookshelf',  name:'Bookshelf',  category:'Storage', w:0.8, d:0.3, icon:'shelf', color:'#7A6B5A' },
+  { id:'tv-unit',    name:'TV unit',    category:'Storage', w:1.8, d:0.45,icon:'cabinet', color:'#5A5A5A' },
+  { id:'wardrobe',   name:'Wardrobe',   category:'Storage', w:1.6, d:0.6, icon:'cabinet', color:'#7A6B5A' },
+  { id:'rug-lg',     name:'Rug large',  category:'Decor',   w:2.4, d:1.7, icon:'rug', color:'#9A8B7A' },
+  { id:'plant',      name:'Floor plant',category:'Decor',   w:0.5, d:0.5, icon:'plant', color:'#5A8A6A' },
+];
+
+const ICONS = {
+  sofa:   `<svg viewBox="0 0 40 28" fill="none"><rect x="2" y="14" width="36" height="12" rx="3" fill="currentColor" opacity=".7"/><rect x="2" y="10" width="8" height="16" rx="2" fill="currentColor"/><rect x="30" y="10" width="8" height="16" rx="2" fill="currentColor"/><rect x="8" y="8" width="24" height="8" rx="2" fill="currentColor" opacity=".5"/></svg>`,
+  chair:  `<svg viewBox="0 0 28 32" fill="none"><rect x="4" y="14" width="20" height="12" rx="3" fill="currentColor" opacity=".7"/><rect x="4" y="8" width="6" height="18" rx="2" fill="currentColor"/><rect x="18" y="8" width="6" height="18" rx="2" fill="currentColor"/><rect x="8" y="6" width="12" height="10" rx="2" fill="currentColor" opacity=".5"/></svg>`,
+  table:  `<svg viewBox="0 0 36 24" fill="none"><rect x="2" y="6" width="32" height="8" rx="2" fill="currentColor" opacity=".7"/><rect x="6" y="14" width="4" height="8" rx="1" fill="currentColor" opacity=".5"/><rect x="26" y="14" width="4" height="8" rx="1" fill="currentColor" opacity=".5"/></svg>`,
+  bed:    `<svg viewBox="0 0 40 30" fill="none"><rect x="2" y="12" width="36" height="16" rx="3" fill="currentColor" opacity=".7"/><rect x="2" y="4" width="8" height="26" rx="2" fill="currentColor"/><rect x="12" y="8" width="26" height="10" rx="2" fill="currentColor" opacity=".4"/></svg>`,
+  cabinet:`<svg viewBox="0 0 32 28" fill="none"><rect x="2" y="2" width="28" height="24" rx="3" fill="currentColor" opacity=".6"/><line x1="16" y1="2" x2="16" y2="26" stroke="white" stroke-width="1" opacity=".3"/><circle cx="13" cy="14" r="2" fill="white" opacity=".4"/><circle cx="19" cy="14" r="2" fill="white" opacity=".4"/></svg>`,
+  desk:   `<svg viewBox="0 0 36 22" fill="none"><rect x="2" y="4" width="32" height="8" rx="2" fill="currentColor" opacity=".7"/><rect x="4" y="12" width="4" height="8" rx="1" fill="currentColor" opacity=".5"/><rect x="28" y="12" width="4" height="8" rx="1" fill="currentColor" opacity=".5"/></svg>`,
+  shelf:  `<svg viewBox="0 0 24 32" fill="none"><rect x="2" y="2" width="20" height="28" rx="2" fill="currentColor" opacity=".5"/><rect x="4" y="10" width="16" height="2" fill="white" opacity=".3"/><rect x="4" y="18" width="16" height="2" fill="white" opacity=".3"/></svg>`,
+  rug:    `<svg viewBox="0 0 40 28" fill="none"><rect x="2" y="2" width="36" height="24" rx="4" fill="currentColor" opacity=".5"/><rect x="6" y="6" width="28" height="16" rx="2" fill="currentColor" opacity=".3"/><rect x="10" y="10" width="20" height="8" rx="1" fill="currentColor" opacity=".2"/></svg>`,
+  plant:  `<svg viewBox="0 0 24 32" fill="none"><ellipse cx="12" cy="10" rx="9" ry="8" fill="currentColor" opacity=".7"/><rect x="10" y="18" width="4" height="8" rx="1" fill="currentColor" opacity=".6"/><ellipse cx="12" cy="26" rx="6" ry="2" fill="currentColor" opacity=".4"/></svg>`,
+};
+
+// ─── App state ───
+let scene = null;
+let placements = [];       // [{id, furnitureId, worldX, worldZ, rotation, furniture}]
+let selectedId = null;
+let zoom = 1;
+let showGrid = true;
+let dragItem = null;       // furniture being dragged from library
+let activeCat = 'All';
+let CANVAS_W = 540, CANVAS_H = 420;
+const SCALE = 80;          // pixels per metre at zoom=1
+
+const canvas = document.getElementById('floorCanvas');
+const ctx = canvas.getContext('2d');
+
+// ─── Init ───
+function setScene(newScene) {
+  scene = newScene;
+  placements = [];
+  selectedId = null;
+  CANVAS_W = Math.round(scene.roomDimensions.width * SCALE);
+  CANVAS_H = Math.round(scene.roomDimensions.depth * SCALE);
+  canvas.width = CANVAS_W;
+  canvas.height = CANVAS_H;
+  const dims = `${scene.roomDimensions.width.toFixed(2)}×${scene.roomDimensions.depth.toFixed(2)}m`;
+  document.getElementById('sceneInfo').textContent =
+    `scene: ${scene.sourceFormat} · ${dims} · ${scene.cameras.length} cameras`;
+  render();
+  updateRightPanel();
+}
+
+window.loadMockScene = function() {
+  setScene(createMockScene());
+};
+
+window.importSceneFile = function(file) {
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    let raw;
+    try {
+      raw = JSON.parse(e.target.result);
+    } catch {
+      alert('Could not parse that file as JSON.');
+      return;
+    }
+    try {
+      const parsed = raw.camera_poses
+        ? parseImageBlasterOutput(raw)
+        : parseColmapOutput(raw.cameras, raw.images, raw.hints || {});
+      setScene(parsed);
+    } catch (err) {
+      alert(`Could not load scene: ${err.message}`);
+    }
+  };
+  reader.readAsText(file);
+  // Allow re-importing the same file path later
+  document.getElementById('sceneFileInput').value = '';
+};
+
+function init() {
+  buildFurnitureGrid();
+  buildCategoryTabs();
+  loadMockScene();
+  setupCanvasEvents();
+  setupDragDrop();
+}
+
+// ─── Render ───
+function render() {
+  if (!scene) return;
+  ctx.clearRect(0, 0, CANVAS_W, CANVAS_H);
+  ctx.save();
+
+  // Floor fill
+  ctx.fillStyle = '#16161c';
+  ctx.beginPath();
+  const poly = scene.floorPolygon;
+  poly.forEach((p,i) => {
+    const cp = worldToCanvas({x:p.x,z:p.y}, {width:CANVAS_W,height:CANVAS_H}, scene.roomDimensions);
+    i===0 ? ctx.moveTo(cp.x,cp.y) : ctx.lineTo(cp.x,cp.y);
+  });
+  ctx.closePath();
+  ctx.fill();
+
+  // Grid
+  if (showGrid) drawGrid();
+
+  // Floor border
+  ctx.strokeStyle = 'rgba(255,255,255,0.15)';
+  ctx.lineWidth = 1.5;
+  ctx.beginPath();
+  poly.forEach((p,i) => {
+    const cp = worldToCanvas({x:p.x,z:p.y}, {width:CANVAS_W,height:CANVAS_H}, scene.roomDimensions);
+    i===0 ? ctx.moveTo(cp.x,cp.y) : ctx.lineTo(cp.x,cp.y);
+  });
+  ctx.closePath();
+  ctx.stroke();
+
+  // Dimension labels
+  drawDimensions();
+
+  // Camera positions
+  scene.cameras.forEach((cam, i) => {
+    const cx = cam.cameraToWorld[12];
+    const cz = cam.cameraToWorld[14];
+    const cp = worldToCanvas({x:cx,z:cz}, {width:CANVAS_W,height:CANVAS_H}, scene.roomDimensions);
+    // Check if inside canvas bounds (cameras may be outside room)
+    const clampedX = Math.max(8, Math.min(CANVAS_W-8, cp.x));
+    const clampedY = Math.max(8, Math.min(CANVAS_H-8, cp.y));
+    ctx.beginPath();
+    ctx.arc(clampedX, clampedY, 5, 0, Math.PI*2);
+    ctx.fillStyle = 'rgba(96,200,240,0.6)';
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(96,200,240,0.9)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+    ctx.fillStyle = 'rgba(96,200,240,0.8)';
+    ctx.font = '9px DM Mono, monospace';
+    ctx.fillText(`C${i+1}`, clampedX+7, clampedY+3);
+  });
+
+  // Placed furniture
+  placements.forEach(p => drawFurniturePiece(p));
+
+  ctx.restore();
+}
+
+function drawGrid() {
+  const step = SCALE * 0.5; // 0.5m grid
+  ctx.strokeStyle = 'rgba(255,255,255,0.04)';
+  ctx.lineWidth = 0.5;
+  for (let x=0; x<=CANVAS_W; x+=step) {
+    ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,CANVAS_H); ctx.stroke();
+  }
+  for (let y=0; y<=CANVAS_H; y+=step) {
+    ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(CANVAS_W,y); ctx.stroke();
+  }
+  // 1m grid slightly stronger
+  ctx.strokeStyle = 'rgba(255,255,255,0.07)';
+  ctx.lineWidth = 0.5;
+  for (let x=0; x<=CANVAS_W; x+=SCALE) {
+    ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,CANVAS_H); ctx.stroke();
+  }
+  for (let y=0; y<=CANVAS_H; y+=SCALE) {
+    ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(CANVAS_W,y); ctx.stroke();
+  }
+}
+
+function drawDimensions() {
+  const { width, depth } = scene.roomDimensions;
+  ctx.fillStyle = 'rgba(107,106,101,0.8)';
+  ctx.font = '10px DM Mono, monospace';
+  ctx.textAlign = 'center';
+  ctx.fillText(`${width.toFixed(1)}m`, CANVAS_W/2, CANVAS_H - 6);
+  ctx.save();
+  ctx.translate(8, CANVAS_H/2);
+  ctx.rotate(-Math.PI/2);
+  ctx.fillText(`${depth.toFixed(1)}m`, 0, 0);
+  ctx.restore();
+  ctx.textAlign = 'left';
+}
+
+function drawFurniturePiece(p) {
+  const furn = p.furniture;
+  const cp = worldToCanvas({x:p.worldX,z:p.worldZ}, {width:CANVAS_W,height:CANVAS_H}, scene.roomDimensions);
+  const pw = furn.w * SCALE;
+  const pd = furn.d * SCALE;
+  const isSelected = p.id === selectedId;
+
+  ctx.save();
+  ctx.translate(cp.x, cp.y);
+  ctx.rotate(p.rotation * Math.PI / 180);
+
+  // Shadow
+  ctx.shadowColor = 'rgba(0,0,0,0.5)';
+  ctx.shadowBlur = 8;
+  ctx.shadowOffsetX = 2;
+  ctx.shadowOffsetY = 2;
+
+  // Fill
+  ctx.fillStyle = isSelected
+    ? 'rgba(200,240,96,0.25)'
+    : `${furn.color}55`;
+  ctx.strokeStyle = isSelected ? '#c8f060' : `${furn.color}cc`;
+  ctx.lineWidth = isSelected ? 1.5 : 1;
+
+  ctx.beginPath();
+  ctx.roundRect(-pw/2, -pd/2, pw, pd, 3);
+  ctx.fill();
+  ctx.shadowBlur = 0; ctx.shadowOffsetX = 0; ctx.shadowOffsetY = 0;
+  ctx.stroke();
+
+  // Label
+  ctx.fillStyle = isSelected ? '#c8f060' : 'rgba(232,230,223,0.8)';
+  ctx.font = `${Math.max(8, Math.min(11, pw/8))}px Syne, sans-serif`;
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  const label = furn.name.length > 10 ? furn.name.slice(0,9)+'…' : furn.name;
+  ctx.fillText(label, 0, 0);
+
+  // Direction indicator (front edge)
+  ctx.strokeStyle = isSelected ? 'rgba(200,240,96,0.6)' : 'rgba(255,255,255,0.2)';
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(-pw/2+4, -pd/2+2);
+  ctx.lineTo(pw/2-4, -pd/2+2);
+  ctx.stroke();
+
+  ctx.restore();
+}
+
+// ─── Canvas interaction ───
+function setupCanvasEvents() {
+  canvas.addEventListener('click', e => {
+    const pos = canvasPos(e);
+    const hit = hitTest(pos);
+    selectedId = hit ? hit.id : null;
+    render();
+    updateRightPanel();
+  });
+
+  canvas.addEventListener('dblclick', e => {
+    const pos = canvasPos(e);
+    const hit = hitTest(pos);
+    if (hit) removePlacement(hit.id);
+  });
+
+  canvas.addEventListener('mousemove', e => {
+    const pos = canvasPos(e);
+    const worldPos = canvasToWorld(pos, {width:CANVAS_W,height:CANVAS_H}, scene.roomDimensions);
+    document.getElementById('statusBar').textContent =
+      `${worldPos.x.toFixed(2)}m, ${worldPos.z.toFixed(2)}m  ·  dbl-click to remove`;
+  });
+}
+
+function canvasPos(e) {
+  const r = canvas.getBoundingClientRect();
+  return { x: e.clientX - r.left, y: e.clientY - r.top };
+}
+
+function hitTest(pos) {
+  for (let i=placements.length-1; i>=0; i--) {
+    const p = placements[i];
+    const cp = worldToCanvas({x:p.worldX,z:p.worldZ},{width:CANVAS_W,height:CANVAS_H},scene.roomDimensions);
+    const pw = p.furniture.w * SCALE / 2;
+    const pd = p.furniture.d * SCALE / 2;
+    if (Math.abs(pos.x-cp.x) <= pw && Math.abs(pos.y-cp.y) <= pd) return p;
+  }
+  return null;
+}
+
+// ─── Drag & Drop from furniture library ───
+function setupDragDrop() {
+  const ghost = document.getElementById('dragGhost');
+
+  document.addEventListener('dragover', e => {
+    e.preventDefault();
+    ghost.style.left = (e.clientX - 20) + 'px';
+    ghost.style.top  = (e.clientY - 20) + 'px';
+  });
+
+  canvas.addEventListener('dragover', e => {
+    e.preventDefault();
+    canvas.style.boxShadow = '0 0 0 2px #c8f060 inset';
+  });
+
+  canvas.addEventListener('dragleave', () => {
+    canvas.style.boxShadow = '';
+  });
+
+  canvas.addEventListener('drop', e => {
+    e.preventDefault();
+    canvas.style.boxShadow = '';
+    if (!dragItem || !scene) return;
+    const pos = canvasPos(e);
+    const worldPos = canvasToWorld(pos, {width:CANVAS_W,height:CANVAS_H}, scene.roomDimensions);
+    addPlacement(dragItem, worldPos.x, worldPos.z);
+    dragItem = null;
+    ghost.style.display = 'none';
+  });
+
+  document.addEventListener('dragend', () => {
+    dragItem = null;
+    ghost.style.display = 'none';
+    canvas.style.boxShadow = '';
+  });
+}
+
+function addPlacement(furniture, worldX, worldZ) {
+  const id = `place_${Date.now()}`;
+  placements.push({ id, furnitureId: furniture.id, worldX, worldZ, rotation: 0, furniture });
+  selectedId = id;
+  render();
+  updateRightPanel();
+}
+
+function removePlacement(id) {
+  placements = placements.filter(p => p.id !== id);
+  if (selectedId === id) selectedId = null;
+  render();
+  updateRightPanel();
+}
+
+// ─── Furniture library UI ───
+function buildCategoryTabs() {
+  const cats = ['All', ...new Set(FURNITURE.map(f => f.category))];
+  const el = document.getElementById('categoryTabs');
+  el.innerHTML = cats.map(c =>
+    `<button class="cat-tab ${c==='All'?'active':''}" onclick="setCat('${c}')">${c}</button>`
+  ).join('');
+}
+
+window.setCat = function(cat) {
+  activeCat = cat;
+  document.querySelectorAll('.cat-tab').forEach(b => b.classList.toggle('active', b.textContent===cat));
+  buildFurnitureGrid();
+};
+
+window.filterFurniture = function(q) {
+  buildFurnitureGrid(q);
+};
+
+function buildFurnitureGrid(query='') {
+  const q = query.toLowerCase();
+  const items = FURNITURE.filter(f =>
+    (activeCat === 'All' || f.category === activeCat) &&
+    (!q || f.name.toLowerCase().includes(q))
+  );
+  const el = document.getElementById('furnitureGrid');
+  el.innerHTML = items.map(f => `
+    <div class="furniture-item" draggable="true"
+      data-id="${f.id}"
+      ondragstart="startDrag(event,'${f.id}')"
+    >
+      <div class="furn-icon" style="color:${f.color}">${ICONS[f.icon]||ICONS.table}</div>
+      <div class="furn-name">${f.name}</div>
+      <div class="furn-dims">${f.w}×${f.d}m</div>
+    </div>
+  `).join('');
+}
+
+window.startDrag = function(e, id) {
+  dragItem = FURNITURE.find(f => f.id===id);
+  const ghost = document.getElementById('dragGhost');
+  ghost.style.display = 'block';
+  ghost.innerHTML = `<div style="background:${dragItem.color}55;border:1px solid ${dragItem.color};border-radius:6px;padding:8px 12px;font-size:11px;color:${dragItem.color};font-family:Syne,sans-serif;">${dragItem.name}</div>`;
+  e.dataTransfer.setDragImage(new Image(), 0, 0);
+};
+
+// ─── Right panel ───
+function updateRightPanel() {
+  const sel = placements.find(p => p.id === selectedId);
+  const propsEl = document.getElementById('selectionProps');
+  const camListEl = document.getElementById('cameraList');
+
+  if (!sel) {
+    propsEl.innerHTML = `<div class="empty-state">Select a placed item to inspect.</div>`;
+    camListEl.innerHTML = `<div class="empty-state">No item selected.</div>`;
+    return;
+  }
+
+  propsEl.innerHTML = `
+    <div class="prop-row">
+      <span class="prop-key">Item</span>
+      <span class="prop-val">${sel.furniture.name}</span>
+    </div>
+    <div class="prop-row">
+      <span class="prop-key">World X</span>
+      <input class="prop-input" type="number" step="0.05"
+        value="${sel.worldX.toFixed(2)}"
+        onchange="updatePos('${sel.id}','x',+this.value)">
+    </div>
+    <div class="prop-row">
+      <span class="prop-key">World Z</span>
+      <input class="prop-input" type="number" step="0.05"
+        value="${sel.worldZ.toFixed(2)}"
+        onchange="updatePos('${sel.id}','z',+this.value)">
+    </div>
+    <div class="prop-row">
+      <span class="prop-key">Rotation°</span>
+      <input class="prop-input" type="number" step="5"
+        value="${sel.rotation}"
+        onchange="updatePos('${sel.id}','r',+this.value)">
+    </div>
+    <div class="prop-row">
+      <span class="prop-key">Size</span>
+      <span class="prop-val">${sel.furniture.w}×${sel.furniture.d}m</span>
+    </div>
+  `;
+
+  // Camera projections
+  if (!scene) return;
+  const projections = scene.cameras.map(cam => {
+    const proj = projectToPhoto({x:sel.worldX, z:sel.worldZ}, cam);
+    return { cam, proj };
+  });
+
+  camListEl.innerHTML = projections.map(({cam, proj}) => `
+    <div class="camera-item">
+      <div class="cam-dot ${proj.visible ? 'visible' : 'hidden'}"></div>
+      <span class="cam-name">${cam.photoId}</span>
+      ${proj.visible
+        ? `<span class="cam-uv">${(proj.u*100).toFixed(1)}% ${(proj.v*100).toFixed(1)}%</span>
+           <span class="cam-badge">visible</span>`
+        : `<span class="cam-badge hidden-badge">occluded</span>`
+      }
+    </div>
+  `).join('');
+}
+
+window.updatePos = function(id, axis, val) {
+  const p = placements.find(p=>p.id===id);
+  if (!p) return;
+  if (axis==='x') p.worldX = val;
+  if (axis==='z') p.worldZ = val;
+  if (axis==='r') p.rotation = val;
+  render();
+  updateRightPanel();
+};
+
+// ─── Controls ───
+window.zoomIn = function() { zoom = Math.min(2, zoom+0.1); applyZoom(); };
+window.zoomOut = function() { zoom = Math.max(0.4, zoom-0.1); applyZoom(); };
+window.resetView = function() { zoom=1; applyZoom(); };
+window.toggleGrid = function() {
+  showGrid = !showGrid;
+  document.getElementById('gridBtn').style.color = showGrid ? 'var(--accent)' : 'var(--muted)';
+  render();
+};
+function applyZoom() {
+  const wrap = canvas.closest('.canvas-wrap');
+  wrap.style.transform = `scale(${zoom})`;
+  wrap.style.transformOrigin = 'center';
+  document.getElementById('zoomLabel').textContent = Math.round(zoom*100)+'%';
+}
+
+window.clearPlacements = function() {
+  placements = [];
+  selectedId = null;
+  render();
+  updateRightPanel();
+};
+
+window.exportPlacements = function() {
+  if (!scene) return;
+  const data = {
+    sceneSource: scene.sourceFormat,
+    roomDimensions: scene.roomDimensions,
+    cameras: scene.cameras,
+    placements: placements.map(p => ({
+      furnitureId: p.furnitureId,
+      name: p.furniture.name,
+      worldPosition: { x: +p.worldX.toFixed(4), z: +p.worldZ.toFixed(4) },
+      rotation: p.rotation,
+      dimensions: { width: p.furniture.w, depth: p.furniture.d },
+      projections: scene.cameras.map(cam => {
+        const proj = projectToPhoto({x:p.worldX,z:p.worldZ}, cam);
+        return {
+          photoId: cam.photoId,
+          visible: proj.visible,
+          uv: proj.visible ? { u:+proj.u.toFixed(4), v:+proj.v.toFixed(4) } : null,
+          depth: +proj.depth.toFixed(3),
+        };
+      }),
+    })),
+  };
+  const blob = new Blob([JSON.stringify(data, null, 2)], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href=url; a.download='costage-placements.json'; a.click();
+  URL.revokeObjectURL(url);
+};
+
+init();
+</script>
+</body>
+</html>

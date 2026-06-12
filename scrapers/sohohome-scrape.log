@@ -1,0 +1,1476 @@
+[2026-06-09T17:20:33.878Z] === Soho Home catalogue scraper ===
+[2026-06-09T17:20:36.924Z] 
+══ /us/furniture/sofas ══════════════
+[2026-06-09T17:20:36.927Z]   Loading: /us/furniture/sofas
+[2026-06-09T17:20:50.499Z]   Found 21 product links
+[2026-06-09T17:20:50.503Z]   Scraping [living room|sofa]: edison-sectional-l-shape-sofa
+[2026-06-09T17:20:53.415Z]   ✓ Edison Modular Sofa, L-Shape Sofa, Velvet, Rust US | $13,780 | 330cm W × 230cm D × 80cm H | 4 imgs
+[2026-06-09T17:20:53.416Z]   Scraping [living room|sofa]: edison-sectional-corner-sofa
+[2026-06-09T17:20:55.931Z]   ✓ Edison Modular Sofa, Corner Sofa, Velvet, Rust US | $17,075 | 330cm W × 330cm D × 80cm H | 4 imgs
+[2026-06-09T17:20:55.932Z]   Scraping [living room|sofa]: blair-two-seater-sofa-velvet-lichen
+[2026-06-09T17:20:58.233Z]   ✓ Blair Two Seater Sofa, Velvet, Lichen, US | $2,095 | 149cm W × 74cm D × 72cm H | 4 imgs
+[2026-06-09T17:20:58.233Z]   Scraping [living room|sofa]: belmont-sofa-three-seater-sofa
+[2026-06-09T17:21:00.960Z]   ✓ Belmont Sofa, Three Seater, Velvet, Mustard, US | $9,995 | 274cm W × 135cm D × 81cm H | 4 imgs
+[2026-06-09T17:21:00.961Z]   Scraping [living room|sofa]: theodore-two-seater-sofa
+[2026-06-09T17:21:03.485Z]   ✓ Theodore Two Seater Sofa, Velvet, Rust, US | $4,095 | 129cm W × 79cm D × 81cm H | 4 imgs
+[2026-06-09T17:21:03.486Z]   Scraping [living room|sofa]: mossley-sofa-leather
+[2026-06-09T17:21:06.630Z]   ✓ Mossley Three Seater Sofa, Leather, Sangria, US | $10,995 | 233cm W × 97cm D × 75cm H | 4 imgs
+[2026-06-09T17:21:06.632Z]   Scraping [living room|sofa]: mossley-sofa
+[2026-06-09T17:21:09.146Z]   ✓ Mossley Three Seater Sofa, Linen, Sienna, US | $6,395 | 233cm W × 97cm D × 75cm H | 4 imgs
+[2026-06-09T17:21:09.149Z]   Scraping [living room|sofa]: truro-sectional-sofa-textured-linen
+[2026-06-09T17:21:11.620Z]   ✓ Truro Sectional Sofa, Three Seater, Textured Linen , US | $4,390 | 240cm W × 102cm D × 65cm H | 4 imgs
+[2026-06-09T17:21:11.623Z]   ✗ Unclassified: Truro Ottoman, Textured Linen Price $2,195 Regular Price $1,866 Member Made-to-order
+[2026-06-09T17:21:11.623Z]   Scraping [living room|sofa]: hamish-sectional-corner-sofa
+[2026-06-09T17:21:14.398Z]   ✓ Hamish Sectional Corner Sofa, Velvet, Lichen, US | $13,895 | 302cm W × 102cm D × 74cm H | 4 imgs
+[2026-06-09T17:21:14.399Z]   Scraping [living room|sofa]: truro-sectional-sofa-corner-sofa-textured-linen
+[2026-06-09T17:21:16.807Z]   ✓ Truro Modular Sofa, Corner Sofa, Textured Linen US | $10,575 | 312cm W × 312cm D × 65cm H | 4 imgs
+[2026-06-09T17:21:16.809Z]   Scraping [living room|sofa]: marcia-three-seater-sofa-leather
+[2026-06-09T17:21:19.465Z]   ✓ Marcia Three Seater Sofa, Leather, Chestnut, US | $9,495 | 221cm W × 87cm D × 78cm H | 4 imgs
+[2026-06-09T17:21:19.466Z]   Scraping [living room|sofa]: hamish-sectional-sofa
+[2026-06-09T17:21:22.503Z]   ✓ Hamish Sectional Sofa, Three Seater, Velvet, Rust, US | $5,795 | 203cm W × 102cm D × 74cm H | 4 imgs
+[2026-06-09T17:21:22.504Z]   Scraping [living room|sofa]: conall-three-seater-sofa
+[2026-06-09T17:21:25.207Z]   ✓ Conall Three Seater Sofa, Velvet, Olive, US | $5,395 | 224cm W × 104cm D × 76cm H | 4 imgs
+[2026-06-09T17:21:25.209Z]   Scraping [living room|sofa]: odell-sectional-sofa-corner-sofa
+[2026-06-09T17:21:28.008Z]   ✓ Odell Sectional Sofa, Corner Sofa, Linen, Bisque, US | $11,580 | 307cm W × 95cm D × 76cm H | 4 imgs
+[2026-06-09T17:21:28.009Z]   Scraping [living room|sofa]: odell-sectional-sofa-textured-linen
+[2026-06-09T17:21:30.882Z]   ✓ Odell Sectional Sofa, Three Seater, Textured Linen, US | $5,590 | 212cm W × 95cm D × 76cm H | 4 imgs
+[2026-06-09T17:21:30.883Z]   Scraping [living room|sofa]: marcia-three-seater-sofa
+[2026-06-09T17:21:33.616Z]   ✓ Marcia Three Seater Sofa, Linen, Bisque, US | $6,395 | 221cm W × 87cm D × 78cm H | 4 imgs
+[2026-06-09T17:21:33.618Z]   Scraping [living room|sofa]: noelle-sectional-curved-sofa
+[2026-06-09T17:21:36.313Z]   ✓ Noelle Sectional Curved Sofa, Four Seater, Textured Wool Boucle, Pistachio, US | $14,990 | 262cm W × 131cm D × 79cm H | 4 imgs
+[2026-06-09T17:21:36.314Z]   Scraping [living room|sofa]: rava-three-seater-sofa
+[2026-06-09T17:21:39.126Z]   ✓ Rava Three Seater Sofa, Velvet, Grey Blue, US | $4,595 | 231cm W × 102cm D × 74cm H | 4 imgs
+[2026-06-09T17:21:39.128Z]   Scraping [living room|sofa]: odell-deeper-sit-corner-sectional-sofa
+[2026-06-09T17:21:41.861Z]   ✓ Odell Deeper Sit Sectional Sofa, Corner Sofa, Velvet Rust US | $11,780 | 316cm W × 105cm D × 83cm H | 4 imgs
+[2026-06-09T17:21:41.863Z]   Scraping [living room|sofa]: odell-sectional-sofa
+[2026-06-09T17:21:44.338Z]   ✓ Odell Sectional Sofa, Three Seater, Linen, Bisque, US | $6,190 | 212cm W × 95cm D × 76cm H | 4 imgs
+[2026-06-09T17:21:44.339Z] 
+══ /us/furniture/armchairs ══════════════
+[2026-06-09T17:21:44.339Z]   Loading: /us/furniture/armchairs
+[2026-06-09T17:21:55.668Z]   Found 21 product links
+[2026-06-09T17:21:55.672Z]   Scraping [living room|armchair]: blair-tub-armchair-velvet
+[2026-06-09T17:21:58.255Z]   ✓ Blair Tub Armchair, Velvet, Rust, US | $1,395 | 77.5cm W × 73cm D × 72cm H | 4 imgs
+[2026-06-09T17:21:58.256Z]   Scraping [living room|armchair]: vivienne-armchair-linen-chenille
+[2026-06-09T17:22:00.622Z]   ✓ Vivienne Armchair, Linen Chenille, Chocolate, US | $2,445 | 95cm W × 89cm D × 69cm H | 4 imgs
+[2026-06-09T17:22:00.623Z]   Scraping [living room|armchair]: theodore-burl-armchair-linen-chenille-bordeaux
+[2026-06-09T17:22:03.055Z]   ✓ Theodore Burl Armchair, Linen Chenille, Bordeaux, US | $2,095 | 64cm W × 75cm D × 85cm H | 4 imgs
+[2026-06-09T17:22:03.056Z]   Scraping [living room|armchair]: mila-armchair-boucle-jacquard-olive
+[2026-06-09T17:22:05.659Z]   ✓ Mila Armchair, Boucle Jacquard, Olive, US | $1,735 | 78cm W × 88cm D × 69cm H | 4 imgs
+[2026-06-09T17:22:05.663Z]   Scraping [living room|armchair]: theodore-armchair-boucle-jacquard-marine
+[2026-06-09T17:22:09.522Z]   ✓ Theodore Armchair, Boucle Jacquard, Marine , US | $1,255 | 64cm W × 75cm D × 85cm H | 4 imgs
+[2026-06-09T17:22:09.523Z]   Scraping [living room|armchair]: ewan-armchair-leather-chestnut
+[2026-06-09T17:22:12.128Z]   ✓ Ewan Armchair, Leather, Chestnut, US | $4,195 | 82cm W × 90cm D × 73cm H | 4 imgs
+[2026-06-09T17:22:12.129Z]   Scraping [living room|armchair]: eddie-armchair-jago-jacquard
+[2026-06-09T17:22:14.701Z]   ✓ Eddie Armchair, Jago Jacquard, US | $1,675 | 71cm W × 78cm D × 71cm H | 4 imgs
+[2026-06-09T17:22:14.705Z]   Scraping [living room|armchair]: vivienne-armchair-theron
+[2026-06-09T17:22:17.181Z]   ✓ Vivienne Armchair, Theron, US | $2,795 | 95cm W × 89cm D × 69cm H | 4 imgs
+[2026-06-09T17:22:17.183Z]   Scraping [living room|armchair]: theodore-armchair-boucle-natural
+[2026-06-09T17:22:19.637Z]   ✓ Theodore Armchair, Boucle, Natural, US | $1,495 | 64cm W × 75cm D × 85cm H | 4 imgs
+[2026-06-09T17:22:19.639Z]   Scraping [living room|armchair]: ewan-armchair
+[2026-06-09T17:22:22.170Z]   ✓ Ewan Armchair, Antique Rose Velvet, US | $2,095 | 82cm W × 90cm D × 73cm H | 4 imgs
+[2026-06-09T17:22:22.172Z]   Scraping [living room|armchair]: garret-armchair-floral-ikat
+[2026-06-09T17:22:24.767Z]   ✓ Garret Armchair, Floral Ikat, US | $4,395 | 97cm W × 91cm D × 76cm H | 4 imgs
+[2026-06-09T17:22:24.769Z]   Scraping [living room|armchair]: vivienne-armchair
+[2026-06-09T17:22:27.341Z]   ✓ Vivienne Armchair, Velvet, Rust, US | $2,595 | 95cm W × 89cm D × 69cm H | 4 imgs
+[2026-06-09T17:22:27.342Z]   → cap reached: living room|sofa
+[2026-06-09T17:22:27.342Z]   Scraping [living room|armchair]: vivienne-armchair-textured-wool-boucle
+[2026-06-09T17:22:29.970Z]   ✓ Vivienne Armchair, Textured Wool Boucle, Kelp, US | $4,395 | 95cm W × 89cm D × 69cm H | 4 imgs
+[2026-06-09T17:22:29.972Z]   → skip: mila-armchair-boucle-jacquard-olive
+[2026-06-09T17:22:29.972Z]   → cap reached: living room|sofa
+[2026-06-09T17:22:29.972Z]   Scraping [living room|armchair]: theodore-oak-armchair-textured-wool-boucle
+[2026-06-09T17:22:32.442Z]   ✓ Theodore Oak Armchair, Textured Wool Boucle, Pistachio, US | $2,795 | 64cm W × 75cm D × 85cm H | 4 imgs
+[2026-06-09T17:22:32.444Z]   Scraping [living room|armchair]: theodore-armchair-textured-wool-boucle
+[2026-06-09T17:22:35.210Z]   ✓ Theodore Armchair, Textured Wool Boucle, Pistachio, US | $2,795 | 64cm W × 75cm D × 85cm H | 4 imgs
+[2026-06-09T17:22:35.212Z]   Scraping [living room|armchair]: theodore-oak-armchair
+[2026-06-09T17:22:37.804Z]   ✓ Theodore Oak Armchair, Velvet Olive, US | $1,695 | 64cm W × 75cm D × 85cm H | 4 imgs
+[2026-06-09T17:22:37.808Z]   Scraping [living room|armchair]: caleb-armchair-dark-burl-velvet
+[2026-06-09T17:22:40.341Z]   ✓ Caleb Armchair, Dark Burl, Velvet, Taupe, US | $3,195 | 112cm W × 85cm D × 79cm H | 4 imgs
+[2026-06-09T17:22:40.342Z]   Scraping [living room|armchair]: sydney-armchair
+[2026-06-09T17:22:42.925Z]   ✓ Sydney Armchair, Linen, Bisque, US | $2,595 | 100cm W × 83cm D × 86cm H | 4 imgs
+[2026-06-09T17:22:42.927Z] 
+══ /us/furniture/coffee-tables-side-tables ══════════════
+[2026-06-09T17:22:42.927Z]   Loading: /us/furniture/coffee-tables-side-tables
+[2026-06-09T17:22:53.963Z]   Found 47 product links
+[2026-06-09T17:22:53.966Z]   Scraping [living room|coffee table]: germain-coffee-table-abstract-burl
+[2026-06-09T17:22:56.460Z]   ✓ Germain Coffee Table, Abstract Burl | $4,895 | 120cm W × 120cm D × 35cm H | 4 imgs
+[2026-06-09T17:22:56.461Z]   Scraping [living room|coffee table]: holden-coffee-table
+[2026-06-09T17:22:59.000Z]   ✓ Holden Coffee Table | $2,305 | 95cm W × 95cm D × 39cm H | 4 imgs
+[2026-06-09T17:22:59.004Z]   Scraping [living room|coffee table]: ivy-coffee-table
+[2026-06-09T17:23:01.592Z]   ✓ Ivy Coffee Table, Italian Ocean Grey Marble | $2,575 | 90cm W × 90cm D × 36cm H | 4 imgs
+[2026-06-09T17:23:01.595Z]   Scraping [living room|side table]: sloane-side-table-abstract-burl
+[2026-06-09T17:23:04.088Z]   ✓ Sloane Side Table, Abstract Burl | $1,195 | 38cm W × 38cm D × 60cm H | 4 imgs
+[2026-06-09T17:23:04.093Z]   Scraping [living room|side table]: vito-side-table-tall-arabescato
+[2026-06-09T17:23:06.666Z]   ✓ Vito Side Table, Tall, Arabescato Marble | $695 | 29cm W × 29cm D × 60cm H | 4 imgs
+[2026-06-09T17:23:06.672Z]   Scraping [living room|coffee table]: vito-coffee-table-arabescato
+[2026-06-09T17:23:09.401Z]   ✓ Vito Coffee Table, Arabescato Marble | $2,995 | 95cm W × 95cm D × 35cm H | 4 imgs
+[2026-06-09T17:23:09.404Z]   Scraping [living room|side table]: ivy-side-table
+[2026-06-09T17:23:11.811Z]   ✓ Ivy Side Table, Italian Ocean Grey Marble | $1,315 | 48cm W × 48cm D × 51cm H | 4 imgs
+[2026-06-09T17:23:11.812Z]   Scraping [living room|coffee table]: tisbury-oval-coffee-table
+[2026-06-09T17:23:14.539Z]   ✓ Tisbury Oval Coffee Table, Terra Bianca Marble | $2,095 | 120cm W × 80cm D × 40cm H | 4 imgs
+[2026-06-09T17:23:14.542Z]   ✗ Unclassified: Delos Plinth, Dragon Onyx Regular price $4,095 Price $2,455 Regular Regular price $3,481 Price $1,964 Member
+[2026-06-09T17:23:14.543Z]   Scraping [living room|coffee table]: barrel-coffee-table-dark-oak
+[2026-06-09T17:23:17.040Z]   ✓ Barrel Coffee Table, Dark Oak | $1,745 | 95.2cm W × 95.2cm D × 45cm H | 4 imgs
+[2026-06-09T17:23:17.043Z]   Scraping [living room|side table]: dawson-side-table-oak-burl-olive
+[2026-06-09T17:23:19.651Z]   ✓ Dawson Side Table, Oak Burl, Olive | $1,395 | 38cm W × 38cm D × 60cm H | 4 imgs
+[2026-06-09T17:23:19.653Z]   Scraping [living room|side table]: barrel-side-table-dark-oak
+[2026-06-09T17:23:22.245Z]   ✓ Barrel Side Table, Dark Oak | $1,395 | 38cm W × 38cm D × 60cm H | 4 imgs
+[2026-06-09T17:23:22.247Z]   Scraping [living room|coffee table]: pascal-coffee-table
+[2026-06-09T17:23:24.832Z]   ✓ Pascal Coffee Table | $2,695 | 120cm W × 80cm D × 38cm H | 4 imgs
+[2026-06-09T17:23:24.837Z]   Scraping [living room|coffee table]: dawson-coffee-table-olive-ash-burl
+[2026-06-09T17:23:27.236Z]   ✓ Dawson Coffee Table, Olive Ash Burl | $3,695 | 120cm W × 80cm D × 30cm H | 4 imgs
+[2026-06-09T17:23:27.239Z]   Scraping [living room|coffee table]: ted-coffee-table
+[2026-06-09T17:23:29.897Z]   ✓ Ted Coffee Table | $4,695 | 120cm W × 120cm D × 40cm H | 4 imgs
+[2026-06-09T17:23:29.902Z]   Scraping [living room|side table]: astoria-side-table
+[2026-06-09T17:23:32.379Z]   ✓ Astoria Side Table | $2,095 | 48cm W × 48cm D × 60cm H | 4 imgs
+[2026-06-09T17:23:32.380Z]   Scraping [living room|side table]: nelson-side-table-breccia-pernice-marble
+[2026-06-09T17:23:34.923Z]   ✓ Nelson Side Table, Breccia Pernice Marble | $2,695 | 28cm W × 28cm D × 58cm H | 4 imgs
+[2026-06-09T17:23:34.926Z]   Scraping [living room|side table]: soho-cinema-side-table
+[2026-06-09T17:23:37.259Z]   ✓ Soho Cinema Side Table | $695 | 45cm W × 32cm D × 70cm H | 4 imgs
+[2026-06-09T17:23:37.260Z]   Scraping [living room|coffee table]: imani-coffee-table
+[2026-06-09T17:23:39.748Z]   ✓ Imani Coffee Table | $4,495 | 90cm W × 90cm D × 38cm H | 4 imgs
+[2026-06-09T17:23:39.750Z]   Scraping [living room|side table]: dawson-side-table-olive-ash-burl
+[2026-06-09T17:23:42.307Z]   ✓ Dawson Side Table, Olive Ash Burl | $1,395 | 38cm W × 38cm D × 60cm H | 4 imgs
+[2026-06-09T17:23:42.309Z]   Scraping [living room|coffee table]: basil-coffee-table
+[2026-06-09T17:23:44.583Z]   ✓ Basil Coffee Table | $3,495 | 98.5cm W × 98.5cm D × 39cm H | 4 imgs
+[2026-06-09T17:23:44.585Z]   Scraping [living room|side table]: imani-side-table
+[2026-06-09T17:23:47.298Z]   ✓ Imani Side Table | $2,095 | 46.9cm W × 46.9cm D × 55cm H | 4 imgs
+[2026-06-09T17:23:47.300Z]   Scraping [living room|side table]: flynn-side-table-lacorado-marble
+[2026-06-09T17:23:49.923Z]   ✓ Flynn Side Table, Lacorado Marble | $1,795 | 45cm W × 55cm D × 55cm H | 4 imgs
+[2026-06-09T17:23:49.926Z]   Scraping [living room|coffee table]: oxley-coffee-table-large-dark-emperador
+[2026-06-09T17:23:52.447Z]   ✓ Oxley Coffee Table, Large, Dark Emperador Marble | $5,295 | 120cm W × 120cm D × 35cm H | 4 imgs
+[2026-06-09T17:23:52.448Z]   Scraping [living room|coffee table]: santos-coffee-table-terrazzo
+[2026-06-09T17:23:55.034Z]   ✓ Santos Coffee Table, Terrazzo | $4,095 | 95cm W × 95cm D × 40cm H | 4 imgs
+[2026-06-09T17:23:55.036Z]   Scraping [living room|coffee table]: wallace-coffee-table-large
+[2026-06-09T17:23:57.563Z]   ✓ Wallace Coffee Table, Large | $2,695 | 160cm W × 80cm D × 40cm H | 4 imgs
+[2026-06-09T17:23:57.567Z]   Scraping [living room|armchair]: abel-armchair-fulton-jacquard-sage
+[2026-06-09T17:24:00.260Z]   ✓ Abel Armchair, Fulton Jacquard, Sage, US | $2,215 | 93cm W × 89cm D × 64cm H | 4 imgs
+[2026-06-09T17:24:00.262Z]   Scraping [living room|coffee table]: giovanni-table-lamp-large-cream
+[2026-06-09T17:24:02.742Z]   ✓ Giovanni Table Lamp, Large, Cream US | $650 | 40cm W × 40cm D × 43cm H | 4 imgs
+[2026-06-09T17:24:02.745Z]   → skip: ivy-coffee-table
+[2026-06-09T17:24:02.745Z]   Scraping [living room|coffee table]: wallace-coffee-table-mappa-burl
+[2026-06-09T17:24:05.166Z]   ✓ Wallace Coffee Table, Mappa Burl | $1,695 | 122cm W × 56cm D × 40cm H | 4 imgs
+[2026-06-09T17:24:05.170Z]   Scraping [living room|coffee table]: ramsey-coffee-table-travertine
+[2026-06-09T17:24:07.856Z]   ✓ Ramsey Coffee Table, Travertine | $4,495 | 140cm W × 80cm D × 38cm H | 4 imgs
+[2026-06-09T17:24:07.859Z]   Scraping [living room|side table]: lustro-side-table
+[2026-06-09T17:24:10.398Z]   ✓ Lustro Side Table | $1,795 | 48cm W × 48cm D × 55cm H | 4 imgs
+[2026-06-09T17:24:10.401Z]   Scraping [living room|side table]: truro-side-table
+[2026-06-09T17:24:12.803Z]   ✓ Truro Side Table, US | $895 | 100cm W × 92cm D × 35cm H | 4 imgs
+[2026-06-09T17:24:12.806Z]   Scraping [living room|coffee table]: barrel-coffee-table
+[2026-06-09T17:24:15.291Z]   ✓ Barrel Coffee Table | $1,795 | 95cm W × 95cm D × 45cm H | 4 imgs
+[2026-06-09T17:24:15.298Z]   Scraping [living room|side table]: noelle-end-table
+[2026-06-09T17:24:17.573Z]   ✓ Noelle End Table | $1,395 | 73cm W × 55cm D × 26cm H | 4 imgs
+[2026-06-09T17:24:17.574Z]   Scraping [living room|coffee table]: gia-coffee-table-set-royal-diana-marble
+[2026-06-09T17:24:20.323Z]   ✓ Gia Coffee Table Set, Royal Diana Marble | $5,795 | 120cm W × 80cm D × 37cm H | 4 imgs
+[2026-06-09T17:24:20.325Z]   Scraping [living room|side table]: cavern-side-table
+[2026-06-09T17:24:22.955Z]   ✓ Cavern Side Table | $1,255 | 50cm W × 50cm D × 45cm H | 4 imgs
+[2026-06-09T17:24:22.957Z]   Scraping [living room|coffee table]: tomasso-coffee-table
+[2026-06-09T17:24:25.502Z]   ✓ Tomasso Coffee Table | $2,275 | 114cm W × 114cm D × 38cm H | 4 imgs
+[2026-06-09T17:24:25.504Z]   Scraping [living room|side table]: dante-side-table-dark-emperador-marble
+[2026-06-09T17:24:28.070Z]   ✓ Dante Side Table, Dark Emperador Marble | $955 | 35cm W × 35cm D × 63cm H | 4 imgs
+[2026-06-09T17:24:28.074Z]   → cap reached: living room|coffee table
+[2026-06-09T17:24:28.074Z]   Scraping [living room|side table]: tisbury-side-table
+[2026-06-09T17:24:30.394Z]   ✓ Tisbury Side Table, Noir Grande Marble | $995 | 43cm W × 43cm D × 55cm H | 4 imgs
+[2026-06-09T17:24:30.396Z]   Scraping [living room|side table]: arlon-side-table-terra-bianca-marble-small
+[2026-06-09T17:24:32.838Z]   ✓ Arlon Side Table, Terra Bianca Marble, Small | $695 | 28cm W × 28cm D × 60cm H | 4 imgs
+[2026-06-09T17:24:32.840Z]   Scraping [living room|side table]: fleet-side-table-medium-mid-height-marble
+[2026-06-09T17:24:35.302Z]   ✓ Fleet Side Table, Medium, Kapri Marble | $695 | 40cm W × 40cm D × 51cm H | 4 imgs
+[2026-06-09T17:24:35.304Z]   ✗ Unclassified: Delos Plinth, Brazilian Quartzite Price $4,095 Regular Price $3,481 Member Limited stock available
+[2026-06-09T17:24:35.304Z]   Scraping [living room|side table]: fleet-side-table-small-tall-marble
+[2026-06-09T17:24:37.824Z]   ✓ Fleet Side Table, Small, Kapri Marble | $355 | 30cm W × 30cm D × 60cm H | 4 imgs
+[2026-06-09T17:24:37.828Z]   → cap reached: living room|side table
+[2026-06-09T17:24:37.829Z]   → cap reached: living room|coffee table
+[2026-06-09T17:24:37.832Z] 
+══ /us/furniture/sideboards-and-media-units ══════════════
+[2026-06-09T17:24:37.832Z]   Loading: /us/furniture/sideboards-and-media-units
+[2026-06-09T17:24:49.558Z]   Found 24 product links
+[2026-06-09T17:24:49.559Z]   Scraping [dining room|sideboard]: samson-sideboard-terra-bianca-marble
+[2026-06-09T17:24:52.029Z]   ✓ Samson Sideboard, Terra Bianca Marble | $5,795 | 170cm W × 50cm D × 78cm H | 4 imgs
+[2026-06-09T17:24:52.031Z]   Scraping [dining room|sideboard]: tivoli-sideboard-travertine
+[2026-06-09T17:24:54.595Z]   ✓ Tivoli Sideboard, Travertine | $3,475 | 180.1cm W × 50cm D × 75cm H | 4 imgs
+[2026-06-09T17:24:54.596Z]   Scraping [dining room|sideboard]: vance-sideboard-dark-emperador-marble
+[2026-06-09T17:24:56.991Z]   ✓ Vance Sideboard, Dark Emperador Marble | $2,695 | 160cm W × 50cm D × 75cm H | 4 imgs
+[2026-06-09T17:24:56.994Z]   Scraping [living room|tv unit]: cullen-media-unit-dark-emperador-marble
+[2026-06-09T17:24:59.556Z]   ✓ Cullen Media Unit, Dark Emperador Marble | $3,395 | 140cm W × 50cm D × 55cm H | 4 imgs
+[2026-06-09T17:24:59.558Z]   Scraping [dining room|sideboard]: barrett-sideboard-napoli-green-marble
+[2026-06-09T17:25:02.181Z]   ✓ Barrett Sideboard, Napoli Green Marble | $4,995 | 180cm W × 50cm D × 80cm H | 4 imgs
+[2026-06-09T17:25:02.184Z]   Scraping [dining room|sideboard]: kingsley-sideboard-grey-emperador-marble
+[2026-06-09T17:25:04.874Z]   ✓ Kingsley Sideboard, Grey Emperador Marble | $9,395 | 187cm W × 51cm D × 84cm H | 4 imgs
+[2026-06-09T17:25:04.876Z]   Scraping [bedroom|dresser]: pietro-six-drawer-dresser-brazilian-quartzite
+[2026-06-09T17:25:07.392Z]   ✓ Pietro Six Drawer Dresser, Brazilian Quartzite | $5,795 | 149cm W × 50cm D × 84cm H | 4 imgs
+[2026-06-09T17:25:07.393Z]   Scraping [living room|tv unit]: marcel-media-unit-medium-oak
+[2026-06-09T17:25:09.717Z]   ✓ Marcel Media Unit, Medium Oak | $2,695 | 130cm W × 50cm D × 60cm H | 4 imgs
+[2026-06-09T17:25:09.719Z]   Scraping [dining room|sideboard]: donato-sideboard
+[2026-06-09T17:25:12.063Z]   ✓ Donato Sideboard | $4,695 | 175cm W × 50cm D × 75cm H | 4 imgs
+[2026-06-09T17:25:12.065Z]   Scraping [dining room|sideboard]: armando-sideboard-calacatta-aura-marble
+[2026-06-09T17:25:14.452Z]   ✓ Armando Sideboard, Calcutta Aura Marble | $8,095 | 180cm W × 55cm D × 75cm H | 4 imgs
+[2026-06-09T17:25:14.454Z]   Scraping [dining room|sideboard]: devon-sideboard
+[2026-06-09T17:25:17.002Z]   ✓ Devon Sideboard | $4,095 | 185cm W × 51cm D × 75cm H | 4 imgs
+[2026-06-09T17:25:17.004Z]   Scraping [dining room|sideboard]: ada-sideboard-michelangelo-marble
+[2026-06-09T17:25:19.418Z]   ✓ Ada Sideboard, Michelangelo Marble | $4,695 | 160cm W × 55cm D × 82cm H | 4 imgs
+[2026-06-09T17:25:19.421Z]   Scraping [living room|tv unit]: ada-media-unit-michelangelo-marble
+[2026-06-09T17:25:21.816Z]   ✓ Ada Media Unit, Michelangelo Marble | $4,695 | 160cm W × 50cm D × 55cm H | 4 imgs
+[2026-06-09T17:25:21.817Z]   Scraping [dining room|sideboard]: olsen-sideboard-mappa-burl
+[2026-06-09T17:25:24.569Z]   ✓ Olsen Sideboard, Mappa Burl | $3,495 | 160cm W × 50cm D × 75cm H | 4 imgs
+[2026-06-09T17:25:24.571Z]   → cap reached: living room|coffee table
+[2026-06-09T17:25:24.572Z]   → skip: cullen-media-unit-dark-emperador-marble
+[2026-06-09T17:25:24.572Z]   ✗ Unclassified: Alexander Floor Lamp, US Price $995 Regular Price $846 Member
+[2026-06-09T17:25:24.572Z]   ✗ Unclassified: Esti Rug, 170 x 240cm Price $2,995 Regular Price $2,546 Member
+[2026-06-09T17:25:24.572Z]   Scraping [living room|tv unit]: avery-media-unit
+[2026-06-09T17:25:27.126Z]   ✓ Avery Media Unit | $3,395 | 160cm W × 50cm D × 55cm H | 4 imgs
+[2026-06-09T17:25:27.127Z]   Scraping [dining room|sideboard]: valerie-sideboard
+[2026-06-09T17:25:29.741Z]   ✓ Valerie Sideboard, Arabescato Corchia Marble | $8,095 | 180.1cm W × 50cm D × 80cm H | 4 imgs
+[2026-06-09T17:25:29.744Z]   Scraping [dining room|sideboard]: basil-sideboard
+[2026-06-09T17:25:32.261Z]   ✓ Basil Sideboard | $2,995 | 169.2cm W × 50cm D × 80cm H | 4 imgs
+[2026-06-09T17:25:32.263Z]   Scraping [dining room|sideboard]: cullen-sideboard-dark-emperador-marble
+[2026-06-09T17:25:34.754Z]   ✓ Cullen Sideboard, Dark Emperador Marble | $2,815 | 160cm W × 50cm D × 75cm H | 4 imgs
+[2026-06-09T17:25:34.757Z]   Scraping [bedroom|dresser]: marius-six-drawer-dresser-arabescato-corchia-marble
+[2026-06-09T17:25:37.181Z]   ✓ Marius Six Drawer Dresser, Arabescato Corchia Marble | $2,545 | 138cm W × 56cm D × 81cm H | 4 imgs
+[2026-06-09T17:25:37.182Z]   Scraping [dining room|sideboard]: lennox-sideboard
+[2026-06-09T17:25:39.764Z]   ✓ Lennox Sideboard | $5,395 | 150cm W × 54cm D × 80cm H | 4 imgs
+[2026-06-09T17:25:39.766Z] 
+══ /us/furniture/beds-and-mattresses ══════════════
+[2026-06-09T17:25:39.767Z]   Loading: /us/furniture/beds-and-mattresses
+[2026-06-09T17:25:52.748Z]   Found 20 product links
+[2026-06-09T17:25:52.750Z]   Scraping [bedroom|bed]: belsa-bed-light-wood-linen-chenille-sage
+[2026-06-09T17:25:55.378Z]   ✓ Belsa Bed, Light Wood, Queen, Linen Chenille, Sage, US | $5,295 | 164cm W × 216cm D × 110cm H | 4 imgs
+[2026-06-09T17:25:55.382Z]   Scraping [bedroom|bed]: manette-bed
+[2026-06-09T17:25:58.574Z]   ✓ Manette Bed, Full, Linen Chenille, Stone, US | $6,095 | 157cm W × 216cm D × 163cm H | 4 imgs
+[2026-06-09T17:25:58.581Z]   Scraping [bedroom|bed]: heidi-bed-velvet-chocolate
+[2026-06-09T17:26:01.640Z]   ✓ Heidi Bed, Queen, Velvet, Chocolate, US | $6,995 | 173cm W × 225cm D × 120cm H | 4 imgs
+[2026-06-09T17:26:01.642Z]   Scraping [bedroom|bed]: vara-bed
+[2026-06-09T17:26:04.558Z]   ✓ Vara Bed, Queen, Linen Chenille, Stone, US | $8,395 | 198cm W × 269cm D × 86cm H | 4 imgs
+[2026-06-09T17:26:04.561Z]   Scraping [bedroom|bed]: rivas-bed
+[2026-06-09T17:26:07.378Z]   ✓ Rivas Bed, Full, Linen Chenille, Stone, US | $5,695 | 168cm W × 216cm D × 163cm H | 4 imgs
+[2026-06-09T17:26:07.380Z]   Scraping [bedroom|bed]: linus-bed-velvet-grey-blue
+[2026-06-09T17:26:10.000Z]   ✓ Linus Bed, Queen, Velvet, Grey Blue, US | $9,795 | 235cm W × 236cm D × 104cm H | 4 imgs
+[2026-06-09T17:26:10.002Z]   Scraping [bedroom|bed]: oscar-cane-and-oak-bed
+[2026-06-09T17:26:13.168Z]   ✓ Oscar Cane & Oak Bed, Queen, US | $3,295 | 165cm W × 215cm D × 120cm H | 4 imgs
+[2026-06-09T17:26:13.171Z]   Scraping [bedroom|bed]: aubrey-bed-linen-floral-ikat
+[2026-06-09T17:26:16.319Z]   ✓ Aubrey Bed, King, Linen, Floral Ikat, US | $7,595 | 203cm W × 214cm D × 140cm H | 4 imgs
+[2026-06-09T17:26:16.321Z]   Scraping [bedroom|bed]: theodore-daybed
+[2026-06-09T17:26:19.115Z]   ✓ Theodore Daybed, Leather, Black, US | $4,895 | 180cm W × 85cm D × 55cm H | 4 imgs
+[2026-06-09T17:26:19.118Z]   Scraping [bedroom|bed]: hasker-bed
+[2026-06-09T17:26:21.894Z]   ✓ Hasker Bed, Queen | $4,095 | 165.1cm W × 216.5cm D × 120.7cm H | 4 imgs
+[2026-06-09T17:26:21.899Z]   Scraping [bedroom|bed]: willem-bed-velvet-and-linen
+[2026-06-09T17:26:24.945Z]   ✓ Willem Bed, King, Velvet & Linen, Grey Blue, US | $7,795 | 212.5cm W × 216.2cm D × 125cm H | 4 imgs
+[2026-06-09T17:26:24.946Z]   Scraping [bedroom|bed]: theodore-daybed-velvet
+[2026-06-09T17:26:27.789Z]   ✓ Theodore Daybed, Velvet, Olive, US | $2,695 | 180cm W × 85cm D × 55cm H | 4 imgs
+[2026-06-09T17:26:27.792Z]   Scraping [bedroom|bed]: alana-bed
+[2026-06-09T17:26:30.779Z]   ✓ Alana Bed, Queen, Velvet, Rust, US | $8,595 | 314.9cm W × 217.3cm D × 145cm H | 4 imgs
+[2026-06-09T17:26:30.781Z]   Scraping [bedroom|bed]: aubrey-bed
+[2026-06-09T17:26:33.714Z]   ✓ Aubrey Bed, Queen, Linen, Sage, US | $5,395 | 162cm W × 214cm D × 140cm H | 4 imgs
+[2026-06-09T17:26:33.718Z]   Scraping [bedroom|bed]: angus-bed
+[2026-06-09T17:26:36.478Z]   ✓ Angus Bed, Queen, Velvet, Lichen, US | $6,395 | 164cm W × 217cm D × 131cm H | 4 imgs
+[2026-06-09T17:26:36.480Z]   Scraping [bedroom|bed]: paolo-bed
+[2026-06-09T17:26:39.303Z]   ✓ Paolo Bed, Queen, Velvet, Lichen, US | $6,295 | 175cm W × 226cm D × 147cm H | 4 imgs
+[2026-06-09T17:26:39.305Z]   Scraping [bedroom|bed]: mika-bed
+[2026-06-09T17:26:42.145Z]   ✓ Mika Bed, King, Linen, Ochre, US | $7,495 | 216cm W × 226cm D × 147cm H | 4 imgs
+[2026-06-09T17:26:42.147Z]   Scraping [bedroom|bed]: marcia-daybed
+[2026-06-09T17:26:44.914Z]   ✓ Marcia Daybed, Grey Blue Velvet, US | $2,395 | 191cm W × 90cm D × 53cm H | 4 imgs
+[2026-06-09T17:26:44.917Z]   Scraping [bedroom|bed]: belsa-bed-light-oak
+[2026-06-09T17:26:47.748Z]   ✓ Belsa Bed, Light Oak, King, Velvet, Olive, US | $4,895 | 204.4cm W × 216.1cm D × 110cm H | 4 imgs
+[2026-06-09T17:26:47.749Z]   Scraping [bedroom|bed]: tristan-bed
+[2026-06-09T17:26:50.558Z]   ✓ Tristan Bed, Queen, Linen, Ochre, US | $7,095 | 169cm W × 229cm D × 163cm H | 4 imgs
+[2026-06-09T17:26:50.563Z] 
+══ /us/furniture/bedside-tables-and-chest-of-drawers ══════════════
+[2026-06-09T17:26:50.563Z]   Loading: /us/furniture/bedside-tables-and-chest-of-drawers
+[2026-06-09T17:27:02.954Z]   Found 45 product links
+[2026-06-09T17:27:02.958Z]   Scraping [bedroom|nightstand]: basil-bedside-table-large
+[2026-06-09T17:27:05.521Z]   ✓ Basil Bedside Table, Large | $1,815 | 70cm W × 50cm D × 60.5cm H | 4 imgs
+[2026-06-09T17:27:05.523Z]   Scraping [bedroom|nightstand]: adria-bedside-table-terra-bianca-marble
+[2026-06-09T17:27:09.105Z]   ✓ Adria Bedside Table, Terra Bianca Marble | $1,795 | 63cm W × 45cm D × 60cm H | 4 imgs
+[2026-06-09T17:27:09.108Z]   Scraping [bedroom|dresser]: armando-six-drawer-dresser-calacatta-aura-marble
+[2026-06-09T17:27:11.756Z]   ✓ Armando Six Drawer Dresser, Calacatta Aura Marble | $6,695 | 150cm W × 55cm D × 83cm H | 4 imgs
+[2026-06-09T17:27:11.759Z]   Scraping [bedroom|nightstand]: avery-bedside-table-large
+[2026-06-09T17:27:14.966Z]   ✓ Avery Bedside Table, Large | $1,995 | 72cm W × 46cm D × 60cm H | 4 imgs
+[2026-06-09T17:27:14.968Z]   Scraping [bedroom|nightstand]: pietro-bedside-table-large-michelangelo-marble
+[2026-06-09T17:27:17.614Z]   ✓ Pietro Bedside Table, Large, Michelangelo Marble | $1,815 | 72cm W × 49.5cm D × 60cm H | 4 imgs
+[2026-06-09T17:27:17.615Z]   Scraping [bedroom|dresser]: silvio-six-drawer-dresser-royal-diana-marble
+[2026-06-09T17:27:20.182Z]   ✓ Silvio Six Drawer Dresser, Royal Diana Marble | $3,475 | 150cm W × 50cm D × 81.3cm H | 4 imgs
+[2026-06-09T17:27:20.184Z]   Scraping [bedroom|nightstand]: avery-bedside-table-bordeaux
+[2026-06-09T17:27:22.485Z]   ✓ Avery Bedside Table, Bordeaux | $1,395 | 38cm W × 43cm D × 60cm H | 4 imgs
+[2026-06-09T17:27:22.488Z]   Scraping [bedroom|nightstand]: leo-bedside-table-royal-diana-marble
+[2026-06-09T17:27:25.211Z]   ✓ Leo Bedside Table, Royal Diana Marble | $1,495 | 65cm W × 40cm D × 60cm H | 4 imgs
+[2026-06-09T17:27:25.221Z]   Scraping [bedroom|dresser]: leo-six-drawer-dresser-royal-diana-marble
+[2026-06-09T17:27:27.596Z]   ✓ Leo Six Drawer Dresser, Royal Diana Marble | $5,175 | 150cm W × 50cm D × 80cm H | 4 imgs
+[2026-06-09T17:27:27.598Z]   Scraping [bedroom|nightstand]: kingsley-bedside-table-large-grey-emperador-marble
+[2026-06-09T17:27:30.129Z]   ✓ Kingsley Bedside Table, Large, Grey Emperador Marble | $1,745 | 70.4cm W × 50.8cm D × 62.8cm H | 4 imgs
+[2026-06-09T17:27:30.132Z]   Scraping [bedroom|nightstand]: cora-bedside-table-skylar-print
+[2026-06-09T17:27:32.622Z]   ✓ Cora Bedside Table, Skylar Print | $1,495 | 65cm W × 40cm D × 60cm H | 4 imgs
+[2026-06-09T17:27:32.624Z]   Scraping [bedroom|nightstand]: pietro-bedside-table-large-brazilian-quartzite
+[2026-06-09T17:27:35.165Z]   ✓ Pietro Bedside Table, Large, Brazilian Quartzite | $3,195 | 72cm W × 49.5cm D × 60cm H | 4 imgs
+[2026-06-09T17:27:35.168Z]   Scraping [bedroom|nightstand]: railton-bedside-table-dark-emperador-marble
+[2026-06-09T17:27:37.394Z]   ✓ Railton Bedside Table, Dark Emperador Marble | $1,795 | 46cm W × 46cm D × 60cm H | 4 imgs
+[2026-06-09T17:27:37.397Z]   Scraping [bedroom|nightstand]: valerie-bedside-table-arabescato-corchia-large
+[2026-06-09T17:27:39.924Z]   ✓ Valerie Bedside Table, Arabescato Corchia Marble, Large | $3,095 | 72cm W × 53cm D × 60cm H | 4 imgs
+[2026-06-09T17:27:39.928Z]   → skip: belsa-bed-light-oak
+[2026-06-09T17:27:39.928Z]   → cap reached: living room|coffee table
+[2026-06-09T17:27:39.928Z]   → skip: pietro-bedside-table-large-brazilian-quartzite
+[2026-06-09T17:27:39.928Z]   ✗ Unclassified: Obie Rug Multi, 300 x 420cm Price $7,495 Regular Price $6,371 Member Preorder
+[2026-06-09T17:27:39.928Z]   ✗ Unclassified: Wool Sheer Curtain Panel, W325cm x L274cm, Single Panel Price $895 Regular Price $761 Member
+[2026-06-09T17:27:39.928Z]   Scraping [bedroom|nightstand]: pietro-bedside-table-brazilian-quartzite
+[2026-06-09T17:27:42.251Z]   ✓ Pietro Bedside Table, Brazilian Quartzite | $2,295 | 47cm W × 47cm D × 60cm H | 4 imgs
+[2026-06-09T17:27:42.255Z]   Scraping [bedroom|nightstand]: devon-bedside-table
+[2026-06-09T17:27:45.148Z]   ✓ Devon Bedside Table | $1,495 | 54cm W × 40cm D × 60cm H | 4 imgs
+[2026-06-09T17:27:45.152Z]   Scraping [bedroom|nightstand]: pietro-bedside-table-michelangelo-marble
+[2026-06-09T17:27:47.621Z]   ✓ Pietro Bedside Table, Michelangelo Marble | $1,895 | 47cm W × 47cm D × 60cm H | 4 imgs
+[2026-06-09T17:27:47.623Z]   ✗ Unclassified: Pietro Six Drawer, Michelangelo Marble Price $4,695 Regular Price $3,991 Member
+[2026-06-09T17:27:47.624Z]   Scraping [bedroom|dresser]: warwick-three-drawer-dresser-mappa-burl
+[2026-06-09T17:27:50.449Z]   ✓ Warwick Three Drawer Dresser, Mappa Burl | $2,695 | 100cm W × 51cm D × 88cm H | 4 imgs
+[2026-06-09T17:27:50.451Z]   Scraping [bedroom|nightstand]: warwick-bedside-table-mappa-burl
+[2026-06-09T17:27:52.756Z]   ✓ Warwick Bedside Table, Mappa Burl | $1,495 | 52cm W × 43cm D × 55cm H | 4 imgs
+[2026-06-09T17:27:52.760Z]   Scraping [bedroom|nightstand]: avery-bedside-table
+[2026-06-09T17:27:55.233Z]   ✓ Avery Bedside Table | $1,395 | 38cm W × 43cm D × 60cm H | 4 imgs
+[2026-06-09T17:27:55.237Z]   Scraping [bedroom|nightstand]: silvio-bedside-table-royal-diana-marble
+[2026-06-09T17:27:57.618Z]   ✓ Silvio Bedside Table, Royal Diana Marble | $2,195 | 55cm W × 45cm D × 60cm H | 4 imgs
+[2026-06-09T17:27:57.621Z]   Scraping [bedroom|nightstand]: valerie-bedside-table-arabescato-corchia
+[2026-06-09T17:28:00.147Z]   ✓ Valerie Bedside Table, Arabescato Corchia Marble | $2,295 | 53cm W × 45cm D × 63cm H | 4 imgs
+[2026-06-09T17:28:00.149Z]   Scraping [bedroom|nightstand]: carlisle-bedside-table-carrara-marble
+[2026-06-09T17:28:03.108Z]   ✓ Carlisle Bedside Table, Carrara Marble | $1,595 | 48cm W × 48cm D × 60cm H | 4 imgs
+[2026-06-09T17:28:03.112Z]   Scraping [bedroom|dresser]: carlisle-six-drawer-dresser-carrara-marble
+[2026-06-09T17:28:05.912Z]   ✓ Carlisle Six Drawer Dresser, Carrara Marble | $4,495 | 150cm W × 50cm D × 80cm H | 4 imgs
+[2026-06-09T17:28:05.922Z]   Scraping [bedroom|dresser]: railton-six-drawer-dresser-dark-emperador-marble
+[2026-06-09T17:28:09.104Z]   ✓ Railton Six Drawer Dresser, Dark Emperador Marble | $4,495 | 157cm W × 50cm D × 84cm H | 4 imgs
+[2026-06-09T17:28:09.106Z]   Scraping [bedroom|nightstand]: marcel-bedside-table-medium-oak
+[2026-06-09T17:28:11.741Z]   ✓ Marcel Bedside Table, Medium Oak | $1,495 | 54cm W × 42cm D × 54cm H | 4 imgs
+[2026-06-09T17:28:11.747Z]   Scraping [bedroom|dresser]: valerie-six-drawer-dresser-arabescato-corchia
+[2026-06-09T17:28:14.177Z]   ✓ Valerie Six Drawer Dresser, Arabescato Corchia Marble | $7,395 | 150cm W × 53cm D × 87cm H | 4 imgs
+[2026-06-09T17:28:14.181Z]   → cap reached: bedroom|nightstand
+[2026-06-09T17:28:14.182Z]   Scraping [bedroom|dresser]: warwick-six-drawer-dresser-mappa-burl
+[2026-06-09T17:28:17.048Z]   ✓ Warwick Six Drawer Dresser, Mappa Burl | $3,495 | 130cm W × 50cm D × 85cm H | 4 imgs
+[2026-06-09T17:28:17.051Z]   → cap reached: bedroom|nightstand
+[2026-06-09T17:28:17.051Z]   Scraping [bedroom|dresser]: valerie-three-drawer-dresser
+[2026-06-09T17:28:19.468Z]   ✓ Valerie Three Drawer Dresser, Arabescato Corchia Marble | $4,895 | 100cm W × 63.5cm D × 91cm H | 4 imgs
+[2026-06-09T17:28:19.474Z]   Scraping [bedroom|dresser]: railton-double-wardrobe
+[2026-06-09T17:28:21.745Z]   ✓ Railton Double Wardrobe | $8,095 | 119cm W × 60cm D × 210cm H | 4 imgs
+[2026-06-09T17:28:21.747Z]   → cap reached: bedroom|nightstand
+[2026-06-09T17:28:21.747Z]   Scraping [bedroom|dresser]: railton-three-drawer-dresser
+[2026-06-09T17:28:24.201Z]   ✓ Railton Three Drawer Dresser | $2,035 | 120.1cm W × 50.1cm D × 85cm H | 4 imgs
+[2026-06-09T17:28:24.206Z]   → cap reached: bedroom|nightstand
+[2026-06-09T17:28:24.206Z]   → cap reached: bedroom|nightstand
+[2026-06-09T17:28:24.206Z]   → cap reached: bedroom|nightstand
+[2026-06-09T17:28:24.206Z]   → cap reached: bedroom|nightstand
+[2026-06-09T17:28:24.207Z]   Scraping [bedroom|dresser]: margot-five-drawer-dresser
+[2026-06-09T17:28:26.843Z]   ✓ Margot Five Drawer Dresser | $1,300 | 110cm W × 55cm D × 115cm H | 4 imgs
+[2026-06-09T17:28:26.845Z] 
+══ /us/furniture/dining-tables-and-chairs ══════════════
+[2026-06-09T17:28:26.845Z]   Loading: /us/furniture/dining-tables-and-chairs
+[2026-06-09T17:28:39.111Z]   Found 46 product links
+[2026-06-09T17:28:39.112Z]   Scraping [dining room|dining table]: ramsey-dining-table-round-travertine
+[2026-06-09T17:28:41.623Z]   ✓ Ramsey Dining Table, Round, Travertine | $4,015 | 140cm W × 140cm D × 75cm H | 4 imgs
+[2026-06-09T17:28:41.627Z]   Scraping [dining room|dining chair]: aria-dining-chair-boucle-jacquard-aubergine
+[2026-06-09T17:28:44.182Z]   ✓ Aria Dining Chair, Boucle Jacquard, Aubergine, US | $1,595 | 62cm W × 59cm D × 75cm H | 4 imgs
+[2026-06-09T17:28:44.187Z]   Scraping [dining room|dining chair]: morrell-dining-chair-fulton-jacquard-sage
+[2026-06-09T17:28:46.729Z]   ✓ Morrell Dining Chair, Fulton Jacquard, Sage, US | $1,075 | 54cm W × 63cm D × 76.2cm H | 4 imgs
+[2026-06-09T17:28:46.731Z]   Scraping [dining room|dining chair]: georgina-dining-chair-velvet
+[2026-06-09T17:28:48.990Z]   ✓ Georgina Dining Chair, Velvet, Chocolate, US | $1,195 | 60cm W × 56cm D × 75cm H | 4 imgs
+[2026-06-09T17:28:48.992Z]   Scraping [dining room|dining table]: brynn-dining-table-eight-seater
+[2026-06-09T17:28:51.491Z]   ✓ Brynn Dining Table, Eight Seater | $5,395 | 282cm W × 132cm D × 76cm H | 4 imgs
+[2026-06-09T17:28:51.497Z]   Scraping [dining room|dining chair]: milo-dining-armchair-leather-chestnut
+[2026-06-09T17:28:53.989Z]   ✓ Milo Dining Armchair, Leather, Chestnut, US | $3,195 | dims n/a | 4 imgs
+[2026-06-09T17:28:53.996Z]   Scraping [dining room|dining chair]: pair-of-keira-dining-chairs-linen-chenille-sage
+[2026-06-09T17:28:56.468Z]   ✓ Pair of Keira Dining Chair, Linen Chenille, Sage, US | $2,495 | 46cm W × 58cm D × 84cm H | 4 imgs
+[2026-06-09T17:28:56.480Z]   Scraping [dining room|dining chair]: molina-armchair
+[2026-06-09T17:28:58.736Z]   ✓ Molina Dining Armchair, Velvet, Chocolate, US | $1,295 | 60cm W × 56.5cm D × 78cm H | 4 imgs
+[2026-06-09T17:28:58.740Z]   Scraping [dining room|dining chair]: aria-dining-chair-kimber-natural
+[2026-06-09T17:29:01.144Z]   ✓ Aria Dining Chair, Kimber Jacquard, Natural US | $2,195 | 62cm W × 59cm D × 75cm H | 4 imgs
+[2026-06-09T17:29:01.149Z]   Scraping [dining room|dining chair]: aria-dining-chair-daxton-jacquard
+[2026-06-09T17:29:03.946Z]   ✓ Aria Dining Chair, Daxton Jacquard, US | $2,195 | 62cm W × 59cm D × 75cm H | 4 imgs
+[2026-06-09T17:29:03.954Z]   Scraping [dining room|dining table]: rosaline-dining-table-rosso-orobico
+[2026-06-09T17:29:06.644Z]   ✓ Rosaline Dining Table, Rosso Orobico | $7,395 | 260cm W × 90cm D × 76cm H | 4 imgs
+[2026-06-09T17:29:06.647Z]   Scraping [dining room|dining table]: murcell-oval-dining-table-brazilian-green-marble-prominent
+[2026-06-09T17:29:08.940Z]   ✓ Murcell Oval Dining Table, Brazilian Green Marble | $9,395 | 200cm W × 120cm D × 76cm H | 4 imgs
+[2026-06-09T17:29:08.944Z]   Scraping [dining room|dining table]: fiore-dining-table-brazilian-quartzite
+[2026-06-09T17:29:11.471Z]   ✓ Fiore Dining Table, Brazilian Quartzite | $8,495 | 140cm W × 140cm D × 77cm H | 4 imgs
+[2026-06-09T17:29:11.475Z]   Scraping [dining room|dining chair]: molina-dining-armchair-skylar-print-grey-blue-velvet
+[2026-06-09T17:29:14.176Z]   ✓ Molina Dining Armchair, Skylar Print, Grey Blue Velvet, US | $1,295 | 50cm W × 58cm D × 78cm H | 4 imgs
+[2026-06-09T17:29:14.183Z]   ✗ Unclassified: Huxley Cut Crystal Decanter, Large Price $390 Regular Price $332 Member
+[2026-06-09T17:29:14.184Z]   ✗ Unclassified: Huxley Cocktail Party Essentials Price $1,050 Regular Price $893 Member
+[2026-06-09T17:29:14.184Z]   ✗ Unclassified: Barwell Cocktail Party Essentials Price $645 Regular Price $548 Member
+[2026-06-09T17:29:14.185Z]   Scraping [dining room|dining table]: murcell-oval-dining-table-brazilian-blue-quartzite
+[2026-06-09T17:29:16.744Z]   ✓ Murcell Oval Dining Table, Blue Quartzite | $10,795 | 200cm W × 120cm D × 76cm H | 4 imgs
+[2026-06-09T17:29:16.749Z]   Scraping [dining room|dining chair]: lachlan-dining-chair-velvet
+[2026-06-09T17:29:19.381Z]   ✓ Lachlan Dining Chair, Olive Velvet US | $1,795 | 62cm W × 61cm D × 79cm H | 4 imgs
+[2026-06-09T17:29:19.385Z]   Scraping [dining room|dining table]: elliot-dining-table-travertine
+[2026-06-09T17:29:22.049Z]   ✓ Elliot Dining Table, Travertine | $6,495 | 220cm W × 100cm D × 74cm H | 4 imgs
+[2026-06-09T17:29:22.054Z]   Scraping [dining room|dining table]: rosaline-dining-table-griseo-rosa-marble
+[2026-06-09T17:29:24.713Z]   ✓ Rosaline Dining Table, Griseo Rosa Marble | $5,795 | 200cm W × 100cm D × 76cm H | 4 imgs
+[2026-06-09T17:29:24.716Z]   Scraping [dining room|dining table]: ramsey-dining-table-travertine
+[2026-06-09T17:29:27.222Z]   ✓ Ramsey Dining Table, Travertine & Burl | $8,795 | 230cm W × 115cm D × 75cm H | 4 imgs
+[2026-06-09T17:29:27.226Z]   Scraping [dining room|dining table]: lowden-dining-table
+[2026-06-09T17:29:29.716Z]   ✓ Lowden Dining Table | $3,295 | 110cm W × 110cm D × 76cm H | 4 imgs
+[2026-06-09T17:29:29.718Z]   Scraping [dining room|dining table]: murcell-oval-dining-table-dark-emperador-marble
+[2026-06-09T17:29:32.109Z]   ✓ Murcell Oval Dining Table, Dark Emperador Marble | $6,695 | 200cm W × 120cm D × 76cm H | 4 imgs
+[2026-06-09T17:29:32.112Z]   Scraping [dining room|dining chair]: emerson-dining-chair-linen-chenille-bordeaux
+[2026-06-09T17:29:34.638Z]   ✓ Emerson Dining Chair, Linen Chenille, Bordeaux, US | $1,995 | 59cm W × 59cm D × 84cm H | 4 imgs
+[2026-06-09T17:29:34.642Z]   Scraping [dining room|dining table]: murcell-oval-dining-table-marble
+[2026-06-09T17:29:37.272Z]   ✓ Murcell Oval Dining Table, Carrara Marble | $6,695 | 200cm W × 120cm D × 76cm H | 4 imgs
+[2026-06-09T17:29:37.274Z]   Scraping [dining room|dining chair]: pair-of-molina-dining-chairs-skylar-print-grey-blue-velvet
+[2026-06-09T17:29:39.822Z]   ✓ Pair of Molina Dining Chairs, Skylar Print, Velvet Grey Blue, US | $1,555 | 50cm W × 58cm D × 78cm H | 4 imgs
+[2026-06-09T17:29:39.825Z]   Scraping [dining room|dining chair]: fergus-dining-chair-fern-leather
+[2026-06-09T17:29:42.306Z]   ✓ Fergus Dining Chair, Fern Leather, US | $1,195 | 55cm W × 60cm D × 76cm H | 4 imgs
+[2026-06-09T17:29:42.308Z]   Scraping [dining room|dining chair]: pair-of-zita-dining-chairs-boucle
+[2026-06-09T17:29:44.723Z]   ✓ Pair of Zita Dining Chairs, Boucle, Mustard, US | $1,075 | 60cm W × 56cm D × 75cm H | 4 imgs
+[2026-06-09T17:29:44.732Z]   Scraping [dining room|dining table]: murcell-round-dining-table-carrara-marble
+[2026-06-09T17:29:47.330Z]   ✓ Murcell Round Dining Table, Carrara Marble | $2,815 | 130cm W × 130cm D × 76cm H | 4 imgs
+[2026-06-09T17:29:47.332Z]   Scraping [dining room|dining chair]: aria-dining-chair-boucle
+[2026-06-09T17:29:49.908Z]   ✓ Aria Dining Chair, Boucle, Cream, US | $895 | 62cm W × 59cm D × 75cm H | 4 imgs
+[2026-06-09T17:29:49.911Z]   Scraping [dining room|dining table]: rosaline-dining-table-noir-grande-marble
+[2026-06-09T17:29:52.619Z]   ✓ Rosaline Dining Table, Noir Grande Marble | $2,895 | 200cm W × 100cm D × 76cm H | 4 imgs
+[2026-06-09T17:29:52.624Z]   Scraping [dining room|dining table]: elliot-dining-table-carrara-marble
+[2026-06-09T17:29:55.211Z]   ✓ Elliot Dining Table, Carrara Marble | $3,245 | 220cm W × 100cm D × 74cm H | 4 imgs
+[2026-06-09T17:29:55.214Z]   Scraping [dining room|dining table]: murcell-round-dining-table-brazilian-green-marble
+[2026-06-09T17:29:57.680Z]   ✓ Murcell Round Dining Table, Brazilian Green Marble | $4,045 | 130cm W × 130cm D × 76cm H | 4 imgs
+[2026-06-09T17:29:57.687Z]   Scraping [dining room|dining chair]: morrell-dining-chair-velvet
+[2026-06-09T17:30:00.263Z]   ✓ Morrell Dining Chair, Velvet, Grey Blue, US | $1,095 | 54cm W × 63cm D × 76cm H | 4 imgs
+[2026-06-09T17:30:00.267Z]   Scraping [dining room|dining chair]: pair-of-sitwell-dining-chairs
+[2026-06-09T17:30:03.100Z]   ✓ Pair of Sitwell Dining Chairs Walnut US | $1,375 | 56cm W × 52cm D × 77cm H | 4 imgs
+[2026-06-09T17:30:03.106Z]   Scraping [dining room|dining chair]: hamilton-dining-chair-ash-and-leather-green
+[2026-06-09T17:30:05.756Z]   ✓ Hamilton Dining Chair, Ash & Leather, Green, US | $1,015 | 62cm W × 56cm D × 82cm H | 4 imgs
+[2026-06-09T17:30:05.759Z]   Scraping [dining room|dining table]: elian-dining-table
+[2026-06-09T17:30:08.254Z]   ✓ Elian Dining Table, Natural | $1,780 | 130cm W × 130cm D × 75cm H | 4 imgs
+[2026-06-09T17:30:08.257Z]   Scraping [dining room|dining chair]: pair-of-hamilton-armless-dining-chairs
+[2026-06-09T17:30:10.777Z]   ✓ Pair of Hamilton Armless Dining Chairs, US | $1,795 | 62cm W × 61cm D × 79cm H | 4 imgs
+[2026-06-09T17:30:10.779Z]   Scraping [dining room|dining table]: matis-dining-table
+[2026-06-09T17:30:13.355Z]   ✓ Matis Dining Table, Grey Oak, 220cm, US | $2,245 | 220cm W × 100cm D × 75cm H | 4 imgs
+[2026-06-09T17:30:13.359Z]   Scraping [dining room|dining chair]: eddie-dining-chair-velvet-camel
+[2026-06-09T17:30:16.002Z]   ✓ Eddie Dining Chair, Velvet, Camel, US | $1,495 | 65cm W × 65cm D × 62cm H | 4 imgs
+[2026-06-09T17:30:16.006Z]   → cap reached: dining room|dining chair
+[2026-06-09T17:30:16.006Z]   → cap reached: dining room|dining chair
+[2026-06-09T17:30:16.006Z]   → cap reached: dining room|dining chair
+[2026-06-09T17:30:16.006Z]   → cap reached: dining room|dining chair
+[2026-06-09T17:30:16.006Z]   → cap reached: dining room|dining chair
+[2026-06-09T17:30:16.378Z] 
+=== Done — 189 new, 0 errors, 189 total ===
+[2026-06-09T18:03:20.145Z] === Soho Home catalogue scraper ===
+[2026-06-09T18:03:20.184Z] Resuming — 189 existing products
+[2026-06-09T18:03:21.776Z] 
+══ /us/furniture/sofas ══════════════
+[2026-06-09T18:03:21.780Z]   Loading: /us/furniture/sofas
+[2026-06-09T18:03:35.858Z]   Found 21 product links
+[2026-06-09T18:03:35.863Z]   → skip: edison-sectional-l-shape-sofa
+[2026-06-09T18:03:35.863Z]   → skip: edison-sectional-corner-sofa
+[2026-06-09T18:03:35.863Z]   → skip: blair-two-seater-sofa-velvet-lichen
+[2026-06-09T18:03:35.863Z]   → skip: belmont-sofa-three-seater-sofa
+[2026-06-09T18:03:35.864Z]   → skip: theodore-two-seater-sofa
+[2026-06-09T18:03:35.864Z]   → skip: mossley-sofa-leather
+[2026-06-09T18:03:35.864Z]   → skip: mossley-sofa
+[2026-06-09T18:03:35.864Z]   → skip: truro-sectional-sofa-textured-linen
+[2026-06-09T18:03:35.865Z]   ✗ Unclassified: Truro Ottoman, Textured Linen Price $2,195 Regular Price $1,866 Member Made-to-order
+[2026-06-09T18:03:35.865Z]   → skip: hamish-sectional-corner-sofa
+[2026-06-09T18:03:35.866Z]   → skip: truro-sectional-sofa-corner-sofa-textured-linen
+[2026-06-09T18:03:35.866Z]   → skip: marcia-three-seater-sofa-leather
+[2026-06-09T18:03:35.866Z]   → skip: hamish-sectional-sofa
+[2026-06-09T18:03:35.866Z]   → skip: conall-three-seater-sofa
+[2026-06-09T18:03:35.866Z]   → skip: odell-sectional-sofa-corner-sofa
+[2026-06-09T18:03:35.866Z]   → skip: odell-sectional-sofa-textured-linen
+[2026-06-09T18:03:35.866Z]   → skip: marcia-three-seater-sofa
+[2026-06-09T18:03:35.866Z]   → skip: noelle-sectional-curved-sofa
+[2026-06-09T18:03:35.866Z]   → skip: rava-three-seater-sofa
+[2026-06-09T18:03:35.866Z]   → skip: odell-deeper-sit-corner-sectional-sofa
+[2026-06-09T18:03:35.867Z]   → skip: odell-sectional-sofa
+[2026-06-09T18:03:35.867Z] 
+══ /us/furniture/armchairs ══════════════
+[2026-06-09T18:03:35.867Z]   Loading: /us/furniture/armchairs
+[2026-06-09T18:03:48.502Z]   Found 21 product links
+[2026-06-09T18:03:48.508Z]   → skip: blair-tub-armchair-velvet
+[2026-06-09T18:03:48.509Z]   → skip: vivienne-armchair-linen-chenille
+[2026-06-09T18:03:48.509Z]   → skip: theodore-burl-armchair-linen-chenille-bordeaux
+[2026-06-09T18:03:48.510Z]   → skip: mila-armchair-boucle-jacquard-olive
+[2026-06-09T18:03:48.510Z]   → skip: theodore-armchair-boucle-jacquard-marine
+[2026-06-09T18:03:48.511Z]   → skip: ewan-armchair-leather-chestnut
+[2026-06-09T18:03:48.511Z]   → skip: eddie-armchair-jago-jacquard
+[2026-06-09T18:03:48.512Z]   → skip: vivienne-armchair-theron
+[2026-06-09T18:03:48.512Z]   → skip: theodore-armchair-boucle-natural
+[2026-06-09T18:03:48.516Z]   → skip: ewan-armchair
+[2026-06-09T18:03:48.517Z]   → skip: garret-armchair-floral-ikat
+[2026-06-09T18:03:48.520Z]   → skip: vivienne-armchair
+[2026-06-09T18:03:48.523Z]   Scraping [living room|sofa]: noelle-sectional-armchair
+[2026-06-09T18:03:52.698Z]   ✓ Noelle Sectional Armchair, Textured Wool Boucle, Pistachio, US | $7,095 | 104cm W × 68cm D × 174cm H | 4 imgs
+[2026-06-09T18:03:52.703Z]   → skip: vivienne-armchair-textured-wool-boucle
+[2026-06-09T18:03:52.703Z]   → skip: mila-armchair-boucle-jacquard-olive
+[2026-06-09T18:03:52.704Z]   Scraping [living room|sofa]: noelle-sectional-curved-armchair
+[2026-06-09T18:03:55.240Z]   ✓ Noelle Sectional Curved Armchair, Textured Wool Boucle, Coral, US | $7,495 | 100cm W × 55cm D × 110cm H | 4 imgs
+[2026-06-09T18:03:55.244Z]   → skip: theodore-oak-armchair-textured-wool-boucle
+[2026-06-09T18:03:55.245Z]   → skip: theodore-armchair-textured-wool-boucle
+[2026-06-09T18:03:55.245Z]   → skip: theodore-oak-armchair
+[2026-06-09T18:03:55.246Z]   → skip: caleb-armchair-dark-burl-velvet
+[2026-06-09T18:03:55.246Z]   → skip: sydney-armchair
+[2026-06-09T18:03:55.246Z] 
+══ /us/furniture/coffee-tables-side-tables ══════════════
+[2026-06-09T18:03:55.247Z]   Loading: /us/furniture/coffee-tables-side-tables
+[2026-06-09T18:04:08.150Z]   Found 47 product links
+[2026-06-09T18:04:08.545Z]   → skip: germain-coffee-table-abstract-burl
+[2026-06-09T18:04:08.546Z]   → skip: holden-coffee-table
+[2026-06-09T18:04:08.550Z]   → skip: ivy-coffee-table
+[2026-06-09T18:04:08.561Z]   → skip: sloane-side-table-abstract-burl
+[2026-06-09T18:04:08.564Z]   → skip: vito-side-table-tall-arabescato
+[2026-06-09T18:04:08.571Z]   → skip: vito-coffee-table-arabescato
+[2026-06-09T18:04:08.575Z]   → skip: ivy-side-table
+[2026-06-09T18:04:08.577Z]   → skip: tisbury-oval-coffee-table
+[2026-06-09T18:04:08.585Z]   ✗ Unclassified: Delos Plinth, Dragon Onyx Regular price $4,095 Price $2,455 Regular Regular price $3,481 Price $1,964 Member
+[2026-06-09T18:04:08.592Z]   → skip: barrel-coffee-table-dark-oak
+[2026-06-09T18:04:08.598Z]   → skip: dawson-side-table-oak-burl-olive
+[2026-06-09T18:04:08.602Z]   → skip: barrel-side-table-dark-oak
+[2026-06-09T18:04:08.606Z]   → skip: pascal-coffee-table
+[2026-06-09T18:04:08.607Z]   → skip: dawson-coffee-table-olive-ash-burl
+[2026-06-09T18:04:08.607Z]   → skip: ted-coffee-table
+[2026-06-09T18:04:08.610Z]   → skip: astoria-side-table
+[2026-06-09T18:04:08.612Z]   → skip: nelson-side-table-breccia-pernice-marble
+[2026-06-09T18:04:08.614Z]   → skip: soho-cinema-side-table
+[2026-06-09T18:04:08.616Z]   → skip: imani-coffee-table
+[2026-06-09T18:04:08.617Z]   → skip: dawson-side-table-olive-ash-burl
+[2026-06-09T18:04:08.622Z]   → skip: basil-coffee-table
+[2026-06-09T18:04:08.625Z]   → skip: imani-side-table
+[2026-06-09T18:04:08.626Z]   → skip: flynn-side-table-lacorado-marble
+[2026-06-09T18:04:08.627Z]   → skip: oxley-coffee-table-large-dark-emperador
+[2026-06-09T18:04:08.630Z]   → skip: santos-coffee-table-terrazzo
+[2026-06-09T18:04:08.636Z]   → skip: wallace-coffee-table-large
+[2026-06-09T18:04:08.638Z]   → skip: abel-armchair-fulton-jacquard-sage
+[2026-06-09T18:04:08.645Z]   → skip: giovanni-table-lamp-large-cream
+[2026-06-09T18:04:08.648Z]   → skip: ivy-coffee-table
+[2026-06-09T18:04:08.650Z]   → skip: wallace-coffee-table-mappa-burl
+[2026-06-09T18:04:08.651Z]   → skip: ramsey-coffee-table-travertine
+[2026-06-09T18:04:08.654Z]   → skip: lustro-side-table
+[2026-06-09T18:04:08.655Z]   → skip: truro-side-table
+[2026-06-09T18:04:08.656Z]   → skip: barrel-coffee-table
+[2026-06-09T18:04:08.656Z]   → skip: noelle-end-table
+[2026-06-09T18:04:08.657Z]   → skip: gia-coffee-table-set-royal-diana-marble
+[2026-06-09T18:04:08.658Z]   → skip: cavern-side-table
+[2026-06-09T18:04:08.660Z]   → skip: tomasso-coffee-table
+[2026-06-09T18:04:08.662Z]   → skip: dante-side-table-dark-emperador-marble
+[2026-06-09T18:04:08.664Z]   Scraping [living room|coffee table]: tisbury-coffee-table
+[2026-06-09T18:04:11.172Z]   ✓ Tisbury Coffee Table, Noir Grande Marble | $1,695 | 90cm W × 40cm D × 90cm H | 4 imgs
+[2026-06-09T18:04:11.176Z]   → skip: tisbury-side-table
+[2026-06-09T18:04:11.177Z]   → skip: arlon-side-table-terra-bianca-marble-small
+[2026-06-09T18:04:11.177Z]   → skip: fleet-side-table-medium-mid-height-marble
+[2026-06-09T18:04:11.178Z]   ✗ Unclassified: Delos Plinth, Brazilian Quartzite Price $4,095 Regular Price $3,481 Member Limited stock available
+[2026-06-09T18:04:11.178Z]   → skip: fleet-side-table-small-tall-marble
+[2026-06-09T18:04:11.179Z]   Scraping [living room|side table]: fleet-marble-low-side-table
+[2026-06-09T18:04:13.820Z]   ✓ Fleet Side Table, Large, Terra Bianca Marble | $395 | 50cm W × 50cm D × 45cm H | 4 imgs
+[2026-06-09T18:04:13.838Z]   Scraping [living room|coffee table]: oxley-coffee-table-dark-emperador-marble-1
+[2026-06-09T18:04:16.377Z]   ✓ Oxley Coffee Table, Dark Emperador Marble | $4,095 | 90cm W × 90cm D × 36.5cm H | 4 imgs
+[2026-06-09T18:04:16.382Z] 
+══ /us/furniture/sideboards-and-media-units ══════════════
+[2026-06-09T18:04:16.383Z]   Loading: /us/furniture/sideboards-and-media-units
+[2026-06-09T18:04:29.054Z]   Found 24 product links
+[2026-06-09T18:04:29.062Z]   → skip: samson-sideboard-terra-bianca-marble
+[2026-06-09T18:04:29.063Z]   → skip: tivoli-sideboard-travertine
+[2026-06-09T18:04:29.069Z]   → skip: vance-sideboard-dark-emperador-marble
+[2026-06-09T18:04:29.070Z]   → skip: cullen-media-unit-dark-emperador-marble
+[2026-06-09T18:04:29.071Z]   → skip: barrett-sideboard-napoli-green-marble
+[2026-06-09T18:04:29.072Z]   → skip: kingsley-sideboard-grey-emperador-marble
+[2026-06-09T18:04:29.073Z]   → skip: pietro-six-drawer-dresser-brazilian-quartzite
+[2026-06-09T18:04:29.078Z]   → skip: marcel-media-unit-medium-oak
+[2026-06-09T18:04:29.080Z]   → skip: donato-sideboard
+[2026-06-09T18:04:29.080Z]   → skip: armando-sideboard-calacatta-aura-marble
+[2026-06-09T18:04:29.081Z]   → skip: devon-sideboard
+[2026-06-09T18:04:29.082Z]   → skip: ada-sideboard-michelangelo-marble
+[2026-06-09T18:04:29.082Z]   → skip: ada-media-unit-michelangelo-marble
+[2026-06-09T18:04:29.083Z]   → skip: olsen-sideboard-mappa-burl
+[2026-06-09T18:04:29.084Z]   Scraping [living room|coffee table]: wren-table-lamp
+[2026-06-09T18:04:32.402Z]   ✓ Wren Table Lamp, US | $395 | 16cm W × 12cm D × 55cm H | 4 imgs
+[2026-06-09T18:04:32.411Z]   → skip: cullen-media-unit-dark-emperador-marble
+[2026-06-09T18:04:32.411Z]   ✗ Unclassified: Alexander Floor Lamp, US Price $995 Regular Price $846 Member
+[2026-06-09T18:04:32.412Z]   ✗ Unclassified: Esti Rug, 170 x 240cm Price $2,995 Regular Price $2,546 Member
+[2026-06-09T18:04:32.412Z]   → skip: avery-media-unit
+[2026-06-09T18:04:32.412Z]   → skip: valerie-sideboard
+[2026-06-09T18:04:32.412Z]   → skip: basil-sideboard
+[2026-06-09T18:04:32.413Z]   → skip: cullen-sideboard-dark-emperador-marble
+[2026-06-09T18:04:32.413Z]   → skip: marius-six-drawer-dresser-arabescato-corchia-marble
+[2026-06-09T18:04:32.414Z]   → skip: lennox-sideboard
+[2026-06-09T18:04:32.414Z] 
+══ /us/furniture/beds-and-mattresses ══════════════
+[2026-06-09T18:04:32.414Z]   Loading: /us/furniture/beds-and-mattresses
+[2026-06-09T18:05:01.613Z]   Found 20 product links
+[2026-06-09T18:05:01.678Z]   → skip: belsa-bed-light-wood-linen-chenille-sage
+[2026-06-09T18:05:01.688Z]   → skip: manette-bed
+[2026-06-09T18:05:01.690Z]   → skip: heidi-bed-velvet-chocolate
+[2026-06-09T18:05:01.695Z]   → skip: vara-bed
+[2026-06-09T18:05:01.698Z]   → skip: rivas-bed
+[2026-06-09T18:05:01.711Z]   → skip: linus-bed-velvet-grey-blue
+[2026-06-09T18:05:01.718Z]   → skip: oscar-cane-and-oak-bed
+[2026-06-09T18:05:01.721Z]   → skip: aubrey-bed-linen-floral-ikat
+[2026-06-09T18:05:01.722Z]   → skip: theodore-daybed
+[2026-06-09T18:05:01.734Z]   → skip: hasker-bed
+[2026-06-09T18:05:01.736Z]   → skip: willem-bed-velvet-and-linen
+[2026-06-09T18:05:01.738Z]   → skip: theodore-daybed-velvet
+[2026-06-09T18:05:01.741Z]   → skip: alana-bed
+[2026-06-09T18:05:01.742Z]   → skip: aubrey-bed
+[2026-06-09T18:05:01.746Z]   → skip: angus-bed
+[2026-06-09T18:05:01.748Z]   → skip: paolo-bed
+[2026-06-09T18:05:01.749Z]   → skip: mika-bed
+[2026-06-09T18:05:01.749Z]   → skip: marcia-daybed
+[2026-06-09T18:05:01.750Z]   → skip: belsa-bed-light-oak
+[2026-06-09T18:05:01.756Z]   → skip: tristan-bed
+[2026-06-09T18:05:01.764Z] 
+══ /us/furniture/bedside-tables-and-chest-of-drawers ══════════════
+[2026-06-09T18:05:01.764Z]   Loading: /us/furniture/bedside-tables-and-chest-of-drawers
+[2026-06-09T18:05:26.761Z]   Found 45 product links
+[2026-06-09T18:05:26.824Z]   → skip: basil-bedside-table-large
+[2026-06-09T18:05:26.830Z]   → skip: adria-bedside-table-terra-bianca-marble
+[2026-06-09T18:05:26.836Z]   → skip: armando-six-drawer-dresser-calacatta-aura-marble
+[2026-06-09T18:05:26.838Z]   → skip: avery-bedside-table-large
+[2026-06-09T18:05:26.838Z]   → skip: pietro-bedside-table-large-michelangelo-marble
+[2026-06-09T18:05:26.840Z]   → skip: silvio-six-drawer-dresser-royal-diana-marble
+[2026-06-09T18:05:26.843Z]   → skip: avery-bedside-table-bordeaux
+[2026-06-09T18:05:26.844Z]   → skip: leo-bedside-table-royal-diana-marble
+[2026-06-09T18:05:26.848Z]   → skip: leo-six-drawer-dresser-royal-diana-marble
+[2026-06-09T18:05:26.854Z]   → skip: kingsley-bedside-table-large-grey-emperador-marble
+[2026-06-09T18:05:26.856Z]   → skip: cora-bedside-table-skylar-print
+[2026-06-09T18:05:26.864Z]   → skip: pietro-bedside-table-large-brazilian-quartzite
+[2026-06-09T18:05:26.866Z]   → skip: railton-bedside-table-dark-emperador-marble
+[2026-06-09T18:05:26.877Z]   → skip: valerie-bedside-table-arabescato-corchia-large
+[2026-06-09T18:05:26.898Z]   → skip: belsa-bed-light-oak
+[2026-06-09T18:05:26.919Z]   Scraping [living room|coffee table]: garnett-table-lamp
+[2026-06-09T18:05:38.752Z]   ✓ Garnett Table Lamp, US | $345 | 18.5cm W × 18.5cm D × 54cm H | 4 imgs
+[2026-06-09T18:05:38.780Z]   → skip: pietro-bedside-table-large-brazilian-quartzite
+[2026-06-09T18:05:38.780Z]   ✗ Unclassified: Obie Rug Multi, 300 x 420cm Price $7,495 Regular Price $6,371 Member Preorder
+[2026-06-09T18:05:38.785Z]   ✗ Unclassified: Wool Sheer Curtain Panel, W325cm x L274cm, Single Panel Price $895 Regular Price $761 Member
+[2026-06-09T18:05:38.787Z]   → skip: pietro-bedside-table-brazilian-quartzite
+[2026-06-09T18:05:38.787Z]   → skip: devon-bedside-table
+[2026-06-09T18:05:38.788Z]   → skip: pietro-bedside-table-michelangelo-marble
+[2026-06-09T18:05:38.788Z]   ✗ Unclassified: Pietro Six Drawer, Michelangelo Marble Price $4,695 Regular Price $3,991 Member
+[2026-06-09T18:05:38.788Z]   → skip: warwick-three-drawer-dresser-mappa-burl
+[2026-06-09T18:05:38.788Z]   → skip: warwick-bedside-table-mappa-burl
+[2026-06-09T18:05:38.788Z]   → skip: avery-bedside-table
+[2026-06-09T18:05:38.788Z]   → skip: silvio-bedside-table-royal-diana-marble
+[2026-06-09T18:05:38.789Z]   → skip: valerie-bedside-table-arabescato-corchia
+[2026-06-09T18:05:38.789Z]   → skip: carlisle-bedside-table-carrara-marble
+[2026-06-09T18:05:38.789Z]   → skip: carlisle-six-drawer-dresser-carrara-marble
+[2026-06-09T18:05:38.789Z]   → skip: railton-six-drawer-dresser-dark-emperador-marble
+[2026-06-09T18:05:38.789Z]   → skip: marcel-bedside-table-medium-oak
+[2026-06-09T18:05:38.789Z]   → skip: valerie-six-drawer-dresser-arabescato-corchia
+[2026-06-09T18:05:38.790Z]   Scraping [bedroom|nightstand]: esmeray-bedside-table-mid-tone
+[2026-06-09T18:05:41.507Z]   ✓ Esmeray Bedside Table, Mid-tone | $2,095 | 58.8cm W × 50.2cm D × 60cm H | 4 imgs
+[2026-06-09T18:05:41.509Z]   → skip: warwick-six-drawer-dresser-mappa-burl
+[2026-06-09T18:05:41.509Z]   Scraping [bedroom|nightstand]: warwick-bedside-table-mappa-burl-large
+[2026-06-09T18:05:44.125Z]   ✓ Warwick Bedside Table, Mappa Burl, Large | $1,795 | 72cm W × 45cm D × 60cm H | 4 imgs
+[2026-06-09T18:05:44.143Z]   → skip: valerie-three-drawer-dresser
+[2026-06-09T18:05:44.147Z]   → skip: railton-double-wardrobe
+[2026-06-09T18:05:44.148Z]   Scraping [bedroom|nightstand]: marius-bedside-table-small-arabescato-corchia-marble
+[2026-06-09T18:05:47.245Z]   ✓ Marius Bedside Table, Small, Arabescato Corchia Marble | $945 | 50cm W × 44cm D × 60cm H | 4 imgs
+[2026-06-09T18:05:47.280Z]   → skip: railton-three-drawer-dresser
+[2026-06-09T18:05:47.283Z]   Scraping [bedroom|nightstand]: marius-bedside-table-large-arabescato-corchia-marble
+[2026-06-09T18:05:50.226Z]   ✓ Marius Bedside Table, Large, Arabescato Corchia Marble | $1,095 | 80cm W × 44cm D × 60cm H | 4 imgs
+[2026-06-09T18:05:50.306Z]   Scraping [bedroom|nightstand]: railton-bedside-table-dark-emperador-marble-large
+[2026-06-09T18:05:53.180Z]   ✓ Railton Bedside Table, Dark Emperador Marble, Large | $1,315 | 72cm W × 45cm D × 60cm H | 4 imgs
+[2026-06-09T18:05:53.190Z]   Scraping [bedroom|nightstand]: basil-bedside-table
+[2026-06-09T18:05:57.018Z]   ✓ Basil Bedside Table | $1,135 | 55cm W × 50cm D × 61cm H | 4 imgs
+[2026-06-09T18:05:57.077Z]   Scraping [bedroom|nightstand]: carlisle-bedside-table-carrara-marble-large
+[2026-06-09T18:06:00.007Z]   ✓ Carlisle Bedside Table, Carrara Marble, Large | $1,095 | 82cm W × 48cm D × 60cm H | 4 imgs
+[2026-06-09T18:06:00.017Z]   → skip: margot-five-drawer-dresser
+[2026-06-09T18:06:00.018Z] 
+══ /us/furniture/dining-tables-and-chairs ══════════════
+[2026-06-09T18:06:00.018Z]   Loading: /us/furniture/dining-tables-and-chairs
+[2026-06-09T18:06:13.378Z]   Found 46 product links
+[2026-06-09T18:06:13.388Z]   → skip: ramsey-dining-table-round-travertine
+[2026-06-09T18:06:13.388Z]   → skip: aria-dining-chair-boucle-jacquard-aubergine
+[2026-06-09T18:06:13.388Z]   → skip: morrell-dining-chair-fulton-jacquard-sage
+[2026-06-09T18:06:13.388Z]   → skip: georgina-dining-chair-velvet
+[2026-06-09T18:06:13.388Z]   → skip: brynn-dining-table-eight-seater
+[2026-06-09T18:06:13.389Z]   → skip: milo-dining-armchair-leather-chestnut
+[2026-06-09T18:06:13.389Z]   → skip: pair-of-keira-dining-chairs-linen-chenille-sage
+[2026-06-09T18:06:13.390Z]   → skip: molina-armchair
+[2026-06-09T18:06:13.390Z]   → skip: aria-dining-chair-kimber-natural
+[2026-06-09T18:06:13.391Z]   → skip: aria-dining-chair-daxton-jacquard
+[2026-06-09T18:06:13.391Z]   → skip: rosaline-dining-table-rosso-orobico
+[2026-06-09T18:06:13.392Z]   → skip: murcell-oval-dining-table-brazilian-green-marble-prominent
+[2026-06-09T18:06:13.392Z]   → skip: fiore-dining-table-brazilian-quartzite
+[2026-06-09T18:06:13.393Z]   → skip: molina-dining-armchair-skylar-print-grey-blue-velvet
+[2026-06-09T18:06:13.398Z]   ✗ Unclassified: Huxley Cut Crystal Decanter, Large Price $390 Regular Price $332 Member
+[2026-06-09T18:06:13.401Z]   ✗ Unclassified: Huxley Cocktail Party Essentials Price $1,050 Regular Price $893 Member
+[2026-06-09T18:06:13.401Z]   ✗ Unclassified: Barwell Cocktail Party Essentials Price $645 Regular Price $548 Member
+[2026-06-09T18:06:13.403Z]   → skip: murcell-oval-dining-table-brazilian-blue-quartzite
+[2026-06-09T18:06:13.403Z]   → skip: lachlan-dining-chair-velvet
+[2026-06-09T18:06:13.404Z]   → skip: elliot-dining-table-travertine
+[2026-06-09T18:06:13.404Z]   → skip: rosaline-dining-table-griseo-rosa-marble
+[2026-06-09T18:06:13.404Z]   → skip: ramsey-dining-table-travertine
+[2026-06-09T18:06:13.405Z]   → skip: lowden-dining-table
+[2026-06-09T18:06:13.405Z]   → skip: murcell-oval-dining-table-dark-emperador-marble
+[2026-06-09T18:06:13.405Z]   → skip: emerson-dining-chair-linen-chenille-bordeaux
+[2026-06-09T18:06:13.405Z]   → skip: murcell-oval-dining-table-marble
+[2026-06-09T18:06:13.406Z]   → skip: pair-of-molina-dining-chairs-skylar-print-grey-blue-velvet
+[2026-06-09T18:06:13.406Z]   → skip: fergus-dining-chair-fern-leather
+[2026-06-09T18:06:13.407Z]   → skip: pair-of-zita-dining-chairs-boucle
+[2026-06-09T18:06:13.407Z]   → skip: murcell-round-dining-table-carrara-marble
+[2026-06-09T18:06:13.410Z]   → skip: aria-dining-chair-boucle
+[2026-06-09T18:06:13.410Z]   → skip: rosaline-dining-table-noir-grande-marble
+[2026-06-09T18:06:13.411Z]   → skip: elliot-dining-table-carrara-marble
+[2026-06-09T18:06:13.411Z]   → skip: murcell-round-dining-table-brazilian-green-marble
+[2026-06-09T18:06:13.412Z]   → skip: morrell-dining-chair-velvet
+[2026-06-09T18:06:13.412Z]   → skip: pair-of-sitwell-dining-chairs
+[2026-06-09T18:06:13.412Z]   → skip: hamilton-dining-chair-ash-and-leather-green
+[2026-06-09T18:06:13.412Z]   → skip: elian-dining-table
+[2026-06-09T18:06:13.412Z]   → skip: pair-of-hamilton-armless-dining-chairs
+[2026-06-09T18:06:13.412Z]   → skip: matis-dining-table
+[2026-06-09T18:06:13.412Z]   → skip: eddie-dining-chair-velvet-camel
+[2026-06-09T18:06:13.413Z]   Scraping [dining room|dining chair]: pair-of-molina-dining-chairs
+[2026-06-09T18:06:16.694Z]   ✓ Pair of Molina Dining Chairs, Velvet, Chocolate, US | $1,795 | 50cm W × 58cm D × 78cm H | 4 imgs
+[2026-06-09T18:06:16.700Z]   Scraping [dining room|dining chair]: warren-dining-chair-slubby-linen
+[2026-06-09T18:06:19.472Z]   ✓ Warren Dining Chair, Slubby Linen, US | $1,395 | 56cm W × 58cm D × 77cm H | 4 imgs
+[2026-06-09T18:06:19.601Z]   Scraping [dining room|dining chair]: leonie-pair-of-armless-dining-chair-velvet-olive
+[2026-06-09T18:06:22.576Z]   ✓ Leonie, Pair of Armless Dining Chair, Velvet, Olive, US | $1,795 | 47cm W × 59cm D × 79cm H | 4 imgs
+[2026-06-09T18:06:22.594Z]   Scraping [dining room|dining chair]: leonie-armed-dining-chair-velvet-olive
+[2026-06-09T18:06:26.875Z]   ✓ Leonie Armed Dining Chair, Velvet, Olive, US | $995 | 55cm W × 59cm D × 79cm H | 4 imgs
+[2026-06-09T18:06:26.920Z]   Scraping [dining room|dining chair]: fergus-dining-chair-sycamore-leather
+[2026-06-09T18:06:31.752Z]   ✓ Fergus Dining Chair, Sycamore Leather, US | $1,195 | 55cm W × 60cm D × 76cm H | 4 imgs
+[2026-06-09T18:06:31.995Z] 
+══ /us/furniture/bar-cabinets-and-barstools ══════════════
+[2026-06-09T18:06:32.008Z]   Loading: /us/furniture/bar-cabinets-and-barstools
+[2026-06-09T18:06:46.666Z]   Found 32 product links
+[2026-06-09T18:06:46.679Z]   ✗ Unclassified: Kettner's Bar, Brazilian Quartzite Marble Price $12,095 Regular Price $10,281 Member
+[2026-06-09T18:06:46.682Z]   Scraping [dining room|barstool]: lennie-barstool-velvet-mustard
+[2026-06-09T18:06:50.208Z]   ✓ Lennie Barstool, Velvet, Mustard, US | $1,995 | 38cm W × 38cm D × 76cm H | 4 imgs
+[2026-06-09T18:06:50.234Z]   Scraping [dining room|barstool]: killian-barstool-velvet
+[2026-06-09T18:06:52.826Z]   ✓ Killian Barstool, Velvet, Chocolate, US | $2,395 | 39cm W × 39cm D × 70cm H | 4 imgs
+[2026-06-09T18:06:52.829Z]   Scraping [dining room|barstool]: rory-barstool-kimber-jacquard
+[2026-06-09T18:06:55.680Z]   ✓ Rory Barstool, Kimber Jacquard, US | $2,195 | 62cm W × 61cm D × 103cm H | 4 imgs
+[2026-06-09T18:06:55.703Z]   Scraping [dining room|barstool]: bryden-tall-barstool-dark-oak-linen-natural
+[2026-06-09T18:06:58.280Z]   ✓ Bryden Tall Barstool, Dark Oak, Linen, Natural, US | $1,185 | 40cm W × 40cm D × 75cm H | 4 imgs
+[2026-06-09T18:06:58.292Z]   Scraping [dining room|barstool]: alma-barstool-linen-chenille-deep-teal
+[2026-06-09T18:07:01.573Z]   ✓ Alma Barstool, Linen Chenille, Deep Teal, US | $2,395 | 38cm W × 41cm D × 104cm H | 4 imgs
+[2026-06-09T18:07:01.721Z]   Scraping [dining room|barstool]: killian-barstool-linen-chenille-stone
+[2026-06-09T18:07:05.340Z]   ✓ Killian Barstool, Linen Chenille, Stone, US | $2,395 | 39cm W × 39cm D × 70cm H | 4 imgs
+[2026-06-09T18:07:05.473Z]   ✗ Unclassified: Devon Bar Cabinet Price $4,095 Regular Price $3,481 Member
+[2026-06-09T18:07:05.502Z]   Scraping [dining room|barstool]: bryden-barstool-tall
+[2026-06-09T18:07:09.168Z]   ✓ Bryden Tall Barstool, Leather, Moss, US | $1,185 | 40cm W × 40cm D × 75cm H | 4 imgs
+[2026-06-09T18:07:09.176Z]   ✗ Unclassified: Athos Bar Cart, Calacatta Aura Marble Price $4,695 Regular Price $3,991 Member
+[2026-06-09T18:07:09.176Z]   Scraping [dining room|barstool]: wardell-barstool-linen
+[2026-06-09T18:07:11.690Z]   ✓ Wardell Barstool, Linen, Natural, US | $1,795 | 39cm W × 39cm D × 74cm H | 4 imgs
+[2026-06-09T18:07:11.694Z]   Scraping [dining room|barstool]: wardell-counter-stool-linen
+[2026-06-09T18:07:14.385Z]   ✓ Wardell Counter Stool, Linen, Natural, US | $1,795 | 39cm W × 39cm D × 63cm H | 4 imgs
+[2026-06-09T18:07:14.395Z]   Scraping [dining room|barstool]: wardell-counter-stool-velvet
+[2026-06-09T18:07:17.838Z]   ✓ Wardell Counter Stool, Velvet, Grey Blue, US | $1,075 | 39cm W × 39cm D × 63cm H | 4 imgs
+[2026-06-09T18:07:17.846Z]   ✗ Unclassified: Kingsley Bar Regular price $9,395 Price $4,695 Regular Regular price $7,986 Price $3,756 Member
+[2026-06-09T18:07:17.846Z]   → skip: belsa-bed-light-oak
+[2026-06-09T18:07:17.847Z]   → skip: garnett-table-lamp
+[2026-06-09T18:07:17.847Z]   → skip: pietro-bedside-table-large-brazilian-quartzite
+[2026-06-09T18:07:17.847Z]   ✗ Unclassified: Obie Rug Multi, 300 x 420cm Price $7,495 Regular Price $6,371 Member Preorder
+[2026-06-09T18:07:17.847Z]   ✗ Unclassified: Wool Sheer Curtain Panel, W325cm x L274cm, Single Panel Price $895 Regular Price $761 Member
+[2026-06-09T18:07:17.847Z]   Scraping [dining room|barstool]: wardell-barstool-velvet
+[2026-06-09T18:07:20.391Z]   ✓ Wardell Barstool, Velvet, Grey Blue, US | $1,795 | 39cm W × 39cm D × 74cm H | 4 imgs
+[2026-06-09T18:07:20.457Z]   Scraping [dining room|barstool]: bryden-counter-stool
+[2026-06-09T18:07:23.336Z]   ✓ Bryden Counter Barstool, Leather, Moss, US | $1,695 | 41cm W × 41cm D × 63cm H | 4 imgs
+[2026-06-09T18:07:23.362Z]   Scraping [dining room|barstool]: calvert-barstool-leather-and-velvet
+[2026-06-09T18:07:26.097Z]   ✓ Calvert Barstool, Leather & Velvet US | $2,395 | 63cm W × 58cm D × 101cm H | 4 imgs
+[2026-06-09T18:07:26.132Z]   Scraping [dining room|barstool]: rory-barstool-velvet-grey-blue
+[2026-06-09T18:07:28.912Z]   ✓ Rory Barstool, Velvet, Grey Blue, US | $1,795 | 62cm W × 61cm D × 79cm H | 4 imgs
+[2026-06-09T18:07:28.923Z]   Scraping [dining room|barstool]: wardell-counter-stool-leather
+[2026-06-09T18:07:31.801Z]   ✓ Wardell Counter Stool, Leather, Sangria, US | $1,795 | 39cm W × 39cm D × 63cm H | 4 imgs
+[2026-06-09T18:07:31.853Z]   ✗ Unclassified: Nora Tambour Bar, Black Marquina Marble Regular price $3,395 Price $1,695 Regular Regular price $2,886 Price $1,356 Member Limited stock available
+[2026-06-09T18:07:31.854Z]   Scraping [dining room|barstool]: wardell-barstool-leather
+[2026-06-09T18:07:34.940Z]   ✓ Wardell Barstool, Leather, Sangria, US | $1,795 | 39cm W × 39cm D × 74cm H | 4 imgs
+[2026-06-09T18:07:34.956Z]   Scraping [dining room|barstool]: albany-barstool-velvet-camel
+[2026-06-09T18:07:37.715Z]   ✓ Albany Barstool, Velvet, Camel, US | $1,435 | 38cm W × 38cm D × 75cm H | 4 imgs
+[2026-06-09T18:07:37.734Z]   Scraping [dining room|barstool]: bryden-counter-barstool-dark-oak-linen
+[2026-06-09T18:07:40.372Z]   ✓ Bryden Counter Barstool, Dark Oak, Linen, Natural, US | $1,185 | 41cm W × 41cm D × 63cm H | 4 imgs
+[2026-06-09T18:07:40.406Z]   ✗ Unclassified: Portavini Bar Storage Price $9,395 Regular Price $7,986 Member Out of stock
+[2026-06-09T18:07:40.419Z]   Scraping [dining room|barstool]: rory-barstool-regency-stripe
+[2026-06-09T18:07:45.115Z]   ✓ Rory Barstool, Regency Stripe, US | $1,995 | 62cm W × 61cm D × 79cm H | 4 imgs
+[2026-06-09T18:07:45.222Z]   ✗ Unclassified: Locanda Bar, Dark Emperador Marble Price $11,395 Regular Price $9,686 Member Out of stock
+[2026-06-09T18:07:45.225Z]   Scraping [dining room|barstool]: calvert-barstool-sangria-leather-and-bordeaux-linen-chenille
+[2026-06-09T18:07:48.488Z]   ✓ Calvert Barstool, Sangria Leather & Bordeaux Linen Chenille, US | $2,395 | 63.2cm W × 58.3cm D × 101cm H | 4 imgs
+[2026-06-09T18:07:48.498Z] 
+══ /us/furniture/footstools ══════════════
+[2026-06-09T18:07:48.498Z]   Loading: /us/furniture/footstools
+[2026-06-09T18:08:01.488Z]   Found 58 product links
+[2026-06-09T18:08:01.512Z]   ✗ Unclassified: Dalton Burl Footstool, Velvet, Lichen Regular price $1,095 Price $765 Regular Regular price $931 Price $612 Member
+[2026-06-09T18:08:01.514Z]   ✗ Unclassified: Alvin Footstool, Kimber Jacquard Price $1,395 Regular Price $1,186 Member
+[2026-06-09T18:08:01.515Z]   ✗ Unclassified: Marta Footstool, Velvet Regular price $1,095 Price $765 Regular Regular price $931 Price $612 Member Limited stock available
+[2026-06-09T18:08:01.516Z]   ✗ Unclassified: Novi Footstool, Velvet, Lichen Price $2,595 Regular Price $2,206 Member
+[2026-06-09T18:08:01.517Z]   ✗ Unclassified: Sofia Footstool, Boucle Jacquard, Marine Regular price $895 Price $535 Regular Regular price $761 Price $428 Member
+[2026-06-09T18:08:01.517Z]   ✗ Unclassified: Tabitha Footstool, Linen Chenille & Velvet, Chocolate Price $1,095 Regular Price $931 Member
+[2026-06-09T18:08:01.517Z]   ✗ Unclassified: Dalton Burl Footstool, Linen Chenille, Bordeaux Regular price $1,095 Price $765 Regular Regular price $931 Price $612 Member
+[2026-06-09T18:08:01.518Z]   ✗ Unclassified: Sofia Footstool, Linen Chenille, Sage Regular price $895 Price $625 Regular Regular price $761 Price $500 Member Limited stock available
+[2026-06-09T18:08:01.518Z]   ✗ Unclassified: Alvin Footstool, Velvet, Olive Regular price $1,095 Price $655 Regular Regular price $931 Price $524 Member
+[2026-06-09T18:08:01.518Z]   ✗ Unclassified: Tabitha Footstool Price $1,095 Regular Price $931 Member
+[2026-06-09T18:08:01.518Z]   ✗ Unclassified: Lyla Footstool, Lophelia Jacquard Price $1,495 Regular Price $1,271 Member
+[2026-06-09T18:08:01.525Z]   ✗ Unclassified: Sofia Footstool, Skylar Print Price $895 Regular Price $761 Member
+[2026-06-09T18:08:01.526Z]   ✗ Unclassified: Romi Footstool, Akley Jacquard Price $895 Regular Price $761 Member
+[2026-06-09T18:08:01.526Z]   ✗ Unclassified: Ralph Footstool, Velvet Price $995 Regular Price $846 Member Limited stock available
+[2026-06-09T18:08:01.526Z]   → skip: belsa-bed-light-oak
+[2026-06-09T18:08:01.527Z]   → skip: garnett-table-lamp
+[2026-06-09T18:08:01.527Z]   → skip: pietro-bedside-table-large-brazilian-quartzite
+[2026-06-09T18:08:01.531Z]   ✗ Unclassified: Obie Rug Multi, 300 x 420cm Price $7,495 Regular Price $6,371 Member Preorder
+[2026-06-09T18:08:01.533Z]   ✗ Unclassified: Wool Sheer Curtain Panel, W325cm x L274cm, Single Panel Price $895 Regular Price $761 Member
+[2026-06-09T18:08:01.533Z]   ✗ Unclassified: Theodore Footstool, Vende Jacquard, Olive Price $895 Regular Price $761 Member Limited stock available
+[2026-06-09T18:08:01.535Z]   Scraping [bedroom|bench]: nieve-bench-boucle-sand
+[2026-06-09T18:08:05.525Z]   ✓ Nieve Bench, Boucle Sand, US | $1,895 | 150cm W × 48cm D × 45cm H | 4 imgs
+[2026-06-09T18:08:05.540Z]   Scraping [bedroom|bench]: theodore-bench
+[2026-06-09T18:08:08.613Z]   ✓ Theodore Bench, Rust Velvet, US | $1,795 | 170cm W × 50cm D × 38cm H | 4 imgs
+[2026-06-09T18:08:08.616Z]   ✗ Unclassified: Theodore Footstool, Leather Price $1,095 Regular Price $931 Member Limited stock available
+[2026-06-09T18:08:08.616Z]   Scraping [bedroom|bench]: belsa-bench
+[2026-06-09T18:08:12.301Z]   ✓ Belsa Bench, Velvet Lichen, US | $2,095 | 185cm W × 76cm D × 40cm H | 4 imgs
+[2026-06-09T18:08:12.339Z]   Scraping [bedroom|bench]: nieve-bench
+[2026-06-09T18:08:17.304Z]   ✓ Nieve Bench, Velvet, Chocolate, US | $1,600 | 150cm W × 48cm D × 45cm H | 4 imgs
+[2026-06-09T18:08:17.337Z]   Scraping [bedroom|bench]: vivienne-bench
+[2026-06-09T18:08:20.438Z]   ✓ Vivienne Bench, Natural Boucle, US | $1,795 | 171cm W × 53cm D × 46cm H | 4 imgs
+[2026-06-09T18:08:20.451Z]   Scraping [bedroom|bench]: marcia-bench
+[2026-06-09T18:08:23.353Z]   ✓ Marcia Bench, Antique Rose Velvet, US | $1,795 | 170cm W × 50cm D × 53cm H | 4 imgs
+[2026-06-09T18:08:23.363Z]   Scraping [bedroom|bench]: willis-bench-velvet
+[2026-06-09T18:08:26.677Z]   ✓ Willis Bench, Velvet, Rust, US | $1,995 | 161cm W × 44cm D × 44cm H | 4 imgs
+[2026-06-09T18:08:26.692Z]   Scraping [bedroom|bench]: eli-storage-bench
+[2026-06-09T18:08:30.351Z]   ✓ Eli Storage Bench, Linen, Sage, US | $1,695 | 161cm W × 46cm D × 47cm H | 4 imgs
+[2026-06-09T18:08:30.419Z]   Scraping [bedroom|bench]: lukas-bench
+[2026-06-09T18:08:33.257Z]   ✓ Lukas Bench, Linen, Wheat, US | $2,395 | 170cm W × 48cm D × 47cm H | 4 imgs
+[2026-06-09T18:08:33.261Z]   ✗ Unclassified: Theodore Footstool, Textured Wool Boucle Price $1,295 Regular Price $1,101 Member Made-to-order
+[2026-06-09T18:08:33.261Z]   ✗ Unclassified: Aline Ottoman Price from $1,595 Regular Price from $1,356 Member Made-to-order
+[2026-06-09T18:08:33.262Z]   ✗ Unclassified: Rava Ottoman Price from $1,495 Regular Price from $1,271 Member Made-to-order
+[2026-06-09T18:08:33.262Z]   ✗ Unclassified: Theodore Footstool, Light Oak Price from $795 Regular Price from $676 Member Made-to-order
+[2026-06-09T18:08:33.262Z]   ✗ Unclassified: Roma Square Ottoman Price $1,695 Regular Price $1,441 Member Made-to-order
+[2026-06-09T18:08:33.262Z]   ✗ Unclassified: Vivienne Ottoman Price from $1,295 Regular Price from $1,101 Member Made-to-order
+[2026-06-09T18:08:33.262Z]   ✗ Unclassified: Theodore Oak Footstool, Textured Wool Boucle Price $1,295 Regular Price $1,101 Member Made-to-order
+[2026-06-09T18:08:33.263Z]   ✗ Unclassified: Reya Ottoman Price from $1,095 Regular Price from $931 Member Made-to-order
+[2026-06-09T18:08:33.263Z]   ✗ Unclassified: Audrey Ottoman Price from $1,295 Regular Price from $1,101 Member Made-to-order
+[2026-06-09T18:08:33.263Z]   ✗ Unclassified: Albany Footstool, Velvet, Antique Rose Price $1,395 Regular Price $1,186 Member
+[2026-06-09T18:08:33.263Z]   Scraping [bedroom|bench]: willis-bench-boucle-natural
+[2026-06-09T18:08:36.330Z]   ✓ Willis Bench, Boucle, Natural, US | $1,595 | 220cm W × 95cm D × 74cm H | 4 imgs
+[2026-06-09T18:08:36.347Z]   Scraping [bedroom|bench]: esther-bench-velvet
+[2026-06-09T18:08:39.230Z]   ✓ Esther Bench, Velvet, Olive, US | $1,995 | 170cm W × 50cm D × 55cm H | 4 imgs
+[2026-06-09T18:08:39.241Z]   ✗ Unclassified: Elowen Ottoman Price $2,295 Regular Price $1,951 Member Made-to-order
+[2026-06-09T18:08:39.242Z]   ✗ Unclassified: Tabitha Footstool, Velvet & Linen Chenille, Lichen Price $1,095 Regular Price $931 Member
+[2026-06-09T18:08:39.242Z]   ✗ Unclassified: Lyla Footstool, Vende Jacquard, Olive Price $895 Regular Price $761 Member
+[2026-06-09T18:08:39.243Z]   ✗ Unclassified: Lyla Footstool,Wimpole Stripe Price $895 Regular Price $761 Member
+[2026-06-09T18:08:39.245Z]   ✗ Unclassified: Lyla Footstool Price $795 Regular Price $676 Member
+[2026-06-09T18:08:39.246Z]   ✗ Unclassified: Romi Footstool, Leather Regular price $1,295 Price $645 Regular Regular price $1,101 Price $516 Member
+[2026-06-09T18:08:39.247Z]   ✗ Unclassified: Theodore Footstool, Boucle, Natural Regular price $695 Price $415 Regular Regular price $591 Price $332 Member
+[2026-06-09T18:08:39.249Z]   ✗ Unclassified: Sofia Footstool, Velvet Regular price $795 Price $555 Regular Regular price $676 Price $444 Member
+[2026-06-09T18:08:39.250Z]   ✗ Unclassified: Theodore Footstool Regular price from $695 Price $415 Regular from Regular price $591 Price $332 Member
+[2026-06-09T18:08:39.250Z]   ✗ Unclassified: Lorene Footstool Regular price $595 Price $295 Regular Regular price $506 Price $236 Member
+[2026-06-09T18:08:39.250Z]   ✗ Unclassified: Garret Footstool Regular price $1,395 Price $835 Regular Regular price $1,186 Price $668 Member
+[2026-06-09T18:08:39.250Z]   ✗ Unclassified: Dora Storage Footstool, Cotton Velvet Regular price $650 Price $455 Regular Regular price $553 Price $364 Member Limited stock available
+[2026-06-09T18:08:39.251Z]   ✗ Unclassified: Drew Footstool, Leather, Chestnut Regular price $2,395 Price $1,195 Regular Regular price $2,036 Price $956 Member
+[2026-06-09T18:08:39.251Z]   ✗ Unclassified: Garret Footstool, Boucle Regular price $1,095 Price $655 Regular Regular price $931 Price $524 Member
+[2026-06-09T18:08:39.251Z]   ✗ Unclassified: Sofia Footstool, Fulton Jacquard, Sage Regular price $895 Price $535 Regular Regular price $761 Price $428 Member Out of stock
+[2026-06-09T18:08:39.251Z]   Scraping [bedroom|bench]: hallie-bench-velvet-olive
+[2026-06-09T18:08:42.051Z]   ✓ Hallie Bench, Velvet, Olive, US | $2,595 | 152cm W × 47cm D × 46cm H | 4 imgs
+[2026-06-09T18:08:42.055Z] 
+══ /us/furniture/desks ══════════════
+[2026-06-09T18:08:42.055Z]   Loading: /us/furniture/desks
+[2026-06-09T18:08:53.410Z]   Found 10 product links
+[2026-06-09T18:08:53.419Z]   Scraping [other|desk]: alvis-desk
+[2026-06-09T18:08:57.296Z]   ✓ Alvis Desk | $5,395 | 180cm W × 75cm D × 76cm H | 4 imgs
+[2026-06-09T18:08:57.394Z]   Scraping [other|desk]: donato-desk
+[2026-06-09T18:09:00.397Z]   ✓ Donato Desk | $2,455 | 160cm W × 65cm D × 75cm H | 4 imgs
+[2026-06-09T18:09:00.422Z]   Scraping [other|desk]: arranmore-desk-walnut-burl
+[2026-06-09T18:09:03.988Z]   ✓ Arranmore Desk, Walnut Burl | $4,095 | 187cm W × 88cm D × 78cm H | 4 imgs
+[2026-06-09T18:09:04.074Z]   Scraping [other|desk]: wilmot-desk
+[2026-06-09T18:09:07.423Z]   ✓ Wilmot Desk | $4,695 | 150cm W × 65cm D × 75cm H | 4 imgs
+[2026-06-09T18:09:07.503Z]   Scraping [other|desk]: farley-desk
+[2026-06-09T18:09:13.750Z]   ✓ Farley Desk | $7,095 | 160cm W × 65cm D × 76cm H | 4 imgs
+[2026-06-09T18:09:14.497Z]   Scraping [other|desk]: marena-desk
+[2026-06-09T18:09:25.570Z]   ✓ Marena Desk | $3,095 | 140cm W × 56cm D × 76cm H | 4 imgs
+[2026-06-09T18:09:25.724Z]   Scraping [other|desk]: railton-desk-dark-emperador-marble
+[2026-06-09T18:09:30.112Z]   ✓ Railton Desk, Dark Emperador Marble | $5,795 | 179cm W × 70cm D × 75cm H | 4 imgs
+[2026-06-09T18:09:30.153Z]   Scraping [other|desk]: wilmot-desk-large
+[2026-06-09T18:09:33.075Z]   ✓ Wilmot Desk, Large | $5,795 | 200cm W × 80cm D × 76cm H | 4 imgs
+[2026-06-09T18:09:33.079Z]   Scraping [other|desk]: wallace-desk-mappa-burl
+[2026-06-09T18:09:35.964Z]   ✓ Wallace Desk, Mappa Burl | $2,195 | 150cm W × 65cm D × 76cm H | 4 imgs
+[2026-06-09T18:09:36.071Z]   Scraping [other|desk]: aldo-desk
+[2026-06-09T18:09:39.068Z]   ✓ Aldo Desk | $2,695 | 120cm W × 60cm D × 76cm H | 4 imgs
+[2026-06-09T18:09:39.076Z] 
+══ /us/furniture/entryway-consoles-and-shelving ══════════════
+[2026-06-09T18:09:39.076Z]   Loading: /us/furniture/entryway-consoles-and-shelving
+[2026-06-09T18:09:52.917Z]   Found 20 product links
+[2026-06-09T18:09:52.943Z]   Scraping [living room|shelving]: willow-shelving-mint-low
+[2026-06-09T18:09:55.762Z]   ✓ Willow Shelving, Mint, Low | $1,615 | 180cm W × 40cm D × 81cm H | 4 imgs
+[2026-06-09T18:09:55.787Z]   Scraping [living room|shelving]: willow-shelving-cream-tall
+[2026-06-09T18:09:58.577Z]   ✓ Willow Shelving, Cream, Tall | $2,335 | 180cm W × 40cm D × 188cm H | 4 imgs
+[2026-06-09T18:09:58.581Z]   Scraping [living room|shelving]: elwood-shelving
+[2026-06-09T18:10:04.197Z]   ✓ Elwood Shelving | $3,495 | 120cm W × 38cm D × 181cm H | 4 imgs
+[2026-06-09T18:10:04.520Z]   Scraping [living room|shelving]: dorian-console-unit-brazilian-quartzite
+[2026-06-09T18:10:07.823Z]   ✓ Dorian Console Unit, Brazilian Quartzite | $5,795 | 100cm W × 44cm D × 120cm H | 4 imgs
+[2026-06-09T18:10:07.849Z]   Scraping [living room|shelving]: siya-console-dark-emperador-marble
+[2026-06-09T18:10:11.018Z]   ✓ Siya Console, Dark Emperador Marble | $3,695 | 120cm W × 35cm D × 80cm H | 4 imgs
+[2026-06-09T18:10:11.025Z]   ✗ Unclassified: Aristo Entryway Unit, Michelangelo Marble Price $6,095 Regular Price $5,181 Member
+[2026-06-09T18:10:11.025Z]   Scraping [living room|shelving]: althea-console-table-silver-travertine
+[2026-06-09T18:10:13.486Z]   ✓ Althea Console Table, Silver Travertine | $2,995 | 135cm W × 38cm D × 85cm H | 4 imgs
+[2026-06-09T18:10:13.491Z]   Scraping [living room|shelving]: wallace-shelves-mappa-burl
+[2026-06-09T18:10:16.142Z]   ✓ Wallace Shelves, Mappa Burl | $3,295 | 97cm W × 35cm D × 192cm H | 4 imgs
+[2026-06-09T18:10:16.197Z]   Scraping [living room|shelving]: tiber-console-table-brazilian-quartzite
+[2026-06-09T18:10:19.211Z]   ✓ Tiber Console Table, Brazilian Quartzite | $2,995 | 100cm W × 28cm D × 85cm H | 4 imgs
+[2026-06-09T18:10:19.598Z]   Scraping [living room|shelving]: wallace-console-mappa-burl
+[2026-06-09T18:10:23.322Z]   ✓ Wallace Console, Mappa Burl | $1,895 | 120cm W × 35cm D × 80cm H | 4 imgs
+[2026-06-09T18:10:23.353Z]   ✗ Unclassified: Armando Entryway Unit Price $5,795 Regular Price $4,926 Member
+[2026-06-09T18:10:23.353Z]   Scraping [living room|shelving]: locanda-console-dark-emperador-marble
+[2026-06-09T18:10:26.119Z]   ✓ Locanda Console, Dark Emperador Marble | $4,495 | 121cm W × 39cm D × 86cm H | 4 imgs
+[2026-06-09T18:10:26.150Z]   Scraping [living room|shelving]: marin-shelving-unit
+[2026-06-09T18:10:29.148Z]   ✓ Marin Shelving Unit | $3,655 | 170cm W × 38cm D × 170cm H | 4 imgs
+[2026-06-09T18:10:29.166Z]   Scraping [living room|shelving]: ramsey-console-table
+[2026-06-09T18:10:32.372Z]   ✓ Ramsey Console Table | $1,615 | 120cm W × 36cm D × 75cm H | 4 imgs
+[2026-06-09T18:10:32.386Z]   → skip: belsa-bed-light-oak
+[2026-06-09T18:10:32.386Z]   → skip: garnett-table-lamp
+[2026-06-09T18:10:32.386Z]   → skip: pietro-bedside-table-large-brazilian-quartzite
+[2026-06-09T18:10:32.386Z]   ✗ Unclassified: Obie Rug Multi, 300 x 420cm Price $7,495 Regular Price $6,371 Member Preorder
+[2026-06-09T18:10:32.386Z]   ✗ Unclassified: Wool Sheer Curtain Panel, W325cm x L274cm, Single Panel Price $895 Regular Price $761 Member
+[2026-06-09T18:10:32.386Z]   Scraping [living room|shelving]: maven-shelving-unit
+[2026-06-09T18:10:35.360Z]   ✓ Maven Shelving Unit | $4,495 | 150cm W × 35cm D × 80cm H | 4 imgs
+[2026-06-09T18:10:36.376Z] 
+=== Done — 74 new, 0 errors, 263 total ===
+[2026-06-09T18:28:39.177Z] === Soho Home catalogue scraper ===
+[2026-06-09T18:28:39.200Z] Resuming — 263 existing products
+[2026-06-09T18:28:43.478Z] 
+══ /us/furniture/sofas ══════════════
+[2026-06-09T18:28:43.487Z]   Loading: /us/furniture/sofas
+[2026-06-09T18:28:58.044Z]   Found 21 product links
+[2026-06-09T18:28:58.061Z]   → skip: edison-sectional-l-shape-sofa
+[2026-06-09T18:28:58.072Z]   → skip: edison-sectional-corner-sofa
+[2026-06-09T18:28:58.072Z]   → skip: blair-two-seater-sofa-velvet-lichen
+[2026-06-09T18:28:58.073Z]   → skip: belmont-sofa-three-seater-sofa
+[2026-06-09T18:28:58.074Z]   → skip: theodore-two-seater-sofa
+[2026-06-09T18:28:58.074Z]   → skip: mossley-sofa-leather
+[2026-06-09T18:28:58.074Z]   → skip: mossley-sofa
+[2026-06-09T18:28:58.075Z]   → skip: truro-sectional-sofa-textured-linen
+[2026-06-09T18:28:58.153Z]   ✗ Unclassified: Truro Ottoman, Textured Linen Price $2,195 Regular Price $1,866 Member Made-to-order
+[2026-06-09T18:28:58.156Z]   → skip: hamish-sectional-corner-sofa
+[2026-06-09T18:28:58.158Z]   → skip: truro-sectional-sofa-corner-sofa-textured-linen
+[2026-06-09T18:28:58.160Z]   → skip: marcia-three-seater-sofa-leather
+[2026-06-09T18:28:58.171Z]   → skip: hamish-sectional-sofa
+[2026-06-09T18:28:58.171Z]   → skip: conall-three-seater-sofa
+[2026-06-09T18:28:58.172Z]   → skip: odell-sectional-sofa-corner-sofa
+[2026-06-09T18:28:58.174Z]   → skip: odell-sectional-sofa-textured-linen
+[2026-06-09T18:28:58.175Z]   → skip: marcia-three-seater-sofa
+[2026-06-09T18:28:58.177Z]   → skip: noelle-sectional-curved-sofa
+[2026-06-09T18:28:58.179Z]   → skip: rava-three-seater-sofa
+[2026-06-09T18:28:58.180Z]   → skip: odell-deeper-sit-corner-sectional-sofa
+[2026-06-09T18:28:58.185Z]   → skip: odell-sectional-sofa
+[2026-06-09T18:28:58.186Z] 
+══ /us/furniture/armchairs ══════════════
+[2026-06-09T18:28:58.186Z]   Loading: /us/furniture/armchairs
+[2026-06-09T18:29:00.826Z]   ✗ Listing failed: Navigating frame was detached
+[2026-06-09T18:29:00.939Z] 
+══ /us/furniture/coffee-tables-side-tables ══════════════
+[2026-06-09T18:29:00.974Z]   Loading: /us/furniture/coffee-tables-side-tables
+[2026-06-09T18:29:01.020Z]   ✗ Listing failed: Attempted to use detached Frame '0642293D3008A9B8B2FDB02BFAD0629D'.
+[2026-06-09T18:29:01.075Z] 
+══ /us/furniture/sideboards-and-media-units ══════════════
+[2026-06-09T18:29:01.099Z]   Loading: /us/furniture/sideboards-and-media-units
+[2026-06-09T18:29:01.133Z]   ✗ Listing failed: Attempted to use detached Frame '0642293D3008A9B8B2FDB02BFAD0629D'.
+[2026-06-09T18:29:01.137Z] 
+══ /us/furniture/beds-and-mattresses ══════════════
+[2026-06-09T18:29:01.153Z]   Loading: /us/furniture/beds-and-mattresses
+[2026-06-09T18:29:01.202Z]   ✗ Listing failed: Attempted to use detached Frame '0642293D3008A9B8B2FDB02BFAD0629D'.
+[2026-06-09T18:29:01.222Z] 
+══ /us/furniture/bedside-tables-and-chest-of-drawers ══════════════
+[2026-06-09T18:29:01.236Z]   Loading: /us/furniture/bedside-tables-and-chest-of-drawers
+[2026-06-09T18:29:01.259Z]   ✗ Listing failed: Attempted to use detached Frame '0642293D3008A9B8B2FDB02BFAD0629D'.
+[2026-06-09T18:29:01.306Z] 
+══ /us/furniture/dining-tables-and-chairs ══════════════
+[2026-06-09T18:29:01.383Z]   Loading: /us/furniture/dining-tables-and-chairs
+[2026-06-09T18:29:01.467Z]   ✗ Listing failed: Attempted to use detached Frame '0642293D3008A9B8B2FDB02BFAD0629D'.
+[2026-06-09T18:29:01.512Z] 
+══ /us/furniture/bar-cabinets-and-barstools ══════════════
+[2026-06-09T18:29:01.658Z]   Loading: /us/furniture/bar-cabinets-and-barstools
+[2026-06-09T18:29:01.682Z]   ✗ Listing failed: Attempted to use detached Frame '0642293D3008A9B8B2FDB02BFAD0629D'.
+[2026-06-09T18:29:01.700Z] 
+══ /us/furniture/footstools ══════════════
+[2026-06-09T18:29:01.708Z]   Loading: /us/furniture/footstools
+[2026-06-09T18:29:01.741Z]   ✗ Listing failed: Attempted to use detached Frame '0642293D3008A9B8B2FDB02BFAD0629D'.
+[2026-06-09T18:29:01.751Z] 
+══ /us/furniture/desks ══════════════
+[2026-06-09T18:29:01.775Z]   Loading: /us/furniture/desks
+[2026-06-09T18:29:01.824Z]   ✗ Listing failed: Attempted to use detached Frame '0642293D3008A9B8B2FDB02BFAD0629D'.
+[2026-06-09T18:29:01.846Z] 
+══ /us/furniture/entryway-consoles-and-shelving ══════════════
+[2026-06-09T18:29:01.872Z]   Loading: /us/furniture/entryway-consoles-and-shelving
+[2026-06-09T18:29:01.940Z]   ✗ Listing failed: Attempted to use detached Frame '0642293D3008A9B8B2FDB02BFAD0629D'.
+[2026-06-09T18:29:01.955Z] 
+══ /us/textiles/rugs ══════════════
+[2026-06-09T18:29:01.983Z]   Loading: /us/textiles/rugs
+[2026-06-09T18:29:02.011Z]   ✗ Listing failed: Attempted to use detached Frame '0642293D3008A9B8B2FDB02BFAD0629D'.
+[2026-06-09T18:29:02.905Z] 
+=== Done — 0 new, 11 errors, 263 total ===
+[2026-06-09T21:31:40.698Z] === Soho Home catalogue scraper ===
+[2026-06-09T21:31:40.712Z] Resuming — 263 existing products
+[2026-06-09T21:31:43.208Z] 
+══ /us/furniture/sofas ══════════════
+[2026-06-09T21:31:43.419Z]   Loading: /us/furniture/sofas
+[2026-06-09T21:32:04.399Z]   Found 21 product links
+[2026-06-09T21:32:04.636Z]   → skip: edison-sectional-l-shape-sofa
+[2026-06-09T21:32:04.637Z]   → skip: edison-sectional-corner-sofa
+[2026-06-09T21:32:04.637Z]   → skip: blair-two-seater-sofa-velvet-lichen
+[2026-06-09T21:32:04.637Z]   → skip: belmont-sofa-three-seater-sofa
+[2026-06-09T21:32:04.637Z]   → skip: theodore-two-seater-sofa
+[2026-06-09T21:32:04.637Z]   → skip: mossley-sofa-leather
+[2026-06-09T21:32:04.637Z]   → skip: mossley-sofa
+[2026-06-09T21:32:04.638Z]   → skip: truro-sectional-sofa-textured-linen
+[2026-06-09T21:32:04.638Z]   ✗ Unclassified: Truro Ottoman, Textured Linen Price $2,195 Regular Price $1,866 Member Made-to-order
+[2026-06-09T21:32:04.638Z]   → skip: hamish-sectional-corner-sofa
+[2026-06-09T21:32:04.638Z]   → skip: truro-sectional-sofa-corner-sofa-textured-linen
+[2026-06-09T21:32:04.638Z]   → skip: marcia-three-seater-sofa-leather
+[2026-06-09T21:32:04.639Z]   → skip: hamish-sectional-sofa
+[2026-06-09T21:32:04.639Z]   → skip: conall-three-seater-sofa
+[2026-06-09T21:32:04.639Z]   → skip: odell-sectional-sofa-corner-sofa
+[2026-06-09T21:32:04.639Z]   → skip: odell-sectional-sofa-textured-linen
+[2026-06-09T21:32:04.639Z]   → skip: marcia-three-seater-sofa
+[2026-06-09T21:32:04.639Z]   → skip: noelle-sectional-curved-sofa
+[2026-06-09T21:32:04.639Z]   → skip: rava-three-seater-sofa
+[2026-06-09T21:32:04.639Z]   → skip: odell-deeper-sit-corner-sectional-sofa
+[2026-06-09T21:32:04.639Z]   → skip: odell-sectional-sofa
+[2026-06-09T21:32:04.645Z] 
+══ /us/furniture/armchairs ══════════════
+[2026-06-09T21:32:04.791Z]   Loading: /us/furniture/armchairs
+[2026-06-09T21:32:17.623Z]   Found 21 product links
+[2026-06-09T21:32:17.873Z]   → skip: blair-tub-armchair-velvet
+[2026-06-09T21:32:17.874Z]   → skip: vivienne-armchair-linen-chenille
+[2026-06-09T21:32:17.874Z]   → skip: theodore-burl-armchair-linen-chenille-bordeaux
+[2026-06-09T21:32:17.874Z]   → skip: mila-armchair-boucle-jacquard-olive
+[2026-06-09T21:32:17.875Z]   → skip: theodore-armchair-boucle-jacquard-marine
+[2026-06-09T21:32:17.875Z]   → skip: ewan-armchair-leather-chestnut
+[2026-06-09T21:32:17.875Z]   → skip: eddie-armchair-jago-jacquard
+[2026-06-09T21:32:17.875Z]   → skip: vivienne-armchair-theron
+[2026-06-09T21:32:17.875Z]   → skip: theodore-armchair-boucle-natural
+[2026-06-09T21:32:17.875Z]   → skip: ewan-armchair
+[2026-06-09T21:32:17.875Z]   → skip: garret-armchair-floral-ikat
+[2026-06-09T21:32:17.875Z]   → skip: vivienne-armchair
+[2026-06-09T21:32:17.875Z]   → skip: noelle-sectional-armchair
+[2026-06-09T21:32:17.876Z]   → skip: vivienne-armchair-textured-wool-boucle
+[2026-06-09T21:32:17.876Z]   → skip: mila-armchair-boucle-jacquard-olive
+[2026-06-09T21:32:17.876Z]   → skip: noelle-sectional-curved-armchair
+[2026-06-09T21:32:17.876Z]   → skip: theodore-oak-armchair-textured-wool-boucle
+[2026-06-09T21:32:17.876Z]   → skip: theodore-armchair-textured-wool-boucle
+[2026-06-09T21:32:17.876Z]   → skip: theodore-oak-armchair
+[2026-06-09T21:32:17.876Z]   → skip: caleb-armchair-dark-burl-velvet
+[2026-06-09T21:32:17.877Z]   → skip: sydney-armchair
+[2026-06-09T21:32:17.888Z] 
+══ /us/furniture/coffee-tables-side-tables ══════════════
+[2026-06-09T21:32:17.964Z]   Loading: /us/furniture/coffee-tables-side-tables
+[2026-06-09T21:32:30.629Z]   Found 47 product links
+[2026-06-09T21:32:30.846Z]   → skip: germain-coffee-table-abstract-burl
+[2026-06-09T21:32:30.846Z]   → skip: holden-coffee-table
+[2026-06-09T21:32:30.847Z]   → skip: ivy-coffee-table
+[2026-06-09T21:32:30.847Z]   → skip: sloane-side-table-abstract-burl
+[2026-06-09T21:32:30.848Z]   → skip: vito-side-table-tall-arabescato
+[2026-06-09T21:32:30.849Z]   → skip: vito-coffee-table-arabescato
+[2026-06-09T21:32:30.849Z]   → skip: ivy-side-table
+[2026-06-09T21:32:30.850Z]   → skip: tisbury-oval-coffee-table
+[2026-06-09T21:32:30.854Z]   ✗ Unclassified: Delos Plinth, Dragon Onyx Regular price $4,095 Price $2,455 Regular Regular price $3,481 Price $1,964 Member
+[2026-06-09T21:32:30.854Z]   → skip: barrel-coffee-table-dark-oak
+[2026-06-09T21:32:30.855Z]   → skip: dawson-side-table-oak-burl-olive
+[2026-06-09T21:32:30.855Z]   → skip: barrel-side-table-dark-oak
+[2026-06-09T21:32:30.855Z]   → skip: pascal-coffee-table
+[2026-06-09T21:32:30.855Z]   → skip: dawson-coffee-table-olive-ash-burl
+[2026-06-09T21:32:30.855Z]   → skip: ted-coffee-table
+[2026-06-09T21:32:30.855Z]   → skip: astoria-side-table
+[2026-06-09T21:32:30.856Z]   → skip: nelson-side-table-breccia-pernice-marble
+[2026-06-09T21:32:30.856Z]   → skip: soho-cinema-side-table
+[2026-06-09T21:32:30.856Z]   → skip: imani-coffee-table
+[2026-06-09T21:32:30.856Z]   → skip: dawson-side-table-olive-ash-burl
+[2026-06-09T21:32:30.856Z]   → skip: basil-coffee-table
+[2026-06-09T21:32:30.856Z]   → skip: imani-side-table
+[2026-06-09T21:32:30.856Z]   → skip: flynn-side-table-lacorado-marble
+[2026-06-09T21:32:30.856Z]   → skip: oxley-coffee-table-large-dark-emperador
+[2026-06-09T21:32:30.857Z]   → skip: santos-coffee-table-terrazzo
+[2026-06-09T21:32:30.857Z]   → skip: wallace-coffee-table-large
+[2026-06-09T21:32:30.857Z]   → skip: abel-armchair-fulton-jacquard-sage
+[2026-06-09T21:32:30.858Z]   → skip: giovanni-table-lamp-large-cream
+[2026-06-09T21:32:30.858Z]   → skip: ivy-coffee-table
+[2026-06-09T21:32:30.858Z]   → skip: wallace-coffee-table-mappa-burl
+[2026-06-09T21:32:30.858Z]   → skip: ramsey-coffee-table-travertine
+[2026-06-09T21:32:30.858Z]   → skip: lustro-side-table
+[2026-06-09T21:32:30.858Z]   → skip: truro-side-table
+[2026-06-09T21:32:30.859Z]   → skip: barrel-coffee-table
+[2026-06-09T21:32:30.859Z]   → skip: noelle-end-table
+[2026-06-09T21:32:30.859Z]   → skip: gia-coffee-table-set-royal-diana-marble
+[2026-06-09T21:32:30.859Z]   → skip: cavern-side-table
+[2026-06-09T21:32:30.859Z]   → skip: tomasso-coffee-table
+[2026-06-09T21:32:30.859Z]   → skip: dante-side-table-dark-emperador-marble
+[2026-06-09T21:32:30.859Z]   → skip: tisbury-coffee-table
+[2026-06-09T21:32:30.859Z]   → skip: tisbury-side-table
+[2026-06-09T21:32:30.860Z]   → skip: arlon-side-table-terra-bianca-marble-small
+[2026-06-09T21:32:30.860Z]   → skip: fleet-side-table-medium-mid-height-marble
+[2026-06-09T21:32:30.861Z]   ✗ Unclassified: Delos Plinth, Brazilian Quartzite Price $4,095 Regular Price $3,481 Member Limited stock available
+[2026-06-09T21:32:30.862Z]   → skip: fleet-side-table-small-tall-marble
+[2026-06-09T21:32:30.862Z]   → skip: fleet-marble-low-side-table
+[2026-06-09T21:32:30.862Z]   → skip: oxley-coffee-table-dark-emperador-marble-1
+[2026-06-09T21:32:30.876Z] 
+══ /us/furniture/sideboards-and-media-units ══════════════
+[2026-06-09T21:32:31.007Z]   Loading: /us/furniture/sideboards-and-media-units
+[2026-06-09T21:32:43.554Z]   Found 24 product links
+[2026-06-09T21:32:43.965Z]   → skip: samson-sideboard-terra-bianca-marble
+[2026-06-09T21:32:43.965Z]   → skip: tivoli-sideboard-travertine
+[2026-06-09T21:32:43.965Z]   → skip: vance-sideboard-dark-emperador-marble
+[2026-06-09T21:32:43.966Z]   → skip: cullen-media-unit-dark-emperador-marble
+[2026-06-09T21:32:43.966Z]   → skip: barrett-sideboard-napoli-green-marble
+[2026-06-09T21:32:43.966Z]   → skip: kingsley-sideboard-grey-emperador-marble
+[2026-06-09T21:32:43.966Z]   → skip: pietro-six-drawer-dresser-brazilian-quartzite
+[2026-06-09T21:32:43.966Z]   → skip: marcel-media-unit-medium-oak
+[2026-06-09T21:32:43.966Z]   → skip: donato-sideboard
+[2026-06-09T21:32:43.966Z]   → skip: armando-sideboard-calacatta-aura-marble
+[2026-06-09T21:32:43.966Z]   → skip: devon-sideboard
+[2026-06-09T21:32:43.966Z]   → skip: ada-sideboard-michelangelo-marble
+[2026-06-09T21:32:43.966Z]   → skip: ada-media-unit-michelangelo-marble
+[2026-06-09T21:32:43.966Z]   → skip: olsen-sideboard-mappa-burl
+[2026-06-09T21:32:43.966Z]   → skip: wren-table-lamp
+[2026-06-09T21:32:43.967Z]   → skip: cullen-media-unit-dark-emperador-marble
+[2026-06-09T21:32:43.967Z]   ✗ Unclassified: Alexander Floor Lamp, US Price $995 Regular Price $846 Member
+[2026-06-09T21:32:43.968Z]   Scraping [living room|rug]: esti-rug
+[2026-06-09T21:32:47.983Z]   ✓ Esti Rug, 170 x 240cm | $2,995 | 240cm W × 1cm D × 170cm H | 4 imgs
+[2026-06-09T21:32:47.988Z]   → skip: avery-media-unit
+[2026-06-09T21:32:47.988Z]   → skip: valerie-sideboard
+[2026-06-09T21:32:47.989Z]   → skip: basil-sideboard
+[2026-06-09T21:32:47.989Z]   → skip: cullen-sideboard-dark-emperador-marble
+[2026-06-09T21:32:47.990Z]   → skip: marius-six-drawer-dresser-arabescato-corchia-marble
+[2026-06-09T21:32:47.990Z]   → skip: lennox-sideboard
+[2026-06-09T21:32:48.036Z] 
+══ /us/furniture/beds-and-mattresses ══════════════
+[2026-06-09T21:32:48.297Z]   Loading: /us/furniture/beds-and-mattresses
+[2026-06-09T21:33:02.115Z]   Found 20 product links
+[2026-06-09T21:33:02.376Z]   → skip: belsa-bed-light-wood-linen-chenille-sage
+[2026-06-09T21:33:02.377Z]   → skip: manette-bed
+[2026-06-09T21:33:02.378Z]   → skip: heidi-bed-velvet-chocolate
+[2026-06-09T21:33:02.378Z]   → skip: vara-bed
+[2026-06-09T21:33:02.378Z]   → skip: rivas-bed
+[2026-06-09T21:33:02.378Z]   → skip: linus-bed-velvet-grey-blue
+[2026-06-09T21:33:02.378Z]   → skip: oscar-cane-and-oak-bed
+[2026-06-09T21:33:02.378Z]   → skip: aubrey-bed-linen-floral-ikat
+[2026-06-09T21:33:02.379Z]   → skip: theodore-daybed
+[2026-06-09T21:33:02.379Z]   → skip: hasker-bed
+[2026-06-09T21:33:02.379Z]   → skip: willem-bed-velvet-and-linen
+[2026-06-09T21:33:02.379Z]   → skip: theodore-daybed-velvet
+[2026-06-09T21:33:02.380Z]   → skip: alana-bed
+[2026-06-09T21:33:02.380Z]   → skip: aubrey-bed
+[2026-06-09T21:33:02.380Z]   → skip: angus-bed
+[2026-06-09T21:33:02.380Z]   → skip: paolo-bed
+[2026-06-09T21:33:02.380Z]   → skip: mika-bed
+[2026-06-09T21:33:02.380Z]   → skip: marcia-daybed
+[2026-06-09T21:33:02.381Z]   → skip: belsa-bed-light-oak
+[2026-06-09T21:33:02.381Z]   → skip: tristan-bed
+[2026-06-09T21:33:02.387Z] 
+══ /us/furniture/bedside-tables-and-chest-of-drawers ══════════════
+[2026-06-09T21:33:02.472Z]   Loading: /us/furniture/bedside-tables-and-chest-of-drawers
+[2026-06-09T21:33:16.228Z]   Found 45 product links
+[2026-06-09T21:33:16.582Z]   → skip: basil-bedside-table-large
+[2026-06-09T21:33:16.583Z]   → skip: adria-bedside-table-terra-bianca-marble
+[2026-06-09T21:33:16.583Z]   → skip: armando-six-drawer-dresser-calacatta-aura-marble
+[2026-06-09T21:33:16.583Z]   → skip: avery-bedside-table-large
+[2026-06-09T21:33:16.583Z]   → skip: pietro-bedside-table-large-michelangelo-marble
+[2026-06-09T21:33:16.584Z]   → skip: silvio-six-drawer-dresser-royal-diana-marble
+[2026-06-09T21:33:16.584Z]   → skip: avery-bedside-table-bordeaux
+[2026-06-09T21:33:16.585Z]   → skip: leo-bedside-table-royal-diana-marble
+[2026-06-09T21:33:16.585Z]   → skip: leo-six-drawer-dresser-royal-diana-marble
+[2026-06-09T21:33:16.586Z]   → skip: kingsley-bedside-table-large-grey-emperador-marble
+[2026-06-09T21:33:16.586Z]   → skip: cora-bedside-table-skylar-print
+[2026-06-09T21:33:16.586Z]   → skip: pietro-bedside-table-large-brazilian-quartzite
+[2026-06-09T21:33:16.587Z]   → skip: railton-bedside-table-dark-emperador-marble
+[2026-06-09T21:33:16.587Z]   → skip: valerie-bedside-table-arabescato-corchia-large
+[2026-06-09T21:33:16.588Z]   → skip: belsa-bed-light-oak
+[2026-06-09T21:33:16.588Z]   → skip: garnett-table-lamp
+[2026-06-09T21:33:16.588Z]   → skip: pietro-bedside-table-large-brazilian-quartzite
+[2026-06-09T21:33:16.589Z]   Scraping [living room|rug]: obie-rug-multi
+[2026-06-09T21:33:19.720Z]   ✓ Obie Rug Multi, 300 x 420cm | $7,495 | 420cm W × 1cm D × 300cm H | 4 imgs
+[2026-06-09T21:33:19.741Z]   ✗ Unclassified: Wool Sheer Curtain Panel, W325cm x L274cm, Single Panel Price $895 Regular Price $761 Member
+[2026-06-09T21:33:19.741Z]   → skip: pietro-bedside-table-brazilian-quartzite
+[2026-06-09T21:33:19.742Z]   → skip: devon-bedside-table
+[2026-06-09T21:33:19.742Z]   → skip: pietro-bedside-table-michelangelo-marble
+[2026-06-09T21:33:19.747Z]   ✗ Unclassified: Pietro Six Drawer, Michelangelo Marble Price $4,695 Regular Price $3,991 Member
+[2026-06-09T21:33:19.749Z]   → skip: warwick-three-drawer-dresser-mappa-burl
+[2026-06-09T21:33:19.749Z]   → skip: warwick-bedside-table-mappa-burl
+[2026-06-09T21:33:19.749Z]   → skip: avery-bedside-table
+[2026-06-09T21:33:19.752Z]   → skip: silvio-bedside-table-royal-diana-marble
+[2026-06-09T21:33:19.752Z]   → skip: valerie-bedside-table-arabescato-corchia
+[2026-06-09T21:33:19.753Z]   → skip: carlisle-bedside-table-carrara-marble
+[2026-06-09T21:33:19.754Z]   → skip: carlisle-six-drawer-dresser-carrara-marble
+[2026-06-09T21:33:19.754Z]   → skip: railton-six-drawer-dresser-dark-emperador-marble
+[2026-06-09T21:33:19.755Z]   → skip: marcel-bedside-table-medium-oak
+[2026-06-09T21:33:19.755Z]   → skip: valerie-six-drawer-dresser-arabescato-corchia
+[2026-06-09T21:33:19.755Z]   → skip: esmeray-bedside-table-mid-tone
+[2026-06-09T21:33:19.755Z]   → skip: warwick-six-drawer-dresser-mappa-burl
+[2026-06-09T21:33:19.756Z]   → skip: warwick-bedside-table-mappa-burl-large
+[2026-06-09T21:33:19.756Z]   → skip: valerie-three-drawer-dresser
+[2026-06-09T21:33:19.757Z]   → skip: railton-double-wardrobe
+[2026-06-09T21:33:19.757Z]   → skip: marius-bedside-table-small-arabescato-corchia-marble
+[2026-06-09T21:33:19.767Z]   → skip: railton-three-drawer-dresser
+[2026-06-09T21:33:19.768Z]   → skip: marius-bedside-table-large-arabescato-corchia-marble
+[2026-06-09T21:33:19.769Z]   → skip: railton-bedside-table-dark-emperador-marble-large
+[2026-06-09T21:33:19.769Z]   → skip: basil-bedside-table
+[2026-06-09T21:33:19.771Z]   → skip: carlisle-bedside-table-carrara-marble-large
+[2026-06-09T21:33:19.772Z]   → skip: margot-five-drawer-dresser
+[2026-06-09T21:33:21.004Z] 
+══ /us/furniture/dining-tables-and-chairs ══════════════
+[2026-06-09T21:33:21.891Z]   Loading: /us/furniture/dining-tables-and-chairs
+[2026-06-09T21:33:35.320Z]   Found 46 product links
+[2026-06-09T21:33:35.635Z]   → skip: ramsey-dining-table-round-travertine
+[2026-06-09T21:33:35.635Z]   → skip: aria-dining-chair-boucle-jacquard-aubergine
+[2026-06-09T21:33:35.636Z]   → skip: morrell-dining-chair-fulton-jacquard-sage
+[2026-06-09T21:33:35.636Z]   → skip: brynn-dining-table-eight-seater
+[2026-06-09T21:33:35.636Z]   → skip: milo-dining-armchair-leather-chestnut
+[2026-06-09T21:33:35.636Z]   → skip: pair-of-keira-dining-chairs-linen-chenille-sage
+[2026-06-09T21:33:35.637Z]   → skip: molina-armchair
+[2026-06-09T21:33:35.637Z]   → skip: aria-dining-chair-kimber-natural
+[2026-06-09T21:33:35.637Z]   → skip: aria-dining-chair-daxton-jacquard
+[2026-06-09T21:33:35.637Z]   → skip: rosaline-dining-table-rosso-orobico
+[2026-06-09T21:33:35.637Z]   → skip: murcell-oval-dining-table-brazilian-green-marble-prominent
+[2026-06-09T21:33:35.637Z]   → skip: fiore-dining-table-brazilian-quartzite
+[2026-06-09T21:33:35.637Z]   → skip: molina-dining-armchair-skylar-print-grey-blue-velvet
+[2026-06-09T21:33:35.637Z]   → skip: murcell-oval-dining-table-brazilian-blue-quartzite
+[2026-06-09T21:33:35.640Z]   ✗ Unclassified: Huxley Cut Crystal Decanter, Large Price $390 Regular Price $332 Member
+[2026-06-09T21:33:35.641Z]   ✗ Unclassified: Huxley Cocktail Party Essentials Price $1,050 Regular Price $893 Member
+[2026-06-09T21:33:35.642Z]   ✗ Unclassified: Barwell Cocktail Party Essentials Price $645 Regular Price $548 Member
+[2026-06-09T21:33:35.642Z]   → skip: lachlan-dining-chair-velvet
+[2026-06-09T21:33:35.643Z]   → skip: elliot-dining-table-travertine
+[2026-06-09T21:33:35.645Z]   → skip: rosaline-dining-table-griseo-rosa-marble
+[2026-06-09T21:33:35.645Z]   → skip: ramsey-dining-table-travertine
+[2026-06-09T21:33:35.646Z]   → skip: lowden-dining-table
+[2026-06-09T21:33:35.646Z]   → skip: murcell-oval-dining-table-dark-emperador-marble
+[2026-06-09T21:33:35.646Z]   → skip: emerson-dining-chair-linen-chenille-bordeaux
+[2026-06-09T21:33:35.646Z]   → skip: murcell-oval-dining-table-marble
+[2026-06-09T21:33:35.646Z]   → skip: pair-of-molina-dining-chairs-skylar-print-grey-blue-velvet
+[2026-06-09T21:33:35.646Z]   → skip: fergus-dining-chair-fern-leather
+[2026-06-09T21:33:35.646Z]   → skip: pair-of-zita-dining-chairs-boucle
+[2026-06-09T21:33:35.646Z]   → skip: murcell-round-dining-table-carrara-marble
+[2026-06-09T21:33:35.646Z]   → skip: aria-dining-chair-boucle
+[2026-06-09T21:33:35.646Z]   → skip: rosaline-dining-table-noir-grande-marble
+[2026-06-09T21:33:35.647Z]   → skip: elliot-dining-table-carrara-marble
+[2026-06-09T21:33:35.647Z]   → skip: murcell-round-dining-table-brazilian-green-marble
+[2026-06-09T21:33:35.647Z]   → skip: morrell-dining-chair-velvet
+[2026-06-09T21:33:35.647Z]   → skip: pair-of-sitwell-dining-chairs
+[2026-06-09T21:33:35.647Z]   → skip: hamilton-dining-chair-ash-and-leather-green
+[2026-06-09T21:33:35.647Z]   → skip: elian-dining-table
+[2026-06-09T21:33:35.648Z]   → skip: pair-of-hamilton-armless-dining-chairs
+[2026-06-09T21:33:35.651Z]   → skip: matis-dining-table
+[2026-06-09T21:33:35.652Z]   → skip: eddie-dining-chair-velvet-camel
+[2026-06-09T21:33:35.652Z]   → skip: georgina-dining-chair-velvet
+[2026-06-09T21:33:35.653Z]   → skip: pair-of-molina-dining-chairs
+[2026-06-09T21:33:35.653Z]   → skip: warren-dining-chair-slubby-linen
+[2026-06-09T21:33:35.653Z]   → skip: leonie-pair-of-armless-dining-chair-velvet-olive
+[2026-06-09T21:33:35.653Z]   → skip: leonie-armed-dining-chair-velvet-olive
+[2026-06-09T21:33:35.654Z]   → skip: fergus-dining-chair-sycamore-leather
+[2026-06-09T21:33:35.673Z] 
+══ /us/furniture/bar-cabinets-and-barstools ══════════════
+[2026-06-09T21:33:35.793Z]   Loading: /us/furniture/bar-cabinets-and-barstools
+[2026-06-09T21:33:48.508Z]   Found 32 product links
+[2026-06-09T21:33:48.991Z]   ✗ Unclassified: Kettner's Bar, Brazilian Quartzite Marble Price $12,095 Regular Price $10,281 Member
+[2026-06-09T21:33:48.993Z]   → skip: lennie-barstool-velvet-mustard
+[2026-06-09T21:33:48.994Z]   → skip: killian-barstool-velvet
+[2026-06-09T21:33:48.994Z]   → skip: rory-barstool-kimber-jacquard
+[2026-06-09T21:33:48.996Z]   → skip: bryden-tall-barstool-dark-oak-linen-natural
+[2026-06-09T21:33:48.996Z]   → skip: alma-barstool-linen-chenille-deep-teal
+[2026-06-09T21:33:48.997Z]   → skip: killian-barstool-linen-chenille-stone
+[2026-06-09T21:33:48.998Z]   ✗ Unclassified: Devon Bar Cabinet Price $4,095 Regular Price $3,481 Member
+[2026-06-09T21:33:49.005Z]   → skip: bryden-barstool-tall
+[2026-06-09T21:33:49.006Z]   ✗ Unclassified: Athos Bar Cart, Calacatta Aura Marble Price $4,695 Regular Price $3,991 Member
+[2026-06-09T21:33:49.007Z]   → skip: wardell-barstool-linen
+[2026-06-09T21:33:49.008Z]   → skip: wardell-counter-stool-linen
+[2026-06-09T21:33:49.009Z]   → skip: wardell-counter-stool-velvet
+[2026-06-09T21:33:49.024Z]   ✗ Unclassified: Kingsley Bar Regular price $9,395 Price $4,695 Regular Regular price $7,986 Price $3,756 Member
+[2026-06-09T21:33:49.025Z]   → skip: belsa-bed-light-oak
+[2026-06-09T21:33:49.029Z]   → skip: garnett-table-lamp
+[2026-06-09T21:33:49.034Z]   → skip: pietro-bedside-table-large-brazilian-quartzite
+[2026-06-09T21:33:49.035Z]   → skip: obie-rug-multi
+[2026-06-09T21:33:49.036Z]   ✗ Unclassified: Wool Sheer Curtain Panel, W325cm x L274cm, Single Panel Price $895 Regular Price $761 Member
+[2026-06-09T21:33:49.037Z]   → skip: wardell-barstool-velvet
+[2026-06-09T21:33:49.037Z]   → skip: bryden-counter-stool
+[2026-06-09T21:33:49.038Z]   → skip: calvert-barstool-leather-and-velvet
+[2026-06-09T21:33:49.040Z]   → skip: rory-barstool-velvet-grey-blue
+[2026-06-09T21:33:49.042Z]   → skip: wardell-counter-stool-leather
+[2026-06-09T21:33:49.046Z]   ✗ Unclassified: Nora Tambour Bar, Black Marquina Marble Regular price $3,395 Price $1,695 Regular Regular price $2,886 Price $1,356 Member Limited stock available
+[2026-06-09T21:33:49.049Z]   → skip: wardell-barstool-leather
+[2026-06-09T21:33:49.051Z]   → skip: albany-barstool-velvet-camel
+[2026-06-09T21:33:49.052Z]   → skip: bryden-counter-barstool-dark-oak-linen
+[2026-06-09T21:33:49.053Z]   ✗ Unclassified: Portavini Bar Storage Price $9,395 Regular Price $7,986 Member Out of stock
+[2026-06-09T21:33:49.054Z]   → skip: rory-barstool-regency-stripe
+[2026-06-09T21:33:49.082Z]   ✗ Unclassified: Locanda Bar, Dark Emperador Marble Price $11,395 Regular Price $9,686 Member Out of stock
+[2026-06-09T21:33:49.083Z]   → skip: calvert-barstool-sangria-leather-and-bordeaux-linen-chenille
+[2026-06-09T21:33:49.111Z] 
+══ /us/furniture/footstools ══════════════
+[2026-06-09T21:33:49.340Z]   Loading: /us/furniture/footstools
+[2026-06-09T21:34:03.643Z]   Found 58 product links
+[2026-06-09T21:34:04.124Z]   ✗ Unclassified: Dalton Burl Footstool, Velvet, Lichen Regular price $1,095 Price $765 Regular Regular price $931 Price $612 Member
+[2026-06-09T21:34:04.126Z]   ✗ Unclassified: Alvin Footstool, Kimber Jacquard Price $1,395 Regular Price $1,186 Member
+[2026-06-09T21:34:04.126Z]   ✗ Unclassified: Marta Footstool, Velvet Regular price $1,095 Price $765 Regular Regular price $931 Price $612 Member Limited stock available
+[2026-06-09T21:34:04.127Z]   ✗ Unclassified: Novi Footstool, Velvet, Lichen Price $2,595 Regular Price $2,206 Member
+[2026-06-09T21:34:04.127Z]   ✗ Unclassified: Sofia Footstool, Boucle Jacquard, Marine Regular price $895 Price $535 Regular Regular price $761 Price $428 Member
+[2026-06-09T21:34:04.128Z]   ✗ Unclassified: Tabitha Footstool, Linen Chenille & Velvet, Chocolate Price $1,095 Regular Price $931 Member
+[2026-06-09T21:34:04.128Z]   ✗ Unclassified: Dalton Burl Footstool, Linen Chenille, Bordeaux Regular price $1,095 Price $765 Regular Regular price $931 Price $612 Member
+[2026-06-09T21:34:04.128Z]   ✗ Unclassified: Sofia Footstool, Linen Chenille, Sage Regular price $895 Price $625 Regular Regular price $761 Price $500 Member Limited stock available
+[2026-06-09T21:34:04.128Z]   ✗ Unclassified: Alvin Footstool, Velvet, Olive Regular price $1,095 Price $655 Regular Regular price $931 Price $524 Member
+[2026-06-09T21:34:04.129Z]   ✗ Unclassified: Tabitha Footstool Price $1,095 Regular Price $931 Member
+[2026-06-09T21:34:04.129Z]   ✗ Unclassified: Lyla Footstool, Lophelia Jacquard Price $1,495 Regular Price $1,271 Member
+[2026-06-09T21:34:04.129Z]   ✗ Unclassified: Sofia Footstool, Skylar Print Price $895 Regular Price $761 Member
+[2026-06-09T21:34:04.129Z]   ✗ Unclassified: Romi Footstool, Akley Jacquard Price $895 Regular Price $761 Member
+[2026-06-09T21:34:04.129Z]   ✗ Unclassified: Ralph Footstool, Velvet Price $995 Regular Price $846 Member Limited stock available
+[2026-06-09T21:34:04.129Z]   → skip: belsa-bed-light-oak
+[2026-06-09T21:34:04.129Z]   → skip: garnett-table-lamp
+[2026-06-09T21:34:04.129Z]   → skip: pietro-bedside-table-large-brazilian-quartzite
+[2026-06-09T21:34:04.129Z]   → skip: obie-rug-multi
+[2026-06-09T21:34:04.131Z]   ✗ Unclassified: Wool Sheer Curtain Panel, W325cm x L274cm, Single Panel Price $895 Regular Price $761 Member
+[2026-06-09T21:34:04.131Z]   ✗ Unclassified: Theodore Footstool, Vende Jacquard, Olive Price $895 Regular Price $761 Member Limited stock available
+[2026-06-09T21:34:04.131Z]   → skip: nieve-bench-boucle-sand
+[2026-06-09T21:34:04.131Z]   → skip: theodore-bench
+[2026-06-09T21:34:04.131Z]   ✗ Unclassified: Theodore Footstool, Leather Price $1,095 Regular Price $931 Member Limited stock available
+[2026-06-09T21:34:04.132Z]   → skip: belsa-bench
+[2026-06-09T21:34:04.132Z]   → skip: nieve-bench
+[2026-06-09T21:34:04.132Z]   → skip: vivienne-bench
+[2026-06-09T21:34:04.132Z]   → skip: marcia-bench
+[2026-06-09T21:34:04.133Z]   → skip: willis-bench-velvet
+[2026-06-09T21:34:04.133Z]   → skip: eli-storage-bench
+[2026-06-09T21:34:04.133Z]   → skip: lukas-bench
+[2026-06-09T21:34:04.134Z]   ✗ Unclassified: Theodore Footstool, Textured Wool Boucle Price $1,295 Regular Price $1,101 Member Made-to-order
+[2026-06-09T21:34:04.135Z]   ✗ Unclassified: Aline Ottoman Price from $1,595 Regular Price from $1,356 Member Made-to-order
+[2026-06-09T21:34:04.135Z]   ✗ Unclassified: Rava Ottoman Price from $1,495 Regular Price from $1,271 Member Made-to-order
+[2026-06-09T21:34:04.135Z]   ✗ Unclassified: Theodore Footstool, Light Oak Price from $795 Regular Price from $676 Member Made-to-order
+[2026-06-09T21:34:04.136Z]   ✗ Unclassified: Roma Square Ottoman Price $1,695 Regular Price $1,441 Member Made-to-order
+[2026-06-09T21:34:04.138Z]   ✗ Unclassified: Vivienne Ottoman Price from $1,295 Regular Price from $1,101 Member Made-to-order
+[2026-06-09T21:34:04.143Z]   ✗ Unclassified: Theodore Oak Footstool, Textured Wool Boucle Price $1,295 Regular Price $1,101 Member Made-to-order
+[2026-06-09T21:34:04.146Z]   ✗ Unclassified: Reya Ottoman Price from $1,095 Regular Price from $931 Member Made-to-order
+[2026-06-09T21:34:04.147Z]   ✗ Unclassified: Audrey Ottoman Price from $1,295 Regular Price from $1,101 Member Made-to-order
+[2026-06-09T21:34:04.149Z]   ✗ Unclassified: Albany Footstool, Velvet, Antique Rose Price $1,395 Regular Price $1,186 Member
+[2026-06-09T21:34:04.149Z]   → skip: willis-bench-boucle-natural
+[2026-06-09T21:34:04.149Z]   ✗ Unclassified: Elowen Ottoman Price $2,295 Regular Price $1,951 Member Made-to-order
+[2026-06-09T21:34:04.149Z]   ✗ Unclassified: Tabitha Footstool, Velvet & Linen Chenille, Lichen Price $1,095 Regular Price $931 Member
+[2026-06-09T21:34:04.150Z]   ✗ Unclassified: Lyla Footstool, Vende Jacquard, Olive Price $895 Regular Price $761 Member
+[2026-06-09T21:34:04.150Z]   ✗ Unclassified: Lyla Footstool,Wimpole Stripe Price $895 Regular Price $761 Member
+[2026-06-09T21:34:04.150Z]   → skip: esther-bench-velvet
+[2026-06-09T21:34:04.150Z]   ✗ Unclassified: Lyla Footstool Price $795 Regular Price $676 Member
+[2026-06-09T21:34:04.150Z]   ✗ Unclassified: Romi Footstool, Leather Regular price $1,295 Price $645 Regular Regular price $1,101 Price $516 Member
+[2026-06-09T21:34:04.150Z]   ✗ Unclassified: Theodore Footstool, Boucle, Natural Regular price $695 Price $415 Regular Regular price $591 Price $332 Member
+[2026-06-09T21:34:04.150Z]   ✗ Unclassified: Sofia Footstool, Velvet Regular price $795 Price $555 Regular Regular price $676 Price $444 Member
+[2026-06-09T21:34:04.150Z]   ✗ Unclassified: Theodore Footstool Regular price from $695 Price $415 Regular from Regular price $591 Price $332 Member
+[2026-06-09T21:34:04.150Z]   ✗ Unclassified: Lorene Footstool Regular price $595 Price $295 Regular Regular price $506 Price $236 Member
+[2026-06-09T21:34:04.150Z]   ✗ Unclassified: Garret Footstool Regular price $1,395 Price $835 Regular Regular price $1,186 Price $668 Member
+[2026-06-09T21:34:04.151Z]   ✗ Unclassified: Dora Storage Footstool, Cotton Velvet Regular price $650 Price $455 Regular Regular price $553 Price $364 Member Limited stock available
+[2026-06-09T21:34:04.151Z]   ✗ Unclassified: Drew Footstool, Leather, Chestnut Regular price $2,395 Price $1,195 Regular Regular price $2,036 Price $956 Member
+[2026-06-09T21:34:04.151Z]   ✗ Unclassified: Garret Footstool, Boucle Regular price $1,095 Price $655 Regular Regular price $931 Price $524 Member
+[2026-06-09T21:34:04.151Z]   ✗ Unclassified: Sofia Footstool, Fulton Jacquard, Sage Regular price $895 Price $535 Regular Regular price $761 Price $428 Member Out of stock
+[2026-06-09T21:34:04.151Z]   → skip: hallie-bench-velvet-olive
+[2026-06-09T21:34:04.162Z] 
+══ /us/furniture/desks ══════════════
+[2026-06-09T21:34:04.355Z]   Loading: /us/furniture/desks
+[2026-06-09T21:34:16.691Z]   Found 10 product links
+[2026-06-09T21:34:17.823Z]   → skip: alvis-desk
+[2026-06-09T21:34:17.834Z]   → skip: donato-desk
+[2026-06-09T21:34:17.841Z]   → skip: arranmore-desk-walnut-burl
+[2026-06-09T21:34:17.846Z]   → skip: wilmot-desk
+[2026-06-09T21:34:17.849Z]   → skip: farley-desk
+[2026-06-09T21:34:17.852Z]   → skip: marena-desk
+[2026-06-09T21:34:17.856Z]   → skip: railton-desk-dark-emperador-marble
+[2026-06-09T21:34:17.858Z]   → skip: wilmot-desk-large
+[2026-06-09T21:34:17.862Z]   → skip: wallace-desk-mappa-burl
+[2026-06-09T21:34:17.864Z]   → skip: aldo-desk
+[2026-06-09T21:34:17.913Z] 
+══ /us/furniture/entryway-consoles-and-shelving ══════════════
+[2026-06-09T21:34:18.184Z]   Loading: /us/furniture/entryway-consoles-and-shelving
+[2026-06-09T21:34:31.169Z]   Found 21 product links
+[2026-06-09T21:34:31.783Z]   → skip: willow-shelving-mint-low
+[2026-06-09T21:34:31.784Z]   → skip: willow-shelving-cream-tall
+[2026-06-09T21:34:31.784Z]   → skip: elwood-shelving
+[2026-06-09T21:34:31.785Z]   → skip: dorian-console-unit-brazilian-quartzite
+[2026-06-09T21:34:31.785Z]   → skip: siya-console-dark-emperador-marble
+[2026-06-09T21:34:31.785Z]   Scraping [living room|shelving]: elwood-shelving-centre-unit
+[2026-06-09T21:34:35.124Z]   ✓ Elwood Shelving Centre Unit | $3,495 | 120cm W × 38cm D × 181cm H | 4 imgs
+[2026-06-09T21:34:35.130Z]   ✗ Unclassified: Aristo Entryway Unit, Michelangelo Marble Price $6,095 Regular Price $5,181 Member
+[2026-06-09T21:34:35.130Z]   → skip: althea-console-table-silver-travertine
+[2026-06-09T21:34:35.130Z]   → skip: wallace-shelves-mappa-burl
+[2026-06-09T21:34:35.130Z]   → skip: tiber-console-table-brazilian-quartzite
+[2026-06-09T21:34:35.130Z]   → skip: wallace-console-mappa-burl
+[2026-06-09T21:34:35.130Z]   ✗ Unclassified: Armando Entryway Unit Price $5,795 Regular Price $4,926 Member
+[2026-06-09T21:34:35.130Z]   → skip: locanda-console-dark-emperador-marble
+[2026-06-09T21:34:35.130Z]   → skip: marin-shelving-unit
+[2026-06-09T21:34:35.130Z]   → skip: belsa-bed-light-oak
+[2026-06-09T21:34:35.130Z]   → skip: garnett-table-lamp
+[2026-06-09T21:34:35.131Z]   → skip: pietro-bedside-table-large-brazilian-quartzite
+[2026-06-09T21:34:35.131Z]   → skip: obie-rug-multi
+[2026-06-09T21:34:35.131Z]   ✗ Unclassified: Wool Sheer Curtain Panel, W325cm x L274cm, Single Panel Price $895 Regular Price $761 Member
+[2026-06-09T21:34:35.131Z]   → skip: ramsey-console-table
+[2026-06-09T21:34:35.131Z]   → skip: maven-shelving-unit
+[2026-06-09T21:34:35.153Z] 
+══ /us/textiles/rugs ══════════════
+[2026-06-09T21:34:35.331Z]   Loading: /us/textiles/rugs
+[2026-06-09T21:34:51.028Z]   Found 75 product links
+[2026-06-09T21:34:51.396Z]   → skip: esti-rug
+[2026-06-09T21:34:51.396Z]   Scraping [living room|rug]: jethro-rug
+[2026-06-09T21:34:54.087Z]   ✓ Jethro Rug, Rust 170 x 240cm | $1,495 | 240cm W × 1cm D × 170cm H | 4 imgs
+[2026-06-09T21:34:54.090Z]   Scraping [living room|rug]: morongo-rug-ochre
+[2026-06-09T21:34:57.222Z]   ✓ Morongo Rug, Ochre 170 x 240cm | $3,495 | 240cm W × 1cm D × 170cm H | 4 imgs
+[2026-06-09T21:34:57.237Z]   Scraping [living room|rug]: locke-rug
+[2026-06-09T21:34:59.987Z]   ✓ Locke Rug, 170 x 240cm | $2,995 | 240cm W × 1cm D × 170cm H | 4 imgs
+[2026-06-09T21:35:00.287Z]   Scraping [living room|rug]: auden-rug
+[2026-06-09T21:35:03.388Z]   ✓ Auden Rug, 170 x 240cm | $1,695 | 240cm W × 1cm D × 170cm H | 4 imgs
+[2026-06-09T21:35:03.398Z]   Scraping [living room|rug]: theron-rug
+[2026-06-09T21:35:06.253Z]   ✓ Theron Rug, 170 x 240cm | $1,695 | 240cm W × 1cm D × 170cm H | 4 imgs
+[2026-06-09T21:35:06.260Z]   Scraping [living room|rug]: atticus-rug
+[2026-06-09T21:35:08.724Z]   ✓ Atticus Rug, 170 x 240cm | $1,695 | 240cm W × 1cm D × 170cm H | 4 imgs
+[2026-06-09T21:35:08.752Z]   Scraping [living room|rug]: raya-rug-rust
+[2026-06-09T21:35:14.946Z]   ✓ Raya Rug Rust, 170 x 240cm | $1,695 | 170cm W × 1.2cm D × 240cm H | 4 imgs
+[2026-06-09T21:35:15.082Z]   Scraping [living room|rug]: porter-rug
+[2026-06-09T21:35:18.795Z]   ✓ Porter Rug, 170 x 240cm | $995 | 240cm W × 1cm D × 170cm H | 4 imgs
+[2026-06-09T21:35:18.877Z]   Scraping [living room|rug]: ovington-rug
+[2026-06-09T21:35:22.309Z]   ✓ Ovington Rug, 20 x 30cm Swatch | $15 | 30cm W × 1cm D × 20cm H | 4 imgs
+[2026-06-09T21:35:22.371Z]   → skip: obie-rug-multi
+[2026-06-09T21:35:22.371Z]   Scraping [living room|rug]: delphi-rug
+[2026-06-09T21:35:25.324Z]   ✓ Delphi Rug, 170 x 240cm | $1,695 | 240cm W × 1cm D × 170cm H | 4 imgs
+[2026-06-09T21:35:25.341Z]   Scraping [living room|rug]: chapman-rug
+[2026-06-09T21:35:28.441Z]   ✓ Chapman Rug, 170 x 240cm | $1,695 | 240cm W × 1cm D × 170cm H | 4 imgs
+[2026-06-09T21:35:28.535Z]   Scraping [living room|rug]: adamson-rug
+[2026-06-09T21:35:31.954Z]   ✓ Adamson Rug, 170 x 240cm | $1,595 | 240cm W × 1cm D × 170cm H | 4 imgs
+[2026-06-09T21:35:32.114Z]   Scraping [living room|rug]: thayer-rug
+[2026-06-09T21:35:35.879Z]   ✓ Thayer Rug, 170 x 240cm | $2,995 | 240cm W × 1cm D × 170cm H | 4 imgs
+[2026-06-09T21:35:36.017Z]   Scraping [living room|rug]: paynes-rug
+[2026-06-09T21:35:39.860Z]   ✓ Paynes Rug, 170 x 240cm | $1,695 | 240cm W × 2cm D × 170cm H | 4 imgs
+[2026-06-09T21:35:40.002Z]   Scraping [living room|rug]: jarrett-rug-cream
+[2026-06-09T21:35:44.719Z]   ✓ Jarrett Rug, Cream, 170 x 240cm | $1,695 | 240cm W × 2cm D × 170cm H | 4 imgs
+[2026-06-09T21:35:44.799Z]   Scraping [living room|rug]: raimundo-rug
+[2026-06-09T21:36:00.828Z]   ✓ Raimundo Rug, 170 x 240cm | $1,495 | 240cm W × 1cm D × 170cm H | 4 imgs
+[2026-06-09T21:36:01.820Z]   Scraping [living room|rug]: hetty-rug
+[2026-06-09T21:36:13.672Z]   ✓ Hetty Rug, 170 x 240cm | $3,495 | 240cm W × 1cm D × 170cm H | 4 imgs
+[2026-06-09T21:36:13.837Z]   Scraping [living room|rug]: blake-rug-cream
+[2026-06-09T21:36:21.037Z]   ✓ Blake Rug Cream, 170 x 240cm | $1,695 | 170cm W × 3cm D × 240cm H | 4 imgs
+[2026-06-09T21:36:21.619Z]   → cap reached: living room|rug
+[2026-06-09T21:36:21.635Z]   → cap reached: living room|rug
+[2026-06-09T21:36:21.646Z]   → cap reached: living room|rug
+[2026-06-09T21:36:21.688Z]   ✗ Unclassified: Hugo Runner Price from $1,995 Regular Price from $1,696 Member
+[2026-06-09T21:36:21.702Z]   ✗ Unclassified: Catherine Runner Navy Price from $1,995 Regular Price from $1,696 Member
+[2026-06-09T21:36:21.722Z]   ✗ Unclassified: Obie Runner Multi Price from $1,495 Regular Price from $1,271 Member Limited stock available
+[2026-06-09T21:36:21.730Z]   → skip: theron-rug
+[2026-06-09T21:36:21.744Z]   → skip: ivy-coffee-table
+[2026-06-09T21:36:21.765Z]   → cap reached: living room|rug
+[2026-06-09T21:36:21.784Z]   → cap reached: living room|rug
+[2026-06-09T21:36:21.795Z]   ✗ Unclassified: Silvanus Runner, Rust Price $1,995 Regular Price $1,696 Member
+[2026-06-09T21:36:21.851Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.161Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.248Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.282Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.285Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.289Z]   ✗ Unclassified: Wool Sheer Curtain Panel, W325cm x L274cm, Single Panel Price $895 Regular Price $761 Member
+[2026-06-09T21:36:22.291Z]   → skip: elliot-dining-table-travertine
+[2026-06-09T21:36:22.292Z]   → skip: lachlan-dining-chair-velvet
+[2026-06-09T21:36:22.293Z]   → skip: jethro-rug
+[2026-06-09T21:36:22.306Z]   → skip: barrett-sideboard-napoli-green-marble
+[2026-06-09T21:36:22.330Z]   ✗ Unclassified: Edith Chandelier, US Price $2,195 Regular Price $1,866 Member
+[2026-06-09T21:36:22.338Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.349Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.386Z]   ✗ Unclassified: Robert Runner Price $1,595 Regular Price $1,356 Member Limited stock available
+[2026-06-09T21:36:22.424Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.475Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.481Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.499Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.510Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.518Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.522Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.562Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.586Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.643Z]   → skip: esti-rug
+[2026-06-09T21:36:22.650Z]   → skip: hallie-bench-velvet-olive
+[2026-06-09T21:36:22.657Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.667Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.670Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.675Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.677Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.677Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.678Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.682Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.685Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.747Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.941Z]   → cap reached: living room|rug
+[2026-06-09T21:36:22.984Z]   → cap reached: living room|rug
+[2026-06-09T21:36:23.000Z]   → cap reached: living room|rug
+[2026-06-09T21:36:23.036Z]   → cap reached: living room|rug
+[2026-06-09T21:36:23.045Z]   → cap reached: living room|rug
+[2026-06-09T21:36:23.052Z]   → cap reached: living room|rug
+[2026-06-09T21:36:23.080Z]   → cap reached: living room|rug
+[2026-06-09T21:36:23.098Z]   ✗ Unclassified: Arta Runner Price from $495 Regular Price from $421 Member Out of stock
+[2026-06-09T21:36:23.133Z]   → cap reached: living room|rug
+[2026-06-09T21:36:41.486Z] 
+=== Done — 21 new, 0 errors, 284 total ===

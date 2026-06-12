@@ -1,0 +1,809 @@
+{
+  "version": "1.0",
+  "source": "west-elm",
+  "builtAt": "2026-06-08T23:33:27.239Z",
+  "total": 26,
+  "products": [
+    {
+      "id": "calla-solid-wood-coffee-table-48-58",
+      "slug": "calla-coffee-table-h12199",
+      "name": "Calla Solid Wood Coffee Table (48\" – 58\")",
+      "price": "$699",
+      "category": "coffee table",
+      "room": "living room",
+      "style": "modern",
+      "colors": [],
+      "sizes": [
+        "48\"",
+        "58\""
+      ],
+      "dimensions": {
+        "widthIn": 48,
+        "depthIn": 24,
+        "heightIn": 16,
+        "width": 1.22,
+        "depth": 0.61,
+        "height": 0.41,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202602/0037/calla-solid-wood-coffee-table-48-58-1-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202617/0089/calla-solid-wood-coffee-table-48-58-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202609/0413/calla-solid-wood-coffee-table-48-58-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202606/0672/calla-solid-wood-coffee-table-48-58-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/calla-coffee-table-h12199/",
+      "source": "west-elm",
+      "description": "Think inside the box with this streamlined silhouette. Made from solid, kiln-dried acacia wood. Choose the modern finish that best suits your home. Contract Grade for unmatched durability.",
+      "scrapedAt": "2026-06-08T23:28:48.965Z"
+    },
+    {
+      "id": "volume-round-drum-coffee-table-36-44",
+      "slug": "volume-round-drum-coffee-table-wood-h6050",
+      "name": "Volume Round Drum Coffee Table (36\"–44\")",
+      "price": "$699",
+      "category": "coffee table",
+      "room": "living room",
+      "style": "other",
+      "colors": [],
+      "sizes": [
+        "36\"",
+        "44\""
+      ],
+      "dimensions": null,
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202623/0023/volume-round-drum-coffee-table-36-44-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202623/0370/volume-round-drum-coffee-table-36-44-2-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202623/0370/volume-round-drum-coffee-table-36-44-1-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202605/0019/volume-round-drum-coffee-table-36-44-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/volume-round-drum-coffee-table-wood-h6050/",
+      "source": "west-elm",
+      "description": "Makes a statement while blending in seamlessly. Made from kiln-dried wood that's extra durable. The beautiful wood grain with a water-based finish.",
+      "scrapedAt": "2026-06-08T23:28:56.801Z"
+    },
+    {
+      "id": "volume-round-storage-drum-coffee-table-36",
+      "slug": "volume-round-storage-coffee-table-h8796",
+      "name": "Volume Round Storage Drum Coffee Table (36\")",
+      "price": "$559.20",
+      "category": "coffee table",
+      "room": "living room",
+      "style": "other",
+      "colors": [],
+      "sizes": [],
+      "dimensions": null,
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202616/0129/volume-round-storage-drum-coffee-table-36-1-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202616/0129/volume-round-storage-drum-coffee-table-36-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202612/0934/volume-round-storage-drum-coffee-table-36-1-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202612/0934/volume-round-storage-drum-coffee-table-36-2-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/volume-round-storage-coffee-table-h8796/",
+      "source": "west-elm",
+      "description": "Round shape artfully contrasts with clean lines. Top opens to reveal discrete storage space. Made of kiln-dried, sustainably sourced wood. Contract Grade, so you know it's built to last.",
+      "scrapedAt": "2026-06-08T23:29:03.708Z"
+    },
+    {
+      "id": "organic-modular-coffee-table-31-50",
+      "slug": "organic-modular-table-h10341",
+      "name": "Organic Modular Coffee Table (31\"–50\")",
+      "price": "$579",
+      "category": "coffee table",
+      "room": "living room",
+      "style": "other",
+      "colors": [
+        "Black on Ash",
+        "Sand on Oak",
+        "Dark Walnut",
+        "Stone Gray"
+      ],
+      "sizes": [
+        "Small",
+        "Large"
+      ],
+      "dimensions": {
+        "widthIn": 30.6,
+        "depthIn": 30,
+        "heightIn": 16,
+        "width": 0.78,
+        "depth": 0.76,
+        "height": 0.41,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202618/0073/organic-modular-coffee-table-31-50-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202618/0073/organic-modular-coffee-table-31-50-1-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202552/0325/organic-modular-table-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202552/0325/organic-modular-table-1-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/organic-modular-table-h10341/",
+      "source": "west-elm",
+      "description": "Contract Grade for unmatched durability. High-performance top is scratch- and stain-resistant. Designed to nest together, and to be mixed and matched. Perfect for lobbies, bars, lounges and beyond.",
+      "scrapedAt": "2026-06-08T23:29:12.887Z"
+    },
+    {
+      "id": "monti-indoor-outdoor-coffee-table-30-40",
+      "slug": "monti-lava-stone-coffee-table-h8368",
+      "name": "Monti Indoor/Outdoor Coffee Table (30\"–40\")",
+      "price": "$649",
+      "category": "coffee table",
+      "room": "living room",
+      "style": "other",
+      "colors": [
+        "Black",
+        "Desert Sand"
+      ],
+      "sizes": [
+        "30\"",
+        "40\""
+      ],
+      "dimensions": null,
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202618/0003/monti-indoor-outdoor-coffee-table-30-40-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202551/0029/monti-indoor-outdoor-coffee-table-30-40-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202615/0013/monti-indoor-outdoor-coffee-table-30-40-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202621/0868/monti-indoor-outdoor-coffee-table-30-40-1-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/monti-lava-stone-coffee-table-h8368/",
+      "source": "west-elm",
+      "description": "Resembles the look and feel of aged stone. Brings an organic element to any living room. Suitable for both indoor and outdoor use. Each is hand cast and finished in Vietnam.",
+      "scrapedAt": "2026-06-08T23:29:18.988Z"
+    },
+    {
+      "id": "wallace-coffee-table-44",
+      "slug": "wallace-coffee-table-h13145",
+      "name": "Wallace Coffee Table (44\")",
+      "price": "$399.20",
+      "category": "coffee table",
+      "room": "living room",
+      "style": "other",
+      "colors": [],
+      "sizes": [],
+      "dimensions": {
+        "widthIn": 44,
+        "depthIn": 24,
+        "heightIn": 13,
+        "width": 1.12,
+        "depth": 0.61,
+        "height": 0.33,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202612/0079/wallace-coffee-table-44-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202609/0118/wallace-coffee-table-44-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202609/0117/wallace-coffee-table-44-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202609/0116/wallace-coffee-table-44-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/wallace-coffee-table-h13145/",
+      "source": "west-elm",
+      "description": "Plays with perpendicular lines to look good at any angle. Substantial but airy too, thanks to its light Blonde finish. Made from durable, kiln-dried wood. Contract Grade, so you know it&rsquo;s built to last.",
+      "scrapedAt": "2026-06-08T23:29:26.945Z"
+    },
+    {
+      "id": "stowe-solid-wood-round-coffee-table-36-46",
+      "slug": "stowe-coffee-table-h3723",
+      "name": "Stowe Solid Wood Round Coffee Table (36\"–46\")",
+      "price": "$399",
+      "category": "coffee table",
+      "room": "living room",
+      "style": "scandinavian",
+      "colors": [
+        "Dark Walnut",
+        "Black",
+        "Cerused White",
+        "Cool Walnut"
+      ],
+      "sizes": [
+        "36\"",
+        "46\""
+      ],
+      "dimensions": null,
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202605/0026/stowe-solid-wood-round-coffee-table-36-46-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202602/0036/stowe-solid-wood-round-coffee-table-36-46-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202610/0002/stowe-solid-wood-round-coffee-table-36-46-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202611/0017/stowe-solid-wood-round-coffee-table-36-46-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/stowe-coffee-table-h3723/",
+      "source": "west-elm",
+      "description": "Draws inspiration from the clean lines of Scandinavian style. Natural variations make each one-of-a-kind. Made from sustainably sourced mango wood. Contract Grade, so you know it's built to last.",
+      "scrapedAt": "2026-06-08T23:29:35.186Z"
+    },
+    {
+      "id": "sintra-nesting-coffee-tables-30-36",
+      "slug": "sintra-coffee-table-h10473",
+      "name": "Sintra Nesting Coffee Tables (30\"–36\")",
+      "price": "$399",
+      "category": "coffee table",
+      "room": "living room",
+      "style": "other",
+      "colors": [],
+      "sizes": [
+        "30\"",
+        "36\"",
+        "30\" & 36\""
+      ],
+      "dimensions": {
+        "widthIn": 55,
+        "depthIn": 36,
+        "heightIn": 16,
+        "width": 1.4,
+        "depth": 0.91,
+        "height": 0.41,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202620/0010/sintra-nesting-coffee-tables-30-36-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202620/0009/sintra-nesting-coffee-tables-30-36-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202611/0008/sintra-nesting-coffee-tables-30-36-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202611/0025/sintra-nesting-coffee-tables-30-36-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/sintra-coffee-table-h10473/",
+      "source": "west-elm",
+      "description": "Heavily textured metal legs steal the show. Two sizes designed to nest with each other. Handcrafted in a Fair Trade Certified&#8482; facility. Contract Grade for unmatched durability.",
+      "scrapedAt": "2026-06-08T23:29:40.489Z"
+    },
+    {
+      "id": "chadwick-mid-century-rectangle-coffee-table-48",
+      "slug": "chadwick-coffee-table-h8795",
+      "name": "Chadwick Mid-Century Rectangle Coffee Table (48\")",
+      "price": "$479",
+      "category": "coffee table",
+      "room": "living room",
+      "style": "mid-century",
+      "colors": [],
+      "sizes": [],
+      "dimensions": {
+        "widthIn": 48,
+        "depthIn": 22,
+        "heightIn": 16,
+        "width": 1.22,
+        "depth": 0.56,
+        "height": 0.41,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202604/0010/chadwick-mid-century-rectangle-coffee-table-48-1-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202604/0010/chadwick-mid-century-rectangle-coffee-table-48-3-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202604/0010/chadwick-mid-century-rectangle-coffee-table-48-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202604/0011/chadwick-mid-century-rectangle-coffee-table-48-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/chadwick-coffee-table-h8795/",
+      "source": "west-elm",
+      "description": "Showcases warm tones and mixed materials. Textural woven shelf adds natural elegance. Rich Cool Walnut finish goes with anything. Contract Grade for unmatched durability.",
+      "scrapedAt": "2026-06-08T23:29:48.403Z"
+    },
+    {
+      "id": "palmetto-indoor-outdoor-concrete-coffee-table-48",
+      "slug": "palmetto-coffee-table-48-h13813",
+      "name": "Palmetto Indoor/Outdoor Concrete Coffee Table (48\")",
+      "price": "$699",
+      "category": "coffee table",
+      "room": "living room",
+      "style": "modern",
+      "colors": [],
+      "sizes": [],
+      "dimensions": {
+        "widthIn": 48,
+        "depthIn": 24,
+        "heightIn": 15,
+        "width": 1.22,
+        "depth": 0.61,
+        "height": 0.38,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202615/0008/palmetto-indoor-outdoor-coffee-table-48-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202615/0014/palmetto-indoor-outdoor-coffee-table-48-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202615/0019/palmetto-indoor-outdoor-coffee-table-48-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202615/0018/palmetto-indoor-outdoor-coffee-table-48-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/palmetto-coffee-table-48-h13813/",
+      "source": "west-elm",
+      "description": "Smooth concrete in a curved, sculptural silhouette. Unique T-shaped legs complement the organic top. Instantly gives your living room a contemporary update. Contract Grade, so you know it&rsquo;s built to last.",
+      "scrapedAt": "2026-06-08T23:29:55.840Z"
+    },
+    {
+      "id": "mid-century-storage-coffee-table-47-5",
+      "slug": "mid-century-storage-coffee-table-acorn-h4542",
+      "name": "Mid-Century Storage Coffee Table (47.5\")",
+      "price": "$599",
+      "category": "coffee table",
+      "room": "living room",
+      "style": "mid-century",
+      "colors": [],
+      "sizes": [],
+      "dimensions": {
+        "widthIn": 47.5,
+        "depthIn": 22,
+        "heightIn": 17,
+        "width": 1.21,
+        "depth": 0.56,
+        "height": 0.43,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202613/0008/mid-century-storage-coffee-table-475-2-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202613/0006/mid-century-storage-coffee-table-475-2-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202613/0008/mid-century-storage-coffee-table-475-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202613/0007/mid-century-storage-coffee-table-475-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/mid-century-storage-coffee-table-acorn-h4542/",
+      "source": "west-elm",
+      "description": "Borrows from iconic '50s and '60s furniture design. Easy storage solution that's built to last. Made of sustainably sourced, kiln-dried wood. Crafted in a Fair Trade Certified&#8482; facility.",
+      "scrapedAt": "2026-06-08T23:30:05.034Z"
+    },
+    {
+      "id": "lottie-grid-top-coffee-table-44",
+      "slug": "lottie-coffee-table-h13359",
+      "name": "Lottie Grid Top Coffee Table (44\")",
+      "price": "$479.20",
+      "category": "coffee table",
+      "room": "living room",
+      "style": "modern",
+      "colors": [],
+      "sizes": [],
+      "dimensions": {
+        "widthIn": 44,
+        "depthIn": 27,
+        "heightIn": 13,
+        "width": 1.12,
+        "depth": 0.69,
+        "height": 0.33,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202624/0119/lottie-grid-top-coffee-table-44-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202602/0034/lottie-coffee-table-44-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202602/0037/lottie-coffee-table-44-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202602/0034/lottie-coffee-table-44-2-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/lottie-coffee-table-h13359/",
+      "source": "west-elm",
+      "description": "Tempered glass offers a window into your coffee table. A grid of solid acacia wood creates modern pattern. GREENGUARD Gold Certified for a healthier home. Contract Grade, so you know it&rsquo;s built to last.",
+      "scrapedAt": "2026-06-08T23:30:13.030Z"
+    },
+    {
+      "id": "pebble-indoor-outdoor-oval-coffee-table-36-48",
+      "slug": "pebble-coffee-table-h007",
+      "name": "Pebble Indoor/Outdoor Oval Coffee Table (36\"–48\")",
+      "price": "$399",
+      "category": "coffee table",
+      "room": "living room",
+      "style": "modern",
+      "colors": [
+        "Gray",
+        "White"
+      ],
+      "sizes": [
+        "36\"",
+        "48\""
+      ],
+      "dimensions": {
+        "widthIn": 36,
+        "depthIn": 24,
+        "heightIn": 14,
+        "width": 0.91,
+        "depth": 0.61,
+        "height": 0.36,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202604/0551/pebble-indoor-outdoor-oval-coffee-table-36-48-1-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202624/0006/pebble-indoor-outdoor-oval-coffee-table-36-48-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202604/0551/pebble-indoor-outdoor-oval-coffee-table-36-48-2-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202623/0023/pebble-indoor-outdoor-oval-coffee-table-36-48-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/pebble-coffee-table-h007/",
+      "source": "west-elm",
+      "description": "Its organic shape and smooth surface. Crafted of durable concrete, it's built to last. Makes a modern statement indoors and out.",
+      "scrapedAt": "2026-06-08T23:30:19.648Z"
+    },
+    {
+      "id": "asher-coffee-table-28",
+      "slug": "asher-coffee-table-h7869",
+      "name": "Asher Coffee Table (28\")",
+      "price": "$299",
+      "category": "coffee table",
+      "room": "living room",
+      "style": "other",
+      "colors": [],
+      "sizes": [],
+      "dimensions": null,
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202617/0008/asher-coffee-table-28-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202617/0015/asher-coffee-table-28-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202609/0114/asher-coffee-table-28-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202621/1061/asher-coffee-table-28-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/asher-coffee-table-h7869/",
+      "source": "west-elm",
+      "description": "Raised edge top is both stylish &amp; functional. Subtly slanted tapered legs steal the show. Made from sustainably sourced mango wood. Contract Grade for unmatched durability.",
+      "scrapedAt": "2026-06-08T23:30:28.166Z"
+    },
+    {
+      "id": "maddox-solid-wood-marble-coffee-table-36-44",
+      "slug": "maddox-round-coffee-table-h7858",
+      "name": "Maddox Solid Wood & Marble Coffee Table (36\"–44\")",
+      "price": "$799.20",
+      "category": "coffee table",
+      "room": "living room",
+      "style": "other",
+      "colors": [],
+      "sizes": [
+        "36\"",
+        "44\""
+      ],
+      "dimensions": null,
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202604/0026/maddox-marble-coffee-table-36-44-3-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202604/0026/maddox-marble-coffee-table-36-44-1-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202619/0300/maddox-marble-coffee-table-36-44-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202619/0300/maddox-marble-coffee-table-36-44-1-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/maddox-round-coffee-table-h7858/",
+      "source": "west-elm",
+      "description": "Both laid-back and sophisticated in your space. Light finish exudes rustic coastal-inspired style. Chunky mango wood base is sustainably sourced. Contract Grade for unmatched durability.",
+      "scrapedAt": "2026-06-08T23:30:35.441Z"
+    },
+    {
+      "id": "lorraine-marble-coffee-table-36",
+      "slug": "lorraine-coffee-table-36-h12905",
+      "name": "Lorraine Marble Coffee Table (36\")",
+      "price": "$899",
+      "category": "coffee table",
+      "room": "living room",
+      "style": "other",
+      "colors": [],
+      "sizes": [],
+      "dimensions": null,
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202610/0002/lorraine-marble-coffee-table-36-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202611/0003/lorraine-marble-coffee-table-36-1-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202611/0008/lorraine-marble-coffee-table-36-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202611/0003/lorraine-marble-coffee-table-36-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/lorraine-coffee-table-36-h12905/",
+      "source": "west-elm",
+      "description": "Marble top with dramatic veining, so each piece is one of a kind. Sculptural legs in our rich Cool Walnut finish. Base made of solid, sustainably sourced mango wood. Crafted in a Fair Trade Certified&#8482; facility.",
+      "scrapedAt": "2026-06-08T23:30:42.821Z"
+    },
+    {
+      "id": "olina-marble-coffee-table-36",
+      "slug": "olina-coffee-table-h12629",
+      "name": "Olina Marble Coffee Table (36\")",
+      "price": "$799",
+      "category": "coffee table",
+      "room": "living room",
+      "style": "other",
+      "colors": [],
+      "sizes": [],
+      "dimensions": null,
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202609/0115/olina-marble-coffee-table-36-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202624/0004/olina-marble-coffee-table-36-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202623/0356/gates-performance-rug-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202611/0004/olina-marble-coffee-table-36-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/olina-coffee-table-h12629/",
+      "source": "west-elm",
+      "description": "Natural variations in the marble make each piece subtly unique. Gentle hourglass base for a sculptural look. Rounds out a larger seating area, perfect for entertaining. Contract Grade, so you know it&rsquo;s built to last.",
+      "scrapedAt": "2026-06-08T23:30:52.280Z"
+    },
+    {
+      "id": "alexander-indoor-outdoor-coffee-table-36",
+      "slug": "alexander-coffee-table-h13139",
+      "name": "Alexander Indoor/Outdoor Coffee Table (36\")",
+      "price": "$799",
+      "category": "coffee table",
+      "room": "living room",
+      "style": "other",
+      "colors": [
+        "Travertine",
+        "Black Marble"
+      ],
+      "sizes": [],
+      "dimensions": null,
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202623/0293/windy-mountains-pillow-cover-4-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202613/0004/alexander-indoor-outdoor-coffee-table-36-1-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202552/0324/alexander-indoor-outdoor-coffee-table-36-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202613/0004/alexander-indoor-outdoor-coffee-table-36-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/alexander-coffee-table-h13139/",
+      "source": "west-elm",
+      "description": "Alluring tones and veining make this table a striking centerpiece. Hand cast by skilled artisans in Vietnam. Contract Grade, so you know it&rsquo;s built to last.",
+      "scrapedAt": "2026-06-08T23:31:01.845Z"
+    },
+    {
+      "id": "syros-indoor-outdoor-waterfall-coffee-table-44",
+      "slug": "syros-outdoor-waterfall-coffee-table-h12252",
+      "name": "Syros Indoor/Outdoor Waterfall Coffee Table (44\")",
+      "price": "$499",
+      "category": "coffee table",
+      "room": "living room",
+      "style": "industrial",
+      "colors": [],
+      "sizes": [],
+      "dimensions": {
+        "widthIn": 44,
+        "depthIn": 22,
+        "heightIn": 15,
+        "width": 1.12,
+        "depth": 0.56,
+        "height": 0.38,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202605/0020/syros-indoor-outdoor-waterfall-coffee-table-44-1-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202605/0020/syros-indoor-outdoor-waterfall-coffee-table-44-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202551/0029/syros-indoor-outdoor-waterfall-coffee-table-44-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202621/1232/syros-outdoor-waterfall-coffee-table-protective-cover-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/syros-outdoor-waterfall-coffee-table-h12252/",
+      "source": "west-elm",
+      "description": "Rounded corners create a waterfall shape for a tranquil feel. Brings an industrial vibe to your outdoor space. Large-scale top, perfect for cocktail hour and entertaining. Contract Grade, so you know it's built to last.",
+      "scrapedAt": "2026-06-08T23:31:09.340Z"
+    },
+    {
+      "id": "elwell-glass-metal-nesting-coffee-tables-24-32",
+      "slug": "elwell-round-coffee-table-h14017",
+      "name": "Elwell Glass & Metal Nesting Coffee Tables (24\"–32\")",
+      "price": "$899",
+      "category": "coffee table",
+      "room": "living room",
+      "style": "other",
+      "colors": [],
+      "sizes": [],
+      "dimensions": null,
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202621/0889/elwell-glass-metal-nesting-coffee-tables-24-32-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202623/0025/elwell-glass-metal-nesting-coffee-tables-24-32-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202623/0449/elwell-glass-metal-nesting-coffee-tables-24-32-5-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202623/0449/elwell-glass-metal-nesting-coffee-tables-24-32-1-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/elwell-round-coffee-table-h14017/",
+      "source": "west-elm",
+      "description": "Anchored by smooth, fluidly shaped cast metal legs. Glass and metal add a dynamic mix of materials. They nest together so you can add an extra surface in a pinch. Contract Grade, so you know it&rsquo;s built to last.",
+      "scrapedAt": "2026-06-08T23:31:18.256Z"
+    },
+    {
+      "id": "mid-century-bed",
+      "slug": "mid-century-bedframe-acorn-h001",
+      "name": "Mid-Century Bed",
+      "price": "$799",
+      "category": "bed",
+      "room": "bedroom",
+      "style": "mid-century",
+      "colors": [],
+      "sizes": [
+        "Twin",
+        "Full",
+        "Queen",
+        "King"
+      ],
+      "dimensions": {
+        "widthIn": 42,
+        "depthIn": 78.75,
+        "heightIn": 46.75,
+        "width": 1.07,
+        "depth": 2,
+        "height": 1.19,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202611/0008/mid-century-bed-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202611/0007/mid-century-bed-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202609/0113/mid-century-bed-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202609/0118/mid-century-bed-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/mid-century-bedframe-acorn-h001/",
+      "source": "west-elm",
+      "description": "Borrows from iconic '50s and '60s furniture design. Made from kiln-dried, sustainably sourced wood. Crafted in a Fair Trade Certified&#8482; facility. GREENGUARD Gold Certified for a healthier home.",
+      "scrapedAt": "2026-06-08T23:32:38.917Z"
+    },
+    {
+      "id": "laurent-bed",
+      "slug": "laurent-bed-h12057",
+      "name": "Laurent Bed",
+      "price": "$1,149",
+      "category": "bed",
+      "room": "bedroom",
+      "style": "other",
+      "colors": [
+        "Blue",
+        "Brown",
+        "Gray",
+        "Green",
+        "Natural",
+        "Pink",
+        "White",
+        "Yellow"
+      ],
+      "sizes": [
+        "Full",
+        "Queen",
+        "King",
+        "California King"
+      ],
+      "dimensions": {
+        "widthIn": 67.6,
+        "depthIn": 89,
+        "heightIn": 42.25,
+        "width": 1.72,
+        "depth": 2.26,
+        "height": 1.07,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202620/0010/laurent-bed-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202604/0015/laurent-bed-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202551/0029/silky-tencel-duvet-cover-shams-1-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202606/0017/laurent-bed-1-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/laurent-bed-h12057/",
+      "source": "west-elm",
+      "description": "Graceful curves bring shape to your bedroom. Low-profile silhouette with Black-finished legs. Covered in your choice of stylish fabrics. Contract Grade, so you know it's built to last.",
+      "scrapedAt": "2026-06-08T23:32:46.563Z"
+    },
+    {
+      "id": "miles-wood-upholstered-bed",
+      "slug": "miles-wood-upholstered-bed-h12204",
+      "name": "Miles Wood & Upholstered Bed",
+      "price": "$1,199.20",
+      "category": "bed",
+      "room": "bedroom",
+      "style": "modern",
+      "colors": [
+        "Toasted Oak Frame with a Twill, Sand Headboard",
+        "Blonde Frame with a Twill, Sand Headboard",
+        "Toasted Oak Frame with a Modern Chenille, Juniper Headboard"
+      ],
+      "sizes": [
+        "Full",
+        "Queen",
+        "King"
+      ],
+      "dimensions": {
+        "widthIn": 56,
+        "depthIn": 78.5,
+        "heightIn": 45,
+        "width": 1.42,
+        "depth": 1.99,
+        "height": 1.14,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202621/0084/miles-wood-upholstered-bed-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202610/0224/miles-wood-upholstered-bed-1-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202551/0042/rylee-nesting-nightstand-23-26-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202624/0004/miles-wood-upholstered-bed-1-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/miles-wood-upholstered-bed-h12204/",
+      "source": "west-elm",
+      "description": "Modern rounded legs enhance a clean-lined silhouette. Made from kiln-dried, sustainably sourced wood. Crafted in a Fair Trade Certified&#8482; facility. Contract Grade, so you know it's built to last.",
+      "scrapedAt": "2026-06-08T23:32:55.325Z"
+    },
+    {
+      "id": "roan-bed",
+      "slug": "roan-bed-h6912",
+      "name": "Roan Bed",
+      "price": "$799",
+      "category": "bed",
+      "room": "bedroom",
+      "style": "other",
+      "colors": [],
+      "sizes": [
+        "Full",
+        "Queen",
+        "King"
+      ],
+      "dimensions": {
+        "widthIn": 57,
+        "depthIn": 82,
+        "heightIn": 34,
+        "width": 1.45,
+        "depth": 2.08,
+        "height": 0.86,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202602/0002/roan-bed-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202602/0030/roan-bed-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202602/0032/roan-bed-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202602/0031/roan-bed-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/roan-bed-h6912/",
+      "source": "west-elm",
+      "description": "Its understated design is classic yet versatile. A slightly curved headboard & cutout detail. The wood is kiln dried for added durability.",
+      "scrapedAt": "2026-06-08T23:33:05.946Z"
+    },
+    {
+      "id": "simple-bed-frame",
+      "slug": "simple-bed-frame-h8586",
+      "name": "Simple Bed Frame",
+      "price": "$399",
+      "category": "bed",
+      "room": "bedroom",
+      "style": "other",
+      "colors": [
+        "Acorn",
+        "Blonde",
+        "Toasted Oak",
+        "White"
+      ],
+      "sizes": [
+        "Twin",
+        "Full",
+        "Queen",
+        "King"
+      ],
+      "dimensions": {
+        "widthIn": 41,
+        "depthIn": 77.5,
+        "heightIn": 14.25,
+        "width": 1.04,
+        "depth": 1.97,
+        "height": 0.36,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202552/0344/simple-bed-frame-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202552/0322/simple-bed-frame-1-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202552/0324/simple-bed-frame-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202552/0323/simple-bed-frame-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/simple-bed-frame-h8586/",
+      "source": "west-elm",
+      "description": "Super adaptable and feels at home in any room. Looks great with a headboard or on its own. Contract Grade for unmatched durability.",
+      "scrapedAt": "2026-06-08T23:33:14.128Z"
+    },
+    {
+      "id": "andes-bed-metal-legs",
+      "slug": "andes-bed-metal-legs-h8484",
+      "name": "Andes Bed - Metal Legs",
+      "price": "$999",
+      "category": "bed",
+      "room": "bedroom",
+      "style": "other",
+      "colors": [
+        "Blue",
+        "Brown",
+        "Gray",
+        "Green",
+        "Natural",
+        "Pink",
+        "Red",
+        "White",
+        "Yellow"
+      ],
+      "sizes": [
+        "Twin",
+        "Full",
+        "Queen",
+        "King",
+        "California King"
+      ],
+      "dimensions": {
+        "widthIn": 44,
+        "depthIn": 82,
+        "heightIn": 46,
+        "width": 1.12,
+        "depth": 2.08,
+        "height": 1.17,
+        "unit": "m"
+      },
+      "imageUrls": [
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202610/0044/andes-bed-metal-legs-3-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202612/0063/andes-bed-metal-legs-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202612/0064/andes-bed-metal-legs-6-xxxx.jpg",
+        "https://asset.wsimgs.com/wsimgs/ab/images/products/202612/0064/andes-bed-metal-legs-7-xxxx.jpg"
+      ],
+      "productUrl": "https://www.westelm.com/products/andes-bed-metal-legs-h8484/",
+      "source": "west-elm",
+      "description": "Designed by you: pick your frame, fabric and more. Plush, clean-lined headboard gives it a luxe look. Tall cast metal legs for an airy feel. Contract Grade, so you know it's built to last.",
+      "scrapedAt": "2026-06-08T23:33:27.219Z"
+    }
+  ]
+}

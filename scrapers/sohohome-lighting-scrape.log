@@ -1,0 +1,219 @@
+[2026-06-09T17:56:11.886Z] === Soho Home Lighting catalogue scraper ===
+[2026-06-09T17:56:14.286Z] 
+══ TABLE LAMP ══════════════
+[2026-06-09T17:56:14.288Z]   Loading: /us/lighting/table-lamps
+[2026-06-09T17:56:26.488Z]   Found 38 product links
+[2026-06-09T17:56:27.338Z]   Scraping: archie-table-lamp
+[2026-06-09T17:56:29.790Z]   ✓ Archie Table Lamp, US | $455 | 17.1cm W × 17.1cm D × 60cm H | 4 imgs
+[2026-06-09T17:56:29.791Z]   Scraping: janie-table-lamp
+[2026-06-09T17:56:31.980Z]   ✓ Janie Table Lamp, Cream, US | $495 | 30cm W × 30cm D × 30cm H | 4 imgs
+[2026-06-09T17:56:31.981Z]   Scraping: garnett-table-lamp
+[2026-06-09T17:56:34.266Z]   ✓ Garnett Table Lamp, US | $345 | 18.5cm W × 18.5cm D × 54cm H | 4 imgs
+[2026-06-09T17:56:34.268Z]   Scraping: wren-table-lamp
+[2026-06-09T17:56:36.300Z]   ✓ Wren Table Lamp, US | $395 | 16cm W × 12cm D × 55cm H | 4 imgs
+[2026-06-09T17:56:36.301Z]   Scraping: rio-portable-lamp-dark-emperador-marble
+[2026-06-09T17:56:38.669Z]   ✓ Rio Portable Lamp, Dark Emperador Marble | $395 | 17cm W × 17cm D × 27cm H | 4 imgs
+[2026-06-09T17:56:38.673Z]   Scraping: rio-portable-lamp-carrara-marble
+[2026-06-09T17:56:40.847Z]   ✓ Rio Portable Lamp, Carrara Marble | $395 | 17cm W × 17cm D × 27cm H | 4 imgs
+[2026-06-09T17:56:40.850Z]   Scraping: oxford-portable-lamp
+[2026-06-09T17:56:43.156Z]   ✓ Oxford Portable Lamp | $395 | 17cm W × 17cm D × 39cm H | 4 imgs
+[2026-06-09T17:56:43.157Z]   Scraping: emmie-portable-lamp
+[2026-06-09T17:56:45.458Z]   ✓ Emmie Portable Lamp | $350 | 16cm W × 16cm D × 28cm H | 4 imgs
+[2026-06-09T17:56:45.462Z]   Scraping: elias-table-lamp-uk
+[2026-06-09T17:56:47.768Z]   ✓ Elias Table Lamp, US | $795 | 28cm W × 28cm D × 42cm H | 4 imgs
+[2026-06-09T17:56:47.770Z]   Scraping: ferguson-table-lamp
+[2026-06-09T17:56:50.254Z]   ✓ Ferguson Table Lamp, Green, US | $450 | 38cm W × 38cm D × 44cm H | 4 imgs
+[2026-06-09T17:56:50.255Z]   Scraping: janie-portable-lamp
+[2026-06-09T17:56:52.477Z]   ✓ Janie Portable Lamp, Pink | $395 | 23cm W × 23cm D × 25cm H | 4 imgs
+[2026-06-09T17:56:52.479Z]   Scraping: greyson-table-lamp-high-gloss-lacquer-olive
+[2026-06-09T17:56:54.826Z]   ✓ Greyson Table Lamp, High Gloss Lacquer, Olive, US | $595 | 44cm W × 44cm D × 62.3cm H | 4 imgs
+[2026-06-09T17:56:54.828Z]   Scraping: kea-table-lamp
+[2026-06-09T17:56:57.169Z]   ✓ Kea Table Lamp, US | $650 | 45cm W × 45cm D × 66cm H | 4 imgs
+[2026-06-09T17:56:57.170Z]   Scraping: ruby-portable-lamp
+[2026-06-09T17:56:59.750Z]   ✓ Ruby Portable Lamp | $350 | 14.5cm W × 14.5cm D × 27.5cm H | 4 imgs
+[2026-06-09T17:56:59.760Z]   Scraping: belsa-bed-light-oak/78164067
+[2026-06-09T17:57:02.450Z]   ✓ Belsa Bed, Light Oak, King, Linen, Sage, US | $5,295 | 204.4cm W × 216.1cm D × 110cm H | 4 imgs
+[2026-06-09T17:57:02.451Z]   Scraping: garnett-table-lamp/72730719
+[2026-06-09T17:57:04.774Z]   ✓ Garnett Table Lamp, US | $345 | 18.5cm W × 18.5cm D × 54cm H | 4 imgs
+[2026-06-09T17:57:04.775Z]   Scraping: pietro-bedside-table-large-brazilian-quartzite/78129615
+[2026-06-09T17:57:07.045Z]   ✓ Pietro Bedside Table, Large, Brazilian Quartzite | $3,195 | 72cm W × 49.5cm D × 60cm H | 4 imgs
+[2026-06-09T17:57:07.048Z]   Scraping: obie-rug-multi/74577548
+[2026-06-09T17:57:09.463Z]   ✓ Obie Rug Multi, 300 x 420cm | $7,495 | 420cm W × 1cm D × 300cm H | 4 imgs
+[2026-06-09T17:57:09.464Z]   Scraping: wool-sheer-curtains/79987278
+[2026-06-09T17:57:12.100Z]   ✓ Wool Sheer Curtain Panel, W325cm x L274cm, Single Panel | $895 | 325cm W × ?cm D × 274cm H | 4 imgs
+[2026-06-09T17:57:12.103Z]   Scraping: ferguson-table-lamp-neutral
+[2026-06-09T17:57:14.554Z]   ✓ Ferguson Table Lamp, Neutral, US | $450 | 38cm W × 38cm D × 44cm H | 4 imgs
+[2026-06-09T17:57:14.556Z] 
+══ FLOOR LAMP ══════════════
+[2026-06-09T17:57:14.556Z]   Loading: /us/lighting/floor-lamps
+[2026-06-09T17:57:25.343Z]   Found 29 product links
+[2026-06-09T17:57:26.229Z]   Scraping: franco-floor-lamp
+[2026-06-09T17:57:29.244Z]   ✓ Franco Floor Lamp, Abstract Burl, US | $2,305 | 35cm W × 35cm D × 160cm H | 4 imgs
+[2026-06-09T17:57:29.249Z]   Scraping: riccardo-floor-lamp
+[2026-06-09T17:57:31.204Z]   ✓ Riccardo Floor Lamp, US | $2,895 | 27cm W × 35cm D × 160cm H | 4 imgs
+[2026-06-09T17:57:31.208Z]   Scraping: dinis-floor-lamp
+[2026-06-09T17:57:33.476Z]   ✓ Dinis Floor Lamp, US | $695 | 50cm W × 50cm D × 165cm H | 4 imgs
+[2026-06-09T17:57:33.477Z]   Scraping: elias-floor-lamp-green
+[2026-06-09T17:57:35.889Z]   ✓ Elias Floor Lamp, Green, US | $2,895 | 46cm W × 46cm D × 140cm H | 4 imgs
+[2026-06-09T17:57:35.891Z]   Scraping: greyson-floor-lamp
+[2026-06-09T17:57:38.210Z]   ✓ Greyson Floor Lamp, Oak, Tall, US | $1,195 | 48cm W × 48cm D × 153.6cm H | 4 imgs
+[2026-06-09T17:57:38.215Z]   Scraping: spencer-arc-floor-lamp
+[2026-06-09T17:57:40.459Z]   ✓ Spencer Arc Floor Lamp, US | $1,995 | 61cm W × 160.7cm D × 201.7cm H | 4 imgs
+[2026-06-09T17:57:40.460Z]   Scraping: winona-floor-lamp
+[2026-06-09T17:57:42.721Z]   ✓ Winona Floor Lamp, US | $1,695 | 47.8cm W × 87cm D × 153cm H | 4 imgs
+[2026-06-09T17:57:42.723Z]   Scraping: felix-floor-lamp
+[2026-06-09T17:57:44.933Z]   ✓ Felix Floor Lamp, US | $1,395 | 40.5cm W × 40.5cm D × 170cm H | 4 imgs
+[2026-06-09T17:57:44.934Z]   Scraping: wren-floor-lamp
+[2026-06-09T17:57:47.157Z]   ✓ Wren Floor Lamp, Complete, US | $1,395 | 50cm W × 61cm D × 160cm H | 4 imgs
+[2026-06-09T17:57:47.158Z]   Scraping: elias-floor-lamp-white
+[2026-06-09T17:57:49.245Z]   ✓ Elias Floor Lamp, White, US | $2,895 | 46cm W × 46cm D × 140cm H | 4 imgs
+[2026-06-09T17:57:49.247Z]   Scraping: alexander-floor-lamp
+[2026-06-09T17:57:51.394Z]   ✓ Alexander Floor Lamp, US | $995 | 50cm W × 50cm D × 166cm H | 4 imgs
+[2026-06-09T17:57:51.395Z]   Scraping: beckett-leather-floor-lamp-patterned-shade
+[2026-06-09T17:57:53.895Z]   ✓ Beckett Leather Floor Lamp, Patterned Shade, US | $1,195 | 40cm W × 40cm D × 159cm H | 4 imgs
+[2026-06-09T17:57:53.898Z]   Scraping: ferguson-floor-lamp
+[2026-06-09T17:57:56.235Z]   ✓ Ferguson Floor Lamp, US | $995 | 57cm W × 57cm D × 160cm H | 4 imgs
+[2026-06-09T17:57:56.237Z]   Scraping: greyson-floor-lamp-high-gloss-lacquer
+[2026-06-09T17:57:58.357Z]   ✓ Greyson Floor Lamp, High Gloss Lacquer, Olive, US | $1,395 | 48cm W × 48cm D × 168cm H | 4 imgs
+[2026-06-09T17:57:58.360Z]   → skip: belsa-bed-light-oak/78164067
+[2026-06-09T17:57:58.360Z]   → skip: garnett-table-lamp/72730719
+[2026-06-09T17:57:58.360Z]   → skip: pietro-bedside-table-large-brazilian-quartzite/78129615
+[2026-06-09T17:57:58.361Z]   → skip: obie-rug-multi/74577548
+[2026-06-09T17:57:58.361Z]   → skip: wool-sheer-curtains/79987278
+[2026-06-09T17:57:58.361Z]   Scraping: beckett-leather-floor-lamp
+[2026-06-09T17:58:00.752Z]   ✓ Beckett Leather Floor Lamp, US | $1,195 | 40cm W × 40cm D × 159cm H | 4 imgs
+[2026-06-09T17:58:00.754Z]   Scraping: beatrice-floor-lamp
+[2026-06-09T17:58:03.330Z]   ✓ Beatrice Floor Lamp, US | $895 | 31cm W × 78cm D × 171cm H | 4 imgs
+[2026-06-09T17:58:03.331Z]   Scraping: sergio-floor-lamp
+[2026-06-09T17:58:05.608Z]   ✓ Sergio Floor Lamp, US | $5,195 | 29cm W × 29cm D × 60cm H | 4 imgs
+[2026-06-09T17:58:05.611Z]   Scraping: oakland-floor-lamp
+[2026-06-09T17:58:08.131Z]   ✓ Oakland Floor Lamp, US | $850 | 54.5cm W × 54.5cm D × 154cm H | 4 imgs
+[2026-06-09T17:58:08.144Z]   Scraping: coletta-floor-lamp
+[2026-06-09T17:58:10.393Z]   ✓ Coletta Floor Lamp, Complete, US | $1,395 | 33cm W × 50cm D × 148cm H | 4 imgs
+[2026-06-09T17:58:10.395Z]   Scraping: seed-floor-lamp-white
+[2026-06-09T17:58:12.539Z]   ✓ Seed Floor Lamp, White, US | $725 | 36cm W × 36cm D × 175cm H | 4 imgs
+[2026-06-09T17:58:12.541Z] 
+══ WALL LIGHT ══════════════
+[2026-06-09T17:58:12.541Z]   Loading: /us/lighting/wall-lights
+[2026-06-09T17:58:23.861Z]   Found 45 product links
+[2026-06-09T17:58:24.830Z]   Scraping: flint-wall-light
+[2026-06-09T17:58:27.003Z]   ✓ Flint Wall Light, US | $395 | 16cm W × 16cm D × 26cm H | 4 imgs
+[2026-06-09T17:58:27.004Z]   Scraping: belsize-wall-light-uk-ip44
+[2026-06-09T17:58:29.357Z]   ✓ Belsize Wall Light, US, IP44 | $450 | 12.7cm W × 16cm D × 38cm H | 4 imgs
+[2026-06-09T17:58:29.360Z]   Scraping: floria-wall-light
+[2026-06-09T17:58:31.495Z]   ✓ Floria Wall Light, Calacatta Viola Marble, IP44, US | $245 | 16.3cm W × 16.3cm D × 13.6cm H | 4 imgs
+[2026-06-09T17:58:31.497Z]   Scraping: colette-wall-light
+[2026-06-09T17:58:33.674Z]   ✓ Colette Wall Light, US | $650 | 27.8cm W × 15.5cm D × 19.5cm H | 4 imgs
+[2026-06-09T17:58:33.678Z]   Scraping: mallory-wall-light-alabaster
+[2026-06-09T17:58:36.021Z]   ✓ Mallory Wall Light, Alabaster, US | $1,895 | 25cm W × 12cm D × 24cm H | 4 imgs
+[2026-06-09T17:58:36.022Z]   Scraping: estelle-wall-light
+[2026-06-09T17:58:38.244Z]   ✓ Estelle Wall Light, US | $895 | 20cm W × 10cm D × 40cm H | 4 imgs
+[2026-06-09T17:58:38.251Z]   Scraping: cara-wall-light
+[2026-06-09T17:58:40.578Z]   ✓ Cara Wall Light, US | $895 | 55cm W × 15cm D × 15.2cm H | 4 imgs
+[2026-06-09T17:58:40.579Z]   Scraping: alexander-wall-light
+[2026-06-09T17:58:43.041Z]   ✓ Alexander Wall Light, US | $350 | 13cm W × 15cm D × 27cm H | 4 imgs
+[2026-06-09T17:58:43.042Z]   Scraping: oregan-wall-light
+[2026-06-09T17:58:45.574Z]   ✓ Oregan Wall Light, US | $350 | 13.5cm W × 15cm D × 20.2cm H | 4 imgs
+[2026-06-09T17:58:45.576Z]   Scraping: viola-wall-light-bronze
+[2026-06-09T17:58:47.768Z]   ✓ Viola Wall Light, Bronze, US | $350 | 19cm W × 19cm D × 30cm H | 4 imgs
+[2026-06-09T17:58:47.770Z]   Scraping: benny-wall-sconce
+[2026-06-09T17:58:51.201Z]   ✓ Benny Wall Light, Small, US | $350 | 16cm W × 25cm D × 27cm H | 4 imgs
+[2026-06-09T17:58:51.213Z]   Scraping: ashby-picture-light-small
+[2026-06-09T17:58:54.182Z]   ✓ Ashby Picture Light, 18', US | $495 | 46cm W × 24cm D × 7cm H | 4 imgs
+[2026-06-09T17:58:54.186Z]   Scraping: enrica-picture-light-medium
+[2026-06-09T17:58:56.732Z]   ✓ Enrica Picture Light, 18' US | $495 | 46cm W × 22cm D × 10cm H | 4 imgs
+[2026-06-09T17:58:56.734Z]   Scraping: aaron-wall-light
+[2026-06-09T17:58:58.959Z]   ✓ Aaron Wall Light, US | $395 | 16cm W × 17.1cm D × 55cm H | 4 imgs
+[2026-06-09T17:58:58.960Z]   → skip: belsa-bed-light-oak/78164067
+[2026-06-09T17:58:58.960Z]   → skip: garnett-table-lamp/72730719
+[2026-06-09T17:58:58.961Z]   → skip: pietro-bedside-table-large-brazilian-quartzite/78129615
+[2026-06-09T17:58:58.961Z]   → skip: obie-rug-multi/74577548
+[2026-06-09T17:58:58.961Z]   → skip: wool-sheer-curtains/79987278
+[2026-06-09T17:58:58.961Z]   Scraping: avena-wall-light-alabaster-globe
+[2026-06-09T17:59:01.316Z]   ✓ Avena Wall Light, Alabaster Globe, US | $795 | 25.8cm W × 15.1cm D × 25.8cm H | 4 imgs
+[2026-06-09T17:59:01.319Z]   Scraping: andro-picture-light-small
+[2026-06-09T17:59:03.562Z]   ✓ Andro Picture Light, 12.6 Inch Head, US | $650 | 32cm W × 20cm D × 7.4cm H | 4 imgs
+[2026-06-09T17:59:03.566Z]   Scraping: skye-wall-light
+[2026-06-09T17:59:05.641Z]   ✓ Skye Wall Light, US | $495 | 11cm W × 14.7cm D × 36.9cm H | 4 imgs
+[2026-06-09T17:59:05.648Z]   Scraping: reade-wall-light-antique-brass
+[2026-06-09T17:59:07.729Z]   ✓ Reade Wall Light, Antique Brass, US | $450 | 11cm W × 73cm D × 17cm H | 4 imgs
+[2026-06-09T17:59:07.731Z]   Scraping: quaid-wall-light
+[2026-06-09T17:59:09.982Z]   ✓ Quaid Wall Light, US | $450 | 41cm W × 16cm D × 47cm H | 4 imgs
+[2026-06-09T17:59:09.984Z]   Scraping: milos-wall-light
+[2026-06-09T17:59:18.884Z]   ✓ Milos Wall Light, US | $395 | 26cm W × 15cm D × 29.2cm H | 4 imgs
+[2026-06-09T17:59:18.889Z] 
+══ CHANDELIER ══════════════
+[2026-06-09T17:59:18.889Z]   Loading: /us/lighting/ceiling-lights?product_type=Chandelier
+[2026-06-09T17:59:30.030Z]   Found 14 product links
+[2026-06-09T17:59:31.018Z]   Loading: /us/lighting/ceiling-lights?product_type=Multi+Arm+Chandeliers
+[2026-06-09T17:59:42.554Z]   Found 12 product links
+[2026-06-09T17:59:43.474Z]   Scraping: belsize-chandelier
+[2026-06-09T17:59:45.946Z]   ✓ Belsize Chandelier, US | $1,395 | 78.5cm W × 78.5cm D × 146cm H | 4 imgs
+[2026-06-09T17:59:45.948Z]   Scraping: colette-chandelier
+[2026-06-09T17:59:48.036Z]   ✓ Colette Chandelier, US | $1,815 | 76cm W × 76cm D × 35cm H | 4 imgs
+[2026-06-09T17:59:48.038Z]   Scraping: truman-chandelier
+[2026-06-09T17:59:50.428Z]   ✓ Truman Chandelier, US | $1,185 | 119cm W × 119cm D × 41.2cm H | 4 imgs
+[2026-06-09T17:59:50.433Z]   Scraping: lorenzo-chandelier-milky-glass
+[2026-06-09T17:59:52.756Z]   ✓ Lorenzo Chandelier, Milky Glass, US | $2,295 | 76cm W × 76cm D × 29cm H | 4 imgs
+[2026-06-09T17:59:52.758Z]   Scraping: pollensa-chandelier
+[2026-06-09T17:59:54.940Z]   ✓ Pollensa Chandelier, US | $3,895 | 75cm W × 75cm D × 256cm H | 4 imgs
+[2026-06-09T17:59:54.942Z]   Scraping: lorenzo-chandelier
+[2026-06-09T17:59:57.141Z]   ✓ Lorenzo Chandelier, Amber US | $2,295 | 76cm W × 76cm D × 29cm H | 4 imgs
+[2026-06-09T17:59:57.148Z]   Scraping: chiara-chandelier
+[2026-06-09T17:59:59.347Z]   ✓ Chiara Chandelier, Green, US | $3,695 | 75cm W × 75cm D × 250cm H | 4 imgs
+[2026-06-09T17:59:59.349Z]   Scraping: simone-chandelier
+[2026-06-09T18:00:01.555Z]   ✓ Simone Chandelier | $4,595 | 81cm W × 81cm D × 117cm H | 4 imgs
+[2026-06-09T18:00:01.557Z]   Scraping: alessio-chandelier
+[2026-06-09T18:00:04.001Z]   ✓ Alessio Chandelier, US | $2,395 | 80cm W × 80cm D × 240cm H | 4 imgs
+[2026-06-09T18:00:04.007Z]   Scraping: francis-chandelier
+[2026-06-09T18:00:06.340Z]   ✓ Francis Chandelier, US | $3,295 | 71cm W × 71cm D × 49cm H | 4 imgs
+[2026-06-09T18:00:06.342Z]   Scraping: elisa-chandelier
+[2026-06-09T18:00:08.670Z]   ✓ Elisa Chandelier, US | $1,785 | 109cm W × 60cm D × 62cm H | 4 imgs
+[2026-06-09T18:00:08.672Z]   Scraping: cassius-pendant
+[2026-06-09T18:00:10.861Z]   ✓ Cassius Pendant | $1,110 | nullcm W × 61cm D × 88cm H | 4 imgs
+[2026-06-09T18:00:10.868Z]   Scraping: elba-chandelier-large
+[2026-06-09T18:00:13.162Z]   ✓ Elba Chandelier, Large, US | $3,865 | 80cm W × 80cm D × 282cm H | 4 imgs
+[2026-06-09T18:00:13.167Z]   Scraping: chiara-chandelier-pink
+[2026-06-09T18:00:15.451Z]   ✓ Chiara Chandelier, Peach, US | $3,695 | 75cm W × 75cm D × 250cm H | 4 imgs
+[2026-06-09T18:00:15.463Z]   Scraping: kai-chandelier
+[2026-06-09T18:00:18.093Z]   ✓ Kai Chandelier US | $2,195 | 110cm W × 110cm D × 132cm H | 4 imgs
+[2026-06-09T18:00:18.096Z]   Scraping: demarco-chandelier
+[2026-06-09T18:00:20.781Z]   ✓ Demarco Chandelier, US | $1,195 | 79cm W × 79cm D × 103cm H | 4 imgs
+[2026-06-09T18:00:20.790Z]   Scraping: edith-chandelier
+[2026-06-09T18:00:23.402Z]   ✓ Edith Chandelier, US | $2,195 | 56cm W × 85cm D × 18cm H | 4 imgs
+[2026-06-09T18:00:23.413Z]   Scraping: cara-chandelier
+[2026-06-09T18:00:26.164Z]   ✓ Cara Chandelier, US | $4,595 | 60cm W × 60cm D × 161.3cm H | 4 imgs
+[2026-06-09T18:00:26.167Z]   Scraping: seed-chandelier
+[2026-06-09T18:00:28.995Z]   ✓ Seed Chandelier, US | $1,995 | 74cm W × 74cm D × 68cm H | 4 imgs
+[2026-06-09T18:00:29.019Z]   Scraping: peyton-chandelier
+[2026-06-09T18:00:31.388Z]   ✓ Peyton Chandelier, US | $1,395 | 80.4cm W × 80.4cm D × 50cm H | 4 imgs
+[2026-06-09T18:00:31.391Z] 
+══ PENDANT ══════════════
+[2026-06-09T18:00:31.391Z]   Loading: /us/lighting/ceiling-lights?product_type=Pendant+Light
+[2026-06-09T18:00:42.266Z]   Found 5 product links
+[2026-06-09T18:00:43.094Z]   Scraping: aldwin-pendant
+[2026-06-09T18:00:45.588Z]   ✓ Aldwin Pendant, US | $995 | 70cm W × 70cm D × 120cm H | 4 imgs
+[2026-06-09T18:00:45.592Z]   Scraping: attlee-pendant
+[2026-06-09T18:00:47.868Z]   ✓ Attlee Pendant, US | $1,195 | 50cm W × 50cm D × 12cm H | 4 imgs
+[2026-06-09T18:00:47.895Z]   Scraping: rohe-pendant
+[2026-06-09T18:00:51.937Z]   ✓ Rohe Pendant | $650 | 76cm W × 76cm D × 42cm H | 4 imgs
+[2026-06-09T18:00:51.967Z]   Scraping: maris-pendant
+[2026-06-09T18:00:54.511Z]   ✓ Maris Pendant, Small, US | $295 | 55cm W × 55cm D × 33cm H | 4 imgs
+[2026-06-09T18:00:54.527Z]   Scraping: maris-pendant-olive
+[2026-06-09T18:00:56.740Z]   ✓ Maris Pendant, Olive, US | $390 | 75cm W × 75cm D × 45cm H | 4 imgs
+[2026-06-09T18:00:56.743Z] 
+══ PORTABLE LAMP ══════════════
+[2026-06-09T18:00:56.743Z]   Loading: /us/lighting/portable-lamps
+[2026-06-09T18:01:06.942Z]   Found 8 product links
+[2026-06-09T18:01:07.883Z]   → skip: rio-portable-lamp-dark-emperador-marble
+[2026-06-09T18:01:07.887Z]   → skip: rio-portable-lamp-carrara-marble
+[2026-06-09T18:01:07.888Z]   → skip: oxford-portable-lamp
+[2026-06-09T18:01:07.888Z]   → skip: emmie-portable-lamp
+[2026-06-09T18:01:07.889Z]   → skip: janie-portable-lamp
+[2026-06-09T18:01:07.889Z]   → skip: ruby-portable-lamp
+[2026-06-09T18:01:07.889Z]   Scraping: baylee-portable-lamp
+[2026-06-09T18:01:10.336Z]   ✓ Baylee Portable Lamp | $350 | 19.8cm W × 19.8cm D × 30.5cm H | 4 imgs
+[2026-06-09T18:01:10.337Z]   Scraping: rio-portable-lamp
+[2026-06-09T18:01:12.629Z]   ✓ Rio Portable Lamp, Verde Green Marble | $390 | 17cm W × 17cm D × 27cm H | 4 imgs
+[2026-06-09T18:01:13.000Z] 
+=== Done — 87 new, 0 errors, 87 total ===

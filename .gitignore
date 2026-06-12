@@ -1,0 +1,15 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+costage-config.js
+
+# Dependencies / build output
+node_modules/
+.vercel/
+
+# External tool (World Labs image-blaster) — not part of the deployed site
+Image Blaster/
+
+# OS junk
+.DS_Store

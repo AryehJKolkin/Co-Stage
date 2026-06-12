@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoStage — Solutions</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+  .persona-section {
+    display: flex; align-items: center; gap: 48px; padding: 48px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .persona-section:last-child { border-bottom: none; padding-bottom: 96px; }
+  .persona-section.reverse { flex-direction: row-reverse; }
+  .persona-media { flex: 0 0 380px; }
+  .persona-media img {
+    width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block;
+    border-radius: var(--r2); border: 1px solid var(--border2);
+  }
+  .persona-content { flex: 1; min-width: 0; }
+  .persona-tagline {
+    font-family: var(--font-mono); font-size: 11px; color: var(--accent2);
+    text-transform: uppercase; letter-spacing: .12em; margin-bottom: 12px;
+  }
+  .persona-content h2 { font-size: 26px; font-weight: 800; letter-spacing: -.02em; margin-bottom: 12px; }
+  .persona-content > p { font-size: 14px; color: var(--muted2); line-height: 1.65; }
+  .persona-bullets { list-style: none; margin: 18px 0 22px; display: flex; flex-direction: column; gap: 10px; }
+  .persona-bullets li {
+    display: flex; gap: 10px; font-size: 13.5px; color: var(--muted2); line-height: 1.6;
+  }
+  .persona-bullets li::before { content: '→'; color: var(--accent); flex-shrink: 0; }
+  .persona-quote {
+    font-size: 14px; font-style: italic; color: var(--text);
+    border-left: 2px solid var(--accent); padding-left: 14px;
+  }
+  .persona-quote cite {
+    display: block; margin-top: 6px; font-style: normal;
+    font-family: var(--font-mono); font-size: 11px; color: var(--muted);
+  }
+
+  @media (max-width: 880px) {
+    .persona-section, .persona-section.reverse { flex-direction: column; }
+    .persona-media { flex: 0 0 auto; width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Co<em>Stage</em></div>
+  <div class="nav-links">
+    <a href="index.html#features">Features</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="solutions.html" class="active">Solutions</a>
+    <a href="resources.html">Resources</a>
+    <a href="catalogue.html">Catalogue</a>
+  </div>
+  <div class="nav-actions">
+    <a class="nav-signin" href="dashboard.html">Sign in</a>
+    <button class="nav-cta" onclick="location.href='libraryBuilder.html'">Open Library Builder</button>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <section class="page-hero">
+    <div class="eyebrow">Solutions</div>
+    <h1>Built for every part of the listing workflow</h1>
+    <p>From the agent staging a single bedroom to the platform team wiring up a furniture
+       catalogue — CoStage's pipeline fits wherever you sit in the process.</p>
+  </section>
+
+  <!-- Real Estate Agents -->
+  <section class="persona-section">
+    <div class="persona-media">
+      <img src="assets/sample-room.png" alt="Bedroom staged with CoStage">
+    </div>
+    <div class="persona-content">
+      <div class="persona-tagline">For real estate agents</div>
+      <h2>Stage a listing photo in about 15 seconds</h2>
+      <p>No photographer wait time, no rented furniture. Drop in a photo of an empty room and
+         get a staged preview before your next showing.</p>
+      <ul class="persona-bullets">
+        <li>Drop in a room photo, pick a room type and style, and CoStage stages it in about
+          15 seconds — right from the homepage demo.</li>
+        <li>CoStage pulls real pieces from your furniture library so the staged room reflects
+          things you can actually source.</li>
+        <li>Not happy with the result? Use "Edit furniture" or "Edit staging" to swap pieces or
+          tweak the look without starting over.</li>
+      </ul>
+      <blockquote class="persona-quote">
+        "I used to wait days for a stager. Now I stage the photo myself before I even leave
+        the property."
+        <cite>— Independent real estate agent</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Listing Photographers -->
+  <section class="persona-section reverse">
+    <div class="persona-media">
+      <img src="assets/sample-room.png" alt="Multi-angle staged room">
+    </div>
+    <div class="persona-content">
+      <div class="persona-tagline">For listing photographers</div>
+      <h2>Keep furniture consistent across every angle</h2>
+      <p>Stage once, render everywhere. The same furniture pick lands in the same place across
+         every photo from a shoot.</p>
+      <ul class="persona-bullets">
+        <li><a href="floorPlanEditor.html">The floor plan editor</a> exports placements as world
+          coordinates plus per-camera pixel positions, so a single layout drives every shot.</li>
+        <li><a href="compositor.html">The compositor</a> projects 3D furniture into each room
+          photo at the correct perspective using real camera poses.</li>
+        <li><code>spatialParser.js</code> turns image-blaster output into a floor polygon, camera
+          poses, and room dimensions automatically.</li>
+      </ul>
+      <blockquote class="persona-quote">
+        "The hardest part of staging a full shoot was always making sure the couch didn't move
+        between angles. This handles that for me."
+        <cite>— Real estate photographer</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Brokers & Brokerages -->
+  <section class="persona-section">
+    <div class="persona-media">
+      <img src="assets/sample-room.png" alt="Furniture catalogue browsing">
+    </div>
+    <div class="persona-content">
+      <div class="persona-tagline">For brokers &amp; brokerages</div>
+      <h2>One library, reused across every listing</h2>
+      <p>Build your furniture library once and let your whole team draw from it — no
+         re-sourcing the same sofa for every new listing.</p>
+      <ul class="persona-bullets">
+        <li><a href="libraryBuilder.html">The library builder</a> runs any product link through
+          a 4-stage pipeline — clean plate, multi-angle, 3D reconstruction, preview — and saves
+          it to your library.</li>
+        <li>Export <code>costage-library.json</code> as a portable copy your whole team can load
+          and stage from.</li>
+        <li><a href="catalogue.html">The catalogue</a> lets anyone on the team browse pieces by
+          source, room, and style before staging.</li>
+      </ul>
+      <blockquote class="persona-quote">
+        "Every agent on our team stages from the same library now, so listings have a
+        consistent look without anyone having to think about it."
+        <cite>— Brokerage operations lead</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Property Developers -->
+  <section class="persona-section reverse">
+    <div class="persona-media">
+      <img src="assets/sample-room.png" alt="Floor plan and 3D visualization">
+    </div>
+    <div class="persona-content">
+      <div class="persona-tagline">For property developers</div>
+      <h2>Visualize units before they're built</h2>
+      <p>Lay out furniture on a floor plan and render it into a photo — useful for
+         pre-construction units where there's no room to photograph yet.</p>
+      <ul class="persona-bullets">
+        <li><a href="floorPlanEditor.html">The floor plan editor</a> lets you drag furniture onto
+          a 2D plan and export the placements as <code>costage-placements.json</code>.</li>
+        <li><a href="compositor.html">The compositor</a> renders staged photos from those
+          placements using Three.js, projecting GLB furniture into the scene.</li>
+        <li>Reuse the same furniture library across every unit type and floor plan in a
+          development.</li>
+      </ul>
+      <blockquote class="persona-quote">
+        "We can show buyers what a unit looks like furnished long before the model unit is
+        ready."
+        <cite>— Development sales director</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Listing Platforms / MLS tools -->
+  <section class="persona-section">
+    <div class="persona-media">
+      <img src="assets/sample-room.png" alt="Catalogue API integration">
+    </div>
+    <div class="persona-content">
+      <div class="persona-tagline">For listing platforms &amp; MLS tools</div>
+      <h2>Integrate the catalogue and pipeline directly</h2>
+      <p>Everything CoStage produces is a plain JSON export or a local API endpoint — easy to
+         wire into an existing platform.</p>
+      <ul class="persona-bullets">
+        <li><code>backend/server.js</code> exposes a <code>/catalogue?source=...</code> endpoint
+          that returns structured product data via JSON-LD parsing and DOM scraping.</li>
+        <li><code>costage-library.json</code> and <code>costage-placements.json</code> are
+          portable, versioned exports your platform can ingest directly.</li>
+        <li>No API key required for catalogue scraping — extraction is rule-based and free to
+          run against any supported retailer.</li>
+      </ul>
+      <blockquote class="persona-quote">
+        "We pulled the catalogue endpoint straight into our internal tools — no scraping
+        infrastructure of our own to maintain."
+        <cite>— Platform integrations engineer</cite>
+      </blockquote>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap footer-row">
+    <div class="logo">Co<em>Stage</em></div>
+    <div class="footer-links">
+      <a href="index.html#features">Features</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="resources.html">Resources</a>
+      <a href="README.md">Docs</a>
+    </div>
+    <div class="meta">AI-powered virtual staging for real estate</div>
+  </div>
+</footer>
+
+</body>
+</html>

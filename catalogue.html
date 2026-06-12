@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Furniture Catalogue — CoStage</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:       #0e0e0f;
+    --surface:  #18181a;
+    --border:   #2a2a2d;
+    --text:     #e8e8e6;
+    --muted:    #888884;
+    --muted2:   #555552;
+    --accent:   #c8a96e;
+    --accent2:  #7eb8a4;
+    --pill-bg:  #222225;
+  }
+
+  body { background: var(--bg); color: var(--text); font-family: 'DM Sans', system-ui, sans-serif; min-height: 100vh; }
+
+  /* ── Top bar ── */
+  .topbar { display:flex; align-items:center; gap:16px; padding:14px 24px; border-bottom:1px solid var(--border); background:var(--surface); position:sticky; top:0; z-index:10; }
+  .topbar h1 { font-size:15px; font-weight:600; letter-spacing:.02em; }
+  .topbar span { font-size:12px; color:var(--muted); }
+  .topbar-right { margin-left:auto; display:flex; gap:10px; align-items:center; }
+  input[type=search] { background:var(--bg); border:1px solid var(--border); color:var(--text); border-radius:6px; padding:6px 12px; font-size:13px; width:220px; outline:none; }
+  input[type=search]::placeholder { color:var(--muted2); }
+  input[type=search]:focus { border-color:var(--accent); }
+  select { background:var(--bg); border:1px solid var(--border); color:var(--text); border-radius:6px; padding:6px 10px; font-size:13px; outline:none; cursor:pointer; }
+
+  /* ── Filters ── */
+  .filters { display:flex; gap:8px; padding:12px 24px; border-bottom:1px solid var(--border); flex-wrap:wrap; }
+  .pill { background:var(--pill-bg); border:1px solid var(--border); color:var(--muted); border-radius:20px; padding:4px 14px; font-size:12px; cursor:pointer; transition:.15s; user-select:none; }
+  .pill:hover { border-color:var(--accent); color:var(--accent); }
+  .pill.active { background:var(--accent); border-color:var(--accent); color:#0e0e0f; font-weight:600; }
+
+  /* ── Grid ── */
+  .grid-wrap { padding:24px; }
+  .room-section { margin-bottom:36px; }
+  .room-label { font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:14px; padding-bottom:6px; border-bottom:1px solid var(--border); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(210px, 1fr)); gap:14px; }
+
+  /* ── Cards ── */
+  .card { background:var(--surface); border:1px solid var(--border); border-radius:10px; overflow:hidden; transition:.18s; cursor:pointer; }
+  .card:hover { border-color:var(--accent); transform:translateY(-2px); }
+  .card-img { width:100%; aspect-ratio:4/3; object-fit:cover; display:block; background:var(--bg); }
+  .card-img-placeholder { width:100%; aspect-ratio:4/3; display:flex; align-items:center; justify-content:center; background:var(--bg); color:var(--muted2); font-size:28px; }
+  .card-body { padding:11px 12px 13px; }
+  .card-name { font-size:13px; font-weight:500; line-height:1.35; margin-bottom:4px; }
+  .card-meta { display:flex; align-items:center; gap:8px; margin-bottom:6px; }
+  .card-price { font-size:13px; color:var(--accent); font-weight:600; }
+  .card-dims { font-size:10px; color:var(--muted); font-family:'DM Mono',monospace; }
+  .card-tags { display:flex; gap:5px; flex-wrap:wrap; }
+  .tag { font-size:10px; background:var(--pill-bg); border:1px solid var(--border); color:var(--muted); border-radius:4px; padding:2px 6px; }
+
+  /* ── Detail modal ── */
+  .overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,.75); z-index:100; align-items:center; justify-content:center; padding:20px; }
+  .overlay.open { display:flex; }
+  .modal { background:var(--surface); border:1px solid var(--border); border-radius:14px; width:100%; max-width:740px; max-height:90vh; overflow-y:auto; }
+  .modal-top { display:flex; gap:20px; padding:24px; }
+  .modal-img { width:320px; flex-shrink:0; border-radius:8px; object-fit:cover; background:var(--bg); }
+  .modal-img-placeholder { width:320px; height:240px; flex-shrink:0; border-radius:8px; background:var(--bg); display:flex; align-items:center; justify-content:center; color:var(--muted2); font-size:40px; }
+  .modal-info { flex:1; min-width:0; }
+  .modal-name { font-size:20px; font-weight:600; margin-bottom:6px; line-height:1.25; }
+  .modal-price { font-size:18px; color:var(--accent); font-weight:700; margin-bottom:14px; }
+  .modal-row { display:flex; gap:6px; align-items:baseline; margin-bottom:6px; }
+  .modal-label { font-size:11px; color:var(--muted); width:90px; flex-shrink:0; text-transform:uppercase; letter-spacing:.06em; }
+  .modal-val { font-size:13px; color:var(--text); }
+  .modal-desc { padding:0 24px 20px; font-size:13px; color:var(--muted); line-height:1.7; border-top:1px solid var(--border); padding-top:16px; margin-top:4px; }
+  .modal-colors { display:flex; flex-wrap:wrap; gap:5px; margin-top:4px; }
+  .modal-color { font-size:11px; background:var(--pill-bg); border:1px solid var(--border); color:var(--muted); border-radius:4px; padding:2px 7px; }
+  .close-btn { position:absolute; top:14px; right:18px; background:none; border:none; color:var(--muted); font-size:22px; cursor:pointer; line-height:1; }
+  .modal-footer { padding:16px 24px; border-top:1px solid var(--border); display:flex; gap:10px; }
+  .btn { padding:9px 18px; border-radius:7px; border:none; cursor:pointer; font-size:13px; font-weight:600; }
+  .btn-primary { background:var(--accent); color:#0e0e0f; }
+  .btn-ghost { background:var(--pill-bg); color:var(--text); border:1px solid var(--border); }
+  .btn:hover { opacity:.88; }
+
+  /* ── Empty / loading ── */
+  .status { text-align:center; padding:80px 24px; color:var(--muted); font-size:14px; }
+  .count-badge { background:var(--pill-bg); border:1px solid var(--border); border-radius:12px; padding:2px 9px; font-size:11px; color:var(--muted); margin-left:6px; }
+  .source-switch { display:flex; gap:6px; }
+  .source-btn { background:var(--pill-bg); border:1px solid var(--border); color:var(--muted); border-radius:20px; padding:5px 14px; font-size:12px; cursor:pointer; transition:.15s; }
+  .source-btn:hover { border-color:var(--accent2); color:var(--accent2); }
+  .source-btn.active { background:var(--accent2); border-color:var(--accent2); color:#0e0e0f; font-weight:600; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <h1 id="pageTitle">Furniture Catalogue</h1>
+  <span id="totalCount" class="count-badge">—</span>
+  <div class="source-switch">
+    <button class="source-btn active" data-source="rove-concepts" onclick="switchSource(this)">Rove Concepts</button>
+    <button class="source-btn" data-source="west-elm" onclick="switchSource(this)">West Elm</button>
+    <button class="source-btn" data-source="soho-home" onclick="switchSource(this)">Soho Home</button>
+    <button class="source-btn" data-source="claude-home" onclick="switchSource(this)">Claude Home</button>
+    <button class="source-btn" data-source="soho-home-lighting" onclick="switchSource(this)">Soho Home Lighting</button>
+    <button class="source-btn" data-source="povison" onclick="switchSource(this)">Povison</button>
+  </div>
+  <div class="topbar-right">
+    <input type="search" id="searchInput" placeholder="Search furniture…" oninput="applyFilters()">
+    <select id="sortSelect" onchange="applyFilters()">
+      <option value="name">Name A–Z</option>
+      <option value="price-asc">Price low–high</option>
+      <option value="price-desc">Price high–low</option>
+      <option value="width">Width (wide first)</option>
+    </select>
+  </div>
+</div>
+
+<div class="filters" id="filters">
+  <span class="pill active" data-room="all" onclick="setRoom(this)">All</span>
+  <span class="room-divider" style="width:1px;background:var(--border);margin:0 4px"></span>
+  <span class="pill active" data-cat="all" onclick="setCat(this)">All categories</span>
+</div>
+
+<div class="grid-wrap" id="gridWrap">
+  <div class="status" id="statusMsg">Loading catalogue…</div>
+</div>
+
+<!-- Detail modal -->
+<div class="overlay" id="overlay" onclick="closeModal(event)">
+  <div class="modal" id="modal" style="position:relative">
+    <button class="close-btn" onclick="closeModal()">×</button>
+    <div class="modal-top" id="modalTop"></div>
+    <div class="modal-desc" id="modalDesc"></div>
+    <div class="modal-footer">
+      <a id="modalLink" href="#" target="_blank" class="btn btn-ghost">View on Rove Concepts ↗</a>
+    </div>
+  </div>
+</div>
+
+<script>
+const BACKEND = 'http://localhost:3001';
+let allProducts = [];
+let activeRoom = 'all';
+let activeCat  = 'all';
+let activeSource = 'rove-concepts';
+
+const SOURCE_LABELS = { 'rove-concepts': 'Rove Concepts', 'west-elm': 'West Elm', 'soho-home': 'Soho Home', 'claude-home': 'Claude Home', 'soho-home-lighting': 'Soho Home', 'povison': 'Povison' };
+
+async function switchSource(btn) {
+  document.querySelectorAll('.source-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  activeSource = btn.dataset.source;
+  document.getElementById('pageTitle').textContent = SOURCE_LABELS[activeSource] + ' Catalogue';
+  // Rebuild both room and category filters
+  document.querySelectorAll('[data-room]:not([data-room="all"])').forEach(p=>p.remove());
+  document.querySelectorAll('[data-cat]').forEach(p=>p.remove());
+  activeRoom = 'all';
+  document.querySelector('[data-room="all"]').classList.add('active');
+  document.getElementById('gridWrap').innerHTML='<div class="status">Loading catalogue…</div>';
+  await loadCatalogue();
+}
+
+async function loadCatalogue() {
+  try {
+    const resp = await fetch(`${BACKEND}/catalogue?source=${activeSource}`);
+    if (!resp.ok) throw new Error(`Backend returned ${resp.status}`);
+    const data = await resp.json();
+    allProducts = data.products || [];
+    document.getElementById('totalCount').textContent = allProducts.length + ' items';
+    buildRoomFilters();
+    buildCatFilters();
+    applyFilters();
+  } catch(e) {
+    document.getElementById('gridWrap').innerHTML = `<div class="status">Could not load catalogue: ${e.message} — make sure the backend is running (cd backend && npm start)</div>`;
+  }
+}
+
+function buildRoomFilters() {
+  const bar = document.getElementById('filters');
+  const divider = bar.querySelector('.room-divider');
+  // Remove old dynamic room pills
+  document.querySelectorAll('[data-room]:not([data-room="all"])').forEach(p=>p.remove());
+  const rooms = [...new Set(allProducts.map(p=>p.room).filter(Boolean))].sort();
+  const ROOM_LABELS = { 'living room':'Living Room', 'bedroom':'Bedroom', 'dining room':'Dining Room', 'lighting':'Lighting', 'other':'Other' };
+  rooms.forEach(room => {
+    const pill = document.createElement('span');
+    pill.className = 'pill';
+    pill.dataset.room = room;
+    pill.textContent = ROOM_LABELS[room] || room.replace(/\b\w/g,c=>c.toUpperCase());
+    pill.onclick = () => setRoom(pill);
+    bar.insertBefore(pill, divider);
+  });
+}
+
+function buildCatFilters() {
+  const cats = [...new Set(allProducts.map(p=>p.category))].sort();
+  const bar = document.getElementById('filters');
+  cats.forEach(cat => {
+    const pill = document.createElement('span');
+    pill.className = 'pill active';
+    pill.dataset.cat = cat;
+    pill.textContent = cat.replace(/\b\w/g,c=>c.toUpperCase());
+    pill.onclick = () => setCat(pill);
+    bar.appendChild(pill);
+  });
+}
+
+function setRoom(el) {
+  document.querySelectorAll('[data-room]').forEach(p=>p.classList.remove('active'));
+  el.classList.add('active');
+  activeRoom = el.dataset.room;
+  applyFilters();
+}
+
+function setCat(el) {
+  // toggle individual category
+  if(el.dataset.cat === 'all') {
+    document.querySelectorAll('[data-cat]').forEach(p=>p.classList.add('active'));
+  } else {
+    el.classList.toggle('active');
+    // if all off, turn all on
+    const anyCatActive = [...document.querySelectorAll('[data-cat]:not([data-cat="all"])')].some(p=>p.classList.contains('active'));
+    if(!anyCatActive) document.querySelectorAll('[data-cat]').forEach(p=>p.classList.add('active'));
+  }
+  activeCat = [...document.querySelectorAll('[data-cat].active')].map(p=>p.dataset.cat).filter(c=>c!=='all');
+  applyFilters();
+}
+
+function applyFilters() {
+  const q = document.getElementById('searchInput').value.toLowerCase();
+  const sort = document.getElementById('sortSelect').value;
+  const activeCats = [...document.querySelectorAll('[data-cat].active')].map(p=>p.dataset.cat).filter(c=>c!=='all');
+
+  let filtered = allProducts.filter(p => {
+    if(activeRoom !== 'all' && p.room !== activeRoom) return false;
+    if(activeCats.length && !activeCats.includes(p.category)) return false;
+    if(q && !p.name.toLowerCase().includes(q) && !(p.description||'').toLowerCase().includes(q)) return false;
+    return true;
+  });
+
+  filtered.sort((a,b) => {
+    if(sort==='price-asc')  return parseFloat(a.price?.replace(/[^0-9.]/g,'')||0) - parseFloat(b.price?.replace(/[^0-9.]/g,'')||0);
+    if(sort==='price-desc') return parseFloat(b.price?.replace(/[^0-9.]/g,'')||0) - parseFloat(a.price?.replace(/[^0-9.]/g,'')||0);
+    if(sort==='width')      return (b.dimensions?.widthIn||0) - (a.dimensions?.widthIn||0);
+    return a.name.localeCompare(b.name);
+  });
+
+  renderGrid(filtered);
+}
+
+function renderGrid(products) {
+  const wrap = document.getElementById('gridWrap');
+  if(!products.length) { wrap.innerHTML='<div class="status">No items match your filters.</div>'; return; }
+
+  // Group by room
+  const rooms = {};
+  products.forEach(p => { if(!rooms[p.room])rooms[p.room]=[]; rooms[p.room].push(p); });
+
+  wrap.innerHTML = Object.entries(rooms).map(([room, items]) => `
+    <div class="room-section">
+      <div class="room-label">${room} <span class="count-badge">${items.length}</span></div>
+      <div class="grid">
+        ${items.map(p => cardHTML(p)).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+function cardHTML(p) {
+  const img = p.imageUrls?.[0];
+  const dims = p.dimensions;
+  const dimsLabel = dims
+    ? (dims.widthIn ? `${dims.widthIn}"W × ${dims.depthIn}"D × ${dims.heightIn}"H` : `${dims.widthCm}×${dims.depthCm}×${dims.heightCm}cm`)
+    : '—';
+  return `
+    <div class="card" onclick='openModal(${JSON.stringify(p.id)})'>
+      ${img
+        ? `<img class="card-img" src="${img}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">`
+        : ''}
+      <div class="card-img-placeholder" style="${img?'display:none':''}">◫</div>
+      <div class="card-body">
+        <div class="card-name">${p.name}</div>
+        <div class="card-meta">
+          <span class="card-price">${p.price||'—'}</span>
+          <span class="card-dims">${dimsLabel}</span>
+        </div>
+        <div class="card-tags">
+          <span class="tag">${p.category}</span>
+          ${p.style && p.style!=='other'?`<span class="tag">${p.style}</span>`:''}
+          ${p.colors?.length?`<span class="tag">${p.colors.filter(c=>c!=='Select material'&&c!=='In stock only').length} colors</span>`:''}
+        </div>
+      </div>
+    </div>`;
+}
+
+function openModal(id) {
+  const p = allProducts.find(p=>p.id===id);
+  if(!p) return;
+  const dims = p.dimensions;
+  const colors = (p.colors||[]).filter(c=>c!=='Select material'&&c!=='In stock only');
+  document.getElementById('modalTop').innerHTML = `
+    ${p.imageUrls?.[0]
+      ? `<img class="modal-img" src="${p.imageUrls[0]}" onerror="this.style.display='none'">`
+      : '<div class="modal-img-placeholder">◫</div>'}
+    <div class="modal-info">
+      <div class="modal-name">${p.name}</div>
+      <div class="modal-price">${p.price||'—'}</div>
+      ${dims?(dims.widthIn
+        ? `<div class="modal-row"><span class="modal-label">Width</span><span class="modal-val">${dims.widthIn}" (${dims.width}m)</span></div>
+           <div class="modal-row"><span class="modal-label">Depth</span><span class="modal-val">${dims.depthIn}" (${dims.depth}m)</span></div>
+           <div class="modal-row"><span class="modal-label">Height</span><span class="modal-val">${dims.heightIn}" (${dims.height}m)</span></div>`
+        : `<div class="modal-row"><span class="modal-label">Width</span><span class="modal-val">${dims.widthCm}cm (${dims.width}m)</span></div>
+           <div class="modal-row"><span class="modal-label">Depth</span><span class="modal-val">${dims.depthCm}cm (${dims.depth}m)</span></div>
+           <div class="modal-row"><span class="modal-label">Height</span><span class="modal-val">${dims.heightCm}cm (${dims.height}m)</span></div>`):''}
+      <div class="modal-row"><span class="modal-label">Category</span><span class="modal-val">${p.category}</span></div>
+      <div class="modal-row"><span class="modal-label">Style</span><span class="modal-val">${p.style||'—'}</span></div>
+      ${colors.length?`<div class="modal-row"><span class="modal-label">Colors</span><div class="modal-colors">${colors.map(c=>`<span class="modal-color">${c}</span>`).join('')}</div></div>`:''}
+    </div>`;
+  document.getElementById('modalDesc').textContent = p.description || '';
+  document.getElementById('modalDesc').style.display = p.description ? '' : 'none';
+  document.getElementById('modalLink').href = p.productUrl || '#';
+  document.getElementById('modalLink').textContent = `View on ${SOURCE_LABELS[activeSource] || p.source || 'retailer'} ↗`;
+  document.getElementById('overlay').classList.add('open');
+}
+
+function closeModal(e) {
+  if(!e || e.target===document.getElementById('overlay') || e.target.classList.contains('close-btn')) {
+    document.getElementById('overlay').classList.remove('open');
+  }
+}
+
+document.addEventListener('keydown', e => { if(e.key==='Escape') closeModal({}); });
+
+loadCatalogue();
+</script>
+</body>
+</html>

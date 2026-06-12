@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoStage — Your projects</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+  .dashboard-header {
+    display: flex; align-items: flex-end; justify-content: space-between;
+    padding: 56px 0 32px; flex-wrap: wrap; gap: 16px;
+  }
+  .dashboard-header h1 { font-size: 34px; font-weight: 800; letter-spacing: -.02em; margin-bottom: 8px; }
+  .dashboard-header p { color: var(--muted2); font-size: 14px; }
+
+  .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding-bottom: 40px; }
+  .project-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--r2);
+    overflow: hidden; transition: border-color .15s, transform .15s;
+  }
+  .project-card:hover { border-color: var(--border2); transform: translateY(-2px); }
+  .project-thumb { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
+  .project-body { padding: 18px; }
+  .project-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; gap: 10px; }
+  .project-card h3 { font-size: 15px; font-weight: 700; letter-spacing: -.01em; }
+  .status-pill {
+    font-family: var(--font-mono); font-size: 9.5px; text-transform: uppercase; letter-spacing: .1em;
+    padding: 3px 9px; border-radius: 20px; border: 1px solid var(--border2); white-space: nowrap;
+  }
+  .status-pill.staged { color: var(--accent); }
+  .status-pill.draft { color: var(--muted2); }
+  .project-date { font-family: var(--font-mono); font-size: 11px; color: var(--muted); margin-bottom: 14px; }
+  .project-actions { display: flex; gap: 14px; }
+  .project-actions a { font-size: 12.5px; color: var(--accent2); }
+  .project-actions a:hover { text-decoration: underline; }
+
+  .empty-note {
+    border: 1px dashed var(--border2); border-radius: var(--r2); padding: 18px 22px;
+    font-size: 12.5px; color: var(--muted2); line-height: 1.65; margin-bottom: 96px;
+  }
+  .empty-note strong { color: var(--text); }
+
+  @media (max-width: 880px) {
+    .project-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 540px) {
+    .project-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Co<em>Stage</em></div>
+  <div class="nav-links">
+    <a href="index.html#features">Features</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="solutions.html">Solutions</a>
+    <a href="resources.html">Resources</a>
+    <a href="catalogue.html">Catalogue</a>
+  </div>
+  <div class="nav-actions">
+    <a class="nav-signin active" href="dashboard.html">Sign in</a>
+    <button class="nav-cta" onclick="location.href='libraryBuilder.html'">Open Library Builder</button>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <div class="dashboard-header">
+    <div>
+      <h1>Your projects</h1>
+      <p>Every room you've staged or started laying out, in one place.</p>
+    </div>
+    <button class="btn btn-accent" onclick="location.href='index.html'">New project</button>
+  </div>
+
+  <div class="project-grid">
+    <div class="project-card">
+      <img class="project-thumb" src="assets/sample-room.png" alt="Bedroom project thumbnail">
+      <div class="project-body">
+        <div class="project-top">
+          <h3>Modern bedroom</h3>
+          <span class="status-pill staged">Staged</span>
+        </div>
+        <div class="project-date">Updated Jun 9, 2026</div>
+        <div class="project-actions">
+          <a href="floorPlanEditor.html">Floor plan</a>
+          <a href="compositor.html">Compositor</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img class="project-thumb" src="assets/sample-room.png" alt="Living room project thumbnail">
+      <div class="project-body">
+        <div class="project-top">
+          <h3>Living room — Scandinavian</h3>
+          <span class="status-pill staged">Staged</span>
+        </div>
+        <div class="project-date">Updated Jun 6, 2026</div>
+        <div class="project-actions">
+          <a href="floorPlanEditor.html">Floor plan</a>
+          <a href="compositor.html">Compositor</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img class="project-thumb" src="assets/sample-room.png" alt="Dining room project thumbnail">
+      <div class="project-body">
+        <div class="project-top">
+          <h3>Dining room layout</h3>
+          <span class="status-pill draft">Draft</span>
+        </div>
+        <div class="project-date">Updated Jun 2, 2026</div>
+        <div class="project-actions">
+          <a href="floorPlanEditor.html">Floor plan</a>
+          <a href="compositor.html">Compositor</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="empty-note">
+    <strong>This is a local demo workspace.</strong> The projects above are illustrative —
+    CoStage doesn't have real accounts or sign-in yet, and nothing here is saved to a server.
+    Start a new room from the homepage any time, with no limit on how many you stage.
+  </div>
+
+</div>
+
+<footer>
+  <div class="wrap footer-row">
+    <div class="logo">Co<em>Stage</em></div>
+    <div class="footer-links">
+      <a href="index.html#features">Features</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="resources.html">Resources</a>
+      <a href="README.md">Docs</a>
+    </div>
+    <div class="meta">AI-powered virtual staging for real estate</div>
+  </div>
+</footer>
+
+</body>
+</html>

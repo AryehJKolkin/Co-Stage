@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoStage — AI Virtual Staging</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;500;600;700;800&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:       #0c0c0e;
+    --surface:  #131317;
+    --surface2: #1a1a20;
+    --surface3: #1f1f25;
+    --border:   rgba(255,255,255,0.07);
+    --border2:  rgba(255,255,255,0.13);
+    --text:     #e8e6df;
+    --muted:    #6b6a65;
+    --muted2:   #8a8880;
+    --accent:   #c8f060;
+    --accent2:  #60c8f0;
+    --warn:     #f09060;
+    --r:        10px;
+    --r2:       16px;
+    --font-sans: 'Syne', sans-serif;
+    --font-mono: 'DM Mono', monospace;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans);
+    min-height: 100vh;
+    line-height: 1.5;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+
+  /* ── Nav ── */
+  nav {
+    position: sticky; top: 0; z-index: 50;
+    display: flex; align-items: center; gap: 28px;
+    padding: 0 32px; height: 64px;
+    background: rgba(12,12,14,0.85); backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    max-width: 1180px; margin: 0 auto;
+  }
+  .logo { font-weight: 700; font-size: 17px; letter-spacing: -0.03em; }
+  .logo em { color: var(--accent); font-style: normal; }
+  .nav-links { display: flex; gap: 24px; margin-right: auto; }
+  .nav-links a { font-size: 13px; color: var(--muted2); transition: color .15s; }
+  .nav-links a:hover { color: var(--text); }
+  .nav-actions { display: flex; align-items: center; gap: 18px; }
+  .nav-signin { font-size: 13px; color: var(--muted2); transition: color .15s; }
+  .nav-signin:hover { color: var(--text); }
+  .nav-cta {
+    font-family: var(--font-sans); font-weight: 700; font-size: 13px;
+    background: var(--accent); color: #0c0c0e; border: none;
+    border-radius: var(--r); padding: 9px 18px; cursor: pointer; transition: opacity .15s;
+  }
+  .nav-cta:hover { opacity: .85; }
+  .nav-toggle { display: none; }
+
+  /* ── Hero ── */
+  .hero {
+    display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px;
+    align-items: center; padding: 72px 0 96px;
+  }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--font-mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--accent2); border: 1px solid var(--border2); border-radius: 20px;
+    padding: 5px 14px; margin-bottom: 22px;
+  }
+  .eyebrow::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--accent2); }
+  .hero h1 {
+    font-size: 52px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.08;
+    margin-bottom: 22px;
+  }
+  .hero h1 .accent { color: var(--accent); }
+  .hero p { font-size: 16px; color: var(--muted2); max-width: 460px; margin-bottom: 32px; }
+  .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn {
+    font-family: var(--font-sans); font-weight: 700; font-size: 14px;
+    border-radius: var(--r); padding: 13px 24px; cursor: pointer; border: 1px solid transparent;
+    display: inline-flex; align-items: center; gap: 8px; transition: .15s;
+  }
+  .btn-accent { background: var(--accent); color: #0c0c0e; }
+  .btn-accent:hover { opacity: .85; }
+  .btn-ghost { background: transparent; color: var(--text); border-color: var(--border2); }
+  .btn-ghost:hover { border-color: var(--accent2); color: var(--accent2); }
+
+  /* ── Demo card (interactive staging demo) ── */
+  .demo-card {
+    background: var(--surface); border: 1px solid var(--border2); border-radius: var(--r2);
+    padding: 22px; box-shadow: 0 24px 60px -24px rgba(0,0,0,.6);
+  }
+  .demo-steps { display: flex; gap: 8px; margin-bottom: 18px; }
+  .demo-step {
+    flex: 1; font-family: var(--font-mono); font-size: 10.5px; text-align: center;
+    text-transform: uppercase; letter-spacing: .08em; color: var(--muted);
+    padding: 7px 0; border-radius: 20px; border: 1px solid var(--border2);
+    transition: color .2s, border-color .2s, background .2s;
+  }
+  .demo-step.active { color: #0c0c0e; background: var(--accent); border-color: var(--accent); font-weight: 700; }
+
+  /* AI settings */
+  .ai-settings {
+    border: 1px solid var(--border); border-radius: var(--r); margin-bottom: 16px; overflow: hidden;
+  }
+  .ai-settings summary {
+    list-style: none; cursor: pointer; padding: 9px 12px; display: flex; align-items: center; gap: 8px;
+    font-family: var(--font-mono); font-size: 11px; color: var(--muted2); user-select: none;
+  }
+  .ai-settings summary::-webkit-details-marker { display: none; }
+  .ai-settings summary::before { content: '⚙'; color: var(--muted); }
+  .ai-settings[open] summary { border-bottom: 1px solid var(--border); }
+  .ai-settings-body { padding: 12px; display: flex; flex-direction: column; gap: 10px; }
+  .ai-settings-hint { font-size: 11px; color: var(--muted); line-height: 1.5; }
+  .mock-toggle-row {
+    display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 11px; color: var(--muted2);
+  }
+
+  /* upload */
+  .dropzone {
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
+    border: 1.5px dashed var(--border2); border-radius: var(--r2); padding: 48px 20px;
+    text-align: center; cursor: pointer; transition: border-color .15s, background .15s; margin-bottom: 14px;
+  }
+  .dropzone:hover, .dropzone.drag { border-color: var(--accent); background: var(--surface2); }
+  .dz-icon { font-size: 26px; color: var(--accent2); margin-bottom: 6px; }
+  .dz-title { font-weight: 700; font-size: 15px; }
+  .dz-sub { font-size: 12px; color: var(--muted2); }
+  .demo-sample-btn { width: 100%; justify-content: center; }
+
+  /* configure */
+  .demo-preview {
+    width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: var(--r);
+    border: 1px solid var(--border2); margin-bottom: 18px; background: var(--surface2); display: block;
+  }
+  .demo-field { margin-bottom: 16px; }
+  .demo-label {
+    font-family: var(--font-mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: .1em;
+    color: var(--muted); margin-bottom: 8px;
+  }
+  .pill-row { display: flex; gap: 6px; flex-wrap: wrap; }
+  .pill {
+    font-family: var(--font-sans); font-size: 12.5px; font-weight: 600;
+    background: var(--surface2); border: 1px solid var(--border2); color: var(--muted2);
+    border-radius: 20px; padding: 6px 14px; cursor: pointer; transition: .15s;
+  }
+  .pill:hover { border-color: var(--accent2); color: var(--accent2); }
+  .pill.active { background: var(--accent); border-color: var(--accent); color: #0c0c0e; }
+  .demo-stage-btn { width: 100%; justify-content: center; margin-top: 4px; }
+
+  /* loading */
+  .loading-img-wrap {
+    width: 100%; aspect-ratio: 4/3; border-radius: var(--r); overflow: hidden;
+    border: 1px solid var(--border2); margin-bottom: 16px; position: relative;
+  }
+  .loading-img-wrap img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.7) brightness(.75); display: block; }
+  .loading-img-wrap::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(120deg, transparent 30%, rgba(200,240,96,.2) 50%, transparent 70%);
+    background-size: 220% 100%; animation: shimmer 1.6s linear infinite;
+  }
+  @keyframes shimmer { from { background-position: 140% 0; } to { background-position: -40% 0; } }
+  .loading-bar { height: 6px; border-radius: 4px; background: var(--surface2); overflow: hidden; margin-bottom: 10px; }
+  .loading-bar-fill { height: 100%; width: 0%; background: var(--accent); border-radius: 4px; }
+  .loading-text { font-family: var(--font-mono); font-size: 12px; color: var(--muted2); text-align: center; }
+
+  /* before / after slider */
+  .ba-slider {
+    position: relative; width: 100%; aspect-ratio: 4/3; border-radius: var(--r); overflow: hidden;
+    border: 1px solid var(--border2); margin-bottom: 14px; cursor: ew-resize; user-select: none;
+  }
+  .ba-after-layer, .ba-before-layer { position: absolute; inset: 0; }
+  .ba-before-layer { width: 50%; overflow: hidden; border-right: 2px solid var(--accent); }
+  .ba-img { display: block; height: 100%; object-fit: cover; }
+  .ba-after-layer .ba-img { width: 100%; }
+  .ba-handle {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+    width: 34px; height: 34px; border-radius: 50%; background: var(--accent); color: #0c0c0e;
+    display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700;
+    box-shadow: 0 6px 16px rgba(0,0,0,.4); pointer-events: none;
+  }
+  .ba-tag {
+    position: absolute; top: 10px; font-family: var(--font-mono); font-size: 10px; text-transform: uppercase;
+    letter-spacing: .1em; padding: 4px 10px; border-radius: 20px; background: rgba(12,12,14,.65);
+    border: 1px solid var(--border2); backdrop-filter: blur(4px); pointer-events: none;
+  }
+  .ba-tag-before { left: 10px; }
+  .ba-tag-after { right: 10px; color: var(--accent); }
+
+  .furniture-overlay {
+    position: absolute; border-radius: 8px; overflow: hidden; border: 2px solid rgba(255,255,255,.92);
+    box-shadow: 0 10px 24px rgba(0,0,0,.4); background: #f5f3ef;
+    opacity: 0; transform: translateY(14px) scale(.92); transition: opacity .5s ease, transform .5s ease;
+  }
+  .furniture-overlay img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .furniture-overlay .fo-label {
+    position: absolute; left: 0; right: 0; bottom: 0; padding: 4px 6px;
+    background: linear-gradient(transparent, rgba(0,0,0,.78));
+    font-family: var(--font-mono); font-size: 9px; line-height: 1.3; color: #fff;
+  }
+  .furniture-overlay.show { opacity: 1; transform: translateY(0) scale(1); }
+  .f1 { width: 30%; aspect-ratio: 1; bottom: 8%; right: 6%; transition-delay: .2s; }
+  .f2 { width: 24%; aspect-ratio: 1; bottom: 6%; left: 8%; transition-delay: .4s; }
+  .f3 { width: 22%; aspect-ratio: 1; top: 6%; right: 6%; transition-delay: .6s; }
+
+  .result-meta { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+  .mock-badge {
+    font-family: var(--font-mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: .1em;
+    color: var(--warn); border: 1px solid var(--border2); border-radius: 20px; padding: 4px 10px;
+  }
+  .mock-badge.badge-live { color: var(--accent); border-color: rgba(200,240,96,.3); }
+  .result-time { font-family: var(--font-mono); font-size: 12px; color: var(--accent); }
+
+  .result-pieces:not(:empty) { margin-bottom: 16px; }
+  .result-edit-row { display: flex; gap: 8px; margin-bottom: 16px; }
+  .result-edit-row .btn { flex: 1; justify-content: center; }
+  .edit-staging-box { display: flex; gap: 8px; margin-bottom: 16px; }
+  .edit-staging-box input {
+    flex: 1; background: var(--surface2); border: 1px solid var(--border2); border-radius: var(--r);
+    padding: 9px 12px; color: var(--text); font-family: var(--font-sans); font-size: 12.5px; outline: none;
+  }
+  .edit-staging-box input:focus { border-color: var(--accent); }
+
+  /* ── Furniture picker ── */
+  .picked-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .picked-row:not(:empty) { margin-bottom: 10px; }
+  .picked-chip {
+    display: flex; align-items: center; gap: 6px; background: var(--surface2); border: 1px solid var(--border2);
+    border-radius: 20px; padding: 4px 10px 4px 4px; font-size: 11px; color: var(--text);
+  }
+  .picked-chip img { width: 22px; height: 22px; border-radius: 50%; object-fit: cover; }
+  .picked-chip button {
+    background: none; border: none; color: var(--muted); cursor: pointer; font-size: 13px;
+    line-height: 1; padding: 0 0 0 2px;
+  }
+  .picked-chip button:hover { color: var(--warn); }
+  .picker-open-btn { width: 100%; justify-content: center; }
+
+  .picker-overlay {
+    display: none; position: fixed; inset: 0; background: rgba(0,0,0,.7); z-index: 200;
+    align-items: center; justify-content: center; padding: 20px;
+  }
+  .picker-overlay.open { display: flex; }
+  .picker-modal {
+    background: var(--surface); border: 1px solid var(--border2); border-radius: var(--r2);
+    width: 100%; max-width: 760px; max-height: 84vh; display: flex; flex-direction: column; overflow: hidden;
+  }
+  .picker-header { display: flex; align-items: center; justify-content: space-between; padding: 18px 22px; border-bottom: 1px solid var(--border); }
+  .picker-title { font-weight: 700; font-size: 16px; }
+  .picker-close { background: none; border: none; color: var(--muted); font-size: 18px; cursor: pointer; }
+  .picker-close:hover { color: var(--text); }
+  .picker-controls { padding: 14px 22px; border-bottom: 1px solid var(--border); display: flex; flex-direction: column; gap: 10px; }
+  .picker-controls input[type=search] {
+    width: 100%; background: var(--bg); border: 1px solid var(--border2); color: var(--text);
+    border-radius: var(--r); padding: 9px 12px; font-family: var(--font-sans); font-size: 13px; outline: none;
+  }
+  .picker-controls input[type=search]:focus { border-color: var(--accent); }
+  .source-tabs { display: flex; gap: 6px; flex-wrap: wrap; }
+  .source-tab {
+    font-family: var(--font-mono); font-size: 11px; background: var(--surface2); border: 1px solid var(--border2);
+    color: var(--muted2); border-radius: 20px; padding: 5px 12px; cursor: pointer; transition: .15s;
+  }
+  .source-tab:hover { color: var(--accent2); border-color: var(--accent2); }
+  .source-tab.active { background: var(--accent2); border-color: var(--accent2); color: #0c0c0e; font-weight: 700; }
+  .picker-grid {
+    flex: 1; overflow-y: auto; padding: 18px 22px; display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 10px;
+  }
+  .picker-status { grid-column: 1/-1; text-align: center; color: var(--muted); font-size: 13px; padding: 40px 0; }
+  .picker-card {
+    position: relative; background: var(--surface2); border: 1px solid var(--border); border-radius: var(--r);
+    overflow: hidden; cursor: pointer; transition: border-color .15s;
+  }
+  .picker-card:hover { border-color: var(--accent2); }
+  .picker-card.picked { border-color: var(--accent); }
+  .picker-card img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; background: var(--bg); }
+  .picker-card-body { padding: 7px 8px 9px; }
+  .picker-card-name {
+    font-size: 11px; font-weight: 600; line-height: 1.3; margin-bottom: 2px;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .picker-card-price { font-size: 10.5px; color: var(--accent); font-family: var(--font-mono); }
+  .picker-check {
+    position: absolute; top: 6px; right: 6px; width: 20px; height: 20px; border-radius: 50%;
+    background: var(--accent); color: #0c0c0e; display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 700; opacity: 0; transform: scale(.6); transition: .15s;
+  }
+  .picker-card.picked .picker-check { opacity: 1; transform: scale(1); }
+  .picker-footer { display: flex; align-items: center; justify-content: space-between; padding: 14px 22px; border-top: 1px solid var(--border); }
+  .picker-selected-count { font-family: var(--font-mono); font-size: 12px; color: var(--muted2); }
+
+  /* ── Stats bar ── */
+  .stats {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px;
+    background: var(--border); border: 1px solid var(--border); border-radius: var(--r2);
+    overflow: hidden; margin-bottom: 96px;
+  }
+  .stat { background: var(--surface); padding: 24px 28px; }
+  .stat .num { font-size: 28px; font-weight: 800; color: var(--text); letter-spacing: -.02em; }
+  .stat .num span { color: var(--accent); }
+  .stat .lbl { font-family: var(--font-mono); font-size: 11px; color: var(--muted); margin-top: 4px; text-transform: uppercase; letter-spacing: .08em; }
+
+  /* ── Section heading ── */
+  .section-head { margin-bottom: 44px; max-width: 560px; }
+  .section-head .eyebrow { margin-bottom: 16px; }
+  .section-head h2 { font-size: 34px; font-weight: 800; letter-spacing: -.02em; margin-bottom: 12px; }
+  .section-head p { color: var(--muted2); font-size: 15px; }
+
+  /* ── Features ── */
+  .features { padding: 0 0 96px; }
+  .feature-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .feature-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--r2);
+    padding: 22px; transition: border-color .15s, transform .15s;
+  }
+  .feature-card:hover { border-color: var(--border2); transform: translateY(-2px); }
+  .feature-card-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+  .feature-icon {
+    width: 38px; height: 38px; border-radius: 10px; display: flex; align-items: center; justify-content: center;
+    font-size: 18px; background: var(--surface2); border: 1px solid var(--border2);
+  }
+  .feature-status {
+    font-family: var(--font-mono); font-size: 9.5px; text-transform: uppercase; letter-spacing: .1em;
+    padding: 3px 9px; border-radius: 20px; border: 1px solid var(--border2);
+  }
+  .feature-status.live { color: var(--accent); }
+  .feature-status.roadmap { color: var(--warn); }
+  .feature-card h3 { font-size: 15.5px; font-weight: 700; margin-bottom: 8px; letter-spacing: -.01em; }
+  .feature-card p { font-size: 12.5px; color: var(--muted2); line-height: 1.65; }
+
+  /* ── How it works ── */
+  .how { padding: 0 0 96px; }
+  .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; position: relative; }
+  .step {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--r2);
+    padding: 24px; position: relative;
+  }
+  .step .step-num {
+    font-family: var(--font-mono); font-size: 12px; color: var(--accent2);
+    border: 1px solid var(--border2); border-radius: 20px; padding: 3px 10px;
+    display: inline-block; margin-bottom: 16px;
+  }
+  .step h3 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+  .step p { font-size: 12.5px; color: var(--muted2); line-height: 1.6; }
+  .step .step-file {
+    font-family: var(--font-mono); font-size: 10.5px; color: var(--muted);
+    margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border);
+  }
+
+  /* ── Tools hub ── */
+  .hub { padding: 0 0 96px; }
+  .hub-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .hub-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--r2);
+    padding: 28px; transition: border-color .15s, transform .15s; display: flex; flex-direction: column;
+  }
+  .hub-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .hub-card-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 18px; }
+  .hub-tag {
+    font-family: var(--font-mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: .1em;
+    color: var(--accent2); border: 1px solid var(--border2); border-radius: 20px; padding: 4px 10px;
+  }
+  .hub-arrow { font-size: 18px; color: var(--muted); transition: transform .15s, color .15s; }
+  .hub-card:hover .hub-arrow { transform: translate(3px,-3px); color: var(--accent); }
+  .hub-card h3 { font-size: 19px; font-weight: 700; margin-bottom: 8px; letter-spacing: -.01em; }
+  .hub-card p { font-size: 13px; color: var(--muted2); line-height: 1.65; margin-bottom: 16px; }
+  .hub-meta { font-family: var(--font-mono); font-size: 11px; color: var(--muted); margin-top: auto; }
+
+  /* ── Footer ── */
+  footer { border-top: 1px solid var(--border); padding: 32px 0; }
+  .footer-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  .footer-row .logo { font-size: 14px; }
+  footer .meta { font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
+  footer .footer-links { display: flex; gap: 18px; }
+  footer .footer-links a { font-size: 12px; color: var(--muted2); transition: color .15s; }
+  footer .footer-links a:hover { color: var(--accent); }
+
+  /* ── Responsive ── */
+  @media (max-width: 880px) {
+    .hero { grid-template-columns: 1fr; padding: 40px 0 56px; }
+    .hero h1 { font-size: 38px; }
+    .demo-card { order: -1; }
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .feature-grid { grid-template-columns: 1fr 1fr; }
+    .steps { grid-template-columns: 1fr 1fr; }
+    .hub-grid { grid-template-columns: 1fr; }
+    .nav-links { display: none; }
+  }
+  @media (max-width: 540px) {
+    .wrap, nav { padding-left: 18px; padding-right: 18px; }
+    .feature-grid, .steps { grid-template-columns: 1fr; }
+    .stats { grid-template-columns: 1fr 1fr; }
+    .hero h1 { font-size: 30px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Co<em>Stage</em></div>
+  <div class="nav-links">
+    <a href="#features">Features</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="solutions.html">Solutions</a>
+    <a href="resources.html">Resources</a>
+    <a href="catalogue.html">Catalogue</a>
+  </div>
+  <div class="nav-actions">
+    <a class="nav-signin" href="dashboard.html">Sign in</a>
+    <button class="nav-cta" onclick="location.href='libraryBuilder.html'">Open Library Builder</button>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <section class="hero">
+    <div>
+      <div class="eyebrow">AI virtual staging</div>
+      <h1>Stage every room.<br>Every angle.<br><span class="accent">Full control.</span></h1>
+      <p>Drop in a room photo, pick a room type and style, and CoStage pulls real pieces
+         from your furniture library to preview the staged result in about 15 seconds —
+         then hands off to the floor plan editor and compositor for true multi-angle rendering.</p>
+      <div class="hero-ctas">
+        <button class="btn btn-accent" onclick="location.href='floorPlanEditor.html'">Start staging a room</button>
+        <button class="btn btn-ghost" onclick="location.href='catalogue.html'">Browse the catalogue</button>
+      </div>
+    </div>
+
+    <div class="demo-card" id="demoCard">
+      <div class="demo-steps">
+        <div class="demo-step active" data-step="1">1 · Upload</div>
+        <div class="demo-step" data-step="2">2 · Configure</div>
+        <div class="demo-step" data-step="3">3 · Result</div>
+      </div>
+
+      <details class="ai-settings">
+        <summary>AI staging settings</summary>
+        <div class="ai-settings-body">
+          <div class="ai-settings-hint">
+            CoStage sends your room photo plus reference photos of the exact pieces you picked
+            to nano-banana for real AI rendering, so the result uses those items, not just
+            similar-looking ones. The API key lives server-side, not in this page.
+            If the site has an access passphrase enabled, you'll be prompted for it the first
+            time you stage live.
+            Turn on mock mode to preview without making real API calls.
+          </div>
+          <label class="mock-toggle-row">
+            <input type="checkbox" id="mockToggle">
+            Mock mode (no real API calls)
+          </label>
+        </div>
+      </details>
+
+      <div class="demo-panel" id="panelUpload">
+        <label class="dropzone" id="dropzone">
+          <input type="file" id="fileInput" accept="image/*" hidden>
+          <div class="dz-icon">⤒</div>
+          <div class="dz-title">Drop a room photo</div>
+          <div class="dz-sub">or click to browse</div>
+        </label>
+        <button class="btn btn-ghost demo-sample-btn" id="sampleBtn" type="button">Try a sample room</button>
+      </div>
+
+      <div class="demo-panel" id="panelConfigure" hidden>
+        <img class="demo-preview" id="previewImg" alt="Room preview">
+        <div class="demo-field">
+          <div class="demo-label">Room type</div>
+          <div class="pill-row" id="roomPills">
+            <button class="pill active" data-val="living room" type="button">Living Room</button>
+            <button class="pill" data-val="bedroom" type="button">Bedroom</button>
+            <button class="pill" data-val="dining room" type="button">Dining Room</button>
+          </div>
+        </div>
+        <div class="demo-field">
+          <div class="demo-label">Style</div>
+          <div class="pill-row" id="stylePills">
+            <button class="pill active" data-val="modern" type="button">Modern</button>
+            <button class="pill" data-val="scandinavian" type="button">Scandinavian</button>
+            <button class="pill" data-val="mid-century" type="button">Mid-Century</button>
+            <button class="pill" data-val="traditional" type="button">Traditional</button>
+          </div>
+        </div>
+        <div class="demo-field">
+          <div class="demo-label">Furniture</div>
+          <div class="picked-row" id="pickedRow"></div>
+          <button class="btn btn-ghost picker-open-btn" id="pickerOpenBtn" type="button">Choose from your library →</button>
+        </div>
+        <button class="btn btn-accent demo-stage-btn" id="stageBtn" type="button">Stage it →</button>
+      </div>
+
+      <div class="demo-panel" id="panelLoading" hidden>
+        <div class="loading-img-wrap"><img id="loadingImg" alt="Staging in progress"></div>
+        <div class="loading-bar"><div class="loading-bar-fill" id="loadingFill"></div></div>
+        <div class="loading-text" id="loadingText">Staging your room…</div>
+      </div>
+
+      <div class="demo-panel" id="panelResult" hidden>
+        <div class="ba-slider" id="baSlider">
+          <div class="ba-after-layer" id="baAfterLayer">
+            <img class="ba-img" id="afterImg" alt="Staged room">
+          </div>
+          <div class="ba-before-layer" id="baBeforeLayer">
+            <img class="ba-img" id="beforeImg" alt="Original room">
+          </div>
+          <div class="ba-handle" id="baHandle">↔</div>
+          <div class="ba-tag ba-tag-before">Before</div>
+          <div class="ba-tag ba-tag-after">After</div>
+        </div>
+        <div class="result-meta">
+          <span class="mock-badge" id="resultBadge">Preview mockup</span>
+          <span class="result-time" id="resultTime">Staged in 1.6s</span>
+        </div>
+        <div class="result-pieces" id="resultPiecesRow"></div>
+        <div class="result-edit-row">
+          <button class="btn btn-ghost" id="editFurnitureBtn" type="button">Edit furniture</button>
+          <button class="btn btn-ghost" id="editStagingBtn" type="button">Edit staging</button>
+        </div>
+        <div class="edit-staging-box" id="editStagingBox" hidden>
+          <input type="text" id="editStagingInput" placeholder="e.g. make the lighting warmer, swap the rug for something brighter…">
+          <button class="btn btn-accent" id="applyEditBtn" type="button">Apply →</button>
+        </div>
+        <div class="hero-ctas">
+          <button class="btn btn-accent" onclick="location.href='floorPlanEditor.html'" type="button">Continue in Floor Plan Editor</button>
+          <button class="btn btn-ghost" id="resetBtn" type="button">Try another photo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stat"><div class="num"><span>1,471</span></div><div class="lbl">Furniture pieces</div></div>
+    <div class="stat"><div class="num">6</div><div class="lbl">Retailer catalogues</div></div>
+    <div class="stat"><div class="num">4-stage</div><div class="lbl">3D asset pipeline</div></div>
+    <div class="stat"><div class="num">N-view</div><div class="lbl">Camera consistency</div></div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="section-head">
+      <div class="eyebrow">Features</div>
+      <h2>Every staging capability, end to end</h2>
+      <p>Six of these are running in the pipeline today — the other two are roadmap
+         items the architecture is already built to support.</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-card-top">
+          <div class="feature-icon">◎</div>
+          <span class="feature-status live">Live</span>
+        </div>
+        <h3>Multi-angle consistency</h3>
+        <p>Place a piece once and it projects correctly into every camera angle of the
+           room, using real camera poses recovered from your room scan.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-top">
+          <div class="feature-icon">✦</div>
+          <span class="feature-status live">Live</span>
+        </div>
+        <h3>Individual furniture editing</h3>
+        <p>Swap pieces, nudge placement, and adjust color or material on the floor plan —
+           every edit is yours, nothing is locked behind a black-box algorithm.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-top">
+          <div class="feature-icon">▦</div>
+          <span class="feature-status live">Live</span>
+        </div>
+        <h3>Floor plan generation</h3>
+        <p>A 2D floor plan with accurate dimensions and camera positions is generated
+           automatically from your room's spatial scan.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-top">
+          <div class="feature-icon">▤</div>
+          <span class="feature-status live">Live</span>
+        </div>
+        <h3>AI furniture curation</h3>
+        <p>Search and filter 1,400+ real pieces from Rove Concepts, West Elm, CB2, Soho
+           Home, Povison and more by room, category, price, and style.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-top">
+          <div class="feature-icon">⬡</div>
+          <span class="feature-status live">Live</span>
+        </div>
+        <h3>One-link 3D asset pipeline</h3>
+        <p>Paste a product page link and CoStage builds a clean plate, multi-angle views,
+           and a full 3D model via Hunyuan3D — automatically.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-top">
+          <div class="feature-icon">▣</div>
+          <span class="feature-status live">Live</span>
+        </div>
+        <h3>Browser-based compositor</h3>
+        <p>A Three.js renderer projects every staged piece into every photo at the
+           correct perspective — no round trip to external render farms.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-top">
+          <div class="feature-icon">⌫</div>
+          <span class="feature-status roadmap">Roadmap</span>
+        </div>
+        <h3>Declutter &amp; object removal</h3>
+        <p>The same clean-plate generation used to prep furniture photos can strip
+           existing furniture and clutter from a room photo before staging.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-top">
+          <div class="feature-icon">☼</div>
+          <span class="feature-status roadmap">Roadmap</span>
+        </div>
+        <h3>Day-to-dusk lighting</h3>
+        <p>Swap lighting presets in the compositor to preview a room under daylight,
+           golden hour, or evening light — same placements, different mood.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="pipeline">
+    <div class="section-head">
+      <div class="eyebrow">Pipeline</div>
+      <h2>From product link to staged photo</h2>
+      <p>Four stages, each usable on its own — built up over time, one room and one
+         piece of furniture at a time.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>Capture the room</h3>
+        <p>Run room photos through image-blaster (World Labs) to recover camera poses
+           and a floor polygon for the space.</p>
+        <div class="step-file">spatialParser.js</div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>Build your library</h3>
+        <p>Paste a product link into the Library Builder — CoStage scrapes it, generates
+           multi-angle views, and reconstructs a 3D model.</p>
+        <div class="step-file">libraryBuilder.html · assetPipeline.js</div>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>Place furniture</h3>
+        <p>Drag pieces from your library onto the auto-generated floor plan and export
+           placements with world coordinates.</p>
+        <div class="step-file">floorPlanEditor.html</div>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <h3>Render every angle</h3>
+        <p>The compositor projects each piece into every room photo at the correct
+           perspective — download the staged set.</p>
+        <div class="step-file">compositor.html</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hub" id="tools">
+    <div class="section-head">
+      <div class="eyebrow">Tools</div>
+      <h2>Open a tool</h2>
+      <p>Each tool works standalone — open the one you need, or run the backend for
+         live scraping and 3D generation.</p>
+    </div>
+    <div class="hub-grid">
+      <a class="hub-card" href="libraryBuilder.html">
+        <div class="hub-card-top"><span class="hub-tag">01 · Library</span><span class="hub-arrow">↗</span></div>
+        <h3>Library Builder</h3>
+        <p>Paste a product page link, run it through the 4-stage pipeline, and add the
+           3D asset to your library.</p>
+        <div class="hub-meta">libraryBuilder.html</div>
+      </a>
+      <a class="hub-card" href="floorPlanEditor.html">
+        <div class="hub-card-top"><span class="hub-tag">02 · Floor plan</span><span class="hub-arrow">↗</span></div>
+        <h3>Floor Plan Editor</h3>
+        <p>Drag furniture onto a 2D floor plan generated from your room's spatial data
+           and export placements.</p>
+        <div class="hub-meta">floorPlanEditor.html</div>
+      </a>
+      <a class="hub-card" href="compositor.html">
+        <div class="hub-card-top"><span class="hub-tag">03 · Render</span><span class="hub-arrow">↗</span></div>
+        <h3>Compositor</h3>
+        <p>Three.js compositor — projects your placed furniture into every room photo
+           using real camera poses.</p>
+        <div class="hub-meta">compositor.html</div>
+      </a>
+      <a class="hub-card" href="catalogue.html">
+        <div class="hub-card-top"><span class="hub-tag">Browse</span><span class="hub-arrow">↗</span></div>
+        <h3>Furniture Catalogue</h3>
+        <p>Browse 1,471 pieces across Rove Concepts, West Elm, Soho Home, Povison, and
+           more — filter by room, category, and style.</p>
+        <div class="hub-meta">catalogue.html</div>
+      </a>
+    </div>
+  </section>
+
+</div>
+
+<div class="picker-overlay" id="pickerOverlay">
+  <div class="picker-modal">
+    <div class="picker-header">
+      <div class="picker-title">Choose furniture from your library</div>
+      <button class="picker-close" id="pickerClose" type="button">✕</button>
+    </div>
+    <div class="picker-controls">
+      <input type="search" id="pickerSearch" placeholder="Search by name or category…">
+      <div class="source-tabs" id="pickerSources">
+        <button class="source-tab active" data-source="rove-concepts" type="button">Rove Concepts</button>
+        <button class="source-tab" data-source="west-elm" type="button">West Elm</button>
+        <button class="source-tab" data-source="soho-home" type="button">Soho Home</button>
+        <button class="source-tab" data-source="povison" type="button">Povison</button>
+        <button class="source-tab" data-source="claude-home" type="button">Claude Home</button>
+        <button class="source-tab" data-source="soho-home-lighting" type="button">Lighting</button>
+      </div>
+    </div>
+    <div class="picker-grid" id="pickerGrid"><div class="picker-status">Loading…</div></div>
+    <div class="picker-footer">
+      <div class="picker-selected-count" id="pickerCount">0 selected · pick up to 3</div>
+      <button class="btn btn-accent" id="pickerDone" type="button">Use selected pieces</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap footer-row">
+    <div class="logo">Co<em>Stage</em></div>
+    <div class="footer-links">
+      <a href="#features">Features</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="resources.html">Resources</a>
+      <a href="README.md">Docs</a>
+    </div>
+    <div class="meta">AI-powered virtual staging for real estate</div>
+  </div>
+</footer>
+
+<script>
+  // Curated picks from the real CoStage furniture library (rove-concepts / west-elm / soho-home).
+  const LIBRARY = [
+    { name: 'Diane Sofa', price: '$2,351', category: 'sofa', room: 'living room', style: 'modern',
+      img: 'https://cdn.roveconcepts.com/sites/default/files/styles/uc_product/public/Diane_Sofa_Modern_Felt_Alesund_1_0.jpg' },
+    { name: 'Tola Lounge Chair', price: '$732', category: 'armchair', room: 'living room', style: 'modern',
+      img: 'https://cdn.roveconcepts.com/sites/default/files/styles/uc_product/public/Tola_Lounge_Chair_Image_Modern_Felt_Alesund_1.jpg' },
+    { name: 'Maria Side Table', price: '$659', category: 'side table', room: 'living room', style: 'modern',
+      img: 'https://cdn.roveconcepts.com/sites/default/files/styles/uc_product/public/Maria-Side-Table_1.jpg' },
+    { name: 'Winston Coffee Table', price: '$1,599', category: 'coffee table', room: 'living room', style: 'mid-century',
+      img: 'https://cdn.roveconcepts.com/sites/default/files/styles/uc_product/public/Winston_Coffee_Table_1.jpg' },
+    { name: 'Mia Lounge Chair', price: '$1,065', category: 'armchair', room: 'living room', style: 'traditional',
+      img: 'https://cdn.roveconcepts.com/sites/default/files/styles/uc_product/public/Mia-Lounge-Chair_CA_Alesund_1_0.jpg' },
+    { name: 'Marcus Dining Table', price: '$1,159', category: 'dining table', room: 'dining room', style: 'scandinavian',
+      img: 'https://cdn.roveconcepts.com/sites/default/files/styles/uc_product/public/Marcus_Dining_Table_Walnut_1.jpg' },
+    { name: 'Wingate Dining Chair', price: '$299', category: 'dining chair', room: 'dining room', style: 'scandinavian',
+      img: 'https://asset.wsimgs.com/wsimgs/ab/images/products/202612/0941/wingate-dining-chair-5-xxxx.jpg' },
+    { name: 'Tulip Table Round', price: '$2,092', category: 'dining table', room: 'dining room', style: 'mid-century',
+      img: 'https://cdn.roveconcepts.com/sites/default/files/styles/uc_product/public/Tulip_Dining_Table_Round_Carrara_1.jpg' },
+    { name: 'Mia Dining Chair', price: '$558', category: 'dining chair', room: 'dining room', style: 'traditional',
+      img: 'https://cdn.roveconcepts.com/sites/default/files/styles/uc_product/public/Mia-Dining-Chair_Chatou-Boucle_Caviar_1.jpg' },
+    { name: 'Berlin Bed', price: '$2,306', category: 'bed', room: 'bedroom', style: 'modern',
+      img: 'https://cdn.roveconcepts.com/sites/default/files/styles/uc_product/public/Berlin_Bed_King_Pearl_1.jpg' },
+    { name: 'Asher Nightstand', price: '$599', category: 'nightstand', room: 'bedroom', style: 'mid-century',
+      img: 'https://cdn.roveconcepts.com/sites/default/files/styles/uc_product/public/Asher_Double_Drawer_Nightstand_Brushed_Brass_Handle_Ash_1.jpg' },
+    { name: 'Asher Single Drawer Nightstand', price: '$532', category: 'nightstand', room: 'bedroom', style: 'mid-century',
+      img: 'https://cdn.roveconcepts.com/sites/default/files/styles/uc_product/public/Asher_Single_Drawer_Nightstand_Brushed_Brass_Handle_Ash_1.jpg' },
+  ];
+
+  function pickFromLibrary(room, style) {
+    const byRoom = LIBRARY.filter(i => i.room === room);
+    let pool = byRoom.filter(i => i.style === style);
+    if (pool.length < 2) pool = byRoom.length >= 2 ? byRoom : LIBRARY;
+    const shuffled = [...pool].sort(() => Math.random() - 0.5);
+    const picks = [];
+    for (const item of shuffled) {
+      if (picks.length === 2) break;
+      picks.push(item);
+    }
+    while (picks.length < 2) picks.push(LIBRARY[picks.length % LIBRARY.length]);
+    return picks;
+  }
+
+  // ── Furniture picker (real catalogue) ──
+  const BACKEND_URL = 'http://localhost:3001';
+  const SOURCES = [
+    { key: 'rove-concepts', label: 'Rove Concepts' },
+    { key: 'west-elm', label: 'West Elm' },
+    { key: 'soho-home', label: 'Soho Home' },
+    { key: 'povison', label: 'Povison' },
+    { key: 'claude-home', label: 'Claude Home' },
+    { key: 'soho-home-lighting', label: 'Lighting' },
+  ];
+  const catalogueCache = {};
+  let pickerSource = 'rove-concepts';
+  const pickedItems = [];
+
+  function itemImage(item) {
+    return (item.imageUrls && item.imageUrls[0]) || item.img || '';
+  }
+
+  async function loadCatalogue(source) {
+    if (source in catalogueCache) return catalogueCache[source];
+    try {
+      const res = await fetch(`${BACKEND_URL}/catalogue?source=${source}`);
+      if (!res.ok) throw new Error('bad response');
+      const data = await res.json();
+      const items = Array.isArray(data) ? data : (data.products || data.items || []);
+      catalogueCache[source] = items;
+      return items;
+    } catch (e) {
+      catalogueCache[source] = null;
+      return null;
+    }
+  }
+
+  function isPicked(item, img) {
+    return pickedItems.some(p => p.name === item.name && p.img === img);
+  }
+
+  function togglePick(item, img, card) {
+    const idx = pickedItems.findIndex(p => p.name === item.name && p.img === img);
+    if (idx >= 0) {
+      pickedItems.splice(idx, 1);
+      card.classList.remove('picked');
+    } else {
+      if (pickedItems.length >= 3) return;
+      pickedItems.push({ name: item.name, price: item.price || '', img });
+      card.classList.add('picked');
+    }
+    updatePickerCount();
+  }
+
+  function updatePickerCount() {
+    pickerCount.textContent = `${pickedItems.length} selected · pick up to 3`;
+  }
+
+  function renderPickerGrid(items, search) {
+    pickerGrid.innerHTML = '';
+    let fallback = false;
+    if (!items) {
+      fallback = true;
+      items = LIBRARY;
+    }
+    const q = (search || '').trim().toLowerCase();
+    const filtered = q
+      ? items.filter(i => (i.name || '').toLowerCase().includes(q) || (i.category || '').toLowerCase().includes(q))
+      : items;
+
+    if (fallback) {
+      const note = document.createElement('div');
+      note.className = 'picker-status';
+      note.style.cssText = 'grid-column:1/-1; padding:0 0 14px;';
+      note.textContent = `Backend not reachable at ${BACKEND_URL} — showing a small starter set. Run "cd backend && npm start" to browse your full 1,471-item library.`;
+      pickerGrid.appendChild(note);
+    }
+
+    if (filtered.length === 0) {
+      const status = document.createElement('div');
+      status.className = 'picker-status';
+      status.textContent = 'No pieces match your search.';
+      pickerGrid.appendChild(status);
+      return;
+    }
+
+    filtered.slice(0, 60).forEach(item => {
+      const img = itemImage(item);
+      const card = document.createElement('div');
+      card.className = 'picker-card' + (isPicked(item, img) ? ' picked' : '');
+      card.innerHTML = `
+        <img src="${img}" alt="${item.name}" loading="lazy">
+        <div class="picker-card-body">
+          <div class="picker-card-name">${item.name}</div>
+          <div class="picker-card-price">${item.price || ''}</div>
+        </div>
+        <div class="picker-check">✓</div>`;
+      card.addEventListener('click', () => togglePick(item, img, card));
+      pickerGrid.appendChild(card);
+    });
+  }
+
+  function renderPickedRow() {
+    pickedRow.innerHTML = '';
+    pickedItems.forEach((item, idx) => {
+      const chip = document.createElement('div');
+      chip.className = 'picked-chip';
+      chip.innerHTML = `<img src="${item.img}" alt=""><span>${item.name}</span><button type="button" aria-label="Remove">✕</button>`;
+      chip.querySelector('button').addEventListener('click', () => {
+        pickedItems.splice(idx, 1);
+        renderPickedRow();
+        updatePickerCount();
+        if (pickerOverlay.classList.contains('open')) loadAndRenderPicker();
+      });
+      pickedRow.appendChild(chip);
+    });
+  }
+
+  async function loadAndRenderPicker() {
+    pickerGrid.innerHTML = '<div class="picker-status">Loading…</div>';
+    const items = await loadCatalogue(pickerSource);
+    renderPickerGrid(items, pickerSearch.value);
+  }
+
+  // ── Real AI staging (nano-banana via /api/stage proxy — key lives server-side) ──
+  const API = {
+    mock: false,
+    stageEndpoint: '/api/stage',
+  };
+  const STORAGE_KEYS = { mock: 'costage_mockMode' };
+
+  function loadApiConfig() {
+    try {
+      const mock = localStorage.getItem(STORAGE_KEYS.mock);
+      mockToggle.checked = mock === null ? false : mock === 'true';
+      API.mock = mockToggle.checked;
+    } catch (e) { /* localStorage unavailable */ }
+  }
+
+  function saveApiConfig() {
+    API.mock = mockToggle.checked;
+    try {
+      localStorage.setItem(STORAGE_KEYS.mock, String(API.mock));
+    } catch (e) { /* localStorage unavailable */ }
+  }
+
+  function canStageLive() {
+    return !API.mock;
+  }
+
+  // `picks` with `.img` become reference images (image 2, 3, 4, ...) so nano-banana
+  // composites the exact pieces the user picked, not just furniture matching their names.
+  function buildStagingPrompt(room, styleName, picks) {
+    const refPicks = picks.filter(i => i.img);
+    if (refPicks.length > 0) {
+      const pieces = refPicks
+        .map((p, idx) => `Image ${idx + 2} is a reference photo of: ${p.name}${p.price ? ` (${p.price})` : ''}.`)
+        .join(' ');
+      return [
+        `Image 1 is a photo of an empty or sparsely furnished ${room}.`,
+        pieces,
+        `Virtually stage the room from Image 1 in a ${styleName} interior design style using the exact pieces shown in the reference images — match each piece's color, material, shape, and proportions as closely as possible to its reference photo.`,
+        "Keep the room's architecture, walls, windows, doors, flooring, ceiling, and existing lighting from Image 1 exactly as they are — only add the furniture.",
+        'Place every piece realistically on the floor with correct scale, perspective, and shadows that match the existing light direction.',
+        'Output a single photorealistic real-estate listing photo of the room from Image 1 — no text, watermarks, borders, or collage layout, and do not show the reference images themselves.',
+      ].join(' ');
+    }
+    const pieces = picks.map(i => i.name).join(', ');
+    return [
+      `Virtually stage this photo of an empty or sparsely furnished ${room} in a ${styleName} interior design style.`,
+      pieces ? `Add these furniture and decor pieces, matching their real proportions and finishes: ${pieces}.` : '',
+      "Keep the room's architecture, walls, windows, doors, flooring, ceiling, and existing lighting exactly as in the original photo — only add furniture.",
+      'Place every piece realistically on the floor with correct scale, perspective, and shadows that match the existing light direction.',
+      'Output a photorealistic real-estate listing photo. No text, watermarks, or borders.',
+    ].filter(Boolean).join(' ');
+  }
+
+  // ── Site access passphrase (sent to /api/stage as X-Site-Key) ──
+  // If the server has SITE_ACCESS_KEY set, staging requires this passphrase.
+  // Prompted once and cached locally; cleared and re-prompted on 401.
+  const SITE_KEY_STORAGE = 'costage_siteKey';
+
+  function getSiteKey() {
+    let key = '';
+    try { key = localStorage.getItem(SITE_KEY_STORAGE) || ''; } catch (e) { /* unavailable */ }
+    return key;
+  }
+
+  function promptForSiteKey() {
+    const key = prompt('Enter the CoStage access passphrase for AI staging:');
+    if (key) {
+      try { localStorage.setItem(SITE_KEY_STORAGE, key); } catch (e) { /* unavailable */ }
+    }
+    return key || '';
+  }
+
+  function clearSiteKey() {
+    try { localStorage.removeItem(SITE_KEY_STORAGE); } catch (e) { /* unavailable */ }
+  }
+
+  async function nanoBananaEdit(images, prompt) {
+    let siteKey = getSiteKey();
+    let res = await fetch(API.stageEndpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'X-Site-Key': siteKey },
+      body: JSON.stringify({
+        images: Array.isArray(images) ? images : [images],
+        prompt,
+      }),
+    });
+    if (res.status === 401) {
+      clearSiteKey();
+      siteKey = promptForSiteKey();
+      if (!siteKey) throw new Error('Site access passphrase required for AI staging');
+      res = await fetch(API.stageEndpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'X-Site-Key': siteKey },
+        body: JSON.stringify({
+          images: Array.isArray(images) ? images : [images],
+          prompt,
+        }),
+      });
+      if (res.status === 401) {
+        clearSiteKey();
+        throw new Error('Incorrect site access passphrase');
+      }
+    }
+    if (!res.ok) throw new Error(`nano-banana request failed (${res.status})`);
+    const data = await res.json();
+    if (data.code !== 0) throw new Error(data.message || 'nano-banana edit failed');
+    const url = Array.isArray(data.data?.url) ? data.data.url[0] : data.data?.url;
+    if (!url) throw new Error('nano-banana returned no image');
+    return url;
+  }
+
+  function renderResultPieces(picks) {
+    resultPiecesRow.innerHTML = '';
+    picks.forEach(item => {
+      const chip = document.createElement('div');
+      chip.className = 'picked-chip';
+      chip.innerHTML = `<img src="${item.img}" alt=""><span>${item.name}${item.price ? ' · ' + item.price : ''}</span>`;
+      resultPiecesRow.appendChild(chip);
+    });
+  }
+
+  // ── Demo elements ──
+  const fileInput   = document.getElementById('fileInput');
+  const dropzone    = document.getElementById('dropzone');
+  const sampleBtn   = document.getElementById('sampleBtn');
+  const panelUpload    = document.getElementById('panelUpload');
+  const panelConfigure = document.getElementById('panelConfigure');
+  const panelLoading   = document.getElementById('panelLoading');
+  const panelResult    = document.getElementById('panelResult');
+  const previewImg  = document.getElementById('previewImg');
+  const beforeImg   = document.getElementById('beforeImg');
+  const afterImg    = document.getElementById('afterImg');
+  const baAfterLayer  = document.getElementById('baAfterLayer');
+  const baBeforeLayer = document.getElementById('baBeforeLayer');
+  const baSlider    = document.getElementById('baSlider');
+  const baHandle    = document.getElementById('baHandle');
+  const loadingImg  = document.getElementById('loadingImg');
+  const loadingFill = document.getElementById('loadingFill');
+  const loadingText = document.getElementById('loadingText');
+  const resultTime  = document.getElementById('resultTime');
+  const resultBadge = document.getElementById('resultBadge');
+  const resultPiecesRow = document.getElementById('resultPiecesRow');
+  const stageBtn    = document.getElementById('stageBtn');
+  const resetBtn    = document.getElementById('resetBtn');
+  const demoSteps   = document.querySelectorAll('.demo-step');
+
+  // ── AI settings elements ──
+  const mockToggle  = document.getElementById('mockToggle');
+
+  // ── Edit flow elements ──
+  const editFurnitureBtn = document.getElementById('editFurnitureBtn');
+  const editStagingBtn   = document.getElementById('editStagingBtn');
+  const editStagingBox   = document.getElementById('editStagingBox');
+  const editStagingInput = document.getElementById('editStagingInput');
+  const applyEditBtn     = document.getElementById('applyEditBtn');
+
+  // ── Furniture picker elements ──
+  const pickerOverlay = document.getElementById('pickerOverlay');
+  const pickerOpenBtn = document.getElementById('pickerOpenBtn');
+  const pickerClose   = document.getElementById('pickerClose');
+  const pickerSearch  = document.getElementById('pickerSearch');
+  const pickerGrid    = document.getElementById('pickerGrid');
+  const pickerCount   = document.getElementById('pickerCount');
+  const pickerDone    = document.getElementById('pickerDone');
+  const pickedRow     = document.getElementById('pickedRow');
+  const sourceTabs    = document.querySelectorAll('.source-tab');
+
+  let currentImageSrc = null;
+  let currentAfterImageSrc = null;
+  let roomType = 'living room';
+  let style = 'modern';
+
+  loadApiConfig();
+  mockToggle.addEventListener('change', saveApiConfig);
+
+  function setStep(n) {
+    demoSteps.forEach(s => s.classList.toggle('active', +s.dataset.step <= n));
+  }
+
+  function showImage(src) {
+    currentImageSrc = src;
+    previewImg.src = src;
+    panelUpload.hidden = true;
+    panelConfigure.hidden = false;
+    setStep(2);
+  }
+
+  function readFile(file) {
+    const reader = new FileReader();
+    reader.onload = e => showImage(e.target.result);
+    reader.readAsDataURL(file);
+  }
+
+  dropzone.addEventListener('dragover', e => { e.preventDefault(); dropzone.classList.add('drag'); });
+  dropzone.addEventListener('dragleave', () => dropzone.classList.remove('drag'));
+  dropzone.addEventListener('drop', e => {
+    e.preventDefault();
+    dropzone.classList.remove('drag');
+    const file = e.dataTransfer.files[0];
+    if (file) readFile(file);
+  });
+  fileInput.addEventListener('change', e => {
+    const file = e.target.files[0];
+    if (file) readFile(file);
+  });
+  sampleBtn.addEventListener('click', () => showImage('assets/sample-room.png'));
+
+  document.querySelectorAll('#roomPills .pill').forEach(p => p.addEventListener('click', () => {
+    document.querySelectorAll('#roomPills .pill').forEach(x => x.classList.remove('active'));
+    p.classList.add('active');
+    roomType = p.dataset.val;
+  }));
+  document.querySelectorAll('#stylePills .pill').forEach(p => p.addEventListener('click', () => {
+    document.querySelectorAll('#stylePills .pill').forEach(x => x.classList.remove('active'));
+    p.classList.add('active');
+    style = p.dataset.val;
+  }));
+
+  stageBtn.addEventListener('click', () => {
+    const picks = pickedItems.length > 0 ? pickedItems : pickFromLibrary(roomType, style);
+    runStaging(currentImageSrc, picks);
+  });
+
+  // ── Furniture picker wiring ──
+  pickerOpenBtn.addEventListener('click', () => {
+    pickerOverlay.classList.add('open');
+    loadAndRenderPicker();
+  });
+  pickerClose.addEventListener('click', () => pickerOverlay.classList.remove('open'));
+  pickerOverlay.addEventListener('click', e => {
+    if (e.target === pickerOverlay) pickerOverlay.classList.remove('open');
+  });
+  pickerSearch.addEventListener('input', () => {
+    loadCatalogue(pickerSource).then(items => renderPickerGrid(items, pickerSearch.value));
+  });
+  sourceTabs.forEach(tab => tab.addEventListener('click', () => {
+    sourceTabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    pickerSource = tab.dataset.source;
+    pickerSearch.value = '';
+    loadAndRenderPicker();
+  }));
+  pickerDone.addEventListener('click', () => {
+    pickerOverlay.classList.remove('open');
+    renderPickedRow();
+    if (!panelResult.hidden) {
+      const picks = pickedItems.length > 0 ? pickedItems : pickFromLibrary(roomType, style);
+      runStaging(currentImageSrc, picks, { loadingMessage: 'Re-staging with your updated furniture…' });
+    }
+  });
+
+  // ── Staging pipeline (real nano-banana edit, with mock fallback) ──
+  async function runStaging(sourceImageSrc, picks, opts = {}) {
+    panelUpload.hidden = true;
+    panelConfigure.hidden = true;
+    panelResult.hidden = true;
+    panelLoading.hidden = false;
+    loadingImg.src = sourceImageSrc;
+    setStep(3);
+
+    const live = canStageLive();
+    loadingText.textContent = opts.loadingMessage || (live
+      ? `Asking nano-banana to stage your ${roomType} in ${style} style…`
+      : `Staging your ${roomType} in ${style} style…`);
+
+    loadingFill.style.transition = 'none';
+    loadingFill.style.width = '0%';
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        loadingFill.style.transition = `width ${live ? '8s' : '1.6s'} cubic-bezier(.2,.7,.3,1)`;
+        loadingFill.style.width = live ? '92%' : '100%';
+      });
+    });
+
+    const startedAt = performance.now();
+    let stagedUrl = null;
+    let errorMsg = null;
+
+    if (live) {
+      const prompt = opts.editPrompt || buildStagingPrompt(roomType, style, picks);
+      const refImages = opts.editPrompt ? [] : picks.filter(p => p.img).map(p => p.img);
+      const images = [sourceImageSrc, ...refImages];
+      try {
+        stagedUrl = await nanoBananaEdit(images, prompt);
+      } catch (err) {
+        console.error('[CoStage] nano-banana staging failed:', err);
+        errorMsg = err.message;
+      }
+    } else {
+      await new Promise(r => setTimeout(r, 1700));
+    }
+
+    loadingFill.style.transition = 'width .25s ease';
+    loadingFill.style.width = '100%';
+    const elapsedSec = ((performance.now() - startedAt) / 1000).toFixed(1);
+
+    setTimeout(() => {
+      panelLoading.hidden = true;
+      panelResult.hidden = false;
+      showResult({ stagedUrl, picks, usedMock: !stagedUrl, errorMsg, elapsedSec });
+    }, 200);
+  }
+
+  function showResult({ stagedUrl, picks, usedMock, errorMsg, elapsedSec }) {
+    beforeImg.src = currentImageSrc;
+    afterImg.src = stagedUrl || currentImageSrc;
+    currentAfterImageSrc = afterImg.src;
+
+    baAfterLayer.querySelectorAll('.furniture-overlay').forEach(el => el.remove());
+
+    if (usedMock) {
+      resultBadge.textContent = errorMsg ? 'AI staging failed — preview mockup' : 'Preview mockup';
+      resultBadge.classList.remove('badge-live');
+      picks.forEach((item, idx) => {
+        const card = document.createElement('div');
+        card.className = `furniture-overlay f${idx + 1}`;
+        card.innerHTML = `<img src="${item.img}" alt="${item.name}">
+          <div class="fo-label">${item.name} · ${item.price}</div>`;
+        baAfterLayer.appendChild(card);
+      });
+      setTimeout(() => {
+        baAfterLayer.querySelectorAll('.furniture-overlay').forEach(el => el.classList.add('show'));
+      }, 80);
+    } else {
+      const hasRefs = picks.some(p => p.img);
+      resultBadge.textContent = hasRefs
+        ? 'AI staged · nano-banana (your picks, rendered)'
+        : 'AI staged · nano-banana';
+      resultBadge.classList.add('badge-live');
+    }
+
+    resultTime.textContent = `Staged in ${elapsedSec}s`;
+    renderResultPieces(picks);
+    initSlider();
+  }
+
+  // ── Edit furniture / edit staging ──
+  editFurnitureBtn.addEventListener('click', () => {
+    pickerOverlay.classList.add('open');
+    loadAndRenderPicker();
+  });
+
+  editStagingBtn.addEventListener('click', () => {
+    editStagingBox.hidden = !editStagingBox.hidden;
+    if (!editStagingBox.hidden) editStagingInput.focus();
+  });
+
+  applyEditBtn.addEventListener('click', () => {
+    const text = editStagingInput.value.trim();
+    if (!text) return;
+    if (!canStageLive()) {
+      resultBadge.textContent = 'Add a nano-banana API key above (and turn off mock mode) to apply AI edits';
+      resultBadge.classList.remove('badge-live');
+      return;
+    }
+    const lastPicks = pickedItems.length > 0 ? pickedItems : pickFromLibrary(roomType, style);
+    const prompt = `Apply this edit to the staged room photo: ${text}. Keep everything else the same — same furniture, same placement, same room architecture — only make the requested change. Photorealistic, no text or watermarks.`;
+    runStaging(currentAfterImageSrc, lastPicks, { editPrompt: prompt, loadingMessage: 'Applying your edit…' });
+    editStagingInput.value = '';
+    editStagingBox.hidden = true;
+  });
+
+  resetBtn.addEventListener('click', () => {
+    panelResult.hidden = true;
+    panelUpload.hidden = false;
+    fileInput.value = '';
+    pickedItems.length = 0;
+    renderPickedRow();
+    updatePickerCount();
+    editStagingBox.hidden = true;
+    editStagingInput.value = '';
+    setStep(1);
+  });
+
+  // ── Before / after slider ──
+  function initSlider() {
+    function setPct(pct) {
+      pct = Math.max(0, Math.min(100, pct));
+      const w = baSlider.getBoundingClientRect().width;
+      baBeforeLayer.style.width = (pct / 100 * w) + 'px';
+      beforeImg.style.width = w + 'px';
+      baHandle.style.left = pct + '%';
+    }
+    setPct(50);
+
+    let dragging = false;
+    function onMove(clientX) {
+      const rect = baSlider.getBoundingClientRect();
+      setPct((clientX - rect.left) / rect.width * 100);
+    }
+    baSlider.onpointerdown = e => { dragging = true; onMove(e.clientX); };
+    baSlider.onpointermove = e => { if (dragging) onMove(e.clientX); };
+    window.addEventListener('pointerup', () => dragging = false);
+    window.addEventListener('resize', () => setPct(parseFloat(baHandle.style.left) || 50));
+  }
+</script>
+
+</body>
+</html>
