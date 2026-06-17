@@ -1,13 +1,17 @@
-// Proxies CoStage's staging requests to OpenAI's gpt-image-1 image-edit model so the
-// API key lives only in the OPENAI_API_KEY environment variable (set in the
-// Vercel dashboard, or in .env for local `vercel dev`) — it never reaches
-// the browser.
+// Proxies CoStage's staging requests to an AI image-edit model so API keys
+// live only in environment variables (set in the Vercel dashboard, or in
+// .env for local `vercel dev`) — they never reach the browser. Tries
+// OpenAI's gpt-image-1 first, then falls back to Gemini's image model
+// ("nano banana") if OpenAI is unavailable or errors.
 
 export const config = { runtime: 'edge' };
 
 const OPENAI_ENDPOINT = 'https://api.openai.com/v1/images/edits';
 const OPENAI_MODEL = process.env.OPENAI_IMAGE_MODEL || 'gpt-image-1';
 const OPENAI_QUALITY = process.env.OPENAI_IMAGE_QUALITY || 'medium';
+
+const GEMINI_ENDPOINT = 'https://generativelanguage.googleapis.com/v1beta/models';
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-3-pro-image-preview';
 
 // Best-effort per-instance rate limit. Resets on cold start and isn't shared
 // across instances — it's defense-in-depth against a runaway loop or casual
@@ -53,6 +57,82 @@ async function toBlob(src) {
   return await res.blob();
 }
 
+function arrayBufferToBase64(buf) {
+  const bytes = new Uint8Array(buf);
+  const chunkSize = 0x8000;
+  let binary = '';
+  for (let i = 0; i < bytes.length; i += chunkSize) {
+    binary += String.fromCharCode.apply(null, bytes.subarray(i, i + chunkSize));
+  }
+  return btoa(binary);
+}
+
+// Accepts either a data URL or an http(s) URL and returns Gemini's inlineData shape.
+async function toInlineData(src) {
+  const dataUrlMatch = src.match(/^data:([^;]+);base64,(.*)$/s);
+  if (dataUrlMatch) {
+    return { mimeType: dataUrlMatch[1], data: dataUrlMatch[2] };
+  }
+  const res = await fetch(src);
+  if (!res.ok) throw new Error(`Failed to fetch reference image (${res.status})`);
+  const mimeType = res.headers.get('content-type') || 'image/jpeg';
+  const data = arrayBufferToBase64(await res.arrayBuffer());
+  return { mimeType, data };
+}
+
+async function stageWithOpenAI(imageList, prompt) {
+  const key = process.env.OPENAI_API_KEY;
+  if (!key) throw new Error('OPENAI_API_KEY not set');
+
+  const form = new FormData();
+  form.append('model', OPENAI_MODEL);
+  form.append('prompt', prompt);
+  form.append('quality', OPENAI_QUALITY);
+  form.append('size', 'auto');
+  for (let i = 0; i < imageList.length; i++) {
+    form.append('image[]', await toBlob(imageList[i]), `image${i}.png`);
+  }
+
+  const res = await fetch(OPENAI_ENDPOINT, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${key}` },
+    body: form,
+  });
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.error?.message || `OpenAI API error (${res.status})`);
+
+  const b64 = data.data?.[0]?.b64_json;
+  if (!b64) throw new Error('OpenAI returned no image');
+  return `data:image/png;base64,${b64}`;
+}
+
+async function stageWithGemini(imageList, prompt) {
+  const key = process.env.GEMINI_API_KEY;
+  if (!key) throw new Error('GEMINI_API_KEY not set');
+
+  const inlineParts = await Promise.all(imageList.map(async img => ({ inlineData: await toInlineData(img) })));
+  const parts = [...inlineParts, { text: prompt }];
+
+  const res = await fetch(`${GEMINI_ENDPOINT}/${GEMINI_MODEL}:generateContent`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'x-goog-api-key': key,
+    },
+    body: JSON.stringify({
+      contents: [{ parts }],
+      generationConfig: { responseModalities: ['TEXT', 'IMAGE'] },
+    }),
+  });
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.error?.message || `Gemini API error (${res.status})`);
+
+  const responseParts = data.candidates?.[0]?.content?.parts || [];
+  const imagePart = responseParts.find(p => p.inlineData);
+  if (!imagePart) throw new Error('Gemini returned no image');
+  return `data:${imagePart.inlineData.mimeType};base64,${imagePart.inlineData.data}`;
+}
+
 export default async function handler(req) {
   if (req.method !== 'POST') {
     return new Response(JSON.stringify({ error: 'Method not allowed' }), {
@@ -76,9 +156,8 @@ export default async function handler(req) {
     });
   }
 
-  const key = process.env.OPENAI_API_KEY;
-  if (!key) {
-    return new Response(JSON.stringify({ error: 'Server is missing OPENAI_API_KEY' }), {
+  if (!process.env.OPENAI_API_KEY && !process.env.GEMINI_API_KEY) {
+    return new Response(JSON.stringify({ error: 'Server is missing OPENAI_API_KEY and GEMINI_API_KEY' }), {
       status: 500,
       headers: { 'Content-Type': 'application/json' },
     });
@@ -104,49 +183,30 @@ export default async function handler(req) {
 
   const imageList = Array.isArray(images) ? images : [images];
 
-  const form = new FormData();
-  form.append('model', OPENAI_MODEL);
-  form.append('prompt', prompt);
-  form.append('quality', OPENAI_QUALITY);
-  form.append('size', 'auto');
+  const errors = [];
 
   try {
-    for (let i = 0; i < imageList.length; i++) {
-      const blob = await toBlob(imageList[i]);
-      form.append('image[]', blob, `image${i}.png`);
-    }
+    const url = await stageWithOpenAI(imageList, prompt);
+    return new Response(JSON.stringify({ code: 0, data: { url } }), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json' },
+    });
   } catch (err) {
-    return new Response(JSON.stringify({ error: `Failed to prepare images: ${err.message}` }), {
-      status: 400,
-      headers: { 'Content-Type': 'application/json' },
-    });
+    errors.push(`OpenAI: ${err.message}`);
   }
 
-  const openaiRes = await fetch(OPENAI_ENDPOINT, {
-    method: 'POST',
-    headers: { Authorization: `Bearer ${key}` },
-    body: form,
-  });
-
-  const openaiData = await openaiRes.json();
-  if (!openaiRes.ok) {
-    return new Response(JSON.stringify({ code: openaiRes.status, message: openaiData.error?.message || 'OpenAI API error', data: null }), {
-      status: openaiRes.status,
+  try {
+    const url = await stageWithGemini(imageList, prompt);
+    return new Response(JSON.stringify({ code: 0, data: { url } }), {
+      status: 200,
       headers: { 'Content-Type': 'application/json' },
     });
+  } catch (err) {
+    errors.push(`Gemini: ${err.message}`);
   }
 
-  const b64 = openaiData.data?.[0]?.b64_json;
-  if (!b64) {
-    return new Response(JSON.stringify({ code: 1, message: 'OpenAI returned no image', data: null }), {
-      status: 502,
-      headers: { 'Content-Type': 'application/json' },
-    });
-  }
-
-  const url = `data:image/png;base64,${b64}`;
-  return new Response(JSON.stringify({ code: 0, data: { url } }), {
-    status: 200,
+  return new Response(JSON.stringify({ code: 1, message: errors.join(' | '), data: null }), {
+    status: 502,
     headers: { 'Content-Type': 'application/json' },
   });
 }
