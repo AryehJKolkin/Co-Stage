@@ -485,6 +485,40 @@ const SCALE = 80;          // pixels per metre at zoom=1
 const canvas = document.getElementById('floorCanvas');
 const ctx = canvas.getContext('2d');
 
+let floorPattern = null;
+
+// Builds a warm wood-plank pattern (brick-laid planks with grain lines) used
+// as the floor fill so the plan reads like a real rendered interior rather
+// than a flat dark rectangle.
+function buildFloorPattern() {
+  const plankW = 240, plankH = 48;
+  const tile = document.createElement('canvas');
+  tile.width = plankW;
+  tile.height = plankH * 2;
+  const tctx = tile.getContext('2d');
+  const tones = ['#c9a876', '#cdae7d', '#c3a06f', '#d2b488', '#c6a878'];
+  for (let row = 0; row < 2; row++) {
+    const offset = row % 2 === 0 ? 0 : -plankW / 2;
+    for (let x = offset; x < plankW; x += plankW) {
+      const tone = tones[(row * 7 + Math.abs(Math.round(x))) % tones.length];
+      tctx.fillStyle = tone;
+      tctx.fillRect(x, row * plankH, plankW, plankH);
+      tctx.strokeStyle = 'rgba(90,60,30,0.25)';
+      tctx.lineWidth = 1;
+      tctx.strokeRect(x + 0.5, row * plankH + 0.5, plankW - 1, plankH - 1);
+      tctx.strokeStyle = 'rgba(255,255,255,0.06)';
+      for (let g = 0; g < 3; g++) {
+        const gy = row * plankH + 8 + g * 14;
+        tctx.beginPath();
+        tctx.moveTo(x + 4, gy);
+        tctx.lineTo(x + plankW - 4, gy);
+        tctx.stroke();
+      }
+    }
+  }
+  floorPattern = ctx.createPattern(tile, 'repeat');
+}
+
 // ─── Init ───
 function setScene(newScene) {
   scene = newScene;
@@ -531,6 +565,7 @@ window.importSceneFile = function(file) {
 };
 
 function init() {
+  buildFloorPattern();
   buildFurnitureGrid();
   buildCategoryTabs();
   loadMockScene();
@@ -544,29 +579,38 @@ function render() {
   ctx.clearRect(0, 0, CANVAS_W, CANVAS_H);
   ctx.save();
 
-  // Floor fill
-  ctx.fillStyle = '#16161c';
-  ctx.beginPath();
   const poly = scene.floorPolygon;
-  poly.forEach((p,i) => {
-    const cp = worldToCanvas({x:p.x,z:p.y}, {width:CANVAS_W,height:CANVAS_H}, scene.roomDimensions);
-    i===0 ? ctx.moveTo(cp.x,cp.y) : ctx.lineTo(cp.x,cp.y);
-  });
-  ctx.closePath();
+  const floorPath = () => {
+    ctx.beginPath();
+    poly.forEach((p,i) => {
+      const cp = worldToCanvas({x:p.x,z:p.y}, {width:CANVAS_W,height:CANVAS_H}, scene.roomDimensions);
+      i===0 ? ctx.moveTo(cp.x,cp.y) : ctx.lineTo(cp.x,cp.y);
+    });
+    ctx.closePath();
+  };
+
+  // Floor fill — warm wood-plank texture
+  floorPath();
+  ctx.fillStyle = floorPattern || '#c9a876';
   ctx.fill();
 
   // Grid
   if (showGrid) drawGrid();
 
-  // Floor border
-  ctx.strokeStyle = 'rgba(255,255,255,0.15)';
-  ctx.lineWidth = 1.5;
-  ctx.beginPath();
-  poly.forEach((p,i) => {
-    const cp = worldToCanvas({x:p.x,z:p.y}, {width:CANVAS_W,height:CANVAS_H}, scene.roomDimensions);
-    i===0 ? ctx.moveTo(cp.x,cp.y) : ctx.lineTo(cp.x,cp.y);
-  });
-  ctx.closePath();
+  // Walls — thick near-white band with soft drop shadow, plus a crisp inner edge
+  ctx.save();
+  ctx.shadowColor = 'rgba(0,0,0,0.35)';
+  ctx.shadowBlur = 6;
+  ctx.shadowOffsetY = 2;
+  ctx.strokeStyle = '#f4f1ea';
+  ctx.lineWidth = 10;
+  ctx.lineJoin = 'round';
+  floorPath();
+  ctx.stroke();
+  ctx.restore();
+  ctx.strokeStyle = 'rgba(0,0,0,0.18)';
+  ctx.lineWidth = 1;
+  floorPath();
   ctx.stroke();
 
   // Dimension labels
@@ -580,6 +624,11 @@ function render() {
     // Check if inside canvas bounds (cameras may be outside room)
     const clampedX = Math.max(8, Math.min(CANVAS_W-8, cp.x));
     const clampedY = Math.max(8, Math.min(CANVAS_H-8, cp.y));
+    ctx.beginPath();
+    ctx.arc(clampedX, clampedY, 6, 0, Math.PI*2);
+    ctx.strokeStyle = 'rgba(255,255,255,0.85)';
+    ctx.lineWidth = 2;
+    ctx.stroke();
     ctx.beginPath();
     ctx.arc(clampedX, clampedY, 5, 0, Math.PI*2);
     ctx.fillStyle = 'rgba(96,200,240,0.6)';
@@ -600,7 +649,7 @@ function render() {
 
 function drawGrid() {
   const step = SCALE * 0.5; // 0.5m grid
-  ctx.strokeStyle = 'rgba(255,255,255,0.04)';
+  ctx.strokeStyle = 'rgba(80,55,25,0.05)';
   ctx.lineWidth = 0.5;
   for (let x=0; x<=CANVAS_W; x+=step) {
     ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,CANVAS_H); ctx.stroke();
@@ -609,7 +658,7 @@ function drawGrid() {
     ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(CANVAS_W,y); ctx.stroke();
   }
   // 1m grid slightly stronger
-  ctx.strokeStyle = 'rgba(255,255,255,0.07)';
+  ctx.strokeStyle = 'rgba(80,55,25,0.09)';
   ctx.lineWidth = 0.5;
   for (let x=0; x<=CANVAS_W; x+=SCALE) {
     ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,CANVAS_H); ctx.stroke();
@@ -621,7 +670,7 @@ function drawGrid() {
 
 function drawDimensions() {
   const { width, depth } = scene.roomDimensions;
-  ctx.fillStyle = 'rgba(107,106,101,0.8)';
+  ctx.fillStyle = 'rgba(60,42,20,0.55)';
   ctx.font = '10px DM Mono, monospace';
   ctx.textAlign = 'center';
   ctx.fillText(`${width.toFixed(1)}m`, CANVAS_W/2, CANVAS_H - 6);
@@ -631,6 +680,191 @@ function drawDimensions() {
   ctx.fillText(`${depth.toFixed(1)}m`, 0, 0);
   ctx.restore();
   ctx.textAlign = 'left';
+}
+
+// ── Furniture rendering helpers ──
+// Returns the furniture's base color shifted by `percent` (additive, -100..100
+// per RGB channel) at the given alpha — used to fake top-down lighting/shading.
+function shadeColor(hex, percent, alpha = 1) {
+  const num = parseInt(hex.slice(1), 16);
+  let r = (num >> 16) + percent;
+  let g = ((num >> 8) & 0xFF) + percent;
+  let b = (num & 0xFF) + percent;
+  r = Math.max(0, Math.min(255, r));
+  g = Math.max(0, Math.min(255, g));
+  b = Math.max(0, Math.min(255, b));
+  return `rgba(${r},${g},${b},${alpha})`;
+}
+
+function roundRectPath(x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.roundRect(x, y, w, h, Math.max(0, Math.min(r, w/2, h/2)));
+}
+
+// Light-from-top-left gradient used as the default fill for most pieces.
+function baseGradient(w, d, furn) {
+  const g = ctx.createLinearGradient(-w/2, -d/2, w/2, d/2);
+  g.addColorStop(0, shadeColor(furn.color, 35));
+  g.addColorStop(1, shadeColor(furn.color, -25));
+  return g;
+}
+
+// Each drawer renders a piece centered at the origin, spanning roughly
+// [-w/2,w/2] x [-d/2,d/2], with "front" (-y, where the direction indicator is)
+// facing the viewer and "back" (+y) against the wall/headboard side.
+const PIECE_DRAWERS = {
+  sofa(w, d, furn) {
+    roundRectPath(-w/2, -d/2, w, d, Math.min(8, d*0.15));
+    ctx.fillStyle = baseGradient(w, d, furn);
+    ctx.fill();
+    // back cushion band
+    const backD = d * 0.34;
+    roundRectPath(-w/2+3, d/2-backD-2, w-6, backD, 5);
+    ctx.fillStyle = shadeColor(furn.color, -15);
+    ctx.fill();
+    // arm rests
+    const armW = w * 0.12;
+    roundRectPath(-w/2+1, -d/2+1, armW, d-2, 5);
+    ctx.fillStyle = shadeColor(furn.color, 22);
+    ctx.fill();
+    roundRectPath(w/2-armW-1, -d/2+1, armW, d-2, 5);
+    ctx.fill();
+    // seat cushion seams
+    const seatCount = w > SCALE*1.6 ? 3 : 2;
+    const seatX0 = -w/2 + armW + 3, seatX1 = w/2 - armW - 3;
+    const seatW = (seatX1 - seatX0) / seatCount;
+    ctx.strokeStyle = 'rgba(0,0,0,0.2)';
+    ctx.lineWidth = 1;
+    for (let i = 1; i < seatCount; i++) {
+      const x = seatX0 + seatW * i;
+      ctx.beginPath(); ctx.moveTo(x, -d/2+3); ctx.lineTo(x, d/2-backD-3); ctx.stroke();
+    }
+  },
+  chair(w, d, furn) {
+    const backD = d * 0.28;
+    roundRectPath(-w/2+1, d/2-backD, w-2, backD, 4);
+    ctx.fillStyle = shadeColor(furn.color, -12);
+    ctx.fill();
+    roundRectPath(-w/2+2, -d/2+2, w-4, d-backD-3, 5);
+    ctx.fillStyle = baseGradient(w, d, furn);
+    ctx.fill();
+  },
+  bed(w, d, furn) {
+    roundRectPath(-w/2, -d/2, w, d, 6);
+    ctx.fillStyle = baseGradient(w, d, furn);
+    ctx.fill();
+    // headboard at the back edge
+    const headD = d * 0.10;
+    roundRectPath(-w/2, d/2-headD, w, headD, 4);
+    ctx.fillStyle = shadeColor(furn.color, -25);
+    ctx.fill();
+    // pillows near the headboard
+    const pillowW = w * 0.32, pillowD = d * 0.16;
+    ctx.fillStyle = 'rgba(255,255,255,0.85)';
+    roundRectPath(-w/2 + w*0.08, d/2 - headD - pillowD - 3, pillowW, pillowD, 5); ctx.fill();
+    roundRectPath(w/2 - w*0.08 - pillowW, d/2 - headD - pillowD - 3, pillowW, pillowD, 5); ctx.fill();
+    // duvet over the rest of the bed
+    const duvetD = d * 0.55;
+    roundRectPath(-w/2+3, -d/2+3, w-6, duvetD, 6);
+    ctx.fillStyle = 'rgba(255,255,255,0.5)';
+    ctx.fill();
+  },
+  table(w, d, furn) {
+    roundRectPath(-w/2, -d/2, w, d, 6);
+    ctx.fillStyle = baseGradient(w, d, furn);
+    ctx.fill();
+    roundRectPath(-w/2+4, -d/2+4, w-8, d-8, 4);
+    ctx.fillStyle = shadeColor(furn.color, 15);
+    ctx.fill();
+    if (furn.id === 'dining-tbl') {
+      const chairSize = Math.min(w, d) * 0.22;
+      const positions = [
+        { x: 0, y: -d/2 - chairSize*0.6, rot: 0 },
+        { x: 0, y:  d/2 + chairSize*0.6, rot: 180 },
+        { x: -w/2 - chairSize*0.6, y: 0, rot: -90 },
+        { x:  w/2 + chairSize*0.6, y: 0, rot: 90 },
+      ];
+      positions.forEach(pos => {
+        ctx.save();
+        ctx.translate(pos.x, pos.y);
+        ctx.rotate(pos.rot * Math.PI / 180);
+        roundRectPath(-chairSize/2, -chairSize/2, chairSize, chairSize, 4);
+        ctx.fillStyle = shadeColor('#5A6B8A', 10);
+        ctx.fill();
+        ctx.restore();
+      });
+    }
+  },
+  cabinet(w, d, furn) {
+    roundRectPath(-w/2, -d/2, w, d, 4);
+    ctx.fillStyle = baseGradient(w, d, furn);
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(255,255,255,0.15)';
+    ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(0, -d/2+3); ctx.lineTo(0, d/2-3); ctx.stroke();
+    ctx.fillStyle = 'rgba(255,255,255,0.3)';
+    ctx.beginPath(); ctx.arc(-w*0.12, 0, 2, 0, Math.PI*2); ctx.fill();
+    ctx.beginPath(); ctx.arc(w*0.12, 0, 2, 0, Math.PI*2); ctx.fill();
+  },
+  desk(w, d, furn) {
+    roundRectPath(-w/2, -d/2, w, d, 4);
+    ctx.fillStyle = baseGradient(w, d, furn);
+    ctx.fill();
+    roundRectPath(w/2 - w*0.18, -d/2+2, w*0.16, d-4, 3);
+    ctx.fillStyle = shadeColor(furn.color, -15);
+    ctx.fill();
+  },
+  shelf(w, d, furn) {
+    roundRectPath(-w/2, -d/2, w, d, 3);
+    ctx.fillStyle = baseGradient(w, d, furn);
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(255,255,255,0.12)';
+    ctx.lineWidth = 1;
+    const lines = Math.max(2, Math.round(w / (SCALE*0.4)));
+    for (let i = 1; i < lines; i++) {
+      const x = -w/2 + w*i/lines;
+      ctx.beginPath(); ctx.moveTo(x, -d/2+2); ctx.lineTo(x, d/2-2); ctx.stroke();
+    }
+  },
+  rug(w, d, furn) {
+    roundRectPath(-w/2, -d/2, w, d, Math.min(w,d)*0.06);
+    ctx.fillStyle = shadeColor(furn.color, 10, 0.55);
+    ctx.fill();
+    roundRectPath(-w/2 + w*0.08, -d/2 + d*0.08, w*0.84, d*0.84, Math.min(w,d)*0.05);
+    ctx.fillStyle = shadeColor(furn.color, -10, 0.4);
+    ctx.fill();
+    roundRectPath(-w/2 + w*0.16, -d/2 + d*0.16, w*0.68, d*0.68, Math.min(w,d)*0.04);
+    ctx.strokeStyle = shadeColor(furn.color, 30, 0.5);
+    ctx.lineWidth = 1;
+    ctx.stroke();
+  },
+  plant(w, d, furn) {
+    const r = Math.min(w, d) / 2;
+    ctx.fillStyle = shadeColor('#8a7560', -10);
+    ctx.beginPath(); ctx.ellipse(0, r*0.4, r*0.45, r*0.4, 0, 0, Math.PI*2); ctx.fill();
+    ctx.fillStyle = shadeColor(furn.color, -15, 0.9);
+    ctx.beginPath(); ctx.arc(0, -r*0.1, r*0.65, 0, Math.PI*2); ctx.fill();
+    ctx.fillStyle = shadeColor(furn.color, 15, 0.9);
+    [[-r*0.3,-r*0.2,r*0.5],[r*0.3,-r*0.25,r*0.45],[0,-r*0.5,r*0.55]].forEach(([dx,dy,rr]) => {
+      ctx.beginPath(); ctx.arc(dx, dy, rr, 0, Math.PI*2); ctx.fill();
+    });
+  },
+};
+
+function drawGenericPiece(w, d, furn) {
+  roundRectPath(-w/2, -d/2, w, d, 4);
+  ctx.fillStyle = baseGradient(w, d, furn);
+  ctx.fill();
+}
+
+// Canvas-space position of the rotate handle for a placement, used both to
+// draw it and to hit-test drags against it.
+function getRotateHandlePos(p) {
+  const cp = worldToCanvas({x:p.worldX,z:p.worldZ}, {width:CANVAS_W,height:CANVAS_H}, scene.roomDimensions);
+  const pd = p.furniture.d * SCALE;
+  const dist = pd/2 + 14;
+  const rad = p.rotation * Math.PI / 180;
+  return { x: cp.x + dist*Math.sin(rad), y: cp.y - dist*Math.cos(rad) };
 }
 
 function drawFurniturePiece(p) {
@@ -644,27 +878,31 @@ function drawFurniturePiece(p) {
   ctx.translate(cp.x, cp.y);
   ctx.rotate(p.rotation * Math.PI / 180);
 
-  // Shadow
-  ctx.shadowColor = 'rgba(0,0,0,0.5)';
-  ctx.shadowBlur = 8;
-  ctx.shadowOffsetX = 2;
-  ctx.shadowOffsetY = 2;
+  // Soft ambient shadow cast by the piece (skip for flat/irregular shapes)
+  if (furn.icon !== 'rug' && furn.icon !== 'plant') {
+    ctx.save();
+    ctx.shadowColor = 'rgba(35,25,10,0.4)';
+    ctx.shadowBlur = 10;
+    ctx.shadowOffsetX = 3;
+    ctx.shadowOffsetY = 4;
+    ctx.fillStyle = '#000';
+    roundRectPath(-pw/2, -pd/2, pw, pd, 4);
+    ctx.fill();
+    ctx.restore();
+  }
 
-  // Fill
-  ctx.fillStyle = isSelected
-    ? 'rgba(200,240,96,0.25)'
-    : `${furn.color}55`;
-  ctx.strokeStyle = isSelected ? '#c8f060' : `${furn.color}cc`;
-  ctx.lineWidth = isSelected ? 1.5 : 1;
+  // Category-specific illustration
+  const drawFn = PIECE_DRAWERS[furn.icon] || drawGenericPiece;
+  drawFn(pw, pd, furn, isSelected);
 
-  ctx.beginPath();
-  ctx.roundRect(-pw/2, -pd/2, pw, pd, 3);
-  ctx.fill();
-  ctx.shadowBlur = 0; ctx.shadowOffsetX = 0; ctx.shadowOffsetY = 0;
+  // Outline
+  ctx.lineWidth = isSelected ? 2 : 1;
+  ctx.strokeStyle = isSelected ? '#c8f060' : 'rgba(0,0,0,0.22)';
+  roundRectPath(-pw/2, -pd/2, pw, pd, 4);
   ctx.stroke();
 
   // Label
-  ctx.fillStyle = isSelected ? '#c8f060' : 'rgba(232,230,223,0.8)';
+  ctx.fillStyle = isSelected ? '#2f2a18' : 'rgba(20,15,8,0.6)';
   ctx.font = `${Math.max(8, Math.min(11, pw/8))}px Syne, sans-serif`;
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
@@ -672,37 +910,112 @@ function drawFurniturePiece(p) {
   ctx.fillText(label, 0, 0);
 
   // Direction indicator (front edge)
-  ctx.strokeStyle = isSelected ? 'rgba(200,240,96,0.6)' : 'rgba(255,255,255,0.2)';
+  ctx.strokeStyle = isSelected ? 'rgba(200,240,96,0.8)' : 'rgba(255,255,255,0.35)';
   ctx.lineWidth = 2;
   ctx.beginPath();
   ctx.moveTo(-pw/2+4, -pd/2+2);
   ctx.lineTo(pw/2-4, -pd/2+2);
   ctx.stroke();
 
+  // Rotate handle
+  if (isSelected) {
+    const hx = 0, hy = -(pd/2 + 14);
+    ctx.strokeStyle = 'rgba(200,240,96,0.7)';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(0, -pd/2);
+    ctx.lineTo(hx, hy);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(hx, hy, 6, 0, Math.PI*2);
+    ctx.fillStyle = '#c8f060';
+    ctx.fill();
+    ctx.strokeStyle = '#0c0c0e';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+  }
+
   ctx.restore();
 }
 
 // ─── Canvas interaction ───
+let dragState = null; // { mode:'move'|'rotate', id, startIp, startWorldX, startWorldZ }
+
 function setupCanvasEvents() {
-  canvas.addEventListener('click', e => {
-    const pos = canvasPos(e);
-    const hit = hitTest(pos);
-    selectedId = hit ? hit.id : null;
+  canvas.addEventListener('mousedown', e => {
+    const ip = toInternal(canvasPos(e));
+
+    // dragging the rotate handle of the currently selected piece?
+    if (selectedId) {
+      const sel = placements.find(p => p.id === selectedId);
+      if (sel && hitTestHandle(ip, sel)) {
+        dragState = { mode: 'rotate', id: sel.id };
+        return;
+      }
+    }
+
+    const hit = hitTest(ip);
+    if (hit) {
+      selectedId = hit.id;
+      dragState = { mode: 'move', id: hit.id, startIp: ip, startWorldX: hit.worldX, startWorldZ: hit.worldZ };
+    } else {
+      selectedId = null;
+      dragState = null;
+    }
     render();
     updateRightPanel();
   });
 
-  canvas.addEventListener('dblclick', e => {
+  window.addEventListener('mousemove', e => {
     const pos = canvasPos(e);
-    const hit = hitTest(pos);
-    if (hit) removePlacement(hit.id);
+    const ip = toInternal(pos);
+
+    if (!dragState) {
+      const worldPos = canvasToWorld(ip, {width:CANVAS_W,height:CANVAS_H}, scene.roomDimensions);
+      document.getElementById('statusBar').textContent =
+        `${worldPos.x.toFixed(2)}m, ${worldPos.z.toFixed(2)}m  ·  drag to move · drag handle to rotate · dbl-click to remove`;
+      return;
+    }
+
+    const p = placements.find(pp => pp.id === dragState.id);
+    if (!p) return;
+
+    if (dragState.mode === 'move') {
+      const dxWorld = (ip.x - dragState.startIp.x) / SCALE;
+      const dzWorld = (ip.y - dragState.startIp.y) / SCALE;
+      let nx = dragState.startWorldX + dxWorld;
+      let nz = dragState.startWorldZ + dzWorld;
+
+      // clamp so the rotated bounding box stays within the room
+      const rad = p.rotation * Math.PI / 180;
+      const hw = p.furniture.w / 2, hd = p.furniture.d / 2;
+      const extentX = Math.abs(hw * Math.cos(rad)) + Math.abs(hd * Math.sin(rad));
+      const extentZ = Math.abs(hw * Math.sin(rad)) + Math.abs(hd * Math.cos(rad));
+      const { width, depth } = scene.roomDimensions;
+      nx = Math.max(-width/2 + extentX, Math.min(width/2 - extentX, nx));
+      nz = Math.max(-depth/2 + extentZ, Math.min(depth/2 - extentZ, nz));
+
+      p.worldX = nx;
+      p.worldZ = nz;
+    } else if (dragState.mode === 'rotate') {
+      const cp = worldToCanvas({x:p.worldX,z:p.worldZ}, {width:CANVAS_W,height:CANVAS_H}, scene.roomDimensions);
+      const dx = ip.x - cp.x, dy = ip.y - cp.y;
+      let deg = Math.atan2(dx, -dy) * 180 / Math.PI;
+      deg = Math.round(deg / 5) * 5;
+      if (deg < 0) deg += 360;
+      p.rotation = deg;
+    }
+
+    render();
+    updateRightPanel();
   });
 
-  canvas.addEventListener('mousemove', e => {
-    const pos = canvasPos(e);
-    const worldPos = canvasToWorld(pos, {width:CANVAS_W,height:CANVAS_H}, scene.roomDimensions);
-    document.getElementById('statusBar').textContent =
-      `${worldPos.x.toFixed(2)}m, ${worldPos.z.toFixed(2)}m  ·  dbl-click to remove`;
+  window.addEventListener('mouseup', () => { dragState = null; });
+
+  canvas.addEventListener('dblclick', e => {
+    const pos = toInternal(canvasPos(e));
+    const hit = hitTest(pos);
+    if (hit) removePlacement(hit.id);
   });
 }
 
@@ -711,15 +1024,34 @@ function canvasPos(e) {
   return { x: e.clientX - r.left, y: e.clientY - r.top };
 }
 
+// Converts a canvas-relative pointer position (CSS pixels, affected by the
+// `.canvas-wrap` zoom transform) into the canvas's internal pixel space used
+// by worldToCanvas/canvasToWorld.
+function toInternal(pos) {
+  return { x: pos.x / zoom, y: pos.y / zoom };
+}
+
+// Rotation-aware hit test: transforms `pos` into each placement's local frame
+// before testing against its half-extents, so rotated pieces hit correctly.
 function hitTest(pos) {
   for (let i=placements.length-1; i>=0; i--) {
     const p = placements[i];
     const cp = worldToCanvas({x:p.worldX,z:p.worldZ},{width:CANVAS_W,height:CANVAS_H},scene.roomDimensions);
+    const dx = pos.x - cp.x, dy = pos.y - cp.y;
+    const rad = -p.rotation * Math.PI / 180;
+    const lx = dx*Math.cos(rad) - dy*Math.sin(rad);
+    const ly = dx*Math.sin(rad) + dy*Math.cos(rad);
     const pw = p.furniture.w * SCALE / 2;
     const pd = p.furniture.d * SCALE / 2;
-    if (Math.abs(pos.x-cp.x) <= pw && Math.abs(pos.y-cp.y) <= pd) return p;
+    if (Math.abs(lx) <= pw && Math.abs(ly) <= pd) return p;
   }
   return null;
+}
+
+function hitTestHandle(pos, p) {
+  const hp = getRotateHandlePos(p);
+  const dx = pos.x - hp.x, dy = pos.y - hp.y;
+  return (dx*dx + dy*dy) <= 64; // 8px radius
 }
 
 // ─── Drag & Drop from furniture library ───
@@ -745,7 +1077,7 @@ function setupDragDrop() {
     e.preventDefault();
     canvas.style.boxShadow = '';
     if (!dragItem || !scene) return;
-    const pos = canvasPos(e);
+    const pos = toInternal(canvasPos(e));
     const worldPos = canvasToWorld(pos, {width:CANVAS_W,height:CANVAS_H}, scene.roomDimensions);
     addPlacement(dragItem, worldPos.x, worldPos.z);
     dragItem = null;

@@ -1,17 +1,19 @@
-// Proxies CoStage's staging requests to Google's Gemini image model so the
-// API key lives only in the GEMINI_API_KEY environment variable (set in the
+// Proxies CoStage's staging requests to OpenAI's gpt-image-1 image-edit model so the
+// API key lives only in the OPENAI_API_KEY environment variable (set in the
 // Vercel dashboard, or in .env for local `vercel dev`) — it never reaches
 // the browser.
 
 export const config = { runtime: 'edge' };
 
-const GEMINI_ENDPOINT = 'https://generativelanguage.googleapis.com/v1beta/models';
-const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-3-pro-image-preview';
+const OPENAI_ENDPOINT = 'https://api.openai.com/v1/images/edits';
+const OPENAI_MODEL = process.env.OPENAI_IMAGE_MODEL || 'gpt-image-1';
+const OPENAI_QUALITY = process.env.OPENAI_IMAGE_QUALITY || 'medium';
 
 // Best-effort per-instance rate limit. Resets on cold start and isn't shared
 // across instances — it's defense-in-depth against a runaway loop or casual
-// abuse, not a substitute for the key's own spending limits.
-const RATE_LIMIT = 12;          // requests
+// abuse, not a substitute for the key's own spending limits. Kept low because
+// each gpt-image-1 edit call has real cost.
+const RATE_LIMIT = 5;           // requests
 const RATE_WINDOW_MS = 60_000;  // per minute, per IP
 const requestLog = new Map();
 
@@ -34,28 +36,21 @@ function isAllowedOrigin(req) {
   return allowedHosts.some(host => origin.includes(host));
 }
 
-function arrayBufferToBase64(buf) {
-  const bytes = new Uint8Array(buf);
-  const chunkSize = 0x8000;
-  let binary = '';
-  for (let i = 0; i < bytes.length; i += chunkSize) {
-    binary += String.fromCharCode.apply(null, bytes.subarray(i, i + chunkSize));
-  }
-  return btoa(binary);
-}
-
 // Accepts either a data URL (from an uploaded file) or an http(s) URL (e.g.
-// a furniture catalogue reference photo) and returns Gemini's inlineData shape.
-async function toInlineData(src) {
+// a furniture catalogue reference photo) and returns a Blob for the OpenAI
+// edit request's multipart form.
+async function toBlob(src) {
   const dataUrlMatch = src.match(/^data:([^;]+);base64,(.*)$/s);
   if (dataUrlMatch) {
-    return { mimeType: dataUrlMatch[1], data: dataUrlMatch[2] };
+    const [, mimeType, base64] = dataUrlMatch;
+    const binary = atob(base64);
+    const bytes = new Uint8Array(binary.length);
+    for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+    return new Blob([bytes], { type: mimeType });
   }
   const res = await fetch(src);
   if (!res.ok) throw new Error(`Failed to fetch reference image (${res.status})`);
-  const mimeType = res.headers.get('content-type') || 'image/jpeg';
-  const data = arrayBufferToBase64(await res.arrayBuffer());
-  return { mimeType, data };
+  return await res.blob();
 }
 
 export default async function handler(req) {
@@ -81,9 +76,9 @@ export default async function handler(req) {
     });
   }
 
-  const key = process.env.GEMINI_API_KEY;
+  const key = process.env.OPENAI_API_KEY;
   if (!key) {
-    return new Response(JSON.stringify({ error: 'Server is missing GEMINI_API_KEY' }), {
+    return new Response(JSON.stringify({ error: 'Server is missing OPENAI_API_KEY' }), {
       status: 500,
       headers: { 'Content-Type': 'application/json' },
     });
@@ -109,10 +104,17 @@ export default async function handler(req) {
 
   const imageList = Array.isArray(images) ? images : [images];
 
-  let parts;
+  const form = new FormData();
+  form.append('model', OPENAI_MODEL);
+  form.append('prompt', prompt);
+  form.append('quality', OPENAI_QUALITY);
+  form.append('size', 'auto');
+
   try {
-    const inlineParts = await Promise.all(imageList.map(async img => ({ inlineData: await toInlineData(img) })));
-    parts = [...inlineParts, { text: prompt }];
+    for (let i = 0; i < imageList.length; i++) {
+      const blob = await toBlob(imageList[i]);
+      form.append('image[]', blob, `image${i}.png`);
+    }
   } catch (err) {
     return new Response(JSON.stringify({ error: `Failed to prepare images: ${err.message}` }), {
       status: 400,
@@ -120,36 +122,29 @@ export default async function handler(req) {
     });
   }
 
-  const geminiRes = await fetch(`${GEMINI_ENDPOINT}/${GEMINI_MODEL}:generateContent`, {
+  const openaiRes = await fetch(OPENAI_ENDPOINT, {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'x-goog-api-key': key,
-    },
-    body: JSON.stringify({
-      contents: [{ parts }],
-      generationConfig: { responseModalities: ['TEXT', 'IMAGE'] },
-    }),
+    headers: { Authorization: `Bearer ${key}` },
+    body: form,
   });
 
-  const geminiData = await geminiRes.json();
-  if (!geminiRes.ok) {
-    return new Response(JSON.stringify({ code: geminiRes.status, message: geminiData.error?.message || 'Gemini API error', data: null }), {
-      status: geminiRes.status,
+  const openaiData = await openaiRes.json();
+  if (!openaiRes.ok) {
+    return new Response(JSON.stringify({ code: openaiRes.status, message: openaiData.error?.message || 'OpenAI API error', data: null }), {
+      status: openaiRes.status,
       headers: { 'Content-Type': 'application/json' },
     });
   }
 
-  const responseParts = geminiData.candidates?.[0]?.content?.parts || [];
-  const imagePart = responseParts.find(p => p.inlineData);
-  if (!imagePart) {
-    return new Response(JSON.stringify({ code: 1, message: 'Gemini returned no image', data: null }), {
+  const b64 = openaiData.data?.[0]?.b64_json;
+  if (!b64) {
+    return new Response(JSON.stringify({ code: 1, message: 'OpenAI returned no image', data: null }), {
       status: 502,
       headers: { 'Content-Type': 'application/json' },
     });
   }
 
-  const url = `data:${imagePart.inlineData.mimeType};base64,${imagePart.inlineData.data}`;
+  const url = `data:image/png;base64,${b64}`;
   return new Response(JSON.stringify({ code: 0, data: { url } }), {
     status: 200,
     headers: { 'Content-Type': 'application/json' },

@@ -110,23 +110,6 @@
   }
   .demo-step.active { color: #0c0c0e; background: var(--accent); border-color: var(--accent); font-weight: 700; }
 
-  /* AI settings */
-  .ai-settings {
-    border: 1px solid var(--border); border-radius: var(--r); margin-bottom: 16px; overflow: hidden;
-  }
-  .ai-settings summary {
-    list-style: none; cursor: pointer; padding: 9px 12px; display: flex; align-items: center; gap: 8px;
-    font-family: var(--font-mono); font-size: 11px; color: var(--muted2); user-select: none;
-  }
-  .ai-settings summary::-webkit-details-marker { display: none; }
-  .ai-settings summary::before { content: '⚙'; color: var(--muted); }
-  .ai-settings[open] summary { border-bottom: 1px solid var(--border); }
-  .ai-settings-body { padding: 12px; display: flex; flex-direction: column; gap: 10px; }
-  .ai-settings-hint { font-size: 11px; color: var(--muted); line-height: 1.5; }
-  .mock-toggle-row {
-    display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 11px; color: var(--muted2);
-  }
-
   /* upload */
   .dropzone {
     display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
@@ -198,22 +181,6 @@
   .ba-tag-before { left: 10px; }
   .ba-tag-after { right: 10px; color: var(--accent); }
 
-  .furniture-overlay {
-    position: absolute; border-radius: 8px; overflow: hidden; border: 2px solid rgba(255,255,255,.92);
-    box-shadow: 0 10px 24px rgba(0,0,0,.4); background: #f5f3ef;
-    opacity: 0; transform: translateY(14px) scale(.92); transition: opacity .5s ease, transform .5s ease;
-  }
-  .furniture-overlay img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .furniture-overlay .fo-label {
-    position: absolute; left: 0; right: 0; bottom: 0; padding: 4px 6px;
-    background: linear-gradient(transparent, rgba(0,0,0,.78));
-    font-family: var(--font-mono); font-size: 9px; line-height: 1.3; color: #fff;
-  }
-  .furniture-overlay.show { opacity: 1; transform: translateY(0) scale(1); }
-  .f1 { width: 30%; aspect-ratio: 1; bottom: 8%; right: 6%; transition-delay: .2s; }
-  .f2 { width: 24%; aspect-ratio: 1; bottom: 6%; left: 8%; transition-delay: .4s; }
-  .f3 { width: 22%; aspect-ratio: 1; top: 6%; right: 6%; transition-delay: .6s; }
-
   .result-meta { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
   .mock-badge {
     font-family: var(--font-mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: .1em;
@@ -225,12 +192,6 @@
   .result-pieces:not(:empty) { margin-bottom: 16px; }
   .result-edit-row { display: flex; gap: 8px; margin-bottom: 16px; }
   .result-edit-row .btn { flex: 1; justify-content: center; }
-  .edit-staging-box { display: flex; gap: 8px; margin-bottom: 16px; }
-  .edit-staging-box input {
-    flex: 1; background: var(--surface2); border: 1px solid var(--border2); border-radius: var(--r);
-    padding: 9px 12px; color: var(--text); font-family: var(--font-sans); font-size: 12.5px; outline: none;
-  }
-  .edit-staging-box input:focus { border-color: var(--accent); }
 
   /* ── Furniture picker ── */
   .picked-row { display: flex; gap: 8px; flex-wrap: wrap; }
@@ -248,7 +209,7 @@
   .picker-open-btn { width: 100%; justify-content: center; }
 
   .picker-overlay {
-    display: none; position: fixed; inset: 0; background: rgba(0,0,0,.7); z-index: 200;
+    display: none; position: fixed; inset: 0; background: rgba(0,0,0,.7); z-index: 230;
     align-items: center; justify-content: center; padding: 20px;
   }
   .picker-overlay.open { display: flex; }
@@ -386,6 +347,87 @@
   footer .footer-links a { font-size: 12px; color: var(--muted2); transition: color .15s; }
   footer .footer-links a:hover { color: var(--accent); }
 
+  /* ── Walkthrough ── */
+  .walkthrough-overlay {
+    display: none; position: fixed; inset: 0; background: rgba(0,0,0,.7); z-index: 220;
+    align-items: center; justify-content: center; padding: 20px;
+  }
+  .walkthrough-overlay.open { display: flex; }
+  .walkthrough-modal {
+    background: var(--surface); border: 1px solid var(--border2); border-radius: var(--r2);
+    width: 100%; max-width: 880px; max-height: 90vh; display: flex; flex-direction: column; overflow: hidden;
+  }
+  .wt-header { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border-bottom: 1px solid var(--border); }
+  .wt-title { font-weight: 700; font-size: 16px; }
+  .wt-close { background: none; border: none; color: var(--muted); font-size: 18px; cursor: pointer; }
+  .wt-close:hover { color: var(--text); }
+  .wt-viewport { position: relative; width: 100%; aspect-ratio: 4/3; background: #000; }
+  .wt-viewport canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  #wtHotspots { position: absolute; inset: 0; pointer-events: none; }
+  .wt-hotspot {
+    position: absolute; width: 28px; height: 28px; border-radius: 50%; transform: translate(-50%,-50%);
+    border: 2px solid #fff; background: rgba(255,255,255,.18); cursor: pointer; pointer-events: auto;
+    transition: border-color .15s, background .15s;
+  }
+  .wt-hotspot:hover { background: rgba(255,255,255,.32); }
+  .wt-hotspot.selected { border: 2px dashed var(--accent); background: rgba(200,240,96,.18); }
+
+  .wt-floorplan-inset {
+    position: absolute; right: 14px; bottom: 14px; width: 160px;
+    background: rgba(12,12,14,.78); border: 1px solid var(--border2); border-radius: var(--r);
+    padding: 6px; backdrop-filter: blur(4px);
+  }
+  .wt-floorplan-inset canvas { position: static; inset: auto; width: 100%; height: 120px; display: block; border-radius: 6px; background: var(--surface2); }
+  .wt-inset-controls { display: flex; gap: 6px; margin-top: 6px; }
+  .wt-inset-controls button {
+    flex: 1; font-family: var(--font-mono); font-size: 11px; background: var(--surface2);
+    border: 1px solid var(--border2); color: var(--muted2); border-radius: 6px; padding: 4px 0; cursor: pointer;
+  }
+  .wt-inset-controls button:hover { color: var(--accent2); border-color: var(--accent2); }
+
+  .wt-side-panel {
+    position: absolute; left: 14px; top: 14px; width: 200px;
+    background: rgba(19,19,23,.92); border: 1px solid var(--border2); border-radius: var(--r);
+    padding: 12px; backdrop-filter: blur(6px);
+  }
+  .wt-side-close {
+    position: absolute; top: 6px; right: 8px; background: none; border: none; color: var(--muted); font-size: 14px; cursor: pointer;
+  }
+  .wt-side-close:hover { color: var(--text); }
+  .wt-side-panel img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 6px; margin-bottom: 8px; background: var(--surface2); display: block; }
+  .wt-side-name { font-size: 13px; font-weight: 700; margin-bottom: 2px; }
+  .wt-side-price { font-family: var(--font-mono); font-size: 11px; color: var(--accent); margin-bottom: 10px; }
+
+  .wt-nav-controls {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    padding: 14px 20px; border-top: 1px solid var(--border); flex-wrap: wrap;
+  }
+  .wt-dpad {
+    display: grid; grid-template-columns: 32px 32px 32px; grid-template-rows: 32px 32px; gap: 2px;
+  }
+  .wt-dpad button {
+    background: var(--surface2); border: 1px solid var(--border2); color: var(--text);
+    cursor: pointer; font-size: 12px; border-radius: 6px; display: flex; align-items: center; justify-content: center;
+  }
+  .wt-dpad button:hover { border-color: var(--accent2); color: var(--accent2); }
+  .wt-dpad-up    { grid-area: 1 / 2; }
+  .wt-dpad-left  { grid-area: 2 / 1; }
+  .wt-dpad-down  { grid-area: 2 / 2; }
+  .wt-dpad-right { grid-area: 2 / 3; }
+
+  .wt-mode-toggle {
+    font-family: var(--font-mono); font-size: 11.5px; background: var(--surface2); border: 1px solid var(--border2);
+    color: var(--text); border-radius: 20px; padding: 7px 16px; cursor: pointer; transition: .15s;
+  }
+  .wt-mode-toggle:hover { border-color: var(--accent2); color: var(--accent2); }
+
+  .wt-zoom { display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 12px; color: var(--muted2); }
+  .wt-zoom button {
+    width: 28px; height: 28px; border-radius: 50%; background: var(--surface2); border: 1px solid var(--border2);
+    color: var(--text); cursor: pointer; font-size: 14px; display: flex; align-items: center; justify-content: center;
+  }
+  .wt-zoom button:hover { border-color: var(--accent2); color: var(--accent2); }
+
   /* ── Responsive ── */
   @media (max-width: 880px) {
     .hero { grid-template-columns: 1fr; padding: 40px 0 56px; }
@@ -443,22 +485,6 @@
         <div class="demo-step" data-step="2">2 · Configure</div>
         <div class="demo-step" data-step="3">3 · Result</div>
       </div>
-
-      <details class="ai-settings">
-        <summary>AI staging settings</summary>
-        <div class="ai-settings-body">
-          <div class="ai-settings-hint">
-            CoStage sends your room photo plus reference photos of the exact pieces you picked
-            to nano-banana for real AI rendering, so the result uses those items, not just
-            similar-looking ones. The API key lives server-side, not in this page.
-            Turn on mock mode to preview without making real API calls.
-          </div>
-          <label class="mock-toggle-row">
-            <input type="checkbox" id="mockToggle">
-            Mock mode (no real API calls)
-          </label>
-        </div>
-      </details>
 
       <div class="demo-panel" id="panelUpload">
         <label class="dropzone" id="dropzone">
@@ -522,11 +548,7 @@
         <div class="result-pieces" id="resultPiecesRow"></div>
         <div class="result-edit-row">
           <button class="btn btn-ghost" id="editFurnitureBtn" type="button">Edit furniture</button>
-          <button class="btn btn-ghost" id="editStagingBtn" type="button">Edit staging</button>
-        </div>
-        <div class="edit-staging-box" id="editStagingBox" hidden>
-          <input type="text" id="editStagingInput" placeholder="e.g. make the lighting warmer, swap the rug for something brighter…">
-          <button class="btn btn-accent" id="applyEditBtn" type="button">Apply →</button>
+          <button class="btn btn-ghost" id="editStagingBtn" type="button">Explore in 3D →</button>
         </div>
         <div class="hero-ctas">
           <button class="btn btn-accent" onclick="location.href='floorPlanEditor.html'" type="button">Continue in Floor Plan Editor</button>
@@ -731,6 +753,49 @@
   </div>
 </div>
 
+<div class="walkthrough-overlay" id="walkthroughOverlay">
+  <div class="walkthrough-modal">
+    <div class="wt-header">
+      <div class="wt-title">Walkthrough</div>
+      <button class="wt-close" id="wtClose" type="button">✕</button>
+    </div>
+    <div class="wt-viewport">
+      <canvas id="wtCanvas"></canvas>
+      <canvas id="wtTopdownCanvas" hidden></canvas>
+      <div id="wtHotspots"></div>
+      <div class="wt-floorplan-inset">
+        <canvas id="wtFloorplanCanvas"></canvas>
+        <div class="wt-inset-controls">
+          <button id="wtInsetToggle" type="button" title="Toggle 2D/3D view">2D</button>
+          <button id="wtInsetZoomOut" type="button" title="Zoom out">−</button>
+          <button id="wtInsetZoomIn" type="button" title="Zoom in">+</button>
+        </div>
+      </div>
+      <div class="wt-side-panel" id="wtSidePanel" hidden>
+        <button class="wt-side-close" id="wtSideClose" type="button">✕</button>
+        <img id="wtSideImg" alt="">
+        <div class="wt-side-name" id="wtSideName"></div>
+        <div class="wt-side-price" id="wtSidePrice"></div>
+        <button class="btn btn-accent" id="wtSwapBtn" type="button">Swap this piece →</button>
+      </div>
+    </div>
+    <div class="wt-nav-controls">
+      <div class="wt-dpad">
+        <button class="wt-dpad-up" id="wtUp" type="button" title="Move forward">▲</button>
+        <button class="wt-dpad-left" id="wtLeft" type="button" title="Turn left">◀</button>
+        <button class="wt-dpad-down" id="wtDown" type="button" title="Move backward">▼</button>
+        <button class="wt-dpad-right" id="wtRight" type="button" title="Turn right">▶</button>
+      </div>
+      <button class="wt-mode-toggle" id="wtModeToggle" type="button">2D view</button>
+      <div class="wt-zoom">
+        <button id="wtZoomOut" type="button" title="Zoom out">−</button>
+        <span id="wtZoomLabel">60°</span>
+        <button id="wtZoomIn" type="button" title="Zoom in">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <footer>
   <div class="wrap footer-row">
     <div class="logo">Co<em>Stage</em></div>
@@ -745,6 +810,12 @@
   </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/three@0.140.0/build/three.min.js"></script>
+<script type="module">
+  import { createMockScene, projectToPhoto, canvasToWorld, worldToCanvas } from './spatialParser.js';
+  window.SpatialParser = { createMockScene, projectToPhoto, canvasToWorld, worldToCanvas };
+</script>
+<script src="stagingScene.js"></script>
 <script>
   // Curated picks from the real CoStage furniture library (rove-concepts / west-elm / soho-home).
   const LIBRARY = [
@@ -832,7 +903,7 @@
       card.classList.remove('picked');
     } else {
       if (pickedItems.length >= 3) return;
-      pickedItems.push({ name: item.name, price: item.price || '', img });
+      pickedItems.push({ name: item.name, price: item.price || '', img, category: item.category || '' });
       card.classList.add('picked');
     }
     updatePickerCount();
@@ -908,76 +979,6 @@
     renderPickerGrid(items, pickerSearch.value);
   }
 
-  // ── Real AI staging (nano-banana via /api/stage proxy — key lives server-side) ──
-  const API = {
-    mock: false,
-    stageEndpoint: '/api/stage',
-  };
-  const STORAGE_KEYS = { mock: 'costage_mockMode' };
-
-  function loadApiConfig() {
-    try {
-      const mock = localStorage.getItem(STORAGE_KEYS.mock);
-      mockToggle.checked = mock === null ? false : mock === 'true';
-      API.mock = mockToggle.checked;
-    } catch (e) { /* localStorage unavailable */ }
-  }
-
-  function saveApiConfig() {
-    API.mock = mockToggle.checked;
-    try {
-      localStorage.setItem(STORAGE_KEYS.mock, String(API.mock));
-    } catch (e) { /* localStorage unavailable */ }
-  }
-
-  function canStageLive() {
-    return !API.mock;
-  }
-
-  // `picks` with `.img` become reference images (image 2, 3, 4, ...) so nano-banana
-  // composites the exact pieces the user picked, not just furniture matching their names.
-  function buildStagingPrompt(room, styleName, picks) {
-    const refPicks = picks.filter(i => i.img);
-    if (refPicks.length > 0) {
-      const pieces = refPicks
-        .map((p, idx) => `Image ${idx + 2} is a reference photo of: ${p.name}${p.price ? ` (${p.price})` : ''}.`)
-        .join(' ');
-      return [
-        `Image 1 is a photo of an empty or sparsely furnished ${room}.`,
-        pieces,
-        `Virtually stage the room from Image 1 in a ${styleName} interior design style using the exact pieces shown in the reference images — match each piece's color, material, shape, and proportions as closely as possible to its reference photo.`,
-        "Keep the room's architecture, walls, windows, doors, flooring, ceiling, and existing lighting from Image 1 exactly as they are — only add the furniture.",
-        'Place every piece realistically on the floor with correct scale, perspective, and shadows that match the existing light direction.',
-        'Output a single photorealistic real-estate listing photo of the room from Image 1 — no text, watermarks, borders, or collage layout, and do not show the reference images themselves.',
-      ].join(' ');
-    }
-    const pieces = picks.map(i => i.name).join(', ');
-    return [
-      `Virtually stage this photo of an empty or sparsely furnished ${room} in a ${styleName} interior design style.`,
-      pieces ? `Add these furniture and decor pieces, matching their real proportions and finishes: ${pieces}.` : '',
-      "Keep the room's architecture, walls, windows, doors, flooring, ceiling, and existing lighting exactly as in the original photo — only add furniture.",
-      'Place every piece realistically on the floor with correct scale, perspective, and shadows that match the existing light direction.',
-      'Output a photorealistic real-estate listing photo. No text, watermarks, or borders.',
-    ].filter(Boolean).join(' ');
-  }
-
-  async function nanoBananaEdit(images, prompt) {
-    const res = await fetch(API.stageEndpoint, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        images: Array.isArray(images) ? images : [images],
-        prompt,
-      }),
-    });
-    if (!res.ok) throw new Error(`nano-banana request failed (${res.status})`);
-    const data = await res.json();
-    if (data.code !== 0) throw new Error(data.message || 'nano-banana edit failed');
-    const url = Array.isArray(data.data?.url) ? data.data.url[0] : data.data?.url;
-    if (!url) throw new Error('nano-banana returned no image');
-    return url;
-  }
-
   function renderResultPieces(picks) {
     resultPiecesRow.innerHTML = '';
     picks.forEach(item => {
@@ -999,7 +1000,6 @@
   const previewImg  = document.getElementById('previewImg');
   const beforeImg   = document.getElementById('beforeImg');
   const afterImg    = document.getElementById('afterImg');
-  const baAfterLayer  = document.getElementById('baAfterLayer');
   const baBeforeLayer = document.getElementById('baBeforeLayer');
   const baSlider    = document.getElementById('baSlider');
   const baHandle    = document.getElementById('baHandle');
@@ -1013,15 +1013,9 @@
   const resetBtn    = document.getElementById('resetBtn');
   const demoSteps   = document.querySelectorAll('.demo-step');
 
-  // ── AI settings elements ──
-  const mockToggle  = document.getElementById('mockToggle');
-
   // ── Edit flow elements ──
   const editFurnitureBtn = document.getElementById('editFurnitureBtn');
   const editStagingBtn   = document.getElementById('editStagingBtn');
-  const editStagingBox   = document.getElementById('editStagingBox');
-  const editStagingInput = document.getElementById('editStagingInput');
-  const applyEditBtn     = document.getElementById('applyEditBtn');
 
   // ── Furniture picker elements ──
   const pickerOverlay = document.getElementById('pickerOverlay');
@@ -1039,8 +1033,9 @@
   let roomType = 'living room';
   let style = 'modern';
 
-  loadApiConfig();
-  mockToggle.addEventListener('change', saveApiConfig);
+  let lastPicks = [];          // picks used for the current staging
+  let lastScene = null;        // { scene, placements } from buildSceneForRoom
+  let lastAfterCamera = null;  // CameraPose used for the after-render
 
   function setStep(n) {
     demoSteps.forEach(s => s.classList.toggle('active', +s.dataset.step <= n));
@@ -1112,13 +1107,58 @@
   pickerDone.addEventListener('click', () => {
     pickerOverlay.classList.remove('open');
     renderPickedRow();
-    if (!panelResult.hidden) {
+    if (swapTargetPlacement) {
+      const newest = pickedItems[pickedItems.length - 1];
+      if (newest) {
+        const idx = lastPicks.indexOf(swapTargetPlacement._pickRef);
+        if (idx >= 0) lastPicks[idx] = newest;
+        else lastPicks.push(newest);
+      }
+      swapTargetPlacement = null;
+      wtSelectedPlacement = null;
+      wtSidePanel.hidden = true;
+      rebuildAfterAndWalkthrough();
+    } else if (!panelResult.hidden) {
       const picks = pickedItems.length > 0 ? pickedItems : pickFromLibrary(roomType, style);
       runStaging(currentImageSrc, picks, { loadingMessage: 'Re-staging with your updated furniture…' });
     }
   });
 
-  // ── Staging pipeline (real nano-banana edit, with mock fallback) ──
+  // ── Staging pipeline (AI photo composite, with local 3D render as fallback) ──
+  async function toDataURL(src) {
+    if (src.startsWith('data:')) return src;
+    const res = await fetch(src);
+    const blob = await res.blob();
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = reject;
+      reader.readAsDataURL(blob);
+    });
+  }
+
+  function buildStagingPrompt(picks, roomType, style) {
+    const itemList = picks.map(p => p.category ? `${p.name} (${p.category})` : p.name).join(', ');
+    return `This is a photo of a ${roomType}. Add the following furniture into the room, matching ` +
+      `the reference images provided: ${itemList}. Keep the room's existing walls, floor, ceiling, ` +
+      `windows, and lighting exactly as they are in the original photo — only add the new furniture, ` +
+      `composited photorealistically with correct scale, perspective, and shadows. Overall style: ${style}.`;
+  }
+
+  async function requestAIStaging(sourceImageSrc, picks, roomType, style) {
+    const photoDataUrl = await toDataURL(sourceImageSrc);
+    const refImages = picks.filter(p => p.img).slice(0, 3).map(p => p.img);
+    const prompt = buildStagingPrompt(picks, roomType, style);
+    const res = await fetch('/api/stage', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ images: [photoDataUrl, ...refImages], prompt }),
+    });
+    const json = await res.json();
+    if (!res.ok || json.code !== 0) throw new Error(json.message || 'AI staging failed');
+    return json.data.url;
+  }
+
   async function runStaging(sourceImageSrc, picks, opts = {}) {
     panelUpload.hidden = true;
     panelConfigure.hidden = true;
@@ -1127,36 +1167,33 @@
     loadingImg.src = sourceImageSrc;
     setStep(3);
 
-    const live = canStageLive();
-    loadingText.textContent = opts.loadingMessage || (live
-      ? `Asking nano-banana to stage your ${roomType} in ${style} style…`
-      : `Staging your ${roomType} in ${style} style…`);
+    lastPicks = picks;
+    loadingText.textContent = opts.loadingMessage || `Staging your ${roomType} in ${style} style…`;
 
     loadingFill.style.transition = 'none';
     loadingFill.style.width = '0%';
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        loadingFill.style.transition = `width ${live ? '8s' : '1.6s'} cubic-bezier(.2,.7,.3,1)`;
-        loadingFill.style.width = live ? '92%' : '100%';
-      });
-    });
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      loadingFill.style.transition = 'width 1.2s cubic-bezier(.2,.7,.3,1)';
+      loadingFill.style.width = '90%';
+    }));
+
+    // Always build the local scene+camera — cheap/instant, and powers the
+    // secondary "Explore in 3D" walkthrough regardless of which "after"
+    // image is shown below.
+    const { scene, placements } = StagingScene.buildSceneForRoom(roomType, picks);
+    const camera = StagingScene.chooseAfterCamera(scene, placements);
+    lastScene = { scene, placements };
+    lastAfterCamera = camera;
 
     const startedAt = performance.now();
-    let stagedUrl = null;
-    let errorMsg = null;
-
-    if (live) {
-      const prompt = opts.editPrompt || buildStagingPrompt(roomType, style, picks);
-      const refImages = opts.editPrompt ? [] : picks.filter(p => p.img).map(p => p.img);
-      const images = [sourceImageSrc, ...refImages];
-      try {
-        stagedUrl = await nanoBananaEdit(images, prompt);
-      } catch (err) {
-        console.error('[CoStage] nano-banana staging failed:', err);
-        errorMsg = err.message;
-      }
-    } else {
-      await new Promise(r => setTimeout(r, 1700));
+    let stagedUrl;
+    let badge;
+    try {
+      stagedUrl = await requestAIStaging(sourceImageSrc, picks, roomType, style);
+      badge = { text: 'AI-staged photo', live: true };
+    } catch (err) {
+      stagedUrl = await StagingScene.renderToDataURL(placements, scene, camera, { width: 1024, height: 768 });
+      badge = { text: '3D render preview (AI staging unavailable)', live: false };
     }
 
     loadingFill.style.transition = 'width .25s ease';
@@ -1166,38 +1203,16 @@
     setTimeout(() => {
       panelLoading.hidden = true;
       panelResult.hidden = false;
-      showResult({ stagedUrl, picks, usedMock: !stagedUrl, errorMsg, elapsedSec });
+      showResult({ stagedUrl, picks, elapsedSec, badge });
     }, 200);
   }
 
-  function showResult({ stagedUrl, picks, usedMock, errorMsg, elapsedSec }) {
+  function showResult({ stagedUrl, picks, elapsedSec, badge }) {
     beforeImg.src = currentImageSrc;
-    afterImg.src = stagedUrl || currentImageSrc;
+    afterImg.src = stagedUrl;
     currentAfterImageSrc = afterImg.src;
-
-    baAfterLayer.querySelectorAll('.furniture-overlay').forEach(el => el.remove());
-
-    if (usedMock) {
-      resultBadge.textContent = errorMsg ? 'AI staging failed — preview mockup' : 'Preview mockup';
-      resultBadge.classList.remove('badge-live');
-      picks.forEach((item, idx) => {
-        const card = document.createElement('div');
-        card.className = `furniture-overlay f${idx + 1}`;
-        card.innerHTML = `<img src="${item.img}" alt="${item.name}">
-          <div class="fo-label">${item.name} · ${item.price}</div>`;
-        baAfterLayer.appendChild(card);
-      });
-      setTimeout(() => {
-        baAfterLayer.querySelectorAll('.furniture-overlay').forEach(el => el.classList.add('show'));
-      }, 80);
-    } else {
-      const hasRefs = picks.some(p => p.img);
-      resultBadge.textContent = hasRefs
-        ? 'AI staged · nano-banana (your picks, rendered)'
-        : 'AI staged · nano-banana';
-      resultBadge.classList.add('badge-live');
-    }
-
+    resultBadge.textContent = badge.text;
+    resultBadge.classList.toggle('badge-live', badge.live);
     resultTime.textContent = `Staged in ${elapsedSec}s`;
     renderResultPieces(picks);
     initSlider();
@@ -1209,25 +1224,7 @@
     loadAndRenderPicker();
   });
 
-  editStagingBtn.addEventListener('click', () => {
-    editStagingBox.hidden = !editStagingBox.hidden;
-    if (!editStagingBox.hidden) editStagingInput.focus();
-  });
-
-  applyEditBtn.addEventListener('click', () => {
-    const text = editStagingInput.value.trim();
-    if (!text) return;
-    if (!canStageLive()) {
-      resultBadge.textContent = 'Add a nano-banana API key above (and turn off mock mode) to apply AI edits';
-      resultBadge.classList.remove('badge-live');
-      return;
-    }
-    const lastPicks = pickedItems.length > 0 ? pickedItems : pickFromLibrary(roomType, style);
-    const prompt = `Apply this edit to the staged room photo: ${text}. Keep everything else the same — same furniture, same placement, same room architecture — only make the requested change. Photorealistic, no text or watermarks.`;
-    runStaging(currentAfterImageSrc, lastPicks, { editPrompt: prompt, loadingMessage: 'Applying your edit…' });
-    editStagingInput.value = '';
-    editStagingBox.hidden = true;
-  });
+  editStagingBtn.addEventListener('click', () => openWalkthrough());
 
   resetBtn.addEventListener('click', () => {
     panelResult.hidden = true;
@@ -1236,9 +1233,283 @@
     pickedItems.length = 0;
     renderPickedRow();
     updatePickerCount();
-    editStagingBox.hidden = true;
-    editStagingInput.value = '';
+    closeWalkthrough();
+    lastPicks = [];
+    lastScene = null;
+    lastAfterCamera = null;
     setStep(1);
+  });
+
+  // ── Walkthrough (3D walk-through of the staged scene) ──
+  const walkthroughOverlay = document.getElementById('walkthroughOverlay');
+  const wtClose            = document.getElementById('wtClose');
+  const wtCanvas           = document.getElementById('wtCanvas');
+  const wtTopdownCanvas    = document.getElementById('wtTopdownCanvas');
+  const wtHotspots         = document.getElementById('wtHotspots');
+  const wtFloorplanCanvas  = document.getElementById('wtFloorplanCanvas');
+  const wtInsetToggle      = document.getElementById('wtInsetToggle');
+  const wtInsetZoomIn      = document.getElementById('wtInsetZoomIn');
+  const wtInsetZoomOut     = document.getElementById('wtInsetZoomOut');
+  const wtSidePanel        = document.getElementById('wtSidePanel');
+  const wtSideClose        = document.getElementById('wtSideClose');
+  const wtSideImg          = document.getElementById('wtSideImg');
+  const wtSideName         = document.getElementById('wtSideName');
+  const wtSidePrice        = document.getElementById('wtSidePrice');
+  const wtSwapBtn          = document.getElementById('wtSwapBtn');
+  const wtUp               = document.getElementById('wtUp');
+  const wtDown             = document.getElementById('wtDown');
+  const wtLeft             = document.getElementById('wtLeft');
+  const wtRight            = document.getElementById('wtRight');
+  const wtModeToggle       = document.getElementById('wtModeToggle');
+  const wtZoomIn           = document.getElementById('wtZoomIn');
+  const wtZoomOut          = document.getElementById('wtZoomOut');
+  const wtZoomLabel        = document.getElementById('wtZoomLabel');
+
+  const WT_MOVE_STEP = 0.35;
+  const WT_ROT_STEP = Math.PI / 12;
+  const WT_ROOM_MARGIN = 0.3;
+
+  let wtCtx = null;               // { renderer, scene3d, camera3d, ... } from StagingScene.initRenderer
+  let wt2DMode = false;
+  let wtInsetZoom = 1;
+  let wtSelectedPlacement = null;
+  let wtRafId = null;
+  let swapTargetPlacement = null;
+
+  function openWalkthrough() {
+    if (!lastScene || !lastAfterCamera) return;
+    walkthroughOverlay.classList.add('open');
+    wtSelectedPlacement = null;
+    wtSidePanel.hidden = true;
+
+    wtCtx = StagingScene.initRenderer(wtCanvas);
+    resizeWtCanvas();
+    StagingScene.buildAllModels(wtCtx, lastScene.placements, lastScene.scene.roomDimensions);
+    StagingScene.syncCameraToPose(wtCtx.camera3d, lastAfterCamera, wtCtx.camera3d.aspect);
+
+    setWt2DMode(false);
+    updateZoomLabel();
+
+    if (!wtRafId) wtRafId = requestAnimationFrame(wtRenderLoop);
+  }
+
+  function closeWalkthrough() {
+    walkthroughOverlay.classList.remove('open');
+    if (wtRafId) { cancelAnimationFrame(wtRafId); wtRafId = null; }
+  }
+
+  function resizeWtCanvas() {
+    const rect = wtCanvas.parentElement.getBoundingClientRect();
+    if (wtCtx) {
+      wtCtx.renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+      wtCtx.renderer.setSize(rect.width, rect.height, false);
+      wtCtx.camera3d.aspect = rect.width / rect.height;
+      wtCtx.camera3d.updateProjectionMatrix();
+    }
+    wtTopdownCanvas.width = rect.width;
+    wtTopdownCanvas.height = rect.height;
+    wtFloorplanCanvas.width = wtFloorplanCanvas.clientWidth;
+    wtFloorplanCanvas.height = wtFloorplanCanvas.clientHeight;
+  }
+
+  function wtRenderLoop() {
+    if (!wt2DMode && wtCtx) {
+      wtCtx.renderer.render(wtCtx.scene3d, wtCtx.camera3d);
+    } else if (wt2DMode) {
+      drawTopdownInto(wtTopdownCanvas.getContext('2d'), wtTopdownCanvas.width, wtTopdownCanvas.height, 1);
+    }
+    updateHotspots();
+    drawFloorplanInset();
+    wtRafId = requestAnimationFrame(wtRenderLoop);
+  }
+
+  function updateHotspots() {
+    if (wt2DMode || !wtCtx || !lastScene) {
+      wtHotspots.innerHTML = '';
+      return;
+    }
+    const rect = wtCanvas.getBoundingClientRect();
+    const seen = new Set();
+    lastScene.placements.forEach((p, i) => {
+      const v = new THREE.Vector3(p.worldPosition.x, 0.5, p.worldPosition.z);
+      v.project(wtCtx.camera3d);
+      let el = wtHotspots.querySelector(`[data-idx="${i}"]`);
+      if (v.z < -1 || v.z > 1 || v.x < -1 || v.x > 1 || v.y < -1 || v.y > 1) {
+        if (el) el.remove();
+        return;
+      }
+      seen.add(i);
+      const x = (v.x * 0.5 + 0.5) * rect.width;
+      const y = (-v.y * 0.5 + 0.5) * rect.height;
+      if (!el) {
+        el = document.createElement('div');
+        el.className = 'wt-hotspot';
+        el.dataset.idx = i;
+        el.addEventListener('click', () => selectHotspot(p));
+        wtHotspots.appendChild(el);
+      }
+      el.style.left = x + 'px';
+      el.style.top = y + 'px';
+      el.classList.toggle('selected', wtSelectedPlacement === p);
+    });
+    wtHotspots.querySelectorAll('.wt-hotspot').forEach(el => {
+      if (!seen.has(Number(el.dataset.idx))) el.remove();
+    });
+  }
+
+  function selectHotspot(placement) {
+    wtSelectedPlacement = placement;
+    const pick = placement._pickRef || {};
+    wtSideImg.src = pick.img || '';
+    wtSideName.textContent = pick.name || '';
+    wtSidePrice.textContent = pick.price || '';
+    wtSidePanel.hidden = false;
+  }
+
+  wtSideClose.addEventListener('click', () => {
+    wtSidePanel.hidden = true;
+    wtSelectedPlacement = null;
+  });
+
+  // dpad: up/down move along the camera's facing direction, left/right yaw the camera
+  function wtMove(dir) {
+    if (!wtCtx || !lastScene) return;
+    const cam = wtCtx.camera3d;
+    const { width, depth } = lastScene.scene.roomDimensions;
+    const hw = Math.max(0, width / 2 - WT_ROOM_MARGIN);
+    const hd = Math.max(0, depth / 2 - WT_ROOM_MARGIN);
+    const forward = new THREE.Vector3(0, 0, -1).applyQuaternion(cam.quaternion);
+    forward.y = 0;
+    if (forward.lengthSq() < 1e-6) forward.set(0, 0, -1); else forward.normalize();
+    cam.position.x = Math.max(-hw, Math.min(hw, cam.position.x + forward.x * dir * WT_MOVE_STEP));
+    cam.position.z = Math.max(-hd, Math.min(hd, cam.position.z + forward.z * dir * WT_MOVE_STEP));
+  }
+  function wtRotate(dir) {
+    if (!wtCtx) return;
+    wtCtx.camera3d.rotateY(dir * WT_ROT_STEP);
+  }
+  wtUp.addEventListener('click', () => wtMove(1));
+  wtDown.addEventListener('click', () => wtMove(-1));
+  wtLeft.addEventListener('click', () => wtRotate(1));
+  wtRight.addEventListener('click', () => wtRotate(-1));
+
+  // zoom: smaller FOV = zoomed in
+  function updateZoomLabel() {
+    if (!wtCtx) return;
+    wtZoomLabel.textContent = Math.round(wtCtx.camera3d.fov) + '°';
+  }
+  wtZoomIn.addEventListener('click', () => {
+    if (!wtCtx) return;
+    wtCtx.camera3d.fov = Math.max(35, wtCtx.camera3d.fov - 5);
+    wtCtx.camera3d.updateProjectionMatrix();
+    updateZoomLabel();
+  });
+  wtZoomOut.addEventListener('click', () => {
+    if (!wtCtx) return;
+    wtCtx.camera3d.fov = Math.min(85, wtCtx.camera3d.fov + 5);
+    wtCtx.camera3d.updateProjectionMatrix();
+    updateZoomLabel();
+  });
+
+  // 2D / 3D toggle
+  function setWt2DMode(on) {
+    wt2DMode = on;
+    wtCanvas.hidden = on;
+    wtTopdownCanvas.hidden = !on;
+    wtModeToggle.textContent = on ? '3D view' : '2D view';
+    wtInsetToggle.textContent = on ? '3D' : '2D';
+    if (on) wtHotspots.innerHTML = '';
+  }
+  wtModeToggle.addEventListener('click', () => setWt2DMode(!wt2DMode));
+  wtInsetToggle.addEventListener('click', () => setWt2DMode(!wt2DMode));
+
+  // shared top-down drawing, used by both the main 2D view and the floorplan inset
+  function drawTopdownInto(ctx, W, H, scale) {
+    ctx.clearRect(0, 0, W, H);
+    if (!lastScene || W <= 0 || H <= 0) return;
+    const { width, depth } = lastScene.scene.roomDimensions;
+    const pad = 16;
+    const baseScale = Math.min((W - pad * 2) / width, (H - pad * 2) / depth);
+    const s = Math.max(baseScale * scale, 1);
+    const cx = W / 2, cy = H / 2;
+
+    ctx.strokeStyle = 'rgba(255,255,255,0.35)';
+    ctx.lineWidth = 1.5;
+    ctx.strokeRect(cx - width / 2 * s, cy - depth / 2 * s, width * s, depth * s);
+
+    lastScene.placements.forEach(p => {
+      const px = cx + p.worldPosition.x * s;
+      const pz = cy + p.worldPosition.z * s;
+      const w = p.dimensions.width * s, d = p.dimensions.depth * s;
+      ctx.save();
+      ctx.translate(px, pz);
+      ctx.rotate((p.rotation || 0) * Math.PI / 180);
+      ctx.fillStyle = (p === wtSelectedPlacement) ? 'rgba(200,240,96,0.55)' : 'rgba(96,200,240,0.35)';
+      ctx.strokeStyle = 'rgba(255,255,255,0.6)';
+      ctx.lineWidth = 1;
+      ctx.fillRect(-w / 2, -d / 2, w, d);
+      ctx.strokeRect(-w / 2, -d / 2, w, d);
+      ctx.restore();
+    });
+
+    if (wtCtx && wtCtx.camera3d) {
+      const cam = wtCtx.camera3d;
+      const camX = cx + cam.position.x * s;
+      const camZ = cy + cam.position.z * s;
+      const forward = new THREE.Vector3(0, 0, -1).applyQuaternion(cam.quaternion);
+      const angle = Math.atan2(forward.x, forward.z);
+      ctx.save();
+      ctx.translate(camX, camZ);
+      ctx.rotate(angle);
+      ctx.fillStyle = '#c8f060';
+      ctx.beginPath();
+      ctx.moveTo(0, -8);
+      ctx.lineTo(6, 6);
+      ctx.lineTo(-6, 6);
+      ctx.closePath();
+      ctx.fill();
+      ctx.restore();
+    }
+  }
+
+  function drawFloorplanInset() {
+    if (!lastScene) return;
+    const ctx = wtFloorplanCanvas.getContext('2d');
+    drawTopdownInto(ctx, wtFloorplanCanvas.width, wtFloorplanCanvas.height, wtInsetZoom);
+  }
+
+  wtInsetZoomIn.addEventListener('click', () => { wtInsetZoom = Math.min(2.5, wtInsetZoom + 0.25); });
+  wtInsetZoomOut.addEventListener('click', () => { wtInsetZoom = Math.max(0.5, wtInsetZoom - 0.25); });
+
+  // swap a placed piece for a different catalogue item
+  wtSwapBtn.addEventListener('click', () => {
+    if (!wtSelectedPlacement) return;
+    swapTargetPlacement = wtSelectedPlacement;
+    pickerOverlay.classList.add('open');
+    loadAndRenderPicker();
+  });
+
+  function rebuildAfterAndWalkthrough() {
+    // Swapping a piece in the 3D walkthrough only updates the local 3D scene —
+    // it's a free, instant, secondary "explore the layout" feature. The
+    // AI-staged "after" photo is left as-is; re-staging it (via "Edit
+    // furniture" → "Stage it") is the only path that calls the paid AI API.
+    const { scene, placements } = StagingScene.buildSceneForRoom(roomType, lastPicks);
+    const camera = StagingScene.chooseAfterCamera(scene, placements);
+    lastScene = { scene, placements };
+    lastAfterCamera = camera;
+    renderResultPieces(lastPicks);
+    if (walkthroughOverlay.classList.contains('open') && wtCtx) {
+      StagingScene.buildAllModels(wtCtx, placements, scene.roomDimensions);
+    }
+  }
+
+  wtClose.addEventListener('click', closeWalkthrough);
+  walkthroughOverlay.addEventListener('click', e => {
+    if (e.target === walkthroughOverlay) closeWalkthrough();
+  });
+  window.addEventListener('resize', () => {
+    if (walkthroughOverlay.classList.contains('open')) resizeWtCanvas();
   });
 
   // ── Before / after slider ──
