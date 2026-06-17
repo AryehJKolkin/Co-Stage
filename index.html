@@ -1194,6 +1194,7 @@
       stagedUrl = await requestAIStaging(sourceImageSrc, picks, roomType, style);
       badge = { text: 'AI-staged photo', live: true };
     } catch (err) {
+      console.error('AI staging failed, falling back to 3D render:', err.message);
       stagedUrl = await StagingScene.renderToDataURL(placements, scene, camera, { width: 1024, height: 768 });
       badge = { text: '3D render preview (AI staging unavailable)', live: false };
     }
