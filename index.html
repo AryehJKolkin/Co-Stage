@@ -1016,6 +1016,8 @@
   // ── Edit flow elements ──
   const editFurnitureBtn = document.getElementById('editFurnitureBtn');
   const editStagingBtn   = document.getElementById('editStagingBtn');
+  const SHOW_3D_WALKTHROUGH = false; // flip to true to bring "Explore in 3D" back into the result screen
+  editStagingBtn.hidden = !SHOW_3D_WALKTHROUGH;
 
   // ── Furniture picker elements ──
   const pickerOverlay = document.getElementById('pickerOverlay');
