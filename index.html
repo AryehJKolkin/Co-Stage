@@ -141,6 +141,11 @@
   .pill:hover { border-color: var(--accent2); color: var(--accent2); }
   .pill.active { background: var(--accent); border-color: var(--accent); color: #0c0c0e; }
   .demo-stage-btn { width: 100%; justify-content: center; margin-top: 4px; }
+  .stage-error {
+    font-size: 12.5px; color: var(--warn); background: rgba(240,144,96,.08);
+    border: 1px solid rgba(240,144,96,.3); border-radius: var(--r);
+    padding: 10px 12px; margin-bottom: 14px; line-height: 1.5;
+  }
 
   /* loading */
   .loading-img-wrap {
@@ -520,6 +525,7 @@
           <div class="picked-row" id="pickedRow"></div>
           <button class="btn btn-ghost picker-open-btn" id="pickerOpenBtn" type="button">Choose from your library →</button>
         </div>
+        <div class="stage-error" id="stageError" hidden></div>
         <button class="btn btn-accent demo-stage-btn" id="stageBtn" type="button">Stage it →</button>
       </div>
 
@@ -1010,6 +1016,7 @@
   const resultBadge = document.getElementById('resultBadge');
   const resultPiecesRow = document.getElementById('resultPiecesRow');
   const stageBtn    = document.getElementById('stageBtn');
+  const stageError  = document.getElementById('stageError');
   const resetBtn    = document.getElementById('resetBtn');
   const demoSteps   = document.querySelectorAll('.demo-step');
 
@@ -1166,6 +1173,7 @@
     panelConfigure.hidden = true;
     panelResult.hidden = true;
     panelLoading.hidden = false;
+    stageError.hidden = true;
     loadingImg.src = sourceImageSrc;
     setStep(3);
 
@@ -1179,9 +1187,9 @@
       loadingFill.style.width = '90%';
     }));
 
-    // Always build the local scene+camera — cheap/instant, and powers the
-    // secondary "Explore in 3D" walkthrough regardless of which "after"
-    // image is shown below.
+    // Builds the local scene+camera that power the secondary "Explore in 3D"
+    // walkthrough — unrelated to the "after" image, which always comes from
+    // the AI staging call below.
     const { scene, placements } = StagingScene.buildSceneForRoom(roomType, picks);
     const camera = StagingScene.chooseAfterCamera(scene, placements);
     lastScene = { scene, placements };
@@ -1189,14 +1197,16 @@
 
     const startedAt = performance.now();
     let stagedUrl;
-    let badge;
     try {
       stagedUrl = await requestAIStaging(sourceImageSrc, picks, roomType, style);
-      badge = { text: 'AI-staged photo', live: true };
     } catch (err) {
-      console.error('AI staging failed, falling back to 3D render:', err.message);
-      stagedUrl = await StagingScene.renderToDataURL(placements, scene, camera, { width: 1024, height: 768 });
-      badge = { text: '3D render preview (AI staging unavailable)', live: false };
+      console.error('AI staging failed:', err.message);
+      panelLoading.hidden = true;
+      panelConfigure.hidden = false;
+      stageError.textContent = `Staging failed: ${err.message}. Try again.`;
+      stageError.hidden = false;
+      setStep(2);
+      return;
     }
 
     loadingFill.style.transition = 'width .25s ease';
@@ -1206,16 +1216,16 @@
     setTimeout(() => {
       panelLoading.hidden = true;
       panelResult.hidden = false;
-      showResult({ stagedUrl, picks, elapsedSec, badge });
+      showResult({ stagedUrl, picks, elapsedSec });
     }, 200);
   }
 
-  function showResult({ stagedUrl, picks, elapsedSec, badge }) {
+  function showResult({ stagedUrl, picks, elapsedSec }) {
     beforeImg.src = currentImageSrc;
     afterImg.src = stagedUrl;
     currentAfterImageSrc = afterImg.src;
-    resultBadge.textContent = badge.text;
-    resultBadge.classList.toggle('badge-live', badge.live);
+    resultBadge.textContent = 'AI-staged photo';
+    resultBadge.classList.add('badge-live');
     resultTime.textContent = `Staged in ${elapsedSec}s`;
     renderResultPieces(picks);
     initSlider();
